@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | PWA </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Particle Nature of Radiation</h1>
+                    <p class="lead" id="tagline">The Photon</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Chapter: Particle Nature of Radiation: The Photon -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPhotonConcept">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePhotonConcept" aria-expanded="false"
+                                aria-controls="collapsePhotonConcept">
+                                <strong>Concept of Photon</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePhotonConcept" class="accordion-collapse collapse"
+                            aria-labelledby="headingPhotonConcept" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    When radiation interacts with matter, the exchange of energy occurs in discrete
+                                    packets, one at a time. So, it behaves as if it consists of discrete packets of
+                                    energy called <strong>photons</strong>. This concept emerges from
+                                    observations like the photoelectric effect, where light transfers energy to
+                                    electrons in quantized amounts. In every event of energy exchange between light and
+                                    matter, exactly one photon is involved, transferring its entire energy to a system.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! According to the photon concept, light transfers energy in discrete packets called photons."
+                                        false-response="Not quite. Light transfers energy in discrete packets called photons."
+                                        ansKey="true">
+                                        According to the photon concept, how does light transfer energy to matter?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            By transferring energy in discrete packets called photons
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            By transferring energy continuously as a wave
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    The notion of photons revolutionized our understanding of light, bridging the gap
+                                    between wave and particle theories. The following diagram illustrates how photons
+                                    interact with electrons on a metallic surface, causing phenomena such as the
+                                    photoelectric effect.
+                                </p>
+                                <!-- Diagram of Photon Interaction -->
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 400px;">
+                                            <img src="../00_Assets/img/ModernPhysics/PhotonConcept/Photon_Electron_Interaction.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing photon-electron interaction">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure 1: Photon interacting with an electron
+                                            on a metal surface.</figcaption>
+                                    </div>
+                                </div>
+                                <!-- Chapter: Particle Nature of Radiation: The Photon -->
+                                <h5 class="mt-4">Mass of Photon</h5>
+                                <p class="mt-3">
+                                    Photons always travel at the speed of light in a vacuum, denoted as \(c\), and this
+                                    speed remains constant in a given medium. Hence, the conventional concept of mass
+                                    cannot be used to fully understand the mass of a photon. In physics, mass manifests
+                                    in several forms, each playing a distinct role in our understanding of matter and
+                                    energy. The primary types of mass include <strong>rest mass</strong>,
+                                    <strong>inertial mass</strong>, <strong>gravitational mass</strong>, and
+                                    <strong>relativistic mass</strong>. Below, we explore how each type of mass applies
+                                    to photons.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Rest Mass</strong></summary>
+                                            <p class="mt-2">
+                                                Rest mass refers to the intrinsic mass of an object when it is at rest
+                                                relative to the observer. For photons, the rest mass (\(m_0\)) is zero.
+                                                This means photons are massless particles that cannot be brought to
+                                                rest; they always travel at the speed of light. Mathematically, this is
+                                                expressed as:
+                                            </p>
+                                            <p class="mt-2">
+                                                \(\qquad m_0 = 0\)
+                                            </p>
+                                            <p class="mt-2">
+                                                The equation \(E = m_0 c^2\) implies that since \(m_0 = 0\), photons
+                                                have zero rest energy. However, photons do possess energy through their
+                                                frequency, as described by Einstein's equation \(E = h\nu\).
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction true-response="Correct! The rest mass of a photon is zero."
+                                                    false-response="Not quite. The rest mass of a photon is zero."
+                                                    ansKey="true">
+                                                    What is the rest mass of a photon?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Zero
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Equal to \(h\nu\)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Equal to \(m_0 c^2\)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Inertial Mass</strong></summary>
+                                            <p class="mt-2">
+                                                Inertial mass measures an object's resistance to acceleration when a
+                                                force is applied. The photons always move at speed \(c\). Therefore,
+                                                photons do not have inertial mass in the conventional sense used for
+                                                massive particles. So, we can not define inertial mass for photons.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Photons always travel at the speed of light in a vacuum, regardless of their energy."
+                                                    false-response="Not quite. Photons cannot travel slower or faster than the speed of light in a vacuum."
+                                                    ansKey="false">
+                                                    Can photons travel at speeds less than the speed of light in a
+                                                    vacuum?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, if they have lower energy
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, they always travel at the speed of light in a vacuum
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Gravitational Mass</strong></summary>
+                                            <p class="mt-2">
+                                                Gravitational mass determines how an object interacts with gravitational
+                                                fields. While photons have zero rest mass, they carry energy and
+                                                momentum, which allows them to be influenced by gravity. According to
+                                                Einstein's general relativity, energy and momentum can curve spacetime,
+                                                enabling photons to experience gravitational effects such as
+                                                gravitational lensing. This phenomenon occurs when light bends around
+                                                massive objects like galaxies, illustrating that photons do interact
+                                                gravitationally despite having no rest mass. Hence, the photons have
+                                                non-zero gravitational mass.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Photons are affected by gravity because their energy and momentum curve spacetime, as described by general relativity."
+                                                    false-response="Not quite. Even without rest mass, photons interact with gravity due to their energy and momentum."
+                                                    ansKey="true">
+                                                    Why are photons able to bend around massive objects like stars if
+                                                    they have zero rest mass?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because their energy and momentum allow them to interact with
+                                                        gravitational fields
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because they gain mass when moving at high speeds
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Relativistic Mass</strong></summary>
+                                            <p class="mt-2">
+                                                Relativistic mass is the mass of an object as it increases with its
+                                                velocity relative to an observer. However, since photons always travel
+                                                at \(c\), the concept of relativistic mass does not apply to them in the
+                                                traditional sense used for massive particles. Therefore, the
+                                                relativistic mass of a photon is not defined. Instead, photons are
+                                                described by their energy and momentum without attributing a
+                                                velocity-dependent mass. This perspective aligns with modern physics,
+                                                which prefers discussing energy and momentum directly rather than using
+                                                relativistic mass.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Photons are described by energy and momentum, not relativistic mass."
+                                                    false-response="Not quite. The concept of relativistic mass doesn't apply to photons."
+                                                    ansKey="false">
+                                                    Does the concept of relativistic mass apply to photons in the
+                                                    traditional sense used for massive particles?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p class="mt-3">
+                                    Photons, the fundamental particles of light, exhibit unique characteristics in
+                                    relation to these mass types. However, photons have capabilities to carry energy and
+                                    momentum with them which is described in following sections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item: Photon as Energy and Momentum Carrier -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPhotonEnergyMomentum">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePhotonEnergyMomentum" aria-expanded="false"
+                                aria-controls="collapsePhotonEnergyMomentum">
+                                <strong>Photon as Energy and Momentum Carrier</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePhotonEnergyMomentum" class="accordion-collapse collapse"
+                            aria-labelledby="headingPhotonEnergyMomentum" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Experimentally, it's observed that light originates from moving charges, and as
+                                    light is formed, the energy of the charged particles decreases. For example,
+                                    electrons oscillating in an antenna emit light and continue to propagate through
+                                    space until they interact with other charged particles, whose energy increases as
+                                    light vanishes. This clearly indicates that light carries both energy and momentum
+                                    as it travels.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Light carries both energy and momentum as it travels."
+                                        false-response="Not quite. Light does carry energy and momentum." ansKey="true">
+                                        What does the observation of light emission from moving charges indicate about
+                                        light?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            That light carries both energy and momentum
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            That light has no energy and momentum
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Energy of Photon</strong></summary>
+                                            <p class="mt-2">
+                                                The energy of a photon is directly proportional to its frequency, as
+                                                established by the photoelectric effect and expressed by the equation:
+                                            </p>
+                                            <p>
+                                                \(\qquad E = h f\)
+                                            </p>
+                                            <p>
+                                                Additionally, the energy of a photon can also be expressed in terms of
+                                                its wavelength (\(\lambda\)) as:
+                                            </p>
+                                            <p>
+                                                \(\qquad E = \frac{h c}{\lambda}\)
+                                            </p>
+                                            <p>
+                                                Where:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>\(E\):</strong> Energy of the photon
+                                                </li>
+                                                <li class="list-group-item"><strong>\(h\):</strong> Planck's constant
+                                                    (\(6.626 \times 10^{-34} \, \text{J} \cdot \text{s}\))</li>
+                                                <li class="list-group-item"><strong>\(f\):</strong> Frequency of the
+                                                    light</li>
+                                                <li class="list-group-item"><strong>\(c\):</strong> Speed of light in
+                                                    vacuum (\(3 \times 10^8 \, \text{m/s}\))</li>
+                                                <li class="list-group-item"><strong>\(\lambda\):</strong> Wavelength of
+                                                    the photon</li>
+                                            </ul>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! As the wavelength increases, the photon's energy decreases because they are inversely proportional."
+                                                    false-response="Not quite. The energy of a photon decreases as its wavelength increases."
+                                                    ansKey="false">
+                                                    If the wavelength of a photon increases, does its energy increase as
+                                                    well?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, energy increases with wavelength
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, energy decreases as wavelength increases
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                            <p class="mt-3">
+                                                This equation beautifully combines the particle nature (energy \(E\))
+                                                and the wave
+                                                nature (frequency \(f\)) of light, embodying the dual nature of
+                                                radiation. The
+                                                following diagram illustrates how photons of different frequencies carry
+                                                different
+                                                amounts of energy.
+                                            </p>
+                                            <!-- Diagram of Photons with Different Frequencies -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 500px;">
+                                                        <img src="../00_Assets/img/ModernPhysics/PhotonConcept/Photon_Frequencies.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure 2: Photons with varying
+                                                        frequencies
+                                                        and energies.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Energy is inversely proportional to wavelength."
+                                                    false-response="Not quite. According to given formula, energy decreases as wavelength increases."
+                                                    ansKey="true">
+                                                    What is the relationship between a photon's energy and its
+                                                    wavelength according to \(E = \frac{h c}{\lambda}\)?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Energy is inversely proportional to wavelength
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Energy is directly proportional to wavelength
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        There is no relationship
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Counting the Photons</strong></summary>
+                                            <p class="mt-2">
+                                                To estimate the number of photons emitted by a source (also known as
+                                                photon flux), we can use the
+                                                source's power
+                                                and the wavelength of the emitted light. The energy of each photon is
+                                                given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad E = \frac{h c}{\lambda}\)
+                                            </p>
+                                            <p>
+                                                Where \(\lambda\) is the wavelength of the photon. The number of photons
+                                                emitted per
+                                                second (\(n\)) can be calculated using the source's power (\(P\)) as
+                                                follows:
+                                            </p>
+                                            <p>
+                                                \(\qquad n = \frac{P}{E} = \frac{P \lambda}{h c}\)
+                                            </p>
+                                            <p>
+                                                Where:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>\(n\):</strong> Number of photons
+                                                    emitted per second</li>
+                                                <li class="list-group-item"><strong>\(P\):</strong> Power of the source
+                                                    (in watts)</li>
+                                                <li class="list-group-item"><strong>\(\lambda\):</strong> Wavelength of
+                                                    the emitted light (in meters)</li>
+                                                <li class="list-group-item"><strong>\(h\):</strong> Planck's constant
+                                                </li>
+                                                <li class="list-group-item"><strong>\(c\):</strong> Speed of light in
+                                                    vacuum</li>
+                                            </ul>
+                                            <p class="mt-3">
+                                                This calculation allows us to understand the quantized nature of light
+                                                emission from sources like lasers or LEDs, where discrete photons are
+                                                emitted rather than a continuous wave of energy.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Increasing the frequency increases the energy per photon, so fewer photons are emitted per second at the same power."
+                                                    false-response="Not quite. At constant power, increasing the frequency decreases the number of photons emitted per second."
+                                                    ansKey="true">
+                                                    If a light source maintains constant power but increases the
+                                                    frequency of the emitted photons, what happens to the number of
+                                                    photons emitted per second?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        The number of photons emitted per second decreases
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        The number of photons emitted per second increases
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details class="mt-3">
+                                            <summary><strong>Momentum of Photon</strong></summary>
+                                            <p class="mt-2">
+                                                The momentum of a photon is another crucial aspect. According to de
+                                                Broglie's
+                                                hypothesis, particles like photons have an associated wavelength, given
+                                                by:
+                                            </p>
+                                            <p>
+                                                \(\qquad \lambda = \frac{h}{p}\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad p = \frac{h}{\lambda}\)
+                                            </p>
+                                            <p>
+                                                Where:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>\(\lambda\):</strong> Wavelength of
+                                                    the photon</li>
+                                                <li class="list-group-item"><strong>\(h\):</strong> Planck's constant
+                                                </li>
+                                                <li class="list-group-item"><strong>\(p\):</strong> Momentum of the
+                                                    photon</li>
+                                            </ul>
+                                            <p class="mt-3">
+                                                This equation shows that photons carry momentum inversely proportional
+                                                to their
+                                                wavelength. High-momentum photons have shorter wavelengths and higher
+                                                frequencies,
+                                                such as gamma rays, while low-momentum photons have longer wavelengths,
+                                                like radio
+                                                waves. The dual nature of light is evident here as well—momentum (a
+                                                particle
+                                                property) is linked to wavelength (a wave property).
+                                            </p>
+                                            <p>
+                                                The following diagram illustrates the relationship between a photon's
+                                                momentum and
+                                                its wavelength.
+                                            </p>
+                                            <!-- Diagram of Photon Momentum and Wavelength -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 500px;">
+                                                        <img src="../00_Assets/img/ModernPhysics/PhotonConcept/Photon_Momentum_Wavelength.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing the relationship between photon momentum and wavelength">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure 3: Relationship between
+                                                        photon
+                                                        momentum and wavelength.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p class="mt-3">
+                                                Understanding photons as carriers of energy and momentum is fundamental
+                                                in modern
+                                                physics. It explains not only the photoelectric effect but also
+                                                phenomena like
+                                                Compton scattering and radiation pressure.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Photons are electrically neutral and are not deflected by electric or magnetic fields."
+                                        false-response="Not quite. Photons do not interact with electromagnetic fields because they have no charge."
+                                        ansKey="false">
+                                        Can photons be deflected by electric or magnetic fields due to their energy and
+                                        momentum?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, because they carry energy and momentum
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, because they have no electric charge
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item: Radiation Force and Pressure -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingRadiationForce">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRadiationForce" aria-expanded="false"
+                                aria-controls="collapseRadiationForce">
+                                <strong>Radiation Force and Pressure</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseRadiationForce" class="accordion-collapse collapse"
+                            aria-labelledby="headingRadiationForce" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    When light of intensity \(I\) falls on a surface, it exerts a force due to the
+                                    change in momentum of the photons upon interaction with the surface. The nature of
+                                    this force depends on whether the surface is absorbing or reflecting. </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because photons carry momentum, their interaction with the surface results in a force."
+                                        false-response="Not quite. Photons transfer momentum upon interaction, resulting in a force."
+                                        ansKey="false">
+                                        Does the exchange of energy alone between light and matter cause radiation
+                                        pressure?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, energy exchange is sufficient for radiation pressure
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, it is the transfer of momentum that causes radiation pressure
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+
+
+
+                                <p>
+                                    The detailed
+                                    description is enlisted in following categories:
+                                </p>
+
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Perfectly Absorbing Surface</strong>
+                                            </summary>
+                                            <p>
+                                                Consider a beam of light of intensity \(I\) and cross-sectional area
+                                                \(A\) incident
+                                                normally on a perfectly absorbing surface, as shown:
+                                            </p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/11_Radiation_force.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Force due to radiation.
+                                                    </figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/12_Radiation_force_momentum.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Change in momentum of
+                                                        photon.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+
+                                            <p>Each photon has energy \(E_{\text{photon}} = \dfrac{h c}{\lambda}\) and
+                                                momentum \(p
+                                                = \dfrac{h}{\lambda}\).</p>
+                                            <p>The number of photons (\(N\)) incident on the surface in time \(\Delta
+                                                t\) is:</p>
+                                            <p>\(\qquad N = \dfrac{E}{E_{\text{photon}}} = \dfrac{I A \Delta t}{\dfrac{h
+                                                c}{\lambda}} = \dfrac{I A \Delta t \lambda}{h c}\)</p>
+                                            <p>The total change in momentum (\(\Delta p\)) of all photons is:</p>
+                                            <p>\(\qquad \Delta p = N p = N \dfrac{h}{\lambda} = \dfrac{I A \Delta
+                                                t}{c}\)</p>
+                                            <p>The force exerted on the surface is:</p>
+                                            <p>\(\qquad F = \dfrac{\Delta p}{\Delta t} = \dfrac{I A}{c}\)</p>
+                                            <p>The radiation pressure (\(P_{\text{rad}}\)) is the force per unit area:
+                                            </p>
+                                            <p>\(\qquad P_{\text{rad}} = \dfrac{F}{A} = \dfrac{I}{c}\)</p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Even though photons have zero rest mass, they carry energy and momentum."
+                                                    false-response="Not quite. Photons do carry energy and momentum despite having zero rest mass."
+                                                    ansKey="true">
+                                                    How can photons exert pressure on objects if they have zero rest
+                                                    mass?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because they carry momentum that can be transferred upon
+                                                        interaction
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because they gain mass when they move at the speed of light
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Perfectly Reflecting Surface</strong>
+                                            </summary>
+                                            <p>For a perfectly reflecting surface, photons are reflected back, reversing
+                                                their
+                                                momentum. The change in momentum for each photon is shown in the
+                                                diagram:</p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/12_Radiation_force_in_reflection.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Change in momentum of
+                                                        photon.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>\(\qquad \Delta p_{\text{photon}} = -\dfrac{h}{\lambda} -
+                                                \dfrac{h}{\lambda} =
+                                                -\dfrac{2h}{\lambda}\)</p>
+                                            <p>The total change in momentum is:</p>
+                                            <p>\(\qquad \Delta p = N \Delta p_{\text{photon}} = -\dfrac{2 I A \Delta
+                                                t}{c}\)</p>
+                                            <p>The force exerted on the surface is:</p>
+                                            <p>\(\qquad F = \dfrac{\Delta p}{\Delta t} = \dfrac{2 I A}{c}\)</p>
+                                            <p>The radiation pressure is:</p>
+                                            <p>\(\qquad P_{\text{rad}} = \dfrac{F}{A} = \dfrac{2 I}{c}\)</p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Reflecting surfaces reverse the momentum of photons, doubling the change in momentum compared to absorbing surfaces."
+                                                    false-response="Not quite. Reflecting surfaces cause a greater change in momentum because photons are reflected back."
+                                                    ansKey="true">
+                                                    Why does a perfectly reflecting surface experience twice the
+                                                    radiation pressure of a perfectly absorbing surface?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because photons reverse direction upon reflection, doubling the
+                                                        momentum change
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because reflecting surfaces absorb more energy than absorbing
+                                                        surfaces
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>General Case for Partially Reflecting Surface</strong>
+                                            </summary>
+                                            <p>For a surface with reflection coefficient \(r\) and absorption
+                                                coefficient \(a\)
+                                                (where \(a + r = 1\)), the total force is the sum of the forces due to
+                                                absorbed and
+                                                reflected photons:</p>
+                                            <p>\(\qquad F = F_{\text{absorbed}} + F_{\text{reflected}} = a \left(
+                                                \dfrac{I A}{c}
+                                                \right) + r \left( \dfrac{2 I A}{c} \right)\)</p>
+                                            <p>\(\Rightarrow\quad F = \dfrac{I A}{c} (a + 2r)\)</p>
+                                            <p>\(\Rightarrow\quad F =\dfrac{I A}{c} (1 + r)\)<equationDetail>[As \(a + r
+                                                    = 1\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>The radiation pressure is:</p>
+                                            <p>\(\qquad P_{\text{rad}} = \dfrac{F}{A} = \dfrac{I}{c} (1 + r)\)</p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Because some photons are absorbed while others are reflected, each contributing to momentum change."
+                                                    false-response="Not quite. Both absorbed and reflected photons affect the total force."
+                                                    ansKey="true">
+                                                    In a partially reflecting surface, why is the total radiation force
+                                                    a combination of forces due to both absorbed and reflected photons?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because some photons are absorbed while others are reflected,
+                                                        each contributing to momentum change
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because partial reflection amplifies the momentum change beyond
+                                                        that of full reflection
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Radiation at an Angle of Incidence</strong>
+                                            </summary>
+                                            <p>When light is incident at an angle \(\theta\) to the normal of the
+                                                surface, the
+                                                effective area exposed is \(A \cos \theta\), and the component of
+                                                momentum change
+                                                perpendicular to the surface must be considered. This is clearly shown
+                                                in the
+                                                diagram below:</p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/13_Radiation_at_some_angle.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Radiation incident at
+                                                        some angle.
+                                                    </figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/14_Radiation_at_some_angle_area_COMPONENT.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Component of area to find
+                                                        power.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>So, the number of photons incident per unit time \(n\) is therefore:</p>
+                                            <p>\(\qquad n=\dfrac{IA \cos\theta}{hc/\lambda}\)</p>
+                                            <p>And the total incident momentum in radiation \(\vec{p}_\text{incident}\)
+                                                per unit
+                                                time \(\Delta t\) is:</p>
+                                            <p>\(\qquad \dfrac{\vec{p}_\text{incident}}{\Delta t}=\frac{IA \cos\theta
+                                                \lambda}{hc}\times\frac{h}{\lambda}\)</p>
+                                            <p>\(\Rightarrow\quad \dfrac{\vec{p}_\text{incident}}{\Delta t}=\frac{IA
+                                                \cos\theta
+                                                }{c}\)</p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Because the effective area decreases, leading to fewer photons interacting per unit time."
+                                                    false-response="Not quite. The effective area decreases, reducing the number of photons interacting."
+                                                    ansKey="true">
+                                                    Why does the number of photons incident per second on a surface
+                                                    decrease when the light strikes at an angle θ instead of
+                                                    perpendicularly?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because the effective area exposed to the light is reduced by
+                                                        cos θ
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because photons slow down when hitting the surface at an angle
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p>For a perfectly absorbing surface, this incident momentum is entirely
+                                                absorbed.
+                                                Hence, the resultant force acts on the surface in the direction of
+                                                incident light
+                                                propagation. The diagram shows this process:</p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/15_Radiation_at_some_angle_force_direction.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Direction of force due to
+                                                        inclined
+                                                        radiation.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>Hence the net force acting on the surface is:</p>
+                                            <p>\(\Rightarrow\quad F_\text{net}=\dfrac{IA \cos\theta }{c}\)</p>
+                                            <p>The perpendicular component of the force is:</p>
+                                            <p>\(\qquad F_{\perp} = \dfrac{I A}{c} \cos^2 \theta\)</p>
+                                            <p>The radiation pressure in this case is:</p>
+                                            <p>\(\qquad P_{\text{rad}} = \dfrac{F_{\perp}}{A} = \dfrac{I}{c} \cos^2
+                                                \theta\)
+                                                (absorbing surface)</p>
+                                            <p>For a perfectly reflecting surface, the change in momentum of each photon
+                                                is shown in
+                                                the following diagram:</p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/16_change_in_momentum_inclined_radiation.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing photons with different frequencies">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Change in momentum in
+                                                        reflection of
+                                                        inclined radiation.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>The change in momentum for one photon during the process of reflection
+                                                is:</p>
+                                            <p>\(\qquad \Delta\vec{p}_\text{1 photon} = 2\dfrac{h}{\lambda} \cos
+                                                \theta\) in the
+                                                direction perpendicular to the surface</p>
+                                            <p>
+
+                                                Thus, the net force applied by radiation also turns out to be
+                                                perpendicular to the
+                                                surface and is given as:</p>
+                                            <p>\(\qquad \vec{F}_\text{net}=\dfrac{IA \cos\theta
+                                                \lambda}{hc}\times\frac{2h\cos\theta}{\lambda}\)</p>
+                                            <p>\(\Rightarrow\quad \vec{F}_\text{net}=\dfrac{2IA \cos^2\theta}{c}\)</p>
+                                            <p>The radiation pressure in this case is:</p>
+                                            <p>\(\qquad P_{\text{rad}} = \dfrac{F_{\perp}}{A} = \dfrac{2 I}{c} \cos^2
+                                                \theta\)
+                                                (reflecting surface)</p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! The radiation pressure decreases because the effective area and momentum transfer decrease with the cosine squared of the angle."
+                                                    false-response="Not quite. The radiation pressure actually decreases as the angle increases."
+                                                    ansKey="false">
+                                                    When light is incident on a surface at an increasing angle away from
+                                                    the normal (i.e., θ increases), does the radiation pressure on the
+                                                    surface increase?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, radiation pressure increases with larger angles
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, radiation pressure decreases with larger angles
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Because both the effective area and momentum transfer components involve cos θ, leading to cos² θ."
+                                                    false-response="Not quite. The cos² θ term arises from both area and momentum components."
+                                                    ansKey="true">
+                                                    Why does the radiation pressure involve a cos² θ term when light is
+                                                    incident at an angle θ?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because both the effective area and momentum transfer depend on
+                                                        cos θ, resulting in cos² θ
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because the intensity of light increases with cos² θ
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p class="mt-2">
+                                    Radiation pressure has significant implications in both natural phenomena and
+                                    technological applications. One notable example is the formation of comet tails. As
+                                    a comet approaches the Sun, solar radiation exerts pressure on the dust and gas
+                                    particles released from the comet, pushing them away and forming the characteristic
+                                    tail that points away from the Sun.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Radiation pressure from the Sun pushes dust and gas away, forming a tail pointing away from the Sun."
+                                        false-response="Not quite. It's the radiation pressure, not gravitational pull, that forms the tail pointing away."
+                                        ansKey="true">
+                                        How does radiation pressure explain why a comet's tail always points away from
+                                        the Sun?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because solar radiation pressure pushes particles away from the Sun
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because the Sun's gravity pulls the tail in the opposite direction
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-2">
+                                    Another fascinating application is the concept of solar sails for spacecraft
+                                    propulsion. Solar sails are large, reflective sails attached to spacecraft that
+                                    capture the momentum of photons from the Sun. This method allows spacecraft to
+                                    propel through space without the need for traditional fuel, utilizing the continuous
+                                    force exerted by solar radiation pressure.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because the radiation pressure depends on the angle due to the cosine squared term in the formula."
+                                        false-response="Not quite. Radiation pressure does depend on the angle of incidence."
+                                        ansKey="true">
+                                        Does the angle at which light strikes a surface affect the radiation pressure
+                                        exerted on that surface?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, the angle affects radiation pressure
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, radiation pressure is independent of angle
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because reflecting photons results in greater momentum transfer to the sail."
+                                        false-response="Not quite. Reflecting surfaces cause a larger change in momentum than absorbing ones."
+                                        ansKey="true">
+                                        Why does a reflecting solar sail provide more propulsion than an absorbing one
+                                        when used in space travel?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because reflecting photons results in greater momentum transfer to the sail
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because reflecting surfaces capture more photons than absorbing ones
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../00_Assets/lib/progress.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

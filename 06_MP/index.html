@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>doPhysics | WELCOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto+Slab:wght@700&family=Lora&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+    background: #00FFFF;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    background: #7FFFD4;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #32de84;
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+    z-index: 2;
+}
+
+.circle-top-left {
+    top: calc(-5px - 10%);
+    left: calc(-5px - 10%);
+}
+
+.circle-bottom-right {
+    bottom: calc(-5px - 10%);
+    right: calc(-5px - 10%);
+    animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes move-down1 {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.display-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideUpFadeIn 1s forwards;
+    animation-delay: 0s;
+    z-index: 8;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .main-container {
+        width: 70vw;
+        padding: 40px;
+    }
+
+    .display-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.logo {
+    text-decoration: underline;
+    font-size: 2em;
+    color: #000;
+}
+
+.do {
+    font-family: 'Satisfy', cursive;
+}
+
+.logo .physics {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+}
+
+.tag {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.input[type="text"] {
+    display: block;
+    color: #222;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    outline: none;
+    text-align: center;
+    width: 200px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.input[type="text"]:hover {
+    width: 240px;
+}
+
+.input[type="text"]:focus {
+    width: 280px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    margin: 15px 0;
+    width: 80%;
+}
+
+.uiverse {
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.uiverse:hover {
+    background: #40E0D0;
+    color: #ffffff;
+}
+
+.tooltip {
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #ffffff;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.uiverse:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .uiverse {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .tooltip {
+        font-size: 12px;
+    }
+
+    .main-container {
+        width: 90vw;
+    }
+
+    .circle {
+        display: none; /* Hide the circles on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .uiverse {
+        width: 130px;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .input[type="text"] {
+        width: 180px;
+    }
+
+    .tag {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    .main-container {
+        padding: 15px;
+    }
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="circle circle-top-left"></div>
+        <div class="circle circle-bottom-right"></div>
+        <div class="row display-content ">
+            <div class="row">
+                <div class="logo text-center">
+                    <span class="do">do</span><span class="physics">Physics</span>
+                </div>
+                <div class="tag">
+                    ...because to learn physics you must <span class="do">do</span>Physics!
+                </div>
+                <input type="text" name="text" placeholder="search in doPhysics" class="input">
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li style="animation: slideUpFadeIn 1s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> The beginning of Modern Physics</span>
+                            <a href="01_PEE.html"><span><span class="do">do</span> Photoelectric effect</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 1.5s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> Complete description of the Photon</span>
+                            <a href="02_PRA.html"><span><span class="do">do</span> Particle nature of radiation</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> The wave function behavior</span>
+                            <a href="03_WPA.html"><span><span class="do">do</span> Wave nature of particles</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> Mostly about Hydrogen and alike ions</span>
+                            <a href="04_HAT.html"><span><span class="do">do</span> Atomic structure</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> Understanding the nucleus</span>
+                            <a href="05_NST.html"><span><span class="do">do</span> Nuclear structure</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> Stability and unstability of nucleaus</span>
+                            <a href="06_NRE.html"><span><span class="do">do</span> Nuclear reactions</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> Materials behind all electronics</span>
+                            <a href="07_SMC.html"><span><span class="do">do</span> Semi-conductors</a>
+
+                            </span>
+                        </div>
+                    </li>
+                    <li style="animation: slideUpFadeIn 2s forwards;">
+                        <div class="uiverse">
+                            <span class="tooltip"> The building blocks of electronics</span>
+                            <a href="08_DAP.html"><span><span class="do">do</span> Diodes and applications</a>
+
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

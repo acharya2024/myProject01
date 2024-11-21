@@ -1,0 +1,1409 @@
+{
+    "questions": [
+      {
+        "id": "TF.PEE.1.1.Q1",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "truefalse",
+        "exerciseName": "True or False",
+        "questionText": "The photoelectric effect provided evidence for the particle nature of light.",
+        "solution": "True. The photoelectric effect demonstrated that light can behave as particles called photons, supporting the quantum theory.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider how the photoelectric effect challenges the classical wave theory of light.",
+        "answer": "True",
+        "options": [
+          "True",
+          "False"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Historical Context and Significance",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Particle Nature of Light",
+            "Quantum Mechanics",
+            "Historical Significance"
+          ]
+        }
+      },
+      {
+        "id": "TF.PEE.1.2.Q2",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "truefalse",
+        "exerciseName": "True or False",
+        "questionText": "Electrons are emitted from a metal surface only if the incident light has a frequency above a certain threshold value.",
+        "solution": "True. The photoelectric effect occurs only when the frequency of the incident light exceeds the metal's threshold frequency.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Think about the role of threshold frequency in electron emission.",
+        "answer": "True",
+        "options": [
+          "True",
+          "False"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Fundamental Principles of Photoelectric Effect",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Threshold Frequency",
+            "Electron Emission",
+            "Photoelectric Effect"
+          ]
+        }
+      },
+      {
+        "id": "TF.PEE.1.3.Q3",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "truefalse",
+        "exerciseName": "True or False",
+        "questionText": "The work function is the minimum energy required to remove an electron from the surface of a metal.",
+        "solution": "True. The work function represents the least amount of energy needed to liberate an electron from a metal surface.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider what must be overcome to emit an electron from a metal.",
+        "answer": "True",
+        "options": [
+          "True",
+          "False"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Work Function and Electronvolt (eV)",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Work Function",
+            "Electron Emission",
+            "Metal Surface"
+          ]
+        }
+      },
+      {
+        "id": "TF.PEE.1.4.Q4",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "truefalse",
+        "exerciseName": "True or False",
+        "questionText": "Thermionic emission is the emission of electrons from a metal surface due to heating.",
+        "solution": "True. Thermionic emission occurs when electrons gain sufficient thermal energy to escape the metal surface.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Think about how heat can provide energy to electrons in a metal.",
+        "answer": "True",
+        "options": [
+          "True",
+          "False"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Electron Emission Mechanisms",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.7,
+            "concept": 0.2,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Thermionic Emission",
+            "Electron Emission",
+            "Thermal Energy"
+          ]
+        }
+      },
+      {
+        "id": "TF.PEE.1.5.Q5",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "truefalse",
+        "exerciseName": "True or False",
+        "questionText": "A vacuum is necessary in a photoelectric effect experiment to prevent electrons from colliding with air molecules.",
+        "solution": "True. A vacuum reduces collisions with air molecules, allowing photoelectrons to reach the collector unimpeded.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider why electrons need a clear path to the collector.",
+        "answer": "True",
+        "options": [
+          "True",
+          "False"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Initial Setup and Need for Vacuum",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Vacuum",
+            "Experimental Setup",
+            "Electron Collision"
+          ]
+        }
+      },
+      {
+        "id": "OW.PEE.1.1.Q1",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "oneword",
+        "exerciseName": "One Word",
+        "questionText": "What effect demonstrates the particle nature of light and involves the emission of electrons from a metal surface?",
+        "solution": "Photoelectric effect.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It's a fundamental experiment in quantum mechanics involving photons.",
+        "answer": [
+          "Photoelectric effect",
+          "Photoelectric",
+          "Photoelectric emission",
+          "PEE"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Historical Context and Significance",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Quantum Mechanics",
+            "Particle Nature",
+            "Electron Emission"
+          ]
+        }
+      },
+      {
+        "id": "OW.PEE.1.2.Q2",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "oneword",
+        "exerciseName": "One Word",
+        "questionText": "What is the minimum energy required to remove an electron from the surface of a metal called?",
+        "solution": "Work function.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It's a term that represents the energy barrier for electron emission.",
+        "answer": [
+          "Work function",
+          "Workfunction"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Work Function and Electronvolt (eV)",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Work Function",
+            "Electron Emission",
+            "Energy Barrier"
+          ]
+        }
+      },
+      {
+        "id": "OW.PEE.1.3.Q3",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "oneword",
+        "exerciseName": "One Word",
+        "questionText": "Which unit of energy is commonly used in atomic and nuclear physics, equivalent to the energy gained by an electron accelerated through one volt?",
+        "solution": "Electronvolt.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It's abbreviated as eV.",
+        "answer": [
+          "Electronvolt",
+          "eV"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Work Function and Electronvolt (eV)",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.7,
+            "concept": 0.2,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Electronvolt",
+            "Energy Units",
+            "Atomic Physics"
+          ]
+        }
+      },
+      {
+        "id": "OW.PEE.1.4.Q4",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "oneword",
+        "exerciseName": "One Word",
+        "questionText": "What term describes the emission of electrons from a metal surface when it is exposed to light?",
+        "solution": "Photoemission.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It's another term for the photoelectric effect focusing on electron emission.",
+        "answer": [
+          "Photoemission",
+          "Photoelectric emission"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Electron Emission Mechanisms",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Photoemission",
+            "Electron Emission",
+            "Light Interaction"
+          ]
+        }
+      },
+      {
+        "id": "OW.PEE.1.5.Q5",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "oneword",
+        "exerciseName": "One Word",
+        "questionText": "Who is the scientist credited with explaining the photoelectric effect by introducing the concept of photons?",
+        "solution": "Einstein.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "He is also known for the theory of relativity.",
+        "answer": [
+          "Einstein",
+          "Albert Einstein"
+        ],
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Key Scientist Contributions",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.7,
+            "concept": 0.2,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Einstein",
+            "Photons",
+            "Quantum Theory"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.1.Q1",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "Which phenomenon demonstrates that light has particle-like properties?",
+        "solution": "The photoelectric effect demonstrates the particle-like properties of light.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It involves the emission of electrons from a metal surface when exposed to light.",
+        "options": [
+          "Interference",
+          "Diffraction",
+          "Photoelectric effect",
+          "Polarization"
+        ],
+        "answer": "C",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Historical Context and Significance",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Particle Nature",
+            "Quantum Mechanics",
+            "Electron Emission"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.2.Q2",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In the photoelectric effect, what determines the maximum kinetic energy of the emitted electrons?",
+        "solution": "The frequency of the incident light determines the maximum kinetic energy of the emitted electrons.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the relationship between photon energy and electron emission.",
+        "options": [
+          "Intensity of light",
+          "Frequency of light",
+          "Duration of exposure",
+          "Angle of incidence"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Fundamental Principles of Photoelectric Effect",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Kinetic Energy",
+            "Frequency Dependence",
+            "Photon Energy"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.3.Q3",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "What is the unit of work function in the context of the photoelectric effect?",
+        "solution": "The work function is measured in electronvolts (eV).",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It's a unit of energy commonly used in atomic physics.",
+        "options": [
+          "Joules",
+          "Electronvolts",
+          "Newtons",
+          "Watts"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Work Function and Electronvolt (eV)",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Work Function",
+            "Electronvolt",
+            "Energy Units"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.4.Q4",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "Which of the following is NOT a mechanism for electron emission from a metal surface?",
+        "solution": "Magnetic emission is not a mechanism for electron emission from a metal surface.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider known methods like thermionic and photoelectric emission.",
+        "options": [
+          "Thermionic emission",
+          "Photoelectric emission",
+          "Field emission",
+          "Magnetic emission"
+        ],
+        "answer": "D",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Electron Emission Mechanisms",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Electron Emission",
+            "Emission Mechanisms",
+            "Metal Surface"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.5.Q5",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In a photoelectric effect experiment, why is the emitter plate connected to the negative terminal of the battery?",
+        "solution": "Connecting the emitter to the negative terminal repels electrons towards the collector, enhancing photocurrent.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the effect of electric fields on electron movement.",
+        "options": [
+          "To repel electrons back into the emitter",
+          "To attract electrons towards the collector",
+          "To neutralize the emitter",
+          "To prevent overheating of the emitter"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Emitter and Collector Plates Configuration",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Experimental Setup",
+            "Electron Movement",
+            "Electric Field"
+          ]
+        }
+      },
+      
+    {
+        "id": "SO.PEE.2.1.Q6",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In a photoelectric effect experiment, why is it necessary to maintain a vacuum in the apparatus?",
+        "solution": "A vacuum is maintained to prevent photoelectrons from colliding with air molecules, which would scatter them and reduce the photocurrent.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider what might interfere with the movement of emitted electrons.",
+        "options": [
+          "To prevent oxidation of the metal surface",
+          "To avoid scattering of photoelectrons by air molecules",
+          "To eliminate thermal conduction",
+          "To reduce the energy required to emit electrons"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Initial Setup and Need for Vacuum",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Vacuum",
+            "Photoelectrons",
+            "Scattering"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.2.2.Q7",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In the experimental setup of the photoelectric effect, what is the main purpose of the collector plate?",
+        "solution": "The collector plate collects the emitted electrons from the emitter plate, allowing current to flow and enabling measurement of photocurrent.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Think about which component receives the emitted electrons.",
+        "options": [
+          "To emit photoelectrons when illuminated",
+          "To collect emitted electrons and complete the circuit",
+          "To provide a source of photons",
+          "To adjust the frequency of incident light"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Emitter and Collector Plates Configuration",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Collector Plate",
+            "Experimental Setup",
+            "Photocurrent"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.2.3.Q8",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In a photoelectric effect experiment, why might the emitter plate become positively charged over time, and how is this issue addressed?",
+        "solution": "As electrons are emitted from the emitter plate, it loses electrons and becomes positively charged, which can hinder further emission. This issue is addressed by grounding the emitter plate to neutralize the charge.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider what happens to the emitter when electrons are emitted.",
+        "options": [
+          "Due to loss of electrons; by grounding the emitter plate",
+          "Due to gain of electrons; by applying a negative voltage",
+          "Due to oxidation; by using a protective coating",
+          "Due to thermal emission; by cooling the emitter plate"
+        ],
+        "answer": "A",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Addressing Positive Charging of Emitter",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Positive Charging",
+            "Emitter Plate",
+            "Grounding"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.2.4.Q9",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 3,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In the photoelectric effect apparatus, what is the role of the ammeter connected in the circuit?",
+        "solution": "The ammeter measures the photocurrent, which is the current due to the flow of photoelectrons between the emitter and collector plates.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Think about which instrument measures current in a circuit.",
+        "options": [
+          "To measure the voltage across the plates",
+          "To measure the photocurrent produced",
+          "To provide resistance in the circuit",
+          "To adjust the frequency of incident light"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Integration of Conducting Wire and Ammeter",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 3
+          },
+          "tags": [
+            "Ammeter",
+            "Photocurrent",
+            "Circuit Measurement"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.2.5.Q10",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 2,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "What term is used to describe the electrons emitted from a metal surface when it is exposed to light?",
+        "solution": "Electrons emitted due to the photoelectric effect are called photoelectrons.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "They are electrons emitted due to photons.",
+        "options": [
+          "Valence electrons",
+          "Conduction electrons",
+          "Photoelectrons",
+          "Thermions"
+        ],
+        "answer": "C",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Definitions: Photoelectrons and Photocurrent",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.7,
+            "concept": 0.2,
+            "calculation": 0.1,
+            "difficultyIn10": 2
+          },
+          "tags": [
+            "Photoelectrons",
+            "Electron Emission",
+            "Definitions"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.3.1.Q11",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In the photoelectric effect, how does increasing the intensity of incident light affect the photocurrent?",
+        "solution": "Increasing the intensity of light increases the number of photons striking the surface, resulting in more electrons being emitted and hence increasing the photocurrent.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the relationship between light intensity and number of emitted electrons.",
+        "options": [
+          "Photocurrent increases because more electrons are emitted",
+          "Photocurrent decreases because electrons gain less energy",
+          "Photocurrent remains the same",
+          "Photocurrent stops due to saturation"
+        ],
+        "answer": "A",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Observations",
+          "concept": "Effect of Light Intensity on Photocurrent",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Intensity",
+            "Photocurrent",
+            "Electron Emission"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.3.4.Q12",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "What happens when the frequency of incident light is below the threshold frequency in a photoelectric effect experiment?",
+        "solution": "If the frequency is below the threshold frequency, no electrons are emitted, regardless of the light's intensity.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Threshold frequency is the minimum frequency required to emit electrons.",
+        "options": [
+          "Electrons are emitted with lower kinetic energy",
+          "No electrons are emitted regardless of intensity",
+          "Photocurrent increases linearly with intensity",
+          "Emitted electrons have higher kinetic energy"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Observations",
+          "concept": "Frequency Variation and Threshold Frequency",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Frequency",
+            "Threshold Frequency",
+            "Electron Emission"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.3.5.Q13",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "What does the stopping potential in a photoelectric experiment measure?",
+        "solution": "The stopping potential is the voltage required to stop the most energetic emitted electrons, thus measuring their maximum kinetic energy.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "It is related to the energy needed to prevent electrons from reaching the collector.",
+        "options": [
+          "The maximum kinetic energy of emitted electrons",
+          "The minimum frequency required to emit electrons",
+          "The intensity of the incident light",
+          "The work function of the collector plate"
+        ],
+        "answer": "A",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Observations",
+          "concept": "Stopping Potential Characteristics",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Stopping Potential",
+            "Kinetic Energy",
+            "Photoelectric Experiment"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.3.7.Q14",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "What is observed about the time lag between the incidence of light and emission of electrons in the photoelectric effect?",
+        "solution": "The emission of electrons occurs without any observable time delay; it is instantaneous upon light incidence.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider whether electrons need time to absorb energy before being emitted.",
+        "options": [
+          "There is a significant time delay",
+          "There is no observable time delay; emission is instantaneous",
+          "Time delay increases with light intensity",
+          "Time delay decreases with increasing frequency"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Observations",
+          "concept": "Time Duration for Electron Emission",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Time Delay",
+            "Electron Emission",
+            "Photoelectric Effect"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.4.1.Q15",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 6,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 3,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In the photoelectric effect, which quantity remains unaffected when the intensity of incident light is increased while keeping frequency constant?",
+        "solution": "The stopping potential (and hence the maximum kinetic energy of electrons) remains unaffected when the intensity is increased, provided the frequency remains constant.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Think about which quantities depend on light frequency rather than intensity.",
+        "options": [
+          "Photocurrent",
+          "Stopping potential",
+          "Number of emitted electrons",
+          "Work function"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Inconsistencies",
+          "concept": "Intensity vs. K_max Independence",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.4,
+            "concept": 0.5,
+            "calculation": 0.1,
+            "difficultyIn10": 6
+          },
+          "tags": [
+            "Intensity",
+            "Kinetic Energy",
+            "Photoelectric Effect"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.4.2.Q16",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "Which of the following best explains why a threshold frequency exists in the photoelectric effect?",
+        "solution": "Each metal has a characteristic work function, and the incident photon must have at least this energy (corresponding to threshold frequency) to emit electrons.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the relationship between photon energy and work function.",
+        "options": [
+          "Electrons require a minimum frequency to be attracted to the collector",
+          "Each metal has a characteristic work function that must be overcome",
+          "Light below threshold frequency cannot penetrate the metal surface",
+          "The collector plate needs to reach a certain potential"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Inconsistencies",
+          "concept": "Threshold Frequency Requirement",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Threshold Frequency",
+            "Work Function",
+            "Metal Characteristics"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.5.1.Q17",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "Which fundamental concept introduced by Planck was crucial in Einstein's explanation of the photoelectric effect?",
+        "solution": "Planck's concept of quantization of energy in discrete packets (photons) was crucial in explaining the photoelectric effect.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the idea that energy is absorbed or emitted in discrete amounts.",
+        "options": [
+          "Wave-particle duality",
+          "Quantization of energy in discrete packets (photons)",
+          "Uncertainty principle",
+          "Relativity theory"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Einstein's Explanation",
+          "concept": "Planck's Hypothesis and Photon Concept",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.6,
+            "concept": 0.3,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Planck's Hypothesis",
+            "Photons",
+            "Quantization"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.2.Q1",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "If the work function of a metal is \\( 2 \\text{ eV} \\), what is the threshold frequency for the photoelectric effect to occur on this metal surface?\n(Planck's constant \\( h = 6.626 \\times 10^{-34} \\text{ J·s} \\), \\( 1 \\text{ eV} = 1.602 \\times 10^{-19} \\text{ J} \\))",
+        "solution": "First, convert the work function from eV to joules:\n\n\\( \\phi = 2 \\text{ eV} = 2 \\times 1.602 \\times 10^{-19} \\text{ J} = 3.204 \\times 10^{-19} \\text{ J} \\)\n\nThreshold frequency \\( f_0 \\) is given by \\( \\phi = h f_0 \\)\n\nSo,\n\n\\( f_0 = \\frac{\\phi}{h} = \\frac{3.204 \\times 10^{-19} \\text{ J}}{6.626 \\times 10^{-34} \\text{ J·s}} \\approx 4.83 \\times 10^{14} \\text{ Hz} \\)",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Use the relation between work function, Planck's constant, and threshold frequency: \\( \\phi = h f_0 \\).",
+        "options": [
+          "A) \\( 3.00 \\times 10^{14} \\text{ Hz} \\)",
+          "B) \\( 4.83 \\times 10^{14} \\text{ Hz} \\)",
+          "C) \\( 6.21 \\times 10^{14} \\text{ Hz} \\)",
+          "D) \\( 7.55 \\times 10^{14} \\text{ Hz} \\)"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Fundamental Principles of Photoelectric Effect",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.3,
+            "concept": 0.3,
+            "calculation": 0.4,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Threshold Frequency",
+            "Work Function",
+            "Calculations"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.3.Q2",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 6,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "A photon of wavelength \\( 400 \\text{ nm} \\) strikes a metal surface with a work function of \\( 1.5 \\text{ eV} \\).\nWhat is the maximum kinetic energy of the emitted electrons?\n(Planck's constant \\( h = 6.626 \\times 10^{-34} \\text{ J·s} \\), speed of light \\( c = 3 \\times 10^{8} \\text{ m/s} \\), \\( 1 \\text{ eV} = 1.602 \\times 10^{-19} \\text{ J} \\))",
+        "solution": "First, find the energy of the photon:\n\n\\( E = \\frac{h c}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\text{ J·s} \\times 3 \\times 10^{8} \\text{ m/s}}{400 \\times 10^{-9} \\text{ m}} = 4.97 \\times 10^{-19} \\text{ J} \\)\n\nConvert the energy to eV:\n\n\\( E = \\frac{4.97 \\times 10^{-19} \\text{ J}}{1.602 \\times 10^{-19} \\text{ J/eV}} = 3.10 \\text{ eV} \\)\n\nMaximum kinetic energy:\n\n\\( K_{\\text{max}} = E - \\phi = 3.10 \\text{ eV} - 1.5 \\text{ eV} = 1.6 \\text{ eV} \\)",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Use the photoelectric equation: \\( K_{\\text{max}} = h f - \\phi \\). Convert wavelength to frequency or directly calculate photon energy.",
+        "options": [
+          "A) \\( 1.0 \\text{ eV} \\)",
+          "B) \\( 1.6 \\text{ eV} \\)",
+          "C) \\( 2.5 \\text{ eV} \\)",
+          "D) \\( 3.1 \\text{ eV} \\)"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Work Function and Electronvolt (eV)",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.2,
+            "concept": 0.3,
+            "calculation": 0.5,
+            "difficultyIn10": 6
+          },
+          "tags": [
+            "Photon Energy",
+            "Kinetic Energy",
+            "Calculations"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.1.4.Q3",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 5,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 2,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "Which of the following metals has the highest work function, given their threshold frequencies?\n\nMetal A: \\( 5 \\times 10^{14} \\text{ Hz} \\)\n\nMetal B: \\( 8 \\times 10^{14} \\text{ Hz} \\)\n\nMetal C: \\( 6 \\times 10^{14} \\text{ Hz} \\)\n\nMetal D: \\( 7 \\times 10^{14} \\text{ Hz} \\)\n\n(Planck's constant \\( h = 6.626 \\times 10^{-34} \\text{ J·s} \\), \\( 1 \\text{ eV} = 1.602 \\times 10^{-19} \\text{ J} \\))",
+        "solution": "Calculate the work function \\( \\phi = h f_0 \\) for each metal:\n\nMetal A:\n\n\\( \\phi_A = 6.626 \\times 10^{-34} \\text{ J·s} \\times 5 \\times 10^{14} \\text{ Hz} = 3.313 \\times 10^{-19} \\text{ J} \\)\n\nMetal B:\n\n\\( \\phi_B = 6.626 \\times 10^{-34} \\text{ J·s} \\times 8 \\times 10^{14} \\text{ Hz} = 5.301 \\times 10^{-19} \\text{ J} \\)\n\nMetal C:\n\n\\( \\phi_C = 6.626 \\times 10^{-34} \\text{ J·s} \\times 6 \\times 10^{14} \\text{ Hz} = 3.976 \\times 10^{-19} \\text{ J} \\)\n\nMetal D:\n\n\\( \\phi_D = 6.626 \\times 10^{-34} \\text{ J·s} \\times 7 \\times 10^{14} \\text{ Hz} = 4.638 \\times 10^{-19} \\text{ J} \\)\n\nMetal B has the highest work function.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Use \\( \\phi = h f_0 \\) to calculate the work function for each metal.",
+        "options": [
+          "A) Metal A",
+          "B) Metal B",
+          "C) Metal C",
+          "D) Metal D"
+        ],
+        "answer": "B",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Introduction",
+          "concept": "Electron Emission Mechanisms",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.3,
+            "concept": 0.3,
+            "calculation": 0.4,
+            "difficultyIn10": 5
+          },
+          "tags": [
+            "Work Function",
+            "Threshold Frequency",
+            "Calculations"
+          ]
+        }
+      },
+      {
+        "id": "SO.PEE.2.1.Q4",
+        "statistics": {
+          "attempts": 0,
+          "hintsAccessed": 0,
+          "solved": 0,
+          "successRate": 0,
+          "idealAverageTime": 4,
+          "averageTimeTaken": 0,
+          "medianTime": 0,
+          "timeStdDev": 1.5,
+          "firstAttemptSuccessRate": 0,
+          "commonIncorrectAnswers": []
+        },
+        "type": "singleoption",
+        "exerciseName": "Single Option",
+        "questionText": "In a photoelectric experiment, why is a vacuum necessary in the experimental setup?",
+        "solution": "A vacuum prevents collisions between photoelectrons and air molecules, allowing electrons to reach the collector without hindrance.",
+        "solutionGPTRechecked": true,
+        "solutionManualRechecked": false,
+        "hint": "Consider the effect of air molecules on the movement of emitted electrons.",
+        "options": [
+          "A) To cool down the equipment",
+          "B) To prevent oxidation of the metal surface",
+          "C) To avoid collision of electrons with air molecules",
+          "D) To enhance the intensity of incident light"
+        ],
+        "answer": "C",
+        "conceptStatistics": {
+          "chapter": "Photoelectric Effect",
+          "section": "Experimental Setup",
+          "concept": "Initial Setup and Need for Vacuum",
+          "source": "Custom",
+          "resolution": {
+            "information": 0.5,
+            "concept": 0.4,
+            "calculation": 0.1,
+            "difficultyIn10": 4
+          },
+          "tags": [
+            "Experimental Setup",
+            "Vacuum Requirement",
+            "Electron Movement"
+          ]
+        }
+      }
+    ]
+  }
+  

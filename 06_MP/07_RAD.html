@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | RAD </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Radioactivity</h1>
+                        <p class="lead" id="tagline">Understanding Nuclear Decay Processes</p>
+                        <hr class="my-4">
+                    </div>
+                    <div class="accordion" id="content">
+
+                        <!-- Introduction -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingIntroduction">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseIntroduction" aria-expanded="true"
+                                    aria-controls="collapseIntroduction"><strong>
+                                        Introduction
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseIntroduction" class="accordion-collapse collapse"
+                                aria-labelledby="headingIntroduction" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        Radioactivity is a fundamental phenomenon in nuclear physics, referring to the
+                                        spontaneous emission of particles or electromagnetic radiation from the unstable
+                                        nuclei of certain atoms as they transition toward a more stable state. This
+                                        process of emission of particles by a nuclei sample in the process of achieving
+                                        stability is called radioactive decay and the sample is called radioactive
+                                        sample.
+                                    </p>
+                                    <p>
+                                        Radioactive decay is inherently random at the level of individual atoms. It is
+                                        impossible to predict exactly when a specific nucleus will decay. This
+                                        randomness is due to quantum mechanical principles governing subatomic
+                                        particles. However, when dealing with a large ensemble of nuclei, statistical
+                                        methods allow us to predict the behavior of the sample as a whole. The decay
+                                        processes follow well-defined probability distributions, enabling scientists to
+                                        determine decay rates and half-lives.
+                                    </p>
+                                    <p>
+                                        An analogy can be drawn with a large crowd of people deciding to leave a
+                                        stadium: while we cannot predict the exact moment any one person will exit, we
+                                        can estimate how long it will take for half the crowd to leave based on
+                                        statistical averages.
+                                    </p>
+                                    <p>
+                                        <strong>Activity</strong> of a radioactive sample quantifies the rate at which
+                                        nuclei in a
+                                        sample decay, providing a measure of the sample's radioactivity. The activity \(
+                                        A \) is defined as the number of disintegrations per unit time:
+                                    </p>
+                                    <p>
+                                        \(\qquad A = -\dfrac{dN}{dt} \)
+                                    </p>
+                                    <p>
+                                        Here, \( N \) is the number of undecayed nuclei at time \( t \), and the
+                                        negative sign indicates that \( N \) decreases over time. The SI unit of
+                                        activity is the Becquerel (Bq), where:
+                                    </p>
+                                    <p>
+                                        \(\qquad 1\, \text{Bq} = 1\, \text{disintegration per second (dps)} \)
+                                    </p>
+                                    <p>
+                                        For practical purposes, especially when dealing with large activities, the Curie
+                                        (Ci) is used:
+                                    </p>
+                                    <p>
+                                        \(\qquad 1\, \text{Ci} = 3.7 \times 10^{10}\, \text{Bq} \)
+                                    </p>
+                                    <p>
+                                        The Curie is defined based on the activity of 1 gram of radium-226, which
+                                        undergoes \( 3.7 \times 10^{10} \) disintegrations per second.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Radioactivity Law -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRadioactivityLaw">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRadioactivityLaw" aria-expanded="false"
+                                    aria-controls="collapseRadioactivityLaw"><strong>
+                                        Radioactivity Law
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseRadioactivityLaw" class="accordion-collapse collapse"
+                                aria-labelledby="headingRadioactivityLaw" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        The Radioactivity Law explains how the quantity of undecayed nuclei in a
+                                        radioactive sample gradually decreases over time. This decay process is governed
+                                        by a characteristic value for each isotope, known as the <strong>decay
+                                            constant</strong> \( \lambda \), which reflects the probability of decay per
+                                        unit time for any individual nucleus in the sample.
+                                    </p>
+                                    <p>
+                                        The likelihood, or probability \( P \), that a single nucleus will decay within
+                                        a short time interval \( dt \) is given by:
+                                    </p>
+                                    <p>
+                                        \(\qquad P = \lambda \, dt \)
+                                    </p>
+                                    <p>
+                                        Now, if we consider a large number of nuclei \( N \) present in the sample, we
+                                        can determine how the total number of nuclei changes over this small time
+                                        interval \( dt \). The fractional decrease in the number of nuclei, \(
+                                        \dfrac{dN}{N} \), relates to this decay probability:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{dN}{N} = -P \)
+                                    </p>
+                                    <p>
+                                        Substituting \( P = \lambda \, dt \), we obtain:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{dN}{N} = -\lambda \, dt \)
+                                    </p>
+                                    <p>
+                                        This leads us to the differential equation that describes radioactive decay:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{dN}{dt} = -\lambda N \)
+                                    </p>
+                                    <p>
+                                        The negative sign here indicates that the number of undecayed nuclei \( N \) is
+                                        decreasing over time. This equation shows that the decay rate (the rate at which
+                                        nuclei decay) is directly proportional to the remaining number of undecayed
+                                        nuclei at any given moment. Essentially, the more nuclei present, the faster the
+                                        decay process; as nuclei decay and \( N \) decreases, the decay rate also slows
+                                        down, following an exponential pattern.
+                                    </p>
+                                    <p>
+                                        The overall statistical behavior of the radioactive decay can be understood from
+                                        following animation in which each radioactive nucleus has constant probability
+                                        of undergoing decay in a given interval:
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 250px;">
+                                                <img src="img/28_Radioactivity.gif" class="figure-img img-fluid rounded"
+                                                    alt="Random nucleus decaying at random instant">
+                                                <figcaption class="figure-caption">Animation: Random nucleus decaying at
+                                                    random instants</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 250px;">
+                                                <img src="img/29_Radioactivity_graph.gif"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Variation of number of radioactive nuclei">
+                                                <figcaption class="figure-caption">Graph: Variation of number of
+                                                    radioactive nuclei</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mathematical Expressions -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMathematicalExpressions">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMathematicalExpressions" aria-expanded="false"
+                                    aria-controls="collapseMathematicalExpressions"><strong>
+                                        Mathematical Expressions
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseMathematicalExpressions" class="accordion-collapse collapse"
+                                aria-labelledby="headingMathematicalExpressions" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        The exponential decay equation is central to understanding radioactive
+                                        processes. Starting from the fundamental decay equation:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{dN}{dt} = -\lambda N \)
+                                    </p>
+                                    <p>
+                                        Separating variables and integrating:
+                                    </p>
+                                    <p>
+                                        \(\qquad \displaystyle\int_{N_0}^{N} \dfrac{dN}{N} = -\lambda \int_{0}^{t} dt \)
+                                    </p>
+                                    <p>
+                                        This yields:
+                                    </p>
+                                    <p>
+                                        \(\qquad \ln \left( \dfrac{N}{N_0} \right) = -\lambda t \)
+                                    </p>
+                                    <p>
+                                        Exponentiating both sides:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{N}{N_0} = e^{-\lambda t} \)
+                                    </p>
+                                    <p>
+                                        Therefore:
+                                    </p>
+                                    <p>
+                                        \(\qquad N = N_0 e^{-\lambda t} \)
+                                    </p>
+                                    <p>
+                                        This equation indicates that the number of undecayed nuclei decreases
+                                        exponentially over time, as shown in graph below:
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 400px;">
+                                                <img src="img/30_Radioactive_decay.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Active nuclei number variation with time">
+                                                <figcaption class="figure-caption">Graph: Active nuclei number variation
+                                                    with time</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Similarly, the activity at time \( t \) is:
+                                    </p>
+                                    <p>
+                                        \(\qquad A = -\dfrac{dN}{dt} \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad A = -\dfrac{d \lambda N_0 e^{-\lambda t} }{dt} \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad A = -\lambda N_0 e^{-\lambda t} \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad A = -A_0 e^{-\lambda t} \)
+                                    </p>
+                                    <p>
+                                        With \(A_0\) representing the initial activity of the given sample. Its
+                                        variation is similar to variation of number of active nuclei with time.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 400px;">
+                                                <img src="img/31_Radioactive_activity.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Activity variation with time">
+                                                <figcaption class="figure-caption">Graph: Activity variation with time
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        The exponential decay equations 1 and 2, derived from the fundamental decay law,
+                                        reveals several important properties that are essential to understanding
+                                        radioactive decay. Here are the key properties:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Exponential Decay Nature</strong></summary>
+                                                <p>
+                                                    Radioactive decay follows an exponential pattern, meaning the number
+                                                    of undecayed nuclei continuously decreases over time, but
+                                                    theoretically never reaches zero. Additionally, the rate of decrease
+                                                    slows down over time, creating a characteristic decay curve that
+                                                    approaches zero asymptotically.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Time Independence of Fractional Decay</strong>
+                                                </summary>
+                                                <p>
+                                                    The fraction of nuclei remaining after a given time interval is
+                                                    independent of the initial quantity \( N_0 \). For example, if the
+                                                    number of nuclei decreases to one-third of the initial amount in 10
+                                                    minutes, it will further decrease to one-ninth of the initial amount
+                                                    in another 10 minutes, regardless of how much you started with.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Constant Expected Completion Time</strong></summary>
+                                                <p>
+                                                    If \( A \) and \( N \) represent the instantaneous activity and
+                                                    number of undecayed nuclei respectively, then the expected time of
+                                                    completion, given by \( \dfrac{N}{A} \), remains constant over time
+                                                    and is equal to \( \dfrac{1}{\lambda} \). This value, known as the
+                                                    time constant, represents the expected time for the completion of
+                                                    decay had decay rate remained constant with time.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Half-Life and Mean Life -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingHalfLifeMeanLife">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseHalfLifeMeanLife" aria-expanded="false"
+                                    aria-controls="collapseHalfLifeMeanLife"><strong>
+                                        Half-Life and Mean Life
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseHalfLifeMeanLife" class="accordion-collapse collapse"
+                                aria-labelledby="headingHalfLifeMeanLife" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        <strong>Half-Life (\( t_{1/2} \)):</strong>
+                                    </p>
+                                    <p>
+                                        The half-life of a radioactive isotope is the time required for half of the
+                                        nuclei in a sample to decay. It is a characteristic constant for each
+                                        radioactive isotope. To derive the relationship between half-life and the decay
+                                        constant \( \lambda \), we use the exponential decay law.
+                                    </p>
+                                    <p>
+                                        At \( t = t_{1/2} \), \( N = \dfrac{N_0}{2} \). Substituting into the decay
+                                        equation:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{N_0}{2} = N_0 e^{-\lambda t_{1/2}} \)
+                                    </p>
+                                    <p>
+                                        Simplifying:
+                                    </p>
+                                    <p>
+                                        \(\qquad \dfrac{1}{2} = e^{-\lambda t_{1/2}} \)
+                                    </p>
+                                    <p>
+                                        Taking the natural logarithm of both sides:
+                                    </p>
+                                    <p>
+                                        \(\qquad \ln \left( \dfrac{1}{2} \right) = -\lambda t_{1/2} \)
+                                    </p>
+                                    <p>
+                                        \(\qquad -\ln 2 = -\lambda t_{1/2} \)
+                                    </p>
+                                    <p>
+                                        Therefore:
+                                    </p>
+                                    <p>
+                                        \(\qquad t_{1/2} = \dfrac{\ln 2}{\lambda} \approx \dfrac{0.693}{\lambda} \)
+                                    </p>
+                                    <p>
+                                        This formula allows us to calculate the half-life if the decay constant is
+                                        known, and vice versa.
+                                    </p>
+                                    <p>
+                                        The fraction of nuclei remaining after \( x \) half-lives is:
+                                    </p>
+                                    <p>
+                                        \(\qquad N=N_0 e^{\lambda (xt_{1/2}}) \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad N=N_0 e^{ x\ln2} \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad N=N_02^{-x} \)
+                                    </p>
+                                    <p>
+                                        For example:
+                                    <ul>
+                                        <li>After 1 half-life: \( N = \dfrac{N_0}{2} \)</li>
+                                        <li>After 2 half-lives: \( N = \dfrac{N_0}{4} \)</li>
+                                        <li>After 3 half-lives: \( N = \dfrac{N_0}{8} \)</li>
+                                    </ul>
+                                    </p>
+                                    <p>
+                                        <strong>Mean Life (\( \tau \)):</strong>
+                                    </p>
+                                    <p>
+                                        Each nucleus in a sample has a different lifetime before it decays, as decay is
+                                        a probabilistic process. The mean life \( \tau \) represents the average time a
+                                        nucleus exists before decaying.
+                                    </p>
+                                    <p>
+                                        Consider a sample with an initial number of nuclei \( N \) and a decay constant
+                                        \( \lambda \).
+                                    </p>
+                                    <p>
+                                        To find the mean life, let’s analyze the decay process over time. After a time
+                                        \( t \), the number of nuclei that decay in the next small interval \( dt \) is
+                                        given by the product of the instantaneous activity and \( dt \):
+                                    </p>
+                                    <p>\( \qquad \text{Number decaying in } dt \text{ after time } t = (\lambda N
+                                        e^{-\lambda t})
+                                        \, dt\)
+                                    </p>
+                                    <p>
+                                        For these nuclei, the lifetime is \( t \). To calculate the mean lifetime across
+                                        all decaying nuclei, we take the weighted average of their lifetimes, with \( t
+                                        \) weighted by the number of nuclei decaying at that time:
+                                    </p>
+                                    <p>\( \qquad \tau = \int_0^\infty t \cdot \lambda e^{-\lambda t} \, dt\)
+                                    </p>
+                                    <p>
+                                        Simplifying this integral:
+                                    </p>
+                                    <p>\( \qquad \tau = \lambda \int_0^\infty t e^{-\lambda t} \, dt =
+                                        \dfrac{1}{\lambda}\)
+                                    </p>
+                                    <p>
+                                        Therefore, the mean life \( \tau \) is:
+                                    </p>
+                                    <p>\( \qquad \tau = \dfrac{1}{\lambda}\)
+                                    </p>
+                                    <p>
+                                        This result indicates that the average lifetime of a nucleus in a radioactive
+                                        sample is inversely proportional to the decay constant. The greater the decay
+                                        constant \( \lambda \), the shorter the mean life, and vice versa.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Combinations of Radioactive Decay -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCombinations">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCombinations" aria-expanded="false"
+                                    aria-controls="collapseCombinations"><strong>
+                                        Combinations of Radioactive Decay
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseCombinations" class="accordion-collapse collapse"
+                                aria-labelledby="headingCombinations" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p>
+                                                In radioactive decay, there can be scenarios where multiple decay
+                                                processes are possible for a single nucleus, or where nuclei are
+                                                generated or decay in sequence. Following are some types of such decay
+                                                reactions:
+                                            </p>
+                                            <details>
+                                                <summary><strong>Parallel Decay Reactions</strong></summary>
+                                                <p class="mt-2">
+                                                    In parallel decay, a single radioactive nucleus can decay through
+                                                    two or more different pathways simultaneously. Each path has its own
+                                                    decay constant \( \lambda_i \), representing its probability of
+                                                    decay per unit time.
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 200px;">
+                                                            <img src="img/32_Parallel_radioactivity.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Parallel activity">
+                                                            <figcaption class="figure-caption">Figure: Parallel
+                                                                radioactivity
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    For two decay paths occurring simultaneously with individual decay
+                                                    constants \(\lambda_1\) and \(\lambda_2\), occuring as shown in
+                                                    diagram, the overall activity of the sample of N number of nuclei
+                                                    can be written as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \dfrac{dN}{dt}=-\lambda_1 N - \lambda_2 N\)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \dfrac{dN}{dt}=-\left(\lambda_1 +
+                                                    \lambda_2\right) N\)
+                                                </p>
+                                                <p>
+                                                    Thus, the total decay constant \( \lambda_{\text{total}} \) is the
+                                                    sum of the individual decay constants:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \lambda_{\text{total}} = \lambda_1 + \lambda_2 \)
+                                                </p>
+                                                <p>
+                                                    Extending this to \( n \) decay modes in parallel, we have:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \lambda_{\text{total}} = \sum_{i=1}^{n} \lambda_i \)
+                                                </p>
+                                                <p>
+                                                    The half-life \( t_{1/2} \) of the nucleus for such parallel decay
+                                                    processes is related to the combined decay constant:
+                                                </p>
+                                                <p>
+                                                    \(\qquad t_{1/2} = \dfrac{\ln 2}{\lambda_{\text{total}}} \)
+                                                </p>
+                                                <p>
+                                                    Also in terms of individual half lifes \(t_1\) and \(t_2\)
+                                                </p>
+                                                <p>
+                                                    \(\qquad \lambda_{\text{total}} = \lambda_1 + \lambda_2 \)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \dfrac{\ln 2}{t_{1/2}} = \dfrac{\ln
+                                                    2}{t_1}+\dfrac{\ln
+                                                    2}{t_2} \)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \dfrac{1}{t_{1/2}} =
+                                                    \dfrac{1}{t_1}+\dfrac{1}{t_2}
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    The probability that a nucleus will decay via a particular mode \( i
+                                                    \) is given by the branching ratio:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \text{Branching Ratio for mode } i =
+                                                    \dfrac{\lambda_i}{\lambda_{\text{total}}} \)
+                                                </p>
+                                                <p>
+                                                    Understanding parallel decay is important in nuclear reactions where
+                                                    multiple decay pathways are possible, such as in nuclear reactors or
+                                                    radioactive dating.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Radioactive Generation at Constant Rate</strong>
+                                                </summary>
+                                                <p class="mt-2">
+                                                    In certain situations, radioactive nuclei are produced at a constant
+                                                    rate \( Q_0 \) (nuclei per unit time), which occurs, for example, in
+                                                    nuclear reactors or as a result of cosmic ray interactions. This is
+                                                    schematically shown in diagram below:
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 300px;">
+                                                            <img src="img/33_Constant_Formation_of_Radioactive_substance.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Constant formation of radioactive substance">
+                                                            <figcaption class="figure-caption">Figure: Constant
+                                                                formation of radioactive substance
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    In these scenarios, the system involves a dynamic balance where
+                                                    nuclei are continuously generated and decay simultaneously.
+                                                </p>
+                                                <p>
+                                                    The differential equation governing the number of radioactive nuclei
+                                                    \( N \) in such a case is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \dfrac{dN}{dt} = Q_0 - \lambda N \)
+                                                </p>
+                                                <p>
+                                                    Here:
+                                                <ul>
+                                                    <li>\( Q_0 \): Constant rate at which new radioactive nuclei are
+                                                        generated.</li>
+                                                    <li>\( \lambda N \): Rate at which existing nuclei decay,
+                                                        proportional to their current number \( N \).</li>
+                                                </ul>
+                                                </p>
+                                                <p>
+                                                    Qualitatively, when the system begins, \( N \) increases as the
+                                                    constant rate \( Q_0 \) adds new nuclei, and the decay rate \(
+                                                    \lambda N \) also increases with \( N \). This setup leads to a
+                                                    point where the generation rate and decay rate balance, resulting in
+                                                    a steady-state where the number of radioactive nuclei becomes
+                                                    constant. A graph of \( N \) versus time would show an initial
+                                                    increase that gradually levels off at this steady-state value.
+                                                </p>
+                                                <p>
+                                                    To find the solution using separation of variables, we start with
+                                                    the differential equation:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \dfrac{dN}{dt} = Q_0 - \lambda N \)
+                                                </p>
+                                                <p>
+                                                    Rearranging terms, we have:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \dfrac{dN}{Q_0 - \lambda N} = dt \)
+                                                </p>
+                                                <p>
+                                                    Integrating both sides, we get:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \displaystyle\int \dfrac{1}{Q_0 - \lambda N} \, dN =
+                                                    \displaystyle\int dt \)
+                                                </p>
+                                                <p>
+                                                    Integrating the left side with respect to \( N \) and the right side
+                                                    with respect to \( t \), we have:
+                                                </p>
+                                                <p>
+                                                    \(\qquad -\dfrac{1}{\lambda} \ln |Q_0 - \lambda N| = t + C\)
+                                                </p>
+                                                <p>
+                                                    Considering initially no nuclei present in the beginning \(N_0=0\),
+                                                    and solving for \( N \):
+                                                </p>
+                                                <p>
+                                                    \(\qquad N(t) = \dfrac{Q_0}{\lambda}\left( 1 -e^{-\lambda t}
+                                                    \right) \)
+                                                </p>
+                                                <p>
+                                                    This solution describes how the number of radioactive nuclei \( N \)
+                                                    changes over time, starting from an initial quantity \( N_0 \) and
+                                                    approaching the steady-state value \( N_{\text{steady}} =
+                                                    \dfrac{Q_0}{\lambda} \) as \( t \to \infty \). Such variation is
+                                                    shown in the graph below:
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 300px;">
+                                                            <img src="img/33_Constant_Formation_of_Radioactive_substance_graph.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Constant formation of radioactive substance">
+                                                            <figcaption class="figure-caption">Figure: Variation of
+                                                                number of nuclei of \(B\) with constant rate of
+                                                                formation
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    In this steady-state, the number of decaying nuclei per unit time
+                                                    equals the rate at which they are generated, and \( N \) remains
+                                                    constant.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Series Decay Reactions</strong></summary>
+                                                <p class="mt-2">
+                                                    In series decay, a parent nucleus \(A\) decays into a daughter
+                                                    nucleus \(B\),
+                                                    which itself may be radioactive and continue to decay through a
+                                                    chain of reactions. This process results in a decay chain where each
+                                                    subsequent nucleus can undergo further decay. The simplest case to
+                                                    consider is a two-step decay process, as shown in diagram below:
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 300px;">
+                                                            <img src="img/34_Variable_Formation_of_Radioactive_substance.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Variable formation of radioactive substance">
+                                                            <figcaption class="figure-caption">Graph: Formation of
+                                                                radioactive substance \(B\) from another radioactive
+                                                                substance \(A\)
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Let the number of nuclei of \(A\) and \(B\) at any general time be
+                                                    represented by \(N_1\) and \(N_2\) respectively. If the
+                                                    corresponding decay constants are \(\lambda_1\) and \(\lambda_2\),
+                                                    the activity of each of them can be written as:
+                                                </p>
+                                                <p>
+                                                    For the parent nucleus \( A \):
+                                                </p>
+                                                <p>
+                                                    \(\qquad \frac{dN_1}{dt} = -\lambda_1 N_1 \)
+                                                </p>
+
+                                                <p>
+                                                    The number of active nuclei present for \(A\) at any moment will be
+                                                    independent of activity of \(B\). Therefore, variation of number of
+                                                    active nuclei of \(A\) can directly be mentioned as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad N_1(t) = N_{1,0} e^{ -\lambda_1 t } \)
+                                                </p>
+                                                <p>
+                                                    Where \( N_{1,0} \) is the initial number of parent
+                                                    nuclei at \( t = 0 \).
+                                                </p>
+                                                <p>
+                                                    For the daughter nucleus \( B \):
+                                                </p>
+                                                <p>
+                                                    \(\qquad \frac{dN_2}{dt} = \lambda_1 N_1 - \lambda_2 N_2 \)
+                                                </p>
+                                                <p>
+                                                    Substituting \( N_1(t) = N_{1,0} e^{ -\lambda_1 t } \) into the
+                                                    equation:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \frac{dN_2}{dt} = \lambda_1 N_{1,0} e^{ -\lambda_1 t } -
+                                                    \lambda_2 N_2 \)
+                                                </p>
+                                                <p>
+                                                    Rearranging terms:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \frac{dN_2}{dt} + \lambda_2 N_2 = \lambda_1 N_{1,0} e^{
+                                                    -\lambda_1 t } \)
+                                                </p>
+
+                                                <p>This is a linear non-homogeneous differential equation. We can solve
+                                                    it using an integrating factor, as given in following detailed
+                                                    calculations:
+                                                <details>
+                                                    <summary>Detailed calculations</summary>
+                                                    <p>
+                                                        The integrating factor \( \mu(t) \) is:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \mu(t) = e^{ \int \lambda_2 dt } = e^{ \lambda_2 t } \)
+                                                    </p>
+                                                    <p>
+                                                        Multiply both sides of the differential equation by \( \mu(t)
+                                                        \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^{ \lambda_2 t } \frac{dN_2}{dt} + \lambda_2 e^{
+                                                        \lambda_2
+                                                        t } N_2 = \lambda_1 N_{1,0} e^{ (\lambda_2 - \lambda_1 ) t } \)
+                                                    </p>
+                                                    <p>
+                                                        The left side simplifies to:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \frac{d}{dt} \left( e^{ \lambda_2 t } N_2 \right ) =
+                                                        \lambda_1 N_{1,0} e^{ (\lambda_2 - \lambda_1 ) t } \)
+                                                    </p>
+                                                    <p>
+                                                        Integrating both sides with respect to \( t \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \int \frac{d}{dt} \left( e^{ \lambda_2 t } N_2 \right )
+                                                        dt
+                                                        = \lambda_1 N_{1,0} \int e^{ (\lambda_2 - \lambda_1 ) t } dt \)
+                                                    </p>
+                                                    <p>
+                                                        The left side simplifies to:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^{ \lambda_2 t } N_2 = \lambda_1 N_{1,0} \int e^{
+                                                        (\lambda_2 - \lambda_1 ) t } dt + C_2 \)
+                                                    </p>
+                                                    <p>
+                                                        Computing the integral on the right side:
+                                                    </p>
+                                                    <p>
+                                                        Let \( \Delta \lambda = \lambda_2 - \lambda_1 \).
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \int e^{ \Delta \lambda t } dt = \frac{ e^{ \Delta
+                                                        \lambda
+                                                        t } }{ \Delta \lambda } \) (assuming \( \Delta \lambda \neq 0
+                                                        \))
+                                                    </p>
+                                                    <p>
+                                                        Therefore:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^{ \lambda_2 t } N_2 = \lambda_1 N_{1,0} \left( \frac{
+                                                        e^{
+                                                        (\lambda_2 - \lambda_1 ) t } }{ \lambda_2 - \lambda_1 } \right )
+                                                        +
+                                                        C_2 \)
+                                                    </p>
+                                                    <p>
+                                                        Simplify the exponentials:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^{ \lambda_2 t } N_2 = \frac{ \lambda_1 N_{1,0} }{
+                                                        \lambda_2 - \lambda_1 } e^{ \lambda_2 t - \lambda_1 t } + C_2 \)
+                                                    </p>
+                                                    <p>
+                                                        \(\Rightarrow\quad e^{ \lambda_2 t } N_2 = \frac{ \lambda_1
+                                                        N_{1,0} }{
+                                                        \lambda_2 - \lambda_1 } e^{ ( \lambda_2 - \lambda_1 ) t } + C_2
+                                                        \)
+                                                    </p>
+                                                    <p>
+                                                        Simplify the exponentials:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^{ \lambda_2 t } N_2 = \frac{ \lambda_1 N_{1,0} }{
+                                                        \lambda_2 - \lambda_1 } e^{ ( \lambda_2 - \lambda_1 ) t } + C_2
+                                                        \)
+                                                    </p>
+                                                    <p>
+                                                        Now, rearranging to solve for \( N_2(t) \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad N_2(t) = \frac{ \lambda_1 N_{1,0} }{ \lambda_2 -
+                                                        \lambda_1
+                                                        } e^{ -\lambda_1 t } + C_2 e^{ -\lambda_2 t } \)
+                                                    </p>
+                                                    <p>
+                                                        To find \( C_2 \), we use the initial condition at \( t = 0 \):
+                                                    </p>
+                                                    <p>
+                                                        At \( t = 0 \), \( N_1(0) = N_{1,0} \) and \( N_2(0) = N_{2,0}
+                                                        \)
+                                                    </p>
+                                                    <p>
+                                                        Substitute \( t = 0 \) into the equation for \( N_2(t) \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad N_{2,0} = \frac{ \lambda_1 N_{1,0} }{ \lambda_2 -
+                                                        \lambda_1
+                                                        } + C_2 \)
+                                                    </p>
+                                                    <p>
+                                                        Solving for \( C_2 \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad C_2 = N_{2,0} - \frac{ \lambda_1 N_{1,0} }{ \lambda_2 -
+                                                        \lambda_1 } \)
+                                                    </p>
+                                                    <p>
+                                                        Substitute \( C_2 \) back into the expression for \( N_2(t) \):
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad N_2(t) = \frac{ \lambda_1 N_{1,0} }{ \lambda_2 -
+                                                        \lambda_1
+                                                        } e^{ -\lambda_1 t } + \left( N_{2,0} - \frac{ \lambda_1 N_{1,0}
+                                                        }{
+                                                        \lambda_2 - \lambda_1 } \right ) e^{ -\lambda_2 t } \)
+                                                    </p>
+                                                </details>
+                                                </p>
+                                                <p>
+                                                    The final expression obtained is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad N_2(t) = \left( N_{2,0} e^{ -\lambda_2 t } \right ) +
+                                                    \frac{ \lambda_1 N_{1,0} }{ \lambda_2 - \lambda_1 } \left( e^{
+                                                    -\lambda_1 t } - e^{ -\lambda_2 t } \right ) \)
+                                                </p>
+                                                <p>
+                                                    This is the solution for \( N_2(t) \), showing how the number of
+                                                    daughter nuclei changes over time due to both the decay of the
+                                                    parent and the decay of the daughter nuclei themselves. This
+                                                    variation is plotted in following graph:
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 300px;">
+                                                            <img src="img/34_Variable_Formation_of_Radioactive_substance_graph.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Constant formation of radioactive substance">
+                                                            <figcaption class="figure-caption">Graph: Variation of
+                                                                number of nuclei of \(B\)
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Series decay reactions are significant in understanding natural
+                                                    radioactive decay series, such as those in uranium and thorium decay
+                                                    chains. In these chains, multiple radioactive isotopes decay
+                                                    sequentially until a stable nucleus is reached. The mathematical
+                                                    modeling of such decay processes is essential in fields like nuclear
+                                                    physics, radiometric dating, and nuclear medicine.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Applications of Radioactivity: Carbon Dating -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCarbonDating">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCarbonDating" aria-expanded="false"
+                                    aria-controls="collapseCarbonDating"><strong>
+                                        Applications of Radioactivity: Carbon Dating
+                                    </strong></button>
+                            </h2>
+                            <div id="collapseCarbonDating" class="accordion-collapse collapse"
+                                aria-labelledby="headingCarbonDating" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        Carbon dating uses the principles of radioactive decay to estimate the
+                                        age of
+                                        organic materials. This method is based on the decay of carbon-14
+                                        (\(^{14}\text{C}\)),
+                                        an isotope absorbed by living organisms throughout their lifetimes.
+                                    </p>
+                                    <p>
+                                        After death, the intake of carbon-14 ceases, and the isotope decays at a
+                                        predictable rate. By measuring the remaining \(^{14}\text{C}\) in a sample
+                                        and
+                                        applying the radioactive decay law, scientists can calculate the time
+                                        elapsed since
+                                        the organism's death.
+                                    </p>
+                                    <p>
+                                        The decay law for carbon dating helps derive the age of a sample by relating
+                                        the
+                                        remaining \(^{14}\text{C}\) to its initial quantity. Carbon dating is widely
+                                        used
+                                        in archaeology and geology, offering reliable insights into the age of
+                                        artifacts,
+                                        fossils, and other historical samples.
+                                    </p>
+                                    <p>
+                                        To illustrate the calculation method used in carbon dating, let's consider an
+                                        example:
+                                    </p>
+                                    <p>
+                                        An archaeologist discovers a wooden artifact and wants to determine
+                                        its age. The current amount of carbon-14 (\(^{14}\text{C}\)) in the wood is
+                                        measured to be 25% of the amount found in a living tree of the same type.
+                                        Knowing that the half-life of \(^{14}\text{C}\) is approximately 5,730 years, we
+                                        can calculate the age of the artifact.
+                                    </p>
+                                    <p>
+                                        <strong>Steps to Calculate the Age:</strong>
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <strong>Determine the Decay Constant (\( \lambda \))</strong>:
+                                            <p>
+                                                The decay constant is related to the half-life (\( t_{1/2} \)) by the
+                                                formula:
+                                            </p>
+                                            <p>\(\qquad \lambda = \frac{\ln 2}{t_{1/2}}\) </p>
+                                            <p>
+                                                Substituting the given half-life:
+                                            </p>
+                                            <p>\(\qquad \lambda = \frac{\ln 2}{5,730\, \text{years}} \approx
+                                                \frac{0.6931}{5,730} \approx 1.2097 \times 10^{-4}\, \text{year}^{-1}\)
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <strong>Apply the Exponential Decay Law</strong>:
+                                            <p>
+                                                The number of \(^{14}\text{C}\) nuclei remaining after time \( t \) is
+                                                given by:
+                                            </p>
+                                            <p>\(\qquad N = N_0 e^{-\lambda t}\) </p>
+                                            <p>
+                                                Where:
+                                            <ul>
+                                                <li>\( N \) is the current amount of \(^{14}\text{C}\) in the sample.
+                                                </li>
+                                                <li>\( N_0 \) is the initial amount of \(^{14}\text{C}\) when the
+                                                    organism was alive.</li>
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                Given that \( N = 0.25 N_0 \) (since only 25% remains), we have:
+                                            </p>
+                                            <p>\(\qquad 0.25 N_0 = N_0 e^{-\lambda t}\) </p>
+                                            <p>
+                                                Simplify:
+                                            </p>
+                                            <p>\(\qquad 0.25 = e^{-\lambda t}\) </p>
+                                        </li>
+                                        <li>
+                                            <strong>Solve for Time (\( t \))</strong>:
+                                            <p>
+                                                Take the natural logarithm of both sides:
+                                            </p>
+                                            <p>\(\qquad \ln(0.25) = -\lambda t\) </p>
+                                            <p>\(\qquad -1.3863 = -\lambda t\) </p>
+                                            <p>
+                                                Solve for \( t \):
+                                            </p>
+                                            <p>\(\qquad t = \frac{1.3863}{\lambda} = \frac{1.3863}{1.2097 \times
+                                                10^{-4}}
+                                                \approx 11,460\, \text{years}\) </p>
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        <strong>Conclusion:</strong> The wooden artifact is approximately 11,460 years
+                                        old. This
+                                        calculation demonstrates how measuring the remaining \(^{14}\text{C}\) in an
+                                        organic sample allows scientists to estimate its age based on the known
+                                        half-life of carbon-14.
+                                    </p>
+                                    <p>
+                                        <strong>Note:</strong> This method assumes that the initial \(^{14}\text{C}\)
+                                        concentration
+                                        in the organism was the same as that in the atmosphere at the time of its death
+                                        and that the decay process has not been affected by external factors.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+
+</body>
+
+
+</html>

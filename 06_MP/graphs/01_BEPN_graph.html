@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Physics Graphs</title>
+    <style>
+        .container {
+            margin-top: 10px;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .canvas-container {
+            padding: 15px;
+        }
+
+        #simulationCanvas {
+            width: 100%;
+            height: auto;
+            /* Adjust as necessary */
+        }
+
+        #simulationCanvas-holder {
+            border-radius: 10px;
+            box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+            padding: 10px;
+            /* Reduced padding for mobile compatibility */
+        }
+
+        #controlCard {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media (min-width: 768px) {
+            #simulationCanvas-holder {
+                padding: 4rem;
+                /* Original padding for larger screens */
+            }
+
+            #simulationCanvas-holder {
+                border-radius: 50px;
+                box-shadow: 20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+                padding: 2rem;
+                /* Reduced padding for mobile compatibility */
+            }
+
+            #controlCard {
+                padding: 10px;
+            }
+
+            #arrowButton {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            #controlCard {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transition: transform 0.3s;
+                transform: translateY(100%);
+                background: white;
+                /* Adjust background color as needed */
+                margin: 0;
+                /* Ensure no margin */
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+                /* Ensure no padding */
+            }
+
+            #controlCard.show {
+                transform: translateY(0);
+            }
+
+            #arrowButton {
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Modern Physics</h1>
+        <h2 class="text-center">Graph: #1</h2>
+        <h3 class="text-center text-muted">Variation of number neutron with number of proton for different isotopes</h3>
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ul>
+                    <li>Click on points to see their properties.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="graphCanvas" width="500" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Function to determine point radius based on screen size
+        function getPointRadius() {
+            if (window.innerWidth <= 600) {
+                return 1; // Smaller dots for mobile screens
+            } else if (window.innerWidth <= 1024) {
+                return 2; // Medium dots for tablets
+            } else {
+                return 3; // Larger dots for desktop
+            }
+        }
+        // Function to load JSON data and populate the binding energy graph
+        async function loadAndPopulateBindingEnergyGraph() {
+            try {
+                // Fetch the JSON data from the file
+                const response = await fetch('data.json');
+                const jsonData = await response.json();
+                //console.log(jsonData)
+                // Extract mass number and binding energy per nucleon from JSON data
+                const dataPoints = [];
+
+                jsonData.forEach(item => {
+                    const protons = parseInt(item["Number of Protons"]);
+                    const neutrons = parseInt(item["Number of Neutrons"]);
+                    const bindingEnergyPerNucleon = parseFloat(item["Binding Energy per Nucleon"]);
+                    //console.log("Protons:"+protons+"    Neutrons: "+neutrons)
+                    // Calculate mass number (A = protons + neutrons)
+                    const massNumber = protons + neutrons;
+                    //console.log(massNumber)
+                    // Create a data point only if binding energy per nucleon is available
+                    if (!isNaN(bindingEnergyPerNucleon)) {
+                        dataPoints.push({
+                            x: massNumber,
+                            y: bindingEnergyPerNucleon,
+                            label: `${item["Symbol"]}-${massNumber}`
+                        });
+                    }
+                });
+                console.log(dataPoints)
+                // Sort data points by mass number for a smoother graph
+                dataPoints.sort((a, b) => a.x - b.x);
+                console.log(dataPoints)
+                // Create the Chart.js graph
+                const ctx = document.getElementById('graphCanvas').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            label: 'Binding Energy per Nucleon',
+                            data: dataPoints,
+                            borderColor: 'black',
+                            backgroundColor: 'lightblue',
+                            fill: false,
+                            showLine: true,
+                            pointRadius: getPointRadius(),
+                            pointHoverRadius: getPointRadius()+2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                type: 'linear', // Set scale type to linear
+                                title: {
+                                    display: true,
+                                    text: 'Mass Number (A)',
+                                    font: { family: 'Times New Roman' }
+                                },
+                                ticks: { font: { family: 'Times New Roman' } },
+                                min: 0 // Start x-axis at 0 to avoid issues
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Binding Energy per Nucleon (MeV)',
+                                    font: { family: 'Times New Roman' }
+                                },
+                                ticks: { font: { family: 'Times New Roman' } }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    font: { family: 'Times New Roman' }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function (context) {
+                                        const point = context.raw;
+                                        return `${point.label}: ${point.y} MeV`;
+                                    }
+                                },
+                                bodyFont: { family: 'Times New Roman' }
+                            }
+                        },
+                        
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading or processing JSON data:", error);
+            }
+        }
+
+        // Load JSON data and populate the graph when the page loads
+        loadAndPopulateBindingEnergyGraph();
+    </script>
+
+</body>
+
+</html>

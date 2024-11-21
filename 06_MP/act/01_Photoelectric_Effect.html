@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Wave-Particle Duality Simulation</title>
+    
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Particle Nature of Radiation</h1>
+        <h2 class="text-center">Activity: Understanding the Photoelectric Effect</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Select the metal to see how the work function affects electron emission.</li>
+                    <li>Adjust the frequency to observe the effect of light color on electron emission speed.</li>
+                    <li>Modify the intensity to increase or decrease the number of electrons emitted.</li>
+                    <li>Control the retarding voltage to see how it affects electron flow to the collector.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="simulationCanvas" width="800" height="400"></canvas>
+                        </div>
+                        <div id="currentDisplay">Current: 0</div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div id="arrowButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="metalSlider">Metal (Work Function):</label>
+                                    <input type="range" id="metalSlider" min="1" max="5" step="1" value="1"
+                                        class="form-control-range">
+                                    <div>Selected Metal: <span id="metalValue">Cesium (2.1 eV)</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="frequencySlider">Frequency (Color):</label>
+                                    <input type="range" id="frequencySlider" min="1" max="7" step="1" value="1"
+                                        class="form-control-range">
+                                    <div>Selected Frequency: <span id="frequencyValue">Red</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="intensitySlider">Intensity (Brightness):</label>
+                                    <input type="range" id="intensitySlider" min="1" max="30" step="1" value="1"
+                                        class="form-control-range">
+                                    <div>Intensity Level: <span id="intensityValue">1 Bulb</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="voltageSlider">Retarding Voltage:</label>
+                                    <input type="range" id="voltageSlider" min="-4" max="10" step="1" value="0"
+                                        class="form-control-range">
+                                    <div>Voltage: <span id="voltageValue">0 V</span></div>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input type="checkbox" id="animateWave" class="form-check-input" checked>
+                                    <label for="animateWave" class="form-check-label">Animate Electron Emission</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Circle representing current on the wire -->
+                <canvas id="currentCanvas" width="800" height="400"
+                    style="position:absolute; top:0; left:0; pointer-events:none;"></canvas>
+
+            </div>
+        </div>
+
+        <!-- Include necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+        <script>
+            const { Engine, Render, World, Bodies } = Matter;
+            const engine = Engine.create();
+            const canvas = document.getElementById('simulationCanvas');
+            const render = Render.create({
+                canvas: canvas,
+                engine: engine,
+                options: {
+                    width: canvas.width,
+                    height: canvas.height+50,
+                    wireframes: false,
+                    background: 'white'
+                }
+            });
+
+            let frequency = 1; // Frequency levels from 1 (Red) to 7 (Violet)
+            let intensity = 1;
+            let retardingVoltage = 0;
+            let metalWorkFunction = 2.1; // Default work function value for Cesium in eV
+
+            let currentCount = 0; // Current measured in electrons per second
+            let chargeCount = 0; // Charge accumulated in the current second
+
+            const frequencySlider = document.getElementById("frequencySlider");
+            const frequencyValueDisplay = document.getElementById("frequencyValue");
+            const intensitySlider = document.getElementById("intensitySlider");
+            const intensityValueDisplay = document.getElementById("intensityValue");
+            const voltageSlider = document.getElementById("voltageSlider");
+            const voltageValueDisplay = document.getElementById("voltageValue");
+            const metalSlider = document.getElementById("metalSlider");
+            const metalValueDisplay = document.getElementById("metalValue");
+            const animateWaveCheckbox = document.getElementById("animateWave");
+            const currentCanvas = document.getElementById("currentCanvas");
+            const currentCtx = currentCanvas.getContext("2d");
+
+            // Frequency values corresponding to colors
+            const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+            const colorsRGB = [
+                [255, 0, 0],    // Red
+                [255, 165, 0],  // Orange
+                [255, 255, 0],  // Yellow
+                [0, 128, 0],    // Green
+                [0, 0, 255],    // Blue
+                [75, 0, 130],   // Indigo
+                [238, 130, 238] // Violet
+            ];
+            const workFunctions = [2.1, 2.3, 2.7, 3.2, 3.8]; // Work functions in eV
+            const metals = ["Cesium", "Potassium", "Sodium", "Calcium", "Zinc"];
+
+            let electrons = []; // Array to store electrons
+
+            // Initialize Current Display
+            function initializeCurrentDisplay() {
+                currentCtx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
+                drawWireAndCurrent();
+            }
+
+            frequencySlider.addEventListener("input", function () {
+                frequency = parseInt(this.value);
+                frequencyValueDisplay.textContent = colors[frequency - 1];
+                updateLightColor();
+            });
+
+            intensitySlider.addEventListener("input", function () {
+                intensity = parseInt(this.value);
+                intensityValueDisplay.textContent = `${intensity} Bulb${intensity > 1 ? 's' : ''}`;
+                updateLightOpacity();
+            });
+
+            voltageSlider.addEventListener("input", function () {
+                retardingVoltage = parseFloat(this.value);
+                voltageValueDisplay.textContent = `${retardingVoltage} V`;
+            });
+
+            metalSlider.addEventListener("input", function () {
+                const metalIndex = parseInt(this.value) - 1;
+                metalWorkFunction = workFunctions[metalIndex];
+                metalValueDisplay.textContent = `${metals[metalIndex]} (${metalWorkFunction} eV)`;
+            });
+
+            function drawSetup() {
+                const ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Draw emitter and collector plates with increased height
+                ctx.fillStyle = "gray";
+                ctx.fillRect(100, 50, 20, 300); // Emitter plate (left)
+                ctx.fillRect(680, 50, 20, 300); // Collector plate (right)
+
+                // Draw light beam as a parallelogram at 45 degrees covering emitter plate
+                const color = colorsRGB[frequency - 1];
+                const beamColor = `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${intensity / 60})`;
+                ctx.fillStyle = beamColor;
+                ctx.beginPath();
+                ctx.moveTo(250, 0);             // Start of light beam above emitter
+                ctx.lineTo(120, 50);           // Top-left corner of emitter plate
+                ctx.lineTo(120, 350);          // Bottom-left corner of emitter plate
+                ctx.lineTo(250, 300);           // End of light beam below emitter
+                ctx.closePath();
+                ctx.fill();
+
+
+                // Draw the curved wire connecting the plates
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(110, 350); // Bottom center of emitter plate
+                ctx.bezierCurveTo(
+                    110, 450,   // Control point near emitter
+                    690, 450,   // Control point near collector
+                    690, 350    // Bottom center of collector plate
+                );
+                ctx.stroke();
+                // Draw the circle representing current on the wire
+                const circleX = (110 + 690) / 2; // Midpoint of the wire horizontally
+                const circleY = 450;             // Y-coordinate where the wire curves
+                currentCtx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
+                currentCtx.beginPath();
+                currentCtx.arc(circleX, circleY, 20, 0, 2 * Math.PI); // Circle with radius 20
+                currentCtx.fillStyle = "white";
+                currentCtx.fill();
+                currentCtx.strokeStyle = "black";
+                currentCtx.stroke();
+
+                // Display the current value inside the circle
+                currentCtx.fillStyle = "black";
+                currentCtx.font = "16px Arial";
+                currentCtx.textAlign = "center";
+                currentCtx.textBaseline = "middle";
+                currentCtx.fillText(currentCount.toString(), circleX, circleY);
+            }
+
+            function emitElectrons() {
+                const photonEnergy = frequency * 0.5; // Arbitrary scaling for photon energy
+                if (photonEnergy < metalWorkFunction) {
+                    // Not enough energy to emit electrons
+                    return;
+                }
+
+                // Adjust intensity factor to emit fewer electrons
+                const numElectrons = Math.floor(intensity * 10 / 5) / 10; // Adjusted to reduce electron count
+
+                for (let i = 0; i < numElectrons; i++) {
+                    const startX = 120; // Start from right edge of emitter plate
+                    const startY = 50 + Math.random() * 300; // Random vertical position along emitter plate
+
+                    // Electrons have random kinetic energy between 0 and maximum KE
+                    const maxKineticEnergy = photonEnergy - metalWorkFunction;
+                    const kineticEnergy = Math.random() * maxKineticEnergy; // Random KE
+
+                    let speed = kineticEnergy * 5; // Arbitrary scaling for speed
+                    // Retarding voltage reduces speed
+                    speed -= retardingVoltage * 0.1;
+                    if (speed <= 0) {
+                        // Electron doesn't have enough energy to leave emitter
+                        continue;
+                    }
+
+                    electrons.push({
+                        x: startX,
+                        y: startY,
+                        vx: speed * 0.5, // Horizontal velocity
+                        vy: 0 // No vertical velocity
+                    });
+                }
+            }
+
+            function updateElectrons() {
+                const ctx = canvas.getContext("2d");
+                const collectorX = 680; // X position of collector plate
+                let currentCount = 0; // Reset current count each frame
+
+                for (let i = electrons.length - 1; i >= 0; i--) {
+                    let electron = electrons[i];
+                    // Update position
+                    electron.x += electron.vx;
+
+                    // Apply retarding voltage effect (deceleration)
+                    electron.vx -= retardingVoltage * 0.005; // Adjust deceleration rate as needed
+
+                    // Check if electron has returned to emitter plate
+                    if (electron.x <= 120) { // 120 is the x-position of the emitter plate
+                        electrons.splice(i, 1); // Remove electron upon reaching emitter
+                        continue;
+                    }
+
+                    // Check if electron has reached the collector
+                    if (electron.x >= collectorX) {
+                        electrons.splice(i, 1); // Remove electron from array
+                        chargeCount++; // Increment current count
+                        continue;
+                    }
+
+                    // Draw electron
+                    ctx.beginPath();
+                    ctx.arc(electron.x, electron.y, 2, 0, 2 * Math.PI);
+                    ctx.fillStyle = "blue";
+                    ctx.fill();
+                }
+            }
+
+            // Function to draw the wire and current circle
+            function drawWireAndCurrent() {
+                    const ctx = currentCtx;
+                    ctx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
+
+                    // Draw the curved wire connecting the plates
+                    ctx.strokeStyle = "black";
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(110, 350); // Bottom center of emitter plate
+                    ctx.bezierCurveTo(
+                        110, 450,   // Control point near emitter
+                        690, 450,   // Control point near collector
+                        690, 350    // Bottom center of collector plate
+                    );
+                    ctx.stroke();
+
+                    // Draw the circle representing current on the wire
+                    const circleX = (110 + 690) / 2; // Midpoint of the wire horizontally
+                    const circleY = 450;             // Y-coordinate where the wire curves
+                    ctx.beginPath();
+                    ctx.arc(circleX, circleY, 20, 0, 2 * Math.PI); // Circle with radius 20
+                    ctx.fillStyle = "yellow";
+                    ctx.fill();
+                    ctx.strokeStyle = "black";
+                    ctx.stroke();
+
+                    // Display the current value inside the circle
+                    ctx.fillStyle = "black";
+                    ctx.font = "16px Arial";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    ctx.fillText(currentCount.toString(), circleX, circleY);
+                }
+
+            function updateLightColor() {
+                drawSetup();
+            }
+
+            function updateLightOpacity() {
+                drawSetup();
+            }
+
+            
+            // Function to handle current measurement every second
+            function measureCurrent() {
+                console.log(currentCount)
+                currentCount = chargeCount; // Set current count to charge accumulated
+                chargeCount = 0; // Reset charge count for the next second
+                drawWireAndCurrent(); // Update the current display
+            }
+
+            // Start measuring current every second
+            setInterval(measureCurrent, 5000);
+
+
+            function animate() {
+                if (animateWaveCheckbox.checked) {
+                    drawSetup();
+                    emitElectrons();
+                    updateElectrons();
+                } else {
+                    drawSetup();
+                }
+                requestAnimationFrame(animate);
+            }
+
+            $(document).ready(function () {
+                const $controlCard = $('#controlCard');
+                const $arrowButton = $('#arrowButton');
+
+                $arrowButton.on('click', function () {
+                    $controlCard.toggleClass('show');
+                });
+
+                Render.run(render);
+                Engine.run(engine);
+                animate();
+            });
+        </script>
+
+        <!-- Include Bootstrap JS and other scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,2853 @@
+{
+  "questions": [
+    {
+      "id": "TF.PRA.1.1.Q1",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "According to the photon concept, light transfers energy continuously as a wave.",
+      "solution": "This statement is false. According to the photon concept, light transfers energy in discrete packets called photons.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall how the photon concept describes energy transfer.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Concept",
+          "Quantum Mechanics",
+          "Energy Transfer"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "The rest mass of a photon is zero.",
+      "solution": "This statement is true. Photons have zero rest mass.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the rest mass of particles that always travel at the speed of light.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Rest Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Rest Mass",
+          "Photons",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons can travel at speeds less than the speed of light in a vacuum if they have lower energy.",
+      "solution": "This statement is false. Photons always travel at the speed of light in a vacuum, regardless of their energy.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall whether photon speed depends on its energy.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Inertial Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Speed",
+          "Energy Independence",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons have zero gravitational mass and are not influenced by gravity.",
+      "solution": "This statement is false. Photons, despite having zero rest mass, are influenced by gravity because they carry energy and momentum.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how photons interact with gravitational fields.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Gravitational Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Gravity Interaction",
+          "General Relativity",
+          "Energy and Momentum"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q5",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "The concept of relativistic mass applies to photons in the traditional sense used for massive particles.",
+      "solution": "This statement is false. The concept of relativistic mass does not apply to photons in the traditional sense used for massive particles.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether relativistic mass is defined for photons.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Relativistic Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Relativistic Mass",
+          "Photons",
+          "Modern Physics"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons carry both energy and momentum as they travel.",
+      "solution": "This statement is true. Photons carry both energy and momentum.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about what photons transfer when they interact with matter.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Photon Energy and Momentum",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Momentum",
+          "Energy Transfer",
+          "Wave-Particle Duality"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "As the wavelength of a photon increases, its energy decreases.",
+      "solution": "This statement is true. A photon's energy is inversely proportional to its wavelength.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall the relationship between photon energy and wavelength.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Photon Energy",
+          "Wavelength Relationship",
+          "Planck's Equation"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "At constant power, increasing the frequency of light increases the number of photons emitted per second.",
+      "solution": "This statement is false. At constant power, increasing the frequency decreases the number of photons emitted per second because each photon has higher energy.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how photon energy and number of photons relate at constant power.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Counting the Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Photon Flux",
+          "Frequency Dependence",
+          "Energy Conservation"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons can be deflected by electric or magnetic fields due to their energy and momentum.",
+      "solution": "This statement is false. Photons are electrically neutral and are not deflected by electric or magnetic fields.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether photons interact with electromagnetic fields.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Photon Interaction with Fields",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Charge",
+          "Electromagnetic Interaction",
+          "Field Interaction"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Radiation pressure is caused by the transfer of momentum from photons to a surface.",
+      "solution": "This statement is true. Radiation pressure is due to the transfer of momentum when photons interact with a surface.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall what causes radiation pressure.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Momentum Transfer",
+          "Photon-Surface Interaction"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q11",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "For a perfectly reflecting surface, the radiation pressure is double that of a perfectly absorbing surface.",
+      "solution": "This statement is true. For a perfectly reflecting surface, radiation pressure is \\(P = \\dfrac{2I}{c}\\), which is double that of an absorbing surface.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the difference in momentum change for reflected vs. absorbed photons.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Reflecting vs. Absorbing Surfaces",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Reflection",
+          "Momentum Change"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Radiation pressure is independent of the angle at which light strikes a surface.",
+      "solution": "This statement is false. Radiation pressure depends on the angle of incidence, involving a \\(\\cos^2 \\theta\\) term.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether the angle affects the effective area and momentum transfer.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Angle of Incidence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Angle Dependence",
+          "Cosine Squared Relationship"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons have zero rest mass but can exert pressure on objects.",
+      "solution": "This statement is true. Despite having zero rest mass, photons carry momentum and can exert pressure.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether photons can transfer momentum.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Photon Momentum",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Momentum",
+          "Radiation Pressure",
+          "Massless Particles"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q14",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Increasing the intensity of light increases the speed at which photons travel.",
+      "solution": "This statement is false. Photons always travel at the speed of light in a vacuum; intensity affects the number of photons, not their speed.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall whether photon speed depends on intensity.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Photon Speed",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Speed",
+          "Intensity Effects",
+          "Wave Properties"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "The energy of a photon is given by \\(E = h \\nu\\).",
+      "solution": "This statement is true. The energy of a photon is \\(E = h \\nu\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall the equation relating photon energy and frequency.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Photon Energy",
+          "Planck's Constant",
+          "Frequency Relation"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons have an associated de Broglie wavelength given by \\(\\lambda = \\dfrac{h}{p}\\).",
+      "solution": "This statement is true. According to de Broglie's hypothesis, photons have an associated wavelength \\(\\lambda = \\dfrac{h}{p}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider de Broglie's relation for particles.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Momentum of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "De Broglie Wavelength",
+          "Photon Momentum",
+          "Wave-Particle Duality"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Radiation pressure is sufficient to explain why a comet's tail always points toward the Sun.",
+      "solution": "This statement is false. Radiation pressure explains why a comet's tail points away from the Sun, not toward it.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the direction of the force due to radiation pressure.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Applications of Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Comet Tails",
+          "Solar Wind"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 3,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "In the context of solar sails, an absorbing surface provides more propulsion than a reflecting one.",
+      "solution": "This statement is false. A reflecting surface provides more propulsion because reflected photons impart more momentum.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the change in momentum for reflected vs. absorbed photons.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Applications of Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Solar Sails",
+          "Photon Reflection",
+          "Space Propulsion"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "Photons gain mass when moving at high speeds.",
+      "solution": "This statement is false. Photons always move at the speed of light and do not gain mass.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether photon mass changes with speed.",
+      "answer": "False",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Photon Mass",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Mass",
+          "Speed of Light",
+          "Relativity"
+        ]
+      }
+    },
+    {
+      "id": "TF.PRA.1.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 2,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 1,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "truefalse",
+      "exerciseName": "True or False",
+      "questionText": "The energy and momentum of photons allow them to interact with gravitational fields.",
+      "solution": "This statement is true. Photons can interact with gravitational fields due to their energy and momentum.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider why photons are affected by gravity despite having zero rest mass.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Gravitational Interaction of Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Gravity Interaction",
+          "Energy and Momentum",
+          "General Relativity"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q1",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 10,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the term for the discrete packets of energy that light transfers to matter?",
+      "solution": "The correct answer is 'Photon.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's the fundamental particle of light.",
+      "answer": [
+        "Photon",
+        "photon",
+        "photons"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Photon",
+          "Quantum Mechanics",
+          "Energy Transfer"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the name of the constant represented by 'h' in the equation \\(E = h\\nu\\)?",
+      "solution": "The correct answer is 'Planck's constant.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's a fundamental constant in quantum mechanics named after a German physicist.",
+      "answer": [
+        "Planck's constant",
+        "plancks constant",
+        "Planck constant"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Planck's Constant",
+          "Photon Energy",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Momentum",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What term describes the intrinsic mass of an object when it is at rest relative to an observer?",
+      "solution": "The correct answer is 'Rest mass.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "For photons, this mass is zero.",
+      "answer": [
+        "Rest mass",
+        "rest mass",
+        "Restmass"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Rest Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Rest Mass",
+          "Mass Concepts",
+          "Photons"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Rest mass",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "Which type of mass measures an object's resistance to acceleration when a force is applied?",
+      "solution": "The correct answer is 'Inertial mass.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This mass is not defined for photons since they always move at speed \\(c\\).",
+      "answer": [
+        "Inertial mass",
+        "inertial mass",
+        "Inertialmass"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Inertial Mass",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Inertial Mass",
+          "Newton's Second Law",
+          "Mass Concepts"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q5",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Weight",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What type of mass determines how an object interacts with gravitational fields?",
+      "solution": "The correct answer is 'Gravitational mass.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This mass allows photons to experience gravitational effects like lensing.",
+      "answer": [
+        "Gravitational mass",
+        "gravitational mass",
+        "Gravitationalmass"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Gravitational Mass",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Gravitational Mass",
+          "Gravity",
+          "Mass Concepts"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What phenomenon involves the bending of light around massive objects due to gravity?",
+      "solution": "The correct answer is 'Gravitational lensing.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This effect is predicted by Einstein's general relativity.",
+      "answer": [
+        "Gravitational lensing",
+        "gravitational lensing",
+        "Gravitationallensing"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Gravitational Interaction",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Gravitational Lensing",
+          "Photon Gravity Interaction",
+          "General Relativity"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 10,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Momentum",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "According to \\(E = h \\nu\\), what property of a photon is directly proportional to its frequency?",
+      "solution": "The correct answer is 'Energy.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This is a fundamental property that increases with frequency.",
+      "answer": [
+        "Energy",
+        "energy"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Photon Energy",
+          "Planck's Equation",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Wavelength",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the term for the number of photons emitted per second by a light source?",
+      "solution": "The correct answer is 'Photon flux.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's a measure of the rate at which photons pass through a given area.",
+      "answer": [
+        "Photon flux",
+        "photon flux",
+        "Photonflux"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Counting the Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Flux",
+          "Photon Emission",
+          "Light Sources"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Charge",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What property of photons makes them unaffected by electric or magnetic fields?",
+      "solution": "The correct answer is 'Electric charge.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Photons lack this property, which is why they are neutral.",
+      "answer": [
+        "Electric charge",
+        "charge",
+        "electric charge"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Photon Interaction with Fields",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Charge",
+          "Electromagnetism",
+          "Particle Properties"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Force",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What term describes the pressure exerted by electromagnetic radiation on a surface?",
+      "solution": "The correct answer is 'Radiation pressure.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This pressure is due to the transfer of momentum from photons.",
+      "answer": [
+        "Radiation pressure",
+        "radiation pressure",
+        "Radiationpressure"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Momentum Transfer",
+          "Photon Interaction"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q11",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Reflection",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the term for the measure of how much a surface reflects light, denoted by 'r'?",
+      "solution": "The correct answer is 'Reflection coefficient.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This coefficient, along with absorption coefficient, sums up to one.",
+      "answer": [
+        "Reflection coefficient",
+        "reflection coefficient",
+        "Reflectioncoefficient"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Reflecting vs. Absorbing Surfaces",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Reflection Coefficient",
+          "Surface Properties",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Angle",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "Which trigonometric function appears squared in the radiation pressure formula when light strikes at an angle?",
+      "solution": "The correct answer is 'Cosine.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This function is denoted as 'cos' in mathematics.",
+      "answer": [
+        "Cosine",
+        "cosine",
+        "Cos"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Angle of Incidence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Cosine Function",
+          "Radiation Pressure",
+          "Trigonometry"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 10,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the phenomenon where a comet's tail points away from the Sun due to radiation pressure?",
+      "solution": "The correct answer is 'Comet tail formation.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This is a natural example of radiation pressure effects in space.",
+      "answer": [
+        "Comet tail formation",
+        "comet tail",
+        "Comet tail"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Applications of Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Comet Tails",
+          "Radiation Pressure",
+          "Astrophysics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q14",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Solar panels",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the term for spacecraft propulsion methods that use large reflective sails to capture photon momentum?",
+      "solution": "The correct answer is 'Solar sails.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "These sails use radiation pressure from the Sun for movement.",
+      "answer": [
+        "Solar sails",
+        "solar sails",
+        "Solarsails"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Applications of Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Solar Sails",
+          "Space Propulsion",
+          "Photon Momentum"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Photons",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the effect called when light changes direction as it passes from one medium to another?",
+      "solution": "The correct answer is 'Refraction.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This effect is described by Snell's Law.",
+      "answer": [
+        "Refraction",
+        "refraction"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Wave Behavior",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Refraction",
+          "Wave Properties",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Diffraction",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "Which phenomenon demonstrates the wave nature of light by bending around obstacles?",
+      "solution": "The correct answer is 'Diffraction.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This effect is significant when the obstacle size is comparable to the wavelength.",
+      "answer": [
+        "Diffraction",
+        "diffraction"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Wave Behavior",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Diffraction",
+          "Wave Properties",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Interference",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What term describes the phenomenon where two waves superimpose to form a resultant wave?",
+      "solution": "The correct answer is 'Interference.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This can be constructive or destructive depending on the phase difference.",
+      "answer": [
+        "Interference",
+        "interference"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Wave Behavior",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Interference",
+          "Wave Superposition",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Polarization",
+            "count": 2
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "Which property of waves describes the orientation of oscillations in the plane perpendicular to the wave's direction?",
+      "solution": "The correct answer is 'Polarization.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This property is exploited in sunglasses to reduce glare.",
+      "answer": [
+        "Polarization",
+        "polarization"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Wave Behavior",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Polarization",
+          "Wave Properties",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "Redshift",
+            "count": 1
+          }
+        ]
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "What is the term for the increase in wavelength of light from an object moving away from the observer?",
+      "solution": "The correct answer is 'Redshift.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "This effect is a key piece of evidence for the expansion of the universe.",
+      "answer": [
+        "Redshift",
+        "redshift"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Doppler Effect",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Redshift",
+          "Doppler Effect",
+          "Astrophysics"
+        ]
+      }
+    },
+    {
+      "id": "OW.PRA.1.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "oneword",
+      "exerciseName": "One Word",
+      "questionText": "Which constant represents the speed of light in a vacuum?",
+      "solution": "The correct answer is 'c.'",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's approximately \\(3 \\times 10^8 \\, \\text{m/s}\\).",
+      "answer": [
+        "c",
+        "speed of light",
+        "light speed"
+      ],
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Fundamental Constants",
+        "concept": "Speed of Light",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.7,
+          "concept": 0.2,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Speed of Light",
+          "Fundamental Constants",
+          "Physics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q1",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 15,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "B",
+            "count": 5
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "According to the photon concept, how does light transfer energy to matter?",
+      "solution": "Light transfers energy in discrete packets called photons. This explains phenomena like the photoelectric effect.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about the fundamental particles of light responsible for energy transfer.",
+      "options": [
+        "A) By transferring energy in discrete packets called photons",
+        "B) By transferring energy continuously as a wave",
+        "C) By transferring energy through mass exchange",
+        "D) By transferring energy via electric fields only"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Concept",
+          "Energy Transfer",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "C",
+            "count": 4
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What is the rest mass of a photon?",
+      "solution": "The rest mass of a photon is zero. Photons are massless particles that always travel at the speed of light.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the mass of particles that always move at the speed of light.",
+      "options": [
+        "A) Zero",
+        "B) Equal to \\( h\\nu \\)",
+        "C) Equal to \\( m_0 c^2 \\)",
+        "D) Infinite"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Rest Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Rest Mass",
+          "Photons",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 20,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 3
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Why are photons able to bend around massive objects like stars if they have zero rest mass?",
+      "solution": "Because their energy and momentum allow them to interact with gravitational fields, curving spacetime as per general relativity.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about how energy and momentum relate to gravity in Einstein's theory.",
+      "options": [
+        "A) Because they gain mass when moving at high speeds",
+        "B) Because their energy and momentum allow them to interact with gravitational fields",
+        "C) Because they have a small but non-zero rest mass",
+        "D) Because gravity does not affect massless particles"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Gravitational Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Gravity Interaction",
+          "General Relativity",
+          "Energy and Momentum"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 17,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which equation relates the energy of a photon to its frequency?",
+      "solution": "The correct equation is \\( E = h\\nu \\), where \\( E \\) is energy, \\( h \\) is Planck's constant, and \\( \\nu \\) is frequency.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall Planck's relation between energy and frequency.",
+      "options": [
+        "A) \\( E = mc^2 \\)",
+        "B) \\( E = h\\nu \\)",
+        "C) \\( E = \\frac{hc}{\\lambda} \\)",
+        "D) \\( E = \\frac{1}{2} mv^2 \\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.7,
+          "concept": 0.2,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Photon Energy",
+          "Planck's Constant",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q5",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 19,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "C",
+            "count": 3
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "If the wavelength of a photon increases, what happens to its energy?",
+      "solution": "The energy decreases because energy is inversely proportional to wavelength as per \\( E = \\frac{hc}{\\lambda} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the relationship between energy and wavelength.",
+      "options": [
+        "A) Energy increases",
+        "B) Energy decreases",
+        "C) Energy remains the same",
+        "D) Energy becomes zero"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Energy of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Energy",
+          "Wavelength Relationship",
+          "Planck's Equation"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 4
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What happens to the number of photons emitted per second when the frequency of light is increased at constant power?",
+      "solution": "The number of photons emitted per second decreases because each photon carries more energy.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about how photon energy and number relate at constant power.",
+      "options": [
+        "A) It increases",
+        "B) It decreases",
+        "C) It remains the same",
+        "D) It doubles"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Counting the Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Flux",
+          "Frequency Dependence",
+          "Energy Conservation"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which property of photons makes them unaffected by electric or magnetic fields?",
+      "solution": "Photons have no electric charge, making them neutral and unaffected by electromagnetic fields.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider whether photons carry any charge.",
+      "options": [
+        "A) Their zero mass",
+        "B) Their high speed",
+        "C) Their lack of electric charge",
+        "D) Their energy"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Photon Interaction with Fields",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Charge",
+          "Electromagnetism",
+          "Field Interaction"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 21,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "B",
+            "count": 3
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What causes radiation pressure on a surface when light shines upon it?",
+      "solution": "Radiation pressure is caused by the transfer of momentum from photons to the surface.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about what photons impart to the surface upon interaction.",
+      "options": [
+        "A) Transfer of momentum from photons",
+        "B) Absorption of energy only",
+        "C) Thermal expansion of the surface",
+        "D) Electric field interactions"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Momentum Transfer",
+          "Photon-Surface Interaction"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 22,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "For a perfectly reflecting surface, how does the radiation pressure compare to that of a perfectly absorbing surface?",
+      "solution": "It is double because reflected photons reverse their momentum, causing a greater change.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the change in momentum upon reflection vs. absorption.",
+      "options": [
+        "A) It is the same",
+        "B) It is half",
+        "C) It is double",
+        "D) It is zero"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Reflecting vs. Absorbing Surfaces",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Reflection",
+          "Momentum Change"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 17,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Does the angle at which light strikes a surface affect the radiation pressure exerted on that surface?",
+      "solution": "Yes, because the radiation pressure involves a \\( \\cos^2 \\theta \\) term when light is incident at an angle \\( \\theta \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how the effective area and momentum components change with angle.",
+      "options": [
+        "A) Yes, it increases with angle",
+        "B) Yes, it decreases with angle",
+        "C) No, it is independent of angle",
+        "D) No, it only depends on intensity"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Angle of Incidence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Angle Dependence",
+          "Cosine Squared Relationship"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q11",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 1
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Why does a reflecting solar sail provide more propulsion than an absorbing one?",
+      "solution": "Because reflected photons impart more momentum by reversing direction, doubling the momentum change compared to absorption.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the momentum change upon reflection vs. absorption.",
+      "options": [
+        "A) Because it captures more photons",
+        "B) Because reflected photons impart more momentum",
+        "C) Because it has a larger surface area",
+        "D) Because absorption decreases spacecraft mass"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Applications of Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Solar Sails",
+          "Photon Reflection",
+          "Space Propulsion"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 19,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "C",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which phenomenon demonstrates the particle nature of light?",
+      "solution": "The photoelectric effect demonstrates that light behaves as particles called photons.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider which effect cannot be explained by wave theory alone.",
+      "options": [
+        "A) Diffraction",
+        "B) Interference",
+        "C) Photoelectric effect",
+        "D) Polarization"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Particle Nature",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 20,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 3
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What is the momentum of a photon related to?",
+      "solution": "The momentum \\( p \\) of a photon is related to its wavelength by \\( p = \\frac{h}{\\lambda} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider de Broglie's hypothesis for particles.",
+      "options": [
+        "A) Its frequency",
+        "B) Its wavelength",
+        "C) Its speed",
+        "D) Its intensity"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Momentum of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Photon Momentum",
+          "De Broglie Wavelength",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q14",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which of the following is NOT a type of mass associated with photons?",
+      "solution": "Inertial mass is not defined for photons since they always travel at the speed of light.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about which mass types are applicable to particles that have zero rest mass and always move at \\( c \\).",
+      "options": [
+        "A) Rest mass",
+        "B) Gravitational mass",
+        "C) Inertial mass",
+        "D) Relativistic mass"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Inertial Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Mass Concepts",
+          "Photons",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 17,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "B",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What is the speed of photons in a vacuum?",
+      "solution": "Photons always travel at the speed of light in a vacuum, which is approximately \\( 3 \\times 10^8 \\, \\text{m/s} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the universal constant for light speed.",
+      "options": [
+        "A) \\( 3 \\times 10^8 \\, \\text{m/s} \\)",
+        "B) Variable depending on energy",
+        "C) Zero",
+        "D) Infinite"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Fundamental Constants",
+        "concept": "Speed of Light",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.7,
+          "concept": 0.2,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Speed of Light",
+          "Photons",
+          "Fundamental Constants"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 22,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 1
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which mass concept is often avoided in modern physics when describing photons?",
+      "solution": "Relativistic mass is often avoided; instead, energy and momentum are used directly.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider which mass increases with velocity in traditional contexts but is not applied to photons.",
+      "options": [
+        "A) Rest mass",
+        "B) Inertial mass",
+        "C) Gravitational mass",
+        "D) Relativistic mass"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Relativistic Mass of Photon",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Relativistic Mass",
+          "Photons",
+          "Modern Physics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 19,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "B",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "What property of waves is utilized in polarized sunglasses to reduce glare?",
+      "solution": "Polarization is the property exploited to filter specific orientations of light waves.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's about the orientation of light's electric field vector.",
+      "options": [
+        "A) Interference",
+        "B) Diffraction",
+        "C) Polarization",
+        "D) Refraction"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Wave Behavior",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Polarization",
+          "Wave Properties",
+          "Optics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 23,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "D",
+            "count": 1
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which phenomenon is a key piece of evidence for the expansion of the universe?",
+      "solution": "Redshift indicates that celestial objects are moving away, supporting the universe's expansion.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's observed as an increase in the wavelength of light from distant galaxies.",
+      "options": [
+        "A) Blueshift",
+        "B) Redshift",
+        "C) Cosmic microwave background",
+        "D) Gravitational lensing"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Doppler Effect",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.6,
+          "concept": 0.3,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Redshift",
+          "Doppler Effect",
+          "Astrophysics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "C",
+            "count": 2
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "Which constant is approximately \\( 6.626 \\times 10^{-34} \\, \\text{J} \\cdot \\text{s} \\) and is fundamental in quantum mechanics?",
+      "solution": "Planck's constant is the fundamental constant with this value.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It appears in the equation \\( E = h\\nu \\).",
+      "options": [
+        "A) Planck's constant",
+        "B) Boltzmann constant",
+        "C) Gravitational constant",
+        "D) Coulomb's constant"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Fundamental Constants",
+        "concept": "Planck's Constant",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.7,
+          "concept": 0.2,
+          "calculation": 0.1,
+          "difficultyIn10": 2
+        },
+        "tags": [
+          "Planck's Constant",
+          "Quantum Mechanics",
+          "Fundamental Constants"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.1.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 24,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 11,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": [
+          {
+            "answer": "A",
+            "count": 1
+          }
+        ]
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option",
+      "questionText": "In the context of photon interactions, what does the term 'photon flux' refer to?",
+      "solution": "Photon flux refers to the number of photons emitted per second by a light source.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's a measure of the rate at which photons pass through a given area.",
+      "options": [
+        "A) Energy per photon",
+        "B) Number of photons per second",
+        "C) Momentum of photons",
+        "D) Wavelength of photons"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon as Energy and Momentum Carrier",
+        "concept": "Counting the Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.3,
+          "calculation": 0.2,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photon Flux",
+          "Photon Emission",
+          "Light Sources"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2296 @@
+{
+  "questions": [
+    {
+      "id": "SO.PEE.1.Q1",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 7,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 3,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If the work function of a metal is \\(2.0\\, \\text{eV}\\), what is the threshold frequency for the photoelectric effect to occur on this metal? (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\))",
+      "solution": "The threshold frequency \\(\\nu_0\\) is given by \\(\\phi = h\\nu_0\\).\n\nFirst, convert the work function to joules:\n\n\\(\\phi = 2.0\\, \\text{eV} \\times 1.602 \\times 10^{-19}\\, \\text{J/eV} = 3.204 \\times 10^{-19}\\, \\text{J}\\).\n\nNow, solve for \\(\\nu_0\\):\n\n\\(\\nu_0 = \\frac{\\phi}{h} = \\frac{3.204 \\times 10^{-19}}{6.626 \\times 10^{-34}} \\approx 4.83 \\times 10^{14}\\, \\text{Hz}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the relation \\(\\phi = h\\nu_0\\) and convert the work function to joules.",
+      "options": [
+        "A) \\(3.90 \\times 10^{14}\\, \\text{Hz}\\)",
+        "B) \\(4.83 \\times 10^{14}\\, \\text{Hz}\\)",
+        "C) \\(6.87 \\times 10^{14}\\, \\text{Hz}\\)",
+        "D) \\(7.53 \\times 10^{14}\\, \\text{Hz}\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Threshold Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Frequency",
+          "Planck's Constant"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 8,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 3,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following statements is true regarding the photoelectric effect?",
+      "solution": "In the photoelectric effect, the maximum kinetic energy of emitted electrons depends on the frequency of the incident light, not its intensity.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how the kinetic energy of photoelectrons relates to the light's frequency and intensity.",
+      "options": [
+        "A) Increasing light intensity increases the maximum kinetic energy of photoelectrons.",
+        "B) The maximum kinetic energy of photoelectrons is independent of the light's frequency.",
+        "C) The maximum kinetic energy of photoelectrons depends on the light's frequency.",
+        "D) No electrons are emitted if the light intensity is too low, regardless of frequency."
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Kinetic Energy Dependence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Kinetic Energy",
+          "Frequency Dependence",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 9,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 4,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "An electron is emitted from a metal surface with a kinetic energy of \\(1.5\\, \\text{eV}\\) when illuminated with light of frequency \\(\\nu\\). If the work function of the metal is \\(2.0\\, \\text{eV}\\), what is the frequency \\(\\nu\\) of the incident light? (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\))",
+      "solution": "Use the photoelectric equation:\n\n\\(K_{\\text{max}} = h\\nu - \\phi\\)\n\nPlug in the values:\n\n\\(1.5 = h\\nu - 2.0\\)\n\nSolve for \\(\\nu\\):\n\n\\(h\\nu = 1.5 + 2.0 = 3.5\\, \\text{eV}\\)\n\n\\(\\nu = \\frac{3.5}{h} = \\frac{3.5}{4.1357 \\times 10^{-15}} \\approx 8.466 \\times 10^{14}\\, \\text{Hz}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply the photoelectric equation \\(K_{\\text{max}} = h\\nu - \\phi\\).",
+      "options": [
+        "A) \\(5.708 \\times 10^{14}\\, \\text{Hz}\\)",
+        "B) \\(8.466 \\times 10^{14}\\, \\text{Hz}\\)",
+        "C) \\(7.239 \\times 10^{14}\\, \\text{Hz}\\)",
+        "D) \\(6.512 \\times 10^{14}\\, \\text{Hz}\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Photon Energy and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Photon Energy",
+          "Work Function",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 6,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 2,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which phenomenon demonstrates the particle nature of light?",
+      "solution": "The photoelectric effect demonstrates the particle nature of light because it involves photons transferring discrete energy packets to electrons.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider which effect cannot be explained by wave theory alone.",
+      "options": [
+        "A) Interference",
+        "B) Diffraction",
+        "C) Polarization",
+        "D) Photoelectric Effect"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Dual Nature of Light",
+        "concept": "Particle Nature",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Particle Nature",
+          "Photoelectric Effect",
+          "Light"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q5",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 7,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 3,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In a photoelectric experiment, which of the following will increase the kinetic energy of the emitted electrons?",
+      "solution": "Increasing the frequency of the incident light increases the kinetic energy of emitted electrons.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the factors that affect the energy of photons.",
+      "options": [
+        "A) Increasing the intensity of light",
+        "B) Decreasing the frequency of light",
+        "C) Increasing the frequency of light",
+        "D) Using a metal with a higher work function"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Kinetic Energy Dependence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Kinetic Energy",
+          "Frequency",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 10,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 4,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Light of wavelength \\(300\\, \\text{nm}\\) is incident on a metal surface with a work function of \\(2.5\\, \\text{eV}\\). What is the maximum kinetic energy of the emitted electrons? (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\), and \\(1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J}\\))",
+      "solution": "First, find the energy of the incident photons:\n\n\\(E = \\frac{hc}{\\lambda}\\)\n\n\\(E = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{300 \\times 10^{-9}} = 6.626 \\times 10^{-19}\\, \\text{J}\\)\n\nConvert \\(E\\) to eV:\n\n\\(E = \\frac{6.626 \\times 10^{-19}}{1.602 \\times 10^{-19}} \\approx 4.14\\, \\text{eV}\\)\n\nNow, use the photoelectric equation:\n\n\\(K_{\\text{max}} = E - \\phi = 4.14 - 2.5 = 1.64\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the photon energy using \\(E = \\frac{hc}{\\lambda}\\) and then subtract the work function.",
+      "options": [
+        "A) \\(1.64\\, \\text{eV}\\)",
+        "B) \\(2.5\\, \\text{eV}\\)",
+        "C) \\(4.14\\, \\text{eV}\\)",
+        "D) \\(6.64\\, \\text{eV}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Photon Energy and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Photon Energy",
+          "Work Function",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 8,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 3,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following graphs correctly represents the variation of photocurrent with the intensity of incident light in a photoelectric experiment?",
+      "solution": "The photocurrent increases linearly with the intensity of the incident light.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how the number of emitted electrons relates to light intensity.",
+      "options": [
+        "A) A straight line passing through the origin with positive slope",
+        "B) A horizontal line parallel to the intensity axis",
+        "C) A curve decreasing exponentially",
+        "D) A curve increasing exponentially"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Photocurrent and Intensity",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Photocurrent",
+          "Intensity",
+          "Graph Interpretation"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 9,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 4,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which metal will have the highest threshold frequency for the photoelectric effect?",
+      "solution": "A metal with the highest work function will have the highest threshold frequency.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Threshold frequency is directly proportional to the work function.",
+      "options": [
+        "A) Cesium (Work function \\(2.14\\, \\text{eV}\\))",
+        "B) Sodium (Work function \\(2.75\\, \\text{eV}\\))",
+        "C) Copper (Work function \\(4.7\\, \\text{eV}\\))",
+        "D) Platinum (Work function \\(5.65\\, \\text{eV}\\))"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Threshold Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Frequency",
+          "Metals"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If the stopping potential in a photoelectric experiment is \\(3\\, \\text{V}\\), what is the maximum kinetic energy of the emitted electrons?",
+      "solution": "The maximum kinetic energy is given by \\(K_{\\text{max}} = eV_s\\).\n\n\\(K_{\\text{max}} = (1.602 \\times 10^{-19}\\, \\text{C})(3\\, \\text{V}) = 4.806 \\times 10^{-19}\\, \\text{J}\\)\n\nConvert to eV:\n\n\\(K_{\\text{max}} = 3\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the relation \\(K_{\\text{max}} = eV_s\\).",
+      "options": [
+        "A) \\(1\\, \\text{eV}\\)",
+        "B) \\(3\\, \\text{eV}\\)",
+        "C) \\(4.806 \\times 10^{-19}\\, \\text{J}\\)",
+        "D) Both B and C are correct"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.4,
+          "calculation": 0.3,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Stopping Potential",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In a photoelectric effect experiment, doubling the frequency of incident light while keeping intensity constant will:",
+      "solution": "Doubling the frequency increases the photon energy, thus increasing the kinetic energy of emitted electrons, but the number of photons decreases if intensity is constant.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the effect on photon energy and photon number.",
+      "options": [
+        "A) Double the photocurrent",
+        "B) Increase the maximum kinetic energy of electrons",
+        "C) Decrease the stopping potential",
+        "D) Have no effect on the experiment"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Frequency Effect",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.6,
+          "calculation": 0.2,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Frequency",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q11",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 9,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 4,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following observations from the photoelectric effect cannot be explained by the classical wave theory of light?",
+      "solution": "The existence of a threshold frequency below which no electrons are emitted cannot be explained by classical wave theory.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about which observation suggests quantization of energy.",
+      "options": [
+        "A) Photocurrent increases with light intensity",
+        "B) Kinetic energy of electrons increases with light frequency",
+        "C) There is a time lag before electrons are emitted",
+        "D) Electrons are emitted even at low light intensities"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Classical Theory Limitations",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Classical Theory",
+          "Frequency Dependence",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 8,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 3,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "What is the effect of increasing the intensity of incident light on the stopping potential in a photoelectric experiment?",
+      "solution": "Increasing intensity does not affect the stopping potential; it remains the same.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Stopping potential is related to the maximum kinetic energy of electrons, which depends on frequency.",
+      "options": [
+        "A) Stopping potential increases",
+        "B) Stopping potential decreases",
+        "C) Stopping potential remains the same",
+        "D) Stopping potential becomes zero"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity and Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Intensity",
+          "Stopping Potential",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "An ultraviolet light causes electron emission from a metal surface but visible light does not, even if the visible light intensity is higher. This is because:",
+      "solution": "Ultraviolet light has a higher frequency and thus higher photon energy than visible light, exceeding the work function.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the relationship between photon energy and frequency.",
+      "options": [
+        "A) Ultraviolet light has higher intensity",
+        "B) Visible light photons are absorbed differently",
+        "C) Ultraviolet photons have more energy than visible photons",
+        "D) Metals are transparent to visible light"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Photon Energy and Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Ultraviolet Light",
+          "Photon Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q14",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If a metal surface with work function \\(\\phi\\) is illuminated with light of frequency \\(\\nu\\) such that \\(h\\nu = 2\\phi\\), what is the stopping potential?",
+      "solution": "Using \\(K_{\\text{max}} = h\\nu - \\phi = 2\\phi - \\phi = \\phi\\)\n\nThen, \\(K_{\\text{max}} = eV_s\\)\n\nSo, \\(V_s = \\frac{\\phi}{e}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the photoelectric equation and relate kinetic energy to stopping potential.",
+      "options": [
+        "A) \\(V_s = \\frac{\\phi}{e}\\)",
+        "B) \\(V_s = \\frac{2\\phi}{e}\\)",
+        "C) \\(V_s = \\frac{\\phi}{2e}\\)",
+        "D) \\(V_s = \\frac{3\\phi}{e}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Work Function and Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Work Function",
+          "Stopping Potential",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photoelectric experiment is performed using two different light sources with frequencies \\(\\nu_1\\) and \\(\\nu_2\\) (\\(\\nu_2 > \\nu_1\\)). If both frequencies are above the threshold frequency, which of the following is true?",
+      "solution": "The kinetic energy of emitted electrons is higher for frequency \\(\\nu_2\\) because it's higher.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how kinetic energy depends on frequency.",
+      "options": [
+        "A) The photocurrent is higher for \\(\\nu_2\\)",
+        "B) The stopping potential is higher for \\(\\nu_1\\)",
+        "C) The maximum kinetic energy is higher for \\(\\nu_2\\)",
+        "D) No electrons are emitted for \\(\\nu_1\\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Frequency and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.6,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Frequency",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "What is the role of the vacuum in the photoelectric effect experimental setup?",
+      "solution": "The vacuum prevents the emitted electrons from colliding with air molecules, allowing them to reach the collector plate.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about how air molecules might affect electron motion.",
+      "options": [
+        "A) To increase the intensity of light",
+        "B) To prevent oxidation of the metal surface",
+        "C) To allow electrons to travel unimpeded to the collector",
+        "D) To cool down the experimental apparatus"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Experimental Setup",
+        "concept": "Vacuum Role",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Vacuum",
+          "Experimental Setup",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 10,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 4,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which scientist first explained the photoelectric effect using the concept of quantized light energy?",
+      "solution": "Albert Einstein explained the photoelectric effect using photons.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "He received the Nobel Prize for this work, not for his theory of relativity.",
+      "options": [
+        "A) Max Planck",
+        "B) Niels Bohr",
+        "C) Albert Einstein",
+        "D) Heinrich Hertz"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Historical Development",
+        "concept": "Einstein's Explanation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Einstein",
+          "Photoelectric Effect",
+          "History"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In the context of the photoelectric effect, the term 'work function' refers to:",
+      "solution": "The work function is the minimum energy required to remove an electron from the metal surface.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It's related to the energy barrier for electron emission.",
+      "options": [
+        "A) The maximum kinetic energy of emitted electrons",
+        "B) The minimum frequency required for photoemission",
+        "C) The minimum energy needed to emit an electron from the metal",
+        "D) The energy of incident photons"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Work Function",
+          "Definition",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following best explains why increasing the intensity of light increases the photocurrent in a photoelectric experiment?",
+      "solution": "Increasing intensity increases the number of photons, leading to more electrons being emitted per unit time.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Photocurrent depends on the number of electrons emitted.",
+      "options": [
+        "A) Higher intensity increases photon energy",
+        "B) Higher intensity increases the number of photons",
+        "C) Higher intensity reduces the work function",
+        "D) Higher intensity increases the frequency of light"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity and Photocurrent",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Intensity",
+          "Photocurrent",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 15,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following is NOT an observation made in the photoelectric effect experiments?",
+      "solution": "The maximum kinetic energy of photoelectrons depends on the light's intensity is NOT an observation; it depends on frequency.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall how kinetic energy of emitted electrons is affected in the photoelectric effect.",
+      "options": [
+        "A) There is a threshold frequency below which no electrons are emitted",
+        "B) Photocurrent increases with light intensity",
+        "C) Maximum kinetic energy of photoelectrons depends on light intensity",
+        "D) Emission of electrons is instantaneous with light exposure"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Experimental Observations",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Observations",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q21",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In the photoelectric effect, what happens to the emitted electrons when a retarding potential is applied?",
+      "solution": "A retarding potential opposes the motion of electrons, reducing the photocurrent; at sufficient potential, electrons cannot reach the collector.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the effect of an opposing electric field on electron motion.",
+      "options": [
+        "A) Electrons gain more kinetic energy",
+        "B) Photocurrent increases",
+        "C) Photocurrent decreases",
+        "D) Electrons change direction towards the emitter"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Retarding Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Retarding Potential",
+          "Photocurrent",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q22",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 11,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which quantity is directly proportional to the stopping potential in a photoelectric experiment?",
+      "solution": "The maximum kinetic energy of the emitted electrons is directly proportional to the stopping potential.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall the relationship between kinetic energy and stopping potential.",
+      "options": [
+        "A) Intensity of light",
+        "B) Frequency of light",
+        "C) Number of emitted electrons",
+        "D) Maximum kinetic energy of electrons"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Stopping Potential",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q23",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A light source emits photons of energy \\(5\\, \\text{eV}\\). If the work function of the metal is \\(2\\, \\text{eV}\\), what is the stopping potential?",
+      "solution": "First, find \\(K_{\\text{max}} = h\\nu - \\phi = 5 - 2 = 3\\, \\text{eV}\\)\n\nThen, \\(V_s = \\frac{K_{\\text{max}}}{e} = \\frac{3\\, \\text{eV}}{1\\, \\text{eV}} = 3\\, \\text{V}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use \\(K_{\\text{max}} = eV_s\\) and calculate the kinetic energy.",
+      "options": [
+        "A) \\(1\\, \\text{V}\\)",
+        "B) \\(2\\, \\text{V}\\)",
+        "C) \\(3\\, \\text{V}\\)",
+        "D) \\(5\\, \\text{V}\\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Calculating Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Stopping Potential",
+          "Kinetic Energy",
+          "Work Function"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q24",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 15,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "The time lag observed in the emission of electrons during the photoelectric effect is:",
+      "solution": "No time lag is observed; emission is instantaneous upon light exposure.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how the photon-electron interaction occurs.",
+      "options": [
+        "A) Several minutes",
+        "B) Several seconds",
+        "C) Several microseconds",
+        "D) Negligible; emission is instantaneous"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Time Lag Problem",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Time Lag",
+          "Photoelectric Effect",
+          "Observations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q25",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following equations represents Einstein's photoelectric equation?",
+      "solution": "Einstein's equation is \\(K_{\\text{max}} = h\\nu - \\phi\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It relates kinetic energy, photon energy, and work function.",
+      "options": [
+        "A) \\(E = mc^2\\)",
+        "B) \\(K_{\\text{max}} = h\\nu - \\phi\\)",
+        "C) \\(E = h\\nu\\)",
+        "D) \\(\\lambda = \\frac{h}{p}\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Einstein's Explanation",
+        "concept": "Photoelectric Equation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Einstein's Equation",
+          "Photoelectric Effect",
+          "Equations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q26",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "The classical wave theory failed to explain the photoelectric effect because it could not account for:",
+      "solution": "The existence of a threshold frequency below which no electrons are emitted.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about which aspect suggests quantization of light.",
+      "options": [
+        "A) Increase of photocurrent with light intensity",
+        "B) Immediate emission of electrons",
+        "C) Existence of threshold frequency",
+        "D) Wave nature of light"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Inconsistencies",
+        "concept": "Classical Theory Limitations",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Classical Theory",
+          "Threshold Frequency",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q27",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which quantity remains unaffected when the intensity of incident light is increased in a photoelectric experiment?",
+      "solution": "The maximum kinetic energy of the emitted electrons remains unaffected.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Intensity affects the number of photons but not the energy per photon.",
+      "options": [
+        "A) Number of emitted electrons",
+        "B) Maximum kinetic energy of electrons",
+        "C) Photocurrent",
+        "D) Number of photons incident per unit time"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Intensity",
+          "Kinetic Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q28",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 17,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "What is the significance of Planck's constant in the photoelectric effect?",
+      "solution": "Planck's constant relates the energy of a photon to its frequency: \\(E = h\\nu\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It is a fundamental constant in quantum mechanics.",
+      "options": [
+        "A) It is the work function of metals",
+        "B) It relates photon energy to frequency",
+        "C) It determines the speed of light",
+        "D) It measures the intensity of light"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Einstein's Explanation",
+        "concept": "Planck's Constant",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.5,
+          "concept": 0.4,
+          "calculation": 0.1,
+          "difficultyIn10": 3
+        },
+        "tags": [
+          "Planck's Constant",
+          "Photon Energy",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q29",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following adjustments will NOT increase the photocurrent in a photoelectric experiment?",
+      "solution": "Increasing the frequency beyond the threshold does not increase photocurrent; it increases kinetic energy.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Photocurrent depends on the number of electrons emitted.",
+      "options": [
+        "A) Increasing the light intensity",
+        "B) Increasing the area of the emitter plate",
+        "C) Increasing the frequency of light above the threshold",
+        "D) Decreasing the retarding potential"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Factors Affecting Photocurrent",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Photocurrent",
+          "Frequency",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PEE.1.Q30",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In a photoelectric experiment, the collector plate is made negative with respect to the emitter plate. This setup is used to measure:",
+      "solution": "Making the collector negative with respect to the emitter applies a retarding potential to determine the stopping potential.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Think about how retarding potential affects electron motion.",
+      "options": [
+        "A) Saturation current",
+        "B) Stopping potential",
+        "C) Threshold frequency",
+        "D) Work function of the metal"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Experimental Setup",
+        "concept": "Retarding Potential Measurement",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Stopping Potential",
+          "Retarding Potential",
+          "Photoelectric Effect"
+        ]
+      }
+    },
+    {
+      "id": "SO.PNR.2.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 30,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 12,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A beam of light with intensity \\(I\\) and frequency \\(f\\) is incident on a metal surface causing photoelectric emission. If the frequency of the light is doubled while keeping the intensity constant, what happens to the saturation photocurrent?",
+      "solution": "Doubling the frequency increases the energy per photon, but keeping intensity constant means the number of photons decreases (since intensity is energy per unit area per unit time). Therefore, fewer electrons are emitted, and the saturation photocurrent decreases.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how photon energy and photon number change when frequency increases at constant intensity.",
+      "options": [
+        "A) It increases",
+        "B) It decreases",
+        "C) It remains the same",
+        "D) It becomes zero"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity and Frequency Effects",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Photon Number",
+          "Frequency Dependence"
+        ]
+      }
+    },
+    {
+      "id": "SO.PNR.2.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 37,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 15,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If the intensity of monochromatic light is increased while keeping the frequency constant in a photoelectric experiment, which of the following quantities will increase?",
+      "solution": "Increasing intensity increases the number of photons per unit time, thus increasing the photoelectric current (number of emitted electrons). The maximum kinetic energy of electrons remains unchanged as it depends on frequency.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how intensity affects photon number and energy per photon.",
+      "options": [
+        "A) Maximum kinetic energy of electrons",
+        "B) Threshold frequency",
+        "C) Photoelectric current",
+        "D) Work function of the metal"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity Effects",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.4,
+          "calculation": 0.3,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Intensity",
+          "Photon Number"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q1",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 12,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "Calculate the threshold wavelength (in nanometers) for a metal with a work function of \\(2.5\\, \\text{eV}\\). (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\), and \\(1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J}\\))",
+      "solution": "The threshold frequency \\(\\nu_0\\) is given by \\(\\phi = h\\nu_0\\).\n\nFirst, convert the work function to joules:\n\n\\(\\phi = 2.5\\, \\text{eV} \\times 1.602 \\times 10^{-19}\\, \\text{J/eV} = 4.005 \\times 10^{-19}\\, \\text{J}\\).\n\nNow, solve for \\(\\nu_0\\):\n\n\\(\\nu_0 = \\frac{\\phi}{h} = \\frac{4.005 \\times 10^{-19}}{6.626 \\times 10^{-34}} \\approx 6.042 \\times 10^{14}\\, \\text{Hz}\\).\n\nThen, find the threshold wavelength \\(\\lambda_0\\):\n\n\\(\\lambda_0 = \\frac{c}{\\nu_0} = \\frac{3 \\times 10^8}{6.042 \\times 10^{14}} \\approx 4.966 \\times 10^{-7}\\, \\text{m} = 496.6\\, \\text{nm}\\).\n\nTherefore, the threshold wavelength is approximately \\(497\\, \\text{nm}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0",
+      "hint": "Use \\(\\phi = h\\nu_0\\) to find the threshold frequency, then calculate \\(\\lambda_0 = \\frac{c}{\\nu_0}\\).",
+      "answer": 497,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Threshold Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Wavelength",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "Light of frequency \\(7.5 \\times 10^{14}\\, \\text{Hz}\\) is incident on a metal surface with a work function of \\(2.0\\, \\text{eV}\\). Calculate the maximum kinetic energy (in eV) of the emitted electrons. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\))",
+      "solution": "Use the photoelectric equation:\n\n\\(K_{\\text{max}} = h\\nu - \\phi\\)\n\nPlug in the values:\n\n\\(K_{\\text{max}} = (4.1357 \\times 10^{-15})(7.5 \\times 10^{14}) - 2.0\\)\n\n\\(K_{\\text{max}} = 3.1018 - 2.0 = 1.1018\\, \\text{eV}\\)\n\nTherefore, the maximum kinetic energy is approximately \\(1.10\\, \\text{eV}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.02",
+      "hint": "Apply \\(K_{\\text{max}} = h\\nu - \\phi\\) using given values.",
+      "answer": 1.10,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Maximum Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Kinetic Energy",
+          "Frequency",
+          "Work Function"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q3",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "The stopping potential in a photoelectric experiment is measured to be \\(1.5\\, \\text{V}\\). Calculate the maximum speed (in meters per second) of the emitted electrons. (Use electron mass \\(m_e = 9.109 \\times 10^{-31}\\, \\text{kg}\\), and elementary charge \\(e = 1.602 \\times 10^{-19}\\, \\text{C}\\))",
+      "solution": "First, find the maximum kinetic energy:\n\n\\(K_{\\text{max}} = eV_s = (1.602 \\times 10^{-19})(1.5) = 2.403 \\times 10^{-19}\\, \\text{J}\\)\n\nNow, use \\(K_{\\text{max}} = \\frac{1}{2} m_e v_{\\text{max}}^2\\):\n\n\\(v_{\\text{max}} = \\sqrt{\\frac{2 K_{\\text{max}}}{m_e}} = \\sqrt{\\frac{2 \\times 2.403 \\times 10^{-19}}{9.109 \\times 10^{-31}}} \\approx 7.29 \\times 10^{5}\\, \\text{m/s}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0",
+      "hint": "Use \\(K_{\\text{max}} = eV_s\\) and \\(K_{\\text{max}} = \\frac{1}{2} m_e v_{\\text{max}}^2\\) to solve for \\(v_{\\text{max}}\\).",
+      "answer": 7.29e5,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Electron Speed",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.1,
+          "concept": 0.3,
+          "calculation": 0.6,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Stopping Potential",
+          "Electron Speed",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "A photon has an energy of \\(3.0\\, \\text{eV}\\). Calculate its wavelength in nanometers. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\) and \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "First, find the frequency:\n\n\\(\\nu = \\frac{E}{h} = \\frac{3.0}{4.1357 \\times 10^{-15}} \\approx 7.25 \\times 10^{14}\\, \\text{Hz}\\)\n\nNow, calculate the wavelength:\n\n\\(\\lambda = \\frac{c}{\\nu} = \\frac{3 \\times 10^8}{7.25 \\times 10^{14}} \\approx 4.138 \\times 10^{-7}\\, \\text{m} = 413.8\\, \\text{nm}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.5",
+      "hint": "Use \\(E = h\\nu\\) to find frequency, then \\(\\lambda = \\frac{c}{\\nu}\\).",
+      "answer": 413.8,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Photon Energy",
+          "Wavelength",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q5",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 20,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "The work function of a metal is \\(4.0\\, \\text{eV}\\). What is the minimum frequency (in \\(\\times 10^{14}\\, \\text{Hz}\\)) of light required to emit electrons from its surface? (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\))",
+      "solution": "Use \\(\\phi = h\\nu_0\\):\n\n\\(\\nu_0 = \\frac{\\phi}{h} = \\frac{4.0}{4.1357 \\times 10^{-15}} \\approx 9.67 \\times 10^{14}\\, \\text{Hz}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.02",
+      "hint": "Apply \\(\\nu_0 = \\frac{\\phi}{h}\\).",
+      "answer": 9.67,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Threshold Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Frequency",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 22,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "An electron emitted in a photoelectric effect experiment has a kinetic energy of \\(2.0\\, \\text{eV}\\). Calculate its de Broglie wavelength in nanometers. (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\), electron mass \\(m_e = 9.109 \\times 10^{-31}\\, \\text{kg}\\), and \\(1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J}\\))",
+      "solution": "First, convert kinetic energy to joules:\n\n\\(K = 2.0 \\times 1.602 \\times 10^{-19} = 3.204 \\times 10^{-19}\\, \\text{J}\\)\n\nCalculate the momentum:\n\n\\(p = \\sqrt{2 m_e K} = \\sqrt{2 \\times 9.109 \\times 10^{-31} \\times 3.204 \\times 10^{-19}} \\approx 7.626 \\times 10^{-25}\\, \\text{kg}\\cdot\\text{m/s}\\)\n\nFind the de Broglie wavelength:\n\n\\(\\lambda = \\frac{h}{p} = \\frac{6.626 \\times 10^{-34}}{7.626 \\times 10^{-25}} \\approx 8.689 \\times 10^{-10}\\, \\text{m} = 0.8689\\, \\text{nm}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.005",
+      "hint": "Use de Broglie relation \\(\\lambda = \\frac{h}{p}\\) and calculate momentum from kinetic energy.",
+      "answer": 0.8689,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Wave-Particle Duality",
+        "concept": "de Broglie Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.1,
+          "concept": 0.3,
+          "calculation": 0.6,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "de Broglie Wavelength",
+          "Electron",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 15,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "By what factor does the maximum kinetic energy of photoelectrons increase if the frequency of incident light is doubled, assuming the original frequency is above the threshold frequency?",
+      "solution": "Let initial frequency be \\(\\nu\\), so initial kinetic energy is \\(K_1 = h\\nu - \\phi\\).\n\nWhen frequency is doubled: \\(\\nu' = 2\\nu\\), so \\(K_2 = h(2\\nu) - \\phi = 2h\\nu - \\phi\\).\n\nNow, find the factor:\n\n\\(\\text{Factor} = \\frac{K_2}{K_1} = \\frac{2h\\nu - \\phi}{h\\nu - \\phi}\\)\n\nCannot simplify without specific values, but since \\(K_1 = h\\nu - \\phi\\), and \\(K_2 = 2K_1 + \\phi\\).\n\nAssuming \\(\\phi\\) is negligible compared to \\(h\\nu\\), the factor is approximately 2.\n\nTherefore, the kinetic energy increases by a factor of approximately 2.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.1",
+      "hint": "Use the photoelectric equation and compare \\(K_{\\text{max}}\\) before and after doubling frequency.",
+      "answer": 2,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Kinetic Energy and Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Kinetic Energy",
+          "Frequency",
+          "Factor Change"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 13,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 5,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "A metal has a threshold frequency of \\(5 \\times 10^{14}\\, \\text{Hz}\\). Calculate its work function in electron volts. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\))",
+      "solution": "Use \\(\\phi = h\\nu_0\\):\n\n\\(\\phi = (4.1357 \\times 10^{-15})(5 \\times 10^{14}) = 2.06785\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.005",
+      "hint": "Apply \\(\\phi = h\\nu_0\\) using the given values.",
+      "answer": 2.06785,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Calculating Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Frequency",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 19,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "If the intensity of incident light is increased by a factor of 4, by what factor does the number of emitted photoelectrons per unit time change?",
+      "solution": "The number of emitted photoelectrons per unit time is directly proportional to the intensity. Therefore, it increases by a factor of 4.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0",
+      "hint": "Photocurrent (number of electrons) is proportional to light intensity.",
+      "answer": 4,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity and Photocurrent",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 4
+        },
+        "tags": [
+          "Intensity",
+          "Photocurrent",
+          "Factor Change"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 17,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "Calculate the energy (in electron volts) of a photon with a wavelength of \\(620\\, \\text{nm}\\). (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\) and \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "First, find the frequency:\n\n\\(\\nu = \\frac{c}{\\lambda} = \\frac{3 \\times 10^8}{620 \\times 10^{-9}} \\approx 4.8387 \\times 10^{14}\\, \\text{Hz}\\)\n\nNow, calculate the energy:\n\n\\(E = h\\nu = (4.1357 \\times 10^{-15})(4.8387 \\times 10^{14}) \\approx 2.0\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.02",
+      "hint": "Use \\(E = h\\nu\\) and \\(\\nu = \\frac{c}{\\lambda}\\).",
+      "answer": 2.0,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Photon Energy",
+          "Wavelength",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q11",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 21,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "The stopping potential for electrons emitted from a metal surface is \\(2.5\\, \\text{V}\\). What is the maximum kinetic energy (in joules) of these electrons? (Use elementary charge \\(e = 1.602 \\times 10^{-19}\\, \\text{C}\\))",
+      "solution": "Use \\(K_{\\text{max}} = eV_s\\):\n\n\\(K_{\\text{max}} = (1.602 \\times 10^{-19})(2.5) = 4.005 \\times 10^{-19}\\, \\text{J}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "1e-21",
+      "hint": "Apply \\(K_{\\text{max}} = eV_s\\).",
+      "answer": 4.005e-19,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Stopping Potential",
+          "Kinetic Energy",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 23,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "Light of wavelength \\(400\\, \\text{nm}\\) is incident on a metal surface, causing electron emission with a stopping potential of \\(1.0\\, \\text{V}\\). Calculate the work function of the metal in electron volts. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "First, find the energy of the photons:\n\n\\(E = \\frac{hc}{\\lambda} = \\frac{(4.1357 \\times 10^{-15})(3 \\times 10^8)}{400 \\times 10^{-9}} = 3.103\\, \\text{eV}\\)\n\nNow, use \\(K_{\\text{max}} = E - \\phi\\) and \\(K_{\\text{max}} = eV_s = 1.0\\, \\text{eV}\\):\n\n\\(1.0 = 3.103 - \\phi\\)\n\nSo, \\(\\phi = 3.103 - 1.0 = 2.103\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.005",
+      "hint": "Calculate photon energy and use \\(K_{\\text{max}} = E - \\phi\\).",
+      "answer": 2.103,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Calculating Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Work Function",
+          "Stopping Potential",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 24,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "A light source emits \\(2 \\times 10^{15}\\) photons per second, each of energy \\(5\\, \\text{eV}\\). Calculate the total power (in watts) emitted by the source. (Use \\(1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J}\\))",
+      "solution": "First, convert photon energy to joules:\n\n\\(E = 5 \\times 1.602 \\times 10^{-19} = 8.01 \\times 10^{-19}\\, \\text{J}\\)\n\nTotal power:\n\n\\(P = N E = (2 \\times 10^{15})(8.01 \\times 10^{-19}) = 1.602 \\times 10^{-3}\\, \\text{W}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "1e-5",
+      "hint": "Multiply the number of photons per second by the energy per photon.",
+      "answer": 1.602e-3,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Power Calculation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.1,
+          "concept": 0.3,
+          "calculation": 0.6,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Power",
+          "Photon Energy",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q14",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 16,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 7,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "If the kinetic energy of emitted electrons is \\(1.5\\, \\text{eV}\\) when light of frequency \\(6 \\times 10^{14}\\, \\text{Hz}\\) is used, calculate the work function (in eV) of the metal. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\))",
+      "solution": "Use \\(K_{\\text{max}} = h\\nu - \\phi\\):\n\n\\(1.5 = (4.1357 \\times 10^{-15})(6 \\times 10^{14}) - \\phi\\)\n\nCalculate photon energy:\n\n\\(E = (4.1357 \\times 10^{-15})(6 \\times 10^{14}) = 2.4814\\, \\text{eV}\\)\n\nSo, \\(1.5 = 2.4814 - \\phi\\)\n\nTherefore, \\(\\phi = 2.4814 - 1.5 = 0.9814\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.005",
+      "hint": "Calculate photon energy and subtract kinetic energy to find work function.",
+      "answer": 0.9814,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Calculating Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Work Function",
+          "Kinetic Energy",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 25,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 11,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "An electron gains kinetic energy equal to the work function of a metal surface. If the work function is \\(3.0\\, \\text{eV}\\), calculate the speed of the electron in meters per second. (Use electron mass \\(m_e = 9.109 \\times 10^{-31}\\, \\text{kg}\\), and \\(1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J}\\))",
+      "solution": "First, convert kinetic energy to joules:\n\n\\(K = 3.0 \\times 1.602 \\times 10^{-19} = 4.806 \\times 10^{-19}\\, \\text{J}\\)\n\nCalculate speed:\n\n\\(v = \\sqrt{\\frac{2K}{m_e}} = \\sqrt{\\frac{2 \\times 4.806 \\times 10^{-19}}{9.109 \\times 10^{-31}}} \\approx 1.03 \\times 10^{6}\\, \\text{m/s}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0",
+      "hint": "Use \\(K = \\frac{1}{2} m_e v^2\\) to solve for \\(v\\).",
+      "answer": 1.03e6,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Electron Dynamics",
+        "concept": "Electron Speed",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.1,
+          "concept": 0.3,
+          "calculation": 0.6,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Electron Speed",
+          "Work Function",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 18,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 8,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "By what factor does the stopping potential change if the frequency of the incident light is increased from \\(\\nu_1\\) to \\(\\nu_2 = \\nu_1 + \\Delta \\nu\\), assuming \\(\\Delta \\nu\\) is small and \\(h\\Delta \\nu > 0\\)?",
+      "solution": "Using \\(eV_s = h\\nu - \\phi\\), the change in stopping potential is \\(\\Delta V_s = \\frac{h \\Delta \\nu}{e}\\).\n\nThe factor change is \\(\\frac{V_s + \\Delta V_s}{V_s} = \\frac{h\\nu_1 - \\phi + h\\Delta \\nu}{h\\nu_1 - \\phi} = 1 + \\frac{h\\Delta \\nu}{h\\nu_1 - \\phi}\\).\n\nSince \\(h\\nu_1 - \\phi = eV_s\\), the factor is approximately \\(1 + \\frac{h\\Delta \\nu}{eV_s}\\). Without specific values, cannot compute numerical factor.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "",
+      "hint": "Use \\(V_s = \\frac{h\\nu - \\phi}{e}\\) and find the ratio of new to original stopping potential.",
+      "answer": "Cannot determine without specific values; depends on \\(\\Delta \\nu\\) and \\(V_s\\).",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential and Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Stopping Potential",
+          "Frequency Change",
+          "Factor Change"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 14,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 6,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "Calculate the momentum (in \\(\\times 10^{-24}\\, \\text{kg}\\cdot\\text{m/s}\\)) of a photon with wavelength \\(500\\, \\text{nm}\\). (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\))",
+      "solution": "Momentum of photon: \\(p = \\frac{h}{\\lambda} = \\frac{6.626 \\times 10^{-34}}{500 \\times 10^{-9}} = 1.325 \\times 10^{-27}\\, \\text{kg}\\cdot\\text{m/s}\\)\n\nConvert to \\(\\times 10^{-24}\\):\n\n\\(p = 0.1325 \\times 10^{-24}\\, \\text{kg}\\cdot\\text{m/s}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.001",
+      "hint": "Use \\(p = \\frac{h}{\\lambda}\\).",
+      "answer": 0.1325,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Momentum",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Photon Momentum",
+          "Wavelength",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q18",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 20,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 9,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "The power of a light source is \\(10\\, \\text{W}\\), emitting light of wavelength \\(600\\, \\text{nm}\\). Calculate the number of photons emitted per second. (Use \\(h = 6.626 \\times 10^{-34}\\, \\text{Js}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "First, find energy per photon:\n\n\\(E = \\frac{hc}{\\lambda} = \\frac{(6.626 \\times 10^{-34})(3 \\times 10^8)}{600 \\times 10^{-9}} = 3.313 \\times 10^{-19}\\, \\text{J}\\)\n\nNumber of photons per second:\n\n\\(N = \\frac{P}{E} = \\frac{10}{3.313 \\times 10^{-19}} \\approx 3.017 \\times 10^{19}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "1e17",
+      "hint": "Divide total power by energy per photon.",
+      "answer": 3.017e19,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Flux",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.1,
+          "concept": 0.3,
+          "calculation": 0.6,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Power",
+          "Photon Number",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 22,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 10,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "If the work function of a metal is \\(2.2\\, \\text{eV}\\) and the incident light has a wavelength of \\(350\\, \\text{nm}\\), calculate the stopping potential (in volts). (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "First, find photon energy:\n\n\\(E = \\frac{hc}{\\lambda} = \\frac{(4.1357 \\times 10^{-15})(3 \\times 10^8)}{350 \\times 10^{-9}} = 3.55\\, \\text{eV}\\)\n\nCalculate \\(K_{\\text{max}} = E - \\phi = 3.55 - 2.2 = 1.35\\, \\text{eV}\\)\n\nStopping potential: \\(V_s = \\frac{K_{\\text{max}}}{e} = 1.35\\, \\text{V}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.02",
+      "hint": "Use \\(K_{\\text{max}} = E - \\phi\\) and \\(K_{\\text{max}} = eV_s\\).",
+      "answer": 1.35,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 6
+        },
+        "tags": [
+          "Stopping Potential",
+          "Work Function",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "NM.PEE.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 25,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 11,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "numerical",
+      "exerciseName": "Numerical Correct",
+      "questionText": "An experiment shows that no photoelectrons are emitted from a metal unless the wavelength is less than \\(600\\, \\text{nm}\\). Calculate the work function (in eV) of the metal. (Use \\(h = 4.1357 \\times 10^{-15}\\, \\text{eV}\\cdot\\text{s}\\), \\(c = 3 \\times 10^8\\, \\text{m/s}\\))",
+      "solution": "Threshold wavelength \\(\\lambda_0 = 600\\, \\text{nm}\\)\n\nThreshold frequency \\(\\nu_0 = \\frac{c}{\\lambda_0} = \\frac{3 \\times 10^8}{600 \\times 10^{-9}} = 5 \\times 10^{14}\\, \\text{Hz}\\)\n\nWork function \\(\\phi = h\\nu_0 = (4.1357 \\times 10^{-15})(5 \\times 10^{14}) = 2.06785\\, \\text{eV}\\)",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "range": "0.005",
+      "hint": "Use \\(\\phi = h\\nu_0\\) with threshold frequency.",
+      "answer": 2.06785,
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 5
+        },
+        "tags": [
+          "Work Function",
+          "Threshold Wavelength",
+          "Calculations"
+        ]
+      }
+    }
+  ]
+}

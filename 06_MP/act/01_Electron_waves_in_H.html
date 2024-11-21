@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Atomic Structure - Wave Nature of Electron</title>
+    <style>
+        .container {
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .canvas-container {
+            padding: 15px;
+        }
+
+        #simulationCanvas {
+            width: 100%;
+            height: auto;
+            /* Adjust as necessary */
+        }
+
+        #simulationCanvas-holder {
+            border-radius: 10px;
+            box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+            padding: 10px;
+            /* Reduced padding for mobile compatibility */
+        }
+
+        #controlCard {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media (min-width: 768px) {
+            #simulationCanvas-holder {
+                padding: 4rem;
+                /* Original padding for larger screens */
+            }
+
+            #simulationCanvas-holder {
+                border-radius: 50px;
+                box-shadow: 20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+                padding: 2rem;
+                /* Reduced padding for mobile compatibility */
+            }
+
+            #controlCard {
+                padding: 10px;
+            }
+
+            #arrowButton {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            #controlCard {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transition: transform 0.3s;
+                transform: translateY(100%);
+                background: white;
+                /* Adjust background color as needed */
+                margin: 0;
+                /* Ensure no margin */
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+                /* Ensure no padding */
+            }
+
+            #controlCard.show {
+                transform: translateY(0);
+            }
+
+            #arrowButton {
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Atomic Structure</h1>
+        <h2 class="text-center">Activity 01:</h2>
+        <h5 class="text-center text-muted">Exploring the wave nature of an electron in a hydrogen atom</h5>
+
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Select the quantum state \(n=1\,,\,2\) or \(3\) for the electron in the hydrogen atom.</li>
+                    <li>Enable the imaginary part of the wave function if desired.</li>
+                    <li>Choose whether to animate the wave oscillations.</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="simulationCanvas"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div id="arrowButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="quantumState">Quantum State \(n\): <span
+                                            id="quantumStateLabel">1</span></label>
+                                    <input type="range" id="quantumState" min="1" max="3" value="1"
+                                        class="form-control-range">
+
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="checkbox" id="showImaginary" class="form-check-input">
+                                    <label for="showImaginary" class="form-check-label">Show Imaginary Part of
+                                        Wavefunction</label>
+                                </div>
+
+                                <div class="form-check mt-2">
+                                    <input type="checkbox" id="animateWave" class="form-check-input" checked>
+                                    <label for="animateWave" class="form-check-label">Animate Wave Oscillation</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Constants
+            const frequency = 5;
+            const realColor = 'blue';
+            const imaginaryColor = 'red';
+
+            // Matter.js setup
+            const { Engine, Render, World, Bodies } = Matter;
+            const engine = Engine.create();
+            const canvas = document.getElementById('simulationCanvas');
+
+            // Set up high-resolution rendering for the canvas
+            const pixelRatio = window.devicePixelRatio || 1;
+            const canvasWidth = canvas.clientWidth;
+            const canvasHeight = canvas.clientHeight;
+
+            // Initialize Matter.js render with centered circle
+            const render = Matter.Render.create({
+                canvas: canvas,
+                engine: engine,
+                options: {
+                    width: canvasWidth,
+                    height: canvasHeight,
+                    pixelRatio: pixelRatio,
+                    wireframes: false,
+                    background: 'white'
+                }
+            });
+
+            // Variables
+            let quantumState = 1;
+            let showImaginary = false;
+            let animateWave = true;
+
+            // Elements
+            const quantumStateSlider = document.getElementById('quantumState');
+            const quantumStateLabel = document.getElementById('quantumStateLabel');
+            const showImaginaryCheckbox = document.getElementById('showImaginary');
+            const animateWaveCheckbox = document.getElementById('animateWave');
+
+            // Event Listeners
+            quantumStateSlider.addEventListener('input', (e) => {
+                quantumState = parseInt(e.target.value);
+                quantumStateLabel.textContent = `${quantumState}`;
+                drawWave();
+            });
+
+            showImaginaryCheckbox.addEventListener('change', (e) => {
+                showImaginary = e.target.checked;
+                drawWave();
+            });
+
+            animateWaveCheckbox.addEventListener('change', (e) => {
+                animateWave = e.target.checked;
+            });
+
+            // Function to calculate wave points with time-based amplitude oscillation
+            function calculateWavePoints(n, radius, phaseShift = 0, time = 0) {
+                const points = [];
+                const baseAmplitude = radius / 6;
+                const animatedAmplitude = baseAmplitude * Math.cos(time * frequency); // Oscillates with time
+
+                for (let theta = 0; theta <= 2 * Math.PI; theta += 0.1) {
+                    const x = canvasWidth / 2 + radius * Math.cos(theta);
+                    const y = canvasHeight / 2 + radius * Math.sin(theta);
+                    const waveValue = animatedAmplitude * Math.sin(n * theta + phaseShift);
+                    points.push({ x: x + waveValue * Math.cos(theta), y: y + waveValue * Math.sin(theta) });
+                }
+                return points;
+            }
+
+            // Function to draw wave and reference circle
+            function drawWave(time = 0) {
+                World.clear(engine.world);
+                const radius = quantumState * 25; // Scale radius for each n
+
+                // Draw reference circumference circle centered on the canvas
+                const circle = Bodies.circle(canvasWidth / 2, canvasHeight / 2, radius, {
+                    isStatic: true,
+                    render: {
+                        fillStyle: 'transparent',
+                        strokeStyle: 'black',
+                        lineWidth: 1
+                    }
+                });
+                World.add(engine.world, circle);
+
+                // Draw real part of wave
+                const realWavePoints = calculateWavePoints(quantumState, radius, 0, time);
+                drawPoints(realWavePoints, realColor);
+
+                // Draw imaginary part of wave if enabled
+                if (showImaginary) {
+                    const imaginaryWavePoints = calculateWavePoints(quantumState, radius, Math.PI / 2, time);
+                    drawPoints(imaginaryWavePoints, imaginaryColor);
+                }
+            }
+            // Function to draw a continuous line between consecutive points and close the loop
+            function drawPoints(points, color) {
+                for (let i = 1; i < points.length; i++) {
+                    drawLineSegment(points[i - 1], points[i], color);
+                }
+
+                // Connect the last point back to the first point to close the loop
+                drawLineSegment(points[points.length - 1], points[0], color);
+            }
+
+            // Helper function to draw each line segment between two points
+            function drawLineSegment(point1, point2, color) {
+                const x1 = point1.x;
+                const y1 = point1.y;
+                const x2 = point2.x;
+                const y2 = point2.y;
+                const length = Math.hypot(x2 - x1, y2 - y1);
+                const angle = Math.atan2(y2 - y1, x2 - x1);
+
+                // Create a thin rectangle for the line segment
+                const lineSegment = Bodies.rectangle(
+                    (x1 + x2) / 2, (y1 + y2) / 2, // Midpoint of the line
+                    length, 1,                     // Length of line, 1px thick
+                    {
+                        isStatic: true,
+                        angle: angle,              // Rotate to match the angle between points
+                        render: { fillStyle: color }
+                    }
+                );
+
+                // Add the segment to the world
+                World.add(engine.world, lineSegment);
+            }
+
+            // Animation function with time-based oscillation
+            let startTime = Date.now();
+
+            function animate() {
+                if (animateWave) {
+                    const currentTime = (Date.now() - startTime) / 1000; // Time in seconds
+                    drawWave(currentTime);
+                } else {
+                    drawWave(); // Static wave if animation is off
+                }
+                requestAnimationFrame(animate);
+            }
+
+            $(document).ready(function () {
+                const $controlCard = $('#controlCard');
+                const $arrowButton = $('#arrowButton');
+
+                // Toggle control card on arrow button click
+                $arrowButton.on('click', function () {
+                    $controlCard.toggleClass('show');
+                });
+
+                // Close control card on input change only
+                $controlCard.on('change', 'input', function () {
+                    $controlCard.removeClass('show');
+                });
+
+                // Start Matter.js render and draw initial wave after setup
+                Render.run(render);
+                Engine.run(engine);
+                drawWave();
+                animate();
+            });
+
+
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

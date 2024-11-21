@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | NRE </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Nuclear Reactions</h1>
+                    <p class="lead" id="tagline">Transformations of Nucleus</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Introduction to Nuclear Reactions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntroduction">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntroduction" aria-expanded="false"
+                                aria-controls="collapseIntroduction"><strong>
+                                    Introduction to Nuclear Reactions
+                                </strong></button>
+                        </h2>
+                        <div id="collapseIntroduction" class="accordion-collapse collapse"
+                            aria-labelledby="headingIntroduction" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Nuclear reactions involve processes where a nucleus undergoes a transformation to
+                                    achieve a more stable state. Examples of such reactions include alpha decay, beta
+                                    decay, gamma decay, and fission. Unlike chemical reactions that involve electrons
+                                    and occur at lower energy levels, nuclear reactions require particles to come
+                                    extremely close—on the order of a femtometer (\(10^{-15}\) meters)—to overcome the
+                                    electrostatic repulsion between positively charged nuclei. This proximity allows the
+                                    strong nuclear force to facilitate the reaction.
+                                </p>
+                                <p>
+                                    The energy released in nuclear reactions is vastly greater than that in chemical
+                                    reactions. While chemical reactions involve energy changes of about a few electron
+                                    volts (eV) per atom, nuclear reactions release energies in the range of millions of
+                                    electron volts (MeV) per nucleus. This significant difference arises because nuclear
+                                    reactions involve changes in the nucleus's binding energy, which holds protons and
+                                    neutrons together.
+                                </p>
+                                <p>
+                                    External factors like temperature, pressure, and humidity have negligible effects on
+                                    nuclear reactions under normal conditions. The energies involved in nuclear
+                                    processes are so high that typical environmental conditions do not significantly
+                                    influence reaction rates. However, extreme conditions, such as those found in
+                                    stellar cores, can affect nuclear reaction rates due to the immense temperatures and
+                                    pressures present.
+                                </p>
+                                <p>
+                                    Applications of nuclear reactions are widespread. In energy production, nuclear
+                                    power plants utilize controlled nuclear fission reactions to generate electricity.
+                                    In medicine, nuclear reactions are employed in radiation therapy to treat cancer,
+                                    using radioactive isotopes that decay and emit radiation to destroy cancerous cells.
+                                    Industrial applications include material analysis through techniques like neutron
+                                    activation analysis, which determines the composition of materials by inducing
+                                    nuclear reactions.
+                                </p>
+                                <p>
+                                    The following sections describe nuclear reactions in a systematic way, exploring
+                                    their properties, types of decay, and the fundamental processes of fission and
+                                    fusion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Properties of Nuclear Reactions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingProperties">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseProperties" aria-expanded="false"
+                                aria-controls="collapseProperties"><strong>
+                                    Properties of Nuclear Reactions
+                                </strong></button>
+                        </h2>
+                        <div id="collapseProperties" class="accordion-collapse collapse"
+                            aria-labelledby="headingProperties" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    For a nucleus to undergo a nuclear reaction, it can either interact with another
+                                    particle or undergo a spontaneous transformation to achieve stability. The stability
+                                    of the nucleus is a key factor; nuclei with an imbalance in their neutron-to-proton
+                                    ratio are often unstable and more likely to participate in nuclear reactions to
+                                    achieve greater stability. Factors influencing reactivity include the energy of the
+                                    incoming particle and the specific nuclear properties of the target nucleus.
+                                </p>
+                                <p>
+                                    Nuclear reactions are inherently probabilistic events governed by quantum mechanics.
+                                    It is impossible to predict precisely when a particular nucleus will undergo a
+                                    reaction. Instead, calculations are based on probabilities and cross-sections that
+                                    describe the likelihood of a reaction occurring under specific conditions. Since
+                                    individual nuclear events cannot be predicted, statistical methods are used to
+                                    estimate reaction rates in large populations of nuclei.
+                                </p>
+                                <p>
+                                    Several fundamental conservation laws govern nuclear reactions:
+                                </p>
+                                <p>
+                                    <strong>Charge Conservation:</strong> The total electric charge remains constant
+                                    during a nuclear reaction. The sum of the charges of the reactants equals the sum of
+                                    the charges of the products, ensuring that charge is neither created nor destroyed.
+                                </p>
+                                <p>
+                                    <strong>Mass-Energy Conservation:</strong> Mass and energy are equivalent, as
+                                    expressed by Einstein's equation \( E = mc^2 \). In nuclear reactions, a small
+                                    amount of mass can be converted into a significant amount of energy (mass defect),
+                                    resulting in the large energy releases characteristic of these reactions. When mass
+                                    is also considered a form of energy, the total energy before and after the reaction
+                                    remains conserved.
+                                </p>
+                                <p>
+                                    <strong>Momentum Conservation:</strong> The total momentum of the system is
+                                    conserved. Since momentum is a vector quantity, both magnitude and direction are
+                                    considered. Recoil effects occur when particles adjust their motion to conserve
+                                    momentum during the reaction.
+                                </p>
+                                <p>
+                                    <strong>Angular Momentum Conservation:</strong> The total angular momentum,
+                                    including both orbital and intrinsic (spin) components, remains constant. Parity,
+                                    related to the symmetry of the system's wave function, is also conserved in most
+                                    nuclear reactions.
+                                </p>
+                                <p>
+                                    The <strong>Q value</strong> of a nuclear reaction represents the net energy change
+                                    during the reaction. It is calculated as the difference in total mass-energy of the
+                                    reactants and products:
+                                </p>
+                                <p>
+                                    \(\qquad Q = \left( \text{Total mass of reactants} - \text{Total mass of products}
+                                    \right)
+                                    c^2\)
+                                </p>
+                                <p>
+                                    A positive Q value indicates an exoergic reaction, where energy is released. A
+                                    negative Q value signifies an endoergic reaction, requiring an input of energy. The
+                                    Q value is essential for understanding whether a reaction is energetically feasible
+                                    and how much energy is involved.
+                                </p>
+                                <p>
+                                    <strong>Exoergic reactions</strong> release energy and are generally more likely to
+                                    occur spontaneously. An example is the emission of an alpha particle from certain
+                                    unstable nuclei. In contrast, <strong>endoergic reactions</strong> absorb energy and
+                                    require external energy input to proceed. An example is the production of certain
+                                    heavy elements in particle accelerators, where nuclei are forced to combine despite
+                                    natural repulsion.
+                                </p>
+                                <p>
+                                    For endoergic reactions, a certain threshold kinetic energy is required for the
+                                    reaction to occur. The incoming particles must possess enough energy to overcome the
+                                    energy absorption of the reaction. This threshold impacts the reaction rates and
+                                    feasibility, as only particles exceeding this energy can initiate the reaction under
+                                    given conditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Types of Nuclear Decay -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDecay">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDecay" aria-expanded="false"
+                                aria-controls="collapseDecay"><strong>
+                                    Types of Nuclear Decay
+                                </strong></button>
+                        </h2>
+                        <div id="collapseDecay" class="accordion-collapse collapse" aria-labelledby="headingDecay"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Unstable nuclei seek stability through nuclear decay, transforming into more stable
+                                    configurations by emitting particles or radiation. [GPT Instructions: Mention that
+                                    following is a graph showing all the stable isotope of all elements. The
+                                    curve thus formed is called stability curve. If elements are formed not on this
+                                    curve, its unstable. Uses some reaction to achieve stability.]
+                                    The primary types of decay are
+                                    alpha decay, beta decay, and gamma decay. Each type involves different changes
+                                    within the nucleus and helps adjust the neutron-to-proton ratio or shed excess
+                                    energy, moving the nucleus toward greater stability.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Alpha Decay</strong></summary>
+                                            <p>
+                                                Alpha decay occurs in large, unstable nuclei. In these large nuclei, the
+                                                strong nuclear force, which typically holds protons and neutrons
+                                                together, becomes less effective over larger distances. Consequently,
+                                                the electrostatic repulsion between protons dominates, destabilizing the
+                                                nucleus and promoting the emission of an alpha particle to regain
+                                                stability.
+                                            </p>
+                                            <p>
+                                                During alpha decay, an unstable nucleus emits an alpha particle,
+                                                comprising two protons and two neutrons (essentially a helium-4 nucleus,
+                                                \( ^4_2\text{He} \)). This emission reduces the atomic number by two and
+                                                the mass number by four, steering the nucleus toward a more stable
+                                                configuration. For example, in the decay of uranium-238:
+                                            </p>
+                                            <p>
+                                                \(\qquad \ce{^{238}_{92}U \rightarrow ^{234}_{90}Th + ^{4}_{2}He}\)
+                                            </p>
+                                            <p>
+                                                The binding energy curve illustrates that such reactions increase the
+                                                binding energy per nucleon, moving the nucleus closer to the "valley of
+                                                stability," thereby enhancing its stability.
+                                            </p>
+
+                                            <h6><strong>Q Value in Alpha Decay</strong></h6>
+                                            <p>
+                                                The Q value represents the energy released during alpha decay,
+                                                calculated from the mass difference between the original nucleus (parent
+                                                nucleus) and the resulting products (daughter nucleus and alpha
+                                                particle). For a general alpha decay reaction, where a nucleus \( X \)
+                                                decays to a daughter nucleus \( Y \) by emitting an alpha particle:
+                                            </p>
+                                            <p>
+                                                \(\qquad \ce{^{A}_{Z}X \rightarrow ^{A-4}_{Z-2}Y + ^{4}_{2}He^{++}}\)
+                                            </p>
+                                            <p>
+                                                The Q value formula, using nuclear masses, is:
+                                            </p>
+                                            <p>
+                                                \(\qquad Q = (m_X - m_Y - m_{\alpha}) \times 931.5 \, \text{MeV/u}\)
+                                            </p>
+                                            <p>
+                                                where:
+                                            <ul>
+                                                <li>\( m_X \) is the nuclear mass of the original nucleus \( X \),</li>
+                                                <li>\( m_Y \) is the nuclear mass of the daughter nucleus \( Y \),</li>
+                                                <li>\( m_{\alpha} \) is the nuclear mass of the alpha particle.</li>
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                In most cases, atomic masses are given instead of nuclear masses. Since
+                                                atomic masses include the mass of electrons, adjustments for electron
+                                                masses must be made to apply the Q value formula accurately with atomic
+                                                masses. By incorporating these adjustments, we modify the formula as
+                                                follows:
+                                            </p>
+                                            <p>
+                                                \(\qquad Q = \left[ (m_X + Zm_e) - (m_Y + (Z-2)m_e) - (m_{\alpha} +
+                                                2m_e) \right]
+                                                \times 931.5 \, \text{MeV/u}\)
+                                            </p>
+                                            <p>
+                                                Since the added mass of electrons \( m_e \) cancels out in this formula,
+                                                the expression simplifies. Here:
+                                            <ul>
+                                                <li>\( (m_X + Zm_e) \) is the atomic mass of \( X \), including \( Z \)
+                                                    electrons,</li>
+                                                <li>\( (m_Y + (Z-2)m_e) \) is the atomic mass of \( Y \), including \(
+                                                    Z-2 \) electrons,</li>
+                                                <li>\( (m_{\alpha} + 2m_e) \) is the atomic mass of the \( He \) atom,
+                                                    including its two electrons.</li>
+                                            </ul>
+                                            </p>
+                                            <p>
+                                                Thus, the Q value formula in terms of atomic masses becomes:
+                                            </p>
+                                            <p>
+                                                \(\qquad Q = \left[ (\text{At. mass})_X - (\text{At. mass})_Y -
+                                                (\text{At. mass})_{He} \right] \times 931.5 \, \text{MeV/u}\)
+                                            </p>
+                                            <p>
+                                                The energy released in alpha decay is distributed as kinetic energy
+                                                between \(^{A-4}_{Z-2}Y\) and the \(\alpha\) particle. Using the
+                                                conservation of momentum, we can determine how this energy is shared.
+                                            </p>
+                                            <p>
+                                                Assuming the original nucleus \( X \) is initially at rest, momentum
+                                                conservation dictates that the daughter nucleus \( Y \) and the alpha
+                                                particle have equal and opposite momenta, denoted by \( p \). Their
+                                                kinetic energies, in terms of \( p \), are:
+                                            </p>
+                                            <p>
+                                                \(\qquad K_Y = \frac{p^2}{2m_Y} \quad \text{and} \quad K_{\alpha} =
+                                                \frac{p^2}{2m_{\alpha}}\)
+                                            </p>
+                                            <p>
+                                                The ratio of kinetic energy between \( Y \) and \( \ce{He}^{4++} \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad \frac{K_Y}{K_{\alpha}} = \frac{m_{\alpha}}{m_Y}\)
+                                            </p>
+                                            <p>
+                                                This shows that the lighter alpha particle carries a larger fraction of
+                                                the kinetic energy. In terms of the Q value, the kinetic energies are:
+                                            </p>
+                                            <p>
+                                                \(\qquad K_{\alpha} = \frac{Q \cdot m_Y}{m_Y + m_{\alpha}} \quad
+                                                \text{and} \quad
+                                                K_Y = \frac{Q \cdot m_{\alpha}}{m_Y + m_{\alpha}}\)
+                                            </p>
+                                            <p>
+                                                Alpha decay allows the nucleus to lose excess mass and energy, promoting
+                                                stability. Although an alpha particle does not classically possess
+                                                enough energy to escape, quantum tunneling enables it to overcome the
+                                                nuclear potential barrier, facilitating a finite decay rate.
+                                            </p>
+
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Beta Decay</strong></summary>
+                                            <p>
+                                                Beta decay helps an unstable nucleus adjust its neutron-to-proton ratio,
+                                                addressing imbalances that can make the nucleus less stable. There are
+                                                three main types of beta decay, each resulting from different conditions
+                                                within the nucleus and aimed at restoring a more balanced nuclear
+                                                configuration.
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p><strong>Beta-minus (\( \beta^- \)) decay:</strong> This type of
+                                                        decay occurs in neutron-rich nuclei where there is an excess of
+                                                        neutrons relative to protons. In this process, a neutron inside
+                                                        the nucleus transforms into a proton, emitting an electron
+                                                        (known as the beta particle) and an antineutrino (\( \bar{\nu}_e
+                                                        \)). The basic reaction for this transformation is as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad n \rightarrow p + e^- + \bar{\nu}_e\)
+                                                    </p>
+                                                    <p>
+                                                        This transformation takes place within the nucleus. Among the
+                                                        resulting particles, the proton remains in the nucleus, which
+                                                        increases the atomic number by one while keeping the mass number
+                                                        unchanged. The emitted electron, or beta-minus particle, is
+                                                        ejected from the nucleus along with the antineutrino (\(
+                                                        \bar{\nu}_e \)). The complete beta-minus decay reaction for a
+                                                        nucleus can be expressed as:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{A}_{Z}X \rightarrow ^{A}_{Z+1}Y + e^- +
+                                                        \bar{\nu}_e}\)
+                                                    </p>
+                                                    <p>
+                                                        A typical example of beta-minus decay is seen in carbon-14,
+                                                        which decays to nitrogen-14 as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{14}_{6}C \rightarrow ^{14}_{7}N + e^- +
+                                                        \bar{\nu}_e}\)
+                                                    </p>
+
+                                                    <h6><strong>Q Value in Beta-minus Decay</strong></h6>
+                                                    <p>
+                                                        The Q value for beta-minus decay, representing the energy
+                                                        released during the process, is calculated based on the mass
+                                                        difference between the initial and final nuclei. It is given by:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = (m_X - m_Y - m_e) \times 931.5 \, \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        where:
+                                                    <ul>
+                                                        <li>\( m_X \) is the mass of the initial nucleus \( X \),</li>
+                                                        <li>\( m_Y \) is the mass of the daughter nucleus \( Y \),</li>
+                                                        <li>\( m_e \) is the mass of the electron.</li>
+                                                    </ul>
+                                                    </p>
+                                                    <p>
+                                                        To express the Q value formula in terms of atomic masses (as
+                                                        atomic masses are often provided), we account for the masses of
+                                                        electrons included in the atomic masses of the parent and
+                                                        daughter atoms. Since atomic masses inherently include electron
+                                                        mass, we modify the formula as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = ((m_X + Zm_e) - (m_Y + (Z+1)m_e)) \times 931.5 \,
+                                                        \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        Here, the additional electron masses effectively cancel out,
+                                                        simplifying the equation to:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = \left[ (\text{At. mass})_X - (\text{At. mass})_Y
+                                                        \right]
+                                                        \times 931.5 \, \text{MeV/u}\)
+                                                    </p>
+
+                                                    <p>
+                                                        This released energy is shared between the beta particle and the
+                                                        antineutrino, resulting in a continuous energy spectrum. The
+                                                        variable distribution of energy between the beta particle and
+                                                        the antineutrino explains why the energy spectrum is not
+                                                        discrete. Due to momentum conservation,
+                                                        the heavier daughter nucleus \( Y \) receives only a minimal
+                                                        fraction of the kinetic energy, which can be considered
+                                                        negligible
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Beta-plus (\( \beta^+ \)) decay:</strong> This type of
+                                                        decay occurs in proton-rich nuclei where there is an excess of
+                                                        protons relative to neutrons. In beta-plus decay, a proton
+                                                        inside the nucleus is converted into a neutron, emitting a
+                                                        positron (the beta-plus particle) and a neutrino (\( \nu_e \)).
+                                                        The fundamental reaction for this transformation is as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad p \rightarrow n + e^+ + \nu_e\)
+                                                    </p>
+                                                    <p>
+                                                        This reaction occurs within the nucleus. Out of the resulting
+                                                        particles, the neutron remains in the nucleus, decreasing the
+                                                        atomic number by one while keeping the mass number constant. The
+                                                        emitted positron, also known as the beta-plus particle, is
+                                                        ejected from the nucleus along with the neutrino (\( \nu_e \)).
+                                                        The overall beta-plus decay reaction for a nucleus is
+                                                        represented as:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{A}_{Z}X \rightarrow ^{A}_{Z-1}Y + e^+ + \nu_e}\)
+                                                    </p>
+                                                    <p>
+                                                        A common example of beta-plus decay is observed in carbon-11,
+                                                        which decays to boron-11 as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{11}_{6}C \rightarrow ^{11}_{5}B + e^+ + \nu_e}\)
+                                                    </p>
+
+                                                    <h6><strong>Q Value in Beta-plus Decay</strong></h6>
+                                                    <p>
+                                                        The Q value for beta-plus decay represents the energy released
+                                                        during the process and is determined by the mass difference
+                                                        between the initial and final nuclei. For beta-plus decay, the Q
+                                                        value is given by:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = (m_X - m_Y - m_{e^+}) \times 931.5 \,
+                                                        \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        where:
+                                                    <ul>
+                                                        <li>\( m_X \) is the mass of the initial nucleus \( X \),</li>
+                                                        <li>\( m_Y \) is the mass of the daughter nucleus \( Y \),</li>
+                                                        <li>\( m_{e^+} \) is the mass of the positron.</li>
+                                                    </ul>
+                                                    </p>
+                                                    <p>
+                                                        To express the Q value formula in terms of atomic masses (as
+                                                        atomic masses are often provided), we adjust the formula to
+                                                        account for the electrons in the atomic masses of the parent and
+                                                        daughter atoms. Since atomic masses include electron mass, the
+                                                        formula is modified as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = ((m_X + Zm_e) - (m_Y + (Z-1)m_e) - 2m_{e^+}) \times
+                                                        931.5 \,
+                                                        \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        Here, the additional electron masses effectively cancel out,
+                                                        simplifying the equation to:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = \left[ (\text{At. mass})_X - (\text{At. mass})_Y -
+                                                        2m_{e^+}
+                                                        \right] \times 931.5 \, \text{MeV/u}\)
+                                                    </p>
+
+
+                                                    <p>
+                                                        In beta-plus decay, the majority of the released energy is
+                                                        carried by the positron and the neutrino. The specific amount of
+                                                        energy each particle carries depends on the angles and
+                                                        directions at which they are ejected. Due to momentum
+                                                        conservation, the heavier daughter nucleus \( Y \) receives a
+                                                        minimal fraction of the kinetic energy, which can be considered
+                                                        negligible. As a result, the primary discussion of energy in
+                                                        beta-plus decay focuses on the energy carried by the positron
+                                                        and the neutrino.
+                                                    </p>
+
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <strong>Electron capture (K-capture):</strong> Electron capture
+                                                        occurs in proton-rich nuclei as an alternative to beta-plus
+                                                        decay when there is an excess of protons. In this process, the
+                                                        nucleus captures one of its inner-shell electrons, usually from
+                                                        the K-shell, which combines with a proton to form a neutron and
+                                                        emits a neutrino (\( \nu_e \)). The basic reaction for this
+                                                        transformation is as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad e^- + p \rightarrow n + \nu_e\)
+                                                    </p>
+                                                    <p>
+                                                        This reaction takes place within the nucleus. Among the
+                                                        resulting particles, the neutron remains in the nucleus, which
+                                                        decreases the atomic number by one while keeping the mass number
+                                                        unchanged. The emitted neutrino (\( \nu_e \)) is ejected from
+                                                        the nucleus. The overall electron capture reaction for a nucleus
+                                                        can be expressed as:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{A}_{Z}X + e^- \rightarrow ^{A}_{Z-1}Y + \nu_e}\)
+                                                    </p>
+                                                    <p>
+                                                        A common example of electron capture is observed in beryllium-7,
+                                                        which decays to lithium-7 as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \ce{^{7}_{4}Be + e^- \rightarrow ^{7}_{3}Li + \nu_e}\)
+                                                    </p>
+
+                                                    <h6><strong>Q Value in Electron Capture</strong></h6>
+                                                    <p>
+                                                        The Q value for electron capture, representing the energy change
+                                                        during the process, is calculated based on the mass difference
+                                                        between the initial and final nuclei. It is given by:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = (m_X+me - m_Y) \times 931.5 \, \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        where:
+                                                    <ul>
+                                                        <li>\( m_X \) is the mass of the initial nucleus \( X \),</li>
+                                                        <li>\( m_Y \) is the mass of the daughter nucleus \( Y \).</li>
+                                                        <li>\( m_e \) is the mass of the electron \( Y \).</li>
+                                                    </ul>
+                                                    </p>
+                                                    <p>
+                                                        To express the Q value formula in terms of atomic masses (as
+                                                        atomic masses are often provided), we account for the electrons
+                                                        included in the atomic masses of the parent and daughter atoms.
+                                                        Since atomic masses include electron mass, we modify the formula
+                                                        as follows:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = \left[ (m_X + Zm_e) - (m_Y + (Z-1)m_e) \right]
+                                                        \times
+                                                        931.5 \, \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        Here, the additional electron masses effectively cancel out,
+                                                        simplifying the equation to:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad Q = \left[ (\text{At. mass})_X - (\text{At. mass})_Y
+                                                        \right]
+                                                        \times 931.5 \, \text{MeV/u}\)
+                                                    </p>
+                                                    <p>
+                                                        In electron capture, most of the energy released is carried away
+                                                        by the emitted neutrino, while the daughter nucleus receives a
+                                                        negligible amount of kinetic energy. The specific amount of
+                                                        energy each particle carries depends on the angles and
+                                                        directions at which they are ejected. Due to momentum
+                                                        conservation, the heavier daughter nucleus \( Y \) absorbs only
+                                                        a minimal fraction of the kinetic energy, which can be
+                                                        considered negligible. Therefore, the primary energy
+                                                        distribution in electron capture is between the neutrino and the
+                                                        residual nucleus.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                In each type of beta decay, the presence of neutrinos (or antineutrinos)
+                                                is crucial for conservation of both energy and momentum. The continuous
+                                                energy spectrum observed in beta decay (for \( \beta^- \) and \( \beta^+
+                                                \)) results from the sharing of energy between the beta particle and the
+                                                neutrino, a concept central to understanding beta decay energetics.
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Gamma Decay</strong></summary>
+                                            <p>
+                                                Gamma decay involves an excited nucleus \(^{A}_{Z}X^*\) releasing excess
+                                                energy by
+                                                emitting a gamma photon without changing its number of protons or
+                                                neutrons:
+                                            </p>
+                                            <p>
+                                                \(\qquad \ce{^{A}_{Z}X^* \rightarrow ^{A}_{Z}X + \gamma}\)
+                                            </p>
+                                            <p>
+                                                This process allows the nucleus to transition from a higher energy state
+                                                to a lower one. Gamma rays are high-frequency electromagnetic radiation,
+                                                placing them at the extreme high-energy end of the electromagnetic
+                                                spectrum. Gamma decay often follows alpha or beta decay when the
+                                                daughter nucleus is left in an excited state.
+                                            </p>
+                                            <p>
+                                                Since gamma decay does not alter the composition of the nucleus, it
+                                                doesn't affect the neutron-to-proton ratio but helps the nucleus achieve
+                                                a lower energy, more stable state.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4: Fission and Fusion Reactions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFissionFusion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFissionFusion" aria-expanded="false"
+                                aria-controls="collapseFissionFusion"><strong>
+                                    Fission and Fusion Reactions
+                                </strong></button>
+                        </h2>
+                        <div id="collapseFissionFusion" class="accordion-collapse collapse"
+                            aria-labelledby="headingFissionFusion" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Nuclear fission and fusion are processes that release energy due to the binding
+                                    energy differences between nuclei. The binding energy per nucleon curve shows that
+                                    nuclei with intermediate mass numbers (around iron and nickel) have the highest
+                                    binding energy per nucleon, making them the most stable. Energy is released when
+                                    heavy nuclei split (fission) or light nuclei combine (fusion) to form nuclei closer
+                                    to this peak stability.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Nuclear Fission</strong></summary>
+                                            <p>
+                                                Nuclear fission is the process in which a heavy atomic nucleus,
+                                                typically with a high atomic number, splits into two or more smaller
+                                                nuclei, releasing a significant amount of energy. This process generally
+                                                requires the nucleus to absorb a neutron, which destabilizes it, causing
+                                                it to split. The fission process releases not only energy but also
+                                                additional neutrons, which may initiate further fission reactions,
+                                                leading to a chain reaction.
+                                            </p>
+                                            <p>
+                                                In most fission reactions, particularly for isotopes like uranium-235
+                                                and plutonium-239, a slow-moving "thermal" neutron is necessary to
+                                                initiate the reaction. When absorbed, this neutron destabilizes the
+                                                nucleus, causing it to undergo fission. However, only specific isotopes,
+                                                such as uranium-235, uranium-233, and plutonium-239, are readily
+                                                fissionable by thermal neutrons.
+                                            </p>
+                                            <p>
+                                                Nuclear fission releases a substantial amount of energy due to the
+                                                difference in binding energy between the original heavy nucleus and the
+                                                resulting smaller nuclei. The binding energy of the resulting nuclei is
+                                                higher, meaning they are more stable. This difference in binding energy
+                                                is converted to energy, typically around 200 MeV per fission event,
+                                                which is carried by the kinetic energy of the fission fragments, emitted
+                                                neutrons, and gamma radiation.
+                                            </p>
+                                            <p>
+                                                A classic example of nuclear fission is the splitting of uranium-235
+                                                when it absorbs a neutron:
+                                            </p>
+                                            <p>
+                                                \(\qquad \ce{^{235}_{92}U + ^{1}_{0}n \rightarrow ^{141}_{56}Ba +
+                                                ^{92}_{36}Kr + 3^{1}_{0}n + \text{Energy}} \)
+                                            </p>
+                                            <p>
+                                                In this reaction, uranium-235 absorbs a neutron, forming an unstable
+                                                uranium-236 nucleus. It then splits into two smaller nuclei, barium-141
+                                                and krypton-92, releasing three additional neutrons and approximately
+                                                200 MeV of energy.
+                                            </p>
+                                            <p>
+                                                The general form of a fission reaction for a nucleus \( X \) absorbing a
+                                                neutron can be represented as:
+                                            </p>
+                                            <p>
+                                                \(\qquad \ce{^{A}_{Z}X + ^{1}_{0}n \rightarrow ^{A_1}_{Z_1}Y +
+                                                ^{A_2}_{Z_2}Z + n \times ^{1}_{0}n + \text{Energy}} \)
+                                            </p>
+                                            <p>
+                                                In this general reaction:
+                                            </p>
+                                            <ul>
+                                                <li>\( \ce{^{A}_{Z}X} \): The heavy nucleus undergoing fission.</li>
+                                                <li>\( \ce{^{A_1}_{Z_1}Y} \) and \( \ce{^{A_2}_{Z_2}Z} \): The resulting
+                                                    fission fragments, typically mid-weight nuclei.</li>
+                                                <li>\( n \): The number of neutrons released, often 2 or 3.</li>
+                                                <li>Approximately 200 MeV of energy is released, varying slightly based
+                                                    on the specific reaction.</li>
+                                            </ul>
+                                            <p>
+                                                During nuclear fission, the binding energy per nucleon increases as the
+                                                original heavy nucleus splits into smaller nuclei. Heavy elements, like
+                                                uranium-235, have relatively lower binding energy per nucleon compared
+                                                to mid-weight nuclei. When fission occurs, the resulting nuclei have
+                                                higher binding energy per nucleon, making them more stable. This
+                                                increase in binding energy per nucleon is directly responsible for the
+                                                energy released in fission.
+                                            </p>
+                                            <div class="col">
+                                                <figure style="max-width: 700px;">
+                                                    <img src="img/27_Nuclear_Fission_BEPN_Graph.png"
+                                                        class="figure-img img-fluid rounded"
+                                                        alt="Change of Binding Energy per Nucleon in Nuclear Fission">
+                                                    <figcaption class="figure-caption">Figure: Change of Binding Energy
+                                                        Per Nucleon in Nuclear Fission.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <p>
+                                                The change in binding energy per nucleon during fission can be
+                                                visualized in the diagram above, showing the binding energy per nucleon
+                                                curve as a function of mass number. Heavier nuclei, like uranium, are
+                                                less stable and lie further from the peak, while the fission fragments
+                                                move closer to the peak stability near iron and nickel.
+                                            </p>
+                                            <p>
+                                                The Q-value, representing the energy released, can be calculated as the
+                                                difference in mass between the reactants and products:
+                                            </p>
+                                            <div class="equation">
+                                                \(\qquad Q = (m_{\text{reactants}} - m_{\text{products}}) \times 931.5
+                                                \text{ MeV/u} \)
+                                            </div>
+                                            <p>
+                                                Here, the mass difference \( \Delta m \) between the total mass of the
+                                                reactants (original nucleus and neutron) and the total mass of the
+                                                products (fission fragments and emitted neutrons) is converted to energy
+                                                using \( E = \Delta mc^2 \), where \( c \) is the speed of light.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Nuclear Fusion</strong></summary>
+                                            <p>
+                                                Nuclear fusion is the process where two or more light nuclei combine to
+                                                form a heavier nucleus, releasing a significant amount of energy.
+                                            </p>
+                                            <p>
+                                                Similar to fission, fusion releases energy due to an increase in binding
+                                                energy per nucleon. However, in fusion, light nuclei like hydrogen,
+                                                which have low binding energy per nucleon, combine to form a heavier
+                                                nucleus with higher binding energy per nucleon, making the new nucleus
+                                                more stable. This increase in binding energy per nucleon is the source
+                                                of the energy released in fusion reactions
+                                            </p>
+                                            <p>
+                                                The change in binding energy per nucleon for fusion reactions can also
+                                                be observed on the binding energy curve, where lighter elements like
+                                                hydrogen move closer to the peak stability as they form heavier nuclei
+                                                like helium as shown:
+                                            </p>
+                                            <div class="col">
+                                                <figure style="max-width: 700px;">
+                                                    <img src="img/27_Nuclear_Fusion_BEPN_Graph.png"
+                                                        class="figure-img img-fluid rounded"
+                                                        alt="Change of Binding Energy per Nucleon in Nuclear Fusion">
+                                                    <figcaption class="figure-caption">Figure: Change of Binding Energy
+                                                        Per Nucleon in Nuclear Fusion.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <p>
+                                                This process powers stars, including our Sun, where hydrogen nuclei fuse
+                                                to form helium in a series of reactions known as the proton-proton
+                                                (H-He) cycle.
+
+                                            </p>
+                                            <p>
+                                                In the Sun, the fusion reaction occurs in several steps:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \ce{^{1}_{1}H + ^{1}_{1}H \rightarrow ^{2}_{1}D + e^+ + \nu}
+                                                \)
+                                                \(\qquad
+                                                \ce{^{2}_{1}D + ^{1}_{1}H \rightarrow ^{3}_{2}He + \gamma}
+                                                \)
+                                                \(\qquad
+                                                \ce{^{3}_{2}He + ^{3}_{2}He \rightarrow ^{4}_{2}He + 2^{1}_{1}H}
+                                                \)
+                                            </p>
+                                            <p>
+                                                This series of reactions leads to the formation of helium from hydrogen,
+                                                with a net release of energy that powers the Sun's radiation.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+
+</html>

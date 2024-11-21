@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Physics Graphs</title>
+    <style>
+        .container {
+            margin-top: 10px;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .canvas-container {
+            padding: 15px;
+        }
+
+        #simulationCanvas {
+            width: 100%;
+            height: auto;
+            /* Adjust as necessary */
+        }
+
+        #simulationCanvas-holder {
+            border-radius: 10px;
+            box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+            padding: 10px;
+            /* Reduced padding for mobile compatibility */
+        }
+
+        #controlCard {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media (min-width: 768px) {
+            #simulationCanvas-holder {
+                padding: 4rem;
+                /* Original padding for larger screens */
+            }
+
+            #simulationCanvas-holder {
+                border-radius: 50px;
+                box-shadow: 20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+                padding: 2rem;
+                /* Reduced padding for mobile compatibility */
+            }
+
+            #controlCard {
+                padding: 10px;
+            }
+
+            #arrowButton {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            #controlCard {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transition: transform 0.3s;
+                transform: translateY(100%);
+                background: white;
+                /* Adjust background color as needed */
+                margin: 0;
+                /* Ensure no margin */
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+                /* Ensure no padding */
+            }
+
+            #controlCard.show {
+                transform: translateY(0);
+            }
+
+            #arrowButton {
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Interactive Graphing Tool</h1>
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ul>
+                    <li>Click on points to see their properties.</li>
+                    <li>Toggle between showing only the first quadrant or both positive and negative quadrants.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="graphCanvas" width="500" height="500"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="controlCard" class="card">
+                            <div class="card-body">
+                                <h5>Graph Controls</h5>
+                                <div>
+                                    <input type="checkbox" id="showNegative" checked>
+                                    <label for="showNegative">Show Negative Quadrants</label>
+                                </div>
+                                <p id="pointInfo">Click on a point to see details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Chart.js Library -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+     <script>
+         // Data Points with additional properties
+         const pointsData = [
+             { x: 10, y: 20, label: "Point A", details: "Point A details" },
+             { x: 15, y: 25, label: "Point B", details: "Point B details" },
+             { x: 20, y: 30, label: "Point C", details: "Point C details" }
+         ];
+ 
+         // Configuration for Chart.js scatter plot
+         const ctx = document.getElementById('graphCanvas').getContext('2d');
+         const interactiveChart = new Chart(ctx, {
+             type: 'scatter',
+             data: {
+                 datasets: [{
+                     label: 'Data Points',
+                     data: pointsData,
+                     backgroundColor: 'blue',
+                     pointRadius: 5
+                 }]
+             },
+             options: {
+                 responsive: true,
+                 scales: {
+                     x: {
+                         beginAtZero: true,
+                         min: -30,
+                         max: 30,
+                         title: {
+                             display: true,
+                             text: 'X Axis'
+                         }
+                     },
+                     y: {
+                         beginAtZero: true,
+                         min: -30,
+                         max: 30,
+                         title: {
+                             display: true,
+                             text: 'Y Axis'
+                         }
+                     }
+                 },
+                 plugins: {
+                     tooltip: {
+                         callbacks: {
+                             label: function(context) {
+                                 const point = pointsData[context.dataIndex];
+                                 return `${point.label}: ${point.details}`;
+                             }
+                         }
+                     }
+                 },
+                 onClick: (event, elements) => {
+                     if (elements.length > 0) {
+                         const index = elements[0].index;
+                         const point = pointsData[index];
+                         document.getElementById('pointInfo').innerText = `Clicked on ${point.label}: ${point.details}`;
+                     } else {
+                         document.getElementById('pointInfo').innerText = "Click on a point to see details.";
+                     }
+                 }
+             }
+         });
+ 
+         // Toggle Negative Quadrants
+         document.getElementById('showNegativeQuadrants').addEventListener('change', function() {
+             const showNegative = this.checked;
+             interactiveChart.options.scales.x.min = showNegative ? -30 : 0;
+             interactiveChart.options.scales.y.min = showNegative ? -30 : 0;
+             interactiveChart.update();
+         });
+     </script>
+</body>
+</html>

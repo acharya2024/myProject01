@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Wave-Particle Duality Simulation</title>
+    <style>
+        .container {
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .canvas-container {
+            padding: 15px;
+        }
+
+        #simulationCanvas {
+            width: 100%;
+            height: auto;
+        }
+
+        #simulationCanvas-holder {
+            border-radius: 10px;
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            padding: 10px;
+        }
+
+        #controlCard {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media (min-width: 768px) {
+            #simulationCanvas-holder {
+                padding: 4rem;
+            }
+
+            #controlCard {
+                padding: 10px;
+            }
+
+            #arrowButton {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            #controlCard {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transition: transform 0.3s;
+                transform: translateY(100%);
+                background: white;
+                margin: 0;
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+            }
+
+            #controlCard.show {
+                transform: translateY(0);
+            }
+
+            #arrowButton {
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Dual Nature of Radiation</h1>
+        <h2 class="text-center">Activity: #1</h2>
+        <h2 class="text-center text-muted">Transformation from wave to particle nature</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Adjust the parameter \(\alpha\) to see the effect on wave behavior.</li>
+                    <li>Small values of \(\alpha\) means more wave like behavior and its large values keep the particle behavior</li>
+                    <li>Toggle animation to observe oscillation in real-time.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="simulationCanvas" width="800" height="400"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div id="arrowButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="alphaSlider"
+                                        style=" display: flex;justify-content:center">Behavior:</label>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span>Wave Behavior</span>
+                                        <span>Particle Behavior</span>
+                                    </div>
+                                    <input type="range" id="alphaSlider" min="1" max="20" step="1" value="1"
+                                        class="form-control-range">
+                                    <div style=" display: flex;justify-content:center">Alpha (Localization): <span
+                                            id="alphaValue">1</span></div>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input type="checkbox" id="animateWave" class="form-check-input">
+                                    <label for="animateWave" class="form-check-label">Animate Propagation</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const { Engine, Render, World, Bodies } = Matter;
+            const engine = Engine.create();
+            const canvas = document.getElementById('simulationCanvas');
+            const render = Render.create({
+                canvas: canvas,
+                engine: engine,
+                options: {
+                    width: canvas.width,
+                    height: canvas.height,
+                    wireframes: false,
+                    background: 'white'
+                }
+            });
+
+            let alpha = 1;
+            const frequency = 100;
+            const amplitude = 50;
+            let t = -10;
+
+            const alphaSlider = document.getElementById("alphaSlider");
+            const alphaValueDisplay = document.getElementById("alphaValue");
+            const animateWaveCheckbox = document.getElementById("animateWave");
+
+            alphaSlider.addEventListener("input", function () {
+                alpha = parseFloat(this.value);
+                alphaValueDisplay.textContent = alpha.toFixed(1);
+                t = -10;
+            });
+            function drawWave() {
+                const ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.beginPath();
+
+                for (let x = 0; x < canvas.width; x++) {
+                    const xPos = x - canvas.width / 2;
+                    let y = canvas.height / 2;
+
+                    // Define multiple Gaussian packets with a fixed normalization
+                    const normalizationFactor = 1 / Math.sqrt(2 * Math.PI / alpha); // Fixed factor based on Gaussian properties
+
+                    for (let i = -10; i <= 10; i++) { // Number of packets
+                        const packetCenter = 100 * i; // Position of each packet's center
+
+                        // Apply fixed normalization factor to keep amplitude consistent
+                        const gaussianEnvelope = normalizationFactor * Math.exp(-alpha * Math.pow(xPos - packetCenter - 100 * t, 2) / 10000);
+
+                        // Accumulate y-values from each packet
+                        y += amplitude * gaussianEnvelope * Math.cos(0.5 * xPos - 50 * t);
+                    }
+
+                    // Draw each point of the combined wave
+                    ctx.lineTo(x, y);
+                }
+
+                ctx.strokeStyle = "blue";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+
+
+            function animate() {
+                if (animateWaveCheckbox.checked) {
+                    t += 0.05;
+                }
+                drawWave();
+                requestAnimationFrame(animate);
+            }
+
+            $(document).ready(function () {
+                const $controlCard = $('#controlCard');
+                const $arrowButton = $('#arrowButton');
+
+                $arrowButton.on('click', function () {
+                    $controlCard.toggleClass('show');
+                });
+
+                $controlCard.on('change', 'input', function () {
+                    $controlCard.removeClass('show');
+                });
+
+                Render.run(render);
+                Engine.run(engine);
+                animate();
+            });
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

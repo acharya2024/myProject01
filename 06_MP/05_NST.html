@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | AST </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Nuclear Structure</h1>
+                    <p class="lead" id="tagline">Understanding the Core of Atoms</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Chapter: Nuclear Structure -->
+                    <div class="accordion" id="nuclearStructure">
+                        <!-- Fundamental Particles -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFundamentalParticles">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFundamentalParticles" aria-expanded="false"
+                                    aria-controls="collapseFundamentalParticles">
+                                    <strong>Fundamental Particles</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFundamentalParticles" class="accordion-collapse collapse"
+                                aria-labelledby="headingFundamentalParticles" data-bs-parent="#nuclearStructure">
+                                <div class="accordion-body">
+                                    <p>
+                                        In the study of nuclear structure, understanding the fundamental particles that
+                                        make up matter is essential. Fundamental particles are the basic building blocks
+                                        of the universe and cannot be broken down into smaller components. Among these
+                                        particles, several play crucial roles in the composition and behavior of atomic
+                                        nuclei. These are:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Electrons</strong></summary>
+                                                <p class="mt-2">
+                                                    Electrons are subatomic particles with a negative charge of \(-e
+                                                    -1.602 \times 10^{-19} \) coulombs and a very small mass of
+                                                    approximately \( 9.109 \times 10^{-31} \) kilograms. They are stable
+                                                    in isolation and are often referred to as beta minus (\( \beta^- \))
+                                                    particles when emitted during radioactive decay. Due to the
+                                                    uncertainty principle in quantum mechanics, there is a minimum
+                                                    possible uncertainty in an electron's position, making it impossible
+                                                    for electrons to reside within the nucleus. Electrons occupy the
+                                                    electron cloud surrounding the nucleus and are responsible for the
+                                                    chemical properties of atoms.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Protons</strong></summary>
+                                                <p class="mt-2">
+                                                    Protons are positively charged particles with a charge equal in
+                                                    magnitude but opposite in sign to that of electrons (\( +e=+1.602
+                                                    \times 10^{-19} \) coulombs) and a mass of approximately \( 1.673
+                                                    \times 10^{-27} \) kilograms. They are stable in isolation and are
+                                                    fundamental components of the nucleus. Protons contribute to the
+                                                    identity of an element, as the atomic number (number of protons)
+                                                    defines the element. The presence of protons in the nucleus, along
+                                                    with neutrons, accounts for most of the atomic mass.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Neutrons</strong></summary>
+                                                <p class="mt-2">
+                                                    Neutrons are electrically neutral particles with a mass slightly
+                                                    greater than that of protons, approximately \( 1.675 \times 10^{-27}
+                                                    \) kilograms. While neutrons are stable within the nucleus, isolated
+                                                    neutrons are unstable and undergo beta decay with a half-life of
+                                                    about 14.7 minutes, transforming into a proton, an electron, and an
+                                                    antineutrino. Neutrons play a crucial role in stabilizing the
+                                                    nucleus by offsetting the electrostatic repulsion between protons.
+                                                    The number of neutrons in the nucleus can vary among atoms of the
+                                                    same element, leading to different isotopes.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Positrons</strong></summary>
+                                                <p class="mt-2">
+                                                    Positrons are the antiparticles of electrons, possessing the same
+                                                    mass as electrons but with a positive charge (\( +1.602 \times
+                                                    10^{-19} \) coulombs). Positrons are unstable in isolation, as they
+                                                    annihilate upon encountering electrons, producing gamma-ray photons.
+                                                    While positrons do not exist within the nucleus under normal
+                                                    conditions, they are emitted during certain types of radioactive
+                                                    decay known as beta plus (\( \beta^+ \)) decay, where a proton is
+                                                    transformed into a neutron with the emission of a positron and a
+                                                    neutrino.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Alpha Particles</strong></summary>
+                                                <p class="mt-2">
+                                                    Alpha particles are helium nuclei consisting of two protons and two
+                                                    neutrons (\( \text{He}^{2+} \)). They carry a charge of \( +2e \)
+                                                    and have a mass approximately four times that of a proton. Alpha
+                                                    particles are emitted during alpha decay, a type of radioactive
+                                                    decay common in heavy nuclei. When the electrons are removed from a
+                                                    helium atom, the resulting ion is an alpha particle. Due to their
+                                                    relatively large mass and charge, alpha particles have low
+                                                    penetration power and can be stopped by a sheet of paper or human
+                                                    skin.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Neutrinos and Antineutrinos</strong></summary>
+                                                <p class="mt-2">
+                                                    Neutrinos are nearly massless, electrically neutral particles that
+                                                    interact very weakly with matter, making them extremely difficult to
+                                                    detect. Antineutrinos are the antiparticles of neutrinos. They are
+                                                    produced in various nuclear reactions, including beta decay.
+                                                    Neutrinos and antineutrinos play a significant role in particle
+                                                    physics and astrophysics research, helping scientists understand
+                                                    fundamental processes like nuclear fusion in stars and supernova
+                                                    explosions. Their elusive nature has prompted the development of
+                                                    sophisticated detectors to study their properties and interactions.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Understanding these fundamental particles provides the foundation for exploring
+                                        nuclear structure and the interactions that govern atomic nuclei.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Nucleus -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNucleus">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNucleus" aria-expanded="false"
+                                    aria-controls="collapseNucleus">
+                                    <strong>The Nucleus</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseNucleus" class="accordion-collapse collapse"
+                                aria-labelledby="headingNucleus" data-bs-parent="#nuclearStructure">
+                                <div class="accordion-body">
+                                    <p>
+                                        The nucleus lies at the core of the atom, containing protons and neutrons,
+                                        collectively known as nucleons. It remains unaffected by chemical changes or
+                                        alterations in electronic configurations, emphasizing its stability and central
+                                        role in atomic structure. The symbolic representation of a nucleus is often
+                                        given by:
+                                    </p>
+                                    <p>
+                                        \(\qquad
+                                        \ ^A_Z\text{X}
+                                        \)
+                                    </p>
+                                    <p>
+                                        where \( \text{X} \) is the chemical symbol, \( Z \) is the atomic number
+                                        (number of protons), and \( A \) is the mass number (total number of nucleons:
+                                        protons and neutrons).
+                                        From this notation, one can determine the number of protons, neutrons (\( N = A
+                                        - Z \)), and the overall composition of the nucleus.
+                                    </p>
+                                    <p>
+                                        Isotopes, isobars, and isotones are classifications of nuclei based on their
+                                        numbers of protons, neutrons, and mass numbers:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Isotopes</strong></summary>
+                                                <p class="mt-2">
+                                                    Isotopes are nuclei of the same element (same \( Z \)) but with
+                                                    different numbers of neutrons (\( N \)) and thus different mass
+                                                    numbers (\( A \)). For example, hydrogen has three isotopes: protium
+                                                    (\( ^1_1\text{H} \)), deuterium (\( ^2_1\text{H} \)), and tritium
+                                                    (\( ^3_1\text{H} \)).
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Isobars</strong></summary>
+                                                <p class="mt-2">
+                                                    Isobars are nuclei with the same mass number (\( A \)) but different
+                                                    atomic numbers (\( Z \)). This means they have different numbers of
+                                                    protons and neutrons but the total number of nucleons is the same.
+                                                    An example is \( ^{14}_6\text{C} \) and \( ^{14}_7\text{N} \).
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Isotones</strong></summary>
+                                                <p class="mt-2">
+                                                    Isotones are nuclei with the same number of neutrons (\( N \)) but
+                                                    different numbers of protons (\( Z \)). For instance, \(
+                                                    ^{15}_7\text{N} \) and \( ^{16}_8\text{O} \) both have eight
+                                                    neutrons.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    <p class="mt-3">
+                                        The size of the nucleus is crucial in understanding its properties. The volume
+                                        of a nucleus is directly proportional to its mass number (\( A \)), implying
+                                        that nuclei are roughly the same density regardless of size. Hence,
+                                    </p>
+                                    <p>
+                                        \(\qquad
+                                        V = V_0 A
+                                        \)
+                                    </p>
+                                    <p>
+                                        Thus, the radius (\( R
+                                        \)) of a nucleus is related to the mass number by the empirical formula:
+                                    </p>
+                                    <p>
+                                        \(\qquad
+                                        R = R_0 A^{1/3}
+                                        \)
+                                    </p>
+                                    <p>
+                                        where \( R_0 \approx 1.2 \times 10^{-15} \) meters. This leads to the conclusion
+                                        that nuclear matter has an incredibly high density, approximately \( 2.3 \times
+                                        10^{17} \) kg/m³. For context, neutron stars are celestial objects composed
+                                        almost entirely of nuclear matter, exhibiting densities similar to that of
+                                        atomic nuclei but on a macroscopic scale.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Stability of Nucleus -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNucleusStability">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNucleusStability" aria-expanded="false"
+                                    aria-controls="collapseNucleusStability">
+                                    <strong>The Stability of Nucleus </strong>
+                                </button>
+                            </h2>
+                            <div id="collapseNucleusStability" class="accordion-collapse collapse"
+                                aria-labelledby="headingNucleusStability" data-bs-parent="#nuclearStructure">
+                                <div class="accordion-body">
+                                    <p>
+                                        The stability of the nucleus is a fascinating aspect of atomic physics. Despite
+                                        containing multiple positively charged protons that repel each other due to
+                                        electrostatic forces, nuclei remain bound and stable. This stability is
+                                        attributed to the strong nuclear force, one of the fundamental forces in nature.
+                                        These forces are very strong within the nucleus, counteracting the electrostatic
+                                        repulsive forces between protons. However, they only act effectively over very
+                                        short distances (1-2 femtometers), which limits their range and affects
+                                        stability. The strong nuclear force has several key properties:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Short-Range Force</strong></summary>
+                                                <p class="mt-2">
+                                                    The strong nuclear force is effective only over very short
+                                                    distances, on the order of a few femtometers (\( 10^{-15} \)
+                                                    meters). Beyond this range, its influence rapidly diminishes.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Charge Independence</strong></summary>
+                                                <p class="mt-2">
+                                                    Nuclear forces are almost charge-independent, meaning they act
+                                                    similarly between proton-proton, neutron-neutron, and proton-neutron
+                                                    pairs, with slight variations due to spin dependencies.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Attractive Nature</strong></summary>
+                                                <p class="mt-2">
+                                                    The strong nuclear force is primarily attractive, overcoming the
+                                                    electrostatic repulsion between protons and binding the nucleons
+                                                    together within the nucleus. At close distances (around 1 fm),
+                                                    nuclear forces are attractive, binding nucleons together. However,
+                                                    at even closer distances (<0.7 fm), these forces become repulsive,
+                                                        preventing the nucleons from collapsing into a single point and
+                                                        stabilizing the nucleus. </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Saturation Property</strong></summary>
+                                                <p class="mt-2">
+                                                    Each nucleon interacts only with its immediate neighbors due to the
+                                                    short-range nature of the force, leading to a saturation effect
+                                                    where adding more nucleons does not significantly increase the
+                                                    binding energy per nucleon.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Spin Dependence</strong></summary>
+                                                <p class="mt-2">
+                                                    Nuclear forces depend on the relative spins of nucleons. For
+                                                    example, nucleons aligned with parallel spins might experience
+                                                    different forces compared to those with anti-parallel spins,
+                                                    influencing the energy levels within nuclei.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Non-Central Nature</strong></summary>
+                                                <p class="mt-2">
+                                                    Nuclear forces include tensor
+                                                    components, meaning they do not act directly along the line joining
+                                                    two nucleons. This non-central aspect of nuclear forces is
+                                                    responsible for the magnetic dipole-dipole interaction, adding
+                                                    complexity to nuclear structures.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    <p class="mt-2">
+                                        The stability of a nucleus is also closely related to the ratio of neutrons (\(
+                                        N \))
+                                        to protons (\( Z \)). For lighter elements with atomic numbers less than 20 (\(
+                                        Z < 20 \)), the number of neutrons is approximately equal to the number of
+                                            protons (\( N \approx Z \)). This balance minimizes the electrostatic
+                                            repulsion between protons while ensuring sufficient strong nuclear force to
+                                            hold the nucleus together. However, as we move to moderate-sized nuclei (\(
+                                            20 < Z < 81 \)), the number of neutrons exceeds the number of protons (\( N>
+                                            Z \)). This excess of neutrons helps to counter-balance the increasing
+                                            repulsive
+                                            forces between the greater number of protons and enhances the contribution
+                                            to nuclear stability. The following
+                                            graph illustrates the relationship between the number of neutrons and
+                                            protons across different elements:
+                                    </p>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col">
+                                            <figure style="max-width: 800px;">
+                                                <img src="img/21_N_vs_P_graph.png" class="figure-img img-fluid rounded"
+                                                    alt="Graph showing the neutron numbers versus atomic number">
+                                            </figure>
+                                            <figcaption class="figure-caption">Figure: Neutron number \(N\) vs. Atomic
+                                                Number
+                                                \( Z \).</figcaption>
+                                            <figcaption class="figure-caption">Take a closer observation <a
+                                                    href="graphs/01_N_vs_P_graph.html" target="_blank">here</a>.
+                                            </figcaption>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        The graph displays a clear trend where nuclei with lower atomic numbers maintain
+                                        a near-equal number of neutrons and protons, while those with higher atomic
+                                        numbers require more neutrons to remain stable. This deviation from the \( N = Z
+                                        \) line occurs because additional neutrons provide the necessary strong nuclear
+                                        force to counterbalance the increased electrostatic repulsion among protons.
+                                        Without sufficient neutrons, larger nuclei would become unstable and prone to
+                                        radioactive decay. The curve formed by joining all the stable nuclei in this
+                                        graph is called stability curve:
+                                    </p>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col">
+                                            <figure style="max-width: 250px;">
+                                                <img src="img/23_Stability_curve.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Stability curve for different nuclei">
+                                            </figure>
+                                            <figcaption class="figure-caption">Figure: The stability curve.</figcaption>
+                                        </div>
+                                    </div>
+
+                                    <p>
+
+                                        Thus, the neutron-proton ratio is a critical factor in
+                                        determining the stability and existence of various isotopes across the periodic
+                                        table.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Binding Energy -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBindingEnergy">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBindingEnergy" aria-expanded="false"
+                                    aria-controls="collapseBindingEnergy">
+                                    <strong>Binding Energy</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseBindingEnergy" class="accordion-collapse collapse"
+                                aria-labelledby="headingBindingEnergy" data-bs-parent="#nuclearStructure">
+                                <div class="accordion-body">
+                                    <p>
+                                        Binding energy is a fundamental concept in nuclear physics that represents the
+                                        energy required to separate a nucleus into its individual protons and neutrons.
+                                        It serves as a measure of the nucleus's stability: the greater the binding
+                                        energy, the more stable the nucleus. This energy results from the <strong>mass
+                                            defect</strong>, where the actual mass of a nucleus is slightly less than
+                                        the sum of the masses of its constituent protons and neutrons.
+                                    </p>
+                                    <p>
+                                        When particles, such as nucleons, come close under the influence of the strong
+                                        nuclear force, they bind together, releasing energy. This is similar to how
+                                        gravitational or electrostatic forces work, where particles gain kinetic energy
+                                        and lose potential energy as they draw closer. However, in the case of nucleons,
+                                        the energy released upon forming a nucleus comes from the overall decrement in
+                                        mass of the system. As nucleons bind within a nucleus, the total mass of the
+                                        nucleus is reduced by a small amount, known as the <em>mass defect</em> (\(
+                                        \Delta m \)). This is consistent with Einstein's <em>mass-energy
+                                            equivalence</em> principle: (\( E = \Delta mc^2 \)).
+                                    </p>
+                                    <p>
+                                        This released energy would need to be supplied back to the nucleus to overcome
+                                        the nuclear forces and separate it back into individual nucleons. So, this
+                                        released energy during the formation of a nucleus is numerically the same as the
+                                        Binding Energy of the nucleus. Thus, binding energy represents both the energy
+                                        released during nucleus formation and the energy required to break the nucleus
+                                        apart to infinity.
+                                    </p>
+                                    <p>
+                                        For example, Deuterium (\( ^2_1\text{H} \)) is an isotope of hydrogen that
+                                        consists of one proton, one electron, and one neutron. Its expected atomic mass
+                                        can be calculated by adding the mass of hydrogen (which includes one proton and
+                                        one electron) and the mass of one neutron.
+                                    </p>
+                                    <ul>
+                                        <li>Atomic mass of hydrogen atom (1 proton + 1
+                                            electron): \( 1.007825 \, \text{u} \)</li>
+                                        <li>Mass of one neutron: \( 1.008665 \, \text{u} \)</li>
+                                    </ul>
+                                    <p>
+                                        Therefore, the expected atomic mass of deuterium is:
+                                    </p>
+                                    <p>
+                                        Expected atomic mass of \( ^2_1\text{H} = 1.007825 + 1.008665 = 2.016490 \,
+                                        \text{u} \)
+                                    </p>
+                                    <p>
+                                        The actual atomic mass of deuterium, however, is measured to be \( 2.014102 \,
+                                        \text{u} \). This difference is called the <strong>mass defect</strong> (\(
+                                        \Delta m \)), calculated as:
+                                    </p>
+                                    <p>
+                                        \( \qquad\Delta m = \text{Expected atomic mass} - \text{Actual atomic mass} \)
+                                    </p>
+                                    <p>
+                                        \( \qquad\Delta m = 2.016490 - 2.014102 = 0.002388 \, \text{u} \)
+                                    </p>
+                                    <p>
+                                        The binding energy (\( E_b \)) associated with this mass defect can be
+                                        calculated using Einstein’s mass-energy equivalence (\( E = \Delta m \times c^2
+                                        \)), where 1 atomic mass unit (u) is equivalent to 931.5 MeV:
+                                    </p>
+                                    <p>
+                                        \( \qquad E_b = \Delta m \times 931.5 \, \text{MeV/u} = 0.002388 \times 931.5
+                                        \approx 2.224 \, \text{MeV} \)
+                                    </p>
+                                    <p>
+                                        This energy (2.224 MeV) represents the binding energy of the deuterium nucleus.
+                                        It is the energy required to separate the deuterium nucleus into its individual
+                                        nucleons (proton and neutron) and is also the energy released when deuterium is
+                                        formed from its constituent nucleons.
+                                    </p>
+
+
+                                    <ul class="list-group list-group-flush">
+                                        <p>
+                                            To determine the binding energy of a nucleus, a general method can be
+                                            followed:
+                                        </p>
+                                        <li class="list-group-item">Calculate the expected mass by adding the masses of
+                                            all protons,
+                                            neutrons, and electrons in the nucleus.</li>
+                                        <li class="list-group-item">Measure or obtain the actual mass of the nucleus.
+                                        </li>
+                                        <li class="list-group-item">Determine the mass defect (\( \Delta m \)) by
+                                            subtracting the actual
+                                            mass from the expected mass.</li>
+                                        <li class="list-group-item">Convert the mass defect into binding energy using
+                                            Einstein's
+                                            equation \( E = \Delta m c^2 \), where 1 atomic mass unit (u) equals
+                                            931.5 MeV.</li>
+
+                                    </ul>
+                                    <p class="mt-3">
+                                        The methods can be further understood from the following examples:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Illustrative Example 1: </strong>Binding Energy of \(
+                                                    ^{56}_{26}\text{Fe} \)</summary>
+                                                <p class="mt-2">
+                                                    To calculate the binding energy of Iron-56 (\( ^{56}_{26}\text{Fe}
+                                                    \)), follow the general method:
+                                                </p>
+                                                <ul class="list-group list-group-flush">
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th scope="col">Property</th>
+                                                            <th scope="col">Value</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Atomic mass of \( ^{56}_{26}\text{Fe} \)
+                                                            </td>
+                                                            <td>\(55.934937 \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Number of protons (\( Z \))</td>
+                                                            <td>\(26\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Number of neutrons (\( N \))</td>
+                                                            <td>\(56 - 26 = 30\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass of protons</td>
+                                                            <td>\(26 \times 1.007825 \text{u} = 26.20345 \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass of neutrons</td>
+                                                            <td>\(30 \times 1.008665 \text{u} = 30.25995 \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Expected mass</td>
+                                                            <td>\(26.20345 \text{u} + 30.25995 \text{u} = 56.4634
+                                                                \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass defect (\( \Delta m \))</td>
+                                                            <td>\(56.4634 \text{u} - 55.934937 \text{u} = 0.528463
+                                                                \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Binding energy (\( E_b \))</td>
+                                                            <td>\( 0.528463 \times 931.5 \, \text{MeV/u} \approx 492 \,
+                                                                \text{MeV} \)</td>
+                                                        </tr>
+                                                    </table>
+
+                                                </ul>
+                                                <p>
+                                                    The binding energy of Iron-56 is approximately 492.7 MeV, indicating
+                                                    a highly stable nucleus.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Illustrative Example 2: </strong>Binding Energy of \(
+                                                    ^{12}_{6}\text{C} \)</summary>
+                                                <p class="mt-2">
+                                                    To calculate the binding energy of Carbon-12 (\( ^{12}_{6}\text{C}
+                                                    \)), follow the general method:
+                                                </p>
+                                                <ul class="list-group list-group-flush">
+                                                    <table class="table ">
+                                                        <tr>
+                                                            <th scope="col">Property</th>
+                                                            <th scope="col">Value</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Atomic mass of \( ^{12}_{6}\text{C} \)</td>
+                                                            <td>\(12.000000 \text{u}\) (by definition)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Number of protons (\( Z \))</td>
+                                                            <td>\(6\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Number of neutrons (\( N \))</td>
+                                                            <td>\(12 - 6 = 6\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass of protons</td>
+                                                            <td>\(6 \times 1.007825 \text{u} = 6.04695 \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass of neutrons</td>
+                                                            <td>\(6 \times 1.008665 \text{u} = 6.05199 \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Expected mass</td>
+                                                            <td>\(6.04695 \text{u} + 6.05199 \text{u} = 12.09894
+                                                                \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Mass defect (\( \Delta m \))</td>
+                                                            <td>\(12.09894 \text{u} - 12.000000 \text{u} = 0.09894
+                                                                \text{u}\)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Binding energy (\( E_b \))</td>
+                                                            <td>\( 0.09894 \times 931.5 \, \text{MeV/u} \approx 92.3 \,
+                                                                \text{MeV} \)</td>
+                                                        </tr>
+                                                    </table>
+
+                                                </ul>
+                                                <p>
+                                                    The binding energy of Carbon-12 is approximately 92.3 MeV,
+                                                    reflecting its stable nuclear structure.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    <p class="mt-3">
+                                        <strong>Binding Energy Per Nucleon</strong>
+                                    </p>
+                                    <p>
+                                        After discussing the concept of binding energy (BE), it is valuable to explore
+                                        the <strong>binding energy per nucleon</strong> as it provides deeper insights
+                                        into nuclear stability across different elements.
+                                    </p>
+                                    <p>
+                                        The binding energy per nucleon is defined as the total binding energy of a
+                                        nucleus divided by the number of nucleons (protons and neutrons) it contains.
+                                        Mathematically, it is expressed as:
+                                    </p>
+                                    <p>
+                                        \(\qquad
+                                        \text{Binding Energy per Nucleon} =
+                                        \dfrac{\text{Total Binding Energy}}{\text{Number of Nucleons}}
+                                        \)
+                                    </p>
+                                    <p>
+                                        While binding energy (\( E_b \)) represents the total energy required to
+                                        separate all the protons and neutrons in a nucleus and move them to infinity,
+                                        binding energy per nucleon provides an average measure of the energy needed to
+                                        remove just one nucleon from the nucleus. This average value is crucial for
+                                        comparing the stability of different nuclei, as it accounts for the number of
+                                        nucleons present. A higher binding energy per nucleon indicates a more stable
+                                        nucleus, meaning that more energy is required to disassemble it on a per-nucleon
+                                        basis.
+                                    </p>
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col">
+                                            <figure style="max-width: 800px;">
+                                                <img src="img/22_BEPN_graph.png" class="figure-img img-fluid rounded"
+                                                    alt="Graph showing binding energy per nucleon">
+                                            </figure>
+                                            <figcaption class="figure-caption">Figure: Binding Energy Per Nucleon vs.
+                                                Mass Number
+                                                \( Z \).</figcaption>
+                                            <figcaption class="figure-caption">Take a closer observation <a
+                                                    href="graphs/01_BEPN_graph.html" target="_blank">here</a>.
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        When plotted as a function of mass number (\( A \)) as shown in above graph,
+                                        binding energy per
+                                        nucleon follows a trend known as the "binding energy curve." The curve
+                                        peaks around elements like iron and nickel (mass numbers around 56),
+                                        indicating maximum stability. For lighter elements, the binding energy
+                                        per nucleon tends to increase as the mass number increases, reaching a
+                                        peak near iron. For heavier elements, the binding energy per nucleon
+                                        decreases, signifying lower stability.
+                                    </p>
+                                    <p>
+                                        The variation in binding energy per nucleon across different elements
+                                        explains why certain nuclear reactions release large amounts of energy:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Nuclear Fusion:</strong> In lighter elements
+                                            (with lower
+                                            binding energy per nucleon), fusing smaller nuclei to form a heavier
+                                            nucleus results in a higher binding energy per nucleon and thus
+                                            releases energy. This is the process that powers stars.</li>
+                                        <li class="list-group-item"><strong>Nuclear Fission:</strong> For heavy elements
+                                            (like uranium
+                                            and plutonium), splitting a large nucleus into smaller nuclei leads
+                                            to products with higher binding energy per nucleon, also releasing
+                                            energy. This principle is used in nuclear reactors.</li>
+                                    </ul>
+                                    <p>
+                                        The binding energy per nucleon is thus not only a measure of stability but also
+                                        central to understanding energy production in nuclear reactions. It highlights
+                                        why nuclei around iron are most stable and why energy is released in both fusion
+                                        and fission processes.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Instability of Nucleus -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInstabilityNucleus">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInstabilityNucleus" aria-expanded="false"
+                                    aria-controls="collapseInstabilityNucleus">
+                                    <strong>Instability of Nucleus</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseInstabilityNucleus" class="accordion-collapse collapse"
+                                aria-labelledby="headingInstabilityNucleus" data-bs-parent="#nuclearStructure">
+                                <div class="accordion-body">
+                                    <p>
+                                        The stability of atomic nuclei is primarily governed by the strong nuclear
+                                        force, which binds protons and neutrons together. However, this force has a
+                                        limited range, and its effectiveness weakens as the distance between nucleons
+                                        increases. This limitation contributes to the instability observed in certain
+                                        nuclei, particularly those of larger atomic numbers, where the electrostatic
+                                        repulsion between protons also becomes more pronounced. Nuclear instability is
+                                        influenced by several key factors:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Excessive Size</strong></summary>
+                                                <p class="mt-2">
+                                                    For elements with atomic numbers (\( Z \)) less than 20, stability
+                                                    is generally achieved when the number of protons (\( Z \)) is
+                                                    approximately equal to the number of neutrons (\( N \)), maintaining
+                                                    a balanced neutron-proton ratio (i.e., \( N \approx Z \)). This
+                                                    balance helps neutralize electrostatic repulsion among protons, as
+                                                    the strong nuclear force effectively binds them together at this
+                                                    scale.
+                                                </p>
+                                                <p class="mt-2">
+                                                    As atomic numbers increase (20 < \( Z \) < 81), achieving stability
+                                                        requires a higher number of neutrons relative to protons (i.e.,
+                                                        \( N> Z \)). The increased neutron count helps counteract the
+                                                        stronger electrostatic repulsion due to the higher proton count,
+                                                        as seen in elements like lead and bismuth.
+                                                </p>
+                                                <p class="mt-2">
+                                                    Beyond atomic number 81, the nuclei of elements like uranium become
+                                                    inherently unstable regardless of the neutron count. At this large
+                                                    scale, the strong nuclear force is no longer sufficient to counter
+                                                    the intense repulsive electrostatic forces among protons. This
+                                                    instability causes the nucleus to shift away from the stability
+                                                    curve, as shown on the graph.
+                                                </p>
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/24_Stability_achieved_alpha.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Stability achieved through alpha decay.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Stability achieved
+                                                        through \(\alpha\) decay.</figcaption>
+
+                                                </div>
+                                                <p>
+                                                    To regain stability, these large
+                                                    nuclei often undergo <strong>alpha decay</strong>, where they emit
+                                                    alpha particles (two protons and two neutrons) to decrease both size
+                                                    and proton count, helping them move closer to the stability curve.
+                                                </p>
+                                                <p class="mt-2">
+                                                    <strong>Example:</strong> Uranium-238 undergoes alpha decay to form
+                                                    Thorium-234, moving it toward a more stable configuration.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Excess Protons</strong></summary>
+                                                <p class="mt-2">
+                                                    When a nucleus has too many protons, the increased electrostatic
+                                                    repulsion among protons (all positively charged) destabilizes it,
+                                                    causing it to move away from the stability curve. To counter this,
+                                                    the nucleus can undergo <strong>beta plus (\( \beta^+ \))
+                                                        decay</strong>, where a proton converts into a neutron, emitting
+                                                    a positron and a neutrino. This is shown in below diagram:
+                                                    </p>
+                                                    <div class="col">
+                                                        <figure style="max-width: 250px;">
+                                                            <img src="img/26_Stability_achieved_beta_plus.png" class="figure-img img-fluid rounded"
+                                                                alt="Stability achieved through beta plus decay.">
+                                                        </figure>
+                                                        <figcaption class="figure-caption">Figure: Stability achieved through \(\beta^+\) decay.</figcaption>
+                                                        
+                                                    </div>
+                                                    <p>
+                                                    This decay reduces the proton count,
+                                                    decreasing the repulsive forces and moving the nucleus back toward
+                                                    the stability curve by achieving a more balanced neutron-proton
+                                                    ratio.
+                                                </p>
+                                                <p class="mt-2">
+                                                    <strong>Example:</strong> Carbon-11 undergoes beta plus decay to
+                                                    form Boron-11, helping it return to a stable configuration.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Excess Neutrons</strong></summary>
+                                                <p class="mt-2">
+                                                    Excess neutrons, though neutral in charge, can still destabilize the
+                                                    nucleus by disrupting the balance of nuclear forces. Neutron-rich
+                                                    nuclei are shifted away from the stability curve, as shown in the
+                                                    graph.
+                                                </p>
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/25_Stability_achieved_beta_minus.png" class="figure-img img-fluid rounded"
+                                                            alt="Stability achieved through beta minus decay.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Stability achieved through \(\beta^-\) decay.</figcaption>
+                                                    
+                                                </div>
+                                                <p>
+                                                    To regain stability, a neutron can convert into a proton via
+                                                    <strong>beta minus (\( \beta^- \)) decay</strong>, emitting an
+                                                    electron and an antineutrino. This transformation increases the
+                                                    proton count, adjusting the neutron-proton ratio and bringing the
+                                                    nucleus closer to the stability curve.
+                                                </p>
+                                                <p class="mt-2">
+                                                    <strong>Example:</strong> Carbon-14 undergoes beta minus decay to
+                                                    form Nitrogen-14, stabilizing the nucleus.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Excited State of Nucleons</strong></summary>
+                                                <p class="mt-2">
+                                                    Even if a nucleus has the correct neutron-proton ratio, it can still
+                                                    be unstable if its nucleons are in an excited energy state above the
+                                                    ground state. This state causes the nucleus to deviate from the
+                                                    stability curve. Through <strong>gamma decay</strong>, the nucleus
+                                                    can emit high-energy gamma photons to release excess energy,
+                                                    allowing the nucleons to transition to a lower, more stable energy
+                                                    state without changing atomic number or mass number. This moves the
+                                                    nucleus back toward the stability curve, as seen in the graph.
+                                                </p>
+                                                <p class="mt-2">
+                                                    <strong>Example:</strong> Cobalt-60 in an excited state undergoes
+                                                    gamma decay, releasing excess energy and moving toward a stable
+                                                    configuration.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+
+                                    <p>
+                                        Through these decay processes—alpha decay, beta plus decay, beta minus decay,
+                                        and gamma decay—nuclei adjust their composition and balance the internal forces,
+                                        achieving more stable configurations. Understanding the factors influencing
+                                        nuclear instability is crucial in studying radioactive decay, nuclear reactions,
+                                        and the synthesis of heavier elements in stellar environments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | PEE! </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Photoelectric Effect</h1>
+                    <p class="lead" id="tagline">Beginning of Modern Physics</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Introduction Accordion Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntroduction">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntroduction" aria-expanded="false"
+                                aria-controls="collapseIntroduction">
+                                <strong>Introduction</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseIntroduction" class="accordion-collapse collapse"
+                            aria-labelledby="headingIntroduction" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    In 1899, Albert A. Michelson confidently stated that the realm of physics had
+                                    reached its pinnacle, declaring that no new significant discoveries were anticipated
+                                    in the field of physics. This statement reflected the prevailing belief of the time
+                                    that the major principles of physics had already been uncovered, leaving little room
+                                    for groundbreaking advancements.
+                                </p>
+                                <p>
+                                    In 1887, Heinrich Hertz first observed the photoelectric effect, a phenomenon that
+                                    would later be explained by Albert Einstein in 1905. This groundbreaking explanation
+                                    marked the dawn of modern physics by providing a new understanding of the nature of
+                                    light and its interaction with matter.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Thought-provoking! Physics has indeed made incredible strides, but history shows that new discoveries can always emerge, challenging our understanding."
+                                        false-response="Interesting perspective! Despite Michelson's view in 1899, many groundbreaking discoveries followed, showing that science continues to evolve."
+                                        ansKey="false">
+                                        Do you think physics has now reached its highest level, with no more significant
+                                        discoveries possible? <br>Be frank!
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, we've reached the pinnacle of physics
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, there are always more discoveries to be made
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    The photoelectric effect is intrinsically linked to the emission of electrons from a
+                                    metal surface when it is exposed to light. Any electron once ejected from a metallic
+                                    surface faces the attractive force of the positively charged metal plate, which
+                                    tends to pull them back. Consequently, only electrons with sufficient kinetic energy
+                                    can overcome this attraction and escape the metal surface. This minimum energy
+                                    required for an electron to be emitted is known as the work function of the metal.
+
+                                </p>
+
+
+                                <p class="mt-3">
+                                    <strong>Work Function
+                                        (\(\phi\)):</strong> It is the least amount of energy needed to remove an
+                                    electron from the surface of a metal.
+
+                                </p>
+                                <p>To simplify calculations perticularly in modern physics, the electron volt
+                                    (eV) was introduced as a unit of energy. One electron volt is defined as the energy
+                                    gained by an electron when it is accelerated through a potential difference of one
+                                    volt. For example, the work function of cesium is approximately \(2.14 \,
+                                    \text{eV}\), while that of platinum is about \(5.65 \, \text{eV}\). Thus, a work
+                                    function of \(3 \, \text{eV}\) implies that an electron must acquire at least \(3 \,
+                                    \text{eV}\) of energy to be emitted.</p>
+
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Yes! An electron volt is the energy gained by an electron when it moves through a potential difference of one volt."
+                                        false-response="Not quite. An electron volt is specifically related to the energy an electron gains across a one-volt potential difference."
+                                        ansKey="energy gained across one volt">
+                                        The electron volt (eV) is a unit used in modern physics. What does it represent?
+                                        <response class="badge bg-light text-dark"
+                                            responseValue="speed of an electron when accelerated by one volt">
+                                            The speed of an electron when accelerated by one volt
+                                        </response>
+                                        <response class="badge bg-light text-dark"
+                                            responseValue="energy gained across one volt">
+                                            The energy gained by an electron across a one-volt potential
+                                        </response>
+                                        <response class="badge bg-light text-dark"
+                                            responseValue="voltage required to emit an electron from a metal">
+                                            The voltage required to emit an electron from a metal
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                                <ul class="list-group list-group-flush">
+                                    <p>
+                                        Electrons can be emitted from a metallic surface by absorbing energy through
+                                        various
+                                        mechanisms, including thermionic emission, field emission, and the photoelectric
+                                        effect.
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Thermionic Emission</strong></summary>
+                                            <p>Thermionic emission occurs when electrons gain sufficient thermal energy
+                                                to
+                                                overcome the work function of the metal. This process is
+                                                temperature-dependent
+                                                and is commonly observed in incandescent light bulbs.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Field Emission</strong></summary>
+                                            <p>Field emission involves the release of electrons from a metal surface due
+                                                to a
+                                                strong electric field. This phenomenon is utilized in devices like
+                                                electron
+                                                microscopes.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Photoelectric Effect</strong></summary>
+                                            <p>The photoelectric effect involves the emission of electrons from a metal
+                                                surface
+                                                when it is exposed to light of sufficient frequency. This effect is the
+                                                primary
+                                                focus of our discussion.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    While there are multiple methods through which electrons can be emitted, our primary
+                                    focus is on the photoelectric effect (PEE), which has significant implications in
+                                    the development of quantum physics.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Exactly! Emitted electrons disperse quickly, so a controlled setup is required to observe the effect."
+                                        false-response="Not quite. The photoelectric effect is hard to observe in open air due to rapid dispersion of emitted electrons."
+                                        ansKey="not easily observed">
+                                        Do you think the photoelectric effect can be easily observed in open air without
+                                        specialized equipment?
+                                        <response class="badge bg-light text-dark" responseValue="easily observed">
+                                            Yes, it can be easily observed in open air
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="not easily observed">
+                                            No, it is not easily observed without equipment
+                                        </response>
+                                        <response class="badge bg-light text-dark"
+                                            responseValue="depends on light source">
+                                            It depends on the light source used
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>The Photoelectric Effect</strong></h5>
+                                <p>
+                                    When light irradiates a metallic surface, it can cause electrons to be emitted from
+                                    that surface. Although the photoelectric effect
+                                    occurs ubiquitously, it is often challenging to observe directly because the emitted
+                                    electrons quickly disperse into the surrounding air. This dispersion makes it
+                                    difficult to detect the effect without specialized equipment.
+                                </p>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/01_PEE_in_air.png" class="figure-img img-fluid rounded"
+                                                alt="Photoelectric Effect Diagram">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure: Schematic diagram of the
+                                            Photoelectric
+                                            Effect.</figcaption>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Therefore, a specialized experimental setup is necessary to detect and analyze the
+                                    photoelectric effect effectively. This setup ensures that the emitted electrons are
+                                    captured and measured accurately, providing clear evidence of the phenomenon.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Thermionic emission, field emission, and the photoelectric effect are all mechanisms by which electrons can leave a metal surface."
+                                        false-response="Not quite. Emission can happen by thermionic, field, and photoelectric mechanisms, depending on the energy source."
+                                        ansKey="yes">
+                                        Are there multiple ways in which electrons can be emitted from a metallic
+                                        surface, or is it only possible through the photoelectric effect?
+                                        <response class="badge bg-light text-dark" responseValue="yes">
+                                            Yes, multiple emission mechanisms exist
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="no">
+                                            No, only the photoelectric effect causes emission
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experimental Setup Accordion Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingExperimentalSetup">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExperimentalSetup" aria-expanded="false"
+                                aria-controls="collapseExperimentalSetup">
+                                <strong>Experimental Setup</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseExperimentalSetup" class="accordion-collapse collapse"
+                            aria-labelledby="headingExperimentalSetup" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The initial experimental setup for observing the photoelectric effect involves
+                                    directing radiation onto a metallic plate. In an open environment, the emitted
+                                    electrons are quickly lost to the surrounding air, making the effect undetectable.
+                                    This limitation is evident in the following diagram.
+                                </p>
+                                <!-- First Diagram -->
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 250px;">
+                                            <img src="img/01_PEE_in_air.png" class="figure-img img-fluid rounded"
+                                                alt="Basic Photoelectric Effect Setup">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure: Basic Setup for Photoelectric
+                                            Effect.</figcaption>
+                                    </div>
+                                </div>
+                                <p class="mt-3">
+                                    To overcome this limitation, the setup is modified to include a vacuum chamber,
+                                    which prevents the emitted electrons from dispersing into the air. The vacuum
+                                    chamber houses two plates: an emitter plate where electrons are emitted and a
+                                    collector plate to capture the emitted electrons. This modification is shown in the
+                                    following diagram.
+                                </p>
+                                <!-- Second Diagram -->
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 500px;">
+                                            <img src="img/02_PEE_in_VC.png" class="figure-img img-fluid rounded"
+                                                alt="Photoelectric Effect Setup with Vacuum Chamber">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure 3: Modified Setup with Vacuum Chamber.
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <p class="mt-3">
+                                    A significant challenge arises when the emitter plate accumulates a positive charge
+                                    due to the continuous loss of electrons. As electrons are ejected from the metal
+                                    surface, the emitter plate becomes increasingly positively charged. This positive
+                                    charge creates an attractive force that opposes the emission of additional
+                                    electrons, eventually hindering further electron emission. To mitigate this issue, a
+                                    conducting wire is connected between the collector plate and the emitter plate. This
+                                    connection allows the returning electrons to flow back and neutralize the positive
+                                    charge on the emitter plate, thereby maintaining a steady emission of electrons.
+                                </p>
+                                <p>
+                                    Furthermore, a highly sensitive ammeter is integrated into the conducting wire to
+                                    measure the photocurrent—the flow of electrons from the emitter plate to the
+                                    collector plate. The ammeter provides a quantitative measure of the number of
+                                    electrons being emitted and captured, serving as tangible evidence of the
+                                    photoelectric effect occurring within the experimental setup. This ammeter reading
+                                    is crucial as it confirms the continuous emission of electrons under the influence
+                                    of incident light, as depicted in the final diagram below.
+                                </p>
+
+                                <!-- Third Diagram -->
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 500px;">
+                                            <img src="img/03_PEE_final_setup.png" class="figure-img img-fluid rounded"
+                                                alt="Final Photoelectric Effect Setup with Ammeter">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure: Final Setup with Ammeter for
+                                            Measuring Photocurrent.</figcaption>
+                                    </div>
+                                </div>
+                                <p class="mt-3">
+                                    The ammeter detects the flow of photoelectrons, thereby confirming the photoelectric
+                                    effect. The emitted electrons that reach the collector plate constitute the
+                                    <strong>photocurrent</strong>, while the electrons themselves are referred to as
+                                    <strong>photoelectrons</strong>.
+                                </p>
+                                <p>
+                                    Heinrich Hertz initially observed the photoelectric effect, but it was Albert
+                                    Einstein's theoretical explanation that provided a comprehensive understanding,
+                                    leading to significant advancements in quantum physics.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Yes, the vacuum chamber stops electrons from dispersing, allowing us to detect them more accurately."
+                                        false-response="Not quite. The vacuum chamber is essential because it prevents the electrons from escaping, making them easier to capture and measure."
+                                        ansKey="true">
+                                        Why is a vacuum chamber included in the modified setup for observing the
+                                        photoelectric effect?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            To prevent electron dispersion
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            To increase light intensity
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            To cool down the metal plate
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Exactly! The positive charge from lost electrons opposes further emissions, so a connection to the collector plate helps maintain balance."
+                                        false-response="Not quite. The positive charge buildup hinders further electron emission, so the wire connection helps neutralize it."
+                                        ansKey="true">
+                                        As electrons leave the emitter plate, why do you think it becomes harder for
+                                        more electrons to escape without a return path?
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because the light source weakens
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because the plate accumulates a positive charge
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because the plate becomes too hot
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because electrons are repelled by other electrons
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Yes, the ammeter measures the photocurrent, which indicates the flow of emitted electrons from the emitter plate to the collector plate."
+                                        false-response="Not exactly. The ammeter measures the photocurrent, giving tangible evidence of the photoelectric effect."
+                                        ansKey="true">
+                                        Why do you think an ammeter is included in the final setup of the experiment?
+
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            To adjust the voltage between plates
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            To control the amount of light hitting the metal
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            To stabilize the temperature of the metal plate
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            To measure the photocurrent
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Observations Accordion Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingObservations">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseObservations" aria-expanded="false"
+                                aria-controls="collapseObservations">
+                                <strong>Observations</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseObservations" class="accordion-collapse collapse"
+                            aria-labelledby="headingObservations" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Through a series of meticulous experiments, scientists aimed to unravel the behavior
+                                    of light and its interaction with metallic surfaces. The key observations from these
+                                    experiments include:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Intensities</strong></summary>
+                                            <p>
+                                                In these experiments, the intensity of the incident light was varied
+                                                while keeping its frequency constant. It was observed that the
+                                                <strong>photocurrent</strong> increases with an increase in light
+                                                intensity. This relationship is illustrated in the graph below, which
+                                                shows the direct proportionality between light intensity and
+                                                photocurrent.
+                                            </p>
+                                            <!-- Graph for Observations with Intensities -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/04_I_vs_i_graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between light intensity and photocurrent">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Graph of Light
+                                                        Intensity vs. Photocurrent.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Increasing light intensity leads to more electrons being emitted, resulting in a higher photocurrent."
+                                                    false-response="Not quite. The increase in light intensity only affects the number of emitted electrons, not their speed."
+                                                    ansKey="true">
+                                                    Does increasing the light intensity affect the number of electrons
+                                                    emitted in the photoelectric effect?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, it increases the number of emitted electrons
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, it increases the speed of electrons
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                            <p>
+                                                <strong>Explanation:</strong> This implies that a higher intensity
+                                                results in
+                                                the emission
+                                                of more electrons per unit time. It is important to understand that this
+                                                increase in photocurrent does not signify an increment in the speed of
+                                                the
+                                                photoelectrons. Instead, the current increase strictly indicates an
+                                                increase in the number of electrons being emitted.
+                                            </p>
+                                            <p>
+                                                Additionally, while higher intensity leads to more electrons being
+                                                emitted,
+                                                it does not affect the speed (kinetic energy) of the individual
+                                                photoelectrons. If the speed of electrons were to increase, it would
+                                                result
+                                                in electrons arriving at the collector plate more quickly. However, this
+                                                does not translate to a change in current, as current is dependent on
+                                                the
+                                                number of electrons rather than their speed.
+                                            </p>
+                                            <p>
+                                                For analogy, imagine 10 buses leave from city A to city B per day.
+                                                If the roads are improved, buses will travel faster and reach city B in
+                                                less time. However, the number of buses leaving city A remains the same,
+                                                and consequently, the number of passengers arriving at city B does not
+                                                increase. Similarly, increasing the intensity of light results in more
+                                                electrons being emitted without altering their individual speeds.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="That's correct! Just like more buses don't mean faster travel, more intensity means more electrons but doesn't increase their speed."
+                                                    false-response="Not quite. Similar to adding more buses, increasing intensity affects the number, not the speed of emitted electrons."
+                                                    ansKey="false">
+                                                    In the bus analogy, do more buses per day mean that each bus travels
+                                                    faster?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, more buses travel faster
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, more buses don’t mean faster travel
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Accelerating Voltage</strong></summary>
+                                            <p>
+                                                By applying an accelerating voltage to the photoelectrons, an electric
+                                                field is created to influence their motion towards the collector
+                                                plate.
+                                                It was observed that the photocurrent initially increases with the
+                                                application of accelerating voltage and eventually saturates at a
+                                                certain value. This behavior is depicted in the graph below, where the
+                                                photocurrent becomes constant after reaching a saturation current
+                                                despite further increases in accelerating
+                                                voltage.
+                                            </p>
+
+                                            <!-- Graph for Observations with Accelerating Voltage -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 500px;">
+                                                        <img src="img/06_PEE_with_acc_voltage.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between accelerating voltage and photocurrent">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Setup for accelerating
+                                                        the photoelectrons.</figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/05_photocurrent_vs_acc_voltage_graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between accelerating voltage and photocurrent">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Graph of Accelerating
+                                                        Voltage vs. Photocurrent.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <strong>Explanation:</strong> The reason behind this saturation is
+                                                rooted
+                                                in the varying speeds of the
+                                                emitted electrons. After electrons leave the surface, they possess
+                                                different
+                                                kinetic energies, resulting in different speeds. Some electrons are
+                                                emitted
+                                                with lower speeds, leading to a buildup of electrons near the emitter
+                                                plate,
+                                                effectively creating an electron cloud. This accumulation acts as a
+                                                barrier,
+                                                preventing the newly emitted slower electrons from reaching the
+                                                collector plate and
+                                                causing these slower electrons to return to the emitter plate.
+                                                Therefore, these electrons remain undetected by the ammeter, hence they
+                                                do
+                                                not contribute to the photocurrent.
+                                            </p>
+                                            <p>
+                                                This "traffic jam" effect caused by the electron cloud is minimized
+                                                by using an accelerating voltage for the electrons.
+                                                When a sufficiently high accelerating voltage is
+                                                applied,
+                                                the electric field becomes strong enough to pull the electron cloud
+                                                towards the collector plate, eliminating the buildup and
+                                                allowing
+                                                all emitted electrons to contribute to the photocurrent. Also,
+                                                further
+                                                increases in accelerating voltage do not lead to a higher photocurrent,
+                                                resulting
+                                                in a saturation current.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Yes, without an accelerating voltage, slower electrons create a barrier, blocking new electrons from reaching the collector."
+                                                    false-response="Not exactly. Without a strong electric field, slower electrons form an electron cloud near the emitter, reducing photocurrent."
+                                                    ansKey="true">
+                                                    What effect does the lack of accelerating voltage have on the motion
+                                                    of slower electrons?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        They form an electron cloud near the emitter
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        They travel faster towards the collector
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        They lose all energy and stop moving
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! The photocurrent saturates because all emitted electrons are reaching the collector, regardless of further voltage increases."
+                                                    false-response="Not exactly. Increasing voltage beyond saturation doesn't affect current since all available electrons are already reaching the collector."
+                                                    ansKey="false">
+                                                    When photocurrent reaches saturation, will increasing the
+                                                    accelerating voltage further increase the current?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, it will keep increasing the current
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, the current remains constant at saturation
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Retarding Voltage</strong></summary>
+                                            <p>
+                                                A retarding voltage, which opposes the motion of photoelectrons, was
+                                                applied to study its effect on photocurrent. It was found that as the
+                                                retarding voltage increases, the photocurrent decreases gradually until
+                                                it reaches zero at a certain voltage known as the <strong>stopping
+                                                    potential</strong>. This trend is illustrated in the diagram below,
+                                                showing the decline of photocurrent with increasing retarding
+                                                voltage.
+                                            </p>
+                                            <!-- Graph for Observations with Retarding Voltage -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 500px;">
+                                                        <img src="img/08_PEE_with_ret_voltage.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between accelerating voltage and photocurrent">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Setup for retarding the
+                                                        photoelectrons.</figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/07_photocurrent_vs_ret_voltage_graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between retarding voltage and photocurrent">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Graph of Retarding
+                                                        Voltage vs. Photocurrent.</figcaption>
+                                                    <figcaption class="figure-caption">[Negative side of voltage
+                                                        indicates retarding voltage]</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <strong>Explanation:</strong> When a small retarding potential is
+                                                applied, it exerts a slight opposing force on the emitted
+                                                photoelectrons. This results in a reduction of photocurrent as the
+                                                electrons with lesser kinetic energy are forced to return to the
+                                                emitter plate. As
+                                                the retarding voltage is increased, more and more electrons are unable
+                                                to reach the collector plate. Eventually, a point is reached where even
+                                                the most energetic electrons cannot overcome the retarding potential,
+                                                causing the photocurrent to drop to zero. This critical voltage is
+                                                termed the <strong>stopping potential</strong>.
+                                            </p>
+                                            <p>
+                                                The stopping potential can be used to determine the maximum kinetic
+                                                energy (\(K_{\text{max}}\)) of the ejected electrons. The relationship
+                                                between the stopping potential (\(V_s\)) and the kinetic energy is given
+                                                by the equation:
+                                            </p>
+                                            <p>
+                                                \(\qquad K_{\text{max}} = eV_s\)
+                                            </p>
+                                            <p>
+                                                Where:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>\(e\):</strong> Elementary charge
+                                                    (\(1.602 \times 10^{-19} \, \text{C}\))</li>
+                                                <li class="list-group-item"><strong>\(V_s\):</strong> Stopping potential
+                                                    (in
+                                                    volts)</li>
+                                            </ul>
+                                            <p>
+                                                This formula, based on energy conservation for the motion of
+                                                electrons between the plates, allows us to calculate the maximum
+                                                kinetic energy of the
+                                                emitted photoelectrons based on the measured stopping potential,
+                                                providing valuable insights into the energy dynamics of the
+                                                photoelectric effect.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Retarding voltage reduces photocurrent by forcing lower-energy electrons back to the emitter."
+                                                    false-response="Not quite. Increasing retarding voltage gradually reduces photocurrent by preventing electrons from reaching the collector."
+                                                    ansKey="true">
+                                                    What happens to photocurrent when retarding voltage is increased?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        It decreases, eventually reaching zero
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        It increases to a maximum
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        It stays constant
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Yes! The stopping potential is the retarding voltage where even the fastest electrons can’t reach the collector."
+                                                    false-response="No. The stopping potential is the minimum voltage needed to stop the most energetic electrons. And if most energetic electron stops, all of them will stop."
+                                                    ansKey="false">
+                                                    Is the stopping potential the voltage required to stop all emitted
+                                                    electrons from reaching the collector plate?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, it stops all emitted electrons
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, it stops only the fastest electrons
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Frequency Variation</strong></summary>
+                                            <p>
+                                                When the frequency of the incident light was varied, several critical
+                                                observations emerged. Below a certain threshold frequency, no electrons
+                                                were emitted regardless of the light's intensity. Above this threshold
+                                                frequency,
+                                                electrons were emitted, and their <strong>stopping potential</strong>
+                                                increased with the
+                                                frequency of the incident light. This relationship is depicted in the
+                                                graph below, which shows how the stopping potential varies with
+                                                frequency.
+                                            </p>
+                                            <!-- Graph for Observations with Frequency Variation -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/09_stopping_voltage_vs_frequency_graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing the relationship between frequency and stopping potential">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Figure: Graph of Stopping
+                                                        Potential
+                                                        vs. Frequency.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <strong>Explanation:</strong> Increasing the frequency of the incident
+                                                light leads to the ejection of electrons with greater kinetic energy.
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Below the threshold frequency, no electrons are emitted, no matter the light intensity."
+                                                    false-response="Not exactly. Although scientists at that time thought the same way, but only above the threshold frequency are electrons emitted, regardless of intensity."
+                                                    ansKey="false">
+                                                    Below a certain threshold frequency, will increasing the light
+                                                    intensity result in electron emission?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, higher intensity will emit electrons
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, electrons will not be emitted
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Stopping Potential</strong></summary>
+                                            <p>
+                                                It was observed that the stopping potential depends solely on the
+                                                frequency of the incident light and remains unaffected by changes in
+                                                light intensity. Ideally, based on our previous understanding of light
+                                                as a wave, one might expect that increasing the intensity (brightness)
+                                                of light would influence the stopping potential. However, the
+                                                experiments demonstrated that the stopping potential is independent of
+                                                light intensity. This shows that the kinetic energy of individual
+                                                electrons is a function of light frequency, not its intensity.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations with Different Metallic Surfaces</strong>
+                                            </summary>
+                                            <p>
+                                                Different metals have varying work functions, leading to different
+                                                threshold frequencies and stopping potentials. For a given frequency,
+                                                the stopping potential varies depending on the metal used, as each metal
+                                                requires a different minimum energy to eject electrons.
+                                            </p>
+                                            <p>
+                                                The graph below shows the variation of stopping potential (and hence
+                                                the maximum kinetic energy of photoelectrons) with frequency for
+                                                different metallic
+                                                surfaces.
+                                            </p>
+                                            <!-- Graph for Observations with Different Metallic Surfaces -->
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/10_stopping_voltage_vs_frequency_for_different_metals_graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing stopping potential vs frequency for different metals">
+                                                    </figure>
+                                                    <figcaption class="figure-caption"> Figure: Graph of Stopping
+                                                        Potential vs. Frequency for Various Metals.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Yes, as frequency increases, electrons gain more kinetic energy, leading to a higher stopping potential."
+                                                    false-response="Not exactly. Higher frequency light increases electron energy, so stopping potential rises."
+                                                    ansKey="true">
+                                                    If the frequency of incident light increases, what happens to the
+                                                    stopping potential?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        It increases
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        It decreases
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        It remains the same
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Each metal has a different work function, so it requires a different minimum energy (frequency) to emit electrons."
+                                                    false-response="Not quite. Different metals require different energies (frequencies) to emit electrons because of varying work functions."
+                                                    ansKey="true">
+                                                    Does the work function vary between different metals, affecting the
+                                                    frequency needed for electron emission?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, each metal has a unique work function
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, all metals have the same work function
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Observations of Time Duration</strong></summary>
+                                            <p>
+                                                Experiments measured the time taken for electrons to be emitted after
+                                                the incidence of light. Contrary to the expectations of the classical
+                                                wave theory, electron emission occurred almost instantaneously,
+                                                regardless of light intensity. The wave theory suggested that energy
+                                                absorption and accumulation should require a finite amount of time,
+                                                especially at lower intensities (possibly on the order of
+                                                hours), but this was not observed as it was observed to
+                                                occur in a matter of micro- to nanoseconds.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">
+                                    These observations collectively revealed significant inconsistencies with the
+                                    classical wave theory of light, indicating the necessity for a new theoretical
+                                    framework to explain the photoelectric effect.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Inconsistencies Accordion Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingInconsistencies">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInconsistencies" aria-expanded="false"
+                                aria-controls="collapseInconsistencies">
+                                <strong>Inconsistencies</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseInconsistencies" class="accordion-collapse collapse"
+                            aria-labelledby="headingInconsistencies" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The aforementioned observations posed significant challenges to the classical wave
+                                    theory of light. The primary inconsistencies identified are:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Intensity Problem:</strong> The maximum kinetic
+                                        energy (\(K_{\text{max}}\)) of emitted electrons is independent of light
+                                        intensity, contradicting the wave theory which posited that energy absorption
+                                        should scale with intensity.
+                                        <p class="mt-3">
+                                            <interaction
+                                                true-response="Good insight! Despite increased light intensity, the kinetic energy of emitted electrons remains constant, which is unexpected under classical wave theory."
+                                                false-response="Interesting thought! However, classical theory would suggest that more intense light should transfer more energy to electrons, which isn’t observed here."
+                                                ansKey="false">
+                                                If energy is absorbed from light continuously like a wave, would
+                                                increasing the intensity make electrons gain more kinetic energy? Why or
+                                                why not?
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    Yes, higher intensity should increase kinetic energy
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    No, intensity does not affect kinetic energy here
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </p>
+
+
+                                    </li>
+                                    <li class="list-group-item"><strong>Frequency Problem:</strong> There exists a
+                                        threshold frequency below which no electrons are emitted, irrespective of the
+                                        light's intensity. The wave theory could not account for this frequency
+                                        dependence of electron emission.</li>
+                                    <li class="list-group-item"><strong>Time Lag Problem:</strong> Electron emission
+                                        occurs instantaneously upon light exposure, defying the wave theory's
+                                        expectation of a measurable time lag due to energy accumulation.</li>
+                                </ul>
+                                <p class="mt-3">
+                                    These inconsistencies suggested that the energy of incident light is not absorbed
+                                    continuously as waves, but rather in discrete packets, challenging the fundamental
+                                    principles of classical physics. This realization set the stage for the development
+                                    of quantum theories that could adequately explain the observed phenomena.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Exactly! These inconsistencies pointed out a limitation in classical physics, opening up new ways of understanding light and matter interactions."
+                                        false-response="Not quite. The failure of classical physics to explain these observations indicated the need for a new theory that could."
+                                        ansKey="true">
+                                        Do you think these observations reveal limits in classical physics? What might
+                                        they suggest about the nature of light?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, they suggest light behaves differently than waves
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, they still align with classical physics
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Einstein's Explanation Accordion Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEinsteinsExplanation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEinsteinsExplanation" aria-expanded="false"
+                                aria-controls="collapseEinsteinsExplanation">
+                                <strong>Einstein's Explanation</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseEinsteinsExplanation" class="accordion-collapse collapse"
+                            aria-labelledby="headingEinsteinsExplanation" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Building upon Max Planck's groundbreaking hypothesis of energy quantization, Albert
+                                    Einstein
+                                    proposed a revolutionary explanation for the photoelectric effect in 1905. Einstein
+                                    introduced the concept of <strong>photons</strong>, which are discrete packets of
+                                    light energy, each carrying energy proportional to its frequency. This was a
+                                    significant departure from the classical wave theory, presenting a quantum view of
+                                    light that paved the way for the development of quantum mechanics.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! The energy of a photon is directly proportional to its frequency."
+                                        false-response="Not quite. According to Einstein, the energy of a photon depends on its frequency, not intensity."
+                                        ansKey="true">
+                                        According to Einstein's theory, what determines the energy of a photon?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Its frequency
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Its intensity
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    According to Einstein, when a photon interacts with an electron in a metallic
+                                    surface, it transfers its energy to the electron. The energy of the photon (\(E\))
+                                    is given by:
+                                </p>
+                                <p>
+                                    \(\qquad E = h\nu\)
+                                </p>
+                                <p>
+                                    Where:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>h:</strong> Planck's constant (\(6.626 \times
+                                        10^{-34} \, \text{J} \cdot
+                                        \text{s}\))</li>
+                                    <li class="list-group-item"><strong>\(\nu\):</strong> Frequency of the incident
+                                        light</li>
+                                </ul>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Increasing the frequency increases the photon's energy according to above expression."
+                                        false-response="Not quite. The energy of a photon increases with increasing frequency."
+                                        ansKey="true">
+                                        If the frequency (\(\nu\)) of the incident light increases, what happens to the
+                                        energy (\(E\)) of the photon?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            The energy increases
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            The energy decreases
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    Einstein's key assumption was that electrons absorb energy from individual photons
+                                    rather than from the light wave as a whole. If the energy of the photon exceeds the
+                                    metal's work function (\(\phi\)), the excess
+                                    energy is converted into the kinetic energy (\(K_{\text{max}}\)) of the emitted
+                                    electron. This relationship is mathematically expressed as:
+                                </p>
+                                <p>
+                                    \(\qquad K_{\text{max}} = h\nu - \phi\)
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! If energy of photon is less than the work function of metal, no electrons are emitted."
+                                        false-response="Not quite. Electrons are only emitted if the photon's energy exceeds the work function."
+                                        ansKey="false">
+                                        If the energy of the photon is less than the work function of the metal,
+                                        electrons will still be emitted but with less kinetic energy. Is this statement
+                                        true or false?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    This equation elegantly resolves the previously noted inconsistencies with the
+                                    classical wave theory:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Intensity Problem:</strong> The classical wave
+                                        theory suggested that increasing the light's intensity would increase the energy
+                                        absorbed by electrons, thereby increasing their kinetic energy. However,
+                                        experiments showed that while the <strong>photocurrent</strong> (the number of
+                                        electrons emitted) increases with light intensity, the maximum kinetic energy
+                                        (\(K_{\text{max}}\)) of the emitted electrons remains unchanged. Einstein's
+                                        photon theory explains this by stating that increasing intensity means more
+                                        photons are striking the surface, resulting in more electrons being emitted, but
+                                        each photon still carries the same amount of energy determined by its frequency.
+
+                                        <p class="mt-3">
+                                            <interaction
+                                                true-response="Correct! The maximum kinetic energy depends on the photon's frequency, not the intensity."
+                                                false-response="Not quite. Increasing intensity increases the number of photons, not their individual energies."
+                                                ansKey="false">
+                                                According to Einstein's photon theory, increasing the intensity of light
+                                                will increase the maximum kinetic energy of emitted electrons. Is this
+                                                statement true or false?
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    True
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    False
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item"><strong>Frequency Problem:</strong> The wave theory
+                                        could not explain why electrons are only emitted when the incident light exceeds
+                                        a certain threshold frequency (\(\nu_0\)), regardless of the light's intensity.
+                                        Einstein's equation clearly shows that only photons with frequency \(\nu \geq
+                                        \nu_0\) (where \(h\nu_0 = \phi\)) have enough energy to eject electrons. Below
+                                        this frequency, no electrons are emitted, no matter how intense the light is.
+                                    
+                                    <p class="mt-3">
+                                        <interaction
+                                            true-response="Correct! Electrons are only emitted when the photon's frequency meets or exceeds the threshold frequency."
+                                            false-response="Not quite. Increasing intensity does not cause electrons to be emitted if the frequency is below the threshold."
+                                            ansKey="false">
+                                            According to Einstein's theory, increasing the intensity of light with a
+                                            frequency below the threshold frequency can cause electrons to be emitted.
+                                            Is this statement true or false?
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                True
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                False
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p></li>
+                                    <li class="list-group-item"><strong>Time Lag Problem:</strong> According to the wave
+                                        theory, electrons should take time to accumulate enough energy to overcome the
+                                        work function, especially at low light intensities. However, experiments
+                                        demonstrated that electron emission occurs almost instantaneously with the
+                                        exposure to light. Einstein's photon theory accounts for this by positing that
+                                        each photon interacts with a single electron, providing it with the necessary
+                                        energy in a single, instantaneous event.
+                                    <p class="mt-3">
+                                        <interaction
+                                            true-response="Correct! Electrons receive energy from single photons in instantaneous events."
+                                            false-response="Not quite. According to Einstein, electrons absorb energy from individual photons instantly."
+                                            ansKey="false">
+                                            According to Einstein's theory, the instantaneous emission of electrons
+                                            occurs because each electron absorbs energy gradually over time from the
+                                            light wave. Is this statement true or false?
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                True
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                False
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p></li>
+                                </ul>
+                                <p class="mt-3">
+                                    Einstein's explanation not only accounted for the experimental observations but also
+                                    provided strong support for the quantum theory of light. By introducing the concept
+                                    of photons, Einstein bridged the gap between wave and particle theories of light,
+                                    contributing significantly to the dual nature of light—a cornerstone of quantum
+                                    mechanics.
+                                </p>
+                                <p class="mt-3">
+                                    Furthermore, Einstein's photon theory has far-reaching implications beyond the
+                                    photoelectric effect. It laid the groundwork for understanding phenomena such as
+                                    Compton scattering and stimulated emission, which are fundamental to technologies
+                                    like lasers and modern electronics.
+                                </p>
+                                <p class="mt-3">
+                                    For his significant contributions to the understanding of the photoelectric effect
+                                    and the quantum theory of light, Albert Einstein was awarded the Nobel Prize in
+                                    Physics in 1921. His work not only resolved the inconsistencies posed by the
+                                    classical wave theory but also revolutionized our comprehension of light and energy
+                                    at the quantum level.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Not quite. Einstein received the Nobel Prize for his explanation of the photoelectric effect."
+                                        false-response="Correct! Einstein was awarded the Nobel Prize for his work on the photoelectric effect, not for the theory of relativity."
+                                        ansKey="false">
+                                        Albert Einstein received the Nobel Prize in Physics in 1921 for his work on the
+                                        theory of relativity. Is this statement true or false?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

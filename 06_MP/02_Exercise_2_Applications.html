@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercises 2| Particle Properties of Radiation</title>
+    <!-- Include Bootstrap 5 CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="controller.css">
+    <link rel="stylesheet" href="assignmentController.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="container my-4 position-relative">
+        <!-- Restart Button -->
+        <div class="restart-btn">
+            <button class="btn btn-danger" onclick="restartProgress()">Restart Progress</button>
+        </div>
+
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Particle Properties of Radiation</h1>
+                    <p class="lead" id="exerciseName" exerciseID="02_PRA_02">Exercise 2</p>
+                    <p class="text-muted">Application of Concepts</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Questions will be dynamically loaded here -->
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Include MathJax for rendering mathematical equations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <!-- Include Your Custom JavaScript -->
+    <script src="assignmentController.js" defer></script>
+</body>
+
+</html>

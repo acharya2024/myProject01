@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Radioactivity</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Radioactivity</h1>
+        <h2 class="text-center">Activity: Understanding the radioactivity law</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions:</strong>
+                <ol>
+
+                </ol>
+            </div>
+        </div>
+
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Simulation and Graph Canvases -->
+                    <div class="col col-12 col-md-6">
+                        <div id="simulationCanvas-holder"
+                            style="display:flex; flex-direction: column; align-items: center;">
+
+                            <canvas id="canvas1" style="border: 3px solid #4A90E2;     border-radius: 10px; "></canvas>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- Control Panel -->
+                    <div class=" col col-12 col-md-6">
+                        <div id="arrowButton" class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card p-4">
+                            <h5 class="text-center mt-3">Decay Graph (Undecayed Nuclei Over Time)</h5>
+                            <canvas id="canvas2"></canvas>
+                            <label>Decay Probability:
+                                <input type="range" id="decayProbability" min="0" max="1" step="0.01" value="0.1"
+                                    class="w-100">
+                            </label>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <button onclick="startSimulation()" class="btn btn-success w-100">Start</button>
+                                </div>
+                                <div class="col">
+                                    <button onclick="resetSimulation()" class="btn btn-danger w-100">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Include necessary scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            function getPointRadius() {
+                if (window.innerWidth <= 600) {
+                    return 1; // Smaller dots for mobile screens
+                } else if (window.innerWidth <= 1024) {
+                    return 2; // Medium dots for tablets
+                } else {
+                    return 3; // Larger dots for desktop
+                }
+            }
+            // Canvas and Contexts
+            const canvas1 = document.getElementById('canvas1');
+            const ctx1 = canvas1.getContext('2d');
+            const decayProbabilitySlider = document.getElementById('decayProbability');
+
+            // Chart.js Setup for Canvas 2 (Decay Graph)
+            const canvas2 = document.getElementById('canvas2');
+            const ctx2 = canvas2.getContext('2d');
+            const decayChart = new Chart(ctx2, {
+                type: 'line',
+                data: {
+                    labels: [], // Time intervals
+                    datasets: [{
+                        label: 'Undecayed Nuclei',
+                        data: [],
+                        borderColor: 'black',
+                        fill: false,
+                        pointStyle: 'circle',
+                        pointRadius: getPointRadius()
+                    }]
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Time (intervals)' },
+                        min: 0,
+                        max: 300, // Fixed length for time axis (x-axis)
+                        ticks: {
+                            stepSize: 10 // Optional: adjust step size for x-axis labels
+                        }
+                    },
+                    y: {
+                        title: { display: true, text: 'Undecayed Nuclei' },
+                        min: 0,
+                        max: 800, // Fixed vertical length for undecayed nuclei (y-axis)
+                        ticks: {
+                            stepSize: 100 // Optional: adjust step size for y-axis labels
+                        }
+                    }
+                }
+            });
+
+            // Simulation Variables
+            let nuclei = [];
+            let initialNucleiCount = 800; // Initial number of radioactive nuclei
+            let timeInterval = 100; // 1-second interval
+            let timeElapsed = 0;
+            let simulationRunning = false;
+
+            // Function to initialize nuclei
+            function initializeNuclei() {
+                nuclei = [];
+                for (let i = 0; i < initialNucleiCount; i++) {
+                    nuclei.push({ x: Math.random() * canvas1.width, y: Math.random() * canvas1.height, decayed: false });
+                }
+            }
+
+            // Function to draw nuclei on Canvas 1
+            function drawNuclei() {
+                ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
+                nuclei.forEach(nucleus => {
+                    ctx1.beginPath();
+                    ctx1.arc(nucleus.x, nucleus.y, 5, 0, Math.PI * 2);
+                    ctx1.fillStyle = nucleus.decayed ? 'gray' : 'yellow';
+                    ctx1.fill();
+
+                    // Add a border around each circle
+                    ctx1.strokeStyle = nucleus.decayed ? 'darkgray' : 'black'; // Border color based on decay status
+                    ctx1.lineWidth = 1; // Thickness of the border
+                    ctx1.stroke();
+
+                    ctx1.closePath();
+
+                });
+            }
+
+            // Function to start the simulation
+            function startSimulation() {
+                if (simulationRunning) return;
+                simulationRunning = true;
+                timeElapsed = 0;
+                decayChart.data.labels = [];
+                decayChart.data.datasets[0].data = [];
+                runSimulation();
+            }
+
+            // Function to reset the simulation
+            function resetSimulation() {
+                simulationRunning = false;
+                initializeNuclei();
+                drawNuclei();
+                timeElapsed = 0;
+                decayChart.data.labels = [];
+                decayChart.data.datasets[0].data = [];
+                decayChart.update();
+            }
+
+            // Function to run the decay process at each interval
+            function runSimulation() {
+                if (!simulationRunning) return;
+
+                const decayProbability = parseFloat(decayProbabilitySlider.value);
+                nuclei.forEach(nucleus => {
+                    if (!nucleus.decayed && Math.random() < decayProbability) {
+                        nucleus.decayed = true;
+                    }
+                });
+
+                // Count undecayed nuclei
+                const undecayedCount = nuclei.filter(nucleus => !nucleus.decayed).length;
+                timeElapsed++;
+
+                // Update the decay graph
+                decayChart.data.labels.push(timeElapsed);
+                decayChart.data.datasets[0].data.push(undecayedCount);
+                decayChart.update();
+
+                // Draw the updated nuclei
+                drawNuclei();
+
+                // Stop simulation if all nuclei have decayed
+                if (undecayedCount > 0) {
+                    setTimeout(runSimulation, timeInterval);
+                } else {
+                    simulationRunning = false;
+                    alert("All nuclei have decayed!");
+                }
+            }
+
+            // Initialize and draw initial state
+            initializeNuclei();
+            drawNuclei();
+        </script>
+
+
+
+        <!-- Include Bootstrap JS and other scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,4234 @@
+{
+    "questions": [
+        {
+            "id": "TF.PEE.1.1.Q1",
+            "statistics": {
+                "attempts": 200,
+                "hintsAccessed": 30,
+                "solved": 160,
+                "successRate": 80,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 35,
+                "medianTime": 33,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect demonstrates that light has both wave-like and particle-like properties.",
+            "solution": "True. The photoelectric effect provides evidence for the particle nature of light (photons), complementing its wave-like properties.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the dual nature of light as explained by quantum theory.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave-Particle Duality",
+                "concept": "Dual Nature of Light",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Wave-Particle Duality",
+                    "Light Properties",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.2.Q2",
+            "statistics": {
+                "attempts": 180,
+                "hintsAccessed": 25,
+                "solved": 144,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 22
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "Increasing the intensity of light in the photoelectric effect will increase the maximum kinetic energy of the emitted electrons.",
+            "solution": "False. Increasing the intensity of light increases the number of photons, thereby increasing the number of emitted electrons (photocurrent), but it does not affect the maximum kinetic energy of each electron, which depends on the light's frequency.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall what factors influence the kinetic energy of photoelectrons.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Intensity Effects",
+                "concept": "Impact of Light Intensity",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Light Intensity",
+                    "Photocurrent",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.3.Q3",
+            "statistics": {
+                "attempts": 190,
+                "hintsAccessed": 28,
+                "solved": 152,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "According to classical wave theory, the energy of light is dependent on its amplitude.",
+            "solution": "True. In classical wave theory, the energy carried by light waves is proportional to the square of their amplitude.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how wave amplitude relates to energy in classical physics.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Classical Wave Theory",
+                "concept": "Energy Dependence on Amplitude",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Wave Theory",
+                    "Light Energy",
+                    "Amplitude"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.4.Q4",
+            "statistics": {
+                "attempts": 170,
+                "hintsAccessed": 25,
+                "solved": 136,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect can only occur if the frequency of incident light is above a certain threshold frequency.",
+            "solution": "True. The photoelectric effect requires that the incident light has a frequency above the material's threshold frequency to provide sufficient energy to eject electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the minimum energy required to remove an electron.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Necessity of Threshold Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Threshold Frequency",
+                    "Photoelectric Effect",
+                    "Electron Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.5.Q5",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The kinetic energy of emitted photoelectrons increases with increasing light intensity.",
+            "solution": "False. The kinetic energy of emitted photoelectrons depends on the frequency of the incident light, not its intensity. Increasing intensity increases the number of photoelectrons but not their kinetic energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what determines the energy of each emitted electron.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy",
+                "concept": "Dependence of Kinetic Energy on Light Properties",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Light Intensity",
+                    "Frequency"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.6.Q6",
+            "statistics": {
+                "attempts": 175,
+                "hintsAccessed": 27,
+                "solved": 140,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "In the photoelectric effect, the energy of emitted electrons depends on the square of the frequency of incident light.",
+            "solution": "False. The energy of emitted electrons depends linearly on the frequency of incident light, not the square of the frequency.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall Einstein's photoelectric equation.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy",
+                "concept": "Energy-Frequency Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.7.Q7",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect can only be observed in metals.",
+            "solution": "False. While the photoelectric effect is commonly studied in metals due to their low work functions, it can also be observed in other materials with suitable work functions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the work functions of different materials.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Material Dependence",
+                "concept": "Applicability to Various Materials",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Materials",
+                    "Work Function",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.8.Q8",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "According to Einstein's explanation, each electron absorbs energy from multiple photons before being emitted.",
+            "solution": "False. Each electron absorbs energy from a single photon to be emitted, not from multiple photons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy transfer mechanism in Einstein's theory.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Explanation",
+                "concept": "Energy Absorption by Electrons",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Einstein's Theory",
+                    "Energy Absorption",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.9.Q9",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 27,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "In the photoelectric effect, increasing the frequency of incident light beyond the threshold frequency will indefinitely increase the kinetic energy of emitted electrons.",
+            "solution": "False. While increasing the frequency beyond the threshold frequency does increase the kinetic energy of emitted electrons, it does so linearly and does not increase indefinitely due to practical limits like material properties.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider realistic limits on kinetic energy.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy Limits",
+                "concept": "Limits on Kinetic Energy Increase",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Kinetic Energy",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.10.Q10",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect cannot occur if the metal surface is not clean.",
+            "solution": "True. A clean metal surface is essential for the photoelectric effect to occur effectively, as contaminants can affect electron emission.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the impact of surface conditions on electron emission.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Surface Conditions",
+                "concept": "Impact of Surface Cleanliness",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Surface Conditions",
+                    "Photoelectric Effect",
+                    "Electron Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.11.Q11",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photocurrent in the photoelectric effect is independent of the work function of the material.",
+            "solution": "False. The work function affects the number of electrons that can be emitted for a given frequency and intensity of light, thereby influencing the photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how work function relates to electron emission.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photocurrent Factors",
+                "concept": "Work Function's Influence on Photocurrent",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photocurrent",
+                    "Work Function",
+                    "Electron Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.12.Q12",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The frequency of light is inversely proportional to its wavelength.",
+            "solution": "True. The frequency \\( f \\) and wavelength \\( \\lambda \\) of light are related by the equation \\( c = f \\lambda \\), where \\( c \\) is the speed of light. Thus, \\( f = \\frac{c}{\\lambda} \\), indicating an inverse relationship.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the relationship between frequency, wavelength, and the speed of light.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave Properties of Light",
+                "concept": "Frequency-Wavelength Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Frequency",
+                    "Wavelength",
+                    "Light Properties"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.13.Q13",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The energy of a photon is directly proportional to its frequency.",
+            "solution": "True. The energy of a photon \\( E \\) is given by \\( E = h f \\), where \\( h \\) is Planck's constant and \\( f \\) is the frequency, indicating a direct proportionality.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Refer to the fundamental equation relating photon energy and frequency.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Energy-Frequency Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.14.Q14",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 27,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect was one of the key experiments that led to the development of quantum mechanics.",
+            "solution": "True. The photoelectric effect provided critical evidence for the quantization of light energy, which was a fundamental concept in the development of quantum mechanics.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the historical impact of the photoelectric effect.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Historical Significance",
+                "concept": "Impact on Quantum Mechanics",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Quantum Mechanics",
+                    "Historical Experiments",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.15.Q15",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect can occur even if the incident light has an infinite wavelength.",
+            "solution": "False. An infinite wavelength corresponds to zero frequency, meaning the photons have no energy. Without sufficient energy (frequency), no electrons can be emitted.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what zero frequency implies for photon energy.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Frequency Dependence",
+                "concept": "Wavelength and Electron Emission",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Wavelength",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.16.Q16",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "If the work function of a metal is high, a higher frequency of incident light is required to emit photoelectrons.",
+            "solution": "True. A higher work function means more energy is needed to eject an electron, which requires incident light with a higher frequency to provide sufficient photon energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Relate work function to photon energy requirements.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Work Function",
+                "concept": "Relation Between Work Function and Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Work Function",
+                    "Frequency",
+                    "Photon Energy"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.17.Q17",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect can only be explained by the classical wave theory of light.",
+            "solution": "False. The photoelectric effect cannot be fully explained by classical wave theory; it requires the concept of light quanta (photons) as introduced by Einstein.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what limitations classical theory has in explaining the effect.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Theoretical Explanations",
+                "concept": "Limitations of Classical Theory",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Classical Theory",
+                    "Einstein's Theory",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.18.Q18",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "In the photoelectric effect, the number of emitted electrons depends on the intensity of the incident light.",
+            "solution": "True. The intensity of the incident light affects the number of photons hitting the metal surface, thereby influencing the number of emitted electrons (photocurrent).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how intensity relates to the number of photons.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Intensity Effects",
+                "concept": "Relation Between Intensity and Photoelectron Count",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Light Intensity",
+                    "Photocurrent",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.19.Q19",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "Electrons emitted in the photoelectric effect have kinetic energy that depends on the material's work function.",
+            "solution": "False. The kinetic energy of the emitted electrons depends on the energy of the incident photons (frequency), not directly on the material's work function. However, the work function determines the minimum energy required for emission.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Distinguish between energy requirements and kinetic energy dependence.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy",
+                "concept": "Dependence of Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Kinetic Energy",
+                    "Work Function",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.20.Q20",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect can be used to determine the work function of a metal.",
+            "solution": "True. By measuring the threshold frequency or the stopping potential, the work function of a metal can be determined using Einstein's photoelectric equation.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how experimental measurements relate to the work function.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Work Function Determination",
+                "concept": "Measuring Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Work Function",
+                    "Experimental Measurement",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.21.Q21",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect occurs only when light strikes a vacuum.",
+            "solution": "False. The photoelectric effect occurs when light strikes the surface of a material (usually a metal) to emit electrons, and does not require a vacuum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider typical experimental setups for the photoelectric effect.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Medium for Electron Emission",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Effect",
+                    "Material Surface",
+                    "Electron Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.22.Q22",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The maximum kinetic energy of emitted electrons is independent of the material used.",
+            "solution": "False. The maximum kinetic energy depends on both the frequency of the incident light and the work function of the material. Different materials have different work functions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how work function varies between materials.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy Factors",
+                "concept": "Material Dependence of Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Kinetic Energy",
+                    "Work Function",
+                    "Material Properties"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.23.Q23",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "An increase in the speed of emitted photoelectrons requires a decrease in the frequency of incident light.",
+            "solution": "False. To increase the speed (kinetic energy) of emitted photoelectrons, the frequency of incident light must be increased, not decreased.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Relate frequency to kinetic energy in Einstein's equation.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy",
+                "concept": "Frequency-Kinetic Energy Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.24.Q24",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "All photons with frequencies above the threshold frequency will emit electrons from a metal surface.",
+            "solution": "False. While photons with frequencies above the threshold frequency have sufficient energy to emit electrons, not all such photons will necessarily result in electron emission due to factors like surface condition and electron availability.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about practical limitations in electron emission.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Emission Conditions",
+                "concept": "Photon-Electron Emission Probability",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Photon Emission",
+                    "Threshold Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.25.Q25",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect provides evidence that light can behave as discrete particles called photons.",
+            "solution": "True. The photoelectric effect supports the particle theory of light by demonstrating that light can transfer energy in discrete packets (photons) to emit electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how light energy is transferred to electrons.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Theory",
+                "concept": "Particle Nature of Light",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Photon Theory",
+                    "Particle Nature",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.26.Q26",
+            "statistics": {
+                "attempts": 140,
+                "hintsAccessed": 22,
+                "solved": 112,
+                "successRate": 80,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 40,
+                "medianTime": 38,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "Electrons in the photoelectric effect are emitted from the same energy level regardless of the incident light frequency.",
+            "solution": "False. The energy level from which electrons are emitted depends on the frequency of the incident light. Higher frequency light can eject electrons from higher energy levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how photon energy affects electron emission.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Electron Energy Levels",
+                "concept": "Energy Levels and Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Energy Levels",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.27.Q27",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect is influenced by both the frequency and the intensity of the incident light.",
+            "solution": "True. The frequency of the incident light determines the kinetic energy of emitted electrons, while the intensity affects the number of emitted electrons (photocurrent).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what frequency and intensity separately affect.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Frequency and Intensity Effects",
+                "concept": "Influence of Frequency and Intensity",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Frequency",
+                    "Intensity",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.28.Q28",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 35,
+                "medianTime": 33,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "All metals have the same work function value.",
+            "solution": "False. Different metals have different work function values depending on their electronic structure and surface properties.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the variety of metals and their properties.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Material Properties",
+                "concept": "Work Function Variability",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Work Function",
+                    "Material Properties",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.29.Q29",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "True",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The photoelectric effect provides evidence that energy transfer in light is quantized.",
+            "solution": "True. The photoelectric effect supports the idea that light energy is transferred in discrete packets (photons), demonstrating energy quantization.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how energy transfer aligns with quantum theory.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Quantum Theory",
+                "concept": "Energy Quantization",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Quantum Theory",
+                    "Energy Quantization",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "TF.PEE.1.30.Q30",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "False",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "truefalse",
+            "exerciseName": "True/False Correct",
+            "questionText": "The stopping potential is the voltage required to stop the flow of photoelectrons in the photoelectric effect.",
+            "solution": "True. The stopping potential is the voltage applied to halt the movement of emitted photoelectrons, thereby stopping the photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how electrons are stopped in the experiment.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Measurements",
+                "concept": "Stopping Potential Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Stopping Potential",
+                    "Photocurrent",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.1.Q1",
+            "statistics": {
+                "attempts": 200,
+                "hintsAccessed": 30,
+                "solved": 160,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the minimum energy required to eject an electron from a metal called?",
+            "solution": "The minimum energy required to eject an electron from a metal is called the **work function**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the term that defines the energy barrier for electron emission.",
+            "answer": "Work Function",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Definitions",
+                "concept": "Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Work Function",
+                    "Definitions",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.2.Q2",
+            "statistics": {
+                "attempts": 180,
+                "hintsAccessed": 25,
+                "solved": 144,
+                "successRate": 80,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 27,
+                "medianTime": 25,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Quantum",
+                        "count": 22
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "Who proposed the concept of light quanta to explain the photoelectric effect?",
+            "solution": "Albert Einstein proposed the concept of light quanta, or photons, to explain the photoelectric effect.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He received a Nobel Prize for this explanation.",
+            "answer": "Einstein",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Key Scientists",
+                "concept": "Einstein's Contribution",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Einstein",
+                    "Photon Theory",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.3.Q3",
+            "statistics": {
+                "attempts": 190,
+                "hintsAccessed": 28,
+                "solved": 152,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Intensity",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the term for the lowest frequency of light that can eject an electron from a metal?",
+            "solution": "The lowest frequency of light that can eject an electron from a metal is called the **threshold frequency**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the minimum frequency required for electron emission.",
+            "answer": "Threshold Frequency",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Threshold Frequency Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Threshold Frequency",
+                    "Photoelectric Effect",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.4.Q4",
+            "statistics": {
+                "attempts": 170,
+                "hintsAccessed": 25,
+                "solved": 136,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Amplitude",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What phenomenon cannot be explained by classical wave theory but is explained by quantum theory?",
+            "solution": "The **photoelectric effect** cannot be fully explained by classical wave theory but is explained by quantum theory.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the very effect that led to the quantum revolution.",
+            "answer": "Photoelectric Effect",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Quantum Theory",
+                "concept": "Photoelectric Effect",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Effect",
+                    "Quantum Theory",
+                    "Classical Theory"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.5.Q5",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Frequency",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the symbol for Planck's constant?",
+            "solution": "The symbol for Planck's constant is **h**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a fundamental constant used in quantum mechanics.",
+            "answer": "h",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Fundamental Constants",
+                "concept": "Planck's Constant",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Planck's Constant",
+                    "Quantum Mechanics",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.6.Q6",
+            "statistics": {
+                "attempts": 175,
+                "hintsAccessed": 27,
+                "solved": 140,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Energy",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the term for the maximum kinetic energy of emitted photoelectrons?",
+            "solution": "The term for the maximum kinetic energy of emitted photoelectrons is **Kinetic Energy** or **K_max**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's often denoted by K_max in equations.",
+            "answer": "Kinetic Energy",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Kinetic Energy",
+                "concept": "Maximum Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Photoelectrons",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.7.Q7",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 27,
+                "medianTime": 25,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Electron",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What device is used to measure the flow of photoelectrons in the photoelectric effect experiment?",
+            "solution": "An **Ammeter** is used to measure the flow of photoelectrons, quantified as photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's an instrument that measures electrical current.",
+            "answer": "Ammeter",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Measurement Devices",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Ammeter",
+                    "Photocurrent",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.8.Q8",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 30,
+                "medianTime": 28,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photocurrent",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the unit of the work function?",
+            "solution": "The unit of the work function is the **electronvolt** (eV).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a common unit of energy in atomic and particle physics.",
+            "answer": "Electronvolt",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Energy Units",
+                "concept": "Work Function Units",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Electronvolt",
+                    "Energy Units",
+                    "Work Function"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.9.Q9",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 27,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Quantum",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What fundamental constant is used to relate the energy of a photon to its frequency?",
+            "solution": "Planck's constant (**h**) is used to relate the energy of a photon to its frequency through the equation \\( E = h f \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's denoted by the letter 'h'.",
+            "answer": "Planck's Constant",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Fundamental Constants",
+                "concept": "Planck's Constant",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Planck's Constant",
+                    "Photon Energy",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.10.Q10",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Velocity",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "In Einstein's photoelectric equation, what symbol represents the work function?",
+            "solution": "In Einstein's photoelectric equation \\( K_{\\text{max}} = h f - \\phi \\), the symbol \\( \\phi \\) represents the **work function**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the Greek letter phi.",
+            "answer": "Phi",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photoelectric Equation",
+                "concept": "Symbol for Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Equation",
+                    "Work Function",
+                    "Symbols"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.11.Q11",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What term describes the flow of electrons emitted from the metal in the photoelectric effect?",
+            "solution": "The flow of electrons emitted from the metal in the photoelectric effect is called **photocurrent**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the current generated by photoelectrons.",
+            "answer": "Photocurrent",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photocurrent",
+                "concept": "Photocurrent Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photocurrent",
+                    "Electron Flow",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.12.Q12",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Electron",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the name of the process where electrons are emitted from a material due to incident light?",
+            "solution": "The process is called the **photoelectric effect**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the fundamental phenomenon being discussed.",
+            "answer": "Photoelectric Effect",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Process Definition",
+                "concept": "Photoelectric Effect",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Photoelectric Effect",
+                    "Electron Emission",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.13.Q13",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Momentum",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the name of the equation formulated by Einstein to describe the photoelectric effect?",
+            "solution": "Einstein's equation for the photoelectric effect is known as the **Photoelectric Equation**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the fundamental equation relating kinetic energy, frequency, and work function.",
+            "answer": "Photoelectric Equation",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Equation",
+                "concept": "Photoelectric Equation",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Equation",
+                    "Einstein",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.14.Q14",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 27,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the symbol for the frequency of light?",
+            "solution": "The symbol for the frequency of light is **f**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the same letter used in many equations for frequency.",
+            "answer": "f",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave Properties of Light",
+                "concept": "Frequency Symbol",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Frequency",
+                    "Wave Properties",
+                    "Symbols"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.15.Q15",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Voltage",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the symbol for Planck's constant in Einstein's photoelectric equation?",
+            "solution": "In Einstein's photoelectric equation \\( K_{\\text{max}} = h f - \\phi \\), Planck's constant is represented by **h**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the same symbol used earlier for Planck's constant.",
+            "answer": "h",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photoelectric Equation",
+                "concept": "Symbol for Planck's Constant",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Planck's Constant",
+                    "Photoelectric Equation",
+                    "Symbols"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.16.Q16",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Energy",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the unit of frequency?",
+            "solution": "The unit of frequency is the **Hertz** (Hz).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named after a German physicist.",
+            "answer": "Hertz",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave Properties of Light",
+                "concept": "Frequency Unit",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Frequency",
+                    "Units",
+                    "Wave Properties"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.17.Q17",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Momentum",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What term describes the energy transferred by a photon to an electron?",
+            "solution": "The energy transferred by a photon to an electron is called **Photon Energy**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's directly related to the frequency of the photon.",
+            "answer": "Photon Energy",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Energy Transfer",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Energy Transfer",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.18.Q18",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Quantum",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the relationship between frequency and wavelength of light?",
+            "solution": "The relationship is **Inverse**; as frequency increases, wavelength decreases, and vice versa.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the equation \\( c = f \\lambda \\).",
+            "answer": "Inverse",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave Properties of Light",
+                "concept": "Frequency-Wavelength Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Frequency",
+                    "Wavelength",
+                    "Inverse Relationship"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.19.Q19",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Electricity",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the term for the voltage applied to stop photoelectrons in the photoelectric effect experiment?",
+            "solution": "The voltage applied to stop photoelectrons is called the **Stopping Potential**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the potential that halts the photocurrent.",
+            "answer": "Stopping Potential",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Measurements",
+                "concept": "Stopping Potential",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Stopping Potential",
+                    "Photocurrent",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.20.Q20",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Energy",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the name of the physical quantity measured by an ammeter in the photoelectric effect setup?",
+            "solution": "An ammeter measures the **Photocurrent**, which is the flow of emitted photoelectrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the current generated by photoelectrons.",
+            "answer": "Photocurrent",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Photocurrent Measurement",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photocurrent",
+                    "Ammeter",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.21.Q21",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Wave",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What term refers to the force exerted by light on objects due to photon momentum?",
+            "solution": "The force exerted by light on objects due to photon momentum is called **Radiation Pressure**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's related to the momentum transfer from photons.",
+            "answer": "Radiation Pressure",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Radiation Pressure",
+                "concept": "Radiation Pressure Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Radiation Pressure",
+                    "Photon Momentum",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.22.Q22",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Frequency",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the name of the plate from which electrons are emitted in the photoelectric effect experiment?",
+            "solution": "The plate from which electrons are emitted is called the **Emitter Plate**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the source of photoelectrons.",
+            "answer": "Emitter Plate",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Emitter Plate Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Emitter Plate",
+                    "Electron Emission",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.23.Q23",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Energy",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the term for the energy of a single photon?",
+            "solution": "The energy of a single photon is called **Photon Energy**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's directly related to the frequency of the light.",
+            "answer": "Photon Energy",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Photon Energy Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Frequency",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.24.Q24",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Work Function",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "In the equation \\( K_{\\text{max}} = h f - \\phi \\), what does \\( K_{\\text{max}} \\) represent?",
+            "solution": "In the equation \\( K_{\\text{max}} = h f - \\phi \\), \\( K_{\\text{max}} \\) represents the **Maximum Kinetic Energy** of the emitted photoelectrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the leftover energy after overcoming the work function.",
+            "answer": "Kinetic Energy",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photoelectric Equation",
+                "concept": "Maximum Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Photoelectric Equation",
+                    "Energy Terms"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.25.Q25",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Ammeter",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the effect called when electrons are ejected from a material due to the absorption of photons?",
+            "solution": "The effect is called the **Photoelectric Effect**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the primary phenomenon being discussed.",
+            "answer": "Photoelectric Effect",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Process Definition",
+                "concept": "Photoelectric Effect",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Photoelectric Effect",
+                    "Electron Emission",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.26.Q26",
+            "statistics": {
+                "attempts": 140,
+                "hintsAccessed": 22,
+                "solved": 112,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Intensity",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the symbol for the energy of a photon?",
+            "solution": "The symbol for the energy of a photon is **E**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the same symbol used in many energy equations.",
+            "answer": "E",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Energy Symbol",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Energy Symbols",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.27.Q27",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the unit of energy equivalent to the work function?",
+            "solution": "The unit of energy equivalent to the work function is the **Electronvolt** (eV).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's commonly used in atomic and particle physics.",
+            "answer": "Electronvolt",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Energy Units",
+                "concept": "Electronvolt",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Electronvolt",
+                    "Energy Units",
+                    "Work Function"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.28.Q28",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Threshold",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the speed of light in vacuum symbolized by?",
+            "solution": "The speed of light in vacuum is symbolized by **c**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the same letter used in the fundamental equation \\( E = h f \\).",
+            "answer": "c",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave Properties of Light",
+                "concept": "Speed of Light",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Speed of Light",
+                    "Wave Properties",
+                    "Constants"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.29.Q29",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 23,
+                "medianTime": 21,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What is the term for the flow rate of electric charge?",
+            "solution": "The term for the flow rate of electric charge is **Current**.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's measured in amperes.",
+            "answer": "Current",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Electric Current",
+                "concept": "Current Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Electric Current",
+                    "Definitions",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "OW.PEE.1.30.Q30",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 25,
+                "medianTime": 23,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "Photon",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Correct",
+            "questionText": "What constant relates the energy of a photon to its frequency?",
+            "solution": "Planck's constant (**h**) relates the energy of a photon to its frequency through the equation \\( E = h f \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a fundamental constant in quantum mechanics.",
+            "answer": "h",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Planck's Constant",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Planck's Constant",
+                    "Photon Energy",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.1.Q1",
+            "statistics": {
+                "attempts": 200,
+                "hintsAccessed": 30,
+                "solved": 160,
+                "successRate": 80,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 45,
+                "medianTime": 43,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the definition of the work function in the context of the photoelectric effect?",
+            "solution": "The work function is the minimum energy required to eject an electron from the surface of a metal.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy barrier that electrons must overcome to be emitted.",
+            "options": [
+                "The maximum kinetic energy of emitted electrons",
+                "The minimum energy required to eject an electron from a metal",
+                "The energy of incident photons",
+                "The potential difference applied in the experiment"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Definitions",
+                "concept": "Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Work Function",
+                    "Definitions",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.2.Q2",
+            "statistics": {
+                "attempts": 180,
+                "hintsAccessed": 25,
+                "solved": 144,
+                "successRate": 80,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 50,
+                "medianTime": 48,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 22
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which scientist is credited with introducing the concept of photons to explain the photoelectric effect?",
+            "solution": "Albert Einstein introduced the concept of photons, which are quantized packets of light energy, to explain the photoelectric effect.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He received a Nobel Prize for his explanation of the photoelectric effect.",
+            "options": [
+                "Max Planck",
+                "Niels Bohr",
+                "Albert Einstein",
+                "Erwin Schrödinger"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Key Scientists",
+                "concept": "Einstein's Contribution",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Einstein",
+                    "Photon Theory",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.3.Q3",
+            "statistics": {
+                "attempts": 190,
+                "hintsAccessed": 28,
+                "solved": 152,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the threshold frequency in the photoelectric effect?",
+            "solution": "The threshold frequency is the minimum frequency of incident light required to eject electrons from the surface of a metal.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the lowest frequency at which electrons are emitted.",
+            "options": [
+                "The frequency at which maximum electrons are emitted",
+                "The frequency where kinetic energy of electrons is maximum",
+                "The minimum frequency required to eject electrons",
+                "The frequency corresponding to the peak intensity of light"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Threshold Frequency Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Threshold Frequency",
+                    "Photoelectric Effect",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.4.Q4",
+            "statistics": {
+                "attempts": 170,
+                "hintsAccessed": 25,
+                "solved": 136,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 20
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which observation of the photoelectric effect contradicts classical wave theory?",
+            "solution": "The instantaneous emission of photoelectrons irrespective of the light's intensity contradicts the classical wave theory, which predicts a time delay based on energy accumulation.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the timing of electron emission relative to light intensity.",
+            "options": [
+                "Dependence of kinetic energy on frequency",
+                "Existence of a threshold frequency",
+                "Instantaneous emission of photoelectrons",
+                "Increase of photocurrent with light intensity"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Inconsistencies with Classical Theory",
+                "concept": "Instantaneous Emission",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Classical Theory",
+                    "Instantaneous Emission",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.5.Q5",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "How does increasing the intensity of incident light affect the photocurrent, assuming the frequency remains constant?",
+            "solution": "Increasing the intensity increases the number of photons, which in turn increases the number of emitted photoelectrons, thereby increasing the photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the direct relationship between light intensity and the number of photoelectrons.",
+            "options": [
+                "Photocurrent decreases",
+                "Photocurrent increases",
+                "Photocurrent remains unchanged",
+                "Photocurrent becomes zero"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Observations",
+                "concept": "Effect of Light Intensity on Photocurrent",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Light Intensity",
+                    "Photocurrent",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.6.Q6",
+            "statistics": {
+                "attempts": 175,
+                "hintsAccessed": 27,
+                "solved": 140,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which equation represents Einstein's photoelectric equation?",
+            "solution": "Einstein's photoelectric equation is \\\\( K_{\\text{max}} = h f - \\phi \\\\), where \\\\( K_{\\text{max}} \\\\) is the maximum kinetic energy of emitted electrons, \\\\( h \\\\) is Planck's constant, \\\\( f \\\\) is the frequency of incident light, and \\\\( \\phi \\\\) is the work function.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It relates kinetic energy to frequency and work function.",
+            "options": [
+                "\\\\( K_{\\text{max}} = h f + \\phi \\\\)",
+                "\\\\( K_{\\text{max}} = h f \\times \\phi \\\\)",
+                "\\\\( K_{\\text{max}} = h f - \\phi \\\\)",
+                "\\\\( K_{\\text{max}} = \\frac{h f}{\\phi} \\\\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Explanation",
+                "concept": "Photoelectric Equation",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Equation",
+                    "Einstein",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.7.Q7",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What determines the maximum kinetic energy of emitted photoelectrons?",
+            "solution": "The maximum kinetic energy is determined by the difference between the energy of the incident photons and the work function of the material, as described by Einstein's photoelectric equation.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Refer to Einstein's equation relating kinetic energy and frequency.",
+            "options": [
+                "The intensity of the incident light",
+                "The frequency of the incident light",
+                "The area of the emitter plate",
+                "The speed of the emitted electrons"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Equation",
+                "concept": "Kinetic Energy Determination",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Kinetic Energy",
+                    "Photon Energy",
+                    "Photoelectric Equation"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.8.Q8",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 24,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What role does an ammeter play in the photoelectric effect experimental setup?",
+            "solution": "An ammeter is used to measure the photocurrent, which is the flow of photoelectrons emitted from the emitter plate to the collector plate.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what the ammeter measures in the circuit.",
+            "options": [
+                "To adjust the frequency of incident light",
+                "To measure the photocurrent generated",
+                "To maintain the vacuum inside the apparatus",
+                "To provide a reference voltage"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Role of Ammeter",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Ammeter",
+                    "Photocurrent Measurement",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.9.Q9",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 26,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which statement best describes the relationship between photocurrent and the number of photoelectrons emitted?",
+            "solution": "Photocurrent is directly proportional to the number of photoelectrons emitted; more photoelectrons result in a higher photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how the flow of electrons affects electrical current.",
+            "options": [
+                "Photocurrent is inversely proportional to the number of photoelectrons",
+                "Photocurrent is directly proportional to the number of photoelectrons",
+                "Photocurrent is independent of the number of photoelectrons",
+                "Photocurrent is proportional to the square of the number of photoelectrons"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photocurrent and Photoelectrons",
+                "concept": "Photocurrent Relationship",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photocurrent",
+                    "Photoelectrons",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.10.Q10",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which property of light is directly responsible for the kinetic energy of emitted photoelectrons?",
+            "solution": "The frequency of incident light determines the kinetic energy of emitted photoelectrons, as per Einstein's photoelectric equation.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Refer to the part of the equation involving frequency.",
+            "options": [
+                "Intensity",
+                "Frequency",
+                "Wavelength",
+                "Amplitude"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Key Concepts",
+                "concept": "Frequency and Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Frequency",
+                    "Kinetic Energy",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.11.Q11",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best explains why electrons are emitted instantaneously in the photoelectric effect?",
+            "solution": "By introducing the concept of photons, Einstein explained that electrons absorb energy from individual photons, allowing for their instantaneous emission without requiring a buildup of energy over time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how energy transfer occurs at the quantum level.",
+            "options": [
+                "It allows electrons to absorb energy continuously over time",
+                "It introduces photons as discrete energy packets",
+                "It proposes that electrons have intrinsic energy levels",
+                "It suggests that light intensity controls emission timing"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Explanation",
+                "concept": "Photon Concept and Instantaneous Emission",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Photon Concept",
+                    "Instantaneous Emission",
+                    "Einstein"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.12.Q12",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 70,
+                "medianTime": 68,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What happens to the stopping potential when the frequency of incident light is increased while keeping the intensity constant?",
+            "solution": "Increasing the frequency of incident light increases the energy of each photon, thereby increasing the maximum kinetic energy of the emitted photoelectrons, which in turn increases the stopping potential.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how photon energy relates to kinetic energy of photoelectrons.",
+            "options": [
+                "Stopping potential increases",
+                "Stopping potential decreases",
+                "Stopping potential remains the same",
+                "Stopping potential becomes zero"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Impact of Frequency",
+                "concept": "Stopping Potential and Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.7,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Stopping Potential",
+                    "Frequency",
+                    "Photon Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.13.Q13",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the significance of the work function in Einstein's photoelectric equation?",
+            "solution": "The work function is the minimum energy required to eject an electron from the surface of a material. It acts as the energy barrier that the incident photon must overcome to emit a photoelectron.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the energy barrier for electron emission.",
+            "options": [
+                "It determines the intensity of incident light",
+                "It is the maximum kinetic energy of emitted electrons",
+                "It defines the threshold wavelength for electron emission",
+                "It is the minimum energy required to eject an electron"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Work Function",
+                "concept": "Role of Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Work Function",
+                    "Energy Barrier",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.14.Q14",
+            "statistics": {
+                "attempts": 165,
+                "hintsAccessed": 27,
+                "solved": 132,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which phenomenon demonstrates that light has particle-like properties?",
+            "solution": "The photoelectric effect demonstrates that light has particle-like properties by showing that light can eject electrons from a metal surface as discrete photons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how light interacts with electrons in discrete packets.",
+            "options": [
+                "Diffraction",
+                "Interference",
+                "Photoelectric effect",
+                "Reflection"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Wave-Particle Duality",
+                "concept": "Particle Nature of Light",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Particle Nature",
+                    "Photoelectric Effect",
+                    "Wave-Particle Duality"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.15.Q15",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which component in the photoelectric effect experiment is responsible for collecting emitted photoelectrons?",
+            "solution": "The collector plate is responsible for collecting emitted photoelectrons in the photoelectric effect experiment.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the plate opposite to the emitter in the setup.",
+            "options": [
+                "Emitter plate",
+                "Collector plate",
+                "Ammeter",
+                "Conducting wire"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Emitter and Collector Plates",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Collector Plate",
+                    "Emitter Plate",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.16.Q16",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What effect does increasing the frequency of incident light have on the kinetic energy of emitted photoelectrons, assuming the work function remains constant?",
+            "solution": "Increasing the frequency of incident light increases the energy of each photon, thereby increasing the maximum kinetic energy of the emitted photoelectrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Higher frequency means higher photon energy.",
+            "options": [
+                "Increases the kinetic energy",
+                "Decreases the kinetic energy",
+                "Has no effect on the kinetic energy",
+                "Changes the direction of electron emission"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Frequency and Kinetic Energy",
+                "concept": "Effect of Frequency on Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Frequency",
+                    "Kinetic Energy",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.17.Q17",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best describes radiation pressure in the context of the photoelectric effect?",
+            "solution": "Radiation pressure refers to the force exerted by electromagnetic radiation on a surface, such as the force exerted by reflected light on the hemisphere in the photoelectric effect experiment.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the momentum transfer from light to objects.",
+            "options": [
+                "The energy required to eject an electron",
+                "The pressure exerted by photons due to their momentum",
+                "The intensity of incident light",
+                "The frequency threshold for electron emission"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Radiation Pressure",
+                "concept": "Definition of Radiation Pressure",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Radiation Pressure",
+                    "Momentum Transfer",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.18.Q18",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 55,
+                "medianTime": 53,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 75,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 18
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the primary purpose of the collector plate in the photoelectric effect experiment?",
+            "solution": "The collector plate collects the emitted photoelectrons, allowing for the measurement of photocurrent.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the plate that gathers the electrons emitted from the emitter.",
+            "options": [
+                "To emit electrons when struck by light",
+                "To collect emitted photoelectrons",
+                "To adjust the frequency of incident light",
+                "To measure the intensity of incident light"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Collector Plate Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Collector Plate",
+                    "Photoelectrons",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.19.Q19",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 70,
+                "medianTime": 68,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Why is it impossible to emit photoelectrons with incident light below the threshold frequency, regardless of the light's intensity?",
+            "solution": "Because below the threshold frequency, each photon does not have enough energy to overcome the work function, and thus no electrons are emitted regardless of the number of photons (intensity).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy required per photon to eject an electron.",
+            "options": [
+                "Low intensity means fewer photons",
+                "Electrons require time to accumulate energy",
+                "Each photon lacks sufficient energy to overcome the work function",
+                "The metal becomes too cool to emit electrons"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Energy per Photon vs Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Threshold Frequency",
+                    "Work Function",
+                    "Photon Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.20.Q20",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following factors does NOT influence the number of photoelectrons emitted in the photoelectric effect?",
+            "solution": "The wavelength of the incident light affects the energy of individual photons but does not directly influence the number of photoelectrons emitted; the number is primarily influenced by the light's intensity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what determines the quantity of emitted electrons.",
+            "options": [
+                "Intensity of the incident light",
+                "Frequency of the incident light",
+                "Work function of the material",
+                "Area of the emitter plate"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photoelectron Emission",
+                "concept": "Factors Affecting Photoelectron Number",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Intensity",
+                    "Frequency",
+                    "Photoelectron Emission"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.21.Q21",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "B",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In Einstein's photoelectric equation \\\\( K_{\\text{max}} = h f - \\phi \\\\), what does \\\\( \\phi \\\\) represent?",
+            "solution": "In Einstein's photoelectric equation, \\\\( \\phi \\\\) represents the work function, which is the minimum energy required to eject an electron from the surface of a metal.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the term representing the energy barrier for electron emission.",
+            "options": [
+                "Maximum kinetic energy of electrons",
+                "Energy of incident photons",
+                "Work done by the ammeter",
+                "Work function of the metal"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Equation",
+                "concept": "Components of Photoelectric Equation",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photoelectric Equation",
+                    "Work Function",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.22.Q22",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 70,
+                "medianTime": 68,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best explains why increasing the intensity of light does not affect the kinetic energy of emitted photoelectrons?",
+            "solution": "Increasing the intensity of light increases the number of photons but does not change the energy of individual photons. Since kinetic energy depends on photon energy (frequency), it remains unaffected.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what aspect of light determines kinetic energy of electrons.",
+            "options": [
+                "Intensity affects only the work function",
+                "Intensity affects the frequency of light",
+                "Intensity affects the wavelength of light",
+                "Intensity affects only the number of photons"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Light Intensity Effects",
+                "concept": "Impact of Intensity on Kinetic Energy",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Intensity",
+                    "Photon Count",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.23.Q23",
+            "statistics": {
+                "attempts": 155,
+                "hintsAccessed": 26,
+                "solved": 124,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following must be greater than the work function to emit photoelectrons from a metal surface?",
+            "solution": "The energy of the incident photons must be greater than the work function to emit photoelectrons from a metal surface.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the minimum energy needed to eject an electron.",
+            "options": [
+                "The intensity of light",
+                "The area of the emitter plate",
+                "The energy of the incident photons",
+                "The speed of the photoelectrons"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photon Energy",
+                "concept": "Photon Energy vs Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Work Function",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.24.Q24",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 70,
+                "medianTime": 68,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the primary reason that no photoelectrons are emitted when light below the threshold frequency is incident on a metal?",
+            "solution": "Because photons below the threshold frequency do not have enough energy to overcome the work function of the metal, no electrons are emitted.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy of individual photons relative to the work function.",
+            "options": [
+                "Low intensity of light",
+                "Electrons require time to accumulate energy",
+                "Photons lack sufficient energy per photon",
+                "The metal becomes too cold"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Photon Energy vs Work Function",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Photon Energy",
+                    "Work Function",
+                    "Threshold Frequency"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.25.Q25",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "A",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "How does Einstein's explanation of the photoelectric effect resolve the issue of instantaneous electron emission?",
+            "solution": "By introducing the concept of photons, Einstein explained that electrons absorb energy from individual photons, allowing for their instantaneous emission without requiring a buildup of energy over time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how energy transfer occurs from light to electrons.",
+            "options": [
+                "It allows electrons to absorb energy continuously over time",
+                "It introduces photons as discrete energy packets",
+                "It proposes that electrons have intrinsic energy levels",
+                "It suggests that light intensity controls emission timing"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Einstein's Explanation",
+                "concept": "Resolution of Instantaneous Emission",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Photon Concept",
+                    "Instantaneous Emission",
+                    "Einstein"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.26.Q26",
+            "statistics": {
+                "attempts": 140,
+                "hintsAccessed": 22,
+                "solved": 112,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best describes the concept of 'electronvolt (eV)' in the context of the photoelectric effect?",
+            "solution": "An electronvolt is a unit of energy equal to the amount of kinetic energy gained or lost by an electron when it moves through an electric potential difference of one volt.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a unit of energy commonly used in atomic and particle physics.",
+            "options": [
+                "A unit of frequency",
+                "A unit of wavelength",
+                "A unit of charge",
+                "A unit of energy"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Energy Units",
+                "concept": "Electronvolt Definition",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 4,
+                "tags": [
+                    "Electronvolt",
+                    "Energy Units",
+                    "Definitions"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.27.Q27",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 70,
+                "medianTime": 68,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 72,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What determines the threshold frequency for a given metal in the photoelectric effect?",
+            "solution": "The threshold frequency is determined by the work function of the metal, representing the minimum frequency required to eject electrons from the metal's surface.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It relates to the minimum energy needed to remove an electron.",
+            "options": [
+                "The intensity of incident light",
+                "The work function of the metal",
+                "The wavelength of incident light",
+                "The temperature of the metal"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Determination of Threshold Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Threshold Frequency",
+                    "Work Function",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.28.Q28",
+            "statistics": {
+                "attempts": 150,
+                "hintsAccessed": 25,
+                "solved": 120,
+                "successRate": 80,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 60,
+                "medianTime": 58,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which component of the photoelectric effect experimental setup measures the flow of photoelectrons?",
+            "solution": "The ammeter measures the photocurrent, which is the flow of photoelectrons emitted from the emitter plate to the collector plate.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the instrument connected in the circuit to quantify the current.",
+            "options": [
+                "Emitter plate",
+                "Collector plate",
+                "Ammeter",
+                "Conducting wire"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Experimental Setup",
+                "concept": "Role of Ammeter",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Ammeter",
+                    "Photocurrent Measurement",
+                    "Experimental Setup"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.29.Q29",
+            "statistics": {
+                "attempts": 160,
+                "hintsAccessed": 28,
+                "solved": 128,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 70,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "C",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which statement accurately describes the relationship between light frequency and photocurrent in the photoelectric effect?",
+            "solution": "The photocurrent is directly proportional to the number of photoelectrons emitted, which depends on the light's intensity, not its frequency. Frequency affects the kinetic energy of the emitted electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what aspect of light influences the number of emitted electrons.",
+            "options": [
+                "Photocurrent increases with frequency",
+                "Photocurrent decreases with frequency",
+                "Photocurrent is independent of frequency",
+                "Photocurrent is proportional to the square of frequency"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Photocurrent and Frequency",
+                "concept": "Frequency vs Photocurrent",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2
+                },
+                "difficultyIn10": 5,
+                "tags": [
+                    "Frequency",
+                    "Photocurrent",
+                    "Photoelectric Effect"
+                ]
+            }
+        },
+        {
+            "id": "SO.PEE.1.30.Q30",
+            "statistics": {
+                "attempts": 145,
+                "hintsAccessed": 23,
+                "solved": 116,
+                "successRate": 80,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 65,
+                "medianTime": 63,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 73,
+                "commonIncorrectAnswers": [
+                    {
+                        "answer": "D",
+                        "count": 19
+                    }
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What determines the threshold frequency for a metal in the photoelectric effect?",
+            "solution": "The threshold frequency is determined by the work function of the metal, which is the minimum energy required to eject an electron from its surface.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's related to the minimum energy needed to remove an electron.",
+            "options": [
+                "Intensity of the incident light",
+                "Work function of the metal",
+                "Wavelength of the incident light",
+                "Temperature of the metal"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Photoelectric Effect",
+                "section": "Threshold Frequency",
+                "concept": "Determination of Threshold Frequency",
+                "source": "Standard Physics Textbook",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1
+                },
+                "difficultyIn10": 6,
+                "tags": [
+                    "Threshold Frequency",
+                    "Work Function",
+                    "Photoelectric Effect"
+                ]
+            }
+        }
+    ]
+}

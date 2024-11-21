@@ -1,0 +1,1435 @@
+{
+  "questions": [
+    {
+      "id": "SO.PRA.2.1.Q2",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 28,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 11,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "An electron and a photon have the same de Broglie wavelength of \\(1.0 \\times 10^{-10}\\, \\text{m}\\). Which of the following statements is correct about their momenta and energies?",
+      "solution": "Since they have the same wavelength, they have the same momentum \\(p = \\frac{h}{\\lambda}\\). However, their energies are different. For the photon, \\(E_{\\text{photon}} = pc\\). For the electron, \\(E_{\\text{electron}} = \\frac{p^2}{2m}\\). Therefore, the photon has more energy than the electron at the same momentum.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Compare the expressions for energy in terms of momentum for photons and electrons.",
+      "options": [
+        "A) Both have the same momentum and the same kinetic energy",
+        "B) Both have the same momentum, but the photon has more energy",
+        "C) Both have the same kinetic energy, but different momenta",
+        "D) The electron has more momentum and energy than the photon"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Wave-Particle Duality",
+        "concept": "De Broglie Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.3,
+          "calculation": 0.4,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "De Broglie Wavelength",
+          "Photon vs. Electron",
+          "Energy-Momentum Relations"
+        ]
+      }
+    },
+    
+    {
+      "id": "SO.PRA.2.1.Q4",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 32,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 13,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following expressions correctly represents the momentum of a photon in terms of its kinetic energy \\(E_k\\)?",
+      "solution": "For a photon, \\(E = pc\\), so \\(p = \\frac{E}{c}\\). Since photons have no rest mass, their kinetic energy is equal to their total energy \\(E\\). Therefore, \\(p = \\frac{E_k}{c}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the relation \\(E = pc\\) for photons.",
+      "options": [
+        "A) \\(p = \\sqrt{2mE_k}\\)",
+        "B) \\(p = \\frac{E_k}{c}\\)",
+        "C) \\(p = mc\\)",
+        "D) \\(p = E_k c\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Momentum",
+        "concept": "Energy-Momentum Relation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photon Momentum",
+          "Energy Relations",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q6",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 27,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 11,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photon has an energy equivalent to the rest mass energy of an electron (\\(0.511\\, \\text{MeV}\\)). What is its momentum?",
+      "solution": "Using \\(E = pc\\), \\(p = \\frac{E}{c} = \\frac{0.511\\, \\text{MeV}}{c}\\). Since \\(E = mc^2\\), the momentum is \\(p = \\frac{mc^2}{c} = m c\\). Therefore, \\(p = 0.511\\, \\text{MeV}/c\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the relation between energy and momentum for photons.",
+      "options": [
+        "A) \\(0.511\\, \\text{MeV}/c\\)",
+        "B) \\(1.022\\, \\text{MeV}/c\\)",
+        "C) \\(0.255\\, \\text{MeV}/c\\)",
+        "D) \\(0.511\\, \\text{kg}\\cdot \\text{m/s}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Momentum",
+        "concept": "Energy-Momentum Relation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.4,
+          "calculation": 0.3,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photon Energy",
+          "Momentum Calculation",
+          "Relativistic Concepts"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q7",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 29,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 12,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following correctly describes the group velocity \\(v_g\\) and phase velocity \\(v_p\\) of photons in a dispersive medium?",
+      "solution": "In a dispersive medium, the refractive index depends on frequency, so \\(v_p = \\frac{c}{n}\\) and \\(v_g = v_p \\left(1 - \\lambda \\frac{dn}{d\\lambda}\\right)\\). For photons, the group velocity represents the signal speed, which can be less than \\(c\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how dispersion affects phase and group velocities.",
+      "options": [
+        "A) \\(v_p = c\\), \\(v_g = c\\)",
+        "B) \\(v_p > v_g\\), both less than \\(c\\)",
+        "C) \\(v_p = v_g = c/n\\)",
+        "D) \\(v_p < v_g\\), \\(v_g > c\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Group and Phase Velocity",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Dispersion",
+          "Group Velocity",
+          "Phase Velocity"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q8",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 33,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 13,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In a photoelectric experiment, the stopping potential is measured for various frequencies of incident light. The graph of stopping potential \\(V_s\\) versus frequency \\(f\\) is plotted. What does the slope of this graph represent?",
+      "solution": "The stopping potential is related to frequency by \\(eV_s = hf - \\phi\\), so \\(V_s = \\frac{h}{e}f - \\frac{\\phi}{e}\\). Therefore, the slope is \\(\\frac{h}{e}\\), which is Planck's constant divided by the elementary charge.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the photoelectric equation and compare with the equation of a straight line.",
+      "options": [
+        "A) The work function \\(\\phi\\)",
+        "B) Planck's constant \\(h\\)",
+        "C) \\(\\frac{h}{e}\\), where \\(e\\) is the elementary charge",
+        "D) The threshold frequency \\(f_0\\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential Graph",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.4,
+          "calculation": 0.3,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Graph Analysis",
+          "Planck's Constant"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q9",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 36,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 14,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A laser emits light of wavelength \\(500\\, \\text{nm}\\) with a power output of \\(10\\, \\text{mW}\\). How many photons are emitted per second?",
+      "solution": "First, find the energy per photon: \\(E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{500 \\times 10^{-9}} = 3.972 \\times 10^{-19}\\, \\text{J}\\). The number of photons per second is \\(n = \\frac{P}{E} = \\frac{10 \\times 10^{-3}}{3.972 \\times 10^{-19}} \\approx 2.52 \\times 10^{16}\\, \\text{photons/s}\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the energy per photon and divide the power by this energy.",
+      "options": [
+        "A) \\(2.52 \\times 10^{16}\\, \\text{photons/s}\\)",
+        "B) \\(1.50 \\times 10^{15}\\, \\text{photons/s}\\)",
+        "C) \\(5.00 \\times 10^{18}\\, \\text{photons/s}\\)",
+        "D) \\(7.54 \\times 10^{14}\\, \\text{photons/s}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Counting Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photon Counting",
+          "Laser Physics",
+          "Energy Calculations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q10",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 34,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 13,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "The radiation pressure exerted by sunlight on a perfectly absorbing surface at Earth's distance from the Sun is approximately \\(4.6 \\times 10^{-6}\\, \\text{N/m}^2\\). What would be the radiation pressure on a perfectly reflecting surface at the same location?",
+      "solution": "For a perfectly reflecting surface, the radiation pressure is double that of a perfectly absorbing surface. Therefore, the pressure would be \\(2 \\times 4.6 \\times 10^{-6} = 9.2 \\times 10^{-6}\\, \\text{N/m}^2\\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall that reflecting surfaces experience double the radiation pressure compared to absorbing surfaces.",
+      "options": [
+        "A) \\(2.3 \\times 10^{-6}\\, \\text{N/m}^2\\)",
+        "B) \\(4.6 \\times 10^{-6}\\, \\text{N/m}^2\\)",
+        "C) \\(9.2 \\times 10^{-6}\\, \\text{N/m}^2\\)",
+        "D) \\(18.4 \\times 10^{-6}\\, \\text{N/m}^2\\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Reflecting Surfaces",
+          "Solar Radiation"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q12",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 37,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 15,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A monochromatic light beam of frequency \\(6.0 \\times 10^{14}\\, \\text{Hz}\\) is incident on a metal surface, causing photoelectric emission. If the work function of the metal is \\(2.0\\, \\text{eV}\\), what is the stopping potential required to stop the emitted electrons? \\n (Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\) and \\( e = 1.602 \\times 10^{-19}\\, \\text{C} \\))",
+      "solution": "First, calculate the energy of the photons: \\( E = h f = 6.626 \\times 10^{-34} \\times 6.0 \\times 10^{14} = 3.976 \\times 10^{-19}\\, \\text{J} \\). Convert this to eV: \\( E = \\frac{3.976 \\times 10^{-19}}{1.602 \\times 10^{-19}} \\approx 2.48\\, \\text{eV} \\). The maximum kinetic energy is \\( K_{\\text{max}} = E - \\phi = 2.48\\, \\text{eV} - 2.0\\, \\text{eV} = 0.48\\, \\text{eV} \\). The stopping potential \\( V_s = \\frac{K_{\\text{max}}}{e} = 0.48\\, \\text{V} \\) (since \\( K_{\\text{max}} \\) is already in eV).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the photon energy and subtract the work function to find \\( K_{\\text{max}} \\).",
+      "options": [
+        "A) \\(0.48\\, \\text{V}\\)",
+        "B) \\(2.48\\, \\text{V}\\)",
+        "C) \\(2.0\\, \\text{V}\\)",
+        "D) \\(4.48\\, \\text{V}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Stopping Potential",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Stopping Potential",
+          "Energy Calculations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q13",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 39,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 15,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following phenomena cannot be explained by the classical wave theory of light but can be explained by the photon model?",
+      "solution": "The photoelectric effect cannot be explained by classical wave theory but is explained by the photon model.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider which phenomenon involves energy quantization.",
+      "options": [
+        "A) Interference",
+        "B) Diffraction",
+        "C) Polarization",
+        "D) Photoelectric effect"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Wave-Particle Duality",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    
+    {
+      "id": "SO.PRA.2.1.Q15",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 38,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 15,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If a photon has a momentum of \\(3.3 \\times 10^{-29}\\, \\text{kg}\\cdot \\text{m/s}\\), what is its wavelength? \\n(Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\))",
+      "solution": "Using \\( \\lambda = \\frac{h}{p} = \\frac{6.626 \\times 10^{-34}}{3.3 \\times 10^{-29}} = 2.007 \\times 10^{-5}\\, \\text{m} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply the de Broglie relation for photons.",
+      "options": [
+        "A) \\(2.007 \\times 10^{-5}\\, \\text{m}\\)",
+        "B) \\(1.995 \\times 10^{-7}\\, \\text{m}\\)",
+        "C) \\(6.626 \\times 10^{-34}\\, \\text{m}\\)",
+        "D) \\(4.982 \\times 10^{-4}\\, \\text{m}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Momentum",
+        "concept": "Wavelength Calculation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photon Wavelength",
+          "Momentum Relations",
+          "Calculations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q16",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 40,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 16,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following best describes the uncertainty principle as it applies to photons?",
+      "solution": "The uncertainty principle states that the more precisely the position of a photon is known, the less precisely its momentum can be known, and vice versa, expressed as \\( \\Delta x \\Delta p \\geq \\frac{\\hbar}{2} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall Heisenberg's uncertainty principle.",
+      "options": [
+        "A) \\( \\Delta x \\Delta p \\geq \\frac{\\hbar}{2} \\)",
+        "B) \\( \\Delta E \\Delta t \\leq \\frac{\\hbar}{2} \\)",
+        "C) \\( \\Delta x \\Delta p = 0 \\)",
+        "D) \\( \\Delta E \\Delta t = 0 \\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Quantum Mechanics",
+        "concept": "Uncertainty Principle",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Uncertainty Principle",
+          "Photon Properties",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q17",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 41,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 16,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "When light passes near a massive object like a star, it is observed to bend. Which theory explains this phenomenon and how?",
+      "solution": "General relativity explains that mass curves spacetime, and light follows the curvature of spacetime, resulting in gravitational lensing.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider Einstein's theory that relates gravity to the curvature of spacetime.",
+      "options": [
+        "A) Newtonian mechanics, due to gravitational force",
+        "B) Quantum mechanics, due to wave-particle duality",
+        "C) Special relativity, due to time dilation",
+        "D) General relativity, due to spacetime curvature"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Gravitational Interaction",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.6,
+          "calculation": 0.1,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Gravitational Lensing",
+          "General Relativity",
+          "Photon Gravity Interaction"
+        ]
+      }
+    },
+    
+    {
+      "id": "SO.PRA.2.1.Q19",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 36,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 14,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following best describes the relationship between photon energy \\( E \\) and momentum \\( p \\) for photons?",
+      "solution": "For photons, \\( E = pc \\), since they have zero rest mass.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall the energy-momentum relation for massless particles.",
+      "options": [
+        "A) \\( E = p^2 c^2 \\)",
+        "B) \\( E = \\frac{p^2}{2m} \\)",
+        "C) \\( E = pc \\)",
+        "D) \\( E = mc^2 \\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Momentum",
+        "concept": "Energy-Momentum Relation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photon Energy",
+          "Momentum Relations",
+          "Special Relativity"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q20",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 39,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 15,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "An ultraviolet photon causes the emission of a photoelectron from a metal surface. If the photon's wavelength is halved, how does the maximum kinetic energy of the emitted photoelectron change?",
+      "solution": "Halving the wavelength doubles the photon energy (since \\( E = \\frac{hc}{\\lambda} \\)). Therefore, the kinetic energy of the emitted photoelectron increases by more than double, since \\( K_{\\text{max}} = E - \\phi \\), and \\( \\phi \\) remains constant.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how photon energy depends on wavelength and how kinetic energy depends on photon energy.",
+      "options": [
+        "A) It remains the same",
+        "B) It doubles",
+        "C) It more than doubles",
+        "D) It halves"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Wavelength Dependence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Photon Energy",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    
+    {
+      "id": "SO.PRA.2.1.Q23",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 46,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 18,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following phenomena demonstrates the particle nature of electromagnetic radiation?",
+      "solution": "The photoelectric effect demonstrates that light can eject electrons from a metal surface, showing that light behaves as particles (photons).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider which phenomenon involves quantized energy transfer.",
+      "options": [
+        "A) Interference patterns",
+        "B) Diffraction of light",
+        "C) Photoelectric effect",
+        "D) Polarization of light"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Particle Nature of Radiation",
+        "concept": "Photon Concept",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Particle Nature",
+          "Quantum Mechanics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q24",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 45,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 17,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A laser emits light of wavelength \\(400\\, \\text{nm}\\) with a power output of \\(5\\, \\text{mW}\\). How many photons are emitted per second?",
+      "solution": "First, find the energy per photon: \\( E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{400 \\times 10^{-9}} = 4.97 \\times 10^{-19}\\, \\text{J} \\).\\n\\nNumber of photons per second: \\( n = \\frac{P}{E} = \\frac{5 \\times 10^{-3}}{4.97 \\times 10^{-19}} \\approx 1.01 \\times 10^{16}\\, \\text{photons/s} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the energy per photon and divide the power by this energy.",
+      "options": [
+        "A) \\(1.01 \\times 10^{16}\\, \\text{photons/s}\\)",
+        "B) \\(2.52 \\times 10^{15}\\, \\text{photons/s}\\)",
+        "C) \\(5.00 \\times 10^{17}\\, \\text{photons/s}\\)",
+        "D) \\(7.54 \\times 10^{14}\\, \\text{photons/s}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Counting Photons",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photon Counting",
+          "Laser Physics",
+          "Energy Calculations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q25",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 47,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 18,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In a photoelectric experiment, light of frequency \\(1.5 \\times 10^{15}\\, \\text{Hz}\\) causes electrons to be emitted with a maximum kinetic energy of \\(2.0\\, \\text{eV}\\). What is the work function of the metal? \\n(Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\), \\( 1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J} \\))",
+      "solution": "Photon energy \\( E = h f = 6.626 \\times 10^{-34} \\times 1.5 \\times 10^{15} = 9.939 \\times 10^{-19}\\, \\text{J} \\).\\n\\nConvert to eV: \\( E = \\frac{9.939 \\times 10^{-19}}{1.602 \\times 10^{-19}} \\approx 6.2\\, \\text{eV} \\).\\n\\nWork function \\( \\phi = E - K_{\\text{max}} = 6.2\\, \\text{eV} - 2.0\\, \\text{eV} = 4.2\\, \\text{eV} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use \\( \\phi = E - K_{\\text{max}} \\) to find the work function.",
+      "options": [
+        "A) \\(2.0\\, \\text{eV}\\)",
+        "B) \\(4.2\\, \\text{eV}\\)",
+        "C) \\(6.2\\, \\text{eV}\\)",
+        "D) \\(8.2\\, \\text{eV}\\)"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Work Function Calculation",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.4,
+          "calculation": 0.4,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Work Function",
+          "Photoelectric Effect",
+          "Energy Calculations"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q26",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 48,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 19,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photon has an energy of \\(1.0\\, \\text{MeV}\\). What is its wavelength? \\n(Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\), \\( c = 3 \\times 10^8\\, \\text{m/s} \\), \\( 1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J} \\))",
+      "solution": "First, convert the energy to joules: \\( E = 1.0 \\times 10^6 \\times 1.602 \\times 10^{-19} = 1.602 \\times 10^{-13}\\, \\text{J} \\).\\n\\nThen, use \\( \\lambda = \\frac{hc}{E} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{1.602 \\times 10^{-13}} \\approx 1.24 \\times 10^{-12}\\, \\text{m} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the relation \\( \\lambda = \\frac{hc}{E} \\) and convert energy to joules.",
+      "options": [
+        "A) \\(1.24 \\times 10^{-12}\\, \\text{m}\\)",
+        "B) \\(2.48 \\times 10^{-12}\\, \\text{m}\\)",
+        "C) \\(6.63 \\times 10^{-13}\\, \\text{m}\\)",
+        "D) \\(3.31 \\times 10^{-13}\\, \\text{m}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Energy and Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Photon Energy",
+          "Wavelength Calculation",
+          "Energy Conversion"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q27",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 50,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 20,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Light of wavelength \\(250\\, \\text{nm}\\) is incident on a metal surface with a work function of \\(3.0\\, \\text{eV}\\). What is the maximum kinetic energy of the emitted electrons? \\n(Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\), \\( c = 3 \\times 10^8\\, \\text{m/s} \\), \\( 1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J} \\))",
+      "solution": "Photon energy \\( E = \\frac{hc}{\\lambda} = \\frac{6.626 \\times 10^{-34} \\times 3 \\times 10^8}{250 \\times 10^{-9}} = 7.951 \\times 10^{-19}\\, \\text{J} \\).\\n\\nConvert to eV: \\( E = \\frac{7.951 \\times 10^{-19}}{1.602 \\times 10^{-19}} \\approx 4.96\\, \\text{eV} \\).\\n\\nMaximum kinetic energy: \\( K_{\\text{max}} = E - \\phi = 4.96\\, \\text{eV} - 3.0\\, \\text{eV} = 1.96\\, \\text{eV} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate photon energy and subtract the work function.",
+      "options": [
+        "A) \\(1.96\\, \\text{eV}\\)",
+        "B) \\(3.00\\, \\text{eV}\\)",
+        "C) \\(4.96\\, \\text{eV}\\)",
+        "D) \\(7.96\\, \\text{eV}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Photon Energy and Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Photon Energy",
+          "Work Function",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q28",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 52,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 21,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "If the intensity of light shining on a metal surface is doubled while keeping the frequency above the threshold frequency, what happens to the maximum kinetic energy of the emitted photoelectrons?",
+      "solution": "The maximum kinetic energy of the emitted photoelectrons remains the same because it depends only on the frequency of the incident light, not on its intensity.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Recall the dependence of kinetic energy on frequency in the photoelectric effect.",
+      "options": [
+        "A) It doubles",
+        "B) It remains the same",
+        "C) It halves",
+        "D) It increases by a factor of four"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Intensity Effects",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Intensity",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q29",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 49,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 19,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photon and an electron have the same kinetic energy of \\(100\\, \\text{eV}\\). Which of the following statements is true regarding their de Broglie wavelengths?",
+      "solution": "For photons, \\( \\lambda = \\frac{hc}{E} \\). For electrons, \\( \\lambda = \\frac{h}{\\sqrt{2mE}} \\). Since the electron has mass, its de Broglie wavelength will be shorter than that of the photon at the same kinetic energy.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Compare the de Broglie wavelength formulas for photons and electrons.",
+      "options": [
+        "A) Both have the same de Broglie wavelength",
+        "B) The electron has a longer wavelength than the photon",
+        "C) The photon has a longer wavelength than the electron",
+        "D) Cannot determine without additional information"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Wave-Particle Duality",
+        "concept": "De Broglie Wavelength",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.4,
+          "calculation": 0.3,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "De Broglie Wavelength",
+          "Photon vs. Electron",
+          "Kinetic Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q30",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 51,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 20,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following correctly describes the effect of increasing the frequency of incident light on the stopping potential in a photoelectric experiment?",
+      "solution": "Increasing the frequency of the incident light increases the maximum kinetic energy of the emitted electrons, thus increasing the stopping potential required to stop them.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the relationship between frequency and kinetic energy in the photoelectric effect.",
+      "options": [
+        "A) Stopping potential decreases",
+        "B) Stopping potential remains the same",
+        "C) Stopping potential increases",
+        "D) Stopping potential becomes zero"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Frequency Effects",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Frequency",
+          "Stopping Potential"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q31",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 53,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 21,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Radiation pressure \\( P \\) on a perfectly absorbing surface is given by \\( P = \\frac{I}{c} \\), where \\( I \\) is the intensity of light. If the intensity is doubled, what happens to the radiation pressure?",
+      "solution": "Radiation pressure is directly proportional to intensity, so doubling the intensity doubles the radiation pressure.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the direct proportionality between \\( P \\) and \\( I \\).",
+      "options": [
+        "A) It remains the same",
+        "B) It doubles",
+        "C) It halves",
+        "D) It quadruples"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Radiation Pressure",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Intensity",
+          "Proportionality"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q32",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 54,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 22,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In the context of the photoelectric effect, what is the significance of the threshold frequency \\( f_0 \\)?",
+      "solution": "The threshold frequency is the minimum frequency of incident light required to emit electrons from a metal surface, corresponding to the work function of the metal.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "It is related to the work function \\( \\phi = h f_0 \\).",
+      "options": [
+        "A) The frequency at which intensity is maximum",
+        "B) The maximum frequency that causes photoemission",
+        "C) The minimum frequency required for photoemission",
+        "D) The frequency at which stopping potential is zero"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Threshold Frequency",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Threshold Frequency",
+          "Work Function"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q33",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 55,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 22,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photon with energy \\(2.5\\, \\text{eV}\\) is incident on a metal surface with a work function of \\(3.0\\, \\text{eV}\\). What happens?",
+      "solution": "Since the photon's energy is less than the work function, no electrons are emitted, and there is no photoelectric effect.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Compare the photon energy with the work function.",
+      "options": [
+        "A) Electrons are emitted with kinetic energy \\(0.5\\, \\text{eV}\\)",
+        "B) Electrons are emitted with kinetic energy \\(5.5\\, \\text{eV}\\)",
+        "C) No electrons are emitted",
+        "D) The metal heats up but no electrons are emitted"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Work Function",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Work Function",
+          "Photon Energy"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q34",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 56,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 23,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following statements about photons is incorrect?",
+      "solution": "Photons do not have electric charge; they are electrically neutral particles.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the fundamental properties of photons.",
+      "options": [
+        "A) Photons have zero rest mass",
+        "B) Photons always travel at the speed of light in a vacuum",
+        "C) Photons carry energy and momentum",
+        "D) Photons have an electric charge"
+      ],
+      "answer": "D",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Concepts",
+        "concept": "Photon Properties",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 7
+        },
+        "tags": [
+          "Photon Properties",
+          "Electric Charge",
+          "Particle Characteristics"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q35",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 58,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 23,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "The momentum of a photon is given by \\( p = \\frac{h}{\\lambda} \\). If the wavelength of the photon is reduced to one-third, how does its momentum change?",
+      "solution": "Since momentum is inversely proportional to wavelength, reducing the wavelength to one-third increases the momentum by a factor of three.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the inverse relationship between \\( p \\) and \\( \\lambda \\).",
+      "options": [
+        "A) Momentum remains the same",
+        "B) Momentum increases by a factor of three",
+        "C) Momentum decreases by a factor of three",
+        "D) Momentum increases by a factor of nine"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photon Momentum",
+        "concept": "Wavelength and Momentum",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.3,
+          "concept": 0.5,
+          "calculation": 0.2,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photon Momentum",
+          "Wavelength Dependence",
+          "Proportionality"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q36",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 59,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 24,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "A photon with energy \\(6.0\\, \\text{eV}\\) is absorbed by an electron in a metal with a work function of \\(4.5\\, \\text{eV}\\). What is the speed of the emitted electron? \\n(Use \\( m_e = 9.109 \\times 10^{-31}\\, \\text{kg} \\), \\( 1\\, \\text{eV} = 1.602 \\times 10^{-19}\\, \\text{J} \\))",
+      "solution": "Maximum kinetic energy: \\( K_{\\text{max}} = E - \\phi = 6.0\\, \\text{eV} - 4.5\\, \\text{eV} = 1.5\\, \\text{eV} \\).\\n\\nConvert to joules: \\( K = 1.5 \\times 1.602 \\times 10^{-19} = 2.403 \\times 10^{-19}\\, \\text{J} \\).\\n\\nUse \\( K = \\frac{1}{2} m_e v^2 \\), so \\( v = \\sqrt{\\frac{2K}{m_e}} = \\sqrt{\\frac{2 \\times 2.403 \\times 10^{-19}}{9.109 \\times 10^{-31}}} \\approx 7.27 \\times 10^5\\, \\text{m/s} \\).",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate kinetic energy and use it to find the speed using \\( K = \\frac{1}{2} m v^2 \\).",
+      "options": [
+        "A) \\(7.27 \\times 10^5\\, \\text{m/s}\\)",
+        "B) \\(5.48 \\times 10^6\\, \\text{m/s}\\)",
+        "C) \\(1.08 \\times 10^6\\, \\text{m/s}\\)",
+        "D) \\(3.00 \\times 10^8\\, \\text{m/s}\\)"
+      ],
+      "answer": "A",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Photoelectric Effect",
+        "concept": "Electron Kinetic Energy",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.3,
+          "calculation": 0.5,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Photoelectric Effect",
+          "Kinetic Energy",
+          "Speed Calculation"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q37",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 60,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 24,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which property of photons allows them to exert pressure on surfaces despite having zero rest mass?",
+      "solution": "Photons carry momentum \\( p = \\frac{h}{\\lambda} \\), and the transfer of momentum to a surface results in radiation pressure.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the relationship between momentum and radiation pressure.",
+      "options": [
+        "A) Their energy only",
+        "B) Their momentum",
+        "C) Their electric charge",
+        "D) Their magnetic properties"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Photon Momentum",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Photon Momentum",
+          "Momentum Transfer"
+        ]
+      }
+    },
+    
+    {
+      "id": "SO.PRA.2.1.Q39",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 62,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 25,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "Which of the following statements is true regarding the mass of a photon?",
+      "solution": "Photons have zero rest mass but possess energy and momentum, allowing them to interact gravitationally.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the difference between rest mass and relativistic mass.",
+      "options": [
+        "A) Photons have a small but non-zero rest mass",
+        "B) Photons have zero rest mass but non-zero relativistic mass",
+        "C) Photons have infinite mass",
+        "D) Photons have zero mass and cannot interact gravitationally"
+      ],
+      "answer": "B",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Mass of Photon",
+        "concept": "Photon Mass",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.4,
+          "concept": 0.5,
+          "calculation": 0.1,
+          "difficultyIn10": 8
+        },
+        "tags": [
+          "Photon Mass",
+          "Relativistic Mass",
+          "Gravitational Interaction"
+        ]
+      }
+    },
+    {
+      "id": "SO.PRA.2.1.Q40",
+      "statistics": {
+        "attempts": 0,
+        "hintsAccessed": 0,
+        "solved": 0,
+        "successRate": 0,
+        "idealAverageTime": 63,
+        "averageTimeTaken": 0,
+        "medianTime": 0,
+        "timeStdDev": 26,
+        "firstAttemptSuccessRate": 0,
+        "commonIncorrectAnswers": []
+      },
+      "type": "singleoption",
+      "exerciseName": "Single Option Correct",
+      "questionText": "In an experiment, a beam of light is incident on a metal surface at an angle \\( \\theta \\). The radiation pressure exerted on the surface is proportional to which of the following?",
+      "solution": "The radiation pressure on a surface inclined at an angle \\( \\theta \\) is proportional to \\( \\cos^2 \\theta \\) for a perfectly reflecting surface.",
+      "solutionGPTRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider how both the effective area and momentum component depend on \\( \\cos \\theta \\).",
+      "options": [
+        "A) \\( \\cos \\theta \\)",
+        "B) \\( \\sin \\theta \\)",
+        "C) \\( \\cos^2 \\theta \\)",
+        "D) \\( \\sin^2 \\theta \\)"
+      ],
+      "answer": "C",
+      "conceptStatistics": {
+        "chapter": "Modern Physics",
+        "section": "Radiation Force and Pressure",
+        "concept": "Angle of Incidence",
+        "source": "Generated",
+        "resolution": {
+          "information": 0.2,
+          "concept": 0.5,
+          "calculation": 0.3,
+          "difficultyIn10": 9
+        },
+        "tags": [
+          "Radiation Pressure",
+          "Angle Dependence",
+          "Trigonometric Relationships"
+        ]
+      }
+    }
+  ]
+}

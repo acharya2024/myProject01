@@ -1,0 +1,1578 @@
+{
+  "Concepts": [
+    {
+      "Chapter": "Photoelectric Effect",
+      "Sections": [
+        {
+          "name": "Introduction",
+          "concepts": [
+            {
+              "id": "PEE.1.1",
+              "name": "Historical Context and Significance"
+            },
+            {
+              "id": "PEE.1.2",
+              "name": "Fundamental Principles of Photoelectric Effect"
+            },
+            {
+              "id": "PEE.1.3",
+              "name": "Work Function and Electronvolt (eV)"
+            },
+            {
+              "id": "PEE.1.4",
+              "name": "Electron Emission Mechanisms"
+            },
+            {
+              "id": "PEE.1.5",
+              "name": "Experimental Observation Requirements"
+            }
+          ]
+        },
+        {
+          "name": "Experimental Setup",
+          "concepts": [
+            {
+              "id": "PEE.2.1",
+              "name": "Initial Setup and Need for Vacuum"
+            },
+            {
+              "id": "PEE.2.2",
+              "name": "Emitter and Collector Plates Configuration"
+            },
+            {
+              "id": "PEE.2.3",
+              "name": "Addressing Positive Charging of Emitter"
+            },
+            {
+              "id": "PEE.2.4",
+              "name": "Integration of Conducting Wire and Ammeter"
+            },
+            {
+              "id": "PEE.2.5",
+              "name": "Definitions: Photoelectrons and Photocurrent"
+            },
+            {
+              "id": "PEE.2.6",
+              "name": "Key Scientist Contributions"
+            }
+          ]
+        },
+        {
+          "name": "Observations",
+          "concepts": [
+            {
+              "id": "PEE.3.1",
+              "name": "Effect of Light Intensity on Photocurrent"
+            },
+            {
+              "id": "PEE.3.2",
+              "name": "Impact of Accelerating Voltage"
+            },
+            {
+              "id": "PEE.3.3",
+              "name": "Influence of Retarding Voltage"
+            },
+            {
+              "id": "PEE.3.4",
+              "name": "Frequency Variation and Threshold Frequency"
+            },
+            {
+              "id": "PEE.3.5",
+              "name": "Stopping Potential Characteristics"
+            },
+            {
+              "id": "PEE.3.6",
+              "name": "Different Metallic Surfaces and Work Functions"
+            },
+            {
+              "id": "PEE.3.7",
+              "name": "Time Duration for Electron Emission"
+            }
+          ]
+        },
+        {
+          "name": "Inconsistencies",
+          "concepts": [
+            {
+              "id": "PEE.4.1",
+              "name": "Intensity vs. K_max Independence"
+            },
+            {
+              "id": "PEE.4.2",
+              "name": "Threshold Frequency Requirement"
+            },
+            {
+              "id": "PEE.4.3",
+              "name": "Instantaneous Emission Contradiction"
+            },
+            {
+              "id": "PEE.4.4",
+              "name": "Energy Dependence on Frequency"
+            }
+          ]
+        },
+        {
+          "name": "Einstein's Explanation",
+          "concepts": [
+            {
+              "id": "PEE.5.1",
+              "name": "Planck's Hypothesis and Photon Concept"
+            },
+            {
+              "id": "PEE.5.2",
+              "name": "Einstein's Light-Surface Interaction Theory"
+            },
+            {
+              "id": "PEE.5.3",
+              "name": "Einstein's Photoelectric Equation"
+            },
+            {
+              "id": "PEE.5.4",
+              "name": "Resolving PEE Inconsistencies"
+            },
+            {
+              "id": "PEE.5.5",
+              "name": "Einstein's Nobel Prize Recognition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Chapter": "Particle Nature of Radiation: The Photon",
+      "Sections": [
+        {
+          "name": "Concept of Photon",
+          "concepts": [
+            {
+              "id": "PRA.1.1",
+              "name": "Discrete Packets of Radiation",
+              "subConcepts": [
+                {
+                  "id": "PRA.1.1.1",
+                  "name": "Photon Definition"
+                }
+              ]
+            },
+            {
+              "id": "PRA.1.2",
+              "name": "Energy Exchange in Photons",
+              "subConcepts": [
+                {
+                  "id": "PRA.1.2.1",
+                  "name": "Single Energy Exchange Equals One Photon"
+                }
+              ]
+            },
+            {
+              "id": "PRA.1.3",
+              "name": "Mass of Photon",
+              "subConcepts": [
+                {
+                  "id": "PRA.1.3.1",
+                  "name": "Inertial Property and Mass Definition"
+                },
+                {
+                  "id": "PRA.1.3.2",
+                  "name": "Rest Mass of Photon is Zero"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Photon as Energy and Momentum Carrier",
+          "concepts": [
+            {
+              "id": "PRA.2.1",
+              "name": "Light Generation and Propagation",
+              "subConcepts": [
+                {
+                  "id": "PRA.2.1.1",
+                  "name": "Generation from Moving Charges"
+                },
+                {
+                  "id": "PRA.2.1.2",
+                  "name": "Propagation and Interaction with Charged Particles"
+                }
+              ]
+            },
+            {
+              "id": "PRA.2.2",
+              "name": "Energy of Photon",
+              "subConcepts": [
+                {
+                  "id": "PRA.2.2.1",
+                  "name": "Discrete Energy Exchange"
+                },
+                {
+                  "id": "PRA.2.2.2",
+                  "name": "Relation with Frequency (E = hf)"
+                },
+                {
+                  "id": "PRA.2.2.3",
+                  "name": "Dual Nature: Particle and Wave Properties"
+                },
+                {
+                  "id": "PRA.2.2.4",
+                  "name": "Number of Photons from Source Power and Wavelength"
+                },
+                {
+                  "id": "PRA.2.2.5",
+                  "name": "Number Density of Photons in a Beam"
+                }
+              ]
+            },
+            {
+              "id": "PRA.2.3",
+              "name": "Momentum of Photon",
+              "subConcepts": [
+                {
+                  "id": "PRA.2.3.1",
+                  "name": "De Broglie Hypothesis"
+                },
+                {
+                  "id": "PRA.2.3.2",
+                  "name": "Momentum Formula (p = h/λ)"
+                },
+                {
+                  "id": "PRA.2.3.3",
+                  "name": "Dual Nature: Relation Between Momentum and Wavelength"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Radiation Force and Pressure",
+          "concepts": [
+            {
+              "id": "PRA.3.1",
+              "name": "Force by Photon on Absorbing Surface",
+              "subConcepts": [
+                {
+                  "id": "PRA.3.1.1",
+                  "name": "Surface Perpendicular to Light Beam"
+                },
+                {
+                  "id": "PRA.3.1.2",
+                  "name": "Surface at an Angle"
+                },
+                {
+                  "id": "PRA.3.1.3",
+                  "name": "Curved and Arbitrary Shaped Surfaces"
+                }
+              ]
+            },
+            {
+              "id": "PRA.3.2",
+              "name": "Force by Photon on Reflecting Surface",
+              "subConcepts": [
+                {
+                  "id": "PRA.3.2.1",
+                  "name": "Surface Perpendicular to Light Beam"
+                },
+                {
+                  "id": "PRA.3.2.2",
+                  "name": "Surface at General Angle θ"
+                },
+                {
+                  "id": "PRA.3.2.3",
+                  "name": "Force on a Sphere in Light Path"
+                }
+              ]
+            },
+            {
+              "id": "PRA.3.3",
+              "name": "Radiation Pressure",
+              "subConcepts": [
+                {
+                  "id": "PRA.3.3.1",
+                  "name": "Calculation Method"
+                }
+              ]
+            },
+            {
+              "id": "PRA.3.4",
+              "name": "Applications of Radiation Force",
+              "subConcepts": [
+                {
+                  "id": "PRA.3.4.1",
+                  "name": "Natural Phenomena"
+                },
+                {
+                  "id": "PRA.3.4.2",
+                  "name": "Man-Made Applications"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Chapter": "Atomic Structure",
+      "Sections": [
+        {
+          "name": "Model of Atom",
+          "concepts": [
+            {
+              "id": "AST.1.1",
+              "name": "Rutherford Model",
+              "subConcepts": [
+                {
+                  "id": "AST.1.1.1",
+                  "name": "Alpha Particles and Properties"
+                },
+                {
+                  "id": "AST.1.1.2",
+                  "name": "Experimental Arrangement"
+                },
+                {
+                  "id": "AST.1.1.3",
+                  "name": "Conclusions on Particle Deviation"
+                },
+                {
+                  "id": "AST.1.1.4",
+                  "name": "Distance of Closest Approach"
+                },
+                {
+                  "id": "AST.1.1.5",
+                  "name": "Overall Conclusions"
+                },
+                {
+                  "id": "AST.1.1.6",
+                  "name": "Drawbacks of Rutherford Model",
+                  "subConcepts": [
+                    {
+                      "id": "AST.1.1.6.1",
+                      "name": "Hydrogen Spectra Problem"
+                    },
+                    {
+                      "id": "AST.1.1.6.2",
+                      "name": "Stability of Electrons"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "AST.1.2",
+              "name": "Bohr's Model",
+              "subConcepts": [
+                {
+                  "id": "AST.1.2.1",
+                  "name": "Postulates",
+                  "subConcepts": [
+                    {
+                      "id": "AST.1.2.1.1",
+                      "name": "Stationary Orbits"
+                    },
+                    {
+                      "id": "AST.1.2.1.2",
+                      "name": "Quantized Angular Momentum"
+                    },
+                    {
+                      "id": "AST.1.2.1.3",
+                      "name": "Electron Transitions and Photons"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.1.2.2",
+                  "name": "Quantisation Rule via Wave Function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Applications of Bohr's Model",
+          "concepts": [
+            {
+              "id": "AST.2.1",
+              "name": "General Applications",
+              "subConcepts": [
+                {
+                  "id": "AST.2.1.1",
+                  "name": "Charge in Magnetic Field",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.1.1.1",
+                      "name": "Magnetic Force and Circular Motion"
+                    },
+                    {
+                      "id": "AST.2.1.1.2",
+                      "name": "Radius Calculation via Bohr's Postulates"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.1.2",
+                  "name": "Particle in Potential Field",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.1.2.1",
+                      "name": "Potential Energy and Attractive Force"
+                    },
+                    {
+                      "id": "AST.2.1.2.2",
+                      "name": "Radius Calculation via Bohr's Postulates"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "AST.2.2",
+              "name": "Calculations for Single Electron Systems",
+              "subConcepts": [
+                {
+                  "id": "AST.2.2.1",
+                  "name": "General Rules"
+                },
+                {
+                  "id": "AST.2.2.2",
+                  "name": "Speed",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.2.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.3",
+                  "name": "Radius",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.3.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.4",
+                  "name": "Kinetic, Potential, and Total Energy",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.4.1",
+                      "name": "Derivation and Energy Ratios"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.5",
+                  "name": "Time Period",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.5.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.6",
+                  "name": "Angular Velocity/Frequency",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.6.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.7",
+                  "name": "Current",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.7.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.8",
+                  "name": "Magnetic Field at Center",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.8.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                },
+                {
+                  "id": "AST.2.2.9",
+                  "name": "Magnetic Dipole Moment",
+                  "subConcepts": [
+                    {
+                      "id": "AST.2.2.9.1",
+                      "name": "Derivation and Final Expression"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "AST.2.3",
+              "name": "Definitions of Different Energies"
+            },
+            {
+              "id": "AST.2.4",
+              "name": "Effect of Finite Mass of Nucleus",
+              "subConcepts": [
+                {
+                  "id": "AST.2.4.1",
+                  "name": "Nucleus Acceleration and Common Center of Mass"
+                },
+                {
+                  "id": "AST.2.4.2",
+                  "name": "Correction in Coulomb's Force"
+                }
+              ]
+            },
+            {
+              "id": "AST.2.5",
+              "name": "Drawbacks of Bohr's Model"
+            }
+          ]
+        },
+        {
+          "name": "Atomic Transitions",
+          "concepts": [
+            {
+              "id": "AST.3.1",
+              "name": "General Rules",
+              "subConcepts": [
+                {
+                  "id": "AST.3.1.1",
+                  "name": "Electron States and Energy Levels"
+                },
+                {
+                  "id": "AST.3.1.2",
+                  "name": "Photon Emission and Absorption"
+                },
+                {
+                  "id": "AST.3.1.3",
+                  "name": "Excitation and De-excitation Processes",
+                  "subConcepts": [
+                    {
+                      "id": "AST.3.1.3.1",
+                      "name": "Energy Changes and Photon Characteristics"
+                    },
+                    {
+                      "id": "AST.3.1.3.2",
+                      "name": "Ritz Combination Principle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "AST.3.2",
+              "name": "Series Nomenclature",
+              "subConcepts": [
+                {
+                  "id": "AST.3.2.1",
+                  "name": "Lyman Series"
+                },
+                {
+                  "id": "AST.3.2.2",
+                  "name": "Balmer Series"
+                }
+              ]
+            },
+            {
+              "id": "AST.3.3",
+              "name": "Emitted Photon Characteristics"
+            },
+            {
+              "id": "AST.3.4",
+              "name": "Recoiling of Atoms During Transition",
+              "subConcepts": [
+                {
+                  "id": "AST.3.4.1",
+                  "name": "Momentum Conservation"
+                },
+                {
+                  "id": "AST.3.4.2",
+                  "name": "Energy Comparison: Recoiling Atom vs Photon"
+                }
+              ]
+            },
+            {
+              "id": "AST.3.5",
+              "name": "Transition in Moving Atoms"
+            }
+          ]
+        },
+        {
+          "name": "Atomic Collisions",
+          "concepts": [
+            {
+              "id": "AST.4.1",
+              "name": "Condition for Inelastic Collision"
+            },
+            {
+              "id": "AST.4.2",
+              "name": "Collision Analysis of Stationary H and He Atoms with Neutrons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Chapter": "Nuclear Structure",
+      "Sections": [
+        {
+          "name": "Fundamental Particles",
+          "concepts": [
+            {
+              "id": "NST.1.1",
+              "name": "Meaning of Fundamental Particles",
+              "subConcepts": [
+                {
+                  "id": "NST.1.1.1",
+                  "name": "List of Fundamental Particles"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.2",
+              "name": "Electrons",
+              "subConcepts": [
+                {
+                  "id": "NST.1.2.1",
+                  "name": "Charge, Mass, and Stability of Isolated Electrons"
+                },
+                {
+                  "id": "NST.1.2.2",
+                  "name": "Beta Minus Particles"
+                },
+                {
+                  "id": "NST.1.2.3",
+                  "name": "Uncertainty in Position and Inability to Reside in Nucleus"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.3",
+              "name": "Protons",
+              "subConcepts": [
+                {
+                  "id": "NST.1.3.1",
+                  "name": "Charge, Mass, and Stability of Isolated Protons"
+                },
+                {
+                  "id": "NST.1.3.2",
+                  "name": "Existence Inside Nucleus"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.4",
+              "name": "Neutrons",
+              "subConcepts": [
+                {
+                  "id": "NST.1.4.1",
+                  "name": "Charge, Mass, and Stability of Isolated Neutrons"
+                },
+                {
+                  "id": "NST.1.4.2",
+                  "name": "Existence Inside Nucleus"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.5",
+              "name": "Positrons",
+              "subConcepts": [
+                {
+                  "id": "NST.1.5.1",
+                  "name": "Charge, Mass, and Stability of Isolated Positrons"
+                },
+                {
+                  "id": "NST.1.5.2",
+                  "name": "Existence Inside Nucleus"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.6",
+              "name": "Alpha Particles",
+              "subConcepts": [
+                {
+                  "id": "NST.1.6.1",
+                  "name": "Formation from Helium Atoms"
+                },
+                {
+                  "id": "NST.1.6.2",
+                  "name": "Charge and Mass Comparison with Protons"
+                }
+              ]
+            },
+            {
+              "id": "NST.1.7",
+              "name": "Neutrino and Antineutrino",
+              "subConcepts": [
+                {
+                  "id": "NST.1.7.1",
+                  "name": "Basic Properties"
+                },
+                {
+                  "id": "NST.1.7.2",
+                  "name": "Applications in Research"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nucleus and Its Stability",
+          "concepts": [
+            {
+              "id": "NST.2.1",
+              "name": "Nucleus in the Atom"
+            },
+            {
+              "id": "NST.2.2",
+              "name": "Nucleons",
+              "subConcepts": [
+                {
+                  "id": "NST.2.2.1",
+                  "name": "Definition of Nucleons"
+                }
+              ]
+            },
+            {
+              "id": "NST.2.3",
+              "name": "Symbolic Representation of Nucleus",
+              "subConcepts": [
+                {
+                  "id": "NST.2.3.1",
+                  "name": "Determining Number of Nucleons, Protons, and Neutrons from Symbols"
+                }
+              ]
+            },
+            {
+              "id": "NST.2.4",
+              "name": "Isotopes, Isobars, and Isotones",
+              "subConcepts": [
+                {
+                  "id": "NST.2.4.1",
+                  "name": "Isotopes"
+                },
+                {
+                  "id": "NST.2.4.2",
+                  "name": "Isobars"
+                },
+                {
+                  "id": "NST.2.4.3",
+                  "name": "Isotones"
+                }
+              ]
+            },
+            {
+              "id": "NST.2.5",
+              "name": "Nuclear Size Estimation",
+              "subConcepts": [
+                {
+                  "id": "NST.2.5.1",
+                  "name": "Volume Proportional to Mass Number"
+                },
+                {
+                  "id": "NST.2.5.2",
+                  "name": "Radius Relation with Mass Number"
+                },
+                {
+                  "id": "NST.2.5.3",
+                  "name": "Density of Nuclear Matter"
+                },
+                {
+                  "id": "NST.2.5.4",
+                  "name": "Nuclear Stars Composition and Size"
+                }
+              ]
+            },
+            {
+              "id": "NST.2.6",
+              "name": "Reasons for Stability",
+              "subConcepts": [
+                {
+                  "id": "NST.2.6.1",
+                  "name": "Mutual Repulsion of Protons in Small Volume"
+                },
+                {
+                  "id": "NST.2.6.2",
+                  "name": "Strong Nuclear Force as the Stabilizing Force"
+                },
+                {
+                  "id": "NST.2.6.3",
+                  "name": "Properties of Strong Nuclear Force",
+                  "subConcepts": [
+                    {
+                      "id": "NST.2.6.3.1",
+                      "name": "Short Range"
+                    },
+                    {
+                      "id": "NST.2.6.3.2",
+                      "name": "High Binding Energy"
+                    },
+                    {
+                      "id": "NST.2.6.3.3",
+                      "name": "Attractive Between Nucleons"
+                    },
+                    {
+                      "id": "NST.2.6.3.4",
+                      "name": "Independent of Electric Charge"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Binding Energy",
+          "concepts": [
+            {
+              "id": "NST.3.1",
+              "name": "Definition of Binding Energy",
+              "subConcepts": [
+                {
+                  "id": "NST.3.1.1",
+                  "name": "For Any System of Particles"
+                },
+                {
+                  "id": "NST.3.1.2",
+                  "name": "For Nucleus"
+                },
+                {
+                  "id": "NST.3.1.3",
+                  "name": "Relation with Stability of the System"
+                }
+              ]
+            },
+            {
+              "id": "NST.3.2",
+              "name": "Concept Introduction",
+              "subConcepts": [
+                {
+                  "id": "NST.3.2.1",
+                  "name": "Gravitational Force and Potential Energy"
+                },
+                {
+                  "id": "NST.3.2.2",
+                  "name": "Electrostatic Force and Potential Energy"
+                },
+                {
+                  "id": "NST.3.2.3",
+                  "name": "Formation of Nucleus and Mass Defect"
+                },
+                {
+                  "id": "NST.3.2.4",
+                  "name": "Einstein's Mass-Energy Equivalence"
+                },
+                {
+                  "id": "NST.3.2.5",
+                  "name": "Illustrative Example: Formation of Deuterium"
+                },
+                {
+                  "id": "NST.3.2.6",
+                  "name": "Summary of Binding Energy Calculations"
+                }
+              ]
+            },
+            {
+              "id": "NST.3.3",
+              "name": "Binding Energy Calculations",
+              "subConcepts": [
+                {
+                  "id": "NST.3.3.1",
+                  "name": "Example for Iron (Fe)"
+                },
+                {
+                  "id": "NST.3.3.2",
+                  "name": "Example for Carbon (C)"
+                }
+              ]
+            },
+            {
+              "id": "NST.3.4",
+              "name": "Binding Energy per Nucleon",
+              "subConcepts": [
+                {
+                  "id": "NST.3.4.1",
+                  "name": "Graph for Various Nuclei"
+                },
+                {
+                  "id": "NST.3.4.2",
+                  "name": "Relation with Stability"
+                }
+              ]
+            },
+            {
+              "id": "NST.3.5",
+              "name": "Fission and Fusion Possibilities",
+              "subConcepts": [
+                {
+                  "id": "NST.3.5.1",
+                  "name": "Graphical Representation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Unstability of Nucleus",
+          "concepts": [
+            {
+              "id": "NST.4.1",
+              "name": "Weakening of Nuclear Force at Large Distances",
+              "subConcepts": [
+                {
+                  "id": "NST.4.1.1",
+                  "name": "Effect on Stability"
+                }
+              ]
+            },
+            {
+              "id": "NST.4.2",
+              "name": "Unstability Due to Excess Size",
+              "subConcepts": [
+                {
+                  "id": "NST.4.2.1",
+                  "name": "Neutron-Proton Ratio for Different Atomic Numbers"
+                },
+                {
+                  "id": "NST.4.2.2",
+                  "name": "Alpha Particle Emission for Stability"
+                }
+              ]
+            },
+            {
+              "id": "NST.4.3",
+              "name": "Unstability Due to Excess Protons",
+              "subConcepts": [
+                {
+                  "id": "NST.4.3.1",
+                  "name": "Coulombic Repulsion"
+                },
+                {
+                  "id": "NST.4.3.2",
+                  "name": "Proton to Neutron Conversion for Stability"
+                }
+              ]
+            },
+            {
+              "id": "NST.4.4",
+              "name": "Unstability Due to Excess Neutrons",
+              "subConcepts": [
+                {
+                  "id": "NST.4.4.1",
+                  "name": "Reasons for Unstability"
+                },
+                {
+                  "id": "NST.4.4.2",
+                  "name": "Neutron to Proton Conversion for Stability"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Chapter": "Nuclear Reactions",
+      "Sections": [
+        {
+          "name": "Introduction to Nuclear Reactions",
+          "concepts": [
+            {
+              "id": "NRA.1.1",
+              "name": "Overview of Nuclear Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.1.1.1",
+                  "name": "Definition and Significance"
+                },
+                {
+                  "id": "NRA.1.1.2",
+                  "name": "Energy Released Compared to Chemical Reactions"
+                },
+                {
+                  "id": "NRA.1.1.3",
+                  "name": "Effect of External Parameters (Temperature, Pressure, Humidity)"
+                }
+              ]
+            },
+            {
+              "id": "NRA.1.2",
+              "name": "Applications of Nuclear Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.1.2.1",
+                  "name": "Energy Production (Nuclear Power)"
+                },
+                {
+                  "id": "NRA.1.2.2",
+                  "name": "Medical Applications (Radiation Therapy)"
+                },
+                {
+                  "id": "NRA.1.2.3",
+                  "name": "Industrial Uses (Material Analysis)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Properties of Nuclear Reactions",
+          "concepts": [
+            {
+              "id": "NRA.2.1",
+              "name": "Requirements for a Nucleus to Undergo a Nuclear Reaction",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.1.1",
+                  "name": "Stability of the Nucleus"
+                },
+                {
+                  "id": "NRA.2.1.2",
+                  "name": "Factors Influencing Reactivity (Neutron-to-Proton Ratio)"
+                }
+              ]
+            },
+            {
+              "id": "NRA.2.2",
+              "name": "Highly Probabilistic Nature of Nuclear Events",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.2.1",
+                  "name": "No Calculations Possible for a Single Nucleus"
+                },
+                {
+                  "id": "NRA.2.2.2",
+                  "name": "Quantum Mechanical Basis"
+                },
+                {
+                  "id": "NRA.2.2.3",
+                  "name": "Role of Probability in Reaction Occurrence"
+                }
+              ]
+            },
+            {
+              "id": "NRA.2.3",
+              "name": "Conservation Laws in Nuclear Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.3.1",
+                  "name": "Charge Conservation",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.3.1.1",
+                      "name": "Total Charge Remains Constant Before and After Reaction"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.2.3.2",
+                  "name": "Mass-Energy Conservation",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.3.2.1",
+                      "name": "Equivalence of Mass and Energy (E = mc²)"
+                    },
+                    {
+                      "id": "NRA.2.3.2.2",
+                      "name": "Calculation of Mass Defects"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.2.3.3",
+                  "name": "Momentum Conservation",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.3.3.1",
+                      "name": "Vector Quantities and Recoil Effects"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.2.3.4",
+                  "name": "Angular Momentum Conservation",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.3.4.1",
+                      "name": "Spin States and Parity Considerations"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.2.4",
+              "name": "Q Value in Nuclear Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.4.1",
+                  "name": "Definition and Significance",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.4.1.1",
+                      "name": "Energy Released or Absorbed During Reaction"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.2.4.2",
+                  "name": "Step-by-Step Q Value Calculations",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.4.2.1",
+                      "name": "Determining Q Value Using Mass Differences"
+                    },
+                    {
+                      "id": "NRA.2.4.2.2",
+                      "name": "Example Calculations for Exoergic and Endoergic Reactions"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.2.5",
+              "name": "Exoergic and Endoergic Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.5.1",
+                  "name": "Exoergic Reactions",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.5.1.1",
+                      "name": "Definition and Characteristics"
+                    },
+                    {
+                      "id": "NRA.2.5.1.2",
+                      "name": "Examples"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.2.5.2",
+                  "name": "Endoergic Reactions",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.2.5.2.1",
+                      "name": "Definition and Characteristics"
+                    },
+                    {
+                      "id": "NRA.2.5.2.2",
+                      "name": "Examples"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.2.6",
+              "name": "Kinetic Energy Requirements for Endoergic Reactions",
+              "subConcepts": [
+                {
+                  "id": "NRA.2.6.1",
+                  "name": "Threshold Energies"
+                },
+                {
+                  "id": "NRA.2.6.2",
+                  "name": "Impact on Reaction Rates and Feasibility"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Types of Nuclear Decay",
+          "concepts": [
+            {
+              "id": "NRA.3.1",
+              "name": "Alpha Decay",
+              "subConcepts": [
+                {
+                  "id": "NRA.3.1.1",
+                  "name": "Effect on Stability of the Nucleus",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.1.1",
+                      "name": "Reduction in Mass and Charge"
+                    },
+                    {
+                      "id": "NRA.3.1.1.2",
+                      "name": "Movement Towards the Valley of Stability"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.1.2",
+                  "name": "General Reaction",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.2.1",
+                      "name": "Representation of Alpha Emission"
+                    },
+                    {
+                      "id": "NRA.3.1.2.2",
+                      "name": "Example Reactions"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.1.3",
+                  "name": "Q Value Calculations",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.3.1",
+                      "name": "Step-by-Step Methodology"
+                    },
+                    {
+                      "id": "NRA.3.1.3.2",
+                      "name": "Example Calculation"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.1.4",
+                  "name": "Distribution of Energy in Alpha Particle and Daughter Nucleus",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.4.1",
+                      "name": "Recoil Energy Considerations"
+                    },
+                    {
+                      "id": "NRA.3.1.4.2",
+                      "name": "Energy Partitioning Formulas"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.1.5",
+                  "name": "Tunneling Effect (Conceptual)",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.5.1",
+                      "name": "Quantum Tunneling Mechanism for Alpha Emission"
+                    },
+                    {
+                      "id": "NRA.3.1.5.2",
+                      "name": "Factors Affecting Tunneling Probability"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.1.6",
+                  "name": "Probability Order and Reason for Finite Rate of Reaction (Conceptual)",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.1.6.1",
+                      "name": "Dependence on Barrier Width and Height"
+                    },
+                    {
+                      "id": "NRA.3.1.6.2",
+                      "name": "Statistical Nature of Decay Rates"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.3.2",
+              "name": "Beta Decay",
+              "subConcepts": [
+                {
+                  "id": "NRA.3.2.1",
+                  "name": "Types of Beta Decay",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.1.1",
+                      "name": "Beta-minus (β⁻) Decay"
+                    },
+                    {
+                      "id": "NRA.3.2.1.2",
+                      "name": "Beta-plus (β⁺) Decay"
+                    },
+                    {
+                      "id": "NRA.3.2.1.3",
+                      "name": "Electron Capture (K-capture)"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.2.2",
+                  "name": "Effect on Stability of the Nucleus",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.2.1",
+                      "name": "Adjustment of Neutron-to-Proton Ratio"
+                    },
+                    {
+                      "id": "NRA.3.2.2.2",
+                      "name": "Movement Towards Stability"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.2.3",
+                  "name": "General Reaction",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.3.1",
+                      "name": "Representation of Each Type of Beta Decay"
+                    },
+                    {
+                      "id": "NRA.3.2.3.2",
+                      "name": "Example Reactions"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.2.4",
+                  "name": "Q Value Calculations",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.4.1",
+                      "name": "Step-by-Step Methodology"
+                    },
+                    {
+                      "id": "NRA.3.2.4.2",
+                      "name": "Example Calculation for Beta Decay"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.2.5",
+                  "name": "K-Capture Phenomena and Associated X-Ray Generation",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.5.1",
+                      "name": "Process of Electron Capture"
+                    },
+                    {
+                      "id": "NRA.3.2.5.2",
+                      "name": "Emission of Characteristic X-Rays"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.2.6",
+                  "name": "Continuous Energy Spectrum and Existence of Neutrino",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.2.6.1",
+                      "name": "Explanation of Continuous Energy Distribution"
+                    },
+                    {
+                      "id": "NRA.3.2.6.2",
+                      "name": "Introduction to Neutrino Concept"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.3.3",
+              "name": "Gamma Decay",
+              "subConcepts": [
+                {
+                  "id": "NRA.3.3.1",
+                  "name": "Discrete Energy Spectrum of Alpha Particles in Alpha Decay"
+                },
+                {
+                  "id": "NRA.3.3.2",
+                  "name": "Effect on Stability of the Nucleus",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.3.2.1",
+                      "name": "Emission of Excess Energy Without Changing Nucleon Number"
+                    },
+                    {
+                      "id": "NRA.3.3.2.2",
+                      "name": "Transition from Excited to Ground State"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.3.3.3",
+                  "name": "Frequency of Radiations",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.3.3.3.1",
+                      "name": "Relationship Between Gamma Ray Energy and Frequency"
+                    },
+                    {
+                      "id": "NRA.3.3.3.2",
+                      "name": "Placement Within the Electromagnetic Spectrum"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fission and Fusion Reactions",
+          "concepts": [
+            {
+              "id": "NRA.4.1",
+              "name": "Binding Energy Trends",
+              "subConcepts": [
+                {
+                  "id": "NRA.4.1.1",
+                  "name": "Binding Energy per Nucleon Curve",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.1.1.1",
+                      "name": "Explanation and Significance"
+                    },
+                    {
+                      "id": "NRA.4.1.1.2",
+                      "name": "Implications for Fission and Fusion"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.4.2",
+              "name": "Nuclear Fission",
+              "subConcepts": [
+                {
+                  "id": "NRA.4.2.1",
+                  "name": "Reason for Occurrence",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.2.1.1",
+                      "name": "Instability in Heavy Nuclei"
+                    },
+                    {
+                      "id": "NRA.4.2.1.2",
+                      "name": "High Binding Energy per Nucleon Trends"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.2.2",
+                  "name": "Examples and Energy Released",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.2.2.1",
+                      "name": "Uranium-235 Fission"
+                    },
+                    {
+                      "id": "NRA.4.2.2.2",
+                      "name": "Comparison of Energy Yields with Other Reactions"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.2.3",
+                  "name": "Q Value Calculations",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.2.3.1",
+                      "name": "Step-by-Step Methodology"
+                    },
+                    {
+                      "id": "NRA.4.2.3.2",
+                      "name": "Example Calculation for Fission"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.2.4",
+                  "name": "Controlled and Uncontrolled Chain Reactions",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.2.4.1",
+                      "name": "Mechanisms of Chain Reactions"
+                    },
+                    {
+                      "id": "NRA.4.2.4.2",
+                      "name": "Applications in Reactors and Weapons"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "NRA.4.3",
+              "name": "Nuclear Fusion",
+              "subConcepts": [
+                {
+                  "id": "NRA.4.3.1",
+                  "name": "Reason for Occurrence",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.3.1.1",
+                      "name": "Stability in Light Nuclei"
+                    },
+                    {
+                      "id": "NRA.4.3.1.2",
+                      "name": "High Binding Energy per Nucleon Trends"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.3.2",
+                  "name": "Requirements and Energy Released",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.3.2.1",
+                      "name": "High Temperature and Pressure Conditions"
+                    },
+                    {
+                      "id": "NRA.4.3.2.2",
+                      "name": "Comparison of Energy Yields with Fission"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.3.3",
+                  "name": "Q Value Calculations and Examples",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.3.3.1",
+                      "name": "Step-by-Step Methodology"
+                    },
+                    {
+                      "id": "NRA.4.3.3.2",
+                      "name": "Example Calculation for Fusion"
+                    }
+                  ]
+                },
+                {
+                  "id": "NRA.4.3.4",
+                  "name": "Nuclear Reactions Inside the Sun",
+                  "subConcepts": [
+                    {
+                      "id": "NRA.4.3.4.1",
+                      "name": "Proton-Proton Chain"
+                    },
+                    {
+                      "id": "NRA.4.3.4.2",
+                      "name": "CNO Cycle"
+                    },
+                    {
+                      "id": "NRA.4.3.4.3",
+                      "name": "Energy Generation and Stellar Processes"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    
+  ]
+}

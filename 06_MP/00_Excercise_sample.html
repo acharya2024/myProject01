@@ -1,0 +1,652 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <title>doPhysics | Exercises Template</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="controller.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .correct {
+                color: green;
+                font-weight: bold;
+            }
+    
+            .incorrect {
+                color: red;
+                font-weight: bold;
+            }
+    
+            .result-icon {
+                margin-left: 10px;
+                font-size: 1.5rem;
+            }
+    
+            .input-group {
+                margin-top: 10px;
+            }
+    
+            .option-btn {
+                margin: 5px 5px 5px 0;
+            }
+    
+            .option-btn.selected {
+                background-color: #0d6efd;
+                color: white;
+            }
+    
+            .option-btn.correct-option {
+                background-color: #198754;
+                color: white;
+            }
+    
+            .option-btn.incorrect-option {
+                background-color: #dc3545;
+                color: white;
+            }
+    
+            .small-input {
+                max-width: 200px;
+            }
+    
+            /* .restart-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            } */
+    
+            .accordion-item {
+                position: relative;
+            }
+    
+            .option-btn.disabled {
+                pointer-events: none;
+                opacity: 0.7;
+            }
+    
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container my-4 position-relative">
+            <!-- Restart Button -->
+            <div class="restart-btn">
+                <button class="btn btn-danger" onclick="restartProgress()">Restart Progress</button>
+            </div>
+    
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Chapter Title</h1>
+                        <p class="lead">Exercise Set</p>
+                        <hr class="my-4">
+                    </div>
+                    <div class="accordion" id="content">
+                        <!-- True or False Answers Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTrueFalse">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTrueFalse" aria-expanded="false"
+                                    aria-controls="collapseTrueFalse">
+                                    <strong>True or False Answers</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTrueFalse" class="accordion-collapse collapse"
+                                aria-labelledby="headingTrueFalse" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <!-- True/False Question 1 -->
+                                    <div class="card shadow-sm mb-3" id="question-1" data-exercise-name="TrueFalse" data-question-type="truefalse">
+                                        <div class="card-body">
+                                            <p class="text-muted text-center"><strong>Question 1</strong> </p><p>The speed of light in a vacuum is approximately \(3 \times 10^8\) m/s. True or False?</p>
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-primary option-btn" onclick="checkTrueFalseAnswer(1, 'true')">True</button>
+                                                <button type="button" class="btn btn-primary option-btn" onclick="checkTrueFalseAnswer(1, 'false')">False</button>
+                                            </div>
+                                            <span class="result-icon"></span>
+                                            <!-- Hint and Solution -->
+                                            <details>
+                                                <summary><strong>Hint</strong></summary>
+                                                <p>Recall the universally accepted value for the speed of light.</p>
+                                            </details>
+                                            <details class="solution-details hidden">
+                                                <summary><strong>Solution</strong></summary>
+                                                <p>The speed of light in a vacuum is a fundamental constant, approximately \(299,792,458\) m/s, which is often approximated as \(3 \times 10^8\) m/s.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- Add more True/False questions here -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- One Word Answers Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOneWord">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOneWord" aria-expanded="false"
+                                    aria-controls="collapseOneWord">
+                                    <strong>One Word Answers</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOneWord" class="accordion-collapse collapse"
+                                aria-labelledby="headingOneWord" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <!-- One Word Question 2 -->
+                                    <div class="card shadow-sm mb-3" id="question-2" data-exercise-name="OneWord" data-question-type="oneword">
+                                        <div class="card-body">
+                                            <p class="text-muted text-center"><strong>Question 1</strong> </p><p> What is the name of the particle responsible for electromagnetic force?</p>
+                                            <div class="input-group small-input">
+                                                <input type="text" class="form-control" placeholder="Enter your answer"
+                                                    data-answer="photon" id="input-2">
+                                                <button class="btn btn-outline-secondary" type="button"
+                                                    onclick="checkOneWordAnswer(2)">Submit</button>
+                                            </div>
+                                            <span class="result-icon"></span>
+                                            <!-- Hint and Solution -->
+                                            <details>
+                                                <summary><strong>Hint</strong></summary>
+                                                <p>It's a massless particle that carries light.</p>
+                                            </details>
+                                            <details class="solution-details hidden">
+                                                <summary><strong>Solution</strong></summary>
+                                                <p>The photon is the elementary particle responsible for electromagnetic phenomena, including light.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- Add more One Word questions here -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Option Answers Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSingleOption">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSingleOption" aria-expanded="false"
+                                    aria-controls="collapseSingleOption">
+                                    <strong>Single Option Answers</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseSingleOption" class="accordion-collapse collapse"
+                                aria-labelledby="headingSingleOption" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <!-- Single Option Question 3 -->
+                                    <div class="card shadow-sm mb-3" id="question-3" data-exercise-name="SingleOption" data-question-type="singleoption">
+                                        <div class="card-body">
+                                            <p class="text-muted text-center"><strong>Question 1</strong> </p><p> Which of the following is a scalar quantity?</p>
+                                            <div class="options-list">
+                                                <button class="btn btn-outline-primary option-btn" onclick="checkSingleOptionAnswer(3, 'A')">A) Velocity</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="checkSingleOptionAnswer(3, 'B')">B) Force</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="checkSingleOptionAnswer(3, 'C')">C) Speed</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="checkSingleOptionAnswer(3, 'D')">D) Acceleration</button>
+                                            </div>
+                                            <input type="hidden" data-answer="C">
+                                            <span class="result-icon"></span>
+                                            <!-- Hint and Solution -->
+                                            <details>
+                                                <summary><strong>Hint</strong></summary>
+                                                <p>Consider which quantities have magnitude only.</p>
+                                            </details>
+                                            <details class="solution-details hidden">
+                                                <summary><strong>Solution</strong></summary>
+                                                <p>Speed is a scalar quantity as it has only magnitude. The others are vector quantities with both magnitude and direction.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- Add more Single Option questions here -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Multiple Options Answers Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMultipleOption">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMultipleOption" aria-expanded="false"
+                                    aria-controls="collapseMultipleOption">
+                                    <strong>Multiple Options Answers</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseMultipleOption" class="accordion-collapse collapse"
+                                aria-labelledby="headingMultipleOption" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <!-- Multiple Option Question 4 -->
+                                    <div class="card shadow-sm mb-3" id="question-4" data-exercise-name="MultipleOption" data-question-type="multipleoption">
+                                        <div class="card-body">
+                                            <p class="text-muted text-center"><strong>Question 1</strong> </p><p> Which of the following are renewable energy sources? (Select all that apply)</p>
+                                            <div class="options-list">
+                                                <button class="btn btn-outline-primary option-btn" onclick="toggleMultipleOption(4, 'A')">A) Solar energy</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="toggleMultipleOption(4, 'B')">B) Coal</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="toggleMultipleOption(4, 'C')">C) Wind energy</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="toggleMultipleOption(4, 'D')">D) Natural gas</button>
+                                                <button class="btn btn-outline-primary option-btn" onclick="toggleMultipleOption(4, 'E')">E) Hydroelectric power</button>
+                                            </div>
+                                            <button class="btn btn-outline-secondary mt-2" type="button" onclick="checkMultipleOptionAnswer(4)">Submit</button>
+                                            <input type="hidden" data-answer="A,C,E">
+                                            <span class="result-icon"></span>
+                                            <!-- Hint and Solution -->
+                                            <details>
+                                                <summary><strong>Hint</strong></summary>
+                                                <p>Renewable energy sources are those that are replenished naturally.</p>
+                                            </details>
+                                            <details class="solution-details hidden">
+                                                <summary><strong>Solution</strong></summary>
+                                                <p>Solar, wind, and hydroelectric power are renewable. Coal and natural gas are fossil fuels and non-renewable.</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- Add more Multiple Option questions here -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Numerical Answers Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNumerical">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNumerical" aria-expanded="false"
+                                    aria-controls="collapseNumerical">
+                                    <strong>Numerical Answers</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseNumerical" class="accordion-collapse collapse"
+                                aria-labelledby="headingNumerical" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <!-- Numerical Question 5 -->
+                                    <div class="card shadow-sm mb-3" id="question-5" data-exercise-name="Numerical" data-question-type="numerical">
+                                        <div class="card-body">
+                                            <p class="text-muted text-center"><strong>Question 1</strong> </p><p> Calculate the kinetic energy of a 2 kg object moving at a speed of 3 m/s.</p>
+                                            <div class="input-group small-input">
+                                                <input type="number" step="any" class="form-control" placeholder="Enter your answer in Joules"
+                                                    data-answer="9" data-range="0.1" id="input-5">
+                                                <button class="btn btn-outline-secondary" type="button"
+                                                    onclick="checkNumericalAnswer(5)">Submit</button>
+                                            </div>
+                                            <span class="result-icon"></span>
+                                            <!-- Hint and Solution -->
+                                            <details>
+                                                <summary><strong>Hint</strong></summary>
+                                                <p>Use the kinetic energy formula \( KE = \frac{1}{2}mv^2 \).</p>
+                                            </details>
+                                            <details class="solution-details hidden">
+                                                <summary><strong>Solution</strong></summary>
+                                                <p>\( KE = \frac{1}{2} \times 2 \, \text{kg} \times (3 \, \text{m/s})^2 = 9 \, \text{J} \).</p>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <!-- Add more Numerical questions here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Accordion -->
+                </div>
+            </div>
+    
+            <!-- Include Bootstrap JS and dependencies -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Include MathJax for rendering mathematical equations -->
+            <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', loadProgress);
+    
+                // Function to check True/False answers
+                function checkTrueFalseAnswer(questionId, userAnswer) {
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const correctAnswer = questionCard.querySelector('.btn-group').getAttribute('data-answer') || 'true'; // Modify as needed
+                    const resultIcon = questionCard.querySelector('.result-icon');
+                    const btns = questionCard.querySelectorAll('.option-btn');
+    
+                    let status = 'incorrect';
+                    if (userAnswer === correctAnswer) {
+                        status = 'correct';
+                    }
+    
+                    // Update button colors
+                    btns.forEach(btn => {
+                        btn.disabled = true;
+                        if (btn.textContent.trim().toLowerCase() === userAnswer) {
+                            if (status === 'correct') {
+                                btn.classList.remove('btn-primary');
+                                btn.classList.add('btn-success');
+                            } else {
+                                btn.classList.remove('btn-primary');
+                                btn.classList.add('btn-danger');
+                            }
+                        } else {
+                            btn.classList.remove('btn-primary');
+                            btn.classList.add('btn-secondary');
+                        }
+                    });
+    
+                    // Display result icon
+                    if (status === 'correct') {
+                        resultIcon.textContent = "✓";
+                        resultIcon.classList.add('correct');
+                        resultIcon.classList.remove('incorrect');
+                    } else {
+                        resultIcon.textContent = "✗";
+                        resultIcon.classList.add('incorrect');
+                        resultIcon.classList.remove('correct');
+                    }
+    
+                    // Show the solution
+                    const solutionDetails = questionCard.querySelector('.solution-details');
+                    solutionDetails.classList.remove('hidden');
+    
+                    // Save progress
+                    saveProgress(questionId, status);
+                }
+    
+                // Function to check One Word answers
+                function checkOneWordAnswer(questionId) {
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const input = questionCard.querySelector('input');
+                    const correctAnswer = input.getAttribute('data-answer').toLowerCase();
+                    const userAnswer = input.value.trim().toLowerCase();
+                    const resultIcon = questionCard.querySelector('.result-icon');
+    
+                    let isCorrect = false;
+                    if (userAnswer === correctAnswer) {
+                        isCorrect = true;
+                    }
+    
+                    if (isCorrect) {
+                        resultIcon.textContent = "✓";
+                        resultIcon.classList.add('correct');
+                        resultIcon.classList.remove('incorrect');
+                    } else {
+                        resultIcon.textContent = "✗";
+                        resultIcon.classList.add('incorrect');
+                        resultIcon.classList.remove('correct');
+                    }
+    
+                    // Disable input and button
+                    input.disabled = true;
+                    questionCard.querySelector('button').disabled = true;
+    
+                    // Show the solution
+                    const solutionDetails = questionCard.querySelector('.solution-details');
+                    solutionDetails.classList.remove('hidden');
+    
+                    // Save progress
+                    saveProgress(questionId, isCorrect ? 'correct' : 'incorrect');
+                }
+    
+                // Function to check Single Option answers
+                function checkSingleOptionAnswer(questionId, selectedOption) {
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const correctAnswer = questionCard.querySelector('input[type="hidden"]').getAttribute('data-answer');
+                    const resultIcon = questionCard.querySelector('.result-icon');
+                    const optionBtns = questionCard.querySelectorAll('.option-btn');
+    
+                    let status = 'incorrect';
+                    if (selectedOption === correctAnswer) {
+                        status = 'correct';
+                    }
+    
+                    // Update option button styles
+                    optionBtns.forEach(btn => {
+                        btn.disabled = true;
+                        const btnValue = btn.textContent.trim().charAt(0);
+                        if (btnValue === correctAnswer) {
+                            btn.classList.remove('btn-outline-primary');
+                            btn.classList.add('btn-success');
+                        }
+                        if (btnValue === selectedOption && status === 'incorrect') {
+                            btn.classList.remove('btn-outline-primary');
+                            btn.classList.add('btn-danger');
+                        }
+                    });
+    
+                    // Display result icon
+                    if (status === 'correct') {
+                        resultIcon.textContent = "✓";
+                        resultIcon.classList.add('correct');
+                        resultIcon.classList.remove('incorrect');
+                    } else {
+                        resultIcon.textContent = "✗";
+                        resultIcon.classList.add('incorrect');
+                        resultIcon.classList.remove('correct');
+                    }
+    
+                    // Show the solution
+                    const solutionDetails = questionCard.querySelector('.solution-details');
+                    solutionDetails.classList.remove('hidden');
+    
+                    // Save progress
+                    saveProgress(questionId, status);
+                }
+    
+                // Function to toggle selection for Multiple Option questions
+                function toggleMultipleOption(questionId, option) {
+                    const btn = event.target;
+    
+                    if (!btn.classList.contains('selected')) {
+                        btn.classList.add('selected');
+                        btn.classList.remove('btn-outline-primary');
+                        btn.classList.add('btn-primary');
+                    } else {
+                        btn.classList.remove('selected');
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline-primary');
+                    }
+                }
+    
+                // Function to check Multiple Option answers
+                function checkMultipleOptionAnswer(questionId) {
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const selectedBtns = questionCard.querySelectorAll('.option-btn.selected');
+                    const correctAnswers = questionCard.querySelector('input[type="hidden"]').getAttribute('data-answer').split(',');
+                    const resultIcon = questionCard.querySelector('.result-icon');
+    
+                    let userAnswers = [];
+                    selectedBtns.forEach(btn => {
+                        const value = btn.textContent.trim().charAt(0);
+                        userAnswers.push(value);
+                    });
+    
+                    // Check if userAnswers match correctAnswers
+                    let status = 'correct';
+                    if (userAnswers.length !== correctAnswers.length) {
+                        status = 'incorrect';
+                    } else {
+                        for (let ans of correctAnswers) {
+                            if (!userAnswers.includes(ans.trim())) {
+                                status = 'incorrect';
+                                break;
+                            }
+                        }
+                    }
+    
+                    // Update button styles
+                    const optionBtns = questionCard.querySelectorAll('.option-btn');
+                    optionBtns.forEach(btn => {
+                        btn.disabled = true;
+                        const value = btn.textContent.trim().charAt(0);
+                        if (correctAnswers.includes(value)) {
+                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                            btn.classList.add('btn-success');
+                        } else if (userAnswers.includes(value)) {
+                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                            btn.classList.add('btn-danger');
+                        } else {
+                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                            btn.classList.add('btn-secondary');
+                        }
+                    });
+    
+                    // Display result icon
+                    if (status === 'correct') {
+                        resultIcon.textContent = "✓";
+                        resultIcon.classList.add('correct');
+                        resultIcon.classList.remove('incorrect');
+                    } else {
+                        resultIcon.textContent = "✗";
+                        resultIcon.classList.add('incorrect');
+                        resultIcon.classList.remove('correct');
+                    }
+    
+                    // Show the solution
+                    const solutionDetails = questionCard.querySelector('.solution-details');
+                    solutionDetails.classList.remove('hidden');
+    
+                    // Save user answers to progress
+                    saveProgress(questionId, status, userAnswers);
+                }
+    
+                // Function to check Numerical answers
+                function checkNumericalAnswer(questionId) {
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const input = questionCard.querySelector('input');
+                    const correctAnswer = parseFloat(input.getAttribute('data-answer'));
+                    const tolerance = parseFloat(input.getAttribute('data-range'));
+                    const userAnswer = parseFloat(input.value);
+                    const resultIcon = questionCard.querySelector('.result-icon');
+    
+                    let isCorrect = false;
+                    if (!isNaN(userAnswer) && Math.abs(userAnswer - correctAnswer) <= tolerance) {
+                        isCorrect = true;
+                    }
+    
+                    if (isCorrect) {
+                        resultIcon.textContent = "✓";
+                        resultIcon.classList.add('correct');
+                        resultIcon.classList.remove('incorrect');
+                    } else {
+                        resultIcon.textContent = "✗";
+                        resultIcon.classList.add('incorrect');
+                        resultIcon.classList.remove('correct');
+                    }
+    
+                    // Disable input and button
+                    input.disabled = true;
+                    questionCard.querySelector('button').disabled = true;
+    
+                    // Show the solution
+                    const solutionDetails = questionCard.querySelector('.solution-details');
+                    solutionDetails.classList.remove('hidden');
+    
+                    // Save progress
+                    saveProgress(questionId, isCorrect ? 'correct' : 'incorrect', userAnswer);
+                }
+    
+                // Function to save the progress in local storage with exercise name
+                function saveProgress(questionId, status, userResponse = null) {
+                    let progress = JSON.parse(localStorage.getItem('exerciseProgress')) || {};
+                    const questionCard = document.getElementById(`question-${questionId}`);
+                    const exerciseName = questionCard.getAttribute('data-exercise-name');
+                    progress[`exercise-${exerciseName}-question-${questionId}`] = {
+                        status: status,
+                        response: userResponse
+                    };
+                    localStorage.setItem('exerciseProgress', JSON.stringify(progress));
+                }
+    
+                // Function to load saved progress from local storage
+                function loadProgress() {
+                    const progress = JSON.parse(localStorage.getItem('exerciseProgress')) || {};
+    
+                    for (const key in progress) {
+                        if (progress.hasOwnProperty(key)) {
+                            const { status, response } = progress[key];
+                            const [_, exercise, , questionId] = key.split('-');
+                            const questionCard = document.getElementById(`question-${questionId}`);
+                            const resultIcon = questionCard.querySelector('.result-icon');
+                            const questionType = questionCard.getAttribute('data-question-type');
+    
+                            if (status === 'correct' || status === 'incorrect') {
+                                if (questionType === 'truefalse') {
+                                    const btns = questionCard.querySelectorAll('.option-btn');
+                                    btns.forEach(btn => {
+                                        btn.disabled = true;
+                                        const btnValue = btn.textContent.trim().toLowerCase();
+                                        if (btnValue === response) {
+                                            if (status === 'correct') {
+                                                btn.classList.remove('btn-primary');
+                                                btn.classList.add('btn-success');
+                                            } else {
+                                                btn.classList.remove('btn-primary');
+                                                btn.classList.add('btn-danger');
+                                            }
+                                        } else {
+                                            btn.classList.remove('btn-primary');
+                                            btn.classList.add('btn-secondary');
+                                        }
+                                    });
+                                } else if (questionType === 'oneword') {
+                                    const input = questionCard.querySelector('input');
+                                    input.disabled = true;
+                                    questionCard.querySelector('button').disabled = true;
+                                    input.value = response;
+                                } else if (questionType === 'singleoption') {
+                                    const optionBtns = questionCard.querySelectorAll('.option-btn');
+                                    const correctAnswer = questionCard.querySelector('input[type="hidden"]').getAttribute('data-answer');
+                                    optionBtns.forEach(btn => {
+                                        btn.disabled = true;
+                                        const btnValue = btn.textContent.trim().charAt(0);
+                                        if (btnValue === correctAnswer) {
+                                            btn.classList.remove('btn-outline-primary');
+                                            btn.classList.add('btn-success');
+                                        }
+                                        if (btnValue === response && btnValue !== correctAnswer) {
+                                            btn.classList.remove('btn-outline-primary');
+                                            btn.classList.add('btn-danger');
+                                        }
+                                    });
+                                } else if (questionType === 'multipleoption') {
+                                    const optionBtns = questionCard.querySelectorAll('.option-btn');
+                                    const correctAnswers = questionCard.querySelector('input[type="hidden"]').getAttribute('data-answer').split(',');
+                                    const userAnswers = response;
+    
+                                    optionBtns.forEach(btn => {
+                                        btn.disabled = true;
+                                        const value = btn.textContent.trim().charAt(0);
+                                        if (correctAnswers.includes(value)) {
+                                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                                            btn.classList.add('btn-success');
+                                        } else if (userAnswers.includes(value)) {
+                                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                                            btn.classList.add('btn-danger');
+                                        } else {
+                                            btn.classList.remove('btn-outline-primary', 'btn-primary');
+                                            btn.classList.add('btn-secondary');
+                                        }
+                                    });
+                                } else if (questionType === 'numerical') {
+                                    const input = questionCard.querySelector('input');
+                                    input.disabled = true;
+                                    questionCard.querySelector('button').disabled = true;
+                                    input.value = response;
+                                }
+    
+                                // Display result icon
+                                if (status === 'correct') {
+                                    resultIcon.textContent = "✓";
+                                    resultIcon.classList.add('correct');
+                                    resultIcon.classList.remove('incorrect');
+                                } else {
+                                    resultIcon.textContent = "✗";
+                                    resultIcon.classList.add('incorrect');
+                                    resultIcon.classList.remove('correct');
+                                }
+    
+                                // Show the solution
+                                const solutionDetails = questionCard.querySelector('.solution-details');
+                                solutionDetails.classList.remove('hidden');
+                            }
+                        }
+                    }
+                }
+    
+                // Function to clear progress and reset the page
+                function restartProgress() {
+                    localStorage.removeItem('exerciseProgress');
+                    location.reload();
+                }
+            </script>
+        </body>
+    
+    </html>
+    

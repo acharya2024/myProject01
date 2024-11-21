@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+
+    <title>Physics Simulations</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Rotational Mechanics</h1>
+        <h2 class="text-center">Activity: #1</h2>
+        <h2 class="text-center text-muted">Rotation of cube</h2>
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions for Use:</strong>
+                <ol>
+                    GPT Instructions: INSTRUCTIONS controlling the activity is to be written here in following list. Following is an example instruction
+                    <li><strong>Watch the Cube:</strong> See the cube in the center? It spins around an axis (X, Y, or
+                        Z).</li>
+                    <li><strong>Control Speed:</strong> Use the 'Angular Velocity' slider to speed up or slow down the
+                        spin.</li>
+                    <li><strong>Change Axis:</strong> Pick a new axis (X, Y, or Z) from the 'Control Card'. The cube
+                        will start spinning around this new axis from its starting position.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <div id="simulationCanvas"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="arrowButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card">
+                            <!-- Your control card contents here -->
+                            <p class="card-text">
+                                All the controls, (input parameters to be set by users) to be done by this place
+                            </p>
+                            <input type="range" min="0" max="0.1" step="0.01" value="0.05" id="angularVelocitySlider">
+                            <p class="card-text mt-3">
+                                Label for the control buttons to be written here. Following is an example input group:
+                            </p>
+                            <div>
+                                <input type="radio" name="rotationAxis" value="x" id="rotateX" checked>
+                                <span
+                                    style="background-color: orange; width: 10px; height: 10px; display: inline-block; margin-right: 5px;"></span>
+                                <label for="rotateX">X-axis</label><br>
+                                <input type="radio" name="rotationAxis" value="y" id="rotateY">
+                                <span
+                                    style="background-color: yellow; width: 10px; height: 10px; display: inline-block; margin-right: 5px;"></span>
+                                <label for="rotateY">Y-axis</label><br>
+                                <input type="radio" name="rotationAxis" value="z" id="rotateZ">
+                                <span
+                                    style="background-color: blue; width: 10px; height: 10px; display: inline-block; margin-right: 5px;"></span>
+                                <label for="rotateZ">Z-axis</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script>
+        HERE SCRIPTING IS TO BE DONE
+
+        MAY BE THREE.js may be MATTER.js to be used to run activity. WHatever is convenient.
+
+    </script>
+
+</body>
+
+</html>

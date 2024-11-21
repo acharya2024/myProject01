@@ -1,0 +1,2588 @@
+{
+    "questions": [
+        {
+            "id": "TF.AST.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Rutherford's model proposed that the atom has a small, dense nucleus with electrons orbiting around it.",
+            "solution": "True. Rutherford's gold foil experiment led to the nuclear model of the atom, where a small, dense nucleus is surrounded by orbiting electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the conclusions from Rutherford's gold foil experiment.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Rutherford Model",
+                    "Atomic Structure",
+                    "Nuclear Model"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 14,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "According to Rutherford's model, most of the mass of the atom is concentrated in the electrons.",
+            "solution": "False. In Rutherford's model, most of the mass is concentrated in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Where is most of the mass located in the nuclear model?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Rutherford Model",
+                    "Atomic Mass Distribution",
+                    "Nuclear Model"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.1.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Rutherford model could explain the discrete spectral lines observed in hydrogen's emission spectrum.",
+            "solution": "False. One of the drawbacks of Rutherford's model is that it could not explain the discrete spectral lines; this was later addressed by Bohr's model.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider whether Rutherford's model could explain atomic spectra.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Drawbacks of Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Rutherford Model",
+                    "Model Limitations"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Bohr's model introduced the concept of quantized angular momentum for electrons in orbit.",
+            "solution": "True. Bohr postulated that the angular momentum of electrons is quantized, leading to discrete energy levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about Bohr's postulates regarding angular momentum.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Bohr's Model - Quantized Angular Momentum",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Quantization",
+                    "Angular Momentum"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In Bohr's model, electrons can have any energy while orbiting the nucleus.",
+            "solution": "False. Electrons can only occupy certain energy levels; their energies are quantized.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Are electron energies continuous or quantized in Bohr's model?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Bohr's Model - Postulates",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Energy Levels",
+                    "Quantization"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.5.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Bohr model successfully explained the spectra of multi-electron atoms.",
+            "solution": "False. The Bohr model accurately explains hydrogen-like atoms but fails for multi-electron atoms due to electron-electron interactions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the limitations of Bohr's model for atoms beyond hydrogen.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Drawbacks of Bohr's Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Atomic Spectra",
+                    "Model Limitations"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "According to Bohr's postulates, electrons emit or absorb energy when they jump between stationary orbits.",
+            "solution": "True. Bohr postulated that electrons transition between orbits by emitting or absorbing photons equal to the energy difference between levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how electrons change orbits in Bohr's model.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Electron Transitions and Photons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Electron Transitions",
+                    "Photon Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The concept of stationary orbits in Bohr's model means that electrons do not radiate energy while in these orbits.",
+            "solution": "True. Bohr proposed that electrons in stationary orbits do not emit radiation despite accelerating.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "What is meant by stationary orbits in Bohr's model?",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Stationary Orbits",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Stationary Orbits",
+                    "Energy Emission"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Bohr's quantization rule was derived from the wave nature of electrons.",
+            "solution": "True. Bohr's quantization of angular momentum can be justified by considering the standing wave condition for electrons, leading to quantized orbits.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the relation between de Broglie wavelengths and quantized orbits.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Quantisation Rule via Wave Function",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.6,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Wave-Particle Duality",
+                    "Quantization"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The magnetic dipole moment of an electron in a Bohr orbit is directly proportional to the square of the orbit number \\( n \\).",
+            "solution": "False. The magnetic dipole moment is proportional to \\( n \\), not \\( n^2 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "How does the magnetic dipole moment depend on the orbit number \\( n \\)?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Magnetic Dipole Moment",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Magnetic Dipole Moment",
+                    "Orbit Number"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The radius of an electron's orbit in the Bohr model is proportional to \\( n^2 \\).",
+            "solution": "True. The radius \\( r_n = n^2 a_0 \\), where \\( a_0 \\) is the Bohr radius.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the expression for the radius in Bohr's model.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Radius",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Orbit Radius",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.2.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The time period of an electron in a Bohr orbit is proportional to \\( n^3 \\).",
+            "solution": "True. Time period \\( T \\) is proportional to \\( n^3 \\) due to dependence on radius and velocity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "How does time period vary with \\( n \\) in Bohr's model?",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Time Period",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Time Period",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.2.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The kinetic energy of an electron in a Bohr orbit is negative.",
+            "solution": "False. The kinetic energy is positive; it's the potential energy and total energy that are negative.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Is kinetic energy ever negative?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Kinetic, Potential, and Total Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Kinetic Energy",
+                    "Energy Levels"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.2.2.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The potential energy of an electron in a Bohr orbit is twice its kinetic energy.",
+            "solution": "False. Potential energy is actually negative and equal to \\(-2\\) times the kinetic energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the relation between kinetic and potential energy in circular orbits.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Kinetic, Potential, and Total Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Potential Energy",
+                    "Energy Relations"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.1.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "According to Bohr's model, the angular momentum of an electron is quantized and given by \\( L = n\\hbar \\).",
+            "solution": "True. Bohr postulated that angular momentum is an integer multiple of reduced Planck's constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "What is the quantization condition for angular momentum in Bohr's model?",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Bohr's Model - Quantized Angular Momentum",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Angular Momentum",
+                    "Quantization"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.3.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Lyman series corresponds to electron transitions ending at \\( n = 2 \\).",
+            "solution": "False. The Lyman series corresponds to transitions ending at \\( n = 1 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Which energy level do electrons transition to in the Lyman series?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Series Nomenclature - Lyman Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Atomic Transitions",
+                    "Lyman Series",
+                    "Energy Levels"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.3.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Balmer series is visible in the ultraviolet region of the spectrum.",
+            "solution": "False. The Balmer series is observed in the visible light region.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "In which part of the spectrum is the Balmer series observed?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Series Nomenclature - Balmer Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Atomic Transitions",
+                    "Balmer Series",
+                    "Spectral Lines"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.3.1.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In atomic transitions, the emitted photon energy equals the difference between the initial and final energy levels.",
+            "solution": "True. The energy of the emitted photon corresponds to the energy difference between the two levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "How is photon energy related to energy levels in transitions?",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Photon Emission and Absorption",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Atomic Transitions",
+                    "Photon Energy",
+                    "Energy Levels"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.3.1.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Ritz combination principle states that spectral lines correspond to differences between energy levels.",
+            "solution": "True. The Ritz combination principle states that the frequencies of spectral lines are combinations of terms corresponding to energy levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "What does the Ritz combination principle state?",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Ritz Combination Principle",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Atomic Transitions",
+                    "Spectral Lines",
+                    "Ritz Principle"
+                ]
+            }
+        },
+        {
+            "id": "TF.AST.3.4.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Bohr model accounts for the recoil of atoms during photon emission.",
+            "solution": "False. The Bohr model does not consider the recoil of atoms; it assumes the nucleus remains stationary.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Does Bohr's model include the recoil of atoms?",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Recoiling of Atoms During Transition",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Atomic Recoil",
+                    "Model Limitations"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which scientist proposed the nuclear model of the atom after the gold foil experiment?",
+            "solution": "Ernest Rutherford proposed the nuclear model of the atom, where a small, dense nucleus is surrounded by electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He is known for the gold foil experiment.",
+            "answer": [
+                "Rutherford",
+                "Ernest Rutherford",
+                "E. Rutherford"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Rutherford Model",
+                    "Atomic Structure",
+                    "Historical Figures"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What particles did Rutherford use in his scattering experiment to probe the structure of the atom?",
+            "solution": "Rutherford used alpha particles in his gold foil scattering experiment.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "These particles are helium nuclei.",
+            "answer": [
+                "Alpha",
+                "Alpha particles",
+                "α particles"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Alpha Particles and Properties",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Alpha Particles",
+                    "Rutherford Experiment",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.1.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In Rutherford's model, what term describes the closest distance an alpha particle can approach the nucleus before being deflected?",
+            "solution": "The distance of closest approach is the minimum distance between the alpha particle and the nucleus during scattering.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's called the 'distance of ______ approach.'",
+            "answer": [
+                "Closest",
+                "Distance of closest approach",
+                "closest approach"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Distance of Closest Approach",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Distance of Closest Approach",
+                    "Rutherford Model",
+                    "Scattering"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.1.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the central positively charged part of the atom called in Rutherford's model?",
+            "solution": "In Rutherford's model, the central positive core is called the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the term for the atom's core.",
+            "answer": [
+                "Nucleus",
+                "nucleus"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Nucleus",
+                    "Atomic Structure",
+                    "Rutherford Model"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 24,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What phenomenon could not be explained by Rutherford's model, leading to the development of Bohr's model?",
+            "solution": "Rutherford's model could not explain the stability of atoms and the hydrogen spectral lines, which led to Bohr's model.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It relates to atomic emission spectra.",
+            "answer": [
+                "Spectra",
+                "Spectral lines",
+                "Hydrogen spectral lines"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Drawbacks of Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.5,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Spectral Lines",
+                    "Rutherford Model",
+                    "Atomic Spectra"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 26,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which scientist proposed that electrons move in fixed orbits with quantized angular momentum?",
+            "solution": "Niels Bohr proposed that electrons move in fixed orbits with quantized angular momentum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He developed the planetary model of the atom.",
+            "answer": [
+                "Bohr",
+                "Niels Bohr"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Bohr's Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Atomic Structure",
+                    "Historical Figures"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "According to Bohr, electrons emit or absorb energy in the form of what when they transition between orbits?",
+            "solution": "Electrons emit or absorb energy in the form of photons when they transition between energy levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a quantum of electromagnetic energy.",
+            "answer": [
+                "Photon",
+                "Photons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Electron Transitions and Photons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Photon Emission",
+                    "Electron Transitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for orbits where electrons do not radiate energy in Bohr's model?",
+            "solution": "These are called stationary orbits in Bohr's model.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They are called '________ orbits.'",
+            "answer": [
+                "Stationary",
+                "Stationary orbits"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Stationary Orbits",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Stationary Orbits",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.1.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 27,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Bohr's quantization rule states that the angular momentum of an electron is an integer multiple of what constant?",
+            "solution": "The angular momentum is quantized in units of Planck's constant divided by \\( 2\\pi \\), known as the reduced Planck constant or \\( \\hbar \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's represented by \\( \\hbar \\), called the reduced Planck constant.",
+            "answer": [
+                "Planck's",
+                "Planck's constant"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Quantized Angular Momentum",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Quantization",
+                    "Planck's Constant"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.1.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What kind of force keeps the electron in circular motion around the nucleus in Bohr's model?",
+            "solution": "The electrostatic (centripetal) force due to Coulomb attraction keeps the electron in circular motion.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the force described by Coulomb's law.",
+            "answer": [
+                "Electrostatic",
+                "Electrostatic force"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Particle in Potential Field",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Centripetal Force",
+                    "Electrostatic Force"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the name of the constant representing the smallest radius in the hydrogen atom according to Bohr's model?",
+            "solution": "The smallest radius is known as the Bohr radius.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's called the '____ radius,' named after the model's creator.",
+            "answer": [
+                "Bohr",
+                "Bohr radius"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Radius",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Bohr Radius",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.2.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In Bohr's model, what physical quantity of the electron is quantized and given by \\( n\\hbar \\)?",
+            "solution": "The angular momentum \\( L \\) of the electron is quantized in Bohr's model.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the rotational equivalent of linear momentum.",
+            "answer": [
+                "Angular momentum",
+                "angular momentum"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Quantized Angular Momentum",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Angular Momentum",
+                    "Quantization"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.2.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for the energy required to remove an electron from the ground state of an atom?",
+            "solution": "This energy is called the ionization energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the energy needed to ionize the atom.",
+            "answer": [
+                "Ionization",
+                "Ionization energy"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Definitions of Different Energies",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Ionization Energy",
+                    "Bohr's Model",
+                    "Energy Levels"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.2.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which physical quantity representing the electron's rotation per unit time is calculated in Bohr's model and is proportional to \\( n^{-3} \\)?",
+            "solution": "The angular velocity \\( \\omega \\) of the electron is calculated, and it varies with \\( n^{-3} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's symbolized by \\( \\omega \\) and relates to rotational speed.",
+            "answer": [
+                "Angular velocity",
+                "angular velocity"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Angular Velocity/Frequency",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Angular Velocity",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.2.4.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Considering the finite mass of the nucleus, Bohr's model requires correction to which fundamental force law?",
+            "solution": "The Coulomb's force law needs correction when considering nucleus motion.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the law that describes electrostatic interactions.",
+            "answer": [
+                "Coulomb's",
+                "Coulomb's law"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Correction in Coulomb's Force",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Finite Nucleus Mass",
+                    "Bohr's Model",
+                    "Coulomb's Law"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.3.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the name of the spectral series corresponding to electron transitions ending at \\( n = 1 \\)?",
+            "solution": "The Lyman series corresponds to transitions ending at \\( n = 1 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named after Theodore Lyman.",
+            "answer": [
+                "Lyman",
+                "Lyman series"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Lyman Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Lyman Series",
+                    "Electron Transitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.3.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which spectral series corresponds to electron transitions ending at \\( n = 2 \\) and is visible in the optical spectrum?",
+            "solution": "The Balmer series corresponds to transitions ending at \\( n = 2 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Named after Johann Balmer.",
+            "answer": [
+                "Balmer",
+                "Balmer series"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Balmer Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Balmer Series",
+                    "Electron Transitions"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.3.1.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 33,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In atomic transitions, what principle states that the sum of frequencies of two spectral lines is equal to the frequency of another line?",
+            "solution": "This is the Ritz combination principle.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named after Walter Ritz.",
+            "answer": [
+                "Ritz",
+                "Ritz combination principle"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Ritz Combination Principle",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Ritz Principle",
+                    "Spectral Lines"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.3.3.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In an atomic transition, what property of the emitted photon is directly proportional to the frequency?",
+            "solution": "The energy of the emitted photon is directly proportional to its frequency.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's calculated using \\( E = h\\nu \\).",
+            "answer": [
+                "Energy",
+                "energy"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Emitted Photon Characteristics",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Photon Energy",
+                    "Atomic Transitions",
+                    "Planck's Law"
+                ]
+            }
+        },
+        {
+            "id": "OW.AST.3.4.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "During photon emission, atoms experience a recoil due to conservation of what physical quantity?",
+            "solution": "Atoms recoil due to conservation of momentum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the product of mass and velocity.",
+            "answer": [
+                "Momentum",
+                "momentum"
+            ],
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Atomic Recoil",
+                    "Momentum Conservation",
+                    "Photon Emission"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In Rutherford's gold foil experiment, most alpha particles passed through the foil with minimal deflection. What conclusion did this observation lead to?",
+            "solution": "The observation that most alpha particles passed through the foil with little to no deflection led to the conclusion that atoms are mostly empty space.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what the lack of deflection implies about the atomic structure.",
+            "options": [
+                "A) Electrons are spread uniformly throughout the atom.",
+                "B) The nucleus occupies a large volume of the atom.",
+                "C) Atoms are mostly empty space with a small, dense nucleus.",
+                "D) Alpha particles are not suitable for probing atomic structure."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Conclusions on Particle Deviation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Rutherford Model",
+                    "Gold Foil Experiment",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following was a major drawback of Rutherford's atomic model?",
+            "solution": "Rutherford's model could not explain the stability of electrons in orbit; according to classical physics, electrons should spiral into the nucleus due to radiation of energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the issue of accelerating charges emitting radiation.",
+            "options": [
+                "A) It could not explain atomic spectra.",
+                "B) It incorrectly described the nucleus as negatively charged.",
+                "C) It suggested electrons are stationary around the nucleus.",
+                "D) It did not account for the existence of neutrons."
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Drawbacks of Rutherford Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Rutherford Model",
+                    "Model Limitations",
+                    "Atomic Spectra"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.1.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "According to Bohr's model, what determines the allowed radii of electron orbits in a hydrogen atom?",
+            "solution": "The allowed radii are determined by the quantization of angular momentum, given by \\( L = n\\hbar \\), leading to discrete orbit sizes.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the quantization condition imposed by Bohr.",
+            "options": [
+                "A) The electron's charge",
+                "B) The electron's quantized angular momentum",
+                "C) The atom's total energy",
+                "D) The atom's nuclear charge"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Quantized Angular Momentum",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Angular Momentum",
+                    "Quantization"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.1.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 37,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 13,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which postulate of Bohr's model explains the emission of discrete spectral lines?",
+            "solution": "Bohr's postulate that electrons transition between quantized energy levels by emitting or absorbing photons explains discrete spectral lines.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the postulate related to electron transitions and photon emission.",
+            "options": [
+                "A) Electrons move in elliptical orbits.",
+                "B) Angular momentum is quantized.",
+                "C) Energy is emitted or absorbed when electrons change orbits.",
+                "D) Electrons radiate energy continuously in an orbit."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Model of Atom",
+                "concept": "Electron Transitions and Photons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Spectral Lines",
+                    "Electron Transitions"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "For a hydrogen atom in the \\( n \\)th energy level, the speed of the electron \\( v_n \\) is given by which of the following expressions? (Here, \\( a_0 \\) is the Bohr radius, \\( e \\) is the electron charge, \\( h \\) is Planck's constant, and \\( \\varepsilon_0 \\) is the vacuum permittivity.)",
+            "solution": "The speed \\( v_n = \\frac{e^2}{2\\varepsilon_0 h} \\times \\frac{1}{n} \\), which shows that speed is inversely proportional to \\( n \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the quantization of angular momentum and centripetal force balance.",
+            "options": [
+                "A) \\( v_n = \\frac{e^2}{2\\varepsilon_0 h} \\times \\frac{1}{n} \\)",
+                "B) \\( v_n = \\frac{n e^2}{2\\varepsilon_0 h} \\)",
+                "C) \\( v_n = \\frac{e^2}{4\\pi \\varepsilon_0 a_0} \\times n \\)",
+                "D) \\( v_n = \\frac{h}{2\\pi m_e a_0} \\times n^2 \\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Speed",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Electron Speed",
+                    "Energy Levels"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The total energy \\( E_n \\) of an electron in the \\( n \\)th orbit of a hydrogen atom is proportional to:",
+            "solution": "Total energy \\( E_n \\) is proportional to \\( -\\frac{1}{n^2} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the formula \\( E_n = -\\frac{13.6\\,\\text{eV}}{n^2} \\).",
+            "options": [
+                "A) \\( E_n \\propto n \\)",
+                "B) \\( E_n \\propto \\frac{1}{n} \\)",
+                "C) \\( E_n \\propto -\\frac{1}{n^2} \\)",
+                "D) \\( E_n \\propto -n^2 \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Kinetic, Potential, and Total Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Energy Levels",
+                    "Total Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 13,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In Bohr's model, what is the ratio of the kinetic energy to the total energy of an electron in a hydrogen atom?",
+            "solution": "The kinetic energy \\( K \\) is equal to \\(-\\) the total energy \\( E \\), so \\( \\frac{K}{E} = -1 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( E = K + U \\) and \\( U = -2K \\).",
+            "options": [
+                "A) \\( \\frac{K}{E} = 2 \\)",
+                "B) \\( \\frac{K}{E} = -1 \\)",
+                "C) \\( \\frac{K}{E} = \\frac{1}{2} \\)",
+                "D) \\( \\frac{K}{E} = -2 \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Kinetic, Potential, and Total Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Energy Relations",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 41,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the magnetic dipole moment \\( \\mu \\) of an electron revolving in the \\( n \\)th orbit of a hydrogen atom?",
+            "solution": "The magnetic dipole moment \\( \\mu = \\frac{e v_n r_n}{2} = \\frac{n e \\hbar}{2 m_e} \\), showing \\( \\mu \\propto n \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Relate \\( \\mu \\) to the angular momentum of the electron.",
+            "options": [
+                "A) \\( \\mu = n^2 \\mu_B \\)",
+                "B) \\( \\mu = n \\mu_B \\)",
+                "C) \\( \\mu = \\frac{\\mu_B}{n} \\)",
+                "D) \\( \\mu = \\mu_B \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Magnetic Dipole Moment",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Magnetic Dipole Moment",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 44,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If the time period \\( T_n \\) of an electron in the \\( n \\)th orbit is proportional to \\( n^k \\), what is the value of \\( k \\)?",
+            "solution": "Time period \\( T_n \\propto n^3 \\), so \\( k = 3 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Time period depends on both radius and speed of the electron.",
+            "options": [
+                "A) \\( k = 1 \\)",
+                "B) \\( k = 2 \\)",
+                "C) \\( k = 3 \\)",
+                "D) \\( k = -1 \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Time Period",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.4,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Time Period",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 46,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following expressions gives the radius \\( r_n \\) of the \\( n \\)th orbit in a hydrogen-like atom with atomic number \\( Z \\)?",
+            "solution": "The radius \\( r_n = \\frac{n^2 h^2 \\varepsilon_0}{\\pi m_e Z e^2} \\), which is proportional to \\( \\frac{n^2}{Z} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Modify the Bohr radius formula for atomic number \\( Z \\).",
+            "options": [
+                "A) \\( r_n = n^2 a_0 Z \\)",
+                "B) \\( r_n = \\frac{a_0}{n^2 Z} \\)",
+                "C) \\( r_n = a_0 \\frac{n^2}{Z} \\)",
+                "D) \\( r_n = a_0 \\frac{Z}{n^2} \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Radius",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Orbit Radius",
+                    "Atomic Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 39,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Considering the finite mass of the nucleus, the reduced mass \\( \\mu \\) of the electron-nucleus system is given by:",
+            "solution": "The reduced mass \\( \\mu = \\frac{m_e M}{m_e + M} \\), where \\( m_e \\) is the electron mass and \\( M \\) is the nucleus mass.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the formula for reduced mass in two-body systems.",
+            "options": [
+                "A) \\( \\mu = m_e + M \\)",
+                "B) \\( \\mu = \\frac{m_e}{M} \\)",
+                "C) \\( \\mu = \\frac{m_e M}{m_e + M} \\)",
+                "D) \\( \\mu = m_e M \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Effect of Finite Mass of Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Reduced Mass",
+                    "Finite Nucleus Mass",
+                    "Bohr's Model"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.3.2.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 13,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which series of the hydrogen emission spectrum lies in the ultraviolet region?",
+            "solution": "The Lyman series lies in the ultraviolet region, corresponding to transitions ending at \\( n = 1 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the series with transitions to the ground state.",
+            "options": [
+                "A) Balmer series",
+                "B) Lyman series",
+                "C) Paschen series",
+                "D) Brackett series"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Lyman Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Lyman Series",
+                    "Ultraviolet Region"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.3.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An electron in a hydrogen atom transitions from an excited state to the ground state, emitting a photon of wavelength \\( \\lambda \\). If the atom is initially at rest, the recoil speed \\( v \\) of the atom is given by:",
+            "solution": "By conservation of momentum, \\( p_{\\text{photon}} = p_{\\text{atom}} \\), so \\( v = \\frac{h}{M\\lambda} \\), where \\( M \\) is the mass of the hydrogen atom.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use conservation of momentum and the photon's momentum.",
+            "options": [
+                "A) \\( v = \\frac{h}{M\\lambda} \\)",
+                "B) \\( v = \\frac{h\\lambda}{M} \\)",
+                "C) \\( v = \\frac{M\\lambda}{h} \\)",
+                "D) \\( v = \\frac{h}{\\lambda} \\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Recoiling of Atoms During Transition",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Photon Emission",
+                    "Momentum Conservation",
+                    "Atomic Recoil"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.3.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 43,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "According to the Ritz combination principle, which of the following is true for the frequencies \\( \\nu_{ij} \\) of spectral lines?",
+            "solution": "The Ritz combination principle states \\( \\nu_{ij} = \\nu_{ik} - \\nu_{jk} \\), where \\( i, j, k \\) are energy levels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Spectral line frequencies are differences of energy terms.",
+            "options": [
+                "A) \\( \\nu_{ij} = \\nu_i + \\nu_j \\)",
+                "B) \\( \\nu_{ij} = \\nu_i - \\nu_j \\)",
+                "C) \\( \\nu_{ij} = \\nu_{ik} - \\nu_{jk} \\)",
+                "D) \\( \\nu_{ij} = \\nu_i \\times \\nu_j \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Ritz Combination Principle",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Atomic Spectra",
+                    "Ritz Principle",
+                    "Spectral Lines"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.3.4.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a collision between a fast-moving electron and a stationary hydrogen atom, under what condition will the collision be inelastic?",
+            "solution": "The collision is inelastic if the electron transfers enough energy to excite the hydrogen atom to a higher energy level.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy required to excite the atom.",
+            "options": [
+                "A) If the electron's kinetic energy is less than the ionization energy",
+                "B) If the total kinetic energy is conserved",
+                "C) If the electron's kinetic energy exceeds the excitation energy",
+                "D) If the electron is repelled by the atom without energy transfer"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Collisions",
+                "concept": "Condition for Inelastic Collision",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Atomic Collisions",
+                    "Inelastic Collision",
+                    "Energy Transfer"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 13,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The frequency \\( f_n \\) of revolution of an electron in the \\( n \\)th Bohr orbit varies with \\( n \\) as:",
+            "solution": "Frequency \\( f_n \\propto \\frac{1}{n^3} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Frequency is inversely proportional to the time period.",
+            "options": [
+                "A) \\( f_n \\propto n^3 \\)",
+                "B) \\( f_n \\propto n \\)",
+                "C) \\( f_n \\propto \\frac{1}{n^3} \\)",
+                "D) \\( f_n \\propto \\frac{1}{n} \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Angular Velocity/Frequency",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.4,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Frequency",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.5.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 47,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following is NOT a drawback of Bohr's atomic model?",
+            "solution": "Bohr's model does not account for the Zeeman effect (splitting of spectral lines in a magnetic field), which is a limitation, but it does explain hydrogen spectra.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which phenomena Bohr's model successfully explains.",
+            "options": [
+                "A) Inability to explain spectra of multi-electron atoms",
+                "B) Failure to account for the Zeeman effect",
+                "C) Does not explain the stability of the atom",
+                "D) Successfully explains the hydrogen atomic spectra"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Drawbacks of Bohr's Model",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Model Limitations",
+                    "Atomic Spectra"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 43,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the expression for the current \\( I \\) associated with an electron orbiting in the \\( n \\)th Bohr orbit?",
+            "solution": "The current \\( I = \\frac{e}{T_n} = \\frac{e v_n}{2\\pi r_n} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the definition of current as charge per time.",
+            "options": [
+                "A) \\( I = e v_n r_n \\)",
+                "B) \\( I = \\frac{e v_n}{2\\pi r_n} \\)",
+                "C) \\( I = \\frac{2\\pi r_n}{e v_n} \\)",
+                "D) \\( I = \\frac{e}{n^2} \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Current",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Electron Current",
+                    "Orbiting Electron"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.2.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The magnetic field \\( B \\) at the center of the electron's orbit in the \\( n \\)th Bohr orbit is proportional to:",
+            "solution": "Magnetic field \\( B \\propto \\frac{I}{r_n} \\propto \\frac{1}{n^5} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the Biot-Savart law and relate current and radius to \\( n \\).",
+            "options": [
+                "A) \\( B \\propto n \\)",
+                "B) \\( B \\propto \\frac{1}{n^5} \\)",
+                "C) \\( B \\propto \\frac{1}{n^3} \\)",
+                "D) \\( B \\propto n^3 \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Applications of Bohr's Model",
+                "concept": "Magnetic Field at Center",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.4,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Bohr's Model",
+                    "Magnetic Field",
+                    "Quantum Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.AS.3.1.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements is true regarding atomic transitions?",
+            "solution": "An electron absorbs energy to move to a higher energy level and emits energy when it falls to a lower energy level.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the direction of energy flow during excitation and de-excitation.",
+            "options": [
+                "A) Electrons emit energy when moving to higher levels.",
+                "B) Electrons absorb energy when moving to lower levels.",
+                "C) Electrons absorb energy to move to higher levels.",
+                "D) Energy is not involved in electron transitions."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Atomic Structure",
+                "section": "Atomic Transitions",
+                "concept": "Excitation and De-excitation Processes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Atomic Transitions",
+                    "Energy Absorption",
+                    "Electron Transitions"
+                ]
+            }
+        }
+    ]
+}

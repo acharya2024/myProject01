@@ -1,0 +1,326 @@
+{
+    "questions":[
+        {
+            "id": "SO.PNR.2.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A photon with energy \\(10.2\\, \\text{eV}\\) collides with a stationary hydrogen atom in its ground state. What is the maximum kinetic energy that the hydrogen atom can acquire after the collision? (Assume the ionization energy of hydrogen is \\(13.6\\, \\text{eV}\\).)",
+            "solution": "Since the photon energy is less than the ionization energy, it cannot ionize the atom. Instead, it can excite the atom to a higher energy level. The energy difference between the ground state and the first excited state in hydrogen is \\(E_2 - E_1 = -3.4\\, \\text{eV} - (-13.6\\, \\text{eV}) = 10.2\\, \\text{eV}\\). The photon can be completely absorbed to excite the electron, leaving no kinetic energy for the atom. However, since the atom recoils, conservation of momentum dictates that the atom must acquire some kinetic energy. Using conservation of energy and momentum, the maximum kinetic energy of the atom is negligible compared to the photon energy due to the large mass difference.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider conservation of energy and momentum, and the energy levels of hydrogen.",
+            "options": [
+                "A) Approximately zero",
+                "B) \\(10.2\\, \\text{eV}\\)",
+                "C) \\(3.4\\, \\text{eV}\\)",
+                "D) \\(13.6\\, \\text{eV}\\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Modern Physics",
+                "section": "Photon Interactions",
+                "concept": "Photon-Atom Collisions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Photon Collision",
+                    "Energy Levels",
+                    "Conservation Laws"
+                ]
+            }
+        },
+        {
+            "id": "SO.PNR.2.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In Compton scattering, a photon of initial wavelength \\( \\lambda \\) scatters off a stationary electron and emerges with a longer wavelength \\( \\lambda' \\). The maximum change in wavelength \\( \\Delta \\lambda_{\\text{max}} \\) occurs when the photon is scattered at which angle?",
+            "solution": "The maximum change in wavelength occurs when the scattering angle \\( \\theta = 180^\\circ \\). Using the Compton formula \\( \\Delta \\lambda = \\frac{h}{m_e c}(1 - \\cos \\theta) \\), the maximum \\( \\Delta \\lambda_{\\text{max}} = \\frac{2h}{m_e c} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the angle that maximizes \\( (1 - \\cos \\theta) \\).",
+            "options": [
+                "A) \\( 0^\\circ \\)",
+                "B) \\( 90^\\circ \\)",
+                "C) \\( 180^\\circ \\)",
+                "D) \\( 270^\\circ \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Modern Physics",
+                "section": "Photon Interactions",
+                "concept": "Compton Scattering",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.1,
+                    "concept": 0.4,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Compton Effect",
+                    "Scattering Angle",
+                    "Photon-Electron Interaction"
+                ]
+            }
+        },
+        {
+            "id": "SO.PNR.2.1.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An X-ray photon undergoes Compton scattering with an electron and is scattered at an angle of \\(90^\\circ\\). If the initial wavelength of the photon is \\(0.01\\, \\text{nm}\\), what is the change in wavelength \\( \\Delta \\lambda \\) after scattering? (Use \\( \\frac{h}{m_e c} = 0.00243\\, \\text{nm} \\))",
+            "solution": "Using the Compton formula: \\( \\Delta \\lambda = \\frac{h}{m_e c}(1 - \\cos \\theta) \\). For \\( \\theta = 90^\\circ \\), \\( \\cos 90^\\circ = 0 \\), so \\( \\Delta \\lambda = 0.00243\\, \\text{nm} \\times (1 - 0) = 0.00243\\, \\text{nm} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Apply the Compton wavelength shift formula for the given angle.",
+            "options": [
+                "A) \\(0.00243\\, \\text{nm}\\)",
+                "B) \\(0.00486\\, \\text{nm}\\)",
+                "C) \\(0.00122\\, \\text{nm}\\)",
+                "D) \\(0.00000\\, \\text{nm}\\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Modern Physics",
+                "section": "Photon Interactions",
+                "concept": "Compton Scattering",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Compton Effect",
+                    "Wavelength Shift",
+                    "Photon-Electron Interaction"
+                ]
+            }
+        },
+        {
+            "id": "SO.PNR.2.1.Q21",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A photon collides with a stationary electron and is scattered at an angle of \\(60^\\circ\\). If the initial wavelength of the photon is \\(0.05\\, \\text{nm}\\), what is the wavelength of the scattered photon? (Use \\( \\frac{h}{m_e c} = 0.00243\\, \\text{nm} \\))",
+            "solution": "Using the Compton formula:\n\n\\( \\Delta \\lambda = \\frac{h}{m_e c}(1 - \\cos \\theta) = 0.00243\\, \\text{nm} \\times (1 - \\cos 60^\\circ) = 0.00243\\, \\text{nm} \\times (1 - 0.5) = 0.001215\\, \\text{nm} \\).\n\nTherefore, the scattered wavelength is \\( \\lambda' = \\lambda + \\Delta \\lambda = 0.05\\, \\text{nm} + 0.001215\\, \\text{nm} = 0.051215\\, \\text{nm} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Apply the Compton wavelength shift formula for the given angle.",
+            "options": [
+                "A) \\(0.048785\\, \\text{nm}\\)",
+                "B) \\(0.050000\\, \\text{nm}\\)",
+                "C) \\(0.051215\\, \\text{nm}\\)",
+                "D) \\(0.052430\\, \\text{nm}\\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Modern Physics",
+                "section": "Photon Interactions",
+                "concept": "Compton Scattering",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Compton Effect",
+                    "Wavelength Shift",
+                    "Photon-Electron Interaction"
+                ]
+            }
+        },
+        {
+            "id": "SO.PNR.2.1.Q14",
+            "statistics": {
+              "attempts": 0,
+              "hintsAccessed": 0,
+              "solved": 0,
+              "successRate": 0,
+              "idealAverageTime": 35,
+              "averageTimeTaken": 0,
+              "medianTime": 0,
+              "timeStdDev": 14,
+              "firstAttemptSuccessRate": 0,
+              "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A beam of electrons is accelerated through a potential difference of \\(150\\, \\text{V}\\). What is the de Broglie wavelength of these electrons? (Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\) and \\( m_e = 9.109 \\times 10^{-31}\\, \\text{kg} \\))",
+            "solution": "First, calculate the kinetic energy: \\( K = eV = 1.602 \\times 10^{-19} \\times 150 = 2.403 \\times 10^{-17}\\, \\text{J} \\). Then, find the momentum: \\( p = \\sqrt{2 m_e K} = \\sqrt{2 \\times 9.109 \\times 10^{-31} \\times 2.403 \\times 10^{-17}} = 8.332 \\times 10^{-24}\\, \\text{kg}\\cdot \\text{m/s} \\). The de Broglie wavelength is \\( \\lambda = \\frac{h}{p} = \\frac{6.626 \\times 10^{-34}}{8.332 \\times 10^{-24}} \\approx 7.95 \\times 10^{-11}\\, \\text{m} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use \\( \\lambda = \\frac{h}{p} \\) and relate kinetic energy to momentum.",
+            "options": [
+              "A) \\(7.95 \\times 10^{-11}\\, \\text{m}\\)",
+              "B) \\(1.23 \\times 10^{-10}\\, \\text{m}\\)",
+              "C) \\(5.48 \\times 10^{-12}\\, \\text{m}\\)",
+              "D) \\(2.43 \\times 10^{-9}\\, \\text{m}\\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+              "chapter": "Modern Physics",
+              "section": "Wave-Particle Duality",
+              "concept": "De Broglie Wavelength",
+              "source": "Generated",
+              "resolution": {
+                "information": 0.2,
+                "concept": 0.3,
+                "calculation": 0.5,
+                "difficultyIn10": 8
+              },
+              "tags": [
+                "De Broglie Wavelength",
+                "Electron Waves",
+                "Momentum Calculations"
+              ]
+            }
+          },
+          {
+            "id": "SO.PNR.2.1.Q22",
+            "statistics": {
+              "attempts": 0,
+              "hintsAccessed": 0,
+              "solved": 0,
+              "successRate": 0,
+              "idealAverageTime": 44,
+              "averageTimeTaken": 0,
+              "medianTime": 0,
+              "timeStdDev": 18,
+              "firstAttemptSuccessRate": 0,
+              "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An electron is accelerated through a potential difference of \\(500\\, \\text{V}\\). What is its de Broglie wavelength? (Use \\( h = 6.626 \\times 10^{-34}\\, \\text{Js} \\), \\( m_e = 9.109 \\times 10^{-31}\\, \\text{kg} \\), \\( e = 1.602 \\times 10^{-19}\\, \\text{C} \\))",
+            "solution": "First, find the kinetic energy: \\( K = eV = 1.602 \\times 10^{-19} \\times 500 = 8.01 \\times 10^{-17}\\, \\text{J} \\).\n\nThen, calculate momentum: \\( p = \\sqrt{2 m_e K} = \\sqrt{2 \\times 9.109 \\times 10^{-31} \\times 8.01 \\times 10^{-17}} = 1.207 \\times 10^{-23}\\, \\text{kg}\\cdot \\text{m/s} \\).\n\nFinally, the de Broglie wavelength is \\( \\lambda = \\frac{h}{p} = \\frac{6.626 \\times 10^{-34}}{1.207 \\times 10^{-23}} \\approx 5.49 \\times 10^{-11}\\, \\text{m} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use \\( \\lambda = \\frac{h}{p} \\) and calculate the momentum from kinetic energy.",
+            "options": [
+              "A) \\(5.49 \\times 10^{-11}\\, \\text{m}\\)",
+              "B) \\(7.95 \\times 10^{-11}\\, \\text{m}\\)",
+              "C) \\(1.23 \\times 10^{-10}\\, \\text{m}\\)",
+              "D) \\(2.43 \\times 10^{-10}\\, \\text{m}\\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+              "chapter": "Modern Physics",
+              "section": "Wave-Particle Duality",
+              "concept": "De Broglie Wavelength",
+              "source": "Generated",
+              "resolution": {
+                "information": 0.2,
+                "concept": 0.3,
+                "calculation": 0.5,
+                "difficultyIn10": 8
+              },
+              "tags": [
+                "De Broglie Wavelength",
+                "Electron Waves",
+                "Momentum Calculations"
+              ]
+            }
+          },
+          {
+            "id": "SO.PNR.2.1.Q38",
+            "statistics": {
+              "attempts": 0,
+              "hintsAccessed": 0,
+              "solved": 0,
+              "successRate": 0,
+              "idealAverageTime": 61,
+              "averageTimeTaken": 0,
+              "medianTime": 0,
+              "timeStdDev": 25,
+              "firstAttemptSuccessRate": 0,
+              "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The concept of wave-particle duality implies that particles like electrons exhibit wave properties. Which experiment provides evidence for the wave nature of electrons?",
+            "solution": "The electron diffraction experiment demonstrates that electrons can produce interference patterns, a characteristic of waves.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider experiments where electrons produce patterns similar to light waves.",
+            "options": [
+              "A) Photoelectric effect",
+              "B) Electron diffraction",
+              "C) Rutherford scattering",
+              "D) Millikan oil drop experiment"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+              "chapter": "Modern Physics",
+              "section": "Wave-Particle Duality",
+              "concept": "Electron Diffraction",
+              "source": "Generated",
+              "resolution": {
+                "information": 0.3,
+                "concept": 0.5,
+                "calculation": 0.2,
+                "difficultyIn10": 8
+              },
+              "tags": [
+                "Wave-Particle Duality",
+                "Electron Waves",
+                "Diffraction"
+              ]
+            }
+          },
+    ]
+}

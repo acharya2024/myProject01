@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | AST </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Atomic Structure</h1>
+                    <p class="lead" id="tagline">All About Hydrogen Like Systems</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Model of Atom --><!-- Section: Rutherford's Model of Atom -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingModelOfAtom">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseModelOfAtom" aria-expanded="false"
+                                aria-controls="collapseModelOfAtom">
+                                <strong>Rutherford's Model of Atom</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseModelOfAtom" class="accordion-collapse collapse"
+                            aria-labelledby="headingModelOfAtom" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The Rutherford model of the atom was proposed by Ernest Rutherford in 1911, based on
+                                    his famous gold foil experiment. This model describes the atom as having a small,
+                                    dense, positively charged nucleus at its center, with electrons orbiting around it.
+                                </p>
+                                <p>
+                                    To investigate the structure of the atom, Rutherford and his colleagues directed a
+                                    beam of <strong>alpha particles</strong> at a very thin sheet of gold foil. Alpha
+                                    particles are helium nuclei consisting of two protons and two neutrons, symbolized
+                                    as \( \alpha \) particles. They are positively charged and possess significant
+                                    kinetic energy, making them suitable probes for exploring atomic structure.
+                                </p>
+                                <h6 class="mt-3"><strong>Rutherford's Gold Foil Experiment</strong></h6>
+                                <p>
+                                    In the experimental setup, a radioactive source emitted alpha particles, which were
+                                    collimated into a narrow beam and directed at the gold foil target. A fluorescent
+                                    screen or detector surrounded the foil to observe the scattering of alpha particles.
+                                    This arrangement is depicted in the diagram below.
+                                </p>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/17_Rutherford_experiment.png"
+                                                class="figure-img img-fluid rounded" alt="Rutherford Experiment">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure: Schematic diagram of Rutherford's
+                                            Gold Foil Experiment.</figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    As the alpha particles passed through the gold foil, most of them experienced little
+                                    to no deflection, indicating that atoms are mostly empty space. However, a small
+                                    fraction of alpha particles were deflected at large angles, and some even bounced
+                                    back toward the source. This surprising result suggested that a tiny, dense,
+                                    positively charged nucleus resides at the center of the atom.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because most alpha particles passed through undeflected, indicating empty space."
+                                        false-response="Not quite. The deflection of some particles suggested a dense nucleus, not empty space."
+                                        ansKey="true">
+                                        Which observation suggested that atoms are mostly empty space?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Most alpha particles passed through the gold foil without deflection
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Some alpha particles were deflected back toward the source
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! The large deflections indicated the presence of a small, dense, positively charged nucleus."
+                                        false-response="Not quite. The large deflections couldn't be explained if positive charge was spread out over the entire atom."
+                                        ansKey="true">
+                                        What key observation from Rutherford's experiment led to the conclusion that
+                                        atoms
+                                        have a small, dense nucleus?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Some alpha particles were deflected at large angles
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Most alpha particles passed straight through the foil
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <h6 class="mt-3"><strong>Nuclear Size Estimation</strong></h6>
+                                <p>
+                                    To quantify the size of the nucleus, Rutherford calculated the distance of closest
+                                    approach (\( r_0 \)) of an alpha particle during a head-on collision with the
+                                    nucleus. For this complete conversion of kinetic energy into potential energy to
+                                    occur, the collision must be perfectly head-on.
+                                </p>
+                                <p>
+                                    At the point of closest approach, all kinetic energy is converted to potential
+                                    energy:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \dfrac{1}{2} m v^2 = \dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{Z e \cdot 2e}{r_0}
+                                    \)
+                                </p>
+                                <p>
+                                    Solving for \( r_0 \), we obtain:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    r_0 = \dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{2 Z e^2}{\dfrac{1}{2} m v^2}
+                                    \)
+                                </p>
+                                <p>
+                                    Where:
+                                </p>
+                                <ul>
+                                    <li><strong>\( m \)</strong> is the mass of the alpha
+                                        particle.</li>
+                                    <li><strong>\( v \)</strong> is the initial velocity of the
+                                        alpha particle.</li>
+                                    <li><strong>\( Z \)</strong> is the atomic number of the
+                                        gold nucleus.</li>
+                                    <li><strong>\( e \)</strong> is the elementary charge.</li>
+                                    <li><strong>\( \varepsilon_0 \)</strong> is the vacuum
+                                        permittivity.</li>
+                                </ul>
+                                <p>
+                                    Additionally, Rutherford derived a formula for the fraction of alpha particles
+                                    deflected by an angle \( \theta \):
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \dfrac{dN}{d\Omega} = \left( \dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{Z e^2}{2 m
+                                    v^2}
+                                    \right)^2 \cdot \dfrac{1}{\sin^4 \left( \dfrac{\theta}{2} \right)}
+                                    \)
+                                </p>
+                                <p>
+                                    In this formula:
+                                </p>
+                                <ul>
+                                    <li><strong>\( dN \)</strong> is the number of particles
+                                        scattered into a solid angle \( d\Omega \).</li>
+                                    <li><strong>\( \theta \)</strong> is the scattering angle.
+                                    </li>
+                                    <li><strong>\( Z \)</strong> is the atomic number of the
+                                        target nucleus.</li>
+                                    <li><strong>\( e \)</strong> is the elementary charge.</li>
+                                    <li><strong>\( m \)</strong> is the mass of the alpha
+                                        particle.</li>
+                                    <li><strong>\( v \)</strong> is the velocity of the alpha
+                                        particle.</li>
+                                    <li><strong>\( \varepsilon_0 \)</strong> is the vacuum
+                                        permittivity.</li>
+                                </ul>
+                                <p>
+                                    This formula shows that the number of particles scattered at a particular angle
+                                    depends on the atomic number \( Z \), the kinetic energy of the alpha particles, and
+                                    the thickness of the foil. The expected scattering pattern, as illustrated in the
+                                    accompanying diagram, demonstrates the distribution of deflected alpha particles,
+                                    providing further evidence for the nuclear model.
+                                </p>
+                                <p>
+                                    These calculations indicated that the nucleus is extremely small compared to the
+                                    size of the atom, occupying a tiny volume where most of the mass and positive charge
+                                    are concentrated.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! By calculating the distance of closest approach during head-on collisions."
+                                        false-response="Not quite. Measuring electron speeds doesn't determine nuclear size."
+                                        ansKey="true">
+                                        How did Rutherford estimate the size of the nucleus in his experiment?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            By calculating the distance of closest approach of alpha particles to the
+                                            nucleus
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            By measuring the velocities of electrons orbiting the nucleus
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because the scattering of alpha particles depended on the atomic number \( Z \) of the target nucleus."
+                                        false-response="Not quite. The experiment showed a relationship between scattering angles and the nuclear charge."
+                                        ansKey="true">
+                                        How did Rutherford's experiment demonstrate the existence of the atomic number
+                                        \( Z
+                                        \) as a fundamental property?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            The deflection angles of alpha particles were influenced by the nuclear
+                                            charge
+                                            \( Z \)
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            By showing that all elements scatter alpha particles equally, regardless of
+                                            \( Z
+                                            \)
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    Rutherford's experiment led to several key conclusions:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Atoms consist mostly of empty space.</li>
+                                    <li class="list-group-item">A tiny, dense, positively charged nucleus exists at the
+                                        center of the atom.</li>
+                                    <li class="list-group-item">Electrons orbit the nucleus, similar to planets around
+                                        the sun.</li>
+                                    The conclusive model is shown in animation below:
+                                    <div class="row justify-content-center mt-3">
+                                        <div class="col">
+                                            <figure style="max-width: 150px;">
+                                                <img src="img/18_RF_model.gif" class="figure-img img-fluid rounded"
+                                                    alt="Rutherford Model">
+                                            </figure>
+                                            <figcaption class="figure-caption">Animation: Electron revolving around
+                                                nucleus</figcaption>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <h6 class="mt-3"><strong>Drawbacks of Rutherford's Model</strong></h6>
+                                <p>
+                                    Despite its revolutionary insights, Rutherford's model had significant limitations:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">It could not explain the discrete spectral lines
+                                        observed in hydrogen's emission spectrum.</li>
+                                    <li class="list-group-item">Classical electromagnetism predicts that accelerating
+                                        charges, like electrons in orbit, should emit radiation and lose energy, causing
+                                        them to spiral into the nucleus, which does not occur.</li>
+                                </ul>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because electrons in circular orbits should emit radiation and lose energy."
+                                        false-response="Not quite. The instability arises from accelerating charges emitting radiation."
+                                        ansKey="true">
+                                        According to classical physics, why is Rutherford's atomic model considered
+                                        unstable?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Orbiting electrons should emit radiation and spiral into the nucleus
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            The positively charged nucleus would repel the electrons, causing the atom
+                                            to
+                                            disintegrate
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because the deflection of alpha particles at large angles was unexpected under the plum pudding model."
+                                        false-response="Not quite. The plum pudding model couldn't account for large deflections."
+                                        ansKey="true">
+                                        Why did Rutherford's observations contradict the then-accepted plum pudding
+                                        model of
+                                        the atom?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because large-angle deflections suggested a concentrated positive charge,
+                                            not a
+                                            diffuse one
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because the plum pudding model predicted all alpha particles would be
+                                            absorbed
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+                                    To address these shortcomings, Niels Bohr proposed a new atomic model incorporating
+                                    quantum concepts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section: Bohr's Model -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingBohrModel">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseBohrModel" aria-expanded="false"
+                                aria-controls="collapseBohrModel">
+                                <strong>Bohr's Model</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseBohrModel" class="accordion-collapse collapse"
+                            aria-labelledby="headingBohrModel" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Niels Bohr introduced a new atomic model in 1913 to overcome the limitations of
+                                    Rutherford's model. Bohr's model incorporates quantum theory to explain the
+                                    stability of atoms and the discrete spectral lines of hydrogen.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p class="mt-2">
+                                        Bohr proposed the following postulates:
+                                    </p>
+                                    <li class="list-group-item">
+
+                                        <details>
+                                            <summary><strong>Stationary Orbits:</strong></summary>
+                                            <p>
+                                                Electrons revolve
+                                                around the
+                                                nucleus
+                                                in certain stable orbits without emitting radiation. These orbits
+                                                are
+                                                called stationary states.
+                                            </p>
+
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Quantization of Angular Momentum:</strong></summary>
+                                            <p>
+                                                The
+                                                angular
+                                                momentum
+                                                of an electron in a stationary orbit is quantized and given by:
+                                            <p>
+                                                \(\qquad
+                                                L = m v r = n \dfrac{h}{2\pi}
+                                                \)
+                                            </p>
+                                            where \( n \) is a positive integer (principal quantum number), and
+                                            \( h
+                                            \) is Planck's constant.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Emission and Absorption of Photons:</strong></summary>
+                                            <p>
+                                                Electrons can
+                                                transition between stationary orbits by emitting or absorbing a
+                                                photon
+                                                with energy equal to the difference between the initial and final
+                                                energy
+                                                levels:
+                                            <p>
+                                                \(\qquad
+                                                E_{\text{photon}} = E_i - E_f = h \nu
+                                                \)
+                                            </p>
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Bohr proposed that electrons occupy specific orbits where they do not radiate energy."
+                                        false-response="Not quite. Electrons in stationary orbits do not emit radiation."
+                                        ansKey="true">
+                                        According to Bohr's first postulate, why don't electrons emit radiation while orbiting the nucleus in certain orbits?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because they occupy stationary states where they do not lose energy
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because they are at rest and not moving around the nucleus
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Bohr's model introduced quantized angular momentum values."
+                                        false-response="Not quite. The angular momentum is quantized, not continuous."
+                                        ansKey="false">
+                                        In Bohr's model, can an electron have any arbitrary value of angular momentum?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, depending on its speed and orbit radius
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, it can only have specific quantized values
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Electrons emit or absorb photons when transitioning between energy levels."
+                                        false-response="Not quite. Electrons need to change energy levels to emit or absorb photons."
+                                        ansKey="true">
+                                        How do electrons emit or absorb energy in Bohr's atomic model?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            By jumping between quantized energy levels and emitting or absorbing photons
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            By continuously radiating energy as they orbit the nucleus
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Bohr's model introduces stable orbits where electrons do not emit radiation."
+                                        false-response="Not quite. Electrons in Bohr's model do not spiral into the nucleus due to quantized orbits."
+                                        ansKey="true">
+                                        How does Bohr's model resolve the issue of atomic instability present in Rutherford's model?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            By proposing that electrons occupy stable, quantized orbits without radiating energy
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            By suggesting that electrons do not move and are fixed in place around the nucleus
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                </h6>
+                                <p class="mt-3">
+                                    Bohr's quantization condition for angular momentum can be explained using the
+                                    concept of standing
+                                    waves.
+                                    The circumference of the electron's orbit must be an integral multiple of the
+                                    electron's de Broglie wavelength:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    2\pi r = n \lambda
+                                    \)
+                                </p>
+                                <p>
+                                    This is shown in following animations for different values of \(n\):
+                                </p>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 150px;">
+                                            <img src="img/21_wave_n_equals_1.gif" class="figure-img img-fluid rounded"
+                                                alt="Rutherford Model">
+                                        </figure>
+                                        <figcaption class="figure-caption">Animation: Wave function of electron in
+                                            \(n=1\) state</figcaption>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 150px;">
+                                            <img src="img/22_wave_n_equals_2.gif" class="figure-img img-fluid rounded"
+                                                alt="Rutherford Model">
+                                        </figure>
+                                        <figcaption class="figure-caption">Animation: Wave function of electron in
+                                            \(n=2\) state</figcaption>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 150px;">
+                                            <img src="img/23_wave_n_equals_3.gif" class="figure-img img-fluid rounded"
+                                                alt="Rutherford Model">
+                                        </figure>
+                                        <figcaption class="figure-caption">Animation: Animation: Wave function of
+                                            electron in \(n=3\) state</figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    Substituting the de Broglie relation \( \lambda = \dfrac{h}{m v} \), we get:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    2\pi r = n \left( \dfrac{h}{m v} \right) \implies m v r = n \dfrac{h}{2\pi}
+                                    \)
+                                </p>
+                                <p>
+                                    This shows the equivalence between the wave nature of electrons and Bohr's
+                                    quantization of angular momentum.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! The de Broglie wavelength is essential in deriving the quantization condition."
+                                        false-response="Not quite. The de Broglie wavelength plays a key role in Bohr's model."
+                                        ansKey="false">
+                                        Is the de Broglie wavelength irrelevant in explaining Bohr's quantization condition?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, it does not factor into the quantization condition
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, it is crucial for relating wave properties to quantized orbits
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! The circumference must be an integer multiple of the electron's wavelength."
+                                        false-response="Not quite. The orbit circumference relates directly to the electron's de Broglie wavelength."
+                                        ansKey="false">
+                                        Is the circumference of an electron's orbit in Bohr's model unrelated to its wavelength?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, the circumference and wavelength are independent
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, the circumference must be an integer multiple of its wavelength
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p class="mt-2"> Following illustrative examples can be used for further
+                                        understanding of Bohr's quantisation rule on angular momentum of orbiting
+                                        particles: </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Charge in Magnetic Field</strong></summary>
+                                            <p> Consider a charged particle \( q \) moving in a circular path of radius
+                                                \( r \) perpendicular to a uniform magnetic field \( B \). The magnetic
+                                                force provides the necessary centripetal force: </p>
+                                            <p> \(\qquad q v B = \dfrac{m v^2}{r} \) </p>
+                                            <p> Applying Bohr's quantization condition: </p>
+                                            <p> \(\qquad m v r = n \dfrac{h}{2\pi} \) </p>
+                                            <p> Combining the two equations to solve for the possible radii \( r \):
+                                            </p>
+                                            <p> From the magnetic force equation: \( \qquad \quad r =
+                                                \dfrac{m v}{q B} \) </p>
+                                            <p> Substituting \( v \) from Bohr's condition: </p>
+                                            <p> \(\qquad r =
+                                                \dfrac{m \left( \dfrac{n h}{2\pi m r} \right)}{q B} = \dfrac{n h}{2\pi q
+                                                B r} \) </p>
+                                            <p> \(\Rightarrow\quad r^2 = \dfrac{n h}{2\pi q B} \)</p>
+                                            <p>
+                                                \(\Rightarrow \quad r = \sqrt{ \dfrac{n h}{2\pi q B} } \) </p>
+                                            <p> Therefore, the possible radii \( r \) are given by: \(\qquad r_n =
+                                                \sqrt{ \dfrac{n h}{2\pi q B} } \) </p>
+
+                                            <p> These results illustrate how Bohr's quantization condition leads to
+                                                only discrete possible radii for a charged particle in a magnetic
+                                                field. </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Particle in a General Potential Field</strong></summary>
+                                            <p> Consider a particle of mass \( m \) moving under a potential energy \( U
+                                                = \dfrac{1}{2} m \omega^2 r^2 \). The force acting on the particle is:
+                                            </p>
+                                            <p> \(\qquad F = -\dfrac{dU}{dr} = -m \omega^2 r \) </p>
+                                            <p> The negative sign indicates that the force is attractive towards the
+                                                origin. Setting the centripetal force equal to the attractive force:
+                                            </p>
+                                            <p> \(\qquad \dfrac{m v^2}{r} = m \omega^2 r \) </p>
+                                            <p> Simplifying: \(\qquad v = \omega r \) </p>
+                                            <p> Applying Bohr's quantization condition: \(\qquad m v r = n
+                                                \dfrac{h}{2\pi} \) </p>
+                                            <p> Substituting \( v = \omega r \) into the quantization condition:</p>
+                                            <p>
+                                                \(\qquad m \omega r^2 = n \dfrac{h}{2\pi} \)</p>
+                                            <p>\( \Rightarrow \quad r^2 =
+                                                \dfrac{n h}{2\pi m \omega} \) </p>
+                                            <p> \(\Rightarrow\quad r_n = \sqrt{ \dfrac{n h}{2\pi m \omega} }
+                                                \) </p>
+                                            <p> These results demonstrate how Bohr's quantization condition leads to
+                                                discrete radii for a particle in a harmonic potential
+                                                field. </p>
+                                        </details>
+                                    </li>
+                                    <p class="mt-3">
+                                        <interaction
+                                            true-response="Correct! Because they involve quantized angular momentum leading to discrete orbital radii."
+                                            false-response="Not quite. Bohr's condition results in discrete, not continuous, possible radii."
+                                            ansKey="true">
+                                            In the example of a charged particle in a magnetic field, why are only certain orbital radii allowed?
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                Because the quantization condition restricts the radii to specific values
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                Because the magnetic field strength allows any radius
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p>
+                                    <p class="mt-3">
+                                        <interaction
+                                            true-response="Correct! The quantization leads to discrete energy levels in a harmonic potential."
+                                            false-response="Not quite. The energy levels are quantized due to Bohr's condition."
+                                            ansKey="true">
+                                            Does Bohr's quantization condition result in discrete energy levels for a particle in a harmonic potential field?
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                Yes, it leads to specific allowed energies and radii
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                No, the energy levels remain continuous
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSingleElectronSystems">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSingleElectronSystems" aria-expanded="false"
+                                aria-controls="collapseSingleElectronSystems">
+                                <strong>Hydrogen like systems</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseSingleElectronSystems" class="accordion-collapse collapse"
+                            aria-labelledby="headingSingleElectronSystems" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Now we apply the Bohr's postulates to calculate various physical quantity for single
+                                    electron orbiting a positively charged nucleus, just like what happens in Hydrogen
+                                    atom.
+                                </p>
+                                <p>
+                                    For such a hydrogen-like atom with one electron orbiting a nucleus of charge \(
+                                    +Ze
+                                    \),
+                                    the electrostatic force provides the necessary centripetal force for
+                                    circular
+                                    motion:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{Z e^2}{r^2} = \dfrac{m v^2}{r}
+                                    \)
+                                </p>
+                                <p>
+                                    Applying Bohr's quantization condition \( m v r = n \dfrac{h}{2\pi} \), we
+                                    can
+                                    derive expressions for various physical quantities.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Bohr's model doesn't account for electron-electron interactions in multi-electron atoms."
+                                        false-response="Not quite. The model fails due to lack of consideration for multiple electrons."
+                                        ansKey="true">
+                                        Why is Bohr's model inadequate for explaining the spectra of atoms with more than one electron?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            It doesn't include electron-electron repulsion and interactions
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because it only applies to nuclei with zero charge
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <!-- Speed -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Speed of Electron</strong></summary>
+                                            <p class="mt-2">
+                                                From the quantization condition:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                m v r = n \dfrac{h}{2\pi} \implies v = \dfrac{n h}{2\pi m r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                From the force equation:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{Z e^2}{r^2} = \dfrac{m
+                                                v^2}{r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( v \) from the quantization condition and solving
+                                                for
+                                                \(
+                                                v \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                v = \dfrac{Z e^2}{2\varepsilon_0 h n}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                v \approx \left(2.19 \times 10^6 \, \text{m/s}\right)
+                                                \dfrac{Z}{n}
+                                                \)
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! As the principal quantum number \( n \) increases, the electron's speed decreases because \( v \propto \frac{1}{n} \)."
+                                                    false-response="Not quite. The speed actually decreases with increasing \( n \)."
+                                                    ansKey="false">
+                                                    According to Bohr's model, does the electron's speed increase or decrease as the principal quantum number \( n \) increases?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Increase
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Decrease
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Radius -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Radius of Orbit</strong></summary>
+                                            <p class="mt-2">
+                                                Using the quantization condition and force balance:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                r_n = \dfrac{4\pi\varepsilon_0 h^2 n^2}{m Z e^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                r_n \approx \left(0.529 \times 10^{-10} \, \text{m}\right)
+                                                \dfrac{n^2}{Z}
+                                                \)
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Bohr's quantization condition leads to discrete radii and energy levels."
+                                                    false-response="Not quite. The quantization condition restricts electrons to specific orbits."
+                                                    ansKey="false">
+                                                    Does Bohr's model allow electrons to orbit the nucleus at any distance?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, electrons can orbit at any radius
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, electrons can only occupy certain allowed orbits
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Kinetic, Potential, and Total Energy -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Kinetic, Potential, and Total Energy</strong>
+                                            </summary>
+                                            <p class="mt-2">
+                                                The kinetic energy \( K \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                K = \dfrac{1}{2} m v^2 = \dfrac{Z^2 m e^4}{8\varepsilon_0^2 h^2
+                                                n^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The potential energy \( U \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                U = -\dfrac{1}{4\pi\varepsilon_0} \cdot \dfrac{Z e^2}{r} =
+                                                -\dfrac{Z^2 m
+                                                e^4}{4\varepsilon_0^2 h^2 n^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The total energy \( E \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = K + U = -\dfrac{Z^2 m e^4}{8\varepsilon_0^2 h^2 n^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The ratio of energies is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                K : U : E = 1 : -2 : -1
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = -\left(13.6 \, \text{eV}\right) \dfrac{Z^2}{n^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Following diagram represents the various energy levels in Hydrogen atom
+                                                derived in the above formula of total energy:
+                                            </p>
+                                            <div class="row justify-content-center mt-3">
+                                                <div class="col">
+                                                    <figure style="max-width: 150px;">
+                                                        <img src="img/19_Energy_levels_in_H.png"
+                                                            class="figure-img img-fluid rounded" alt="Rutherford Model">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Animation: Electron revolving
+                                                        around nucleus</figcaption>
+                                                </div>
+                                            </div>
+                                            <p class="mt-3">
+                                                Following general terms are used to analyse various energies and
+                                                transition of Hydrogen like systems
+                                            </p>
+                                            <p>
+                                                <strong>Binding Energy:</strong> The energy required to remove
+                                                an
+                                                electron from its orbit to infinity is equal in magnitude to the
+                                                total
+                                                energy \( E \).
+                                            </p>
+                                            <p>
+                                                <strong>Excitation Energy:</strong> The energy required to
+                                                excite an
+                                                electron from a ground energy level \( n_i=1 \) to a higher one \(
+                                                n_f
+                                                \)
+                                                is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \Delta E = E_{n_f} - E_{n_i} = -13.6 \, \text{eV} Z^2\left(
+                                                \dfrac{Z^2}{n_f^2} - 1 \right)
+                                                \)
+                                            </p>
+                                            <p>
+                                                <strong>Ionization Potential:</strong> The potential difference
+                                                needed
+                                                to ionize the atom by removing an electron from the ground state
+                                                (\(
+                                                n =
+                                                1 \)) is \( 13.6 \, \text{eV} \times Z^2 \).
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Because only transitions between quantized energy levels result in photon emission or absorption."
+                                                    false-response="Not quite. Continuous energy changes are not allowed in Bohr's model."
+                                                    ansKey="true">
+                                                    In Bohr's model, why are only specific frequencies of light emitted or absorbed by an atom?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because energy differences between quantized levels correspond to specific photon frequencies
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because electrons can emit any frequency as they slow down around the nucleus
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! The negative total energy indicates that the electron is bound to the nucleus."
+                                                    false-response="Not quite. The negative sign shows that energy must be supplied to free the electron."
+                                                    ansKey="true">
+                                                    Why is the total energy of an electron in a hydrogen-like atom negative in Bohr's model?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Because the electron is bound to the nucleus, requiring energy to be removed
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Because the electron has negative mass when orbiting the nucleus
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! The spacing between energy levels decreases as n increases."
+                                                    false-response="Not quite. Higher energy levels are closer together."
+                                                    ansKey="true">
+                                                    In Bohr's model, does the energy difference between adjacent levels increase or decrease as \( n \) increases?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Decrease
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Increase
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Ionization potential corresponds to the energy needed to remove the electron from \( n=1 \) to infinity."
+                                                    false-response="Not quite. Ionization involves moving the electron to \( n=\infty \)."
+                                                    ansKey="true">
+                                                    In hydrogen-like atoms, does the ionization potential relate to the energy required to move an electron from \( n=1 \) to which energy level?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        To \( n = \infty \)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        To \( n = 2 \)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Increasing \( Z \) makes the energy levels more negative, shifting spectral lines to shorter wavelengths."
+                                                    false-response="Not quite. Energy levels do change with \( Z \) in hydrogen-like atoms."
+                                                    ansKey="true">
+                                                    How does increasing the nuclear charge \( Z \) in hydrogen-like ions affect their spectral lines?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Spectral lines shift to higher energies (shorter wavelengths)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Spectral lines remain unchanged regardless of \( Z \)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Time Period -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Time Period of Revolution</strong></summary>
+                                            <p class="mt-2">
+                                                The time period \( T \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                T = \dfrac{2\pi r}{v}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Using previous expressions for \( r \) and \( v \), we find:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                T = \dfrac{4\pi^2 \varepsilon_0^2 h^3 n^3}{Z^2 e^4 m}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                T = \left(1.52 \times 10^{-16} \, \text{s}\right)
+                                                \dfrac{n^3}{Z^2}
+                                                \)
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! The time period increases with \( n^3 \), so electrons in higher orbits take longer to complete a revolution."
+                                                    false-response="Not quite. The time period actually increases as \( n \) increases."
+                                                    ansKey="false">
+                                                    Does the time period of an electron's orbit decrease as the principal quantum number \( n \) increases?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes, it decreases with higher \( n \)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No, it increases with higher \( n \)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Angular Velocity/Frequency -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Angular Velocity/Frequency</strong></summary>
+                                            <p class="mt-2">
+                                                The angular velocity \( \omega \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \omega = \dfrac{v}{r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting expressions for \( v \) and \( r \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \omega = \dfrac{Z^2 e^4 m}{4\pi \varepsilon_0^2 h^3 n^3}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \omega = \left(4.13 \times 10^{16} \, \text{rad/s}\right)
+                                                \dfrac{Z^2}{n^3}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Current -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Current Due to Electron Motion</strong></summary>
+                                            <p class="mt-2">
+                                                The current \( I \) is the charge passing per unit time:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                I = \dfrac{q}{T} = \dfrac{e}{T}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Using the expression for \( T \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                I = \dfrac{Z^2 e^5 m}{4\pi^2 \varepsilon_0^2 h^3 n^3}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                I = \left(1.05 \times 10^{-3} \, \text{A}\right)
+                                                \dfrac{Z^2}{n^3}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Magnetic Field at Center -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Magnetic Field at the Center</strong></summary>
+                                            <p class="mt-2">
+                                                The magnetic field \( B \) at the center due to the electron's
+                                                motion
+                                                is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                B = \dfrac{\mu_0 I}{2 r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting expressions for \( I \) and \( r \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                B = \dfrac{\mu_0 Z^3 e^5 m^2}{8\pi^3 \varepsilon_0^3 h^4 n^4}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting constants:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                B = \left(12.5 \, \text{T}\right) \dfrac{Z^3}{n^4}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Magnetic Dipole Moment -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Magnetic Dipole Moment</strong></summary>
+                                            <p class="mt-2">
+                                                The magnetic dipole moment \( \mu \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \mu = I \cdot \pi r^2
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( I \) and \( r \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \mu = \dfrac{e h n}{4\pi m}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting the constants we get,
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \mu \approx 9.27 \times 10^{-24}\, \text{J/T} \times n
+                                                \)
+                                            </p>
+                                            <p>
+                                                This value is known as the Bohr magneton (\( \mu_B \)), which represents
+                                                the fundamental unit of magnetic dipole moment in atomic physics. Thus,
+                                                the magnetic dipole moment for an electron in the \( n \)-th energy
+                                                level is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \mu = \mu_B \times n
+                                                \)
+                                            </p>
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Correct! Quantization of angular momentum leads to discrete magnetic moments."
+                                                    false-response="Not quite. The magnetic moment is quantized due to angular momentum quantization."
+                                                    ansKey="true">
+                                                    How does Bohr's quantization of angular momentum explain discrete magnetic dipole moments in atoms?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        By allowing only specific angular momenta, resulting in quantized magnetic moments
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        By varying the electron's charge to produce different magnetic moments
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    The formulas derived above are summarized in the following table:
+                                </p>
+                                <!-- Bootstrap table summarizing formulas -->
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Expression</th>
+                                            <th scope="col">Approximate Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">Speed (\( v \))</td>
+                                            <td>\( v = \dfrac{Z e^2}{2\varepsilon_0 h n} \)</td>
+                                            <td>\( v \approx (2.19 \times 10^6 \, \text{m/s}) \dfrac{Z}{n} \)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Radius (\( r_n \))</td>
+                                            <td>\( r_n = \dfrac{4\pi\varepsilon_0 h^2 n^2}{m Z e^2} \)</td>
+                                            <td>\( r_n \approx (0.529 \times 10^{-10} \, \text{m})
+                                                \dfrac{n^2}{Z} \)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Total Energy (\( E \))</td>
+                                            <td>\( E = -\dfrac{Z^2 m e^4}{8\varepsilon_0^2 h^2 n^2} \)</td>
+                                            <td>\( E = - (13.6 \, \text{eV}) \dfrac{Z^2}{n^2} \)</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Time Period (\( T \))</td>
+                                            <td>\( T = \dfrac{4\pi^2 \varepsilon_0^2 h^3 n^3}{Z^2 e^4 m} \)</td>
+                                            <td>\( T = (1.52 \times 10^{-16} \, \text{s}) \dfrac{n^3}{Z^2} \)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Angular Velocity (\( \omega \))</td>
+                                            <td>\( \omega = \dfrac{Z^2 e^4 m}{4\pi \varepsilon_0^2 h^3 n^3} \)
+                                            </td>
+                                            <td>\( \omega = (4.13 \times 10^{16} \, \text{rad/s})
+                                                \dfrac{Z^2}{n^3}
+                                                \)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Current (\( I \))</td>
+                                            <td>\( I = \dfrac{Z^2 e^5 m}{4\pi^2 \varepsilon_0^2 h^3 n^3} \)</td>
+                                            <td>\( I = (1.05 \times 10^{-3} \, \text{A}) \dfrac{Z^2}{n^3} \)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Magnetic Field (\( B \))</td>
+                                            <td>\( B = \dfrac{\mu_0 Z^3 e^5 m^2}{8\pi^3 \varepsilon_0^3 h^4 n^4}
+                                                \)
+                                            </td>
+                                            <td>\( B = (12.5 \, \text{T}) \dfrac{Z^3}{n^4} \)</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Magnetic Dipole Moment (\( \mu \))</td>
+                                            <td>\( \mu = \dfrac{e h n}{4\pi m} \)</td>
+                                            <td>\( \mu \approx 9.27 \times 10^{-24}\, \text{J/T} \times n \)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h6 class="mt-4"><strong>Effect of Finite Mass of Nucleus</strong></h6>
+                                <p>
+                                    In Bohr's original model of the hydrogen atom, the nucleus is considered infinitely
+                                    massive compared to the electron. This simplification allows the nucleus to remain
+                                    stationary while the electron orbits around it. However, in reality, the nucleus has
+                                    a finite mass and cannot be treated as an immovable point. Both the nucleus and the
+                                    electron experience mutual electromagnetic attractions, causing them to accelerate
+                                    towards each other. Consequently, they revolve around a common center of mass
+                                    (barycenter), which remains stationary in the absence of external forces.
+                                </p>
+                                <!-- Assume a diagram here -->
+                                <p>
+                                    To account for the finite mass of the nucleus, we introduce the <strong>reduced
+                                        mass</strong> (\( \mu \)), which replaces the electron mass \( m \) in Bohr's
+                                    quantization condition:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \mu = \dfrac{m M}{m + M}\)
+                                </p>
+                                <p>
+                                    Here, \( M \) is the mass of the nucleus. This correction adjusts the calculated
+                                    radius and energy levels of the electron's orbit.
+                                </p>
+                                
+                                <h6 class="mt-4"><strong>Center of Mass Motion</strong></h6>
+                                <p>
+                                    The center of mass (\( R \)) of the electron-nucleus system is defined by:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    R = \frac{m r_e + M r_n}{m + M}\)
+                                </p>
+                                <p>
+                                    where:
+                                <ul>
+                                    <li>\( m \) is the mass of the electron,</li>
+                                    <li>\( M \) is the mass of the nucleus,</li>
+                                    <li>\( r_e \) is the position vector of the electron,</li>
+                                    <li>\( r_n \) is the position vector of the nucleus.</li>
+                                </ul>
+                                </p>
+                                <p>
+                                    In the absence of external forces, the center of mass remains at rest or moves with
+                                    a constant velocity. This means both the electron and the nucleus orbit this fixed
+                                    point, with their velocities and radii inversely proportional to their masses.
+                                </p>
+
+                                <h6 class="mt-4"><strong>Introduction of Reduced Mass (\( \mu \))</strong></h6>
+                                <p>
+                                    To incorporate the finite mass of the nucleus into Bohr's model, we use the reduced
+                                    mass \( \mu \), allowing us to treat the two-body problem as an effective
+                                    single-body problem. The reduced mass is given by:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \mu = \frac{m M}{m + M}\)
+                                </p>
+                                <p>
+                                    Since \( M \) is typically much larger than \( m \) (for hydrogen, \( M \approx 1836
+                                    \, m \)), the reduced mass \( \mu \) is slightly less than the electron mass \( m
+                                    \). This small reduction significantly impacts the calculated radii and energy
+                                    levels.
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Because both the electron and nucleus revolve around their common center of mass."
+                                        false-response="Not quite. The finite mass means the nucleus also moves, affecting calculations."
+                                        ansKey="true">
+                                        Why does the finite mass of the nucleus require the introduction of reduced mass in Bohr's model?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Because both particles orbit a common center, altering the dynamics
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Because the nucleus exerts no force on the electron when it has finite mass
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! The reduced mass \( \mu \) is slightly less than \( m \) because \( \mu = \frac{mM}{m+M} \) and \( M \gg m \)."
+                                        false-response="Not quite. The reduced mass is less than the electron mass."
+                                        ansKey="false">
+                                        Does the reduced mass \( \mu \) become greater than the electron mass \( m \) when considering the finite nuclear mass?
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, \( \mu > m \)
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, \( \mu < m \)
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <h6 class="mt-4"><strong>Impact on Radius and Energy Levels</strong></h6>
+                                <p>
+                                    <strong>1. Radius (\( r_n \)):</strong>
+                                </p>
+                                <p>
+                                    The radius of the \( n \)-th orbit in Bohr's model is originally given by:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    r_n = \frac{n^2 h^2}{4 \pi^2 m e^2}\)
+                                </p>
+                                <p>
+                                    Incorporating the reduced mass:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    r_n = \frac{n^2 h^2}{4 \pi^2 \mu e^2}\)
+                                </p>
+                                <p>
+                                    Since \( \mu < m \), the corrected radius \( r_n \) becomes slightly larger than the
+                                        radius calculated assuming an infinite nuclear mass. </p>
+
+                                        <p>
+                                            <strong>2. Energy Levels (\( E_n \)):</strong>
+                                        </p>
+                                        <p>
+                                            The energy of the electron in the \( n \)-th orbit is initially:
+                                        </p>
+                                        <p>
+                                            \(\qquad
+                                            E_n = -\frac{m e^4}{8 \epsilon_0^2 h^2 n^2}\)
+                                        </p>
+                                        <p>
+                                            With the introduction of reduced mass:
+                                        </p>
+                                        <p>
+                                            \(\qquad
+                                            E_n = -\frac{\mu e^4}{8 \epsilon_0^2 h^2 n^2}\)
+                                        </p>
+                                        <p>
+                                            This correction results in a slightly more negative (lower) energy level,
+                                            indicating a more tightly bound electron.
+                                        </p>
+
+                                        <h6 class="mt-4"><strong>Numerical Example for Hydrogen Atom</strong></h6>
+                                        <p>
+                                            For the hydrogen atom (\( M \approx 1836 \, m \)), the reduced mass is
+                                            approximately:
+                                        </p>
+                                        <p>
+                                            \(\qquad
+                                            \mu \approx \frac{m \times 1836 m}{m + 1836 m} = \frac{1836 m^2}{1837 m}
+                                            \approx 0.99946 \, m\)
+                                        </p>
+                                        <p>
+                                            This shows that the reduced mass is only marginally less than the electron
+                                            mass, resulting in very slight adjustments to the calculated radii and
+                                            energy levels. For heavier elements where \( M \) is significantly larger,
+                                            the effect of the reduced mass becomes even less pronounced.
+                                        </p>
+
+                                        <h6 class="mt-4"><strong>Drawbacks of Bohr's Model</strong></h6>
+                                        <p>
+                                            Despite its success, Bohr's model has limitations:
+                                        </p>
+                                        <ul>
+                                            <li>It cannot explain spectra of atoms with more than one electron.</li>
+                                            <li>It does not account for the fine structure and splitting of spectral
+                                                lines.</li>
+                                            <li>It violates the principles of uncertainty and does not incorporate
+                                                wave-particle duality.</li>
+                                            <li>It cannot explain the Zeeman effect (splitting of spectral lines in
+                                                magnetic fields).</li>
+                                        </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: Atomic Transitions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTransitions">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTransitions" aria-expanded="false"
+                                aria-controls="collapseTransitions">
+                                <strong>Atomic Transitions</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTransitions" class="accordion-collapse collapse"
+                            aria-labelledby="headingTransitions" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    In an atom, electrons occupy specific energy levels or orbits as defined by
+                                    Bohr's
+                                    postulates. The lowest energy level is called the ground state, while higher
+                                    energy
+                                    levels are excited states. When an electron transitions between energy levels, a
+                                    photon is either emitted or absorbed. If the electron moves to a higher energy
+                                    level, it absorbs a photon (excitation). If it drops to a lower energy level, it
+                                    emits a photon (de-excitation).
+                                </p>
+                                <p>
+                                    During these processes, the energy change \( \Delta E \) equals the energy of
+                                    the
+                                    photon:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \Delta E = E_{\text{final}} - E_{\text{initial}} = h \nu
+                                    \)
+                                </p>
+                                <p>
+                                    In atomic transitions, only one photon is emitted or absorbed per transition. This
+                                    ensures that each energy level change corresponds to a distinct photon emission or
+                                    absorption event. The process of transition is extremely rapid, occurring on the
+                                    order of \( 10^{-8} \) seconds.
+                                </p>
+                                <p>
+                                    Consider a sample of single-electron systems where all electrons are initially in an
+                                    excited state denoted by \(n_i\). During the process of de-excitation, it is not
+                                    necessary for every electron to transition directly to the ground state in a single
+                                    step. Instead, electrons can move through a series of intermediate energy levels
+                                    before reaching the ground state.
+                                </p>
+                                <p>
+                                    For each energy level above the ground state, there are multiple lower energy levels
+                                    to which an electron can transition. Specifically, an electron in the \(n\)-th
+                                    energy level has the possibility to move down to any of the \(n - 1\) different
+                                    lower energy levels. For instance, an electron in the 4th energy level (\(n = 4\))
+                                    can transition to the 3rd, 2nd, or 1st energy levels.
+                                </p>
+                                <p>
+                                    Moreover, once an electron transitions to the \((n - 1)\)-th energy level, it can
+                                    further transition down to \(n - 2\) different lower energy levels, and so on, until
+                                    it finally reaches the ground state. This step-by-step transition process allows for
+                                    multiple pathways by which an electron can de-excite.
+                                </p>
+                                <p>
+                                    The total number of unique transitions (and consequently, the number of spectral
+                                    lines observed) can be calculated by summing the possible transitions from each
+                                    energy level. This is given by the sum of the first \(n - 1\) natural numbers:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    N = \sum_{k=1}^{n-1} k = 1 + 2 + 3 + \dots + (n - 1)
+                                    \)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad
+                                    N = \dfrac{n(n - 1)}{2}
+                                    \)
+                                </p>
+                                <p>
+                                    For example, if an electron is in the 4th energy level (\(n = 4\)), the number of
+                                    possible transitions is:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    N = \dfrac{4 \times (4 - 1)}{2} = \dfrac{12}{2} = 6
+                                    \)
+                                </p>
+                                <p>
+                                    Each transition corresponds to one of the way electron get de-excited as shown in
+                                    following diagram:
+                                </p>
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/20_Transitions.png" class="figure-img img-fluid rounded"
+                                                alt="Transitions">
+                                        </figure>
+                                        <figcaption class="figure-caption">Figure: Possible steps of de-excitation from
+                                            \(n=4\).</figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    This calculation indicates that there are 6 possible spectral lines resulting from
+                                    transitions from the 4th energy level to all lower levels. Each transition
+                                    corresponds to the emission of a photon with energy equal to the difference between
+                                    the initial and final energy levels.
+                                </p>
+                                <p>
+                                    This systematic method of calculating the number of spectral lines is known as the
+                                    Ritz combination principle, which is fundamental in understanding the emission
+                                    spectra of elements.
+                                </p>
+
+                                <p>
+                                    The spectral lines of hydrogen are grouped into distinct series based on the final
+                                    energy level \( n_f \) to which the electron transitions. Each series corresponds to
+                                    a specific range of wavelengths and lies within a particular region of the
+                                    electromagnetic spectrum. Below is a detailed overview of each series, including
+                                    calculations for minimum and maximum wavelengths and the spectral regions they
+                                    inhabit.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Lyman Series:</strong> \( n_f = 1 \) (Ultraviolet Region)
+                                            </summary>
+                                            <p class="mt-2">
+                                                The Lyman series involves transitions where electrons fall to the first
+                                                energy level (\( n_f = 1 \)) from higher energy levels (\( n_i \geq 2
+                                                \)). This series lies entirely in the ultraviolet (UV) region of the
+                                                electromagnetic spectrum.
+                                            </p>
+                                            <p>
+                                                <strong>Wavelength Calculations:</strong>
+                                            </p>
+                                            <p>
+                                                The wavelengths of the spectral lines in the Lyman series can be
+                                                calculated using the Rydberg formula:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \frac{1}{\lambda} = R \left( 1 - \frac{1}{n_i^2} \right)
+                                                \)
+                                                Where:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>\( \lambda \)</strong> is the
+                                                    wavelength of the emitted photon.</li>
+                                                <li class="list-group-item"><strong>\( R \)</strong> is the Rydberg
+                                                    constant (\(1.097 \times 10^7 \, \text{m}^{-1}\)).</li>
+                                                <li class="list-group-item"><strong>\( n_i \)</strong> is the initial
+                                                    energy level (\( n_i \ge 2 \)).</li>
+                                            </ul>
+                                            <p>
+                                                Minimum Wavelength (\( \lambda_{\text{min}} \)) occurs when \( n_i \)
+                                                approaches infinity:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{min}} = \frac{1}{R \left( \frac{1}{1^2} - 0 \right)} =
+                                                \frac{1}{R} \approx 91.2 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Maximum Wavelength (\( \lambda_{\text{max}} \)) occurs when \( n_i = 2
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{max}} = \frac{1}{R \left( 1 - \frac{1}{2^2} \right)} =
+                                                \frac{1}{R \times \frac{3}{4}} \approx 121.6 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The Lyman series transitions produce photons in the ultraviolet region,
+                                                making them invisible to the naked eye.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Balmer Series:</strong> \( n_f = 2 \) (Visible Region)
+                                            </summary>
+                                            <p class="mt-2">
+                                                The Balmer series involves transitions where electrons fall to the
+                                                second energy level (\( n_f = 2 \)) from higher energy levels (\( n_i
+                                                \geq 3 \)). This series is significant because it includes visible
+                                                spectral lines, which are observable with the naked eye.
+                                            </p>
+                                            <p>
+                                                <strong>Wavelength Calculations:</strong>
+                                            </p>
+                                            <p>
+                                                Using the Rydberg formula:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \frac{1}{\lambda} = R \left( \frac{1}{2^2} - \frac{1}{n_i^2} \right)
+                                                \)
+                                                Where \( n_i \geq 3 \).
+                                            </p>
+                                            <p>
+                                                Minimum Wavelength (\( \lambda_{\text{min}} \)) occurs when \( n_i \)
+                                                approaches infinity:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{min}} = \frac{1}{R \left( \frac{1}{4} - 0 \right)} =
+                                                \frac{4}{R} \approx 364.5 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Maximum Wavelength (\( \lambda_{\text{max}} \)) occurs when \( n_i = 3
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{max}} = \frac{1}{R \left( \frac{1}{4} - \frac{1}{9}
+                                                \right)} = \frac{36}{5 R} \approx 656.3 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The Balmer series transitions produce visible light, with the most
+                                                prominent lines being:
+                                            </p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>H-alpha:</strong> \( n_i = 3 \), \(
+                                                    \lambda = 656.3 \, \text{nm} \) (Red)</li>
+                                                <li class="list-group-item"><strong>H-beta:</strong> \( n_i = 4 \), \(
+                                                    \lambda = 486.1 \, \text{nm} \) (Blue-Green)</li>
+                                                <li class="list-group-item"><strong>H-gamma:</strong> \( n_i = 5 \), \(
+                                                    \lambda = 434.0 \, \text{nm} \) (Blue)</li>
+                                                <li class="list-group-item"><strong>H-delta:</strong> \( n_i = 6 \), \(
+                                                    \lambda = 410.2 \, \text{nm} \) (Violet)</li>
+                                            </ul>
+                                            <p>
+                                                These lines form the visible spectrum of hydrogen and are commonly
+                                                observed in hydrogen emission spectra.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Paschen Series:</strong> \( n_f = 3 \) (Infrared Region)
+                                            </summary>
+                                            <p class="mt-2">
+                                                The Paschen series involves transitions where electrons fall to the
+                                                third energy level (\( n_f = 3 \)) from higher energy levels (\( n_i
+                                                \geq 4 \)). This series lies in the infrared (IR) region of the
+                                                electromagnetic spectrum.
+                                            </p>
+                                            <p>
+                                                <strong>Wavelength Calculations:</strong>
+                                            </p>
+                                            <p>
+                                                Using the Rydberg formula:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \frac{1}{\lambda} = R \left( \frac{1}{3^2} - \frac{1}{n_i^2} \right)
+                                                \)
+                                                Where \( n_i \geq 4 \).
+                                            </p>
+                                            <p>
+                                                Minimum Wavelength (\( \lambda_{\text{min}} \)) occurs when \( n_i \)
+                                                approaches infinity:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{min}} = \frac{1}{R \left( \frac{1}{9} - 0 \right)} =
+                                                \frac{9}{R} \approx 820.7 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Maximum Wavelength (\( \lambda_{\text{max}} \)) occurs when \( n_i = 4
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{max}} = \frac{1}{R \left( \frac{1}{9} - \frac{1}{16}
+                                                \right)} = \frac{144}{7 R} \approx 1875.1 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The Paschen series transitions emit infrared radiation, which is not
+                                                visible to the naked eye but can be detected using specialized
+                                                instruments. These lines are important in various applications,
+                                                including astronomy and infrared spectroscopy.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Brackett Series:</strong> \( n_f = 4 \) (Far-Infrared
+                                                Region)</summary>
+                                            <p class="mt-2">
+                                                The Brackett series involves transitions where electrons fall to the
+                                                fourth energy level (\( n_f = 4 \)) from higher energy levels (\( n_i
+                                                \geq 5 \)). This series lies in the far-infrared (FIR) region of the
+                                                electromagnetic spectrum.
+                                            </p>
+                                            <p>
+                                                <strong>Wavelength Calculations:</strong>
+                                            </p>
+                                            <p>
+                                                Using the Rydberg formula:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \frac{1}{\lambda} = R \left( \frac{1}{4^2} - \frac{1}{n_i^2} \right)
+                                                \)
+                                                Where \( n_i \geq 5 \).
+                                            </p>
+                                            <p>
+                                                Minimum Wavelength (\( \lambda_{\text{min}} \)) occurs when \( n_i \)
+                                                approaches infinity:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{min}} = \frac{1}{R \left( \frac{1}{16} - 0 \right)} =
+                                                \frac{16}{R} \approx 1459.4 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Maximum Wavelength (\( \lambda_{\text{max}} \)) occurs when \( n_i = 5
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{max}} = \frac{1}{R \left( \frac{1}{16} - \frac{1}{25}
+                                                \right)} = \frac{400}{9 R} \approx 1096.1 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The Brackett series transitions emit far-infrared radiation, which is
+                                                useful in molecular spectroscopy and astrophysical studies, particularly
+                                                in observing cool celestial objects.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Pfund Series:</strong> \( n_f = 5 \) (Mid-Infrared Region)
+                                            </summary>
+                                            <p class="mt-2">
+                                                The Pfund series involves transitions where electrons fall to the fifth
+                                                energy level (\( n_f = 5 \)) from higher energy levels (\( n_i \geq 6
+                                                \)). This series lies in the mid-infrared (MIR) region of the
+                                                electromagnetic spectrum.
+                                            </p>
+                                            <p>
+                                                <strong>Wavelength Calculations:</strong>
+                                            </p>
+                                            <p>
+                                                Using the Rydberg formula:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \frac{1}{\lambda} = R \left( \frac{1}{5^2} - \frac{1}{n_i^2} \right)
+                                                \)
+                                                Where \( n_i \geq 6 \).
+                                            </p>
+                                            <p>
+                                                Minimum Wavelength (\( \lambda_{\text{min}} \)) occurs when \( n_i \)
+                                                approaches infinity:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{min}} = \frac{1}{R \left( \frac{1}{25} - 0 \right)} =
+                                                \frac{25}{R} \approx 2281.8 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Maximum Wavelength (\( \lambda_{\text{max}} \)) occurs when \( n_i = 6
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \lambda_{\text{max}} = \frac{1}{R \left( \frac{1}{25} - \frac{1}{36}
+                                                \right)} = \frac{900}{11 R} \approx 825.2 \, \text{nm}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The Pfund series transitions emit mid-infrared radiation, which is
+                                                instrumental in various scientific fields, including thermal imaging and
+                                                chemical spectroscopy.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <h6 class="mt-4"><strong>Recoiling of Atoms During Transition</strong></h6>
+                                <p>
+                                    Conservation of momentum dictates that when a photon is emitted, the atom
+                                    recoils in
+                                    the opposite direction. The momentum of the photon is \( p_{\text{photon}} =
+                                    \dfrac{E}{c} \), and by conservation of momentum, the atom gains an equal and
+                                    opposite momentum \( p_{\text{atom}} = -\dfrac{E}{c} \).
+                                </p>
+                                <p>
+                                    The kinetic energy of the recoiling atom is:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    K_{\text{atom}} = \dfrac{p_{\text{atom}}^2}{2 M} = \dfrac{(E/c)^2}{2 M}
+                                    \)
+                                </p>
+                                <p>
+                                    Since the mass \( M \) of the atom is much larger than the energy \( E \)
+                                    divided by
+                                    the speed of light \( c \), the recoil energy \( K_{\text{atom}} \) is
+                                    negligible
+                                    compared to the energy of the emitted photon \( E \). Therefore, the recoil of
+                                    the
+                                    atom does not significantly affect the energy calculations of the emitted
+                                    photon.
+                                </p>
+                                <h6 class="mt-4"><strong>Transition in Moving Atoms</strong></h6>
+                                <p>
+                                    For atoms moving at significant velocities, Doppler effect and relativistic
+                                    corrections may need to be considered when analyzing spectral lines and
+                                    transition
+                                    energies. The observed frequency \( \nu' \) is shifted due to the motion of the
+                                    atom:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \nu' = \nu \left( 1 \pm \dfrac{v}{c} \right)
+                                    \)
+                                </p>
+                                <p>
+                                    Where \( v \) is the velocity of the atom along the line of sight, and the
+                                    positive
+                                    sign corresponds to the atom moving away from the observer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: Atomic Collisions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCollisions">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCollisions" aria-expanded="false"
+                                aria-controls="collapseCollisions">
+                                <strong>Atomic Collisions</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseCollisions" class="accordion-collapse collapse"
+                            aria-labelledby="headingCollisions" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    At the atomic scale, it is not appropriate to consider energy losses in the form of
+                                    friction, heating, sound, or deformation of the body, as we do with macroscopic
+                                    objects. For instance, heating is still a form of kinetic energy at the atomic
+                                    level, and deformation involves the realignment of arrays of molecules, which does
+                                    not apply to individual atoms. Instead, energy loss in atomic collisions occurs
+                                    through quantum mechanical processes such as electronic excitations or ionizations.
+                                    These quantum transitions are fundamentally different from the classical dissipative
+                                    mechanisms observed in larger-scale interactions.
+                                </p>
+                                <p>
+                                    In atomic collisions, energy exchange determines the type of collision that occurs.
+                                    An inelastic collision happens when kinetic energy is not conserved due to internal
+                                    energy changes, such as the excitation or ionization of electrons. For a collision
+                                    to be inelastic, the kinetic energy (\( K \)) of the incident particle must be
+                                    sufficient to cause a transition in the target atom.
+                                </p>
+                                <p>
+                                    Specifically, the energy loss (\( \Delta E \)) during the collision must be equal to
+                                    or greater than the energy difference between the electron's initial and final
+                                    states. If this condition is met (\( K \geq \Delta E \)), the collision results in
+                                    the excitation or ionization of the electron, and kinetic energy may not be
+                                    conserved.
+                                    Otherwise, the collision is elastic, and kinetic energy remains conserved without
+                                    any internal energy changes.
+                                </p>
+
+                                <h6 class="mt-3"><strong>Illustrative Example: Head-on Collision of Neutron with
+                                        Hydrogen</strong></h6>
+                                <p>
+                                    Consider a neutron colliding head-on with a hydrogen atom in its ground state at
+                                    rest. The nature of the collision—whether it is elastic or inelastic—depends on the
+                                    kinetic energy (\( K \)) of the neutron relative to the energy required to excite
+                                    the electron in the hydrogen atom.
+                                </p>
+                                <p>
+                                    The energy levels of a hydrogen atom are quantized, with specific energy differences
+                                    between levels. The possible energy transitions (\( \Delta E \)) are:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \Delta E = \{0, 10.2\, \text{eV}, 12.09\, \text{eV}, \dots, 13.6\, \text{eV}\}
+                                    \)
+                                </p>
+                                <p>
+                                    According to classical mechanics, the minimum energy loss in a collision is zero
+                                    (elastic collision), while the maximum energy loss occurs in a perfectly inelastic
+                                    collision. In a perfectly inelastic head-on collision between the neutron and the
+                                    hydrogen atom, momentum conservation dictates:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    m v_0 = (m + m) v_f
+                                    \)
+                                </p>
+                                <p>
+                                    Assuming the mass of the neutron is approximately equal to the mass of the hydrogen
+                                    atom (\( m \)), we have:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    m v_0 = 2 m v_f \implies v_f = \frac{v_0}{2}
+                                    \)
+                                </p>
+                                <p>
+                                    The final kinetic energy (\( K_f \)) of the system is then:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    K_f = \frac{1}{2} (m + m) v_f^2 = \frac{1}{2} (2 m) \left( \frac{v_0}{2} \right)^2
+                                    \)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad
+                                    K_f =
+                                    \frac{1}{4} m v_0^2
+                                    \)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad
+                                    K_f = \frac{K}{2}
+                                    \)
+                                </p>
+                                <p>
+                                    Therefore, the maximum possible energy loss (\( \Delta E_{\text{max}} \)) in the
+                                    collision is \(\dfrac{K}{2}\):
+                                </p>
+                                <p>
+                                    To determine whether the collision is elastic or inelastic for different kinetic
+                                    energies, we compare \( \Delta E_{\text{max}} \) with the energy required for
+                                    excitation (\( \Delta E \)):
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong> When \( K = 14\, \text{eV} \):</strong></summary>
+                                            <p>
+                                                The maximum energy loss is \( \frac{14\, \text{eV}}{2} = 7\, \text{eV}
+                                                \). This is less than the minimum excitation energy (\( 10.2\, \text{eV}
+                                                \)), so the collision cannot excite the hydrogen atom. Therefore, the
+                                                collision is bound to be elastic.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>When \( K = 20.4\, \text{eV} \):</strong></summary>
+                                            <p>
+                                                The maximum energy loss is \( \frac{20.4\, \text{eV}}{2} = 10.2\,
+                                                \text{eV} \). This equals the minimum excitation energy, allowing the
+                                                collision to be perfectly inelastic, resulting in the excitation of the
+                                                hydrogen atom. So in this case, the collision can be either elastic or
+                                                perfectly inelastic.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>When \( K = 22\, \text{eV} \):</strong></summary>
+                                            <p>
+                                                The maximum energy loss is \( \frac{22\, \text{eV}}{2} = 11\, \text{eV}
+                                                \). This exceeds the minimum excitation energy, so the collision can be
+                                                inelastic, with a possible loss of \( 10.2\, \text{eV} \) of kinetic
+                                                energy. Thus, possible types of collision in this case are elastic and
+                                                inelastic collisions.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>When \( K = 24.18\, \text{eV} \):</strong></summary>
+                                            <p>
+                                                The maximum energy loss is \( \frac{24.18\, \text{eV}}{2} = 12.09\,
+                                                \text{eV} \). This allows for higher energy excitations, and the
+                                                collision may be elastic (with no loss in kinetic energy), inelastic
+                                                (with a loss of \( 10.2\, \text{eV} \)), or perfectly inelastic (with a
+                                                loss of \( 12.09\, \text{eV} \)).
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Understanding the conditions under which collisions are elastic or inelastic is
+                                    essential in fields like nuclear physics and material science, where atomic
+                                    interactions influence the behavior of matter.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
