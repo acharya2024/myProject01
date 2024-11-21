@@ -1,0 +1,112 @@
+
+        @media print {
+            body {
+                background-color: black;
+            }
+        }
+
+        .accordion-body p {
+            text-align: justify;
+            padding: 5px;
+        }
+
+        .accordion-body p:hover,
+        li:hover {
+            transition: box-shadow .2s;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #e1e1e1;
+        }
+
+
+
+        html {
+            height: 100%;
+        }
+
+        #content {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div {
+            overflow: auto;
+        }
+
+        explained {
+            text-shadow: 0px 0px 1px;
+        }
+
+        figure {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        math {
+            margin-left: 10%;
+        }
+
+        equationDetail {
+            float: right;
+        }
+
+        interaction {
+            border: 20px;
+        }
+
+        .activity-invitation {
+            min-width: 300px;
+            border-radius: 17px;
+            background: #ffffff;
+            box-shadow: 5px 5px 10px #f0f0f0,
+                -5px -5px 10px #ffffff;
+        }
+
+        .explore:hover {
+            border-radius: 7px;
+            background: #ffffff;
+            box-shadow: 5px 5px 49px #e0e0e0,
+                -5px -5px 49px #ffffff;
+        }
+
+        details[open] summary~* {
+            animation: sweep .5s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {
+                opacity: 0;
+                margin-top: -10px
+            }
+
+            100% {
+                opacity: 1;
+                margin-top: 0px
+            }
+        }
+
+        .locked {
+            background-color: hsla(162, 100%, 92%, 0.286);
+            /* Light grey */
+        }
+
+        .unlocked {
+            background-color: hsl(162, 100%, 85%);
+            ;
+            /* Slightly darker grey */
+        }
+
+        .read {
+            background-color: hsl(162, 81%, 79%);
+            ;
+            /* Even darker grey */
+        }
+
+        .text-law {
+            text-shadow: 0 8px 10px #d4d4d4;
+            font-size: large;
+            font-weight: bold;
+        }
+        response{
+            cursor: pointer;
+        }
+    

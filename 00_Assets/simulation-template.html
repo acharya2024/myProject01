@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> IIT circuit | Be extraordinary! </title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0">
+
+    <style>
+        /* Laptop and larger devices */
+        @media (min-width: 992px) {
+            #control-card {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 200px;
+            }
+        }
+
+        /* iPad and smaller laptops */
+        @media (max-width: 991.98px) {
+            #control-button {
+                display: inline-block;
+            }
+
+            #control-card {
+                display: none;
+            }
+        }
+
+        /* Mobile phones */
+        @media (max-width: 575.98px) {
+            #control-slide {
+                display: inline-block;
+            }
+
+            #control-card,
+            #control-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <div class="jumbotron text-center">
+        <h1>Heading_Here</h1>
+    </div>
+
+    <!-- Instructions -->
+    <div class="container">
+        <p>Instructions_Here</p>
+    </div>
+
+    <!-- Simulation Lab -->
+    <div class="container">
+        <div class="card" style="height: 500px; position: relative;">
+            <div class="card-body">
+                Simulations_Here
+
+                <!-- Control Card for Laptop -->
+                <div id="control-card" class="card">
+                    <div class="card-body">
+                        Controls_Here
+                    </div>
+                </div>
+
+                <!-- Control Button for iPad -->
+                <button id="control-button" class="btn btn-primary" style="display:none;">Controls</button>
+
+                <!-- Control Slide for Mobile -->
+                <div id="control-slide" style="display:none;">
+                    <button class="btn btn-primary">Controls</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button for iPad -->
+<button id="control-button" class="btn btn-primary d-none">
+    Show Controls
+</button>
+
+<!-- Div for Mobile -->
+<div id="control-slide" class="d-none">
+    Hover for Controls
+</div>
+    
+    <script>
+        $(document).ready(function () {
+            // For iPad: Show the control card as a modal
+            $("#control-button").click(function () {
+                let controlContent = $("#control-card").html();
+                let modal = `
+                    <div class="modal fade" id="controlModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Controls</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ${controlContent}
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                $("body").append(modal);
+                $("#controlModal").modal('show');
+            });
+
+            // For Mobile: Slide-down the control card
+            let isControlSlideDown = false;
+            $("#control-slide").hover(function () {
+                if (!isControlSlideDown) {
+                    let controlContent = $("#control-card").html();
+                    let slideDownCard = `
+                        <div id="slideDownCard" class="card" style="position: fixed; bottom: 0; width: 100%;">
+                            <div class="card-body">
+                                ${controlContent}
+                            </div>
+                        </div>`;
+                    $("body").append(slideDownCard);
+                    isControlSlideDown = true;
+                } else {
+                    $("#slideDownCard").remove();
+                    isControlSlideDown = false;
+                }
+            });
+        });
+        // Function to adjust control visibility based on screen size
+function adjustControls() {
+    if (window.innerWidth <= 768) { // For Mobile
+        $("#control-slide").removeClass("d-none");
+        $("#control-button").addClass("d-none");
+    } else if (window.innerWidth <= 1024) { // For iPad
+        $("#control-button").removeClass("d-none");
+        $("#control-slide").addClass("d-none");
+    } else { // For Desktop
+        $("#control-button").addClass("d-none");
+        $("#control-slide").addClass("d-none");
+    }
+}
+
+// Initial adjustment
+adjustControls();
+
+// Adjust controls on window resize
+$(window).resize(function() {
+    adjustControls();
+});
+    </script>
+
+
+</body>
+
+</html>
