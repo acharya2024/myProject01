@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | SHM </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Simple Harmonic Motion</h1>
+                    <p class="lead" id="tagline">Analysis of the repeating motion</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-0"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-0-heading"
+                                aria-expanded="false" aria-controls="section-0-heading"> <strong>Required
+                                    Mathematics</strong> </button> </h2>
+                        <div id="section-0-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-0-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    To study and understand Simple Harmonic Motion (SHM), strong grasp of following
+                                    mathematical concepts are required:
+                                </p>
+                                <p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Trigonometry</summary>
+                                            <p>
+                                                Along with trigonometric ratios of standard angles, following results
+                                                must be remembered:
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">The angle \(180^\circ\) is same as \(\pi\)
+                                                    radians. For any angle \(x^\circ\) to convert it in \(\theta\) rad,
+                                                    <p>\(\qquad\theta=\pi\times\frac{x}{180}\)</p>
+                                                </li>
+                                                <li class="list-group-item">Maximum value of \(a\sin(\theta)\) is \(a\).
+                                                    Maximum value of \(b\cos(\theta)\) is \(b\). But maximum value of
+                                                    \(a\sin(\theta)+b\cos(\theta)\) is \(\sqrt{a^2+b^2}\)
+                                                </li>
+                                                <li class="list-group-item">To convert a \(\sin\) function to \(\cos\)
+                                                    function we use :<p>\(\quad\sin(\frac{\pi}{2}-\theta)=\cos(\theta)\)
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Effect of addition of following angles in \(\sin\) and \(\cos\)
+                                                    function:
+                                                    <p>
+                                                        \(\qquad \sin\left(\theta+2\pi\right)=\sin\left(\theta\right)\);
+                                                        \(\qquad \cos\left(\theta+2\pi\right)=\cos\left(\theta\right)\);
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad \sin\left(\theta+\pi\right)=-\sin\left(\theta\right)\);
+                                                        \(\qquad \cos\left(\theta+\pi\right)=\cos\left(\theta\right)\);
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad\sin\left(\theta+\frac{\pi}{2}\right)=\cos\left(\theta\right)\);
+                                                        \(\qquad\cos\left(\theta+\frac{\pi}{2}\right)=\sin\left(\theta\right)\);
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item list-group-flush">
+                                        <details>
+                                            <summary>Graphs</summary>
+                                            <p>
+                                                The graph of \(\sin\left(x\right)\) and \(\cos\left(x\right)\) depending
+                                                on \(x\) should
+                                                be remembered. This is shown below:
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <figure style="max-width: 300px; min-width: 200px;"> <img
+                                                                src="img/Pictures_20.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram not loaded">
+                                                            <figcaption class="figure-caption text-center">Figure:
+                                                                Graph of \(\sin(x)\).
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col">
+                                                        <figure style="max-width: 300px; min-width: 200px;"> <img
+                                                                src="img/Pictures_21.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram not loaded">
+                                                            <figcaption class="figure-caption text-center">Figure:
+                                                                Graph of \(\cos(x)\).
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item list-group-flush">
+                                        <details>
+                                            <summary>Calculus</summary>
+                                            <p>
+                                            <ul class="list-group ">
+                                                <li class="list-group-item">
+                                                    Differentiation of a physical quantity \(y\) with respect to \(x\)
+                                                    represents rate of change of \(y\) with respect to change in \(x\).
+                                                </li>
+                                                <li class="list-group-item">
+                                                    For a particle if position is \(\vec{x}\), velocity is \(\vec{v}\)
+                                                    and its acceleration is \(\vec{a}\) for any general time \(t\), then
+                                                    <p>\(\qquad\vec{v}=\frac{d\vec{x}}{dt}\);
+                                                        \(\qquad\vec{a}=\frac{d\vec{v}}{dt}\)
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    General rules for differentiation of trigonometric functions are as
+                                                    follows:
+                                                    <p>
+                                                        \(\qquad\frac{d\left(\sin(t)\right)}{dt}=\cos(t)\);
+                                                        \(\qquad\frac{d\left(\cos(t)\right)}{dt}=-\sin(t)\);
+                                                    </p>
+                                                    Using chain rule:
+                                                    <p>
+                                                        \(\qquad\frac{d\left(\sin(\omega
+                                                        t)\right)}{dt}=\omega\cos(\omega t)\);
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Vectors</summary>
+                                            <p>
+                                                If two vectors \(\vec{A}\) and \(\vec{B}\) have angle \(\theta\) between
+                                                them, the
+                                                magnitude of their resultant is given as:
+                                            </p>
+                                            <p>
+                                                \(\qquad |\vec{R}|=\sqrt{|\vec{A}|^2+|\vec{B}|^2+2 |\vec{A}| |{\vec{B}}|
+                                                \cos(\theta)}\)
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-1"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-1-heading"
+                                aria-expanded="false" aria-controls="section-1-heading"> <strong>Introduction to
+                                    SHM</strong>
+                            </button> </h2>
+                        <div id="section-1-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-1-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Consider a body kept in <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="...the type of equilibrium in which particle tends to regain its original position if slightly displaced.                                ">
+                                        stable equilibrium</explained>, if this body is displaced slightly from its
+                                    equilibrium position, it will continue to move back and forth around its equilibrium
+                                    position. We will study all such types of motion that repeat themselves in regular
+                                    time interval under following categories:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Periodic motion</strong></summary>Periodic motion of a body
+                                            is that motion which is repeated exactly after a fixed interval of time.
+                                            Mathematically, if a function of time \(f\left(t\right)\) can be expressed
+                                            as \(f\left(t+T\right)\)=\(f\left(t\right)\), then the function can be
+                                            regarded as periodic with period \(T\). Motion of any particle described by
+                                            such periodic function will be a
+                                            <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                                title="...with time period T">periodic motion</explained>
+                                            . Following are a few examples
+                                            of periodic motion: <p>
+                                            <ol class="list-group-flush list-group-numbered">
+                                                <li class="list-group-item">The revolution of earth around the sun is a
+                                                    periodic motion. Its period of revolution is one year</li>
+                                                <li class="list-group-item">The motion of hands of a clock is a periodic
+                                                    motion. The period of motion of hour’s hand of a clock is 12 hours,
+                                                    of minute&apos;s hand of a clock is 1 hour and of second’s hand of a
+                                                    clock is one minute.</li>
+                                                <li class="list-group-item">Uniform circular motion is a periodic
+                                                    motion. </li>
+                                                <li class="list-group-item">
+                                                    A pendulum performs periodic motion, as it repeats its motion after
+                                                    a
+                                                    regular time interval.
+                                                </li>
+                                            </ol>
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Yes, you are right. You must have understood that the particles of wheel do not reach same position again. So their exact motion does not get repeated. Thus, It is not a periodic motion."
+                                                    false-response="No. The particles do not follow circular path. A particle of wheel never reaches its initial position as vehicle moves. So their exact motion does not get repeated. So motion of such particle is not periodic."
+                                                    ansKey="false">
+                                                    Do you think a particle on a wheel of a moving vehicle performs
+                                                    periodic motion?
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Oscillatory motion</strong></summary>
+                                            <p>
+                                                Oscillatory motion or
+                                                vibration is that motion in which a body moves <explained
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    title="...backward and forward.                                ">
+                                                    to and fro</explained> repeatedly about a
+                                                fixed point (called mean position), in a definite
+                                                interval of time. In
+                                                such an oscillatory motion, the body is confined within well-defined
+                                                limits (called extreme positions) on either side of mean position. Thus
+                                                every oscillatory motion is a periodic motion but only that periodic
+                                                motion
+                                                which is bounded between two extremes are called oscillatory motion.
+                                                Following are a few examples of oscillatory motions:
+                                            <ol class="list-group-flush list-group-numbered">
+                                                <li class="list-group-item">The motion of the bob of a simple pendulum
+                                                    when it is displaced once from its mean position and released for
+                                                    its motion, the motion is oscillatory motion. This is shown in
+                                                    following animation
+                                                    <figure style="max-width: 100px;"> <img
+                                                            src="img/06_oscillation_example.gif"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+                                                        <figcaption class="figure-caption ">Animation: Pendulum in
+                                                            oscillation.
+                                                        </figcaption>
+                                                    </figure>
+                                                </li>
+                                                <li class="list-group-item">The motion of liquid contained in U-tube
+                                                    when it is compressed once in one limb and left to itself, is
+                                                    oscillatory motion. This is shown in following animation:
+                                                    <figure style="max-width: 150px;"> <img
+                                                            src="img/07_Utube_water_oscillation.gif"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+                                                        <figcaption class="figure-caption text-center">Animation: Water
+                                                            oscillating in U tube. </figcaption>
+                                                    </figure>
+                                                </li>
+                                            </ol>
+                                            </p>
+                                            <interaction
+                                                true-response="Right. Seems you have understood oscillatory motion well. Since in every oscillation, motion repeats 
+after regular time interval, it is a periodic motion. Remember that in some cases if time period is variable, few textbooks still consider the motion to be oscillatory but not periodic."
+                                                false-response="This time you are incorrect. Since in every oscillation, motion repeats 
+after regular time interval, it is a periodic motion. Remember that in some cases if time period is variable, few textbooks still consider the motion to be oscillatory but not periodic."
+                                                ansKey="true">
+                                                Is every oscillatory motion always a periodic motion?
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    Yes
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    No
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Simple harmonic motion</strong></summary>
+                                            <p>
+                                                Simple Harmonic Motion (SHM) is a type of <explained
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    title="...the motion that repeats itself over and over again after same time interval.">
+                                                    periodic motion</explained> that is
+                                                commonly encountered in many different physical systems. It is a
+                                                particularly important concept in the study of physics, as it is the
+                                                basis for understanding many other types of oscillatory behavior, such
+                                                as sound waves and electromagnetic waves.
+                                            </p>
+                                            <p>
+                                                If a particle is placed under equilibrium at a position, net force
+                                                acting on the particle is zero at that position. Consider a situation in
+                                                which, if the particle gets displaced from this equilibrium position it
+                                                experiences a net force that moves it back to previous position.
+                                            </p>
+                                            <p>
+                                                The restoring force always tending to restore particle to its
+                                                equilibrium position is shown by arrow in following animation:
+                                            <figure style="max-width: 300px; max-height: 200px;"> <img
+                                                    src="img/04_general_SHM.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Action of
+                                                    restoring force.
+                                                </figcaption>
+                                            </figure>
+                                            </p>
+                                            <p>
+                                                Such
+                                                force tending to restore the particle to equilibrium position is called
+                                                restoring force and this equilibrium position is called mean position.
+                                                If such a restoring force becomes <explained data-bs-toggle="tooltip"
+                                                    data-bs-placement="top"
+                                                    title="...becomes directly proportional on...">
+                                                    linearly dependent</explained> on displacement of particle, the
+                                                resulting motion of particle becomes simple harmonic motion.
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="That&apos;s right. Its magnitude is zero at the mean position while its magnitude is maximum as particle reaches extreme position. The restoring forces changes its direction during SHM."
+                                                    false-response="No. We just learned that force is directly proportional to displacement from mean position. As position will change, force will also change making the force a variable force"
+                                                    ansKey="variable">
+                                                    What type of force do you think is the restoring force?
+                                                    <response class="badge bg-light text-dark" responseValue="constant">
+                                                        Constant force
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="variable">
+                                                        Variable force
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p> In exact words, a particle performing simple harmonic motion oscillates
+                                                in straight line in such a way that the acceleration \(\vec{a}\) is
+                                                proportional to negative of displacement vector \(\vec{x}\) from
+                                                <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    title="...the equilibrium position">
+                                                    mean position</explained>.
+                                                Thus requirement for a particle to perform simple harmonic motion is
+                                            </p>
+                                            <p>\(\qquad\vec{a}\propto -\vec{x}\)</p>
+                                            <p>\(\qquad\vec{a} = -\omega^2\vec{x}\)</p>
+                                            <p>where \(\vec{x}\) is the displacement of the particle measured from mean
+                                                position and \(\omega\) represents a constant. The square of the term
+                                                \(\omega\) ensures that the proportionality constant remains
+                                                positive. The acceleration of particle is always along direction
+                                                opposite to direction of displacement of the particle. We can conclude
+                                                that acceleration of a particle executing simple harmonic motion is
+                                                always directed towards its mean position as shown:</p>
+                                            <figure style="max-width: 400px;"> <img
+                                                    src="img/Pictures_2.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: In SHM,
+                                                    acceleration is always directed against displacement.
+                                                </figcaption>
+                                            </figure>
+                                            <interaction
+                                                true-response="Yes. As particle gets displaced from equilibrium, it tends to regain its original position. Thus the equilibrium is stable."
+                                                false-response="No. As particle gets displaced from equilibrium, it tends to regain its original position. Thus the equilibrium is stable."
+                                                ansKey="stable">
+                                                A particle in SHM is in equilibrium at its mean position. What type of
+                                                equilibrium is this equilibrium?
+                                                <response class="badge bg-light text-dark" responseValue="stable">
+                                                    Stable equilibrium
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="unstable">
+                                                    Unstable equilibrium
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="neutral">
+                                                    Neutral equilibrium
+                                                </response>
+                                                <br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                            <p>If a particle performs <explained data-bs-toggle="tooltip"
+                                                    data-bs-placement="top"
+                                                    title="...the straight line motion in which acceleration is proportional to negative of displacement.                            ">
+                                                    simple harmonic motion</explained>, its motion is usually analysed
+                                                by
+                                                measuring displacement from mean position. For a particle in SHM, the
+                                                maximum
+                                                magnitude of
+                                                displacement of the particle from mean position is called amplitude. The
+                                                time taken
+                                                to complete one cycle of the motion is called time period of the SHM.
+                                            </p>
+                                            <interaction
+                                                true-response="Yes. 2A on one side and remaining 2A on the other side of mean position."
+                                                false-response="Distance is the total path length travelled by particle. While going from mean position
+to extreme position, it travels distance A and while coming back to mean position, again travels A. Same is repeated on other side 
+of mean position. So, the total distance becomes 4A." ansKey="4A">
+                                                Suppose a particle undergoes SHM of amplitude \(A\). How much is the
+                                                total distance travelled by particle in one complete time period?
+                                                <response class="badge bg-light text-dark" responseValue="A">
+                                                    \(A\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="2A">
+                                                    \(2A\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="3A">
+                                                    \(3A\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="4A">
+                                                    \(4A\)
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-2"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-2-heading"
+                                aria-expanded="false" aria-controls="section-2-heading"> <strong>Examples of
+                                    SHM</strong>
+                            </button> </h2>
+                        <div id="section-2-heading" class="accordion-collapse collapse "
+                            aria-labelledby="section-2-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>To have a better understanding of particles performing SHM, we must analyse few
+                                    examples of SHM. Following are few examples of SHM:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Spring block system</strong></summary>If a block is kept on
+                                            smooth horizontal surface and an <explained data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+                                                title="...a spring that has no mass and has no damping.">ideal spring
+                                            </explained> is attached to it. If the block gets displaced from its mean
+                                            position, the spring applies force on the block. The applied force is
+                                            proportional to displacement of the block and is directed opposite to the
+                                            displacement of the block. This is shown in following animation:
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/01_spring_block.gif"
+                                                    class="figure-img img-fluid rounded animation-video"
+                                                    alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: SHM of spring
+                                                    block system.
+                                                </figcaption>
+                                            </figure>
+                                            <interaction
+                                                true-response="Good. In presence of friction the block would have continuously lost its mechanical energy and had stopped."
+                                                false-response="No. If there had been friction, the motion of block will always get opposed by friction. So, block will stop in presence of friction."
+                                                ansKey="zero">
+                                                In above animation, how much do you think is the co-efficient of
+                                                friction between block and the horizontal surface?
+                                                <response class="badge bg-light text-dark" responseValue="zero">
+                                                    zero
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="non-zero">
+                                                    non-zero
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Simple pendulum</strong></summary>If a small particle is
+                                            attached to a string and is suspended as shown in diagram below, the system
+                                            is called a simple pendulum. If this pendulum is slightly rotated and is
+                                            released, acceleration of the bob will be due to component of its weight
+                                            towards mean position. Although the motion is not straight line motion, but
+                                            if amplitude of motion is small it can be approximated as straight line
+                                            motion and the resulting motion will become SHM. This is shown in following
+                                            animation: <figure style="max-width: 150px;"> <img
+                                                    src="img/02_simple_pendulum.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: SHM of bob of
+                                                    a simple pendulum. </figcaption>
+                                            </figure>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Floating block in water</strong></summary> If a small block
+                                            is floating in water, the block stays in equilibrium as the <explained
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                title="...the upward force applied by water. This force is more if the object is more submerged in water. Detailed explanation in Archimedes principle">
+                                                upthrust</explained> applied by water on the block is cancelled by
+                                            weight of the block. If now the block is slightly pushed downwards and
+                                            released, the upthrust will become more than weight of the block and the
+                                            block will be accelerated upwards due to excess upthrust. If the block is
+                                            slightly pulled up and released, the upthrust will become less than weight
+                                            of the block and the block will be accelerated downwards due to excess
+                                            force. Such vertical oscillation of the block will also be SHM. <figure
+                                                style="max-width: 150px;"> <img
+                                                    src="img/03_block_in_water.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: SHM of block
+                                                    floating in water. </figcaption>
+                                            </figure>
+                                            <interaction true-response="Its nice that you are studying sincerely."
+                                                false-response="No. The block block as well as water is in SHM. As block moves up, water level goes down."
+                                                ansKey="both">
+                                                Observe the above animation minutely. Is the block under SHM or water?
+                                                <response class="badge bg-light text-dark" responseValue="water">
+                                                    water
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="block">
+                                                    block
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="both">
+                                                    both
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    We observe that every such kind of SHM of particle has some mean position where the
+                                    particle is in equilibrium and if the particle gets displaced from mean position,
+                                    net force acts on the particle to restore the particle to its equilibrium. Such
+                                    resultant force acting on the particle which always acts towards the mean position
+                                    is called the restoring force as described previously.
+                                </p>
+                                <p>
+                                    SHM is also observed in waves, such as water waves, sound waves, and electromagnetic
+                                    waves. In all these cases, the particles that make up the wave oscillate back and
+                                    forth around their equilibrium positions.
+                                </p>
+                                <p>
+                                    SHM has many practical applications in everyday life. For example, the motion of a
+                                    car's suspension system as it drives over bumps and potholes can be modeled as
+                                    simple harmonic motion. The vibration of a guitar string and the oscillation of a
+                                    tuning fork are also examples of simple harmonic motion. SHM is also used in the
+                                    design of various mechanical and electrical systems, such as clocks, watches, and
+                                    even earthquake-resistant buildings.
+                                </p>
+                                <p>
+                                    In summary, simple harmonic motion is a type of periodic motion that occurs when an
+                                    object oscillates back and forth around an equilibrium position under the influence
+                                    of a restoring force that is proportional to its displacement. It is a fundamental
+                                    concept in physics and has many practical applications in daily life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-3"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-3-heading"
+                                aria-expanded="false" aria-controls="section-3-heading"> <strong>General
+                                    equations used in SHM</strong> </button> </h2>
+                        <div id="section-3-heading" class="accordion-collapse collapse "
+                            aria-labelledby="section-3-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>If a particle performs <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="...the straight line motion in which acceleration is proportional to negative of displacement.                            ">
+                                        simple harmonic motion</explained>, its motion satisfies following relations:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Acceleration displacement equation</strong></summary>If
+                                            \(\vec{a}\) represents acceleration of a particle having displacement
+                                            \(\vec{x}\) from its mean position, then <p>\( \qquad\vec{a}=-{{\omega
+                                                }^{2}}\vec{x}\) </p>
+                                            <p>
+                                                The relation between acceleration of particle and its position is
+                                                plotted in following graph:
+                                            </p>
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/Pictures_13.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: Graph of
+                                                    acceleration versus position.
+                                                </figcaption>
+                                            </figure>
+                                            <p>
+                                                The slope of above graph is \(-\omega^2\).
+                                            </p>
+                                            <interaction true-response="Yes. We just learned that."
+                                                false-response="No. Read the previous statement more carefully."
+                                                ansKey="2">
+                                                Suppose the above graph has slope as \(-4\) in SI units. How much will
+                                                be the value of angular frequency\((\omega)\)?
+                                                <response class="badge bg-light text-dark" responseValue="1">
+                                                    \(1\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="2">
+                                                    \(2\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="-2">
+                                                    \(-2\)
+                                                </response>
+                                                <br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Displacement time equation</strong></summary>
+                                            <p>The previous
+                                                relation between acceleration \(\vec{a}\) and the displacement
+                                                \(\vec{x}\)
+                                                can be rewritten as:
+                                            <p> \(\qquad\frac{d^2x}{dt^2}=-\omega^2x\)</p> This is
+                                            a differential equation in \(\vec{x}\). Analytically we may interpret about
+                                            \(\vec{x}\) that its double derivative with respect to time \(t\) is
+                                            directly proportional to negative of itself. The same condition is satisfied
+                                            by sinusoidal functions, which have the property that their second
+                                            derivative is proportional to the function itself. Detailed calculations
+                                            give following relation between
+                                            displacement \(\vec{x}\) and time \(t\): <p>\(\qquad x=A\sin\left(\omega t +
+                                                \phi\right)\)</p> Here \(A\) is the amplitude of SHM and the argument
+                                            \(\left(\omega t + \phi\right)\) is called the phase of SHM. The phase gives
+                                            position and direction of motion in SHM at an instant.</p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Yes. The maximum value of any sinusuidal function is 1, making the maximum value of RHS in above equation as A."
+                                                    false-response="No. The maximum value of any sinusuidal function is 1, making the maximum value of RHS in above equation as A."
+                                                    ansKey="A">
+                                                    What is the maximum value of \(\vec{x}\) in the above equation?
+                                                    <response class="badge bg-light text-dark" responseValue="A">
+                                                        \(A\)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="2A">
+                                                        \(2A\)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p>
+                                                The relation between position of particle and time is
+                                                plotted in following graph:
+                                            </p>
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/Pictures_14.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: Graph of position
+                                                    versus time.
+                                                </figcaption>
+                                            </figure>
+                                            <p>
+                                                Using differentiation, we can obtain equations for velocity and
+                                                acceleration
+                                                of the particle. Thus,
+                                            </p>
+                                            <p>
+                                                \(\qquad v = A\omega \cos(\omega t + \phi)\)
+                                            </p>
+                                            <p>
+                                                \(\qquad a = -A\omega^{2}\sin(\omega t + \phi)\)
+                                            </p>
+                                            <interaction
+                                                true-response="Yes you are right. Afterall, why would we write something that&apos;s not correct."
+                                                false-response="No. Check your calculations again. Nothing mentioned above is incorrect."
+                                                ansKey="nothing">
+                                                The result obtained above for acceleration using double differentiation
+                                                of position has some mistake. Can you identify it?
+                                                <response class="badge bg-light text-dark" responseValue="negative">
+                                                    There should be no negative symbol
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="cos">
+                                                    Instead of \(\sin\), there should be \(\cos\)
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="nothing">
+                                                    No corrections required.
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Position velocity equation</strong></summary>
+                                            <p>From the
+                                                relation of position and time, we can use differentiation to get
+                                                relation
+                                                between velocity and time. Thus we have:
+                                            <p>\(\qquad x=A\sin\left(\omega t +
+                                                \phi\right)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...(i)</p>
+                                            <p>\(\Rightarrow \, \frac{dx}{dt}=A\omega\cos\left(\omega t + \phi\right)\)
+                                            </p>
+                                            <p>\(\Rightarrow \, v=A\omega\cos\left(\omega t +
+                                                \phi\right)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...(ii)</p> From
+                                            equations (i) and (ii) we can obtain relation between position and velocity
+                                            as: <p>\(\qquad
+                                                \left(\frac{x}{A}\right)^2+\left(\frac{v}{A\omega}\right)^2=1\) </p>
+                                            <p>\(\Rightarrow\,x^2+\left(\frac{v}{\omega}\right)^2=A^2\)</p>
+                                            <p>\(\Rightarrow\,v^2=\,\omega^2\left({A^2-x^2}\right)\)</p>
+                                            <p>\(\Rightarrow\,v=\pm\,\omega\sqrt{A^2-x^2}\)</p> This is the relation
+                                            between velocity and position of the particle under SHM. We can observe that
+                                            for every position except at the extreme positions (where the particle
+                                            momentarily stops), there are two possible values of velocities. This is
+                                            because particle passes through every point in SHM while moving forward as
+                                            well as backwards.</p>
+                                            <interaction true-response="That is clever of you. Yes there are two positions. 
+These two positions are on opposite sides of mean position at same distance." false-response="No. Actually there are two positions. These two positions
+are on opposite sides of mean position at same distance. This can also be observed from graph below:" ansKey="2">
+                                                For every position there are two velocities. For a given velocity (other
+                                                than the maximum velocity), how
+                                                many positions are there?
+                                                <response class="badge bg-light text-dark" responseValue="1">
+                                                    1
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="2">
+                                                    2
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="3">
+                                                    3
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                            <p>
+                                                The relation between velocity of particle and position is
+                                                plotted in following graph:
+                                            </p>
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/Pictures_15.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: Graph of velocity
+                                                    versus position.
+                                                </figcaption>
+                                            </figure>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-4"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-4-heading"
+                                aria-expanded="false" aria-controls="section-4-heading"> <strong>General terms used in
+                                    SHM</strong>
+                            </button> </h2>
+                        <div id="section-4-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-4-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>In reference to equation below for displacement of particle in SHM:</p>
+                                <p>\(\qquad x=A\sin\left(\omega t + \phi\right)\)<equationDetail>[Consider it equation
+                                        1]</equationDetail>
+                                </p> we can understand meaning of each
+                                term in following steps: <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Amplitude</strong> \((A)\)</summary> Amplitude of a
+                                            particle in its SHM is the maximum displacement of the particle from its
+                                            mean position. In the equation 1 it is represented by \(A\).
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Time period</strong> \((T)\)</summary>
+                                            <p>The time taken by
+                                                the particle to complete one full oscillation in SHM is called time
+                                                period
+                                                of SHM.</p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Right. That has to be one fourth of total time in one cycle."
+                                                    false-response="Incorrect. While going from mean position to extreme position, extreme 
+to mean, mean to negative extreme and then negative extreme to mean, each of these steps 
+will take equal times. So, one fourth of complete time period should be the answer." ansKey="T/4">
+                                                    If you understood the meaning of time period, tell me: If time
+                                                    period of a SHM is \(T\), what is time
+                                                    taken to reach from mean position to extreme position?
+                                                    <response class="badge bg-light text-dark" responseValue="T/2">
+                                                        \(T/2\)
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="T/4">
+                                                        \(T/4\)
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Frequency \((f)\)</strong> </summary>
+                                            <p>Frequency of any periodic motion is defined as number of cycles occurring
+                                                per unit time. If \(f\) is the frequency and \(T\) represents the time
+                                                period, then: </p>
+                                            <p> \(\qquad f={}^{1}/{}_{T}\) </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Yes. Increase in frequency will decrease the time period."
+                                                    false-response="No. Actually if frequency is increased, time period will decrease. So the time 
+taken to complete one cycle will be less. That means, motion will occur more rapidly." ansKey="quickly">
+                                                    Suppose, frequency of SHM is increase. It means that SHM will occur
+                                                    :
+                                                    <response class="badge bg-light text-dark" responseValue="slowly">
+                                                        slowly
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="quickly">
+                                                        more quickly
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Phase</strong>\((\Phi)\)</summary> The phase represents the
+                                            state of motion of the particle during its SHM. In the equation 1,
+                                            the argument \(\left(\omega t + \phi\right)\) is called the phase of SHM.
+                                            The phase of SHM represents state of the particle during its motion. Using a
+                                            few basic properties of sinusoidal expression, we can understand the
+                                            relation between displacement and the phase and draw the following graph:
+                                            <figure style="max-width: 350px;"> <img
+                                                    src="img/Pictures_6.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Graph: Variation of
+                                                    displacement with phase. </figcaption>
+                                            </figure> For different values of phase, state of particle is enlisted in
+                                            following table: <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Phase</th>
+                                                        <th scope="col">Motion</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">\(0\)</th>
+                                                        <td>Particle is at mean position, moving towards positive
+                                                            extreme.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\frac{\pi}{2}\)</th>
+                                                        <td>Particle is at positive extreme position and at rest.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\pi\)</th>
+                                                        <td>Particle is at mean position, moving towards negative
+                                                            extreme.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\frac{3\pi}{2}\)</th>
+                                                        <td>Particle is at negative extreme position and at rest.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(2\pi\)</th>
+                                                        <td>Particle is at mean position, moving towards positive
+                                                            extreme.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                The values of phase at various positions of particle under SHM is shown
+                                                in following animation:
+                                            <figure style="max-width: 500px;"> <img
+                                                    src="img/05_phase_position_relation.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Phase at
+                                                    various positions of SHM.
+                                                </figcaption>
+                                            </figure>
+                                            It is clear from the above graph, table and animation that there occurs a
+                                            phase change of \(2\pi\) in one complete cycle of SHM. Thus, after a phase
+                                            of \(2\pi\), the motion of the particle repeats itself. In other words, the
+                                            state of motion of particle at phase \(2\pi +\theta\) is the same as that of
+                                            at
+                                            phase \(\theta\).
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Right. That is because, the particle reaches its negative extreme at this phase."
+                                                    false-response="Wrong. The particle is at negative extreme at this phase. So its velocity will become zero."
+                                                    ansKey="zero">
+                                                    What is speed of particle, when phase of the SHM becomes
+                                                    \(\frac{3\pi}{2}\)
+                                                    <response class="badge bg-light text-dark" responseValue="zero">
+                                                        zero
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="maximum">
+                                                        its maximum
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p>
+                                                <interaction true-response="Yes. You observed it right. Actually the particle is at extreme position in positive side." false-response="No. Actually the particle is at extreme position in positive side. So, it is momentarily at rest." ansKey="rest">
+                                                    If the phase of SHM is \(\frac{\pi}{2}\) , what is the state of the
+                                                    particle?
+                                                    <response class="badge bg-light text-dark" responseValue="rest">
+                                                        Particle is at rest.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="moving">
+                                                        Particle is moving.
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Yes. That&apos;s because the restoring force is acting towards the mean position."
+                                                    false-response="No. We discussed that acceleration is opposite to displacement from mean position. That&apos;s 
+because therestoring force is acting towards the mean position." ansKey="negative">
+                                                    If a particle is at positive extreme during its SHM, its
+                                                    acceleration is along:
+                                                    <response class="badge bg-light text-dark" responseValue="positive">
+                                                        positive direction.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="negative">
+                                                        negative direction.
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Angular frequency \((\omega)\)</strong> </summary>
+                                            <p>It represents the rate at which the phase is changing. In the above
+                                                equation, the term \(\omega\) represents the angular frequency. This is
+                                                described mathematically below: </p>
+                                            <p> Rate of change of phase \(=\frac{d\Phi}{dt}\) </p>
+                                            <p> \(\qquad\frac{d\Phi}{dt}=\frac{d(\omega t+\phi)}{dt}=\omega\) </p>
+                                            <p> Thus in a time \(\Delta t\), the change in phase is \(\omega(\Delta
+                                                t)\).
+                                            </p>
+                                            <p> Since, there occurs a change of \(2\pi\) in phase of particle in one
+                                                time period (\(T\)) </p>
+                                            <p> \(\qquad \omega (T)=2\pi\) </p>
+                                            <p> \(\quad\Rightarrow T=\frac{2\pi}{\omega}\) </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Nice. In given process, phase changes by π. So, one half of time period of time should be taken."
+                                                    false-response="No. In given process, phase changes by π. A phase change of 2π involves one complete time period. 
+So, a phase change of only π should take half of time period." ansKey="T/4">
+                                                    Suppose, angular frequency of a particle performing SHM is \(2
+                                                    \text{rad/s}\). What is the time taken by particle to
+                                                    change its phase from \(\frac{\pi}{4}\) to \(\frac{3\pi}{4}\)?
+                                                    <response class="badge bg-light text-dark" responseValue="T/4">
+                                                        One quarter of time period.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="T/2">
+                                                        Half of time period.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="T">
+                                                        One time period.
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Initial phase</strong>\((\phi)\)</summary> When a particle
+                                            starts its SHM, the initial state of particle depends on initial phase. It
+                                            is determined by setting the value of time \(t\) as \(0\) in the equation
+                                            for phase. In the above equation \(\phi\) represents initial phase. Thus <p>
+                                                \(\qquad\)Initial phase \(=\left(\omega(0)+\phi\right)=\phi\)</p>
+                                            <p> For different values of initial phase, the particle will have different
+                                                starting position in its SHM. This is shown in following table: </p>
+                                            <p>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Initial phase</th>
+                                                        <th scope="col">Starting position</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">\(0\)</th>
+                                                        <td>Mean position, moving towards positive extreme.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\frac{\pi}{2}\)</th>
+                                                        <td>Positive extreme position.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\pi\)</th>
+                                                        <td>Mean position, moving towards negative extreme.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">\(\frac{3\pi}{2}\)</th>
+                                                        <td>Negative extreme position.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Right. Actually the particle is heading towards mean position while going in negative direction."
+                                                    false-response="No. If particle begins from mean position, its initial phase is either 0 or π. If motion begins from extreme positions, initial phase should be π/2 or 3π/2"
+                                                    ansKey="somewhere">
+                                                    Suppose initial phase of the particle is \(\frac{5\pi}{6}\), where
+                                                    is the particle initially?
+                                                    <response class="badge bg-light text-dark" responseValue="mean">
+                                                        At mean position.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="extreme">
+                                                        At extreme position.
+                                                    </response>
+                                                    <response class="badge bg-light text-dark"
+                                                        responseValue="somewhere">
+                                                        Somewhere between mean and extreme.
+                                                    </response>
+                                                    <br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-5"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-5-heading"
+                                aria-expanded="false" aria-controls="section-5-heading"> <strong>Dynamics of particles
+                                    in SHM</strong>
+                            </button> </h2>
+                        <div id="section-5-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-5-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>In dynamics of SHM, we study the forces acting in SHM and their relation with time
+                                    period and frequency of SHM. For a particle to perform SHM about a mean position,
+                                    there must be a net force acting on the particle when it gets displaced from its
+                                    mean position. Such force is known as restoring force. In SHM, restoring force
+                                    causes
+                                    the particle to again reach its mean position. Hence the restoring force is always
+                                    directed towards mean position.</p>
+                                
+                                <p> Consider a particle of mass \(m\) performing SHM. The force \(\vec{F}\)
+                                    depends on displacement from mean position \(\vec{x}\) as: </p>
+                                <p> \(\qquad \vec{F}=-k \,\vec{x}\)<equationDetail>[with \(k\) as a propotionality
+                                        constant]</equationDetail>
+                                </p>
+                                <p>Since this force is always directed towards the mean position, this force can be
+                                    considered as a restoring force for the system. A similar equation is followed by
+                                    any
+                                    system undergoing SHM. </p>
+                                <p> Using Newton&apos;s second law for the particle, </p>
+                                <p> \(\qquad m\,\vec{a}=-k \,\vec{x}\)<equationDetail>[with \(\vec{a}\) as a
+                                        acceleration]</equationDetail>
+                                </p>
+                                <p> \( \Rightarrow\quad\vec{a}=-\frac{k}{m} \,\vec{x}\) </p>
+                                <p> This equation represents an <explained data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="...because the acceleration is proportional to negative of displacement from mean position.                            ">
+                                        equation of SHM</explained>. With comparison to previously developed equation
+                                    in definition of SHM, </p>
+                                <p> \(\qquad \omega^2=\frac{k}{m}\)<equationDetail>[with \(\omega\) as a angular
+                                        frequency]</equationDetail>
+                                </p>
+                                <p> \(\Rightarrow\quad \omega=\sqrt{\frac{k}{m}}\) </p>
+                                <p> \(\Rightarrow\quad \frac{2\pi}{T}=\sqrt{\frac{k}{m}}\) </p>
+                                <p> \(\Rightarrow\quad T=2\pi\sqrt{\frac{m}{k}}\) </p>
+                                <p> For any particle of mass \(m\) in SHM, if proportionality
+                                    constant of restoring force with negative of displacement from mean position is
+                                    \(k\), time period of SHM will be \(2\pi\sqrt{\frac{m}{k}}\). It can be observed
+                                    that if the <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="...which is numerically equal to mass of particle.                            ">
+                                        inertia of system</explained> increases, time period for motion increases while
+                                    if the <explained data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="...the proportionality constant k.                    ">restoring force
+                                    </explained> becomes strong then the time period decreases. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-6"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-6-heading"
+                                aria-expanded="false" aria-controls="section-6-heading"> <strong>Energy in SHM</strong>
+                            </button> </h2>
+                        <div id="section-6-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-6-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Since the particle in SHM is in motion, the particle has kinetic energy.
+                                    If conservative forces act on a particle undergoing SHM, potential energy is
+                                    associated with the motion. These two types of energies,
+                                    along
+                                    with their sum : mechanical energy,
+                                    are discussed in following sections:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Kinetic energy</summary>
+                                            <p>
+                                                The kinetic
+                                                energy of the particle varies as the particle changes its speed during
+                                                the
+                                                motion.
+                                                The particle has maximum kinetic energy at the mean position and zero
+                                                kinetic energy at the extreme positions. At any general position, where
+                                                particle
+                                                of
+                                                mass \(m\) has
+                                                velocity \(\vec{v}\), its kinetic energy is given as:
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{K.E.}=\frac{1}{2}mv^2\)
+                                            </p>
+                                            <p>
+                                                Using previously developed result for velocity,
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{K.E.}=\frac{1}{2}m\omega^2 \left(A^2-x^2\right)\)
+                                                <equationDetail>[Using \(v=\omega\sqrt{A^2-x^2}\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>
+                                                Expressed in terms of time,
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{K.E.}=\frac{1}{2}mA^2\omega^2\cos^2\left(\omega
+                                                t+\phi\right)\)
+                                                <equationDetail>[Using \(v=A\omega\cos\left(\omega t+\phi\right)\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>
+                                                Such variations of kinetic energy on position and time is shown in
+                                                following animation:
+                                            </p>
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/14_KE_fluctuations.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Height of bar
+                                                    represents kinetic energy.
+                                                </figcaption>
+                                            </figure>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Potential energy</summary>
+                                            <p>
+                                                Assuming only conservative
+                                                force \(\vec{F}\) to act on particle in SHM having displacement from
+                                                mean
+                                                position
+                                                as \(\vec{x}\),
+                                            </p>
+                                            <p>
+                                                \(\qquad\vec{F}=-k\vec{x}\)
+                                            </p>
+                                            <p>
+                                                The equation can be correlated to force applied by spring which gives
+                                                result for
+                                                potential energy as:
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{P.E.}=\frac{1}{2}kx^2\)
+                                            </p>
+                                            <p>
+                                                And in terms of time,
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{P.E.}=\frac{1}{2}k A^2\sin^2\left(\omega t+\phi\right)\)
+                                                <equationDetail>[Using \(x=A\sin\left(\omega t+\phi\right)\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>
+                                                Such variations of potential energy on position and time is shown in
+                                                following animation:
+                                            </p>
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/15_PE_fluctuations.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Height of bar
+                                                    represents potential energy.
+                                                </figcaption>
+                                            </figure>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Mechanical energy</summary>
+                                            <p>
+                                                The total mechanical energy of the system is the sum of the kinetic and
+                                                potential energy. Therefore,
+                                            </p>
+                                            <p>
+                                                \(\qquad\text{M.E.}=\text{K.E.}+\text{P.E.}\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\text{M.E.}=\frac{1}{2}m\omega^2
+                                                \left(A^2-x^2\right)+\frac{1}{2}kx^2\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\text{M.E.}=\frac{1}{2}k
+                                                \left(A^2-x^2\right)+\frac{1}{2}kx^2\)
+                                                <equationDetail>[Using \(\omega^2=\frac{k}{m}\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\text{M.E.}=\frac{1}{2}k
+                                                \left(A^2\right)\)
+                                                <equationDetail>[Using \(\omega^2=\frac{k}{m}\)]
+                                                </equationDetail>
+                                            </p>
+                                            <p>
+                                                This result for mechanical energy shows that the mechanical energy of
+                                                systems in
+                                                simple harmonic motion under conservative forces, remains constant with
+                                                variation in position of particle or passage of time. Thus, mechanical
+                                                energy
+                                                of systems in SHM will be conserved provided only conservative forces
+                                                act
+                                                on the system.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-7"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-7-heading"
+                                aria-expanded="false" aria-controls="section-7-heading"> <strong>Relation with circular
+                                    motion</strong> </button> </h2>
+                        <div id="section-7-heading" class="accordion-collapse collapse  "
+                            aria-labelledby="section-7-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    If a particle performs uniform circular motion, projection of position vector of the
+                                    particle performs simple harmonic motion. The following animation represent circluar
+                                    motion of a particle and its projection on y-axis. The projection performs simple
+                                    harmonic motion.
+                                <figure style="max-width: 300px;"> <img src="img/08_circle_SHM.gif"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">Animation: SHM as projection of
+                                        circular
+                                        motion.
+                                    </figcaption>
+                                </figure>
+                                </p>
+                                <p> For a particle performing circular motion with constant angular velocity \(\omega\)
+                                    and radius \(\vec{r}\), the amplitude of SHM of its projection will be \(r\) and the
+                                    angular frequency will be \(\omega\). If initial angular position of the
+                                    particle is \(\phi\), then angular position of the particle after time \(t\) is
+                                    \(\omega t + \phi\). This angular position of circular motion will be same as phase
+                                    of the projection performing SHM. This is shown in following diagram:
+                                <figure style="max-width: 500px;"> <img src="img/Pictures_7.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">Figure: SHM as projection of circular
+                                        motion.
+                                    </figcaption>
+                                </figure>
+                                <p> If only
+                                    one component of such circular motion is observed, say along y-axis, the y
+                                    co-ordinate is given as: </p>
+                                <p> \(\qquad y=r \sin\left(\omega t + \phi\right)\) </p>
+                                <p> This is an equation of simple harmonic motion.
+                                    Thus, a projection of uniform
+                                    circular motion represents a simple harmonic motion. The relation between the
+                                    uniform circular motion and the associated simple harmonic motion is shown in
+                                    following table: </p>
+                                <p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Circular motion</th>
+                                            <th scope="col">SHM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Radius \(\left(r\right)\)</td>
+                                            <td>Amplitude \(\left(A\right)\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angular velocity \(\left(\omega\right)\)</td>
+                                            <td>Angular frequency \(\left(\omega\right)\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Initial angle \(\left(\phi\right)\)</td>
+                                            <td>Initial phase \(\left(\phi\right)\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angular position \(\left(\theta\right)\)</td>
+                                            <td>Phase \(\left(\Phi\right)\)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </p>
+                                <p>
+                                    For simplicity, we can consider the position vector of particle performing circular
+                                    motion as a rod rotating with constant angular velocity \(\omega\). The
+                                    instantaneous angular position of the rod is same as the phase of the SHM. Thus, the
+                                    rod is often termed as phasor of the SHM. Length of the phasor is equal to amplitude
+                                    of SHM while angular position of the phasor represents phase of SHM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-8"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-8-heading"
+                                aria-expanded="false" aria-controls="section-8-heading"> <strong>Comparison of two
+                                    SHM</strong> </button> </h2>
+                        <div id="section-8-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-8-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Two different SHM can be compared on the basis of their amplitudes, time period, mean
+                                    position or initial phase. Assuming the two SHM have common mean position, the
+                                    differences in their amplitudes, time period and initial phases are described
+                                    individually below:
+                                </p>
+                                
+                                <details>
+                                    <summary>Amplitude variation</summary>
+                                    <p>If the two particles in SHM have same time period and initial phase but different
+                                    amplitude, they will have different extreme positions, but both particles will reach
+                                    their respective mean positions simultaneously. Although their mean positions
+                                    will be same but since they cover different distances in same time, their speeds at
+                                    any given time will be different. At a given time, the particle moving with higher
+                                    amplitude will have more speed. The simplified motion is shown in following
+                                    animation:</p>
+                                    <figure style="max-width: 300px;"> <img
+                                            src="img/09_different_amplitudes.gif"
+                                            class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                        <figcaption class="figure-caption text-center">Animation: Two SHM with different
+                                            amplitudes.
+                                        </figcaption>
+                                    </figure>
+                                </details>
+                                
+                                
+                                <details>
+                                    <summary>Time period variation</summary>
+                                    <p>If the two particles in SHM have same amplitude and initial phase but different
+                                    time period, although they will start from common mean position but they will reach
+                                    their respective extreme positions at different times. Since the particles cover
+                                    identical distances in different times, their speeds during motion will be
+                                    different. This is shown in following animation:</p>
+                                    <figure style="max-width: 300px;"> <img
+                                            src="img/10_different_time_period.gif"
+                                            class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                        <figcaption class="figure-caption text-center">Animation: Two SHM with different
+                                            time periods.
+                                        </figcaption>
+                                    </figure>
+                                </details>
+                                
+                                
+                                <details>
+                                    <summary>Initial phase variation</summary>
+                                    <p>If the two particles in SHM have same amplitude and time period but different
+                                    initial phase, their starting positions or velocity will be different. If two SHM
+                                    having same time period have difference in their initial phases equal to
+                                    \(\Delta\phi\), then the phase difference at any time during their SHM will remain
+                                    \(\Delta\phi\). This is shown by considering following SHM equations:</p>
+                                    <p>
+                                        \(\qquad y_1=A\sin\left(\frac{2\pi}{T} t + \phi\right)\quad\) and \(\qquad
+                                        y_2=A\sin\left(\frac{2\pi}{T} t + \left(\phi+\Delta\phi\right)\right)\)
+                                    </p>
+                                    <p>
+                                        \(\qquad\)Phase difference \(=\left(\frac{2\pi}{T}t +
+                                        \phi+\Delta\phi\right)-\left(\frac{2\pi}{T} t + \phi\right)\)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad\)Phase difference \(=\Delta\phi\)
+                                    </p>
+                                    <p>
+                                        Two SHM having same amplitude and time period but different initial phases are
+                                        shown in following animation:
+                                    <div class="row">
+                                        <div class="col">
+                                            <figure style="max-width: 300px; min-width: 200px;"> <img
+                                                    src="img/11_phase_difference_0.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Two SHM with
+                                                    \(\Delta\phi=0\).
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col">
+                                            <figure style="max-width: 300px; min-width: 200px;"> <img
+                                                    src="img/12_phase_difference_180.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Two SHM with
+                                                    \(\Delta\phi=\pi\).
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col">
+                                            <figure style="max-width: 300px; min-width: 200px;"> <img
+                                                    src="img/13_phase_difference_90.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Animation: Two SHM with
+                                                    \(\Delta\phi=\frac{\pi}{2}\).
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>
+                                        The above animations represent few examples of phase differences between two
+                                        SHM.
+                                        The description of above cases of phase difference is given below:
+                                    </p>
+                                    <p>
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item d-flex">
+                                            <details>
+                                                <summary>\(\Delta\phi=0\) or same phase</summary>
+                                                <p>
+                                                    At any moment of time, the state of motion of the two particles in
+                                                    their respective SHM will be same. Both particles will reach their
+                                                    mean position simultaneously as well as extreme positions
+                                                    simultaneously.
+                                                </p>
+                                                <p>
+                                                    Since one complete cycle is equivalent to a phase difference of
+                                                    \(2\pi\), a phase difference of zero is equivalent of phase
+                                                    difference of \(2\pi\) or any other integral multiple of \(2\pi\).
+                                                    The equations of two particles in SHM with phase difference of
+                                                    integral multiple of \(2\pi\) are given as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad y_1=A\sin\left(\frac{2\pi}{T} t + \phi\right)\quad\) and
+                                                    \(\qquad y_2=A\sin\left(\frac{2\pi}{T} t + \phi+2n\pi\right)\)
+                                                </p>
+                                                <p>
+                                                    Here \(n\) is any integer. From the properties of function \(\sin
+                                                    x\), we can conclude that
+                                                    \(y_1=y_2\), that is, both particles in SHM will have same position
+                                                    at a given time.
+                                                </p>
+                                                The variations of their positions are shown in following graph:
+                                                <figure style="max-width: 300px;"> <img
+                                                        src="img/Pictures_10.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption text-center">Figure: Two SHM in
+                                                        same phase.
+                                                    </figcaption>
+                                                </figure>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <details>
+                                                <summary>\(\Delta\phi=\pi\) or opposite phase</summary>
+                                                <p>
+                                                    At any moment of time, the state of motion of the two particles in
+                                                    their
+                                                    respective SHM will be just opposite to each other. Both particles
+                                                    will
+                                                    reach mean positions simultaneously but their directions of motion
+                                                    at
+                                                    that instant will be opposite to each other. As first particle
+                                                    reaches
+                                                    positive extreme, the second particle arrives on its negative
+                                                    extreme.
+                                                    Both particles will reach their mean
+                                                    position simultaneously as well as extreme positions simultaneously.
+                                                </p>
+                                                <p>
+                                                    A phase difference of \(\pi\) is equivalent of phase difference of
+                                                    \(3\pi\) or any other odd multiple of \(\pi\). The equations
+                                                    of two particles in SHM with phase difference of odd multiple
+                                                    of \(\pi\) are given as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad y_1=A\sin\left(\frac{2\pi}{T} t + \phi\right)\quad\) and
+                                                    \(\qquad y_2=A\sin\left(\frac{2\pi}{T} t +
+                                                    \phi+\left(2n+1\right)\pi\right)\)
+                                                </p>
+                                                <p>
+                                                    Here \(n\) is any integer. From the properties of function \(\sin
+                                                    x\), we can conclude that \(y_1=-y_2\), that is, both particles in
+                                                    SHM will have their positions negative of each other at a given
+                                                    time.
+                                                </p>
+                                                <p>
+                                                    The variations of thier positions are shown in following graph:
+                                                </p>
+                                                <figure style="max-width: 300px;"> <img
+                                                        src="img/Pictures_11.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption text-center">Figure: Two SHM in
+                                                        opposite phase.
+                                                    </figcaption>
+                                                </figure>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <details>
+                                                <summary>\(\Delta\phi=\frac{\pi}{2}\)</summary>
+                                                <p>
+                                                    The equations of two particles in SHM having a phase difference of
+                                                    \(\frac{\pi}{2}\) are given as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad y_1=A\sin\left(\frac{2\pi}{T} t + \phi\right)\quad\) and
+                                                    \(\qquad y_2=A\sin\left(\frac{2\pi}{T} t +
+                                                    \phi+\frac{\pi}{2}\right)\)
+                                                </p>
+                                                <p>
+                                                    Using the properties of \(\sin x\), we can restate the equations as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad y_1=A\sin\left(\frac{2\pi}{T} t + \phi\right)\quad\) and
+                                                    \(\qquad y_2=A\cos\left(\frac{2\pi}{T} t + \phi\right)\)
+                                                </p>
+                                                <p>
+                                                    From properties of function \(\sin x \) and \(\cos x\), we can
+                                                    conclude that when first particle reaches mean position the other
+                                                    particle is at an extreme and when second particle reaches mean
+                                                    position, the first particle reaches extreme.
+                                                </p>
+                                                <p>
+                                                    The variations of thier positions are shown in following graph:
+                                                </p>
+                                                <figure style="max-width: 300px;"> <img
+                                                        src="img/Pictures_12.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption text-center">Figure: Two SHM in
+                                                        with phase difference \(\frac{\pi}{2}\).
+                                                    </figcaption>
+                                                </figure>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </details>
+                                </p>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-9"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-9-heading"
+                                aria-expanded="false" aria-controls="section-9-heading"> <strong>Superposition of
+                                    SHM</strong> </button> </h2>
+                        <div id="section-9-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-9-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    If a particle undergoes two SHM simultaneously, the total displacement of the
+                                    particle will be vector sum of individual displacements due to each SHM. If a
+                                    particle undergoes two SHM simultaneously about same mean position and same
+                                    frequency, the resulting motion is also a SHM. The amplitude of such resulting SHM
+                                    depends on phase difference between the two individual SHM.
+                                </p>
+                                <p>
+                                    To understand this, let us consider two different SHM of amplitudes \(A_1\) and
+                                    \(A_2\), angular frequency \(\omega\) and with a phase difference of \(\Delta\phi\).
+                                    Their equations are:
+                                </p>
+                                <p>
+                                    \(\qquad x_1 = A_1\sin\left(\omega t \right)\)
+                                </p>
+                                <p>
+                                    \(\qquad x_2 = A_2\sin\left(\omega t + \Delta\phi\right)\)
+                                </p>
+                                <p>
+                                    Their corresponding phasors are shown below:
+                                </p>
+                                <p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <figure style="max-width: 500px;min-width: 200px;"> <img
+                                                    src="img/Pictures_16.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: Phasor for
+                                                    \(x_1\).
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col align-middle">
+                                            <figure style="max-width: 400px; min-width: 300px;"> <img
+                                                    src="img/Pictures_17.png"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption text-center">Figure: Phasor for
+                                                    \(x_2\).
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                                <p>
+                                    If the above two phasors are combined to give the resultant of the two SHM, the
+                                    two phasors are to be arranged one after the other as shown in diagram below:
+                                </p>
+                                <p>
+                                <figure style="max-width: 500px;"> <img src="img/Pictures_18.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">Figure: Addition of two phasors to
+                                        find resultant SHM.
+                                    </figcaption>
+                                </figure>
+                                </p>
+                                <p>
+                                    From above diagram it can be understood that the phasor for the resultant SHM can be
+                                    determined by combining the two phasors using vectors as shown below:
+                                </p>
+                                <p>
+                                <figure style="max-width: 500px;"> <img src="img/Pictures_19.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">Figure: Addition of two phasors using
+                                        vectors.
+                                    </figcaption>
+                                </figure>
+                                </p>
+                                <p>
+                                    From the knowledge of vectors, the resulting SHM will have an amplitude
+                                    \(A_\text{R}\) given by:
+                                </p>
+                                <p>
+                                    \(\qquad A_\text{R}=\sqrt{A_1^2+A_2^2+2 A_1 A_2 \cos(\Delta\phi)}\)
+                                </p>
+                                <p>
+                                    While the phase difference between the first SHM and the resultant SHM \(\delta\),
+                                    is
+                                    given as:
+                                </p>
+                                <p>
+                                    \(\qquad \delta=\tan^{-1}\frac{A_2\sin(\Delta\phi)}{A_1+A_2\cos(\Delta\phi)}\)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-10"> <button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#section-10-heading"
+                                aria-expanded="false" aria-controls="section-10-heading"> <strong>Action of other forces
+                                    on SHM</strong> </button> </h2>
+                        <div id="section-10-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-10-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    If a system is already in SHM due to a restoring force, other forces may
+                                    cause the SHM to change its mean position, frequency or amplitude. Such motion of
+                                    system, when forces other than restoring force also act on the system, is called
+                                    forced oscillation. Based on nature of extra applied forces
+                                    \(\vec{F}_\text{applied}\) on
+                                    the SHM, various effects on SHM are described below:
+                                </p>
+                                <p>
+                                <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item d-flex">
+                                        <details>
+                                            <summary>If \(F_\text{applied}\) is constant</summary>
+                                            <p>
+                                                Consider a SHM in which particle moves around its equilibrium position
+                                                \(P\) under the action of restoring force \(\vec{F}_\text{restoring}\).
+                                                If a
+                                                constant force \(\vec{F}_\text{applied}\) starts acting on the particle
+                                                at all
+                                                times, net force will become non-zero at point \(P\) and point \(P\)
+                                                will no longer remain an equilibrium position. The equilibrium will now
+                                                shift
+                                                to another point \(P^\prime\) where the applied force exactly cancels
+                                                the restoring force. Thus,
+                                            </p>
+                                            <p>
+                                                At \(P\) :\(\qquad \vec{F}_\text{restoring}=0\)
+                                            </p>
+                                            <p>
+                                                At \(P^\prime\) :\(\qquad
+                                                \vec{F}_\text{restoring}+\vec{F}_\text{applied}=0\)
+                                            </p>
+                                            <p>
+                                                The particle will still perform SHM but about point \(P^\prime\) with
+                                                a force \(\vec{F}_\text{restoring}+\vec{F}_\text{applied}\) as an
+                                                equivalent restoring force.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <details>
+                                            <summary>If \(F_\text{applied}\) always opposes velocity</summary>
+                                            <p>
+                                                In SHM, the total mechanical energy remains constant when all forces are
+                                                conservative. If a force opposes the particle's velocity, it performs
+                                                net negative work
+                                                during a complete cycle, causing the energy of the system to decrease.
+                                                This force is called damping force, and the phenomenon is called damped
+                                                oscillation. The restoring force still drives the particle to the
+                                                equilibrium position, but the damping force removes energy from the
+                                                system, and the amplitude of the oscillations gradually decreases until
+                                                the particle comes to rest.
+                                            </p>
+                                            <p>
+                                                The net force acting on the particle under SHM becomes
+                                                \(\vec{F}_\text{restoring}+\vec{F}_\text{damping}\)
+                                            </p>
+                                            <p>
+                                                If particle of mass \(m\) is under SHM of with restoring force of
+                                                \(-kx\), with \(x\) as
+                                                displacement of particle from mean position, equation of motion of
+                                                particle can be mentioned
+                                                as
+                                            </p>
+                                            <p>
+                                                \(\qquad m \frac{d^2x}{dt^2}=-kx\)
+                                            </p>
+                                            <p>
+                                                which has a solution of the form:
+                                            </p>
+                                            <p>
+                                                \(\qquad x=A\sin\left( \omega t +\phi\right)\)<equationDetail>[with
+                                                    sysmbols having usual meaning as earlier]</equationDetail>
+                                            </p>
+                                            <p>
+                                                But if, in addition to restoring force \(-kx\), a damping force
+                                                proportional to
+                                                negative of velocity \(-bv\) acts on particle then equation of motion
+                                                becomes:
+                                            </p>
+                                            <p>
+                                                \(\qquad m \frac{d^2x}{dt^2}=-kx - b \frac{dx}{dt}\)
+                                            </p>
+                                            <p>
+                                                Here, \(b\) is the damping coefficient. Such differential equation has
+                                                the following solution:
+                                            </p>
+                                            <p>
+                                                \(\qquad x = A_\text{eq}\sin(\omega_\text{eq} + \phi)\)
+                                            </p>
+                                            <p>
+                                                where \(A_\text{eq}\) represents equivalent amplitude of the resulting
+                                                motion while \omega_\text{eq}
+                                                is the equivalent angular frequency. Their values are given as:
+                                            </p>
+                                            <p>
+                                                \(\qquad A_\text{eq}=Ae^{-\frac{b}{2m}t}\) and
+                                            </p>
+                                            <p>
+                                                \(\qquad \omega_\text{eq}=\sqrt{\frac{k}{m}-\frac{b^2}{4m^2}}\)
+                                            </p>
+                                            <p>
+                                                It can be observed that the equivalent amplitude of the
+                                                motion decrease exponentially with time as the particle loses energy due
+                                                to the damping force. For example, consider a mass attached to a spring.
+                                                If you push the mass and then let go, it will oscillate back and forth
+                                                due to the spring force. However, if you place the mass in a viscous
+                                                fluid, such as honey, the motion will be damped, and the amplitude and
+                                                frequency of the motion will decrease until the mass comes to rest.
+                                            </p>
+                                            <p>
+                                                Damped oscillation is a common phenomenon encountered in our daily
+                                                lives. A swing is an excellent example of a system that undergoes simple
+                                                harmonic motion when pushed by a small amount. The swing moves back and
+                                                forth in a regular manner with a constant period and amplitude. However,
+                                                air resistance acting as a damping force against the swing's motion
+                                                eventually brings it to rest. The damping force removes energy from the
+                                                system, causing the amplitude of the oscillations to decrease gradually
+                                                until the swing comes to rest.
+                                            </p>
+                                            <p>
+                                                In summary, damping force acts as an opposing force against the motion
+                                                of the system, resulting in the dissipation of energy from the system.
+                                                Consequently, the amplitude of the oscillations decreases with time, and
+                                                the system ultimately comes to rest.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <details>
+                                            <summary>If \(F_\text{applied}\) also oscillates</summary>
+                                            <p>I am pleased that you have thoroughly reviewed the theory. I kindly request that you take a moment to share your thoughts on its usefulness. To provide feedback and rate the content you've studied, please click the following link to send me a WhatsApp message. Feel free to share any suggestions you may have to enhance the content's utility. Your input is greatly appreciated.</p>
+                                            <p>
+                                                <a href="https://wa.me/917905818391?text=Dear%20writer,%0AI%20read%20your%20content%20on%20SHM.%20My%20ratings%20for%20the%20content%20is%20____%20out%20of%205.%0AI%20have%20the%20following%20suggestions:%0A1.%20------%0A2.%20------">Send WhatsApp Message To Writer</a>
+
+                                            </p> 
+                                        </details>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
