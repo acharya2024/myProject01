@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | WER </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Work and Energy in Rotation</h1>
+                    <p class="lead" id="tagline">To apply energy conservation</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Rotational-Kinetic-Energy">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Rotational-Kinetic-Energy-heading" aria-expanded="false"
+                                aria-controls="section-Rotational-Kinetic-Energy-heading">
+                                <strong>Rotational Kinetic Energy</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Rotational-Kinetic-Energy-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Rotational-Kinetic-Energy-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Rotational kinetic energy is the energy possessed by a rotating object due to its
+                                    rotational motion. It is analogous to the kinetic energy of an object moving in a
+                                    straight line, but for rotational motion. Just like the kinetic energy in linear
+                                    motion depends on the mass and speed of an object, rotational kinetic energy depends
+                                    on the moment of inertia and the angular velocity of the object.</p>
+
+                                <p>For a rigid body of moment of inertia \(I\) rotating with an angular velocity \(
+                                    \omega \) about an axis, the
+                                    rotational kinetic energy is given by:</p>
+
+                                <p>\(\qquad KE_{\text{rot}} = \frac{1}{2} I \omega^2 \)</p>
+                                <p>This formula shows that rotational kinetic energy depends on both the distribution of
+                                    mass (through the moment of inertia) and how fast the object is spinning (through
+                                    the angular velocity). Just like mass in translational motion, moment of inertia
+                                    plays a crucial role in determining how much energy is stored in the rotational
+                                    motion.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Derivation:</strong> Kinetic energy of a rotating rigid
+                                                body.</summary>
+                                            <p>Consider a rigid body consisting of multiple particles rotating about a
+                                                fixed
+                                                axis. Each particle has a mass \( m_i \) and is located at a distance \(
+                                                r_i \)
+                                                from the axis. The velocity of each particle due to the rotational
+                                                motion is \(
+                                                v_i = r_i \omega \), where \( \omega \) is the angular velocity of the
+                                                entire
+                                                rigid body.</p>
+
+                                            <p>The kinetic energy of each particle is:</p>
+
+                                            <p>\(\qquad KE_i = \frac{1}{2} m_i v_i^2 = \frac{1}{2} m_i (r_i \omega)^2 =
+                                                \frac{1}{2} m_i r_i^2 \omega^2\)</p>
+
+                                            <p>The total kinetic energy of the body is the sum of the kinetic energies
+                                                of all
+                                                its particles:</p>
+
+                                            <p>\(\qquad KE_{\text{rot}} = \sum \frac{1}{2} m_i r_i^2 \omega^2\)</p>
+
+                                            <p>Factoring out \( \omega^2 \), we get:</p>
+
+                                            <p>\(\qquad KE_{\text{rot}} = \frac{1}{2} \omega^2 \sum m_i r_i^2\)</p>
+
+                                            <p>The term \( \sum m_i r_i^2 \) is the moment of inertia \( I \) of the
+                                                body about
+                                                the axis of rotation. Therefore, the rotational kinetic energy
+                                                simplifies to:
+                                            </p>
+
+                                            <p>\(\qquad KE_{\text{rot}} = \frac{1}{2} I \omega^2\)</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p><strong>Example:</strong> For a disc in rotation, the Rotational Kinetic Energy can
+                                    be calculated as following:</p>
+                                <p>Consider a uniform solid disc of mass \( M \) and radius \( R \), rotating about
+                                    an axis through its center with an angular velocity \( \omega \). The moment of
+                                    inertia of the disc about its center is given by:</p>
+
+                                <p>\(\qquad I = \frac{1}{2} M R^2\)</p>
+
+                                <p>The rotational kinetic energy is:</p>
+
+                                <p>\(\qquad KE_{\text{rot}} = \frac{1}{2} I \omega^2 = \frac{1}{2} \times
+                                    \frac{1}{2} M R^2 \times \omega^2 = \frac{1}{4} M R^2 \omega^2\)</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

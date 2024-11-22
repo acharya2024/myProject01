@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | AMR </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Angular Momentum in Rotation</h1>
+                    <p class="lead" id="tagline">Momentum of rotation</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    
+                    <!-- Angular Momentum Section -->
+                    <div class="accordion-item" data-read-time="15">
+                        <h2 class="accordion-header" id="section-angular-momentum">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-angular-momentum-heading" aria-expanded="false"
+                                aria-controls="section-angular-momentum-heading">
+                                <strong>Angular Momentum</strong>
+                            </button>
+                        </h2>
+                        <div id="section-angular-momentum-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-angular-momentum-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Angular momentum, a key concept in rotational dynamics, is always defined about a
+                                    point or an axis. For a particle of mass \(m\), moving with velocity \( \vec{v} \),
+                                    and located
+                                    at position \( \vec{r} \) relative to the origin \( O \) as shown,</p>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/25_Angular_momentum_definition.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+
+                                        </figure>
+                                        <figcaption class="figure-caption">Diagram: Particle at position \(\vec{r}\)
+                                            moving with momentum \(\vec{p}\).
+                                        </figcaption>
+                                    </div>
+
+                                </div>
+                                <p>its angular momentum \(
+                                    \vec{L} \) is given by:</p>
+
+                                <p>\(\qquad \vec{L} = \vec{r} \times m\vec{v}\)</p>
+
+                                <p>The unit of angular momentum in the SI system is \(\text{kg m}^2/\text{s}\). Its
+                                    direction is determined using the right-hand rule, perpendicular to the plane formed
+                                    by \( \vec{r} \) and \( \vec{v} \).</p>
+                                <p> In scalar form, the same equation can be written as:</p>
+                                <p>\(\qquad {L} ={r} m{v}\sin\theta\)</p>
+                                <p>with \(\theta\) being the angle between the two vectors \(\vec{r}\) and \(\vec{v}\)
+                                </p>
+
+                                <p>There are two methods to calculate angular momentum, depending on the details
+                                    provided:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 1:</strong> Using component of momentum</summary>
+                                            <p> Use the component of linear momentum \( \vec{p} \)
+                                                that is perpendicular to the position vector \( \vec{r} \).</p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/24_Angular_momentum_method1.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+                                                        <figcaption class="figure-caption">Diagram: Illustration of
+                                                            Method
+                                                            1.
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+
+                                            </div>
+
+                                            <p>\(\qquad L = (r)(p_{\bot})\)</p>
+                                            <p> This is just another way of writing \( {L} ={r} m{v}\sin\theta\) as
+                                                \(p_{\bot}=p\sin\theta\)</p>
+                                        </details>
+                                    </li>
+
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 2:</strong> Using shortest distance</summary>
+                                            <p>Use the shortest distance \(d\) between the line
+                                                of motion of the particle and the point of interest.</p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/24_Angular_momentum_method2.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Illustration of Method
+                                                        2.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+
+                                            <p>\(\qquad L = (p)(d)\)</p>
+                                            <p> This is also another way of writing \( {L} ={r} m{v}\sin\theta\) as
+                                                \(d=r\sin\theta\). This method is useful when determining the
+                                                perpendicular
+                                                component of \( \vec{p} \) is difficult.</p>
+                                        </details>
+                                    </li>
+
+                                </ul>
+
+                                <p>Let's now explore angular momentum for different scenarios:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <p>
+                                                <summary>Particle moving in a straight line:</summary>
+                                                For a particle moving
+                                                such that its shortest distance from a point is \(d\), the angular
+                                                momentum
+                                                remains constant as \( L = p \cdot d \).
+                                            </p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/26_Angular_momentum_for_straight_line_motion.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Particle in straight-line motion">
+                                                        <figcaption class="figure-caption">Diagram: Particle in
+                                                            straight-line
+                                                            motion.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <p>
+                                                <summary>Particle in circular motion:</summary> For a
+                                                particle of mass \( m
+                                                \)
+                                                moving in a circle of radius \(r\) with velocity \( v \), as shown:
+                                            </p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="../00_Assets/img/08_RM/27_Angular_momentum_for_circular_motion.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Particle in circular motion">
+                                                        <figcaption class="figure-caption">Diagram: Particle in circular
+                                                            motion.
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                the velocity and
+                                                the radius vector are perpendicular. So, angular momentum about the
+                                                center
+                                                is:</p>
+                                            <p> \(\qquad L = mvr\sin\frac{\pi}{2} \).</p>
+                                            <p> \(\Rightarrow\quad L = mvr \).</p>
+
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <p>
+                                                <summary>Rigid body in rotation:</summary> For a
+                                                rotating rigid body, each
+                                                particle can be considered in circular motion around a common axis. To
+                                                find
+                                                total angular momentum of entire body about the axis of rotation, we
+                                                require
+                                                to calculate the angular momentum of individual particles and add them
+                                                up
+                                                using techniques of integration.
+                                            </p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/02_rotating_rod.gif"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Rigid body in rotation">
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Rigid body in rotation.
+                                                    </figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 80px;">
+                                                        <img src="../00_Assets/img/08_RM/08_dm_on_rod.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Rigid body in rotation">
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Rigid body in rotation.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Animation belabove shows a rigid body in rotation. Consider a moment
+                                                when
+                                                the
+                                                angular velocity of the body is \(\omega\) as shown in the next diagram.
+                                                The
+                                                angular momentum associated with an element of mass \(dm\) at a distance
+                                                \(r\) from the axis of rotation is:
+                                            </p>
+                                            <p>
+                                                \(\qquad dL=\left(dm(\omega r)\right)r\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad \int dL=\omega\int r^2dm\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad \int dL=I\omega\)
+                                            </p>
+                                            <p>
+                                                Thus, for a rigid body rotating about an axis, the angular momentum is
+                                                given by \(I\omega\), where \(I\) is the moment of inertia and
+                                                \(\omega\) is the angular velocity. This is analogous to linear momentum
+                                                (\(P = Mv\)), where \(M\) is the mass (inertia for linear motion) and
+                                                \(v\) is the velocity. In both cases, momentum is the product of the
+                                                object's resistance to change in motion (inertia) and its rate of
+                                                motion.
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p><strong>Angular Impulse</strong></p>
+                                <p>
+                                    Angular impulse \(\vec{I}\) is a property of torque \(\tau\) calculated for a given
+                                    time interval \(\Delta t\). It is defined as:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{I}={\int}_{0}^{\Delta t}{\vec{\tau}dt}\)
+                                </p>
+                                <p>
+                                    Angular impulse is a vector quantity and has a SI unit of
+                                    \(\text{kg m}^2/\text{s}\), same as that of angular momentum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Angular Momentum and Torque Relation Section -->
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Angular-Momentum-Torque">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Angular-Momentum-Torque-heading" aria-expanded="false"
+                                aria-controls="section-Angular-Momentum-Torque-heading">
+                                <strong>Relation of Angular Momentum with Torque</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Angular-Momentum-Torque-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Angular-Momentum-Torque-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>The relationship between torque and angular momentum is fundamental in rotational
+                                    dynamics. It establishes how the angular momentum of a system changes under the
+                                    influence of an external torque.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>For a Rigid Body in Rotation</strong></summary>
+                                            <p>Consider a rigid body rotating about an axis with angular velocity
+                                                \(\vec{\omega}\) and moment of inertia \(I\). If a torque \(\vec{\tau}\)
+                                                acts on
+                                                the body about the axis of rotation, then:</p>
+                                            <p>\(\qquad \vec{\tau} = I\frac{d\vec{\omega}}{dt}\)</p>
+                                            <p>Since angular momentum \(\vec{L} = I\vec{\omega}\), we can write:</p>
+                                            <p>\(\qquad \vec{\tau} = \frac{d\vec{L}}{dt}\)</p>
+                                            <p>This shows that the net torque acting on a rigid body equals the rate of
+                                                change
+                                                of its angular momentum.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>For a Particle</strong></summary>
+                                            <p>For a particle, the angular momentum about a point \( O \) is given by:
+                                            </p>
+                                            <p>\(\qquad \vec{L} = \vec{r} \times \vec{p}\)</p>
+                                            <p>To understand how angular momentum changes over time, we differentiate
+                                                this
+                                                expression:</p>
+                                            <p>\(\qquad \frac{d}{dt} (\vec{L}) = \frac{d}{dt} (\vec{r} \times \vec{p}) =
+                                                \frac{d\vec{r}}{dt} \times \vec{p} + \vec{r} \times
+                                                \frac{d\vec{p}}{dt}\)</p>
+                                            <p>The first term vanishes because velocity \( \frac{d\vec{r}}{dt} \) is
+                                                parallel to
+                                                momentum \( \vec{p} \), so their cross product is zero. This leaves:</p>
+                                            <p>\(\qquad \frac{d\vec{L}}{dt} = \vec{r} \times \vec{F} = \vec{\tau}\)</p>
+                                            <p>Thus, the torque acting on the particle equals the rate of change of its
+                                                angular
+                                                momentum.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>For Any System of Particles</strong></summary>
+                                            <p>For a system of particles, the total angular momentum about a point \( O
+                                                \) is
+                                                given by:</p>
+                                            <p>\(\qquad \Sigma \vec{L} = \Sigma (\vec{r}_i \times \vec{p}_i)\)</p>
+                                            <p>Differentiating this expression:</p>
+                                            <p>\(\qquad \frac{d}{dt} \left( \Sigma \vec{L} \right) = \Sigma \left(
+                                                \frac{d\vec{r}_i}{dt} \times \vec{p}_i \right) + \Sigma \left( \vec{r}_i
+                                                \times
+                                                \frac{d\vec{p}_i}{dt} \right)\)</p>
+                                            <p>The first term vanishes for each particle since \( \frac{d\vec{r}_i}{dt}
+                                                \) is
+                                                parallel to \( \vec{p}_i \). Therefore:</p>
+                                            <p>\(\qquad \frac{d}{dt} \left( \Sigma \vec{L} \right) = \Sigma \left(
+                                                \vec{r}_i
+                                                \times \vec{F}_i \right) = \Sigma \vec{\tau}_i\)</p>
+                                            <p>Thus, the net external torque acting on the system equals the rate of
+                                                change of
+                                                the system's total angular momentum.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Thus, a general relation between angular momentum about an axis and the torque
+                                    calculated about the same axis under all situation, can be established as:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{\tau}_{\text{Net}} = \frac{d\vec{L}_{\text{Total}}}{dt}\)
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p>Following are a few examples where the relation of torque and angular momentum
+                                        could further be justified.</p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Application of \( \vec{\tau} = \frac{d\vec{L}}{dt} \) to a
+                                                    Rotating Door</strong></summary>
+                                            <p>When you push a door at its edge, you apply a torque that causes the door
+                                                to rotate. The angular momentum \( \vec{L} = I \omega \) of the door
+                                                changes due to the applied torque.</p>
+
+                                            <p>Assume the moment of inertia \( I \) of the door is constant. The change
+                                                in angular velocity \( \omega \) is determined by the torque exerted on
+                                                the door:</p>
+
+                                            <p>\(\qquad \vec{\tau} = \frac{d\vec{L}}{dt} = I \frac{d\omega}{dt} = I
+                                                \alpha\)</p>
+
+                                            <p>Here, \( \alpha \) is the angular acceleration of the door. The applied
+                                                torque causes a change in angular momentum, which results in the door's
+                                                rotational motion.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="../00_Assets/img/rotating_door.png"
+                                                            class="figure-img img-fluid rounded" alt="Rotating door">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Angular momentum in a
+                                                        rotating door.</figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Application of \( \vec{\tau} = \frac{d\vec{L}}{dt} \) to
+                                                    the Motion of a Projectile</strong></summary>
+                                            <p>The equation \( \vec{\tau} = \frac{d\vec{L}}{dt} \) is a fundamental
+                                                relation that applies to the motion of a projectile. This example shows
+                                                how the change in angular momentum of the projectile is produced by the
+                                                torque exerted by the force of gravity.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/28_Angular_momentum_for_projectile_motion.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Angular momentum in projectile motion">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Angular momentum
+                                                        conservation for projectile motion.</figcaption>
+                                                </div>
+                                            </div>
+
+                                            <p>We consider the motion of a projectile, with the initial point as the
+                                                origin \(O\). The position vector of the projectile at a later time is:
+                                            </p>
+                                            <p>\(\qquad \vec{r} = x\hat{i} + y\hat{j}\)</p>
+
+                                            <p>Since the gravitational force on the particle is \( \vec{F} = -mg\hat{j}
+                                                \), the gravitational torque is given by:</p>
+                                            <p>\(\qquad \vec{\tau} = (x\hat{i} + y\hat{j}) \times (-mg\hat{j}) =
+                                                -mgx\hat{k}\)</p>
+
+                                            <p>The rate of change of angular momentum \( \vec{L} = \vec{r} \times
+                                                \vec{p} \) is:</p>
+                                            <p>\(\qquad \frac{d\vec{L}}{dt} = m \vec{r} \times \frac{d\vec{v}}{dt}\)</p>
+
+                                            <p>Given that \( \frac{d\vec{v}}{dt} = -g\hat{j} \), we compute:</p>
+                                            <p>\(\qquad \frac{d\vec{L}}{dt} = m(x\hat{i} + y\hat{j}) \times
+                                                (-g\hat{j}) = -mgx\hat{k}\)</p>
+
+                                            <p>Thus, the equation \( \vec{\tau} = \frac{d\vec{L}}{dt} \) holds for
+                                                projectile motion, showing that the torque is directly related to the
+                                                rate of change of angular momentum.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Application of \( \vec{\tau} = \frac{d\vec{L}}{dt} \) to
+                                                    Earth's Orbit Around the Sun</strong></summary>
+                                            <p>The Earth orbits the Sun in an elliptical path, and the gravitational
+                                                force acts as the central force. Since there is no external torque
+                                                acting on the Earth-Sun system about the center of the Sun, the angular
+                                                momentum of the Earth is conserved.</p>
+
+                                            <p>As the Earth moves closer to the Sun (at perihelion), its speed
+                                                increases, and as it moves farther (at aphelion), its speed decreases.
+                                                This variation in speed is necessary to conserve angular momentum:</p>
+
+                                            <p>\(\qquad L = r m v\)</p>
+
+                                            <p>Where \( r \) is the distance between the Earth and the Sun, \( m \) is
+                                                the mass of the Earth, and \( v \) is its velocity. As \( r \)
+                                                decreases, \( v \) must increase to conserve angular momentum.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="../00_Assets/img/earth_orbit.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Earth's orbit around the Sun">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Conservation of angular
+                                                        momentum in Earth's orbit.</figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conservation of Angular Momentum Section -->
+                    <div class="accordion-item" data-read-time="15">
+                        <h2 class="accordion-header" id="section-Conservation-Angular-Momentum">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Conservation-Angular-Momentum-heading" aria-expanded="false"
+                                aria-controls="section-Conservation-Angular-Momentum-heading">
+                                <strong>Conservation of Angular Momentum</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Conservation-Angular-Momentum-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Conservation-Angular-Momentum-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The relation between torque and angular momentum is a fundamental law that applies
+                                    to any system of particles, regardless of whether the motion involves a rigid body
+                                    or not, and whether or not the motion is purely rotational. This general relation is
+                                    expressed as:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{\tau}_{\text{net}} = \frac{d\vec{L}_{\text{Total}}}{dt}\)
+                                </p>
+                                <p>
+                                    Here, \( \vec{\tau}_{\text{net}} \) is the net external torque on the system, and \(
+                                    \vec{L}_{\text{Total}} \) is the total angular momentum of the system. This relation
+                                    holds true for any system of particles, including non-rigid bodies and complex
+                                    motions that are not purely rotational.
+                                </p>
+                                <p>
+                                    In the absence of external torque (\(\vec{\tau}_{\text{net}} = 0\)), the rate of
+                                    change of angular momentum becomes zero. This means that the angular momentum
+                                    remains constant over time. This is known as the principle of conservation of
+                                    angular momentum, and it applies to any system of particles, regardless of the type
+                                    of motion.
+                                </p>
+                                <p>
+                                    Mathematically, this is expressed as:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{\tau}_{\text{Net}} = 0 \quad \Rightarrow \quad \frac{d\vec{L}}{dt} =
+                                    0\)
+                                </p>
+                                <p>
+                                    Therefore, the total angular momentum \( \vec{L} \) is conserved, meaning:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{L} = \text{constant}\)
+                                </p>
+                                <p>
+                                    This conservation principle is a powerful tool in analyzing not only rotational
+                                    motion in rigid bodies but also more general motion in complex systems where torque
+                                    and angular momentum play a role.
+                                </p>
+
+
+                                <ul class="list-group list-group-flush">
+                                    <p>Following are a few examples of situations demonstrating angular momentum
+                                        conservation:</p>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Analysis of figure skater controlling its spinning</strong>
+                                            </summary>
+                                            <p>A figure skater can control their spin rate by adjusting their moment of
+                                                inertia. This is shown in diagrams below:</p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/29_Open_hand_skater.PNG"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Skater with high moment
+                                                        of inertia and low angular velocity.
+                                                    </figcaption>
+                                                </div>
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="../00_Assets/img/08_RM/29_Closed_hand_skater.PNG"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Skater with low moment
+                                                        of inertia and high angular velocity.
+                                                    </figcaption>
+                                                </div>
+
+                                            </div>
+
+
+                                            <p> When the skater pulls their arms in, they reduce their moment
+                                                of inertia \( I \), which causes an increase in angular velocity \(
+                                                \omega \) to conserve angular momentum.</p>
+
+                                            <p>For example, if a skater starts with an initial moment of inertia \( I_1
+                                                = 4 \, \text{kg} \cdot \text{m}^2 \) and spins at \( \omega_1 = 2 \,
+                                                \text{rad/s} \), and then reduces their moment of inertia to \( I_2 = 2
+                                                \, \text{kg} \cdot \text{m}^2 \), the new angular velocity is:</p>
+                                            <p>\(\qquad \omega_2 = \frac{I_1 \omega_1}{I_2} = \frac{4 \times 2}{2} = 4
+                                                \, \text{rad/s}\)</p>
+
+                                            <p>Thus, the skater spins twice as fast after pulling in their arms. This is
+                                                a clear demonstration of the conservation of angular momentum as the
+                                                decrease in moment of inertia results in a compensating increase in
+                                                angular velocity.</p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Analysis of Earth's Orbital Motion</strong></summary>
+                                            <p>In Earth's orbital motion around the Sun, the gravitational force applied
+                                                by the Sun passes through its center, meaning the torque about the
+                                                center of the Sun is zero. Thus, Earth's angular momentum remains
+                                                conserved as it revolves around the Sun. This is shown in animation
+                                                below:</p>
+                                            <div class="row justify-content-center">
+
+                                                <div class="col">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/03_earth_sun_orbit.gif"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram not loaded">
+                                                    </figure>
+                                                    <figcaption class="figure-caption">Diagram: Variation of speed of
+                                                        Earth in its orbit.[NOT TO SCALE]
+                                                    </figcaption>
+                                                </div>
+
+                                            </div>
+                                            <p>At perihelion (closest point to the Sun), Earth moves faster, while at
+                                                aphelion (farthest point), it moves slower. This variation in speed is
+                                                necessary to conserve angular momentum as the distance between Earth and
+                                                the Sun changes.</p>
+
+                                            <p>For instance, if the distance from Earth to the Sun at perihelion is \(
+                                                r_p = 1.47 \times 10^{11} \, \text{m} \) and at aphelion is \( r_a =
+                                                1.52 \times 10^{11} \, \text{m} \), the orbital speeds can be calculated
+                                                using the formula:</p>
+                                            <p>\(\qquad m v_p r_p = m v_a r_a\)</p>
+
+                                            <p>Given Earth's speed at perihelion is \( v_p = 30.3 \, \text{km/s} \), we
+                                                find the speed at aphelion to be:</p>
+                                            <p>\(\qquad v_a = v_p \frac{r_p}{r_a} = 30.3 \times \frac{1.47}{1.52}
+                                                \approx 29.3 \, \text{km/s}\)</p>
+
+                                            <p>This example highlights how angular momentum conservation governs
+                                                planetary motion.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong> Two spinning discs attain common
+                                                    angular velocity</strong>
+                                            </summary>
+                                            <p>Two disks are mounted on the same axle. Disk 1 has a moment of
+                                                inertia \( I_1 \) and is spinning with angular velocity \( \omega_1
+                                                \). Disk 2 has a moment of inertia \( I_2 \) and is initially at
+                                                rest. Disk 2 is then dropped onto Disk 1, and friction between them
+                                                causes them to eventually reach a common angular velocity \(
+                                                \omega_{\text{final}} \). Find \( \omega_{\text{final}} \).</p>
+
+                                            <p><strong>Solution:</strong></p>
+                                            <p>Since no external torque acts on the system, angular momentum is
+                                                conserved. The total angular momentum before and after the collision
+                                                remains the same.</p>
+
+                                            <p>The initial angular momentum is given by \( L_{\text{initial}} = I_1
+                                                \omega_1 + I_2 \omega_2 \), where \( \omega_2 = 0 \) because Disk 2 is
+                                                initially at rest. Therefore, the initial angular momentum simplifies to
+                                                \( L_{\text{initial}} = I_1 \omega_1 \).</p>
+
+                                            <p>After the collision, the two disks rotate together with a common angular
+                                                velocity \( \omega_{\text{final}} \). The total angular momentum after
+                                                the collision is \( L_{\text{final}} = (I_1 + I_2) \omega_{\text{final}}
+                                                \).</p>
+
+                                            <p>By the conservation of angular momentum, we equate the initial and final
+                                                angular momenta: \( I_1 \omega_1 = (I_1 + I_2) \omega_{\text{final}} \).
+                                            </p>
+
+                                            <p>Solving for \( \omega_{\text{final}} \), we get \( \omega_{\text{final}}
+                                                = \dfrac{I_1 \omega_1}{I_1 + I_2} \).</p>
+
+                                        </details>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

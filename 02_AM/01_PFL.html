@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | PFL </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Pressure in Fluids</h1>
+                    <p class="lead" id="tagline">Similar push in all directions</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-fluid-mechanics">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-fluid-mechanics-heading" aria-expanded="false"
+                                aria-controls="section-fluid-mechanics-heading">
+                                <strong>Introduction to Fluid Mechanics</strong>
+                            </button>
+                        </h2>
+                        <div id="section-fluid-mechanics-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-fluid-mechanics-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Matter around us is primarily categorized into three states—solids, liquids, and
+                                    gases—based on the strength of their intermolecular forces</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>
+                                            Solids:
+                                        </strong> In solids, the intermolecular
+                                        forces are strong,
+                                        rendering them a fixed shape and size that do not change easily.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Liquids:</strong> In liquids, the intermolecular forces are
+                                        weaker than those in solids, allowing them to change shape with ease. However,
+                                        significant effort is required to modify their volume or density.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Gases:</strong> Gases have minimal forces
+                                        between their molecules,
+                                        making it easy to change both their shape and density.
+                                    </li>
+
+                                </ul>
+                                <p>
+                                    Liquids and gases together are called fluids, i.e., that which can flow.
+                                </p>
+
+                                <p>
+                                    While these definitions provide a general understanding of the states of matter,
+                                    they aren't precise. For instance, substances like asphalt and plastics,
+                                    typically regarded as solids, can behave like liquids over extended periods.
+                                    Additionally, the state of a substance—whether solid, liquid, or gas—often depends
+                                    on temperature and pressure conditions. The time taken for a substance to reshape
+                                    under external forces often determines its classification in specific analyses.
+                                </p>
+                                <p>
+                                    A fluid is a collection of molecules that are randomly arranged and held together by
+                                    weak cohesive forces and by forces exerted by the walls of a container. Their
+                                    reduced intermolecular forces enable fluid layers to slide over one another,
+                                    granting them the ability to flow. As highlighted before, both liquids and gases
+                                    possess this flowing property, categorizing them as fluids.
+                                </p>
+
+                                <p>
+                                    In this chapter on fluid mechanics, we begin with fluid statics, examining the
+                                    mechanics of stationary fluids. We'll derive expressions for the pressure exerted by
+                                    a fluid, understand the variations in pressure, and the buoyant forces
+                                    exerted by fluids. Subsequently, we transition to fluid dynamics, focusing on the
+                                    behavior of moving fluids.
+                                </p>
+                                <p>
+                                    In our treatment of the mechanics of fluids, we shall see that we do not need
+                                    to learn any new physical principles to explain such effects as the buoyant force
+                                    acting on a submerged object and the dynamic lift acting on an airplane wing.
+                                    Established principles such as the laws of motion and energy conservation equip us
+                                    with the necessary tools for these analyses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-density-pressure"><button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-density-pressure-heading" aria-expanded="false"
+                                aria-controls="section-density-pressure-heading"><strong>Density and
+                                    pressure</strong></button>
+                        </h2>
+                        <div id="section-density-pressure-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-density-pressure-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <h5 class=" text-muted"><strong>Density</strong></h5>
+                                <p>
+                                    Density is a property of a material independent of its shape and size. Density,
+                                    generally represented by \(\rho\), is
+                                    defined as mass \(dM\) of the material per unit its volume \(dV\). Hence,
+                                </p>
+                                <p>
+                                    \(\qquad \rho=\frac{dM}{dV}\)
+                                </p>
+                                <p>
+                                    The SI unit of density is \(\text{kg}/\text{m}^3\). The density water is suggested
+                                    to be remembered as \(1,000\text{kg}/\text{m}^3\) or \(1 \text{kg}/\text{L}\) or \(1
+                                    \text{g}/\text{cm}^3\)
+                                </p>
+                                <p>
+                                    The ratio of density of a material with that of density of water is called relative
+                                    density or specific density or specific gravity. This being a ratio, has no units.
+                                    For example, stating specific density of
+                                    aluminium being 2.7 means its density is \(2.7\times 10^3\text{kg}/\text{m}^3\).
+                                </p>
+                                <p>
+                                    If two different materials are mixed, the equivalent density of the mixture can be
+                                    calculated by formula:
+                                </p>
+                                <p>
+                                    \(\qquad \rho_\text{equivalent}=\frac{\text{Total mass}}{\text{Total volume}}\)
+                                </p>
+
+                                <h5 class=" text-muted"><strong>Pressure</strong></h5>
+                                <p>
+                                    Consider a force \(dF\) acting perpendicularly to an
+                                    infinitesimally small area \(dA\). The pressure \(P\) associated with this area can
+                                    be expressed mathematically as::
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    P=\frac{dF}{dA}
+                                    \)
+                                </p>
+                                <p>
+                                    The unit for pressure in the SI system is the Pascal (Pa),
+                                    equivalent to \( \text{N}/\text{m}^2 \).
+                                </p>
+                                <p>
+                                    In the mechanics of solids, the primary focus is on forces. However, in fluid
+                                    mechanics, the concept of pressure becomes important.
+                                    Even in a stationary fluid, its molecules are in constant motion. As a result,
+                                    surfaces in contact with the fluid experience continuous collisions from these
+                                    moving molecules. These collisions result into a perpendicular force distributed
+                                    over the
+                                    contact area, leading to the concept of pressure.
+                                </p>
+                                <p>
+                                    Imagine a hypothetical pressure-sensing device as illustrated below. For the sake of
+                                    our discussion, let's assume the device's interior contains a vacuum and is equipped
+                                    with an ideal spring.</p>
+                                <figure style="max-width: 300px;"> <img
+                                        src="img/01_pressure_sensor.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">Diagram: Theoretical pressure sensor.
+                                    </figcaption>
+                                </figure>
+
+                                <p>
+                                    The greater the external fluid pressure, the more the spring inside the device
+                                    compresses. At equilibrium, the compression of the spring directly relates to the
+                                    external fluid pressure. Throughout this chapter, we'll employ this conceptual
+                                    sensor to
+                                    enhance our understanding of pressure in various contexts.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-pressure-variations"><button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-pressure-variations-heading" aria-expanded="false"
+                                aria-controls="section-pressure-variations-heading"><strong>Variation of pressure in
+                                    fluids</strong></button></h2>
+                        <div id="section-pressure-variations-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-pressure-variations-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <h5 class=" text-muted"><strong>Pressure sensor</strong></h5>
+                                <p>
+                                    Imagine a fluid situated in a region free of gravitational influence. Due to the
+                                    inherent random motion of fluid particles, the force exerted by these particles on
+                                    any given surface remains uniform, irrespective of the surface's orientation or
+                                    position.
+                                </p>
+                                <p>
+                                    When a pressure-sensing instrument is introduced into this fluid, the compression
+                                    observed in the spring remains unchanged, regardless of the instrument's
+                                    orientation or position within the fluid. This behavior is depicted in the
+                                    subsequent diagram:
+                                </p>
+                                <figure style="max-width: 300px;">
+                                    <img src="img/01_pressure_same.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">
+                                        Diagram: Uniform Pressure Distribution.
+                                    </figcaption>
+                                </figure>
+                                <h5 class=" text-muted"><strong>Pressure variation without gravity</strong></h5>
+                                <p>
+                                    Consider two parallel surfaces, \(S_1\) and \(S_2\), each possessing an area of
+                                    \(dA\), situated within the fluid. Assume the pressures at these respective surfaces
+                                    to be \(P_1\) and \(P_2\).
+                                </p>
+                                <p>
+                                    If the segment of fluid enclosed between \(S_1\) and \(S_2\) experiences no net
+                                    external force, then the total force acting upon this fluid segment must be equal to
+                                    zero. This leads us to the relationship:
+                                </p>
+                                <p>
+                                    \(\qquad P_1 ( dA) = P_2 (dA) \)
+                                </p>
+
+                                <p>
+                                    \(\Rightarrow\quad P_1 = P_2 \)
+                                </p>
+                                <p>
+                                    In situations where the pressures at \(S_1\) and \(S_2\) are not same, the fluid
+                                    starts to
+                                    move, transitioning from regions of high pressure toward those of less
+                                    pressure. This motion persists until equilibrium is attained, and the pressures at
+                                    both surfaces equalize. If an incremental pressure \(\delta P\) is externally
+                                    applied at a specific location within the fluid and maintained, upon attaining a
+                                    steady state, the entire fluid's pressure will adjust uniformly, reflecting an
+                                    increment of \(\delta P\) throughout. This phenomenon aptly illustrates Pascal's
+                                    law, which is:
+                                </p>
+                                <p class="text-center text-muted text-law">
+                                    In a closed system containing an incompressible fluid, if there is any change in
+                                    pressure at one location, this change is evenly distributed throughout the entire
+                                    fluid volume. This fundamental principle is recognized as Pascal's law.
+                                </p>
+                                <p>
+                                    When an external force acts uniformly on every particle within a fluid, the pressure
+                                    at each point within the fluid does not remain constant. Instead, the pressure
+                                    adjusts so that, for any given fluid segment, the combined force resulting from the
+                                    pressure variation balances the externally imposed force. In a fluid situated in a
+                                    region affected by gravitational acceleration, the pressure is not uniform. Instead,
+                                    it varies to counterbalance the weight of specific fluid segments.
+                                </p>
+                                <h5 class="text-muted"><strong>Variation in pressure due to gravity</strong></h5>
+
+                                <p>
+                                    In fluid mechanics, understanding the variation of pressure in a fluid under the
+                                    influence of gravity is pivotal. Let's delve into how this pressure behaves both
+                                    horizontally and vertically.
+                                </p>
+                                <p>
+                                    Consider two vertical parallel surfaces, \( S_1 \) and \( S_2 \), separated by a
+                                    distance \(
+                                    \Delta x \) as shown below:
+                                <figure style="max-width: 300px;">
+                                    <img src="img/02_pressure_variation_horizontally.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">
+                                        Diagram: Two parallel vertical surfaces inside fluid.
+                                    </figcaption>
+                                </figure>
+                                The pressure forces acting on these surfaces are in horizontal direction. Since there is
+                                no effect of gravitational force in horizontal direction, we can state using Newton's
+                                law that,
+                                <p>
+                                    \(\qquad P_1 ( dA) = P_2 (dA) \)
+                                </p>
+
+                                <p>
+                                    \(\Rightarrow\quad P_1 = P_2 \)
+                                </p>
+                                <p>Thus, pressures at two positions in the same horizontal level must remain same even
+                                    in
+                                    presence of gravity.
+                                </p>
+
+                                <p>
+                                    Now, let's reorient surfaces \( S_1 \) and \( S_2 \) to lie in the horizontal plane,
+                                    separated by a distance \( d y \). The pressure at the two surfaces are
+                                    considered as \(P_1\) and \(P_2\) and the weight of the fluid column between the
+                                    durface is \(dW\).
+                                </p>
+
+                                <figure style="max-width: 300px;">
+                                    <img src="img/02_pressure_variation_vertically.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption text-center">
+                                        Diagram: Two parallel horizontal surfaces inside fluid.
+                                    </figcaption>
+                                </figure>
+
+                                <p>
+                                    From the free body diagram of the segment of fluid in between the surfaces \(
+                                    S_1 \) and \(S_2\)
+                                </p>
+
+                                <p>
+                                    \(\qquad P_1(dA)+dW=P_2(dA)\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad P_1(dA)+\rho \left(dA \times dy\right)g=P_2(dA)\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad P_2 -P_1=\rho g (dy)\) <equationDetail>[\( \rho \) represents
+                                        the fluid density and \( g \) is the acceleration due to gravity]
+                                    </equationDetail>
+                                </p>
+                                <p> This shows pressure increases in the direction of gravity. If such change in
+                                    pressure during depth \(dy\) is \(dP\), then:
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad dP=\rho g (dy)\)
+                                </p>
+
+                                <p>
+                                    If density remains constant for the fluid, then this result for small change in
+                                    pressure\(dP\) during small depth \(dy\) can be integrated both sides to obtain
+                                    change in pressure \(\Delta P\) during a depth \(y\) as:
+                                </p>
+                                <p>
+                                    \(\qquad \int{dP} =\int\rho g (dy)\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \Delta P =\rho g y\)
+                                </p>
+                                <p>Considering pressure to be \(P_o\) at top surface of the fluid, the pressure at
+                                    depth \(y=h\) is given as: </p>
+                                <p>
+                                    \(\qquad P -P_o=\rho g h\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad P =P_o+\rho g h\)
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-pressure-gradient"><button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-pressure-gradient-heading" aria-expanded="false"
+                                aria-controls="section-pressure-gradient-heading"><strong>Pressure gradient and
+                                    accelerated containers</strong></button></h2>
+                        <div id="section-pressure-gradient-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-pressure-gradient-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <h5 class="text-muted"><strong>Pressure gradient</strong></h5>
+
+                                <p>
+                                    The pressure gradient denotes the rate at which pressure changes with respect to
+                                    position. If a pressure change \(dP_x\) takes place over a length \(dx\) in the
+                                    direction of the <i>x</i>-axis, the pressure gradient \(p_x\) along the
+                                    <i>x</i>-axis is defined as:
+                                </p>
+
+                                <p>\(\qquad p_x = \frac{dP_x}{dx} \)</p>
+
+                                <p>Similarly, using comparable notations, we have:</p>
+
+                                <p>\(\qquad p_y = \frac{dP_y}{dy} \) and \( p_z = \frac{dP_z}{dz} \)</p>
+
+                                <p>
+                                    Being a vector quantity, the pressure gradient can be represented in vector form
+                                    as:
+                                </p>
+
+                                <p>\(\qquad \vec{p} = \frac{dP_x}{dx}\hat{i} + \frac{dP_y}{dy}\hat{j} +
+                                    \frac{dP_z}{dz}\hat{k} \)</p>
+
+                                <p>
+                                    For a fluid of density \(\rho\) resting in a container, the absence of
+                                    horizontal pressure variation implies the horizontal pressure gradient component
+                                    is zero. Using our earlier analysis on pressure changes due to gravity, we
+                                    deduce:
+                                </p>
+
+                                <p>\(\qquad P = P_o + \rho g y \) <equationDetail>[\(y\) is the depth from the open
+                                        surface]</equationDetail>
+                                </p>
+
+                                <p>\(\Rightarrow\quad \frac{dP}{dy} = \rho g \)</p>
+
+                                <p>
+                                    Thus, in stationary fluids, the pressure gradient is zero horizontally, and is
+                                    non zero along vertical direction. Representing the pressure gradient as \(
+                                    \vec{p} \), we have:
+                                </p>
+
+                                <p>\( \qquad\vec{p} = \rho \vec{g} \)</p>
+
+                                <p>
+                                    This principle is applicable even when the fluid's container undergoes
+                                    acceleration, denoted by \( \vec{a} \). In such scenarios, if our reference
+                                    frame aligns with the container, the container appears stationary. However,
+                                    Newton's laws requires accounting for pseudo forces. From this perspective,
+                                    the effective force on a mass \( m \) particle becomes:
+                                </p>
+
+                                <p>\(\qquad F_\text{effective} = m\vec{g} - m\vec{a} \)</p>
+
+                                <p>\( \Rightarrow\quad\vec{g}_\text{effective} = \vec{g} - \vec{a} \)</p>
+                                <equationDetail>[with \(\vec{a}\) representing the acceleration of container]
+                                </equationDetail>
+
+                                <p>
+                                    Consequently, the pressure gradient in such accelerated fluids is:
+                                </p>
+
+                                <p>\(\qquad \vec{p} = \rho \vec{g}_\text{effective} \)</p>
+
+                                <p>\(\Rightarrow\quad \vec{p} = \rho (\vec{g} - \vec{a}) \)</p>
+                                <h5 class="text-muted"><strong>Accelerated containers</strong></h5>
+                                <ul class="list-group list-group-flush">
+                                    <p>We just learned that the analysis of variation of pressure can be done for fluids
+                                        in accelerated containers by attaching our frame of reference with that of
+                                        container itself. Using this principle, let us explore the variations in
+                                        pressure for following specific acceleration conditions:
+                                    </p>
+                                    <li class="list-group-item">
+                                        <p><strong>Vertically Accelerated Container:</strong></p>
+                                        <p>
+                                            Consider a container with liquid in an elevator accelerating upwards
+                                            with an acceleration \( a_\text{o} \). This is shown in diagram below:
+                                        <div class="row">
+                                            <div class="col">
+                                                <figure style="max-width: 200px;"> <img
+                                                        src="img/05_Liquid_in_lift.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: Liquid accelerated
+                                                        upwards.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col" style="vertical-align: middle;">
+                                                <figure style="max-width: 200px; vertical-align: middle;"> <img
+                                                        src="img/05_Effective_force_in_upward_acceleration.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: Forces on liquid
+                                                        particle relative to lift.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        </p>
+                                        <p>
+                                            Relative to the container, the force acting on any general particle of mass
+                                            \(m\) is \(m(g+a_\text{o})\) downwards. So, the effective acceleration due
+                                            to gravity can be considered as \((g+a_\text{o})\). Therefore,
+                                        </p>
+                                        <p>
+                                            \(\qquad \frac{dP}{dy} = \rho \left(g+a_\text{o}\right)\)
+                                        </p>
+                                        <p>
+                                            \(\Rightarrow\quad P = P_o + \rho \left(g+a_\text{o}\right) h\)
+                                        </p>
+
+                                        <p>
+                                            Thus, the pressure gradient and the pressure as a function of depth will
+                                            increase everywhere if the container is accelerated upwards. Similarly, if
+                                            the container is accelerated downwards:
+                                        </p>
+                                        <p>
+                                            \(\qquad \frac{dP}{dy} = \rho \left(g-a_\text{o}\right)\)
+                                        </p>
+                                        <p>
+                                            \(\Rightarrow\quad P = P_o + \rho \left(g-a_\text{o}\right) h\)
+                                        </p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p><strong>Horizontally Accelerated Container:</strong></p>
+                                        <p>
+                                            Consider a container filled with liquid that's being accelerated
+                                            horizontally
+                                            with an acceleration \( a_\text{o} \). The scenario is depicted in the
+                                            diagram below:
+                                        </p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <figure style="max-width: 200px;"> <img
+                                                        src="img/05_Liquid_in_car.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: Liquid accelerated
+                                                        upwards.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col" style="vertical-align: middle;">
+                                                <figure style="max-width: 200px; vertical-align: middle;"> <img
+                                                        src="img/05_Effective_force_in_rightward_acceleration.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: Forces on liquid
+                                                        particle relative to lift.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Relative to the container, the force acting on any general particle of mass
+                                            \(m\) is \(m(g)\) downwards and \(ma_\text{o}\) in horizontal direction.
+
+                                            Thus, the pressure gradient \( \frac{dP}{dx} \) along horizontal direction
+                                            is given as:
+
+                                        </p>
+
+                                        <p>
+                                            \(\qquad \frac{dP}{dx} = \rho a_\text{o}\)
+                                        </p>
+
+                                        <p>
+                                            And the associated variation in pressure at two points located in same
+                                            horizontal level A and B is:
+                                        </p>
+
+                                        <p>
+                                            \(\qquad P_\text{A} = P_\text{A} + \rho a_\text{o} x\)
+                                        </p>
+
+                                        <p>
+                                            It is important to note that the pressure gradient and the pressure
+                                            variation with height remains unaffected in vertical direction due to the
+                                            absence of any vertical acceleration. So, pressure at any vertical depth
+                                            \(h\)
+                                            measured from open surface will be:
+                                        </p>
+                                        <p>
+                                            \(\qquad P = P_\text{o} + \rho g h\)
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h5 class="text-muted"><strong>Free surface of liquids</strong></h5>
+                                <p>The free surface of a liquid is the interface between the liquid and the gas above
+                                    it, usually the atmosphere. In other scenarios, this interface could also be with
+                                    another immiscible liquid or a vacuum. The existence of a boundary surface for
+                                    liquids is due to a phenomenon called <em>surface tension</em>. The molecules at the
+                                    surface experience an inward force due to cohesive interactions with molecules
+                                    beneath them. However, there's no similar force from above, creating a "tension"
+                                    that forms a distinguishable boundary. The description of surface tension
+                                    will be given in detail in later sections.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p>
+                                        The free surface of liquids in steady-state exhibits the following properties:
+                                    </p>
+                                    <li class="list-group-item">
+                                        <strong>Uniform Pressure:</strong> The pressure remains uniform across
+                                        all points on the free surface. This uniformity is essential because any
+                                        variation in pressure would cause particles to move or flow along the
+                                        surface.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Forces Act Perpendicularly:</strong> For particles at the liquid's
+                                        surface, the net force acting on them is perpendicular to the surface. This
+                                        means there's no force pushing the particles to move along the surface.
+                                    </li>
+                                </ul>
+                                <h5 class="text-muted"><strong>Surface of accelerated liquids</strong></h5>
+                                <p>
+                                    If a liquid kept in a container is accelerated horizontally, pressure between two
+                                    points in same horizontal level within the fluid will become different. Thus height
+                                    just above the two points must also become different causing the surface of the
+                                    fluid to deviate from horizontal plane. This is illustrated in following diagram:
+                                <div class="row">
+                                    <div class="col">
+                                        <figure style="max-width: 200px;"> <img
+                                                src="img/03_Surface_accelerated_fluid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption ">Diagram: Horizontally accelerated fluid
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 200px;"> <img
+                                                src="img/03_Surface_accelerated_fluid_Angle.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption ">Diagram: Angle of surface
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                </p>
+                                <p>
+                                    Consider two points, A and B, located within the fluid at the same horizontal level
+                                    as shown in above diagram. We can examine the difference in pressure between these
+                                    points due to the horizontal acceleration:
+                                </p>
+                                <p>
+                                    \(\qquad P_\text{B}-P_\text{A}=\rho a l\) <equationDetail>[Here \(\text{AB}=l\)]
+                                    </equationDetail>
+                                </p>
+                                <p>
+                                    Since the fluid is in vertical equilibrium, the concept of pressure variation can be
+                                    used as:
+                                </p>
+                                <p>
+                                    \(\qquad \left(P_\text{o}+\rho g h_\text{B}\right)-\left(P_\text{o}+\rho g
+                                    h_\text{A}\right)=\rho a l\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \rho g (h_\text{B}-h_\text{A})=\rho a l\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \frac{h_\text{B}-h_\text{A}}{l} =\frac{a}{g}\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \tan \theta =\frac{a}{g}\)<equationDetail>[Here, \(\theta\) is
+                                        angle of surface with horizontal]</equationDetail>
+                                </p>
+
+                                <p>
+                                    Alternatively, we can derive this relation if we observe the forces acting on the
+                                    particles at surface relative to the container. This is shown below:</p>
+                                <figure style="max-width: 200px;"> <img
+                                        src="img/03_Surface_perpendicular_net_force.png"
+                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                    <figcaption class="figure-caption ">Diagram: Forces on surface particle
+                                    </figcaption>
+                                </figure>
+                                <p>Above diagram uses the fact that net force acting on particle on surface should be
+                                    perpendicular to the surface itself. Hence,
+                                </p>
+                                <p>
+                                    \(\qquad \frac{h_\text{B}-h_\text{A}}{l} =\frac{a}{g}\)
+                                </p>
+                                <p>
+                                    This derived relationship between the angle of the surface and the ratio of
+                                    acceleration to gravitational force can be used to predict the orientation of the
+                                    liquid's surface under varying accelerations.
+                                </p>
+                                <h5 class="text-muted"><strong>Surface of Rotating Liquids</strong></h5>
+                                <p>
+                                    When a liquid is contained within a vessel that's set into rotational motion, the
+                                    liquid tends to adjust itself in response to the centrifugal force arising from the
+                                    rotation. This adjustment often results in the formation of a parabolic free
+                                    surface, where the liquid is pushed outward, raising its level near the walls of the
+                                    container and lowering it at the center.
+                                </p>
+                                <p>
+                                    This phenomenon can be witnessed in everyday life, such as when a bucket of water is
+                                    swirled around. The water tends to rise along the walls of the bucket, creating a
+                                    depression in the center.
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <figure style="max-width: 200px;"> <img
+                                                src="img/04_rotating_liquid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption ">Diagram: Surface of rotating liquid
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 200px;"> <img
+                                                src="img/04_force_on_rotating_surface.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption ">Diagram: Force on particle on surface of
+                                                rotating liquid
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    To understand this behavior, consider a particle of mass \(m\) on surface of such
+                                    rotating liquid as shown in above diagram. The co-ordinates of this particle is
+                                    shown as \(\left(x,y\right)\). Relative to this particle itself, the forces acting
+                                    are the weight of the particle \(\left(mg\right)\) and the pseudo force
+                                    \(\left(\omega^2 x\right)\) directed outwards from the axis of rotation. If the
+                                    resultant of these forces makes an angle \(\theta\) with vertical, then the surface
+                                    will be making the same angle \(\theta\) with horizontal at that location. The value
+                                    of
+                                    \(\tan\theta\) can be written as:
+                                </p>
+                                <p>
+                                    \(\qquad \tan\theta=\frac{m\omega^2 x}{mg}\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \tan\theta=\frac{\omega^2 x}{g}\)
+                                </p>
+                                <p>
+                                    This is the slope of the surface at any general point \(\left(x,y\right)\). To find
+                                    equation of the curve visible in the diagram, we write slope to be same as
+                                    \(\frac{dy}{dx}\) and then perform the necessary integration. This is done below:
+                                </p>
+                                <p>
+                                    \(\qquad \frac{dy}{dx}=\frac{\omega^2 x}{g}\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \int{dy}=\frac{\omega^2 }{g}\int{xdx}\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad y=\frac{\omega^2 x^2}{2g}\)
+                                </p>
+                                <p>
+                                    The equation represents a parabolic curve. If this parabolic curve is rotated about
+                                    the axis of rotation, the surface formed represents the actual surface of liquid in
+                                    rotation. Such surface formed by rotation of parabola is called a paraboloid.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

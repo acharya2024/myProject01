@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | RWT </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Rotation with Translation</h1>
+                    <p class="lead" id="tagline">Both simultaneously</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Rotation-Translation-Kinematics">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Rotation-Translation-Kinematics-heading" aria-expanded="false"
+                                aria-controls="section-Rotation-Translation-Kinematics-heading">
+                                <strong>Rotation with Translation</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Rotation-Translation-Kinematics-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Rotation-Translation-Kinematics-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p><strong>Translation</strong> and <strong>rotation</strong> are two fundamental types
+                                    of motion. In translation, every part of an object moves along parallel paths,
+                                    maintaining the same orientation. In rotation, all parts of the object move in
+                                    circles around a common axis.</p>
+                                <p>When an object experiences both translation and rotation simultaneously, we call this
+                                    <strong>rotation with translation</strong>. The object moves forward while also
+                                    spinning around an axis.
+                                </p>
+                                <p>Examples include a spiraling stick thrown upward, which moves upward while rotating,
+                                    or a football rolling across a field, moving forward while spinning. These are
+                                    instances of rigid body motion involving both rotation and translation.</p>
+                                <p>Understanding this combined motion is easier when viewed from a moving reference
+                                    frame. Observing the object from a frame moving with it cancels out the
+                                    translational motion, making the object appear to only rotate. For example, a
+                                    cyclist perceives the bicycle wheels as only rotating because they move along with
+                                    the bike.</p>
+                                <p>Consider a rigid body undergoing both translation and rotation. Focus on a specific
+                                    point \( P \) on the body, moving with velocity \( \vec{V}_P \) relative to the
+                                    ground.</p>
+                                <p>Since the body is rigid, all other points maintain constant distances from point \( P
+                                    \), moving in circles around an axis passing through \( P \). This demonstrates pure
+                                    rotational motion about point \( P \).</p>
+                                <p>To analyze this motion, we introduce a reference frame \( F \) moving with velocity
+                                    \( \vec{V}_P \), the same as point \( P \), but not rotating. In this frame, the
+                                    body appears to only rotate about point \( P \). The velocity of any point \( Q \)
+                                    relative to frame \( F \) is due solely to rotation:</p>
+                                <p>\(\qquad \vec{V}_{\text{relative to }F} = \vec{V}_{\text{due to rotation}}\)</p>
+                                <p>Here, \(\vec{V}_{\text{relative to }F}\) represents the velocity of point \( Q \)
+                                    relative to frame \( F \).</p>
+                                <p>The total velocity of point \( Q \) relative to the ground is the sum of the velocity
+                                    of frame \( F \) and the velocity of \( Q \) relative to \( F \):</p>
+                                <p>\(\qquad \vec{V}_{\text{relative to ground}} = \vec{V}_{\text{frame } F} +
+                                    \vec{V}_{\text{relative to } F}\)</p>
+                                <p>Substituting the earlier expression, we get:</p>
+                                <p>\(\qquad \vec{V}_{\text{relative to ground}} = \vec{V}_{\text{due to translation}} +
+                                    \vec{V}_{\text{due to rotation}}\)</p>
+                                <p>Thus, the motion of any point on the body is the combination of translational motion
+                                    and rotational motion. The following diagram illustrates this concept:</p>
+                                <figure style="max-width: 200px;">
+                                    <img src="img/08_RM/XXXX" class="figure-img img-fluid rounded"
+                                        alt="Diagram illustrating rotation with translation">
+                                    <figcaption class="figure-caption">Diagram: Rotation with translation.</figcaption>
+                                </figure>
+                                <p>Similarly, the displacement and acceleration of any point on the object can be found
+                                    by adding the contributions from translation and rotation. In summary, the overall
+                                    motion is the sum of translational and rotational motions, providing a comprehensive
+                                    view of the dynamics involved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-iar">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-iar-content" aria-expanded="false"
+                                aria-controls="section-iar-content">
+                                <strong>Instantaneous Axis of Rotation</strong>
+                            </button>
+                        </h2>
+                        <div id="section-iar-content" class="accordion-collapse collapse" aria-labelledby="section-iar"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>The <strong>Instantaneous Axis of Rotation (IAR)</strong> is a fundamental concept in
+                                    the kinematics of rigid body motion. At any given instant, the general plane motion
+                                    of a rigid body—which includes both translational and rotational components—can be
+                                    represented as a pure rotation about a unique axis known as the IAR.</p>
+
+                                <p>This axis possesses several important properties:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Kinematic Equivalence to Pure Rotation:</strong>
+                                        <p>At any instant, the motion of a rigid body is equivalent to a pure rotation
+                                            about the IAR with the instantaneous angular velocity \( \vec{\omega} \).
+                                            The
+                                            velocity \( \vec{v}_P \) of any point \( P \) on the body is given by:
+                                        <p>\(\qquad \vec{v}_P = \vec{\omega} \times \vec{r}_{P/I} \)</p>
+                                        where \( \vec{r}_{P/I} \) is the position vector of point \( P \) relative to
+                                        the IAR.</p>
+                                    </li>
+
+                                    <li class="list-group-item"><strong>Zero Velocity at the IAR:</strong>
+                                        <p>Points lying
+                                            on the IAR have zero instantaneous velocity relative to the chosen inertial
+                                            reference frame. Mathematically, if point \( I \) lies on the IAR, then:</p>
+                                        <p>\(\qquad \vec{v}_I = \vec{0} \)</p>
+                                        <p>This property is crucial for identifying the IAR by locating points of zero
+                                            velocity.</p>
+                                    </li>
+
+                                    <li class="list-group-item"><strong>Perpendicularity of Velocity
+                                            Vectors:</strong>
+                                        <p>The velocity of any point \( P \) is perpendicular to
+                                            the line joining \( P \) to the IAR. That is:</p>
+                                        <p>\(\qquad \vec{v}_P \cdot \vec{r}_{P/I} = 0 \)</p>
+                                        <p>This property aids in the geometric construction of the IAR using known
+                                            velocity directions.</p>
+                                    </li>
+
+                                    <li class="list-group-item"><strong>Instantaneous Nature:</strong>
+                                        <p>The IAR is
+                                            unique at any given instant but may change position and orientation over
+                                            time as the body's motion evolves. It captures the instantaneous rotational
+                                            behavior of the body, even in complex motions involving both rotation and
+                                            translation.</p>
+                                    </li>
+                                </ul>
+
+                                <p>These properties lead to various methods for finding the IAR:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 1:</strong> Finding IAR Using Velocities of Two
+                                                Points</summary>
+                                            <p>If the velocities of two distinct points \( A \) and \( B \) on the rigid
+                                                body are known, the IAR can be found by constructing perpendiculars to
+                                                the velocity vectors at these points. The intersection of these
+                                                perpendiculars locates the IAR.</p>
+                                            <p>Mathematically, since \( \vec{v}_A \cdot \vec{r}_{A/I} = 0 \) and \(
+                                                \vec{v}_B \cdot \vec{r}_{B/I} = 0 \), the IAR lies at the intersection
+                                                point where these conditions are satisfied.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 2:</strong> Finding IAR by Locating a Point at Rest
+                                            </summary>
+                                            <p>If there is a point on the body that is instantaneously at rest, that
+                                                point lies on the IAR. For example, in the case of a wheel rolling
+                                                without slipping, the point of contact with the ground is momentarily at
+                                                rest and thus lies on the IAR.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 3:</strong> Finding IAR Using Circular Paths
+                                            </summary>
+                                            <p>If a point on the body is moving along a known circular path, the center
+                                                of that circle is the IAR at that instant. The velocity of the point is
+                                                tangential to the circle, and the line from the IAR to the point is the
+                                                radius.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Method 4:</strong> Finding IAR with Parallel or
+                                                Anti-Parallel Velocities</summary>
+                                            <p>When two points have velocities that are parallel or anti-parallel, the
+                                                IAR can be found at infinity (indicating pure translation) or along the
+                                                perpendicular bisector between the points, respectively.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p>Understanding and locating the Instantaneous Axis of Rotation simplifies the analysis
+                                    of complex motions by reducing them to pure rotational motion about a single axis at
+                                    each instant.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="12">
+                        <h2 class="accordion-header" id="section-Kinetic-Energy-Rotation-Translation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Kinetic-Energy-Rotation-Translation-heading"
+                                aria-expanded="false"
+                                aria-controls="section-Kinetic-Energy-Rotation-Translation-heading">
+                                <strong>Kinetic Energy in Rotation with Translation</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Kinetic-Energy-Rotation-Translation-heading"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="section-Kinetic-Energy-Rotation-Translation-content"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>When a rigid body undergoes both translational and rotational motion, its total
+                                    kinetic energy is the sum of its translational kinetic energy and rotational kinetic
+                                    energy. Understanding how to calculate this combined kinetic energy is essential in
+                                    analyzing the motion of objects experiencing complex movements.</p>
+
+                                <p>The total kinetic energy \( KE_{\text{total}} \) of a rigid body undergoing both
+                                    translation and rotation is given by:</p>
+                                <p>\(\qquad KE_{\text{total}} = KE_{\text{translation}} + KE_{\text{rotation}} =
+                                    \frac{1}{2} M V_{\text{cm}}^2 + \frac{1}{2} I_{\text{cm}} \omega^2\)</p>
+
+                                <p>Where:</p>
+                                <ul>
+                                    <li>\( M \): Mass of the rigid body</li>
+                                    <li>\( V_{\text{cm}} \): Velocity of the center of mass</li>
+                                    <li>\( I_{\text{cm}} \): Moment of inertia about the center of mass</li>
+                                    <li>\( \omega \): Angular velocity about the center of mass</li>
+                                </ul>
+
+                                <p>This formula shows that the total kinetic energy is simply the sum of the kinetic
+                                    energies due to translation of center of mass and rotation of the body around the
+                                    center of mass. The derivation of this result is provided below:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Derivation of the Total Kinetic Energy Formula</strong>
+                                            </summary>
+
+                                            <p>To determine the total kinetic energy of a rigid body undergoing both
+                                                translational and rotational motion, we consider the contributions from
+                                                each infinitesimal mass element \( dm \) that makes up the body.</p>
+
+                                            <p>Each mass element has a velocity \( \vec{v} \) that can be decomposed
+                                                into two components:</p>
+                                            <p>\(\qquad \vec{v} = \vec{V}_{\text{cm}} + \vec{v}'\)</p>
+                                            <p>where:</p>
+                                            <ul>
+                                                <li>\( \vec{V}_{\text{cm}} \) is the velocity of the center of mass.
+                                                </li>
+                                                <li>\( \vec{v}' \) is the velocity of the mass element relative to the
+                                                    center of mass.</li>
+                                            </ul>
+
+                                            <p>Since the rigid body undergoes pure rotation about its center of mass,
+                                                the relative velocity \( \vec{v}' \) is given by:</p>
+                                            <p>\(\qquad \vec{v}' = \vec{\omega} \times \vec{r}'\)</p>
+                                            <p>where:</p>
+                                            <ul>
+                                                <li>\( \vec{\omega} \) is the angular velocity vector.</li>
+                                                <li>\( \vec{r}' \) is the position vector of the mass element relative
+                                                    to the center of mass.</li>
+                                            </ul>
+
+                                            <p>The kinetic energy \( dKE \) of each mass element \( dm \) is:</p>
+                                            <p>\(\qquad dKE = \frac{1}{2} dm \, v^2\)</p>
+
+                                            <p>Substituting the expression for \( \vec{v} \):</p>
+                                            <p>\(\qquad dKE = \frac{1}{2} dm \left( \vec{V}_{\text{cm}} + \vec{v}'
+                                                \right) \cdot \left( \vec{V}_{\text{cm}} + \vec{v}' \right)\)</p>
+
+                                            <p>Expanding the dot product, we get:</p>
+                                            <p>\(\qquad dKE = \frac{1}{2} dm \left( V_{\text{cm}}^2 + 2
+                                                \vec{V}_{\text{cm}} \cdot \vec{v}' + v'^2 \right)\)</p>
+
+                                            <p>Integrating over the entire mass of the rigid body, the total kinetic
+                                                energy is:</p>
+                                            <p>\(\qquad KE_{\text{total}} = \int dKE = \frac{1}{2} M V_{\text{cm}}^2 +
+                                                \int dm \, \vec{V}_{\text{cm}} \cdot \vec{v}' + \frac{1}{2} \int dm \,
+                                                v'^2\)</p>
+
+                                            <p>Let's analyze each term individually:</p>
+
+                                            <strong>First Term: </strong>Translational Kinetic Energy
+                                            <p>The first term, \( \frac{1}{2} M V_{\text{cm}}^2 \), represents the
+                                                kinetic energy of the entire rigid body as if all its mass were
+                                                concentrated at the center of mass moving with velocity \(
+                                                \vec{V}_{\text{cm}} \). This is known as the <strong>translational
+                                                    kinetic energy</strong> of the body.</p>
+
+                                            <strong>Second Term:</strong> Dot product term
+                                            <p>The second term involves the integral \( \int dm \, \vec{V}_{\text{cm}}
+                                                \cdot \vec{v}' \). Since \( \vec{V}_{\text{cm}} \) is constant with
+                                                respect to the mass elements, we can take it outside the integral:</p>
+                                            <p>\(\qquad \int dm \, \vec{V}_{\text{cm}} \cdot \vec{v}' =
+                                                \vec{V}_{\text{cm}} \cdot \left( \int dm \, \vec{v}' \right)\)</p>
+
+                                            <p>The integral \( \int dm \, \vec{v}' \) represents the total momentum of
+                                                the system relative to the center of mass frame. In the center of mass
+                                                frame, total momentum of any system of particles remains zero.
+                                                Therefore,:</p>
+                                            <p>\(\qquad \int dm \, \vec{v}' = \vec{0}\)</p>
+
+                                            <p>Therefore, the second term vanishes:</p>
+                                            <p>\(\qquad \int dm \, \vec{V}_{\text{cm}} \cdot \vec{v}' =
+                                                \vec{V}_{\text{cm}} \cdot \vec{0} = 0\)</p>
+
+                                            <strong>Third Term: </strong>Rotational Kinetic Energy
+                                            <p>The third term involves the integral \( \frac{1}{2} \int dm \, v'^2 \),
+                                                which represents the sum of the kinetic energies of all mass elements
+                                                due to their motion relative to the center of mass. Since the only
+                                                possible motion of the rigid body relative to the center of mass is pure
+                                                rotation, this term corresponds to the <strong>rotational kinetic
+                                                    energy</strong> about the center of mass.</p>
+
+                                            <p>We can express this term as:</p>
+
+                                            <p>\(\qquad \frac{1}{2} \int dm \, v'^2 =\frac{1}{2} I_{\text{cm}}
+                                                \omega^2\)
+                                            </p>
+                                            <p>where \( I_{\text{cm}} \) is the <strong>moment of
+                                                    inertia</strong> of the body about the center of mass.</p>
+
+                                            <strong>Final Expression for Total Kinetic Energy</strong>
+                                            <p>Combining all the terms, the total kinetic energy of the rigid body is:
+                                            </p>
+                                            <p>\(\qquad KE_{\text{total}} = \frac{1}{2} M V_{\text{cm}}^2 + \frac{1}{2}
+                                                I_{\text{cm}} \omega^2\)</p>
+
+                                            <p>This expression shows that the total kinetic energy is the sum of:</p>
+                                            <ul>
+                                                <li><strong>Translational Kinetic Energy:</strong> \( \frac{1}{2} M
+                                                    V_{\text{cm}}^2 \), due to the motion of the center of mass. In
+                                                    other words, the kinetic energy of body as if the body is
+                                                    concentrated at its center of mass</li>
+                                                <li><strong>Rotational Kinetic Energy:</strong> \( \frac{1}{2}
+                                                    I_{\text{cm}} \omega^2 \), due to rotation about the center of mass.
+                                                    In other words, the kinetic energy of the body relative to its
+                                                    center of mass frame.
+                                                </li>
+                                            </ul>
+
+                                            <p>Therefore, when analyzing the kinetic energy of a rigid body in combined
+                                                translational and rotational motion, we can treat the translational and
+                                                rotational components separately and sum their energies to find the
+                                                total kinetic energy.</p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>Let's explore this concept with an example:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <details>
+                                                    <summary><strong>Example 1:</strong> Kinetic Energy of a Frisbee
+                                                        Thrown with Spin</summary>
+                                                    <p>A frisbee of mass 0.2 kg and radius 0.15 m is thrown with a
+                                                        forward velocity of 5 m/s while spinning with an angular
+                                                        velocity of 20 rad/s. Calculate its total kinetic energy after
+                                                        it is thrown.</p>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col">
+                                                            <figure style="max-width: 250px;">
+                                                                <img src="img/frisbee_spin.png"
+                                                                    class="figure-img img-fluid rounded"
+                                                                    alt="Frisbee thrown with spin">
+                                                                <figcaption class="figure-caption">Figure: Frisbee in
+                                                                    motion with translation and rotation.</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                    <p><strong>Solution:</strong></p>
+                                                    <p>The frisbee has both translational and rotational motion, so its
+                                                        total kinetic energy is the sum of translational and rotational
+                                                        kinetic energies.</p>
+
+                                                    <p><strong>Translational Kinetic Energy:</strong></p>
+                                                    <p>\(\qquad KE_{\text{translation}} = \frac{1}{2} M V_{\text{cm}}^2
+                                                        = \frac{1}{2} \times 0.2 \times (5)^2 = 2.5 \, \text{J}\)</p>
+
+                                                    <p><strong>Rotational Kinetic Energy:</strong></p>
+                                                    <p>The frisbee spins about its center, so the rotational kinetic
+                                                        energy is:</p>
+                                                    <p>\(\qquad KE_{\text{rotation}} = \frac{1}{2} I_{\text{cm}}
+                                                        \omega^2\)</p>
+                                                    <p>For a flat disc (the shape of a frisbee), the moment of inertia
+                                                        is:</p>
+                                                    <p>\(\qquad I_{\text{cm}} = \frac{1}{2} M R^2 = \frac{1}{2} \times
+                                                        0.2 \times (0.15)^2 = 0.00225 \, \text{kg}\cdot\text{m}^2\)</p>
+
+                                                    <p>Therefore:</p>
+                                                    <p>\(\qquad KE_{\text{rotation}} = \frac{1}{2} \times 0.00225 \times
+                                                        (20)^2 = 0.45 \, \text{J}\)</p>
+
+                                                    <p><strong>Total Kinetic Energy:</strong></p>
+                                                    <p>\(\qquad KE_{\text{total}} = KE_{\text{translation}} +
+                                                        KE_{\text{rotation}} = 2.5 + 0.45 = 2.95 \, \text{J}\)</p>
+
+                                                    <p>Therefore, the total kinetic energy of the frisbee after it is
+                                                        thrown is \( 2.95 \, \text{J} \).</p>
+
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>This approach can be applied to any rigid body undergoing both translation and
+                                    rotation, allowing for comprehensive analysis of its kinetic energy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="12">
+                        <h2 class="accordion-header" id="section-Angular-Momentum-Rotation-Translation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Angular-Momentum-Rotation-Translation-heading"
+                                aria-expanded="false"
+                                aria-controls="section-Angular-Momentum-Rotation-Translation-heading">
+                                <strong>Angular Momentum in Rotation with Translation</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Angular-Momentum-Rotation-Translation-heading"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="section-Angular-Momentum-Rotation-Translation-content"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>When a rigid body undergoes both translational and rotational motion, its total
+                                    angular momentum is the sum of its angular momentum due to translation and rotation.
+                                    Understanding how to calculate this combined angular momentum is essential in
+                                    analyzing the motion of objects experiencing complex movements.</p>
+
+                                <p>The total angular momentum \( \vec{L}_{\text{total}} \) of a rigid body in rotation
+                                    with translation about a fixed point \( O \) is given by:</p>
+                                <p>\(\qquad \vec{L}_{\text{total}} = \vec{L}_{\text{translation}} +
+                                    \vec{L}_{\text{rotation}} = \vec{r}_{\text{cm}} \times (M \vec{V}_{\text{cm}}) +
+                                    I_{\text{cm}} \vec{\omega}\)</p>
+
+                                <p>Where:</p>
+                                <ul>
+                                    <li>\( M \): Mass of the rigid body</li>
+                                    <li>\( \vec{r}_{\text{cm}} \): Position vector of the center of mass relative to
+                                        point \( O \)</li>
+                                    <li>\( \vec{V}_{\text{cm}} \): Velocity of the center of mass</li>
+                                    <li>\( I_{\text{cm}} \): Moment of inertia about the center of mass</li>
+                                    <li>\( \vec{\omega} \): Angular velocity around the axis through the center of mass
+                                    </li>
+                                </ul>
+
+                                <p>This formula shows that the total angular momentum is the sum of the angular momentum
+                                    due to the motion of the center of mass and the angular momentum due to rotation
+                                    about the center of mass. The derivation of this result is provided below:</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Derivation of the Total Angular Momentum Formula</strong>
+                                            </summary>
+
+                                            <p>The total angular momentum \( \vec{L}_{\text{total}} \) is obtained by
+                                                calculating the angular momentum of each mass element \( dm \) in the
+                                                body. The position vector of each mass element relative to a fixed point
+                                                \( O \) is given by:</p>
+                                            <p>\(\qquad \vec{r} = \vec{r}_{\text{cm}} + \vec{r}'\)</p>
+                                            <p>where \( \vec{r}_{\text{cm}} \) is the position of the center of mass
+                                                relative to point \( O \), and \( \vec{r}' \) is the position of the
+                                                mass element relative to the center of mass.</p>
+
+                                            <p>The velocity of each mass element can similarly be expressed as:</p>
+                                            <p>\(\qquad \vec{v} = \vec{V}_{\text{cm}} + \vec{v}'\)</p>
+                                            <p>where \( \vec{V}_{\text{cm}} \) is the velocity of the center of mass,
+                                                and \( \vec{v}' \) is the velocity of the mass element relative to the
+                                                center of mass. For a rigid body undergoing pure rotation about its
+                                                center of mass, \( \vec{v}' \) is related to the angular velocity \(
+                                                \vec{\omega} \) by:</p>
+                                            <p>\(\qquad \vec{v}' = \vec{\omega} \times \vec{r}'\)</p>
+
+                                            <p>The total angular momentum of the rigid body is given by:</p>
+                                            <p>\(\qquad \vec{L}_{\text{total}} = \int \vec{r} \times \vec{v} \, dm =
+                                                \int (\vec{r}_{\text{cm}} + \vec{r}') \times (\vec{V}_{\text{cm}} +
+                                                \vec{v}') \, dm\)</p>
+
+                                            <p>Expanding the cross product:</p>
+                                            <p>\(\qquad \vec{L}_{\text{total}} = \int \left[ \vec{r}_{\text{cm}} \times
+                                                \vec{V}_{\text{cm}} + \vec{r}_{\text{cm}} \times \vec{v}' + \vec{r}'
+                                                \times \vec{V}_{\text{cm}} + \vec{r}' \times \vec{v}' \right] \, dm\)
+                                            </p>
+
+                                            <p>Now, let's simplify each term individually:</p>
+
+                                            <ul>
+                                                <li><strong>Term 1: \( \int \vec{r}_{\text{cm}} \times
+                                                        \vec{V}_{\text{cm}} \, dm \)</strong></li>
+                                                <p>Since \( \vec{r}_{\text{cm}} \) and \( \vec{V}_{\text{cm}} \) are
+                                                    constants with respect to \( dm \), this term simplifies to:</p>
+                                                <p>\(\qquad \vec{r}_{\text{cm}} \times \vec{V}_{\text{cm}} \int dm =
+                                                    \vec{r}_{\text{cm}} \times
+                                                    (M \vec{V}_{\text{cm}})\)</p>
+                                                <p>This represents the angular momentum due to the translation of the
+                                                    center of mass. In other words, it represents the angular momentum
+                                                    of the system considering entire system to be concentrated at its
+                                                    center of mass.</p>
+
+                                                <li><strong>Term 2: \( \int \vec{r}_{\text{cm}} \times \vec{v}' \, dm
+                                                        \)</strong></li>
+                                                <p>Since \( \vec{r}_{\text{cm}} \) is constant, we can take it outside
+                                                    the integral:</p>
+                                                <p>\(\qquad \vec{r}_{\text{cm}} \times \int \vec{v}' \, dm\)</p>
+                                                <p>The integral \( \int \vec{v}' \, dm \) represents the total momentum
+                                                    of the system relative to the center of mass, which is zero. Thus,
+                                                    this term is:</p>
+                                                <p>\(\qquad \vec{r}_{\text{cm}} \times \vec{0} = \vec{0}\)</p>
+                                                <p>This term vanishes because the total momentum in the center of mass
+                                                    frame is zero.</p>
+
+                                                <li><strong>Term 3: \( \int \vec{r}' \times \vec{V}_{\text{cm}} \, dm
+                                                        \)</strong></li>
+                                                <p>Since \( \vec{V}_{\text{cm}} \) is constant, this term becomes:</p>
+                                                <p>\(\qquad \left( \int \vec{r}' \, dm \right) \times
+                                                    \vec{V}_{\text{cm}}\)</p>
+                                                <p>This also becomes zero because the integral \( \int \vec{r}' \, dm \)
+                                                    represents the sum of the position vectors \( \vec{r}' \) of all
+                                                    mass elements relative to the center of mass. This effectively
+                                                    measures the location of the center of mass from the center of mass
+                                                    itself, which is zero by definition. Therefore, this term vanishes:
+                                                </p>
+                                                <p>\(\qquad \int \vec{r}' \times \vec{V}_{\text{cm}} \, dm = \vec{0} \)
+                                                </p>
+
+                                                <li><strong>Term 4: \( \int \vec{r}' \times \vec{v}' \, dm \)</strong>
+                                                </li>
+                                                <p>This term represents the angular momentum of the rigid body relative
+                                                    to the center of mass. Since a rigid body can only perform pure
+                                                    rotation if observed relative to center of mass, the angular
+                                                    momentum relative to the center of mass is given by:</p>
+                                                <p>\(\qquad \vec{L}'_{\text{rotation}} = I_{\text{cm}} \vec{\omega}\)
+                                                </p>
+                                                <p>where \( I_{\text{cm}} \) is the moment of inertia about the center
+                                                    of mass.</p>
+                                                <p>Thus, this term simplifies to:</p>
+                                                <p>\(\qquad \int \vec{r}' \times \vec{v}' \, dm = I_{\text{cm}}
+                                                    \vec{\omega}\)</p>
+                                            </ul>
+                                            <p>Now, combining all the terms, we have:</p>
+                                            <p>\(\qquad \vec{L}_{\text{total}} = \vec{r}_{\text{cm}} \times (M
+                                                \vec{V}_{\text{cm}}) + I_{\text{cm}} \vec{\omega} \)</p>
+
+                                            <p>The first term, \( \vec{r}_{\text{cm}} \times (M \vec{V}_{\text{cm}}) \),
+                                                represents the angular momentum due to the translational motion of the
+                                                center of mass, where \( M \) is the total mass of the rigid body, \(
+                                                \vec{r}_{\text{cm}} \) is the position of the center of mass relative to
+                                                point \( O \), and \( \vec{V}_{\text{cm}} \) is the velocity of the
+                                                center of mass.</p>
+
+                                            <p>The second term, \( I_{\text{cm}} \vec{\omega} \), represents the angular
+                                                momentum due to the rotation of the rigid body about its center of mass,
+                                                where \( I_{\text{cm}} \) is the moment of inertia of the body about its
+                                                center of mass, and \( \vec{\omega} \) is the angular velocity of the
+                                                body about its center of mass.</p>
+                                            <p>This result for angular momentum is analogous to the formula for kinetic
+                                                energy in rotation with translation. In the case of kinetic energy, the
+                                                total energy is a scalar sum of the translational kinetic energy \(
+                                                \frac{1}{2} M V_{\text{cm}}^2 \) and the rotational kinetic energy \(
+                                                \frac{1}{2} I_{\text{cm}} \omega^2 \). However, for angular momentum, it
+                                                is a vector sum of the angular momentum due to translation \(
+                                                \vec{r}_{\text{cm}} \times (M \vec{V}_{\text{cm}}) \) and the angular
+                                                momentum due to rotation \( I_{\text{cm}} \vec{\omega} \). This vector
+                                                nature of angular momentum means one must be careful when applying this
+                                                formula, as the directions of the angular momentum components matter,
+                                                unlike the scalar quantities in kinetic energy, which only require
+                                                magnitudes.</p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p>Let's explore this concept with an example:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1:</strong> Angular Momentum of a Disc Translating
+                                                and Rotating</summary>
+                                            <p>A solid disc of mass 10 kg and radius 0.5 m is moving on a horizontal
+                                                surface with a linear velocity of 4 m/s while also rotating with an
+                                                angular velocity \(8\text{rad/s}\). Calculate its
+                                                total angular momentum about a fixed point \( O \) on the surface
+                                                directly below the center of the disc at a given instant.</p>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/moving_disc.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Disc translating and rotating">
+                                                        <figcaption class="figure-caption">Figure: Disc translating and
+                                                            rotating.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <p><strong>Solution:</strong></p>
+                                            <p>The total angular momentum about point \( O \) is the sum of the angular
+                                                momentum due to translation and the angular momentum due to rotation
+                                                about the center of mass.</p>
+
+                                            <p><strong>Angular Momentum Due to Translation:</strong></p>
+                                            \(\qquad \vec{L}_{\text{translation}} = M (\vec{r}_{\text{cm}} \times
+                                            \vec{V}_{\text{cm}}) \)
+                                            <p>At the given instant, \( \vec{r}_{\text{cm}} \) is upward with a
+                                                magnitude of 0.5 m, and \( \vec{V}_{\text{cm}} \) is horizontal with a
+                                                magnitude of 4 m/s. Therefore, the magnitude of \(
+                                                \vec{L}_{\text{translation}} \) is:</p>
+                                            \(\qquad L_{\text{translation}} = M R V_{\text{cm}} = 10 \times 0.5 \times 4
+                                            = 20 \, \text{kg}\cdot\text{m}^2/\text{s} \)
+                                            <p>Direction: Into the plane (using the right-hand rule).</p>
+
+                                            <p><strong>Angular Momentum Due to Rotation:</strong></p>
+
+                                            <p>Moment of inertia of a solid disc about its center of mass is:</p>
+                                            \(\qquad I_{\text{cm}} = \frac{1}{2} M R^2 = \frac{1}{2} \times 10 \times
+                                            (0.5)^2 = 1.25 \, \text{kg}\cdot\text{m}^2 \)
+                                            <p>Therefore, the angular momentum due to rotation is:</p>
+                                            \(\qquad \vec{L}_{\text{rotation}} = I_{\text{cm}} \vec{\omega} = 1.25
+                                            \times \frac{4}{0.5} = 10 \, \text{kg}\cdot\text{m}^2/\text{s} \)
+                                            <p>Direction: Into the plane (same as \( \vec{L}_{\text{translation}} \)).
+                                            </p>
+
+                                            <p><strong>Total Angular Momentum:</strong></p>
+                                            \(\qquad \vec{L}_{\text{total}} = \vec{L}_{\text{translation}} +
+                                            \vec{L}_{\text{rotation}} = 20 + 10 = 30 \,
+                                            \text{kg}\cdot\text{m}^2/\text{s} \)
+                                            <p>Therefore, the total angular momentum of the disc about point \( O \) is
+                                                \( 30 \, \text{kg}\cdot\text{m}^2/\text{s} \), directed into the plane.
+                                            </p>
+                                        </details>
+                                    </li>
+
+
+                                </ul>
+                                <p>This approach can be applied to any rigid body undergoing both
+                                    translation and
+                                    rotation, allowing for comprehensive analysis of its angular momentum in
+                                    various
+                                    mechanical systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

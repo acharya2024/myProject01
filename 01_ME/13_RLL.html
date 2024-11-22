@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | RLL </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Rolling</h1>
+                    <p class="lead" id="tagline">Motion without slipping</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-rolling-motion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-rolling-motion-content" aria-expanded="false"
+                                aria-controls="section-rolling-motion-content">
+                                <strong>Rolling motion of rigid body</strong>
+                            </button>
+                        </h2>
+                        <div id="section-rolling-motion-content" class="accordion-collapse collapse"
+                            aria-labelledby="section-rolling-motion" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Rolling is a common type of motion we observe daily, where an object moves forward
+                                    while also rotating about an axis. We define rolling of a rigid body as the motion
+                                    on a surface without any relative slipping between the body and the surface. The
+                                    following diagram represents a wheel—a rigid body—rolling on the ground:
+                                </p>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/06_Rolling_wheel.gif"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Wheel rolling on a fixed surface">
+                                            <figcaption class="figure-caption">Diagram: Wheel rolling on a fixed
+                                                surface.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <strong>Rolling as a Combination of Rotation and Translation</strong>
+                                <p>
+                                    Rolling can be considered a combination of rotational and translational motion. The
+                                    body
+                                    rotates about its own axis while the axis moves along a path, which may or may not
+                                    be a
+                                    straight line. It is clearly visible in the animation above that center of the wheel
+                                    is moving horizontally as well as there occurs rotation around the center.
+                                </p>
+                                <p>
+                                    When the rolling body is observed from a frame of reference moving along with its
+                                    center,
+                                    the motion of the body appears appears as pure rotation. Most of the times, this
+                                    moving frame
+                                    simplifies
+                                    the
+                                    analysis of the body's motion during rolling. For a circular rigid body rolling on a
+                                    stationary surface, following relations between linear and angular variables can be
+                                    established:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Relation Between Linear and Angular Velocity</strong>
+                                            </summary>
+                                            <p>
+                                                For a circular body (such as a disc, ring, or sphere) rolling on a fixed
+                                                surface
+                                                without
+                                                slipping, the point of contact—the bottom-most point—remains stationary
+                                                with
+                                                respect
+                                                to
+                                                the
+                                                surface to prevent slipping. If the center of the body moves with a
+                                                linear
+                                                velocity
+                                                \(
+                                                V_{\text{o}} \) and the body rotates with an angular velocity \( \omega
+                                                \),
+                                                the
+                                                velocity
+                                                at
+                                                the point of contact due to rotation is \( -\omega R \) (negative
+                                                because it
+                                                opposes
+                                                the
+                                                direction of \( V_{\text{o}} \). To ensure no slipping occurs, the net
+                                                velocity at
+                                                the
+                                                point
+                                                of contact must be zero:
+                                            </p>
+                                            <p>
+                                                \(\qquad V_{\text{o}} - \omega R = 0 \)
+                                            </p>
+                                            <p>
+                                                \( \Rightarrow\quad V_{\text{o}} = \omega R \)
+                                            </p>
+                                            <p>
+                                                where \( R \) is the radius of the rolling body.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Relation Between Linear and Angular Acceleration</strong>
+                                            </summary>
+                                            <p>
+                                                Consider a body rolling with a center velocity \( V_{\text{o}} \) and
+                                                angular
+                                                velocity
+                                                \(
+                                                \omega \) at a given instant. If the body continues to roll without
+                                                slipping
+                                                and the
+                                                center's velocity increases with a linear acceleration \( a_{\text{o}}
+                                                \),
+                                                while the
+                                                angular velocity increases with an angular acceleration \( \alpha \),
+                                                the
+                                                rolling
+                                                condition
+                                                after a small time \( dt \) is expressed as:
+                                            </p>
+                                            <p>
+                                                \( \qquad V_{\text{o}} + a_{\text{o}} dt = (\omega + \alpha dt) R \)
+                                            </p>
+                                            <p>
+                                                Subtracting \( \omega R \) from both sides:
+                                            </p>
+                                            <p>
+                                                \( \qquad a_{\text{o}} dt = \alpha R dt \)
+                                            </p>
+                                            <p>
+                                                \( \Rightarrow\quad a_{\text{o}} = \alpha R \)
+                                            </p>
+                                            <p>
+                                                This equation shows that the linear acceleration of the center of mass
+                                                is
+                                                directly
+                                                proportional to the angular acceleration, with the radius \( R \)
+                                                serving as
+                                                the
+                                                constant of
+                                                proportionality.
+                                            </p>
+                                            <p>
+                                                If the surface on which the body is rolling is itself moving, similar
+                                                relationships
+                                                hold
+                                                relative to the moving surface. The rolling condition (\( V_{\text{rel}}
+                                                =
+                                                \omega R
+                                                \)
+                                                and
+                                                \( a_{\text{rel}} = \alpha R \)) applies to the velocities and
+                                                accelerations
+                                                relative to
+                                                the
+                                                surface, where \( V_{\text{rel}} \ \) and \( a_{\text{rel}} \) are the
+                                                linear
+                                                velocity
+                                                and
+                                                acceleration of the body's center of mass relative to the moving
+                                                surface.
+                                            </p>
+                                            <p>
+                                                By understanding these relationships, we can analyze the motion of
+                                                rolling
+                                                bodies
+                                                more
+                                                effectively, whether they are wheels, balls, or any other objects
+                                                exhibiting
+                                                rolling
+                                                motion.
+                                            </p>
+                                        </details>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-kinematics-rolling">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-kinematics-rolling-content" aria-expanded="false"
+                                aria-controls="section-kinematics-rolling-content">
+                                <strong>Kinematics of rolling</strong>
+                            </button>
+                        </h2>
+                        <div id="section-kinematics-rolling-content" class="accordion-collapse collapse"
+                            aria-labelledby="section-kinematics-rolling" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>To analyze the kinematics of rolling objects, we can begin by understanding the
+                                    motion relative to a translating frame in which the object appears to be rotating.
+                                    Then, by vectorially adding the effects of translation, we can understand the motion
+                                    relative to the ground.</p>
+
+                                <p><strong>Velocity of various points in rolling objects:</strong></p>
+                                <p>Consider a rigid body like a ring, disc, or sphere rolling on the floor with a
+                                    constant velocity of its center as \(V_{\text{o}}\). Let's mark four points on the
+                                    body: A and C at the top and bottom, and B and D at the sides.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/06_Rolling_disc.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram of rolling disc">
+                                            <figcaption class="figure-caption">Diagram: Rolling disc.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    Relative to ground the body appears to be rolling. If we consider a new frame \(F\)
+                                    of reference moving with velocity \(V_{\text{o}}\) along with the center of object,
+                                    then relative to this frame \(F\) the body appears to be in pure rotation. This is
+                                    illustrated in following animation:
+                                </p>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure>
+                                            <img src="img/04_rolling_sphere.gif"
+                                                class="figure-img img-fluid rounded" alt="Diagram of rolling disc"
+                                                style="max-height: 200px;">
+                                            <figcaption class="figure-caption">Diagram: Rolling relative to ground.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure>
+                                            <img src="img/05_rotating_sphere.gif"
+                                                class="figure-img img-fluid rounded" alt="Diagram of rolling disc"
+                                                style="max-height: 200px;">
+                                            <figcaption class="figure-caption">Diagram: Rotating relative to frame
+                                                \(F\).</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>We derive the velocities of these points using the equation:</p>
+                                <p>\(\qquad \vec{V} = \vec{V}_{\text{translation}} + \vec{V}_{\text{rotation}}\)</p>
+                                <p>This is described in the following table:</p>
+                                <table class="table table-hover" style="text-align:center;">
+                                    <tr>
+                                        <th rowspan="2">Particle</th>
+                                        <th colspan="3">Velocity</th>
+                                    </tr>
+                                    <tr>
+                                        <th>\(\vec{V}_{\text{translation}}\)</th>
+                                        <th>\(\vec{V}_{\text{rotation}}\)</th>
+                                        <th>\(\vec{V}_{\text{resultant}}\)</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>A</strong></td>
+                                        <td>\(V_{\text{o}}\hat{i}\)</td>
+                                        <td>\(\omega R\hat{i}\)</td>
+                                        <td>\((V_{\text{o}} + \omega R)\hat{i}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>B</strong></td>
+                                        <td>\(V_{\text{o}}\hat{i}\)</td>
+                                        <td>\(-\omega R\hat{j}\)</td>
+                                        <td>\(V_{\text{o}}\hat{i} - \omega R\hat{j}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>C</strong></td>
+                                        <td>\(V_{\text{o}}\hat{i}\)</td>
+                                        <td>\(-\omega R\hat{i}\)</td>
+                                        <td>\((V_{\text{o}} - \omega R)\hat{i}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>D</strong></td>
+                                        <td>\(V_{\text{o}}\hat{i}\)</td>
+                                        <td>\(\omega R\hat{j}\)</td>
+                                        <td>\(V_{\text{o}}\hat{i} + \omega R\hat{j}\)</td>
+                                    </tr>
+                                </table>
+                                <p>The following diagram justifies the velocities shown in above table:</p>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/30_Translating_body.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Diagram: Translating rigid body.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/31_Rotating_body.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Diagram: Rotating rigid body.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/32_Rolling_body.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Diagram: Rolling rigid body.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>By analyzing the velocities in both the translating and rotating frames and combining
+                                    them vectorially, we can fully understand the motion of each point on the rolling
+                                    object relative to the ground.</p>
+                                <p><strong>Determination of velocity using instantaneous axis of rotation:</strong></p>
+                                <p>Since rolling without slipping can be considered as pure rotation about the
+                                    instantaneous axis of rotation (IAR) at the point of contact, the velocity of any
+                                    point on the rolling body can be determined by:</p>
+                                <p>\(\qquad \vec{V} = \omega \times \vec{r}_{\text{IAR}}\)</p>
+                                <p>where \(\vec{r}_{\text{IAR}}\) is the position vector of the point from the IAR.</p>
+                                <p><strong>Determination of acceleration of various points with constant
+                                        velocity:</strong></p>
+                                <p>When the rolling object moves with constant velocity (\(a_{\text{o}} = 0\), \(\alpha
+                                    = 0\)), the accelerations of points are due to centripetal acceleration only.</p>
+                                <p><strong>Determination of acceleration of various points with constant
+                                        acceleration:</strong></p>
+                                <p>The accelerations of the points can be analyzed by adding the translational and
+                                    rotational accelerations:</p>
+                                <p>\(\qquad \vec{a} = \vec{a}_{\text{translation}} + \vec{a}_{\text{rotation}}\)</p>
+                                <p>This relationship is shown in the following table:</p>
+                                <table class="table table-hover" style="text-align:center;">
+                                    <tr>
+                                        <th rowspan="2">Particle</th>
+                                        <th colspan="2">Acceleration</th>
+                                    </tr>
+                                    <tr>
+                                        <th>\(\vec{a}_{\text{translation}}\)</th>
+                                        <th>\(\vec{a}_{\text{rotation}}\)</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>A</strong></td>
+                                        <td>\(a_{\text{o}}\hat{i}\)</td>
+                                        <td>\(-\omega^2 R \hat{j} + \alpha R \hat{i}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>B</strong></td>
+                                        <td>\(a_{\text{o}}\hat{i}\)</td>
+                                        <td>\(-\omega^2 R \hat{i} - \alpha R \hat{j}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>C</strong></td>
+                                        <td>\(a_{\text{o}}\hat{i}\)</td>
+                                        <td>\(\omega^2 R \hat{j} - \alpha R \hat{i}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>D</strong></td>
+                                        <td>\(a_{\text{o}}\hat{i}\)</td>
+                                        <td>\(\omega^2 R \hat{i} + \alpha R \hat{j}\)</td>
+                                    </tr>
+                                </table>
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <figure style="max-width: 200px;">
+                                            <img src="../00_Assets/img/08_RM/07_accelerated_Rolling_disc.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram illustrating acceleration in rolling">
+                                            <figcaption class="figure-caption">Diagram: Acceleration in rolling.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col">
+                                        <figure style="max-width: 300px;">
+                                            <img src="../00_Assets/img/08_RM/07_accelerated_points_on_Rolling_disc.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram illustrating accelerations of particles in rolling">
+                                            <figcaption class="figure-caption">Diagram: Acceleration of particles in
+                                                rolling.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p><strong>Path traced by a circumference point of rolling object:</strong></p>
+                                <p>The path traced by a point on the circumference of a rolling object is called a
+                                    cycloid. This path can be analyzed by considering the combination of rotational and
+                                    translational motion.</p>
+                                <p><strong>Path traced by any general point of rolling object:</strong></p>
+                                <p>The path traced by any point on the rolling object can be determined by analyzing its
+                                    motion relative to the center of mass and combining it with the translational motion
+                                    of the center of mass.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-dynamics-rolling">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-dynamics-rolling-content" aria-expanded="false"
+                                aria-controls="section-dynamics-rolling-content">
+                                <strong>Dynamics of rolling</strong>
+                            </button>
+                        </h2>
+                        <div id="section-dynamics-rolling-content" class="accordion-collapse collapse"
+                            aria-labelledby="section-dynamics-rolling" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p><strong>Understanding requirement and direction of friction:</strong></p>
+                                <p>For a body to roll without slipping, friction is required between the surface and the
+                                    rolling body. The frictional force provides the torque necessary for rotation. The
+                                    direction of friction depends on whether the rolling body is accelerating or
+                                    decelerating.</p>
+                                <p><strong>Development of Newton's law equation:</strong></p>
+                                <p>Applying Newton's second law to the center of mass:</p>
+                                <p>\(\qquad \sum F = m a_{\text{CM}}\)</p>
+                                <p>where \(\sum F\) is the net external force, \(m\) is the mass, and \(a_{\text{CM}}\)
+                                    is the acceleration of the center of mass.</p>
+                                <p><strong>Development of torque equation relative to center of mass frame:</strong></p>
+                                <p>Applying rotational dynamics about the center of mass:</p>
+                                <p>\(\qquad \sum \tau_{\text{CM}} = I_{\text{CM}} \alpha\)</p>
+                                <p>where \(\sum \tau_{\text{CM}}\) is the net torque about the center of mass,
+                                    \(I_{\text{CM}}\) is the moment of inertia about the center of mass, and \(\alpha\)
+                                    is the angular acceleration.</p>
+                                <p><strong>Development of torque equation relative to instantaneous axis of
+                                        rotation:</strong></p>
+                                <p>Alternatively, we can consider rotation about the instantaneous axis of rotation
+                                    (IAR):</p>
+                                <p>\(\qquad \sum \tau_{\text{IAR}} = I_{\text{IAR}} \alpha\)</p>
+                                <p><strong>Application of equations to find acceleration:</strong></p>
+                                <p>By combining the equations of motion and torque, we can solve for the acceleration
+                                    \(a_{\text{o}}\) and angular acceleration \(\alpha\) of the rolling body.</p>
+                                <p><strong>Dynamics of rolling on inclined plane:</strong></p>
+                                <p>When a body rolls down an inclined plane, the component of gravitational force along
+                                    the plane causes acceleration. Friction provides the torque for rotation.</p>
+                                <p><strong>Dynamics of rolling on movable plank:</strong></p>
+                                <p>In more complex scenarios, such as rolling on a movable plank, we need to consider
+                                    the motion of both the rolling body and the plank, applying conservation of momentum
+                                    and Newton's laws appropriately.</p>
+                                <p>To understand the dynamics, we draw the free body diagram showing all the forces
+                                    acting on the body, including friction.</p>
+                                <figure style="max-width: 200px;">
+                                    <img src="../00_Assets/img/08_RM/rolling_dynamics.png"
+                                        class="figure-img img-fluid rounded"
+                                        alt="Diagram illustrating dynamics of rolling">
+                                    <figcaption class="figure-caption">Diagram: Forces acting on a body during rolling.
+                                    </figcaption>
+                                </figure>
+                                <p>We can then apply Newton's laws of motion and the equations of rotational dynamics to
+                                    set up the following equations:</p>
+                                <p>\(\qquad \sum F = m a_{\text{CM}}\)</p>
+                                <p>\(\qquad \sum \tau = I \alpha\)</p>
+                                <p>This helps in deriving the necessary equations to find various parameters like
+                                    acceleration and angular acceleration, thus providing a detailed understanding of
+                                    the dynamics of rolling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

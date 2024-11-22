@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | AMP </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Archimedes Principle</h1>
+                    <p class="lead" id="tagline">Analysis of upthrust by fluids/p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Archimedes-Principle">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Archimedes-Principle-heading" aria-expanded="false"
+                                aria-controls="section-Archimedes-Principle-heading"><strong>Archimedes'
+                                    Principle</strong></button>
+                        </h2>
+                        <div id="section-Archimedes-Principle-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Archimedes-Principle-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Imagine a specific volume, \( V \), within a fluid. This volume is subject to its
+                                    own gravitational pull, essentially its weight. Additionally, the surrounding fluid
+                                    exerts pressure forces on the boundaries of this volume, known as the buoyant force.
+                                    The diagrams below depict this with \(W\) representing the weight and \(B\) the
+                                    buoyant force on the fluid sample:
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/06_volume_inside_fluid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Fluid in a container</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/06_FBD_fluid_sample.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Forces on fluid sample</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 100px;">
+                                            <img src="img/06_Buoyancy_fluid_sample.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Buoyant force on fluid sample
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    When our chosen volume remains stable, the buoyant force cancels its weight.
+                                    Therefore, we can express this relationship as:
+                                </p>
+                                <p>
+                                    \(\qquad B_\text{on fluid sample} = W_\text{fluid sample}\)
+                                </p>
+                                <p>
+                                    Now, let's think about replacing the fluid in volume \( V \) with another substance.
+                                    The surrounding fluid remains the same, and consequently, the pressure remains
+                                    consistent throughout. It implies that the pressure exerted on the replaced material
+                                    is identical to that which was exerted on the original fluid. The diagrams below
+                                    illustrate this concept:
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/06_material_inside_fluid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Material placed inside fluid</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/06_FBD_material_inside_fluid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Forces on material inside fluid
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <figure style="max-width: 100px;">
+                                            <img src="img/06_Buoyancy_on_material.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Buoyant force on material</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    The fundamental concept we just established is that the buoyant force remains
+                                    unchanged, whether the volume is occupied by the fluid or any other substance. This
+                                    understanding forms the basis of Archimedes' principle, which states:
+                                </p>
+                                <p class="text-center text-muted text-law">
+                                    When an object is immersed, either partially or fully, in a fluid, it experiences a
+                                    force called the buoyant force. This force is equal to the weight of the fluid
+                                    displaced by the object.
+                                </p>
+
+                                <p>
+                                    Let's take an example to understand this mathematically. Imagine an object with a
+                                    density of \(\rho_\text{object}\) and a volume of \(V\), submerged in a fluid with a
+                                    density of \(\rho_\text{fluid}\). The volume of fluid displaced by this object is
+                                    \(V\).
+                                </p>
+
+                                <p>
+                                    Thus, the weight of the displaced fluid (or buoyant force) is given by:
+                                </p>
+                                <p>\(\qquad \text{Buoyant force} = \rho_\text{fluid} V g\)</p>
+
+                                <p>
+                                    While the weight of the object is:
+                                </p>
+                                <p>\(\qquad \text{Weight} = \rho_\text{object} V g\)</p>
+
+                                <p>
+                                    Depending on the relative densities of the object and the fluid, the object will
+                                    either sink or float when released:
+                                </p>
+
+                                <p>
+                                    If \(\rho_\text{object} \gt \rho_\text{fluid}\), the object's weight becomes more
+                                    than the buoyant force. In such cases, the gravitational pull on the object
+                                    dominates the upward buoyant force, causing the object to sink. For instance, when
+                                    you drop a metal coin into water, it quickly sinks to the bottom. This occurs
+                                    because the density of the metal coin significantly exceeds the density of the
+                                    water, leading to a stronger gravitational force acting on the coin compared to the
+                                    buoyant force exerted by the water.
+                                </p>
+                                <p>
+                                    Conversely, if \(\rho_\text{object} \lt \rho_\text{fluid}\), the buoyant force
+                                    acting
+                                    on the object is stronger than its gravitational weight. This ensures the object
+                                    remains afloat. An everyday example of this phenomenon is a wooden block in
+                                    water. Wood generally has a lower density compared to water. When a wooden block
+                                    is released in water, the water exerts a buoyant force on the block that is
+                                    greater than the block's weight. As a result, the block floats on the water's
+                                    surface instead of sinking. </p>
+                                <ul class="list-group list-group-flush">
+
+                                    <p>Archimedes' principle has several implications when objects interact with
+                                        fluids. Following are few of them described in detail:</p>
+                                    <li class="list-group-item">
+                                        <p><strong>Apparent Weight in Fluid</strong>
+                                            When an object is immersed in a fluid, it experiences a buoyant
+                                            force due to
+                                            the surrounding fluid. This upward-acting force reduces the
+                                            effective weight
+                                            of the object when measured within the fluid, resulting in the
+                                            phenomenon
+                                            often described as "apparent weightlessness".
+                                        </p>
+                                        <p>
+                                            Take an object with density \(\rho_s\) and volume \(V\), placed on a
+                                            weighing scale in a vacuum (no surrounding fluid). The scale's
+                                            reading
+                                            reflects the true weight of the object, as depicted below:
+                                        </p>
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/07_object_on_weighing_machine.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Weighing an object in vacuum
+                                            </figcaption>
+                                        </figure>
+                                        <p>
+                                            True weight of the object: \(\qquad W_\text{true} =
+                                            W_\text{object}\)
+                                        </p>
+                                        <p>
+                                            When the object is fully submerged in a fluid with density
+                                            \(\rho_f\), it
+                                            displaces an equivalent volume of fluid. By Archimedes' principle,
+                                            the
+                                            buoyant force exerted on the object equals the weight of the
+                                            displaced
+                                            fluid. The situation is illustrated below:
+                                        </p>
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/07_weighing_object_inside_fluid.png"
+                                                class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                            <figcaption class="figure-caption">Weighing object inside fluid
+                                            </figcaption>
+                                        </figure>
+                                        <p>
+                                            The weight measured within the fluid (apparent weight) is reduced by
+                                            the
+                                            buoyant force:
+                                        </p>
+                                        <p>
+                                            \(\qquad W_\text{apparent} = W_\text{true} - \rho_f V g\)
+                                        </p>
+                                        <p>
+                                            Rearranging and expressing in terms of relative density \(s =
+                                            \frac{\rho_s}{\rho_f}\):
+                                        </p>
+                                        <p>
+                                            \(\qquad W_\text{apparent} = W_\text{true} \left(1 -
+                                            \frac{1}{s}\right)\)
+                                        </p>
+                                        <p>
+                                            It's important to note that for these equations to be valid, the
+                                            object's
+                                            density \(\rho_s\) must exceed the fluid's density \(\rho_f\). This
+                                            ensures
+                                            the object doesn't float and the apparent weight remains
+                                            non-negative.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Floatation</strong> </p>
+                                        <p>
+                                            Floatation is a phenomenon in which an object remains partially or
+                                            fully submerged in a fluid without sinking. The ability of an object
+                                            to float is dependent on the balance between the weight of the
+                                            object and the buoyant force exerted by the fluid.
+                                        </p>
+                                        <p>
+                                            Consider an object of density \( \rho_{\text{object}} \) and volume
+                                            \( V \) which is floating in a fluid of density \(
+                                            \rho_{\text{fluid}} \). Let's denote the fraction of the
+                                            object's volume submerged in the fluid as \( f \). Therefore, the
+                                            volume of the fluid displaced by the object is \( f \times V \).
+                                            This is shown below:
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col">
+                                                <figure style="max-width: 200px;"> <img
+                                                        src="img/08_Floating_body.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: Floating body
+                                                        in equilibrium.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col">
+                                                <figure style="max-width: 250px; min-width: 150px;"> <img
+                                                        src="img/08_Floating_body_FBD.png"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption ">Diagram: FBD of floating
+                                                        body.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            The buoyant force exerted by the fluid on the submerged portion of
+                                            the object is given by:</p>
+                                        <p>
+                                            \(\qquad \text{Buoyant force} = \rho_{\text{fluid}} \left( f \times
+                                            V\right) g \)</p>
+                                        <p>
+                                            For the object to be in equilibrium (neither sinking nor rising),
+                                            the buoyant force must balance the weight of the object. The weight
+                                            of the object is \( \rho_{\text{object}} \times V \times g \).
+                                            Setting the two forces equal for equilibrium:
+                                        </p>
+                                        <p>
+                                            \(\qquad \rho_{\text{fluid}} \times f \times V \times g =
+                                            \rho_{\text{object}} \times V \times g \)
+                                            \(\Rightarrow\quad f =
+                                            \frac{\rho_{\text{object}}}{\rho_{\text{fluid}}} \)
+                                        </p>
+                                        <ul class="list-group list-group-flush">From this equation:
+                                            <li class="list-group-item">If \( \rho_{\text{object}} >
+                                                \rho_{\text{fluid}} \), \( f \)
+                                                will be greater than 1, indicating that the object will sink as
+                                                it cannot displace enough fluid to balance its weight.</li>
+                                            <li class="list-group-item">If \( \rho_{\text{object}} =
+                                                \rho_{\text{fluid}} \), \( f \)
+                                                will be 1, meaning the object will be completely submerged but
+                                                will not sink.</li>
+                                            <li class="list-group-item">If \( \rho_{\text{object}} < \rho_{\text{fluid}}
+                                                    \), \( f \) will be less than 1, showing that only a fraction of the
+                                                    object will be submerged, and the object will float.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>
+                                    For example, a wooden block in water might have a fraction \( f \) much less
+                                    than 1,
+                                    indicating that a significant portion of the block remains above water when
+                                    it
+                                    floats. The specific density of ice is roughly considered 0.9. So, about 90%
+                                    of ice
+                                    will remain submerged in water, if the ice is allowed to float freely in
+                                    water.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

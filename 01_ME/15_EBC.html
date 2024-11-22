@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | TRQ </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Extended Body Collisions</h1>
+                    <p class="lead" id="tagline">Angular momentum conservation included</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    
+                    <div class="accordion-item" data-read-time="20">
+                        <h2 class="accordion-header" id="section-Rigid-Body-Collisions">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Rigid-Body-Collisions-heading" aria-expanded="false"
+                                aria-controls="section-Rigid-Body-Collisions-heading">
+                                <strong>Rigid Body Collisions</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Rigid-Body-Collisions-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Rigid-Body-Collisions-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Rigid body collisions occur when solid bodies collide and exchange forces, causing
+                                    changes in both their translational and rotational motion. These collisions can be
+                                    analyzed using conservation laws depending on the type of collision and constraints
+                                    of the system.</p>
+
+                                <h5>Conservation Principles in Rigid Body Collisions</h5>
+                                <p>During a rigid body collision, the following quantities may be conserved:</p>
+                                <ul>
+                                    <li><strong>Linear Momentum:</strong> The total linear momentum is conserved if
+                                        there are no external forces acting on the system.</li>
+                                    <li><strong>Angular Momentum:</strong> The total angular momentum is conserved if no
+                                        external torques are present.</li>
+                                    <li><strong>Energy:</strong> Kinetic energy is conserved only in elastic collisions.
+                                    </li>
+                                </ul>
+
+                                <p>In many cases, linear momentum may not be conserved due to external forces (such as
+                                    friction or a fixed pivot). Angular momentum is often conserved because these forces
+                                    typically do not generate torque about the point of collision.</p>
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1:</strong> Collision of a Moving Ball with a
+                                                Pivoted Rod
+                                            </summary>
+                                            <p>Consider a ball of mass \( m \) moving horizontally with velocity \( v \)
+                                                that
+                                                strikes the end of a stationary rod of mass \( M \) and length \( L \),
+                                                pivoted
+                                                at
+                                                one end. The ball sticks to the rod after the collision. Find the
+                                                angular
+                                                velocity
+                                                \( \omega \) of the system immediately after the collision.</p>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/rigid_body_collision.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Collision of a ball with a rod">
+                                                        <figcaption class="figure-caption">Figure: Collision of a ball
+                                                            with a
+                                                            pivoted rod.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <p><strong>Solution:</strong></p>
+                                            <p>We use conservation of angular momentum about the pivot point because
+                                                there is no
+                                                external torque about this point. Linear momentum is not conserved
+                                                because the
+                                                pivot
+                                                exerts an external force, stopping the translational motion of the
+                                                system.</p>
+
+                                            <p>Initial angular momentum \( L_{\text{initial}} \) of the ball about the
+                                                pivot:
+                                            </p>
+                                            <p>\(\qquad L_{\text{initial}} = m v L\)</p>
+
+                                            <p>After the collision, the ball and rod rotate together. The total moment
+                                                of
+                                                inertia \(
+                                                I_{\text{total}} \) about the pivot is:</p>
+                                            <p>\(\qquad I_{\text{total}} = I_{\text{rod}} + I_{\text{ball}}\)</p>
+                                            <p>Where:</p>
+                                            <ul>
+                                                <li>\( I_{\text{rod}} = \dfrac{1}{3} M L^2 \) (moment of inertia of a
+                                                    rod about
+                                                    one
+                                                    end)</li>
+                                                <li>\( I_{\text{ball}} = m L^2 \) (moment of inertia of the ball at
+                                                    distance \(
+                                                    L \)
+                                                    from the pivot)</li>
+                                            </ul>
+                                            <p>Therefore:</p>
+                                            <p>\(\qquad I_{\text{total}} = \left( \dfrac{1}{3} M + m \right) L^2\)</p>
+
+                                            <p>Final angular momentum \( L_{\text{final}} \):</p>
+                                            <p>\(\qquad L_{\text{final}} = I_{\text{total}} \omega\)</p>
+
+                                            <p>Setting \( L_{\text{initial}} = L_{\text{final}} \) to conserve angular
+                                                momentum:
+                                            </p>
+                                            <p>\(\qquad m v L = \left( \dfrac{1}{3} M + m \right) L^2 \omega\)</p>
+
+                                            <p>Solving for \( \omega \):</p>
+                                            <p>\(\qquad \omega = \dfrac{m v}{\left( \dfrac{1}{3} M + m \right) L}\)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2:</strong> Collision of a Particle with a Freely
+                                                Rotating Disc</summary>
+                                            <p>Consider a uniform disc of mass \( M \) and radius \( R \), which is free
+                                                to rotate about an axis through its center and perpendicular to its
+                                                plane. A small particle of mass \( m \), moving tangentially with
+                                                velocity \( v \), collides with the edge of the disc and sticks to it.
+                                                Find the angular velocity of system after the collision.</p>
+
+                                            <p><strong>Solution:</strong></p>
+                                            <p>Before the collision, the disc is stationary, and only the particle has
+                                                linear momentum. After the collision, the particle sticks to the disc,
+                                                causing the system (disc + particle) to rotate about the central axis of
+                                                the disc.</p>
+
+                                            <p>We apply the following conservation law:</p>
+                                            <ul>
+                                                <li><strong>Conservation of Angular Momentum:</strong> Since there is no
+                                                    external torque acting on the system, angular momentum is conserved
+                                                    about the center of the disc.</li>
+                                            </ul>
+
+                                            <p><strong>Step 1: Initial Angular Momentum</strong></p>
+                                            <p>Before the collision, the particle has linear momentum \( mv \), which
+                                                creates angular momentum about the center of the disc. The initial
+                                                angular momentum of the system is:</p>
+                                            <p>\(\qquad L_{\text{initial}} = m v R\)</p>
+                                            <p>The disc is initially at rest, so its initial angular momentum is zero.
+                                            </p>
+
+                                            <p><strong>Step 2: Final Angular Momentum</strong></p>
+                                            <p>After the collision, the particle sticks to the edge of the disc, and the
+                                                whole system (disc + particle) rotates with angular velocity \( \omega
+                                                \). The total angular momentum after the collision is:</p>
+                                            <p>\(\qquad L_{\text{final}} = I_{\text{disc}} \omega + m R^2 \omega\)</p>
+                                            <p>where \( I_{\text{disc}} = \frac{1}{2} M R^2 \) is the moment of inertia
+                                                of the disc about its center, and \( m R^2 \) is the contribution to the
+                                                moment of inertia from the particle at the edge of the disc.</p>
+
+                                            <p><strong>Step 3: Conservation of Angular Momentum</strong></p>
+                                            <p>Since angular momentum is conserved:</p>
+                                            <p>\(\qquad m v R = \left( \frac{1}{2} M R^2 + m R^2 \right) \omega\)</p>
+
+                                            <p>Simplifying for \( \omega \):</p>
+                                            <p>\(\qquad \omega = \frac{m v}{\frac{1}{2} M R + m R}\)</p>
+
+                                            <p>This example demonstrates how angular momentum conservation can be
+                                                applied to a collision where a particle sticks to a rotating disc.</p>
+                                        </details>
+
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3:</strong> Collision of a Translating Rod with a
+                                                Fixed Obstacle</summary>
+                                            <p>A uniform rod of mass \( M = 2 \, \text{kg} \) and length \( L = 1 \,
+                                                \text{m} \) is sliding on a frictionless horizontal table perpendicular
+                                                to its length with a velocity \( v = 5 \, \text{m/s} \). The end of the
+                                                rod suddenly hits a small fixed obstacle. Consider the collision to be
+                                                perfectly inelastic causing the rod to start rotating about that end
+                                                while the other end moves forward. Calculate:</p>
+                                            <ol>
+                                                <li>The angular velocity \( \omega \) of the rod immediately after the
+                                                    collision.</li>
+                                                <li>The velocity \( v_{\text{cm}} \) of the center of mass immediately
+                                                    after the collision.</li>
+                                            </ol>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/rod_collision.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Rod colliding with obstacle">
+                                                        <figcaption class="figure-caption">Figure: Rod colliding with a
+                                                            fixed obstacle.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <p><strong>Solution:</strong></p>
+                                            <p>When the rod's end collides with the fixed obstacle, an impulsive force
+                                                acts at that point, causing the rod to rotate about the obstacle. Since
+                                                the obstacle is fixed, external forces act, and linear momentum is not
+                                                conserved. However, angular momentum about the point of collision is
+                                                conserved because no external torque acts about this point during the
+                                                collision.</p>
+
+                                            <h4>1. Conservation of Angular Momentum about the Point of Collision</h4>
+                                            <p>Before the collision, the rod is moving linearly with velocity \( v \).
+                                                The initial angular momentum \( L_{\text{initial}} \) about the point of
+                                                collision (one end of the rod) is:</p>
+                                            <p>\(\qquad L_{\text{initial}} = M v \left( \dfrac{L}{2} \right)\)</p>
+                                            <p>After the collision, the rod rotates about the obstacle with angular
+                                                velocity \( \omega \), and its center of mass moves forward with
+                                                velocity \( v_{\text{cm}} \). The final angular momentum \(
+                                                L_{\text{final}} \) is:</p>
+                                            <p>\(\qquad L_{\text{final}} = I_{\text{end}} \omega\)</p>
+                                            <p>Where \( I_{\text{end}} \) is the moment of inertia of the rod about one
+                                                end:</p>
+                                            <p>\(\qquad I_{\text{end}} = \dfrac{1}{3} M L^2\)</p>
+
+                                            <p>Applying conservation of angular momentum:</p>
+                                            <p>\(\qquad M v \left( \dfrac{L}{2} \right) = \dfrac{1}{3} M L^2 \omega\)
+                                            </p>
+                                            <p>Solving for \( \omega \):</p>
+                                            <p>\(\qquad \omega = \dfrac{3 v}{2 L}\)</p>
+                                            <p>Substitute the given values:</p>
+                                            <p>\(\qquad \omega = \dfrac{3 \times 5}{2 \times 1} = 7.5 \, \text{rad/s}\)
+                                            </p>
+
+                                            <h4>2. Velocity of the Center of Mass After Collision</h4>
+                                            <p>The center of mass moves in a circular path about the point of collision
+                                                with speed:</p>
+                                            <p>\(\qquad v_{\text{cm}} = \omega \left( \dfrac{L}{2} \right)\)</p>
+                                            <p>Substitute the calculated \( \omega \):</p>
+                                            <p>\(\qquad v_{\text{cm}} = 7.5 \times \dfrac{1}{2} = 3.75 \, \text{m/s}\)
+                                            </p>
+
+                                            <p><strong>Answers:</strong></p>
+                                            <ol>
+                                                <li>The angular velocity of the rod immediately after the collision is
+                                                    \( \omega = 7.5 \, \text{rad/s} \).</li>
+                                                <li>The velocity of the center of mass immediately after the collision
+                                                    is \( v_{\text{cm}} = 3.75 \, \text{m/s} \).</li>
+                                            </ol>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 4:</strong> Collision of a Particle with a Free Rod
+                                                on a Smooth Table</summary>
+                                            <p>A uniform rod of mass \( M = 3 \, \text{kg} \) and length \( L = 2 \,
+                                                \text{m} \) is initially at rest on a smooth horizontal table. A
+                                                particle of mass \( m = 1 \, \text{kg} \) moving horizontally with
+                                                velocity \( v = 8 \, \text{m/s} \) collides elastically with the rod at
+                                                a point \( \dfrac{L}{4} \) from one end. After the collision, the
+                                                particle moves off in the opposite direction with velocity \( v' \).
+                                                Calculate:</p>
+                                            <ol>
+                                                <li>The angular velocity \( \omega \) of the rod immediately after the
+                                                    collision.</li>
+                                                <li>The velocity \( v_{\text{cm}} \) of the center of mass of the rod
+                                                    after the collision.</li>
+                                                <li>The final velocity \( v' \) of the particle after the collision.
+                                                </li>
+                                            </ol>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/particle_rod_collision.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Particle colliding with rod">
+                                                        <figcaption class="figure-caption">Figure: Particle colliding
+                                                            with a rod on a smooth table.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <p><strong>Solution:</strong></p>
+                                            <p>Since the table is smooth, there are no external horizontal forces or
+                                                torques acting on the system. Therefore, both linear momentum and
+                                                angular momentum about the center of mass of the rod are conserved.
+                                                Additionally, because the collision is elastic, kinetic energy is
+                                                conserved.</p>
+
+                                            <h4>1. Conservation of Linear Momentum</h4>
+                                            <p>Total linear momentum before and after the collision:</p>
+                                            <p>\(\qquad m v = m v' + M v_{\text{cm}}\)</p>
+
+                                            <h4>2. Conservation of Angular Momentum about the Rod's Center of Mass</h4>
+                                            <p>Distance from point of impact to the center of mass:</p>
+                                            <p>\(\qquad r = \dfrac{L}{2} - \dfrac{L}{4} = \dfrac{L}{4}\)</p>
+                                            <p>Angular momentum before collision:</p>
+                                            <p>\(\qquad L_{\text{initial}} = m v \left( \dfrac{L}{4} \right)\)</p>
+                                            <p>Angular momentum after collision:</p>
+                                            <p>\(\qquad L_{\text{final}} = m v' \left( \dfrac{L}{4} \right) +
+                                                I_{\text{cm}} \omega\)</p>
+                                            <p>Moment of inertia of the rod about its center:</p>
+                                            <p>\(\qquad I_{\text{cm}} = \dfrac{1}{12} M L^2\)</p>
+                                            <p>Conservation of angular momentum:</p>
+                                            <p>\(\qquad m v \left( \dfrac{L}{4} \right) = m v' \left( \dfrac{L}{4}
+                                                \right) + \dfrac{1}{12} M L^2 \omega\)</p>
+
+                                            <h4>3. Conservation of Kinetic Energy</h4>
+                                            <p>\(\qquad \dfrac{1}{2} m v^2 = \dfrac{1}{2} m v'^2 + \dfrac{1}{2} M
+                                                v_{\text{cm}}^2 + \dfrac{1}{2} I_{\text{cm}} \omega^2\)</p>
+
+                                            <h4>4. Solving the Equations</h4>
+                                            <p>From angular momentum conservation:</p>
+                                            <p>\(\qquad m (v - v') \left( \dfrac{L}{4} \right) = \dfrac{1}{12} M L^2
+                                                \omega\)</p>
+                                            <p>Simplify:</p>
+                                            <p>\(\qquad \omega = \dfrac{3 m (v - v')}{M L}\)</p>
+                                            <p>From linear momentum conservation:</p>
+                                            <p>\(\qquad M v_{\text{cm}} = m (v - v')\)</p>
+                                            <p>\(\qquad v_{\text{cm}} = \dfrac{m (v - v')}{M}\)</p>
+                                            <p>Substitute \( v_{\text{cm}} \) and \( \omega \) into the kinetic energy
+                                                equation and solve for \( v' \).</p>
+                                            <p>After substituting values \( m = 1 \, \text{kg} \), \( M = 3 \, \text{kg}
+                                                \), \( v = 8 \, \text{m/s} \), and \( L = 2 \, \text{m} \), we solve the
+                                                equations and find:</p>
+
+                                            <p>\(\qquad v' = -2.11 \, \text{m/s}\)</p>
+                                            <p>\(\qquad v_{\text{cm}} = 3.37 \, \text{m/s}\)</p>
+                                            <p>\(\qquad \omega = 5.05 \, \text{rad/s}\)</p>
+
+                                            <p><strong>Answers:</strong></p>
+                                            <ol>
+                                                <li>The angular velocity of the rod after the collision is \( \omega
+                                                    \approx 5.05 \, \text{rad/s} \).</li>
+                                                <li>The velocity of the rod's center of mass after the collision is \(
+                                                    v_{\text{cm}} \approx 3.37 \, \text{m/s} \).</li>
+                                                <li>The final velocity of the particle after the collision is \( v'
+                                                    \approx -2.11 \, \text{m/s} \) (the particle reverses direction).
+                                                </li>
+                                            </ol>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>WRONG Example 5:</strong> Elastic Collision of a
+                                                Translating Rod with a Fixed Obstacle</summary>
+                                            <p>A uniform rod of mass \( M = 2 \, \text{kg} \) and length \( L = 1 \,
+                                                \text{m} \) is sliding on a frictionless horizontal table perpendicular
+                                                to its length with a velocity \( v = 5 \, \text{m/s} \). The end of the
+                                                rod collides elastically with a small fixed obstacle, causing the rod to
+                                                rebound and rotate. Calculate:</p>
+                                            <ol>
+                                                <li>The angular velocity \( \omega \) of the rod immediately after the
+                                                    collision.</li>
+                                                <li>The velocity \( v_{\text{cm}} \) of the center of mass immediately
+                                                    after the collision.</li>
+                                            </ol>
+                                            <div class="row justify-content-center">
+                                                <div class="col">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/rod_elastic_collision.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Rod colliding elastically with obstacle">
+                                                        <figcaption class="figure-caption">Figure: Rod colliding
+                                                            elastically with a fixed obstacle.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <p><strong>Solution:</strong></p>
+                                            <p>In this elastic collision, mechanical energy and angular momentum about
+                                                the point of collision are conserved. Linear momentum is not conserved
+                                                due to the external force from the obstacle.</p>
+
+                                            <h4>1. Conservation of Angular Momentum about the Point of Collision</h4>
+                                            <p>Before the collision, the rod is moving linearly with velocity \( v \).
+                                                The initial angular momentum \( L_{\text{initial}} \) about the point of
+                                                collision (the end of the rod) is:</p>
+                                            <p>\(\qquad L_{\text{initial}} = M v \left( \dfrac{L}{2} \right)\)</p>
+                                            <p>After the collision, the rod is rotating with angular velocity \( \omega
+                                                \) and its center of mass moves backward with velocity \( v_{\text{cm}}
+                                                \). The final angular momentum \( L_{\text{final}} \) is:</p>
+                                            <p>\(\qquad L_{\text{final}} = I_{\text{end}} \omega - M v_{\text{cm}}
+                                                \left( \dfrac{L}{2} \right)\)</p>
+                                            <p>The negative sign indicates that the center of mass is moving in the
+                                                opposite direction after the collision.</p>
+
+                                            <p>Moment of inertia of the rod about one end:</p>
+                                            <p>\(\qquad I_{\text{end}} = \dfrac{1}{3} M L^2\)</p>
+
+                                            <p>Applying conservation of angular momentum:</p>
+                                            <p>\(\qquad M v \left( \dfrac{L}{2} \right) = I_{\text{end}} \omega - M
+                                                v_{\text{cm}} \left( \dfrac{L}{2} \right)\)</p>
+
+                                            <h4>2. Conservation of Mechanical Energy</h4>
+                                            <p>Mechanical energy is conserved:</p>
+                                            <p>\(\qquad \dfrac{1}{2} M v^2 = \dfrac{1}{2} I_{\text{end}} \omega^2 +
+                                                \dfrac{1}{2} M v_{\text{cm}}^2\)</p>
+
+                                            <h4>3. Solving the Equations</h4>
+                                            <p>We have two equations and two unknowns (\( \omega \) and \( v_{\text{cm}}
+                                                \)). Solving them simultaneously gives:</p>
+
+                                            <p>First, write the angular momentum equation:</p>
+                                            <p>\(\qquad M v \left( \dfrac{L}{2} \right) = \dfrac{1}{3} M L^2 \omega - M
+                                                v_{\text{cm}} \left( \dfrac{L}{2} \right)\)</p>
+
+                                            <p>Rewriting:</p>
+                                            <p>\(\qquad \dfrac{M L}{2} (v + v_{\text{cm}}) = \dfrac{1}{3} M L^2 \omega\)
+                                            </p>
+
+                                            <p>Simplify mass \( M \) and length \( L \):</p>
+                                            <p>\(\qquad \dfrac{v + v_{\text{cm}}}{2} = \dfrac{L}{3} \omega\)</p>
+
+                                            <p>From energy conservation:</p>
+                                            <p>\(\qquad \dfrac{1}{2} M v^2 = \dfrac{1}{2} \left( \dfrac{1}{3} M L^2
+                                                \right) \omega^2 + \dfrac{1}{2} M v_{\text{cm}}^2\)</p>
+
+                                            <p>Divide both sides by \( \dfrac{1}{2} M \):</p>
+                                            <p>\(\qquad v^2 = \dfrac{1}{3} L^2 \omega^2 + v_{\text{cm}}^2\)</p>
+
+                                            <p>Now, express \( \omega \) in terms of \( v \) and \( v_{\text{cm}} \)
+                                                from the first equation and substitute into the energy equation:</p>
+                                            <p>\(\qquad \omega = \dfrac{3 (v + v_{\text{cm}})}{2 L}\)</p>
+
+                                            <p>Substitute \( \omega \) into the energy equation:</p>
+                                            <p>\(\qquad v^2 = \dfrac{1}{3} L^2 \left( \dfrac{3 (v + v_{\text{cm}})}{2 L}
+                                                \right)^2 + v_{\text{cm}}^2\)</p>
+
+                                            <p>Simplify the equation and solve for \( v_{\text{cm}} \):</p>
+                                            <p>\(\qquad v^2 = \dfrac{1}{3} \left( \dfrac{9 (v + v_{\text{cm}})^2}{4}
+                                                \right) + v_{\text{cm}}^2\)</p>
+                                            <p>\(\qquad v^2 = \dfrac{3 (v + v_{\text{cm}})^2}{4} + v_{\text{cm}}^2\)</p>
+
+                                            <p>Multiply both sides by 4 to eliminate denominators:</p>
+                                            <p>\(\qquad 4 v^2 = 3 (v + v_{\text{cm}})^2 + 4 v_{\text{cm}}^2\)</p>
+
+                                            <p>Expand and simplify:</p>
+                                            <p>\(\qquad 4 v^2 = 3 (v^2 + 2 v v_{\text{cm}} + v_{\text{cm}}^2 ) + 4
+                                                v_{\text{cm}}^2\)</p>
+                                            <p>\(\qquad 4 v^2 = 3 v^2 + 6 v v_{\text{cm}} + 3 v_{\text{cm}}^2 + 4
+                                                v_{\text{cm}}^2\)</p>
+                                            <p>\(\qquad 4 v^2 - 3 v^2 = 6 v v_{\text{cm}} + 7 v_{\text{cm}}^2\)</p>
+                                            <p>\(\qquad v^2 = 6 v v_{\text{cm}} + 7 v_{\text{cm}}^2\)</p>
+
+                                            <p>Bring all terms to one side:</p>
+                                            <p>\(\qquad v^2 - 6 v v_{\text{cm}} - 7 v_{\text{cm}}^2 = 0\)</p>
+
+                                            <p>This is a quadratic equation in \( v_{\text{cm}} \). Solving for \(
+                                                v_{\text{cm}} \) gives \( v_{\text{cm}} = -v \).</p>
+
+                                            <p>Therefore, \( v_{\text{cm}} = -5 \, \text{m/s} \) (the center of mass
+                                                reverses direction).</p>
+
+                                            <p>Now, find \( \omega \):</p>
+                                            <p>\(\qquad \omega = \dfrac{3 (v + v_{\text{cm}})}{2 L} = \dfrac{3 (5 +
+                                                (-5))}{2 \times 1} = 0\)</p>
+
+                                            <p>But this suggests \( \omega = 0 \), which is inconsistent. The error
+                                                arises because with \( v_{\text{cm}} = -v \), the rod doesn't rotate,
+                                                which contradicts our initial assumption.</p>
+
+                                            <p>Alternatively, solving the quadratic equation correctly:</p>
+                                            <p>\(\qquad v^2 - 6 v v_{\text{cm}} - 7 v_{\text{cm}}^2 = 0\)</p>
+
+                                            <p>Let’s use the quadratic formula. Let’s rearrange the equation:</p>
+                                            <p>\(\qquad 7 v_{\text{cm}}^2 + 6 v v_{\text{cm}} - v^2 = 0\)</p>
+
+                                            <p>Let’s denote \( x = v_{\text{cm}} \). Then the equation is:</p>
+                                            <p>\(\qquad 7 x^2 + 6 v x - v^2 = 0\)</p>
+
+                                            <p>Using the quadratic formula:</p>
+                                            <p>\(\qquad x = \dfrac{ -6 v \pm \sqrt{ (6 v)^2 - 4 \times 7 \times (-v^2) }
+                                                }{ 2 \times 7 }\)</p>
+
+                                            <p>Simplify the discriminant:</p>
+                                            <p>\(\qquad \Delta = 36 v^2 + 28 v^2 = 64 v^2\)</p>
+
+                                            <p>Thus:</p>
+                                            <p>\(\qquad x = \dfrac{ -6 v \pm 8 v }{14}\)</p>
+
+                                            <p>First solution:</p>
+                                            <p>\(\qquad x = \dfrac{ -6 v + 8 v }{14} = \dfrac{2 v}{14} = \dfrac{v}{7}\)
+                                            </p>
+
+                                            <p>Second solution:</p>
+                                            <p>\(\qquad x = \dfrac{ -6 v - 8 v }{14} = \dfrac{ -14 v }{14} = -v\)</p>
+
+                                            <p>So the two possible solutions for \( v_{\text{cm}} \) are \(
+                                                v_{\text{cm}} = \dfrac{v}{7} \) and \( v_{\text{cm}} = -v \).</p>
+
+                                            <p>The solution \( v_{\text{cm}} = -v \) corresponds to no rotation (\(
+                                                \omega = 0 \)), which is not possible in this context since the rod must
+                                                rotate after collision.</p>
+
+                                            <p>Therefore, we take \( v_{\text{cm}} = \dfrac{v}{7} = \dfrac{5}{7} \,
+                                                \text{m/s} \).</p>
+
+                                            <p>Now, find \( \omega \):</p>
+                                            <p>\(\qquad \omega = \dfrac{3 (v + v_{\text{cm}})}{2 L} = \dfrac{3 (5 +
+                                                \dfrac{5}{7}) }{2 \times 1} = \dfrac{3 \times \dfrac{40}{7} }{2} =
+                                                \dfrac{120}{14} = \dfrac{60}{7} \approx 8.57 \, \text{rad/s}\)</p>
+
+                                            <p><strong>Answers:</strong></p>
+                                            <ol>
+                                                <li>The angular velocity of the rod immediately after the collision is
+                                                    \( \omega \approx 8.57 \, \text{rad/s} \).</li>
+                                                <li>The velocity of the center of mass immediately after the collision
+                                                    is \( v_{\text{cm}} \approx 0.714 \, \text{m/s} \) in the same
+                                                    direction.</li>
+                                            </ol>
+                                        </details>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

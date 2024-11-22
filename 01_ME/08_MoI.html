@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | MoI </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Moment of Inertia</h1>
+                    <p class="lead" id="tagline">The inertia of rotation</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-intro">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-intro-heading" aria-expanded="false"
+                                aria-controls="section-intro-heading">
+                                <strong>Introduction to Rotational Mechanics</strong>
+                            </button>
+                        </h2>
+                        <div id="section-intro-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-intro-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Rotational mechanics is an important part of physics that explains how objects turn
+                                    around a fixed point or axis. This chapter aims to give you a clear understanding of
+                                    key ideas like moment of inertia, torque, and angular momentum—concepts that are
+                                    widely used, from opening a door to running complex machines.
+                                </p>
+                                <p>
+                                    To better understand why rotational mechanics matters, let's look at some common
+                                    examples that use its principles:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Opening a Door</summary>
+                                            When you push or pull on a door handle, you create torque, causing the door
+                                            to swing on its hinges. This shows how applying force at a distance from the
+                                            pivot point generates torque and leads to rotational motion. The farther
+                                            from the hinge you apply the force, the less effort you need to turn the
+                                            door.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Pedaling a Bicycle</summary>
+                                            The circular movement of pedals and wheels is a clear example of rotational
+                                            mechanics. Pressing on the pedals creates torque that turns the wheels,
+                                            making the bicycle move forward. We will explore the details of these forces
+                                            and torques in this chapter.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Tightening a Screw</summary>
+                                            Using a screwdriver, you apply force in a circular path, causing the screw
+                                            to rotate. The screw's spiral shape changes this rotational motion into
+                                            straight-line motion, allowing it to go into a surface. This shows how
+                                            design works hand in hand with rotational mechanics.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Applications in Equipment Design</summary>
+                                            Rotational mechanics is vital in designing motors, gears, and turbines. Its
+                                            principles affect many industries, renewable energy devices like wind
+                                            turbines, and even medical equipment such as CT scanners.
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Grasping rotational mechanics not only boosts our academic knowledge but also
+                                    enhances our understanding of how the physical world works.
+                                </p>
+                                <p>
+                                    A key term in this field is the "rigid body," an ideal object where the distance
+                                    between any two points stays the same, no matter what external forces act on it.
+                                    While it's a theoretical concept, it simplifies real-world calculations. For
+                                    example, rods, disks, and spheres are often considered rigid bodies to make
+                                    computations easier, unlike flexible objects like springs or pieces of cloth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-rigid-body-motion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-rigid-body-motion-heading" aria-expanded="false"
+                                aria-controls="section-rigid-body-motion-heading">
+                                <strong>Rigid Body and Its Motion</strong>
+                            </button>
+                        </h2>
+                        <div id="section-rigid-body-motion-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-rigid-body-motion-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Understanding the concept of a rigid body and its types of motion—translation and
+                                    rotation—is fundamental in rotational mechanics.
+                                </p>
+
+                                <p>
+                                    <strong>Rigid Body:</strong> A rigid body is defined as an idealized solid object in
+                                    which the distance between any two given points remains constant, regardless of
+                                    external forces applied to it. This concept simplifies the analysis of
+                                    mechanical systems by neglecting deformations. Any type of motion of a rigid body
+                                    can be considered as either one of following motions or a combination of following
+                                    two types of motions:
+                                </p>
+                                <details>
+                                    <summary><strong>Translation:</strong></summary>
+                                    <p>
+                                        If the instantaneous velocities of all particles of
+                                        the
+                                        body are equal at a given instant, then the body is said to be undergoing
+                                        translation at that instant. In translation of a rigid body:
+                                    </p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            All points of
+                                            a rigid body move the same distance in the same direction during the same
+                                            time
+                                            interval.
+                                        </li>
+                                        <li class="list-group-item">
+                                            All particles of the body follow paths that are
+                                            congruent to each other.
+                                        </li>
+                                        <li class="list-group-item">
+                                            Each line in the body remains parallel to its original
+                                            orientation during the motion.
+                                        </li>
+                                    </ul>
+                                    <p>
+
+                                        Following animation shows an example of translation of a rigid body:
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 250px;">
+                                                <img src="../00_Assets/gif/08_RM/01_tanslating_block_1.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption">Animation: Translating block.
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 250px;">
+                                                <img src="../00_Assets/gif/08_RM/01_tanslating_block_2.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption">Animation: Translating block.
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                            <figure style="max-width: 250px;">
+                                                <img src="../00_Assets/gif/08_RM/01_tanslating_block_3.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption">Animation: Translating block.
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        In each of the above three animations, particles are shown to follow congruent
+                                        paths.
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary><strong>Rotation:</strong></summary>
+                                    <p>
+                                        <strong>:</strong> A rigid body is said to perform
+                                        rotation if all particles of the body perform circular motion such that centers
+                                        of
+                                        all circles lie on a fixed line. This line is called axis of rotation.
+                                        Following are a few examples of rigid body performing rotation:
+
+
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center ">
+                                            <figure style="max-width: 150px;">
+                                                <img src="../00_Assets/gif/08_RM/02_rotating_basketball.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption">Animation: Rotating basketball.
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 justify-content-center ">
+                                            <figure style="max-width: 150px;">
+                                                <img src="../00_Assets/gif/08_RM/02_rotating_rod.gif"
+                                                    class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                <figcaption class="figure-caption">Animation: Rotating rod.
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        In rotation of a rigid body:
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Every particle in the rigid body moves along a circular path. The radius of
+                                            the
+                                            path depends on the distance of the particle from the axis of rotation.
+                                        </li>
+                                        <li class="list-group-item">
+                                            All particles move in circular paths with common angular velocity around
+                                            their
+                                            respective centers at a given time. This means they all complete their
+                                            circular
+                                            paths in the same time.
+                                        </li>
+                                        <li class="list-group-item">
+                                            If the rotation is not uniform, the entire rigid body experiences the same
+                                            angular acceleration. Hence, the rate of change of angular velocity
+                                            is the same for all particles at a given time.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </details>
+                                <p>
+                                    The kinematics of rotation of rigid body can be analysed by knowledge of kinematics
+                                    of circular motion, which gets described by the angular variables along with
+                                    relation between them. These angular variables are:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Angular Displacement (\( \theta \)):</strong>
+                                            </summary> Angular displacement is
+                                            defined as the angle through which a point or line has been rotated in a
+                                            specified sense about a specified axis. The direction of the angular
+                                            displacement vector is determined by the right-hand rule: if the fingers of
+                                            the
+                                            right hand curl in the direction of rotation, the thumb points along the
+                                            axis in
+                                            the positive direction.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Angular Velocity (\( \omega \)):</strong>
+                                            </summary> Angular velocity is defined as
+                                            the rate of change of angular displacement with respect to time. It is given
+                                            by:
+                                            <p>\( \qquad\omega = \frac{d\theta}{dt} \)</p>
+                                            Angular velocity is the same for all points in a rigid body rotating about a
+                                            fixed axis, and its direction is given by the right-hand rule.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>
+                                                <strong>Angular Acceleration (\( \alpha \)):</strong>
+                                            </summary> Angular acceleration is
+                                            the rate at which the angular velocity changes with time. It is expressed
+                                            as:
+                                            <p>\( \qquad\alpha = \frac{d\omega}{dt} \)</p>
+                                            Like angular velocity, angular acceleration is identical for all points in
+                                            the
+                                            rigid body and its direction depends on whether the angular velocity is
+                                            increasing or decreasing.
+                                        </details>
+                                    </li>
+                                </ul>
+
+
+                                <p>
+                                    <strong>Equations of Rotational Motion:</strong> The equations governing rotational
+                                    motion are analogous to those for linear motion. With symbols having usual meaning,
+                                    the equations are as follows:
+                                </p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Equation</th>
+                                            <th>Rotational Form</th>
+                                            <th>Linear Analog</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>First Equation</td>
+                                            <td>\( \omega = \omega_0 + \alpha t \)</td>
+                                            <td>\( v = v_0 + a t \)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Second Equation</td>
+                                            <td>\( \theta = \omega_0 t + \frac{1}{2} \alpha t^2 \)</td>
+                                            <td>\( s = v_0 t + \frac{1}{2} a t^2 \)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Third Equation</td>
+                                            <td>\( \omega^2 = \omega_0^2 + 2 \alpha \theta \)</td>
+                                            <td>\( v^2 = v_0^2 + 2 a s \)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    These equations illustrate the direct correspondence between linear and rotational
+                                    kinematics, facilitating the analysis of rotational motion using principles
+                                    analogous to those of linear motion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Moment-of-Inertia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Moment-of-Inertia-heading" aria-expanded="false"
+                                aria-controls="section-Moment-of-Inertia-heading">
+                                <strong>Moment of Inertia</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Moment-of-Inertia-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Moment-of-Inertia-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Consider a massless rod with three particles of masses \( m_1 \), \( m_2 \), and \(
+                                    m_3 \) attached at distances \( r_1 \), \( r_2 \), and \( r_3 \) from the axis of
+                                    rotation, respectively. This is shown in diagram below:</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/03_rotating_rod.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram: System under rotation.">
+                                            <figcaption class="figure-caption">Diagram: System under rotation.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>The total kinetic energy of this rotating system is given by:</p>
+                                <p>\(\qquad KE_{\text{total}} = \tfrac{1}{2} m_1 v_1^2 + \tfrac{1}{2} m_2 v_2^2 +
+                                    \tfrac{1}{2} m_3 v_3^2 \)
+                                    <equationDetail>[where \( v_1 \), \( v_2 \), and \( v_3 \) are the linear velocities
+                                        of
+                                        the particles]</equationDetail>
+                                </p>
+                                <p>Since each particle moves in a circular path, their velocities relate to the angular
+                                    velocity \( \omega \) through \( v_i = r_i \omega \). Substituting this relation,
+                                    the kinetic energy becomes:</p>
+                                <p>\(\qquad KE_{\text{total}} = \tfrac{1}{2} m_1 (r_1 \omega)^2 + \tfrac{1}{2} m_2 (r_2
+                                    \omega)^2 + \tfrac{1}{2} m_3 (r_3 \omega)^2 \)</p>
+                                <p>\(\Rightarrow\quad KE_{\text{total}} = \tfrac{1}{2} \omega^2 (m_1 r_1^2 + m_2 r_2^2 +
+                                    m_3 r_3^2) \)</p>
+                                <p>In linear motion, the kinetic energy is \( KE = \tfrac{1}{2} m v^2 \), where \( m \)
+                                    represents inertia—the resistance to changes in motion, and \( v \) is the linear
+                                    velocity, the rate of change of linear position. Similarly, in rotational motion, \(
+                                    \omega \) is the angular velocity, the rate of change of angular position. The term
+                                    within the brackets in the previous equation acts as the rotational inertia and is
+                                    defined as the <strong>moment of inertia</strong> \( I \):</p>
+                                <p>\(\qquad I = m_1 r_1^2 + m_2 r_2^2 + m_3 r_3^2 \)</p>
+                                <p>Thus, the kinetic energy of the rotating system simplifies to:</p>
+                                <p>\(\qquad KE_{\text{total}} = \tfrac{1}{2} I \omega^2 \)</p>
+                                <p>The moment of inertia, denoted by \( I \), quantifies the resistance of an object to
+                                    changes in its rotational motion. It serves as the rotational analogue to mass in
+                                    translational motion and is influenced by both the mass of the object and its
+                                    distribution relative to the axis of rotation.</p>
+                                <p>Calculations of the moment of inertia for rigid bodies with discrete masses and
+                                    continuous mass distributions are described below:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <p>
+
+                                                <summary><strong>For Discrete Bodies:</strong></summary>
+                                            </p>
+                                            <p>For a system of discrete particles, the moment of inertia about a given
+                                                axis
+                                                is calculated using:</p>
+                                            <p>\(\qquad I = \sum m_i r_i^2 \)</p>
+                                            <p>Here, \( m_i \) is the mass of the \( i \)-th particle, and \( r_i \) is
+                                                its
+                                                distance from the axis of rotation.</p>
+                                            <p>The moment of inertia depends on:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Mass (\( m_i \)):</strong> Greater
+                                                    mass increases \( I \),
+                                                    making rotational acceleration more difficult.</li>
+                                                <li class="list-group-item"><strong>Distance from Axis (\( r_i
+                                                        \)):</strong> \( I \) increases
+                                                    with
+                                                    the square of \( r_i \), emphasizing the impact of mass
+                                                    distribution.
+                                                </li>
+                                            </ul>
+                                    <li class="list-group-item">
+                                        <details>
+
+                                            <p>
+                                                <summary><strong>Example Problem:</strong></summary>
+                                            </p>
+
+                                            <p>Consider two particles of masses 1 kg placed at coordinates (1m, 2m, 0)
+                                                and a
+                                                mass of 2 kg placed at (3m, 4m, 0). We solve for the moment of inertia
+                                                of
+                                                this system about the z-axis in the following steps:</p>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p><strong>Distance Calculation:</strong></p>
+                                                    <p>For the first particle at (1m, 2m, 0), the distance from the
+                                                        z-axis
+                                                        is \( r_1 = \sqrt{1^2 + 2^2} = \sqrt{5} \, \text{m} \).</p>
+                                                    <p>For the second particle at (3m, 4m, 0), the distance from the
+                                                        z-axis
+                                                        is \( r_2 = \sqrt{3^2 + 4^2} = 5 \, \text{m} \).</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p><strong>Moment of Inertia Calculation:</strong></p>
+                                                    <p>For the first particle: \( I_1 = m_1 r_1^2 = 1 \times 5 = 5 \,
+                                                        \text{kg·m}^2 \).</p>
+                                                    <p>For the second particle: \( I_2 = m_2 r_2^2 = 2 \times 25 = 50 \,
+                                                        \text{kg·m}^2 \).</p>
+                                                    <p><strong>Total Moment of Inertia:</strong> \( I_z = I_1 + I_2 = 5
+                                                        + 50
+                                                        = 55 \, \text{kg·m}^2 \).</p>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    Thus we observe that moment of inertia not only depends on masses, but also on their
+                                    distribution around the axis of rotation.
+                                    </li>
+                                    </details>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <p>
+                                                <summary><strong>For Continuous Bodies:</strong></summary>
+                                            </p>
+                                            <p>
+                                                Continuous mass distributions, such as solid rods, uniform discs, and
+                                                spherical shells, have their mass spread uniformly throughout their
+                                                volume.
+                                                Unlike discrete systems where mass is concentrated at distinct points,
+                                                continuous bodies possess a seamless and uninterrupted mass
+                                                distribution,
+                                                making their analysis more complex.
+                                            </p>
+                                            <p>
+                                                To determine the moment of inertia for such bodies, we conceptualize the
+                                                object as being composed of an infinite number of infinitesimally small
+                                                mass
+                                                elements. By dividing the entire body into these tiny pieces, we can
+                                                calculate the moment of inertia for each individual element and then sum
+                                                their contributions. This summation process is simmilar to that for
+                                                descrete
+                                                mass systems, but the number of masses become infinite. This is
+                                                described in
+                                                following diagram:
+                                            </p>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/05_Breaking_contineous_mass.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram: Continuous body consisting of infinitesimal mass elements dm.">
+                                                        <figcaption class="figure-caption">
+                                                            Diagram: Continuous body consisting of infinitesimal mass
+                                                            elements \( dm \).
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/05_dm_in_contineous_mass.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram: Selecting a particular dm to calculate dI.">
+                                                        <figcaption class="figure-caption">
+                                                            Diagram: Selecting a particular \( dm \) to calculate \( dI
+                                                            \).
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                The first diagram illustrates how a continuous body is conceptually
+                                                divided
+                                                into numerous infinitesimal mass elements (\( dm \)). The second diagram
+                                                highlights the selection of a specific \( dm \) to calculate its
+                                                individual
+                                                moment of inertia (\( dI \)).
+                                            </p>
+                                            <p>
+                                                The moment of inertia \(dI\) of an individual particle of mass \(dm\)
+                                                located at a distance \(r\) from axis of rotation is given as:
+                                            </p>
+                                            <p>\(\qquad dI = r^2 \, dm \)</p>
+                                            <p>
+                                                So the total moment of inertia \(I\) of complete mass \(M\) is written
+                                                as:
+                                            </p>
+
+                                            <p>\(\qquad I = \int_{M} r^2 \, dm \)</p>
+                                            <p>
+                                                By integrating over the entire mass of
+                                                the object, we effectively sum the contributions of all infinitesimal
+                                                mass
+                                                elements, yielding the total moment of inertia.
+                                            </p>
+
+
+                                            <p>
+                                                In summary, calculating the moment of inertia for continuous bodies
+                                                involves
+                                                breaking down the mass distribution into infinitesimal elements,
+                                                determining
+                                                the moment of inertia for each element, and integrating these
+                                                contributions
+                                                across the entire volume of the object. This process is shown in
+                                                following
+                                                example:
+                                            </p>
+                                    <li class="list-group-item">
+                                        <p><strong>Example Problem:</strong></p>
+                                        <p>
+                                            Consider a uniform rod of mass \( M = 3\,\text{kg} \) and length \( L =
+                                            2\,\text{m} \) rotating about one of its ends. The axis of rotation is
+                                            perpendicular to the rod and passing through its end as shown in following
+                                            animation:
+                                        </p>
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                <figure style="max-width: 150px;">
+                                                    <img src="../00_Assets/gif/08_RM/02_rotating_rod.gif"
+                                                        class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                                                    <figcaption class="figure-caption">Animation: Rotating rod.
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            We aim to
+                                            determine the moment of inertia of this rod about the rotation axis through
+                                            the following steps:
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <p><strong>Step 1: Divide the Rod into Infinitesimal Mass
+                                                        Elements</strong></p>
+                                                <p>
+                                                    Let \( x \) be the distance from the axis of rotation (one end of
+                                                    the rod). Consider an infinitesimal segment of the rod at position
+                                                    \( x \) with length \( dx \) and mass \( dm \).
+                                                </p>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                        <figure style="max-width: 100px;">
+                                                            <img src="img/08_dm_on_rod.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram: Rod rotating about its end.">
+
+                                                        </figure>
+                                                        <figcaption class="figure-caption">
+                                                            Diagram: Rod rotating about its end, divided into
+                                                            infinitesimal
+                                                            mass elements \( dm \).
+                                                        </figcaption>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p><strong>Step 2: Express \( dm \) in Terms of \( dx \)</strong></p>
+                                                <p>
+                                                    Since the rod is uniform, the linear mass density \( \lambda \) is
+                                                    constant and given by:
+                                                </p>
+                                                <p>\(\qquad \lambda = \frac{M}{L} = \frac{3\,\text{kg}}{2\,\text{m}} =
+                                                    1.5\,\text{kg/m} \)</p>
+                                                <p>
+                                                    Therefore, the infinitesimal mass \( dm \) is:
+                                                </p>
+                                                <p>\(\qquad dm = \lambda \, dx = 1.5\,\text{kg/m} \times dx \)</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p><strong>Step 3: Set Up the Integral for Moment of Inertia</strong>
+                                                </p>
+                                                <p>
+                                                    The moment of inertia \( I \) is the integral of \( x^2 \, dm \)
+                                                    from \( x = 0 \) to \( x = L \):
+                                                </p>
+                                                <p>\(\qquad I = \int_{0}^{2\,\text{m}} x^2 \, dm =
+                                                    \int_{0}^{2\,\text{m}} x^2 \left( 1.5\,\text{kg/m} \times dx \right)
+                                                    \)</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p><strong>Step 4: Perform the Integration</strong></p>
+                                                <p>
+                                                    Evaluating the integral:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    I = 1.5\,\text{kg/m} \int_{0}^{2\,\text{m}} x^2 \, dx =
+                                                    1.5\,\text{kg/m} \left[ \frac{x^3}{3} \right]_{0}^{2\,\text{m}} =
+                                                    1.5\,\text{kg/m} \times \frac{8\,\text{m}^3}{3} = 4\,\text{kg·m}^2
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    Thus, the moment of inertia of the rod about its end is:
+                                                </p>
+                                                <p>\(\qquad I = 4\,\text{kg·m}^2 \)</p>
+                                            </li class="list-group-item">
+                                            <p>
+                                                This example demonstrates the application of integration to calculate
+                                                the
+                                                moment of inertia for a continuous mass distribution, highlighting the
+                                                transition from discrete summation to continuous integration.
+                                            </p>
+                                        </ul>
+
+
+                                    </li>
+                                    </details>
+                                    </li>
+                                </ul>
+                                <p><strong>Radius of gyration</strong></p>
+                                <p>The radius of gyration is the distance from the axis of rotation at which the entire
+                                    mass of a rigid body can be concentrated to yield the same moment of inertia.
+                                    Consider a
+                                    body of mass \( M \) having a moment of inertia \( I \) about a particular axis. If
+                                    the radius of gyration is \(k\) then the body can be assumed concentrated at a
+                                    distance \(k\) from given axis of rotation to give the same moment of inertia. Thus,
+                                </p>
+                                <p>\(\qquad I=Mk^2\)</p>
+                                <p>\(\Rightarrow
+                                    k = \sqrt{\frac{I}{M}}\)</p>
+
+                                <p>Example below describes this in detail:</p>
+                                <li class="list-group-item">
+                                    <p><strong>Example Problem:</strong></p>
+                                    <p>
+                                        Consider a uniform rod of mass \( M = 3\,\text{kg} \) and length \( L =
+                                        2\,\text{m} \) rotating about one of its ends.
+                                    </p>
+                                    <p>
+                                        We aim to find radius of gyration about its axis of rotation through
+                                        the following steps:
+                                    </p>
+                                    <p><strong>Solution:</strong></p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p><strong>Step 1: Finding moment of inertia</strong></p>
+                                            <p>
+                                                As described in previous example, the moment of inertia of such a rod is
+                                                \(4\text{kgm}^2\)
+                                            </p>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><strong>Step 2: Finding \(k\)</strong></p>
+                                            <p>
+                                                Assuming entire mass at distance \(k\), to give the same moment of
+                                                inertia:
+                                            </p>
+                                            <p>\(\qquad 4 \text{kgm}^2= \left(3\,\text{kg}\right)\times k^2 \)</p>
+                                            <p>
+                                                \(\Rightarrow \quad k=\frac{2}{\sqrt{3}}\text{m}\)
+                                            </p>
+
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-read-time="10">
+                        <h2 class="accordion-header" id="section-Axis-Theorems">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Axis-Theorems-heading" aria-expanded="false"
+                                aria-controls="section-Axis-Theorems-heading">
+                                <strong>Parallel and perpendicular axis theorems</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Axis-Theorems-heading" class="accordion-collapse collapse"
+                            aria-labelledby="section-Axis-Theorems-content" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The relation between moments of inertia of a rigid body about different axes is
+                                    established by two theorems: parallel axis theorem and perpendicular axis theorem.
+                                    Both of these are described below:
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p><strong>Parallel Axis Theorem:</strong></p>
+                                        <p>
+                                            Consider a rigid body rotating about an axis \( L \) which does not pass
+                                            through the center of mass of the body. We can always find another axis \(
+                                            L_{\text{CM}} \) which is parallel to \( L \) but passes through the center
+                                            of mass of the body. This is shown in the diagram below:
+                                        </p>
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                <figure style="max-width: 300px;">
+                                                    <img src="img/09_parallel_axis_theorem.png"
+                                                        class="figure-img img-fluid rounded"
+                                                        alt="Diagram: Continuous body consisting of infinitesimal mass elements dm.">
+                                                    <figcaption class="figure-caption">
+                                                        Diagram: Parallel axes for body.
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>If the moment of inertia of the rigid body about axes \( L \) and \(
+                                            L_{\text{CM}} \) are \( I \) and \( I_{\text{CM}} \) respectively, then
+                                            according to the parallel axis theorem:</p>
+                                        <p>\(\qquad I = I_{\text{CM}} + M d^2 \)</p>
+                                        <p>Here \( M \) is the mass of the rigid body, while \( d \) represents the
+                                            separation between the two axes \( L \) and \( L_{\text{CM}} \).</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Perpendicular Axis Theorem:</strong></p>
+                                        <p>
+                                            The perpendicular axis theorem is applicable to planar rigid bodies
+                                            (laminas) that lie entirely in a plane, such as thin sheets or discs. It
+                                            relates the moment of inertia of the body about an axis perpendicular to the
+                                            plane (\( I_z \)) to its moments of inertia about two mutually perpendicular
+                                            axes (\( I_x \) and \( I_y \)) that lie in the plane and intersect at a
+                                            point. This is illustrated in the diagram below:
+                                        </p>
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+                                                <figure style="max-width: 300px;">
+                                                    <img src="img/10_perpendicular_axis_theorem.png"
+                                                        class="figure-img img-fluid rounded"
+                                                        alt="Diagram: Planar object with axes \( x \), \( y \), and \( z \).">
+                                                    <figcaption class="figure-caption">
+                                                        Diagram: Planar object with axes \( x \), \( y \), and \( z \).
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>According to the perpendicular axis theorem:</p>
+                                        <p>\(\qquad I_z = I_x + I_y \)</p>
+                                        <p>Where:</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">\( I_z \): Moment of inertia about the axis
+                                                perpendicular to the plane
+                                                (the \( z \)-axis).</li>
+                                            <li class="list-group-item">\( I_x \): Moment of inertia about the \( x
+                                                \)-axis in the plane.</li>
+                                            <li class="list-group-item">\( I_y \): Moment of inertia about the \( y
+                                                \)-axis in the plane.</li>
+                                        </ul>
+                                        <p>This theorem simplifies the calculation of \( I_z \) when \( I_x \) and \(
+                                            I_y \) are known or easier to compute. It is particularly useful for objects
+                                            with symmetrical shapes, such as circular discs or rectangular plates, where
+                                            calculating moments of inertia about in-plane axes is straightforward.</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
