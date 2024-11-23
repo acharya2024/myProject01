@@ -1,0 +1,2326 @@
+{
+    "questions": [
+        {
+            "id": "TF.RAD.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Radioactivity is a process that can be predicted precisely for each individual nucleus.",
+            "solution": "False. Radioactivity is inherently random at the level of individual nuclei; it is impossible to predict exactly when a specific nucleus will decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the unpredictability of nuclear decay events at the atomic level.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Introduction",
+                "concept": "Unpredictability of Individual Nucleus Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Radioactivity",
+                    "Randomness",
+                    "Nuclear Decay"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.1.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 12,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 3,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Becquerel (Bq) is the SI unit of radioactive activity, defined as one disintegration per second.",
+            "solution": "True. The Becquerel (Bq) is the SI unit for measuring radioactive activity and is defined as one disintegration per second.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the definition of the Becquerel in terms of disintegrations per second.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Becquerel (Bq) and Its Relationship to dps",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Becquerel",
+                    "Disintegrations per Second"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.1.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 14,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "One Curie (Ci) is equivalent to one Becquerel (Bq).",
+            "solution": "False. One Curie is a much larger unit than one Becquerel; specifically, 1 Ci equals 3.7 × 10^10 Bq.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the numerical relationship between Ci and Bq units.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Curie (Ci) and Comparison with Bq",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.4,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Curie",
+                    "Becquerel"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.2.1.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["False"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The decay probability per unit time (λ) is a constant for a given radioactive isotope.",
+            "solution": "True. The decay constant (λ) is a characteristic property of each radioactive isotope, representing the probability of decay per unit time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the definition of the decay constant in radioactive decay.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Decay Probability per Unit Time (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Radioactive Decay",
+                    "Isotope Properties"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.3.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In exponential decay, the number of undecayed nuclei decreases linearly over time.",
+            "solution": "False. In exponential decay, the number of undecayed nuclei decreases exponentially over time, not linearly.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the mathematical nature of the decay equation.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Exponential Decay Equation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Decay Curves",
+                    "Mathematical Models"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.4.1.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 14,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Half-life is the time required for half of the radioactive nuclei in a sample to decay.",
+            "solution": "True. By definition, half-life (t₁/₂) is the time it takes for half of the nuclei in a radioactive sample to undergo decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the definition of half-life in radioactive decay.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Definition and Derivation from Decay Constant (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Half-Life",
+                    "Radioactive Decay",
+                    "Decay Constants"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.4.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["False"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The mean life (τ) of a radioactive isotope is longer than its half-life.",
+            "solution": "True. The mean life τ is related to the half-life t₁/₂ by τ = t₁/₂ / ln(2), so it is approximately 1.44 times longer than the half-life.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the mathematical relationship between mean life and half-life.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Comparison with Half-Life",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.4,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Mean Life",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.2.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The decay constant (λ) varies over time for a given radioactive isotope.",
+            "solution": "False. The decay constant (λ) is a fixed value for a given isotope and does not change over time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about whether λ is affected by external conditions or time.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Introduction of Decay Constant (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Isotope Properties",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.3.1.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The fraction of nuclei that decay during a time interval depends on the total number of nuclei present initially.",
+            "solution": "False. In exponential decay, the fraction of nuclei that decay over a given time interval is independent of the initial number of nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the properties of fractional decay in radioactive processes.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Independence from Initial Nuclei Count or Time",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.4,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Fractional Decay",
+                    "Exponential Decay",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.5.1.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["False"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In parallel decay reactions, multiple decay paths occur independently from the same parent nucleus.",
+            "solution": "True. In parallel decay, a parent nucleus can decay via different modes independently, each characterized by its own decay constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how multiple decay modes can coexist for a single isotope.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Parallel Decay Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Parallel Decay",
+                    "Radioactive Decay",
+                    "Decay Modes"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.5.3.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In a series decay reaction, the daughter nucleus is always stable.",
+            "solution": "False. In series decay reactions, the daughter nucleus may itself be radioactive and undergo further decay until a stable nucleus is formed.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the possibility of successive decays in a decay series.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Series Decay Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Series Decay",
+                    "Radioactive Chains",
+                    "Daughter Nuclei"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.6.1.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["False"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Carbon dating relies on the decay of carbon-14 to estimate the age of organic materials.",
+            "solution": "True. Carbon dating measures the remaining amount of carbon-14 in organic materials to estimate their age based on its known half-life.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how carbon-14 decay is used in dating archaeological samples.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Estimating Age of Organic Material via ¹⁴C Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Radioactive Dating",
+                    "Carbon-14"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.3.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The exponential decay formula can be used to determine the activity of a radioactive sample at any given time.",
+            "solution": "True. The exponential decay equation relates the activity of a sample to time, allowing calculation of activity at any point.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall how the exponential decay formula relates activity and time.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Determining Activity Over Time",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Radioactive Activity",
+                    "Decay Equations"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.4.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["False"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "After two half-lives, one-fourth of the original radioactive nuclei remain undecayed.",
+            "solution": "True. After each half-life, the number of undecayed nuclei halves. Therefore, after two half-lives, (1/2) × (1/2) = 1/4 remain.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the remaining fraction after two successive halvings.",
+            "answer": true,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Decay Fraction at Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Half-Life",
+                    "Exponential Decay",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "TF.RAD.6.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["True"]
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Carbon dating can be used to accurately date inorganic materials like rocks and metals.",
+            "solution": "False. Carbon dating is effective for dating organic materials that contain carbon-14, not inorganic substances like rocks and metals.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the types of materials that contain carbon-14.",
+            "answer": false,
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Real-World Applications and Reliability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Organic vs Inorganic",
+                    "Radioactive Dating"
+                ]
+            }
+        },
+        
+        {
+            "id": "OW.RAD.1.2.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Curie"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the SI unit of radioactive activity, defined as one disintegration per second?",
+            "solution": "The SI unit of radioactive activity is the Becquerel (Bq), which equals one disintegration per second.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named after the scientist who discovered radioactivity.",
+            "answer": "Becquerel",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Becquerel (Bq) and Its Relationship to dps",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Becquerel",
+                    "Disintegration per Second"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.1.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Becquerel"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which unit of radioactive activity is equal to 3.7 × 10¹⁰ Becquerels?",
+            "solution": "The Curie (Ci) is equal to 3.7 × 10¹⁰ Becquerels and is a non-SI unit of radioactivity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named after a pioneering female scientist in radioactivity.",
+            "answer": "Curie",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Curie (Ci) and Comparison with Bq",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Curie",
+                    "Radioactive Activity"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.2.1.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Half-life"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for the constant representing the decay probability per unit time for a radioactive isotope?",
+            "solution": "The decay constant, denoted by the Greek letter lambda (λ), represents the decay probability per unit time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's symbolized by the Greek letter λ.",
+            "answer": "Lambda",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Decay Probability per Unit Time (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Probability",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.3.1.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Linear"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What type of mathematical function describes the decay of radioactive nuclei over time?",
+            "solution": "The decay of radioactive nuclei over time is described by an exponential function.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a function where the rate of change is proportional to the quantity itself.",
+            "answer": "Exponential",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Exponential Decay Equation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Mathematical Functions",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.4.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Mean life"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What term describes the time required for half of the radioactive nuclei in a sample to decay?",
+            "solution": "This term is known as the half-life of the radioactive isotope.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's commonly denoted as t₁/₂.",
+            "answer": "Half-life",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Definition and Derivation from Decay Constant (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Half-Life",
+                    "Radioactive Decay",
+                    "Decay Time"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.4.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Half-life"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What term is used for the average lifetime of a radioactive nucleus before it decays?",
+            "solution": "The term is mean life, representing the average time before decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's calculated as the reciprocal of the decay constant λ.",
+            "answer": "Mean life",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Definition and Derivation from Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Mean Life",
+                    "Radioactive Decay",
+                    "Average Lifetime"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.1.1.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 27,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Predictable"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Radioactive decay is inherently __________, meaning it cannot be predicted for individual nuclei.",
+            "solution": "Radioactive decay is inherently random.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the opposite of deterministic.",
+            "answer": "Random",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Introduction",
+                "concept": "Unpredictability of Individual Nucleus Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Randomness",
+                    "Radioactive Decay",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.2.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Exponential"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "The introduction of the decay constant (λ) leads to the establishment of the __________ law.",
+            "solution": "The decay constant leads to the establishment of the radioactivity law.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the fundamental law governing radioactive decay.",
+            "answer": "Radioactivity",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Introduction of Decay Constant (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Decay Law",
+                    "Radioactivity",
+                    "Decay Constant"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.3.1.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Linear"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "A plot of the natural logarithm of the number of undecayed nuclei versus time yields a __________ line.",
+            "solution": "It yields a straight line.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "In such a graph, the relationship is linear.",
+            "answer": "Straight",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Graphical Analysis of Decay Curve",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Decay Graphs",
+                    "Exponential Decay",
+                    "Data Analysis"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.4.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Half-life"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Mean life (τ) is calculated as the reciprocal of the __________ constant.",
+            "solution": "Mean life τ is calculated as τ = 1/λ, where λ is the decay constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's symbolized by λ.",
+            "answer": "Decay",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Relationship with Decay Constant",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.1,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Mean Life",
+                    "Decay Constant",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.5.3.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Parallel"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In a series decay reaction, nuclei undergo decay in a __________ sequence of reactions.",
+            "solution": "In a series decay reaction, nuclei decay in a sequential manner.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the opposite of parallel.",
+            "answer": "Sequential",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Series Decay Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Series Decay",
+                    "Radioactive Chains",
+                    "Decay Processes"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.6.1.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 33,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Carbon-12"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Carbon dating relies on the radioactive decay of carbon-14 to __________.",
+            "solution": "Carbon dating relies on carbon-14 to date organic materials.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the process of determining the age of an object.",
+            "answer": "Date",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Estimating Age of Organic Material via ¹⁴C Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Radioactive Dating",
+                    "Carbon-14"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.1.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Beta"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Marie Curie is known for her pioneering work in the field of __________.",
+            "solution": "Marie Curie is renowned for her work in radioactivity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "She coined the term for the phenomenon involving spontaneous emission of particles.",
+            "answer": "Radioactivity",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Introduction",
+                "concept": "Definition and Historical Context",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Historical Context",
+                    "Marie Curie",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.2.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Lambda"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "The fundamental principle of radioactive decay states that decay probability is proportional to __________.",
+            "solution": "Decay probability is proportional to time interval dt.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the infinitesimally small time over which decay is considered.",
+            "answer": "Time",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Fundamental Principle: Decay Probability ∝ λ dt",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.1,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Decay Probability",
+                    "Radioactivity Law",
+                    "Time Interval"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.5.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 37,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Decay"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Radioactive generation at a constant rate involves both decay and constant __________ of nuclei.",
+            "solution": "It involves constant production or generation of nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the process of creating new nuclei.",
+            "answer": "Generation",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Radioactive Generation at Constant Rate",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Radioactive Generation",
+                    "Decay Processes",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.6.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Mean life"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In carbon dating, the decay law is used to calculate the elapsed __________ since the death of the organism.",
+            "solution": "The decay law is used to calculate the elapsed time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a measure of duration.",
+            "answer": "Time",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Elapsed Time Calculation Based on Remaining ¹⁴C",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Decay Law",
+                    "Elapsed Time"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.3.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Time"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Fractional decay is independent of the initial number of nuclei and the elapsed __________.",
+            "solution": "Fractional decay is independent of the elapsed time.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the variable represented by t in decay equations.",
+            "answer": "Time",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Independence from Initial Nuclei Count or Time",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.1,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Fractional Decay",
+                    "Exponential Decay",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.5.1.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Series"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In parallel decay reactions, the equivalent half-life is derived from the individual __________ constants.",
+            "solution": "It's derived from the individual decay constants.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "These constants represent the decay probabilities.",
+            "answer": "Decay",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Equivalent Half-Life Derivation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Parallel Decay",
+                    "Half-Life",
+                    "Decay Constants"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.3.1.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Decrease"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "In exponential decay, the rate of decay is proportional to the __________ number of undecayed nuclei.",
+            "solution": "The rate of decay is proportional to the current number of undecayed nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the number of nuclei present at a given time.",
+            "answer": "Current",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Derivation of Exponential Decay Formula",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.1,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Decay Rate",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.RAD.6.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["Reliability"]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Carbon dating is widely used in archaeology to estimate the age of __________ materials.",
+            "solution": "Carbon dating estimates the age of organic materials.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "These materials come from living organisms.",
+            "answer": "Organic",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Real-World Applications and Reliability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Organic Materials",
+                    "Archaeology"
+                ]
+            }
+        },
+        
+        {
+            "id": "SO.RAD.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Who is credited with the discovery of radioactivity?",
+            "solution": "Henri Becquerel is credited with the discovery of radioactivity in 1896 when he observed that uranium salts emitted rays that could fog photographic plates.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He was a French physicist who shared the 1903 Nobel Prize in Physics.",
+            "options": [
+                "A) Marie Curie",
+                "B) Ernest Rutherford",
+                "C) Henri Becquerel",
+                "D) Niels Bohr"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Introduction",
+                "concept": "Definition and Historical Context",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "History of Radioactivity",
+                    "Henri Becquerel",
+                    "Discovery"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best describes the nature of radioactive decay?",
+            "solution": "Radioactive decay is a random process at the level of single atoms, meaning it's impossible to predict exactly when a particular nucleus will decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the predictability of decay events for individual nuclei.",
+            "options": [
+                "A) Deterministic and predictable for each nucleus",
+                "B) Random and unpredictable for each nucleus",
+                "C) Influenced by external environmental conditions",
+                "D) Controlled by chemical reactions"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Introduction",
+                "concept": "Unpredictability of Individual Nucleus Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Randomness",
+                    "Nuclear Decay",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.1.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 70,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which unit is defined as one disintegration per second?",
+            "solution": "The Becquerel (Bq) is the SI unit of radioactive activity, defined as one disintegration per second.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the SI unit named after the discoverer of radioactivity.",
+            "options": [
+                "A) Curie (Ci)",
+                "B) Rutherford (Rd)",
+                "C) Becquerel (Bq)",
+                "D) Disintegration per second (dps)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Becquerel (Bq) and Its Relationship to dps",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.3,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Becquerel",
+                    "Activity Measurement"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.1.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 75,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "One Curie (Ci) is equivalent to how many Becquerels (Bq)?",
+            "solution": "One Curie is equal to 3.7 × 10^10 Becquerels.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the conversion factor between Curie and Becquerel units.",
+            "options": [
+                "A) 1 Bq",
+                "B) 37 Bq",
+                "C) 3.7 × 10^10 Bq",
+                "D) 6.02 × 10^23 Bq"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactive Activity",
+                "concept": "Curie (Ci) and Comparison with Bq",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Units of Radioactivity",
+                    "Curie",
+                    "Becquerel Conversion"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.2.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 80,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 20,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The decay constant (λ) represents which of the following?",
+            "solution": "The decay constant (λ) represents the probability per unit time that a nucleus will decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what λ indicates in the context of radioactive decay.",
+            "options": [
+                "A) Total number of nuclei",
+                "B) Decay probability per unit time",
+                "C) Half-life of the isotope",
+                "D) Energy released during decay"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Radioactivity Law",
+                "concept": "Decay Probability per Unit Time (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.2,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Radioactive Decay",
+                    "Probability"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.2.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 85,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 21,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which mathematical expression represents the number of undecayed nuclei N at time t?",
+            "solution": "The exponential decay law is N = N₀ e^(−λt), where N₀ is the initial number of nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's derived from the decay probability and involves an exponential function.",
+            "options": [
+                "A) N = N₀ e^(−λt)",
+                "B) N = N₀ λ t",
+                "C) N = N₀ (1 − λt)",
+                "D) N = N₀ e^(λt)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Establishing the Radioactivity Law",
+                "concept": "Derivation Using Probability and Statistics",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Decay Law",
+                    "Mathematical Expressions"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.3.1.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 90,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 22,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "On a graph of radioactive decay, what shape does the decay curve of N versus time t take?",
+            "solution": "The decay curve of N versus t is an exponential decay curve, which decreases rapidly at first and then levels off.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the graphical representation of an exponential function.",
+            "options": [
+                "A) Exponential decay curve",
+                "B) Straight line with negative slope",
+                "C) Parabolic curve",
+                "D) Sine wave"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Graphical Analysis of Decay Curve",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Decay Graphs",
+                    "Exponential Decay",
+                    "Data Interpretation"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.3.1.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 95,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 23,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements is true regarding the fraction of nuclei that decay over a given time interval?",
+            "solution": "In exponential decay, the fraction of nuclei that decay over a given time interval is independent of the initial number of nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how fractional decay relates to the initial quantity.",
+            "options": [
+                "A) It depends on the initial number of nuclei",
+                "B) It depends on the absolute time elapsed",
+                "C) It is independent of the initial number of nuclei",
+                "D) It increases exponentially with time"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Mathematical Expressions",
+                "concept": "Independence from Initial Nuclei Count or Time",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Fractional Decay",
+                    "Exponential Decay",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.4.1.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 100,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 25,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "How is the half-life (t₁/₂) of a radioactive isotope related to its decay constant (λ)?",
+            "solution": "The half-life is related to the decay constant by t₁/₂ = ln(2)/λ.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the mathematical relationship involving natural logarithm of 2.",
+            "options": [
+                "A) t₁/₂ = ln(2)/λ",
+                "B) t₁/₂ = λ ln(2)",
+                "C) t₁/₂ = λ/ln(2)",
+                "D) t₁/₂ = λ × ln(2)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Definition and Derivation from Decay Constant (λ)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Decay Constant",
+                    "Mathematical Relationships"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.4.1.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 105,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 26,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "After how many half-lives will the fraction of undecayed nuclei be approximately 12.5%?",
+            "solution": "After three half-lives, the fraction remaining is (1/2)^3 = 12.5%.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate (1/2) raised to the number of half-lives.",
+            "options": [
+                "A) 2 half-lives",
+                "B) 3 half-lives",
+                "C) 4 half-lives",
+                "D) 5 half-lives"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Decay Fraction at Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Exponential Decay",
+                    "Fraction Remaining"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.4.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 110,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 27,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which expression correctly relates mean life (τ) to the decay constant (λ)?",
+            "solution": "Mean life τ is the reciprocal of the decay constant, τ = 1/λ.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Mean life is the average lifetime of a nucleus before decay.",
+            "options": [
+                "A) τ = λ",
+                "B) τ = 1/λ",
+                "C) τ = ln(2)/λ",
+                "D) τ = λ ln(2)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Relationship with Decay Constant",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Mean Life",
+                    "Decay Constant",
+                    "Mathematical Relationships"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.5.1.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 115,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 28,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In parallel decay reactions, the overall decay constant is:",
+            "solution": "For parallel decay, the overall decay constant is the sum of the individual decay constants: λ_total = λ₁ + λ₂ + ...",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how multiple independent decay paths contribute to the total decay rate.",
+            "options": [
+                "A) Equal to the smallest individual λ",
+                "B) Equal to the largest individual λ",
+                "C) The sum of the individual λ values",
+                "D) The product of the individual λ values"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Equivalent Half-Life Derivation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Parallel Decay",
+                    "Decay Constants",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.5.2.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 120,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 30,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "When a radioactive substance is generated at a constant rate while simultaneously decaying, its activity reaches a steady state when:",
+            "solution": "The activity reaches a steady state when the rate of production equals the rate of decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the conditions for dynamic equilibrium in decay and generation.",
+            "options": [
+                "A) Decay rate is zero",
+                "B) Generation rate is zero",
+                "C) Decay rate equals generation rate",
+                "D) Decay rate exceeds generation rate"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Radioactive Generation at Constant Rate",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Radioactive Generation",
+                    "Steady State",
+                    "Activity"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.5.3.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 125,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 31,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a series decay reaction, which of the following describes the relationship between the parent and daughter activities at equilibrium?",
+            "solution": "At equilibrium, the activity of the daughter equals the activity of the parent if the half-life of the parent is much longer than that of the daughter.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider secular equilibrium conditions in decay series.",
+            "options": [
+                "A) Parent activity is greater than daughter activity",
+                "B) Parent activity is less than daughter activity",
+                "C) Parent and daughter activities are equal",
+                "D) Activities are unrelated"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Total Decay Rate Calculation in Series",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Series Decay",
+                    "Equilibrium",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.6.1.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 130,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 32,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Carbon dating is based on the decay of which isotope?",
+            "solution": "Carbon dating relies on the decay of carbon-14 (¹⁴C) to estimate the age of organic materials.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a radioactive isotope of carbon with 8 neutrons.",
+            "options": [
+                "A) Carbon-12",
+                "B) Carbon-13",
+                "C) Carbon-14",
+                "D) Carbon-11"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Basis of Carbon Dating and Radioactive Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.9,
+                    "concept": 0.1,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Carbon-14",
+                    "Radioactive Isotopes"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.6.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 135,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 33,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of carbon-14 is approximately 5730 years. If a sample shows 25% of its original carbon-14 content, how old is the sample?",
+            "solution": "25% remaining means two half-lives have passed: 2 × 5730 = 11,460 years.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives corresponding to 25% remaining.",
+            "options": [
+                "A) 5730 years",
+                "B) 11,460 years",
+                "C) 17,190 years",
+                "D) 22,920 years"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Elapsed Time Calculation Based on Remaining ¹⁴C",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Half-Life",
+                    "Age Estimation"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.6.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 140,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 35,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following factors can affect the accuracy of carbon dating?",
+            "solution": "Contamination of the sample with modern carbon can affect the accuracy of carbon dating.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about external factors that could alter the carbon-14 content.",
+            "options": [
+                "A) Half-life of carbon-14 changing over time",
+                "B) Fluctuations in Earth's gravitational field",
+                "C) Sample contamination with newer carbon",
+                "D) The initial amount of carbon-12 in the sample"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Applications of Radioactivity: Carbon Dating",
+                "concept": "Real-World Applications and Reliability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Carbon Dating",
+                    "Sample Contamination",
+                    "Accuracy Factors"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.4.2.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 145,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 36,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following correctly compares mean life (τ) and half-life (t₁/₂)?",
+            "solution": "Mean life τ is related to half-life t₁/₂ by τ = t₁/₂ / ln(2).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the mathematical relationship involving natural logarithms.",
+            "options": [
+                "A) τ = t₁/₂ × ln(2)",
+                "B) τ = t₁/₂ / ln(2)",
+                "C) τ = t₁/₂ × ln(0.5)",
+                "D) τ = t₁/₂"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Half-Life and Mean Life",
+                "concept": "Comparison with Half-Life",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Mean Life",
+                    "Half-Life",
+                    "Mathematical Relationships"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.2.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 150,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 37,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which scientist's work is most associated with the statistical nature of radioactive decay?",
+            "solution": "Ernest Rutherford contributed significantly to the understanding of the statistical nature of radioactive decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "He is known as the father of nuclear physics.",
+            "options": [
+                "A) Henri Becquerel",
+                "B) Ernest Rutherford",
+                "C) Niels Bohr",
+                "D) Marie Curie"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Establishing the Radioactivity Law",
+                "concept": "Derivation Using Probability and Statistics",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "History of Radioactivity",
+                    "Ernest Rutherford",
+                    "Statistical Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.RAD.5.3.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 155,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 38,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a decay series, if the half-life of the daughter isotope is much longer than that of the parent, what happens to the daughter isotope's quantity over time?",
+            "solution": "The daughter isotope accumulates over time because it decays much more slowly than it is being produced.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the rates of decay for parent and daughter isotopes.",
+            "options": [
+                "A) It reaches a constant amount",
+                "B) It decreases exponentially",
+                "C) It accumulates over time",
+                "D) It disappears immediately"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Radioactivity",
+                "section": "Combinations of Radioactive Decay",
+                "concept": "Sequential Nuclear Reactions Analysis",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Series Decay",
+                    "Daughter Isotope",
+                    "Accumulation"
+                ]
+            }
+        }
+    ]
+}

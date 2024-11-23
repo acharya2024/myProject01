@@ -1,0 +1,2207 @@
+{
+    "questions": [
+        {
+            "id": "SO.NRE.4.2.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 180,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 45,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a half-life of 8 hours. How much time will it take for the activity of a sample to decrease to 12.5% of its initial value?",
+            "solution": "To reach 12.5% of the initial activity, the sample must go through \\( n \\) half-lives such that \\( (1/2)^n = 0.125 \\).\\nSolving for \\( n \\):\\n\\( (1/2)^n = 0.125 \\)\\n\\( 0.5^n = 0.125 \\)\\nSince \\( 0.5^3 = 0.125 \\), \\( n = 3 \\) half-lives.\\nTotal time \\( t = n \\times \\text{half-life} = 3 \\times 8 \\text{ hours} = 24 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine how many half-lives are needed to reduce the activity to 12.5%.",
+            "options": [
+                "A) 16 hours",
+                "B) 24 hours",
+                "C) 32 hours",
+                "D) 40 hours"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 200,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 50,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A sample of a radioactive isotope decreases to 1/16 of its original activity in 12 days. What is the half-life of the isotope?",
+            "solution": "Since the activity decreases to \\( (1/2)^n = 1/16 \\), \\( n \\) half-lives have passed where \\( (1/2)^n = 1/16 \\).\\nSolving for \\( n \\):\\n\\( (1/2)^n = (1/2)^4 = 1/16 \\), so \\( n = 4 \\) half-lives.\\nTotal time \\( t = n \\times \\text{half-life} \\).\\nGiven \\( t = 12 \\) days, so half-life \\( = \\frac{t}{n} = \\frac{12}{4} = 3 \\) days.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives passed and divide the total time by that number.",
+            "options": [
+                "A) 2 days",
+                "B) 3 days",
+                "C) 4 days",
+                "D) 6 days"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Q Value Calculations and Examples",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Radioactive Decay",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 220,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 55,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If the half-life of a radioactive isotope is 10 hours, what fraction of the original number of nuclei remains after 30 hours?",
+            "solution": "Number of half-lives \\( n = \\frac{30}{10} = 3 \\).\\nFraction remaining \\( = (1/2)^n = (1/2)^3 = 1/8 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and raise (1/2) to that power.",
+            "options": [
+                "A) 1/2",
+                "B) 1/4",
+                "C) 1/8",
+                "D) 1/16"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Fraction Remaining"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 240,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 60,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A certain radioactive isotope has a decay constant λ = 0.693 day⁻¹. What is its half-life?",
+            "solution": "Half-life \\( t_{1/2} = \\frac{\\ln 2}{λ} = \\frac{0.6931}{0.693} = 1 \\) day.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( t_{1/2} = \\frac{\\ln 2}{λ} \\).",
+            "options": [
+                "A) 0.5 days",
+                "B) 1 day",
+                "C) 1.5 days",
+                "D) 2 days"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Mathematical Relationships"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 260,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 65,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope decays such that its activity reduces to 70% in 5 hours. What is the half-life of this isotope?",
+            "solution": "Using the decay formula: \\( N = N_0 e^{-λt} \\)\\nGiven \\( N/N_0 = 0.7 \\), \\( t = 5 \\) hours\\n\\( 0.7 = e^{-λ \\times 5} \\)\\nTaking natural logarithm:\\n\\( \\ln 0.7 = -5λ \\)\\n\\( λ = -\\frac{\\ln 0.7}{5} \\)\\n\\( λ = \\frac{0.3567}{5} = 0.07134 \\) hr⁻¹\\nHalf-life \\( t_{1/2} = \\frac{\\ln 2}{λ} = \\frac{0.6931}{0.07134} \\approx 9.71 \\) hours",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the exponential decay formula and solve for λ, then find the half-life.",
+            "options": [
+                "A) 8 hours",
+                "B) 9.71 hours",
+                "C) 12 hours",
+                "D) 14 hours"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Half-Life Calculation",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 280,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 70,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of a radioactive substance is 5 days. What is the decay constant λ in day⁻¹?",
+            "solution": "Decay constant \\( λ = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.6931}{5} = 0.1386 \\) day⁻¹.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation between decay constant and half-life.",
+            "options": [
+                "A) 0.0693 day⁻¹",
+                "B) 0.1386 day⁻¹",
+                "C) 0.1733 day⁻¹",
+                "D) 0.2 day⁻¹"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 300,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 75,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a half-life of 2 hours. If you start with a 100 mg sample, how much of the isotope remains after 7 hours?",
+            "solution": "Number of half-lives \\( n = \\frac{7}{2} = 3.5 \\).\\nFraction remaining \\( = (1/2)^{3.5} = 0.0884 \\).\\nAmount remaining \\( = 100 \\text{ mg} \\times 0.0884 = 8.84 \\text{ mg} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and use the exponential decay formula.",
+            "options": [
+                "A) 6.25 mg",
+                "B) 8.84 mg",
+                "C) 12.5 mg",
+                "D) 25 mg"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Distribution of Energy in Alpha Particle and Daughter Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Mass Remaining"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 320,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 80,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The activity of a radioactive sample decreases from 800 Bq to 200 Bq in 6 hours. What is the half-life of the sample?",
+            "solution": "Activity decreases to \\( \\frac{200}{800} = \\frac{1}{4} \\), which is two half-lives.\\nTotal time \\( t = 6 \\) hours\\nHalf-life \\( t_{1/2} = \\frac{t}{n} = \\frac{6}{2} = 3 \\) hours.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine how many half-lives correspond to the decrease in activity.",
+            "options": [
+                "A) 2 hours",
+                "B) 3 hours",
+                "C) 4 hours",
+                "D) 6 hours"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Activity",
+                    "Half-Life"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 340,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 85,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If the decay constant of a radioactive isotope is 0.0231 min⁻¹, what is its mean life?",
+            "solution": "Mean life \\( τ = \\frac{1}{λ} = \\frac{1}{0.0231} \\approx 43.29 \\) minutes.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Mean life is the reciprocal of the decay constant.",
+            "options": [
+                "A) 30 minutes",
+                "B) 43.29 minutes",
+                "C) 50 minutes",
+                "D) 60 minutes"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mean Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Mean Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 360,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 90,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "After 24 days, a radioactive sample's activity has decreased to one-eighth of its original value. What is the half-life of the sample?",
+            "solution": "Activity decreases to \\( (1/2)^n = 1/8 \\) ⇒ \\( n = 3 \\) half-lives.\\nTotal time \\( t = n \\times t_{1/2} \\)\\n\\( 24 = 3 \\times t_{1/2} \\)\\n\\( t_{1/2} = \\frac{24}{3} = 8 \\) days.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives and solve for half-life.",
+            "options": [
+                "A) 6 days",
+                "B) 8 days",
+                "C) 12 days",
+                "D) 16 days"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 380,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 95,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of a substance is 20 minutes. What percentage of the original sample remains after 1 hour?",
+            "solution": "Number of half-lives \\( n = \\frac{60}{20} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = 1/8 \\).\\nPercentage remaining \\( = \\frac{1}{8} \\times 100\\% = 12.5\\% \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and compute the remaining percentage.",
+            "options": [
+                "A) 25%",
+                "B) 20%",
+                "C) 12.5%",
+                "D) 10%"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Percentage Remaining",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 400,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 100,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a half-life of 15 years. How long will it take for a sample to decay to 20% of its original amount?",
+            "solution": "Let \\( N/N_0 = 0.2 \\).\\nUse \\( N = N_0 e^{-λt} \\), but it's easier to use \\( N/N_0 = (1/2)^{t/t_{1/2}} \\).\\n\\( 0.2 = (1/2)^{t/15} \\)\\nTake logarithms:\\n\\( \\ln 0.2 = \\left( \\frac{t}{15} \\right) \\ln 0.5 \\)\\n\\( \\frac{t}{15} = \\frac{\\ln 0.2}{\\ln 0.5} \\)\\n\\( \\frac{t}{15} = \\frac{\\ln 0.2}{-0.6931} \\)\\n\\( t = 15 \\times \\frac{\\ln 0.2}{-0.6931} \\approx 15 \\times 2.3219 = 34.83 \\) years.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for time in the decay equation.",
+            "options": [
+                "A) 30 years",
+                "B) 34.83 years",
+                "C) 45 years",
+                "D) 60 years"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Half-Life",
+                    "Time Calculation"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 420,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 105,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Given that the decay constant λ of a radioactive isotope is 0.001 s⁻¹, what is the time required for 90% of the sample to decay?",
+            "solution": "Using \\( N = N_0 e^{-λt} \\), we have \\( N/N_0 = 0.1 \\).\\n\\( 0.1 = e^{-0.001 t} \\)\\nTake natural logarithm:\\n\\( \\ln 0.1 = -0.001 t \\)\\n\\( t = -\\frac{\\ln 0.1}{0.001} = \\frac{2.3026}{0.001} = 2302.6 \\) seconds.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the decay formula and solve for time using logarithms.",
+            "options": [
+                "A) 1000 s",
+                "B) 2302.6 s",
+                "C) 3000 s",
+                "D) 4605.2 s"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Time Calculation",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 440,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 110,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If a radioactive material has a half-life of 5 years, what is the fraction of the original material remaining after 15 years?",
+            "solution": "Number of half-lives \\( n = \\frac{15}{5} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = 1/8 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Divide the total time by half-life and raise (1/2) to that power.",
+            "options": [
+                "A) 1/2",
+                "B) 1/4",
+                "C) 1/8",
+                "D) 1/16"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Fraction Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 460,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 115,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["A"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope decays to 1% of its original activity after 230 minutes. What is its half-life?",
+            "solution": "Using \\( N/N_0 = (1/2)^{t/t_{1/2}} \\).\\nGiven \\( N/N_0 = 0.01 \\), \\( t = 230 \\) minutes.\\n\\( 0.01 = (1/2)^{230/t_{1/2}} \\)\\nTake logarithms:\\n\\( \\ln 0.01 = \\left( \\frac{230}{t_{1/2}} \\right) \\ln 0.5 \\)\\n\\( -4.6052 = -0.6931 \\left( \\frac{230}{t_{1/2}} \\right) \\)\\n\\( \\frac{230}{t_{1/2}} = \\frac{4.6052}{0.6931} \\)\\n\\( \\frac{230}{t_{1/2}} = 6.6439 \\)\\n\\( t_{1/2} = \\frac{230}{6.6439} \\approx 34.61 \\) minutes.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for the half-life.",
+            "options": [
+                "A) 30 minutes",
+                "B) 34.61 minutes",
+                "C) 40 minutes",
+                "D) 50 minutes"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Half-Life",
+                    "Exponential Decay",
+                    "Calculations"
+                ]
+            }
+        },
+        
+        {
+            "id": "SO.NRE.2.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 180,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 45,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive substance decays such that after 10 hours, only 25% of the original sample remains. What is the half-life of the substance?",
+            "solution": "Since only 25% remains after 10 hours, this means two half-lives have passed because \\( (1/2)^2 = 0.25 \\).\\nSo, \\( n = 2 \\) half-lives.\\nTotal time \\( t = n \\times t_{1/2} \\)\\n\\( 10 \\text{ hours} = 2 \\times t_{1/2} \\)\\n\\( t_{1/2} = 5 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives passed to reduce to 25% and divide the total time by that number.",
+            "options": [
+                "A) 2.5 hours",
+                "B) 5 hours",
+                "C) 10 hours",
+                "D) 20 hours"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Time Calculation"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 200,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 50,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An isotope has a half-life of 30 minutes. How much of a 160 mg sample remains after 2 hours?",
+            "solution": "Total time \\( t = 2 \\text{ hours} = 120 \\text{ minutes} \\).\\nNumber of half-lives \\( n = \\frac{120}{30} = 4 \\).\\nFraction remaining \\( = (1/2)^4 = 1/16 \\).\\nAmount remaining \\( = 160 \\text{ mg} \\times \\frac{1}{16} = 10 \\text{ mg} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and multiply the initial mass by the remaining fraction.",
+            "options": [
+                "A) 20 mg",
+                "B) 15 mg",
+                "C) 10 mg",
+                "D) 5 mg"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Calculations Involving Mass and Activity",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Mass Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 220,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 55,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a decay constant of 0.0462 day⁻¹. How long will it take for 75% of a sample to decay?",
+            "solution": "If 75% has decayed, then 25% remains: \\( N/N_0 = 0.25 \\).\\nUsing \\( N = N_0 e^{-λt} \\):\\n\\( 0.25 = e^{-0.0462 t} \\)\\nTake natural logarithm:\\n\\( \\ln 0.25 = -0.0462 t \\)\\n\\( -1.3863 = -0.0462 t \\)\\n\\( t = \\frac{1.3863}{0.0462} \\approx 30 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the exponential decay formula and solve for time using logarithms.",
+            "options": [
+                "A) 15 days",
+                "B) 30 days",
+                "C) 45 days",
+                "D) 60 days"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Time Calculation",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 240,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 60,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If the half-life of a substance is 2 years, what is the decay constant λ in year⁻¹?",
+            "solution": "Decay constant \\( λ = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.6931}{2} = 0.3466 \\text{ year}^{-1} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( λ = \\frac{\\ln 2}{t_{1/2}} \\).",
+            "options": [
+                "A) 0.3466 year⁻¹",
+                "B) 0.2310 year⁻¹",
+                "C) 0.1155 year⁻¹",
+                "D) 0.0693 year⁻¹"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 260,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 65,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a mean life of 100 hours. What is its half-life?",
+            "solution": "Half-life \\( t_{1/2} = τ \\times \\ln 2 = 100 \\times 0.6931 = 69.31 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( t_{1/2} = τ \\ln 2 \\).",
+            "options": [
+                "A) 50 hours",
+                "B) 60 hours",
+                "C) 69.3 hours",
+                "D) 80 hours"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mean Life and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Mean Life",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q21",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 280,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 70,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A sample contains 1 gram of a radioactive isotope with a half-life of 12 hours. How much of the isotope remains after 2 days?",
+            "solution": "Total time \\( t = 2 \\text{ days} = 48 \\text{ hours} \\).\\nNumber of half-lives \\( n = \\frac{48}{12} = 4 \\).\\nFraction remaining \\( = (1/2)^4 = 1/16 \\).\\nAmount remaining \\( = 1 \\text{ g} \\times \\frac{1}{16} = 0.0625 \\text{ g} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and multiply the initial mass by the remaining fraction.",
+            "options": [
+                "A) 0.125 grams",
+                "B) 0.0625 grams",
+                "C) 0.03125 grams",
+                "D) 0.015625 grams"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Calculations Involving Mass and Activity",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Mass Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q22",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 300,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 75,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope decreases to 70% of its original activity in 5 days. What is its decay constant λ?",
+            "solution": "Using \\( N = N_0 e^{-λt} \\), \\( N/N_0 = 0.7 \\), \\( t = 5 \\) days.\\n\\( 0.7 = e^{-λ \\times 5} \\)\\nTake logarithms:\\n\\( \\ln 0.7 = -5λ \\)\\n\\( λ = -\\frac{\\ln 0.7}{5} = \\frac{0.3567}{5} = 0.07134 \\text{ day}^{-1} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the exponential decay formula and solve for λ using logarithms.",
+            "options": [
+                "A) 0.05 day⁻¹",
+                "B) 0.0693 day⁻¹",
+                "C) 0.071 day⁻¹",
+                "D) 0.1 day⁻¹"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Exponential Decay",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q23",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 320,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 80,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive material has an activity of 800 Bq at time t = 0. After 4 hours, its activity is 200 Bq. What is the half-life of the material?",
+            "solution": "Activity decreases from 800 Bq to 200 Bq, which is a factor of 1/4.\\nSince \\( (1/2)^2 = 1/4 \\), \\( n = 2 \\) half-lives.\\nTotal time \\( t = n \\times t_{1/2} \\)\\n\\( 4 \\text{ hours} = 2 \\times t_{1/2} \\)\\n\\( t_{1/2} = 2 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine how many half-lives correspond to the decrease and divide the total time by that number.",
+            "options": [
+                "A) 1 hour",
+                "B) 2 hours",
+                "C) 4 hours",
+                "D) 8 hours"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Activity and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q24",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 340,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 85,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of a radioactive isotope is 1 hour. What is the time required for the isotope to reduce to 1% of its initial value?",
+            "solution": "We have \\( N/N_0 = 0.01 \\), \\( t_{1/2} = 1 \\) hour.\\nUsing \\( N/N_0 = (1/2)^{t/t_{1/2}} \\):\\n\\( 0.01 = (1/2)^{t/1} \\)\\nTake logarithms:\\n\\( \\log_{10} 0.01 = \\left( \\frac{t}{1} \\right) \\log_{10} 0.5 \\)\\n\\( -2 = t \\times (-0.3010) \\)\\n\\( t = \\frac{2}{0.3010} \\approx 6.6439 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for time.",
+            "options": [
+                "A) 4 hours",
+                "B) 5 hours",
+                "C) 6 hours",
+                "D) 6.64 hours"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Half-Life",
+                    "Time Calculation",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q25",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 360,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 90,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a half-life of 10 days. If you start with 80 grams, how much remains after 30 days?",
+            "solution": "Number of half-lives \\( n = \\frac{30}{10} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = 1/8 \\).\\nAmount remaining \\( = 80 \\text{ g} \\times \\frac{1}{8} = 10 \\text{ g} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and multiply by the fraction remaining.",
+            "options": [
+                "A) 20 grams",
+                "B) 15 grams",
+                "C) 10 grams",
+                "D) 5 grams"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Calculations Involving Mass and Activity",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Mass Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q26",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 380,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 95,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["B"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of a radioactive isotope is 6 hours. If the initial activity is 640 Bq, what is the activity after 18 hours?",
+            "solution": "Number of half-lives \\( n = \\frac{18}{6} = 3 \\).\\nActivity \\( = 640 \\text{ Bq} \\times (1/2)^3 = 640 \\times \\frac{1}{8} = 80 \\text{ Bq} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and apply the decay formula.",
+            "options": [
+                "A) 320 Bq",
+                "B) 160 Bq",
+                "C) 100 Bq",
+                "D) 80 Bq"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Activity and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q27",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 400,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 100,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An isotope has a decay constant of 0.000231 s⁻¹. What is its half-life in seconds?",
+            "solution": "Half-life \\( t_{1/2} = \\frac{\\ln 2}{λ} = \\frac{0.6931}{0.000231} \\approx 3000 \\text{ seconds} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( t_{1/2} = \\frac{\\ln 2}{λ} \\).",
+            "options": [
+                "A) 1000 s",
+                "B) 3000 s",
+                "C) 5000 s",
+                "D) 7000 s"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q28",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 420,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 105,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive sample's activity decreases from 1000 counts per minute to 125 counts per minute in 6 hours. What is the half-life of the sample?",
+            "solution": "Activity decreases to \\( \\frac{125}{1000} = \\frac{1}{8} \\), which is three half-lives.\\nTotal time \\( t = 6 \\text{ hours} \\).\\nHalf-life \\( t_{1/2} = \\frac{t}{n} = \\frac{6}{3} = 2 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives and divide the total time by that number.",
+            "options": [
+                "A) 2 hours",
+                "B) 3 hours",
+                "C) 4 hours",
+                "D) 6 hours"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Activity and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q29",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 440,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 110,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["C"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If the half-life of a radioactive isotope is 8 days, how long will it take for a sample to reduce to 1/32 of its original amount?",
+            "solution": "We have \\( (1/2)^n = 1/32 \\), so \\( n = 5 \\) half-lives.\\nTotal time \\( t = n \\times t_{1/2} = 5 \\times 8 = 40 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Find the number of half-lives required to reach 1/32 and multiply by the half-life.",
+            "options": [
+                "A) 24 days",
+                "B) 32 days",
+                "C) 36 days",
+                "D) 40 days"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Time Calculation",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q30",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 460,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 115,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": ["D"]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A radioactive isotope has a half-life of 2 minutes. After how much time will only 1% of the original nuclei remain?",
+            "solution": "We have \\( N/N_0 = 0.01 \\), \\( t_{1/2} = 2 \\) minutes.\\nUsing \\( 0.01 = (1/2)^{t/2} \\).\\nTaking logarithms:\\n\\( \\ln 0.01 = \\left( \\frac{t}{2} \\right) \\ln 0.5 \\)\\n\\( -4.6052 = -0.6931 \\left( \\frac{t}{2} \\right) \\)\\n\\( \\frac{t}{2} = \\frac{4.6052}{0.6931} \\)\\n\\( t = 2 \\times 6.6439 = 13.29 \\text{ minutes} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for time.",
+            "options": [
+                "A) 10 minutes",
+                "B) 12 minutes",
+                "C) 13.3 minutes",
+                "D) 15 minutes"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Half-Life",
+                    "Time Calculation",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        
+        {
+            "id": "NC.NRE.2.3.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 180,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 45,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 15 years. How many years will it take for a sample to reduce to 25% of its original amount?",
+            "solution": "To reduce to 25% of the original amount, the sample must go through \\( n \\) half-lives such that \\( (1/2)^n = 0.25 \\).\\nSolving for \\( n \\):\\n\\( (1/2)^n = 0.25 \\)\\n\\( 0.5^n = 0.25 \\)\\nSince \\( 0.5^2 = 0.25 \\), \\( n = 2 \\) half-lives.\\nTotal time \\( t = n \\times \\text{half-life} = 2 \\times 15 \\text{ years} = 30 \\text{ years} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine how many half-lives are needed to reduce the sample to 25%.",
+            "answer": 30,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Radioactive Decay",
+                    "Time Calculation"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 200,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 50,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a decay constant of 0.0693 day⁻¹. What is its half-life in days?",
+            "solution": "The half-life \\( t_{1/2} \\) is given by \\( t_{1/2} = \\frac{\\ln 2}{λ} \\).\\n\\( t_{1/2} = \\frac{0.6931}{0.0693} = 10 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( t_{1/2} = \\frac{\\ln 2}{λ} \\).",
+            "answer": 10,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 220,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 55,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 25 days. How long (in days) will it take for the isotope to decay to 12.5% of its original amount?",
+            "solution": "To decay to 12.5%, the sample must go through \\( n \\) half-lives such that \\( (1/2)^n = 0.125 \\).\\n\\( (1/2)^3 = 0.125 \\), so \\( n = 3 \\).\\nTotal time \\( t = n \\times t_{1/2} = 3 \\times 25 = 75 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives required and multiply by the half-life.",
+            "answer": 75,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Fraction at Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Exponential Decay",
+                    "Time Calculation"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 240,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 60,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "The decay constant of a radioactive isotope is 0.0231 day⁻¹. What is its mean life in days?",
+            "solution": "Mean life \\( τ = \\frac{1}{λ} = \\frac{1}{0.0231} \\approx 43.29 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Mean life is the reciprocal of the decay constant.",
+            "answer": 43.29,
+            "range":0.1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mean Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Mean Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 260,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 65,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive sample has an initial activity of 800 Bq. After 30 hours, its activity has decreased to 100 Bq. What is the half-life of the sample in hours?",
+            "solution": "Activity decreased from 800 Bq to 100 Bq, which is a factor of \\( \\frac{100}{800} = \\frac{1}{8} \\).\\nThis corresponds to \\( n \\) half-lives where \\( (1/2)^n = 1/8 \\), so \\( n = 3 \\).\\nHalf-life \\( t_{1/2} = \\frac{\\text{Total time}}{n} = \\frac{30}{3} = 10 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives and divide the total time by that number.",
+            "answer": 10,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 280,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 70,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 20 years. What percentage of the original sample remains after 60 years?",
+            "solution": "Number of half-lives \\( n = \\frac{60}{20} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = \\frac{1}{8} \\).\\nPercentage remaining \\( = \\frac{1}{8} \\times 100\\% = 12.5\\% \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and compute the remaining percentage.",
+            "answer": 12.5,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Percentage Remaining after Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Percentage Remaining",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 300,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 75,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A sample of a radioactive isotope decreases to 1/16 of its original activity in 12 days. What is the half-life of the isotope in days?",
+            "solution": "Since \\( (1/2)^n = \\frac{1}{16} \\), \\( n = 4 \\) half-lives.\\nHalf-life \\( t_{1/2} = \\frac{\\text{Total time}}{n} = \\frac{12}{4} = 3 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Find the number of half-lives and divide the total time by that number.",
+            "answer": 3,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Activity",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 320,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 80,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the half-life of a radioactive isotope is 10 hours, what fraction of the original nuclei remains after 30 hours?",
+            "solution": "Number of half-lives \\( n = \\frac{30}{10} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = \\frac{1}{8} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and raise (1/2) to that power.",
+            "answer": 0.125,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Fraction Remaining after Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Fraction Remaining",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 340,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 85,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "After 24 days, a radioactive sample's activity has decreased to one-eighth of its original value. What is the half-life of the sample in days?",
+            "solution": "Activity decreases to \\( (1/2)^n = \\frac{1}{8} \\) ⇒ \\( n = 3 \\) half-lives.\\nHalf-life \\( t_{1/2} = \\frac{t}{n} = \\frac{24}{3} = 8 \\text{ days} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives and solve for half-life.",
+            "answer": 8,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 360,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 90,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 5 days. What is the decay constant λ in day⁻¹?",
+            "solution": "Decay constant \\( λ = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.6931}{5} = 0.1386 \\text{ day}^{-1} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation between decay constant and half-life.",
+            "answer": 0.1386,
+            "range":0.01,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 380,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 95,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the decay constant of a radioactive isotope is 0.0231 min⁻¹, what is its half-life in minutes?",
+            "solution": "Half-life \\( t_{1/2} = \\frac{\\ln 2}{λ} = \\frac{0.6931}{0.0231} \\approx 30 \\text{ minutes} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the formula \\( t_{1/2} = \\frac{\\ln 2}{λ} \\).",
+            "answer": 30,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 400,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 100,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 15 years. How long (in years) will it take for a sample to decay to 20% of its original amount?",
+            "solution": "Let \\( N/N_0 = 0.2 \\).\\nUse \\( N/N_0 = (1/2)^{t/t_{1/2}} \\).\\n\\( 0.2 = (1/2)^{t/15} \\)\\nTake logarithms:\\n\\( \\ln 0.2 = \\left( \\frac{t}{15} \\right) \\ln 0.5 \\)\\n\\( \\frac{t}{15} = \\frac{\\ln 0.2}{\\ln 0.5} \\)\\n\\( \\frac{t}{15} = \\frac{-1.6094}{-0.6931} = 2.3219 \\)\\n\\( t = 15 \\times 2.3219 \\approx 34.83 \\text{ years} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for time in the decay equation.",
+            "answer": 34.83,
+            "range":0.2,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Exponential Decay",
+                    "Half-Life",
+                    "Time Calculation"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 420,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 105,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive material has a half-life of 5 years. What fraction of the original material remains after 15 years?",
+            "solution": "Number of half-lives \\( n = \\frac{15}{5} = 3 \\).\\nFraction remaining \\( = (1/2)^3 = \\frac{1}{8} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Divide the total time by the half-life and compute the fraction remaining.",
+            "answer": 0.125,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Fraction Remaining after Multiple Half-Lives",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Half-Life",
+                    "Fraction Remaining",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 440,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 110,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope decays to 1% of its original activity after 230 minutes. What is its half-life in minutes?",
+            "solution": "Using \\( N/N_0 = (1/2)^{t/t_{1/2}} \\).\\n\\( 0.01 = (1/2)^{230/t_{1/2}} \\)\\nTake logarithms:\\n\\( \\ln 0.01 = \\left( \\frac{230}{t_{1/2}} \\right) \\ln 0.5 \\)\\n\\( -4.6052 = -0.6931 \\left( \\frac{230}{t_{1/2}} \\right) \\)\\n\\( \\frac{230}{t_{1/2}} = \\frac{4.6052}{0.6931} = 6.6439 \\)\\n\\( t_{1/2} = \\frac{230}{6.6439} \\approx 34.61 \\text{ minutes} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for the half-life.",
+            "answer": 34.61,
+            "range":0.1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Half-Life",
+                    "Exponential Decay",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 460,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 115,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 2 minutes. After how much time (in minutes) will only 1% of the original nuclei remain?",
+            "solution": "Using \\( N/N_0 = (1/2)^{t/t_{1/2}} \\).\\n\\( 0.01 = (1/2)^{t/2} \\)\\nTake logarithms:\\n\\( \\ln 0.01 = \\left( \\frac{t}{2} \\right) \\ln 0.5 \\)\\n\\( -4.6052 = -0.6931 \\left( \\frac{t}{2} \\right) \\)\\n\\( \\frac{t}{2} = \\frac{4.6052}{0.6931} = 6.6439 \\)\\n\\( t = 2 \\times 6.6439 \\approx 13.29 \\text{ minutes} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use logarithms to solve for time.",
+            "answer": 13.29,
+            "range":0.1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Calculations Involving Exponential Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Half-Life",
+                    "Time Calculation",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 480,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 120,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope decays to 25% of its original activity in 6 hours. What is its half-life in hours?",
+            "solution": "Since \\( (1/2)^n = 0.25 \\), \\( n = 2 \\) half-lives.\\nHalf-life \\( t_{1/2} = \\frac{t}{n} = \\frac{6}{2} = 3 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Determine the number of half-lives and divide the total time by that number.",
+            "answer": 3,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Half-Life Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Activity",
+                    "Half-Life",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 500,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 125,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a mean life of 100 hours. What is its half-life in hours?",
+            "solution": "Half-life \\( t_{1/2} = τ \\ln 2 = 100 \\times 0.6931 = 69.31 \\text{ hours} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( t_{1/2} = τ \\ln 2 \\).",
+            "answer": 69.31,
+            "range":0.1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mean Life and Half-Life Relationship",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Mean Life",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 520,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 130,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An isotope has a half-life of 30 minutes. How much of a 160 mg sample remains after 2 hours (in mg)?",
+            "solution": "Total time \\( t = 2 \\text{ hours} = 120 \\text{ minutes} \\).\\nNumber of half-lives \\( n = \\frac{120}{30} = 4 \\).\\nFraction remaining \\( = (1/2)^4 = \\frac{1}{16} \\).\\nAmount remaining \\( = 160 \\text{ mg} \\times \\frac{1}{16} = 10 \\text{ mg} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and multiply the initial mass by the remaining fraction.",
+            "answer": 10,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Calculations Involving Mass and Activity",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Mass Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 540,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 135,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the half-life of a substance is 2 years, what is the decay constant λ in year⁻¹?",
+            "solution": "Decay constant \\( λ = \\frac{\\ln 2}{t_{1/2}} = \\frac{0.6931}{2} = 0.3466 \\text{ year}^{-1} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation \\( λ = \\frac{\\ln 2}{t_{1/2}} \\).",
+            "answer": 0.3466,
+            "range":0.01,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Decay Constant Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Decay Constant",
+                    "Half-Life",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 560,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 140,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A sample contains 1 gram of a radioactive isotope with a half-life of 12 hours. How much of the isotope remains after 2 days (in grams)?",
+            "solution": "Total time \\( t = 2 \\text{ days} = 48 \\text{ hours} \\).\\nNumber of half-lives \\( n = \\frac{48}{12} = 4 \\).\\nFraction remaining \\( = (1/2)^4 = \\frac{1}{16} \\).\\nAmount remaining \\( = 1 \\text{ g} \\times \\frac{1}{16} = 0.0625 \\text{ g} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and multiply the initial mass by the remaining fraction.",
+            "answer": 0.0625,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Calculations Involving Mass and Activity",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Half-Life",
+                    "Mass Remaining",
+                    "Radioactive Decay"
+                ]
+            }
+        }
+
+    ]
+}

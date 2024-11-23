@@ -1,0 +1,2637 @@
+{
+    "questions": [
+        {
+            "id": "TF.NRE.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclear reactions release the same amount of energy as chemical reactions.",
+            "solution": "This statement is false. Nuclear reactions release significantly more energy than chemical reactions due to the involvement of the nucleus and mass-energy equivalence.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy scales of nuclear vs. chemical processes.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Energy Released Compared to Chemical Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Energy",
+                    "Chemical Reactions",
+                    "Energy Comparison"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "External parameters like temperature, pressure, and humidity significantly affect nuclear reactions.",
+            "solution": "This statement is false. Nuclear reactions are largely unaffected by external conditions such as temperature, pressure, and humidity because they involve changes in the nucleus, which are not influenced by such factors.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the conditions required for nuclear reactions compared to chemical reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Effect of External Parameters (Temperature, Pressure, Humidity)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Reactions",
+                    "External Factors",
+                    "Reaction Conditions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.1.1.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclear reactions involve changes in the nucleus, leading to the transformation of elements.",
+            "solution": "This statement is true. Nuclear reactions result in changes in the nucleus, often transforming one element into another by altering the number of protons and neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what happens to the nucleus during a nuclear reaction.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Definition and Significance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Nuclear Transformations",
+                    "Atomic Nucleus",
+                    "Element Transmutation"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.1.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclear reactions can be used for medical applications such as radiation therapy.",
+            "solution": "This statement is true. Nuclear reactions are utilized in medical applications like radiation therapy to treat cancer by targeting and destroying malignant cells.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how radiation is used in medicine.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Medical Applications (Radiation Therapy)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Medical Applications",
+                    "Radiation Therapy",
+                    "Nuclear Medicine"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.1.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The energy released in nuclear reactions is due to the rearrangement of electrons.",
+            "solution": "This statement is false. The energy released in nuclear reactions comes from changes in the nucleus, not from electron rearrangement, which is characteristic of chemical reactions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which part of the atom is involved in nuclear reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Definition and Significance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Energy",
+                    "Electron Rearrangement",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.1.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The stability of a nucleus determines its likelihood to undergo a nuclear reaction.",
+            "solution": "This statement is true. A nucleus's stability, influenced by factors like the neutron-to-proton ratio, affects its propensity to participate in nuclear reactions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what makes a nucleus more reactive.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Stability of the Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Stability",
+                    "Reactivity",
+                    "Nuclear Properties"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclear reactions can be precisely predicted for a single nucleus.",
+            "solution": "This statement is false. Due to the probabilistic nature of quantum mechanics, it's impossible to predict exactly when a single nucleus will undergo a reaction.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the predictability of quantum events.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Quantum Mechanics",
+                    "Probability",
+                    "Nuclear Events"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.3.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The total charge is conserved in a nuclear reaction.",
+            "solution": "This statement is true. Charge conservation is a fundamental law in nuclear reactions; the total charge before and after the reaction remains the same.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider fundamental conservation laws in physics.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Charge Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Charge Conservation",
+                    "Conservation Laws",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.3.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Mass-energy is conserved in nuclear reactions according to E = mc².",
+            "solution": "This statement is true. Mass and energy are interchangeable in nuclear reactions, and their total amount is conserved, as described by Einstein's equation \\( E = mc^2 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the relationship between mass and energy in nuclear physics.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mass-Energy Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Mass-Energy Equivalence",
+                    "Conservation Laws",
+                    "Einstein's Equation"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.3.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Momentum is not conserved in nuclear reactions due to the release of energy.",
+            "solution": "This statement is false. Momentum is conserved in nuclear reactions. Even though energy is released, the momentum before and after the reaction remains constant when considering all products.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the conservation laws applicable to nuclear reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Momentum Conservation",
+                    "Conservation Laws",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.4.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The Q value of a nuclear reaction represents the energy absorbed during the reaction.",
+            "solution": "This statement is false. The Q value represents the net energy change in a nuclear reaction, which can be either released (positive Q value) or absorbed (negative Q value).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what the Q value signifies in nuclear reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Definition and Significance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Q Value",
+                    "Energy Changes",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.5.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Exoergic reactions absorb energy.",
+            "solution": "This statement is false. Exoergic reactions release energy; they have a positive Q value indicating that energy is emitted during the reaction.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the definitions of exoergic and endoergic reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Exoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Exoergic Reactions",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.2.5.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Endoergic reactions require energy input to occur.",
+            "solution": "This statement is true. Endoergic reactions have a negative Q value, meaning they absorb energy and require an input of energy to proceed.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy dynamics of endoergic reactions.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Endoergic Reactions",
+                    "Energy Absorption",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.3.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The tunneling effect explains the finite rate of alpha decay.",
+            "solution": "This statement is true. The quantum tunneling effect allows alpha particles to escape the nucleus through a potential barrier, explaining the observed rates of alpha decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider quantum mechanical explanations for alpha decay.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Tunneling Effect (Conceptual)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Quantum Tunneling",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.3.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "In beta decay, the neutron-to-proton ratio is adjusted towards stability.",
+            "solution": "This statement is true. Beta decay processes (beta-minus, beta-plus, electron capture) help the nucleus achieve a more stable neutron-to-proton ratio.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the purpose of beta decay in nuclear stability.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Effect on Stability of the Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Nuclear Stability",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.3.3.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Gamma decay changes the nucleon number of a nucleus.",
+            "solution": "This statement is false. Gamma decay involves the emission of energy from an excited nucleus without changing the number of protons or neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider whether gamma decay alters the composition of the nucleus.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Effect on Stability of the Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Gamma Decay",
+                    "Nucleon Number",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.4.3.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Fusion reactions release energy by combining light nuclei into heavier ones.",
+            "solution": "This statement is true. Nuclear fusion involves combining light nuclei to form a heavier nucleus, releasing energy due to increased binding energy per nucleon.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the process occurring in stars like the sun.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fusion",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.4.2.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Fission reactions occur in heavy nuclei due to their instability.",
+            "solution": "This statement is true. Heavy nuclei like uranium and plutonium are unstable and can undergo fission, splitting into smaller nuclei and releasing energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider why heavy nuclei are prone to splitting.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fission",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Fission",
+                    "Heavy Nuclei",
+                    "Nuclear Instability"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.4.3.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The proton-proton chain and CNO cycle are nuclear reactions that occur inside the sun.",
+            "solution": "This statement is true. The proton-proton chain and the CNO cycle are fusion processes that power stars like the sun, converting hydrogen into helium and releasing energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the processes responsible for the sun's energy.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Reactions Inside the Sun",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Stellar Processes",
+                    "Fusion Reactions",
+                    "Proton-Proton Chain"
+                ]
+            }
+        },
+        {
+            "id": "TF.NRE.4.1.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The binding energy per nucleon curve explains why energy can be released through both fission and fusion.",
+            "solution": "This statement is true. The binding energy per nucleon curve shows that energy can be released by splitting heavy nuclei (fission) or combining light nuclei (fusion) to form nuclei with higher binding energy per nucleon.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how the binding energy per nucleon varies with mass number.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Fission and Fusion",
+                    "Nuclear Energy"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the process called when a heavy nucleus splits into two lighter nuclei?",
+            "solution": "The process is called fission.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the opposite of fusion.",
+            "answer": [
+                "Fission"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fission",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Fission",
+                    "Nuclear Reactions",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Name the process where light nuclei combine to form a heavier nucleus.",
+            "solution": "The process is called fusion.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the process powering the sun.",
+            "answer": [
+                "Fusion"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fusion",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Fusion",
+                    "Nuclear Reactions",
+                    "Stellar Processes"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.3.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Momentum"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "According to which conservation law must the total charge remain constant in a nuclear reaction?",
+            "solution": "The conservation of charge states that the total charge remains constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It deals with the conservation of electric charge.",
+            "answer": [
+                "Charge"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Charge Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Charge Conservation",
+                    "Conservation Laws",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Neutrino"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which particle is emitted along with a positron during beta-plus decay?",
+            "solution": "A neutrino is emitted along with a positron.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a neutral, nearly massless particle.",
+            "answer": [
+                "Neutrino"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Neutrino",
+                    "Particle Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Proton"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What type of particle is emitted during alpha decay?",
+            "solution": "An alpha particle is emitted.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It consists of two protons and two neutrons.",
+            "answer": [
+                "Alpha",
+                "Alpha particle"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Alpha Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Nuclear Particles",
+                    "Radiation"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.4.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Uranium"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Name the heavy element commonly used as fuel in nuclear fission reactors.",
+            "solution": "Uranium is commonly used as nuclear fuel.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Its most common isotope used is Uranium-235.",
+            "answer": [
+                "Uranium"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Examples and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Nuclear Fuel",
+                    "Fission",
+                    "Uranium"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.4.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Energy"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for the net energy change in a nuclear reaction?",
+            "solution": "The net energy change is called the Q value.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's represented by the letter 'Q'.",
+            "answer": [
+                "Q value"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Q Value in Nuclear Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Q Value",
+                    "Energy Change",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.4.3.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Hydrogen"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What element's isotopes are commonly fused in nuclear fusion reactions?",
+            "solution": "Isotopes of hydrogen are commonly fused.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think of deuterium and tritium.",
+            "answer": [
+                "Hydrogen"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fusion",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Fusion Fuel",
+                    "Hydrogen Isotopes",
+                    "Nuclear Fusion"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.6.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Activation"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the minimum kinetic energy required to initiate an endoergic reaction called?",
+            "solution": "It's called the threshold energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the energy needed to overcome the reaction barrier.",
+            "answer": [
+                "Threshold"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Kinetic Energy Requirements for Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Threshold Energy",
+                    "Endoergic Reactions",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Probability"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which branch of physics provides the basis for the probabilistic nature of nuclear reactions?",
+            "solution": "Quantum mechanics provides this basis.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the physics of the very small.",
+            "answer": [
+                "Quantum",
+                "Quantum mechanics"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Quantum Mechanics",
+                    "Probability",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Electron"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the name of the process where a nucleus captures an inner orbital electron?",
+            "solution": "This process is called K-capture or electron capture.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's also known as electron capture.",
+            "answer": [
+                "K-capture",
+                "Electron capture"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Electron Capture",
+                    "Beta Decay",
+                    "Nuclear Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.3.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Spin"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which conservation law involves spin states and parity considerations?",
+            "solution": "The conservation of angular momentum involves spin and parity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It deals with rotational motion quantities.",
+            "answer": [
+                "Angular momentum"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Angular Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Angular Momentum",
+                    "Conservation Laws",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.3.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Energy"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is conserved in nuclear reactions along with mass-energy and charge?",
+            "solution": "Momentum is conserved in nuclear reactions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a vector quantity involving mass and velocity.",
+            "answer": [
+                "Momentum"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Momentum Conservation",
+                    "Conservation Laws",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.2.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Continuous"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What particle's existence explains the continuous energy spectrum in beta decay?",
+            "solution": "The neutrino explains the continuous spectrum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a neutral particle with very little mass.",
+            "answer": [
+                "Neutrino"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Continuous Energy Spectrum and Existence of Neutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Neutrino",
+                    "Beta Decay",
+                    "Particle Physics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.3.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Photon"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which type of radiation is emitted during gamma decay?",
+            "solution": "Gamma rays are emitted during gamma decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a high-energy electromagnetic radiation.",
+            "answer": [
+                "Gamma",
+                "Gamma rays"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Gamma Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Gamma Rays",
+                    "Radiation",
+                    "Nuclear Decay"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.1.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Radiation"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the use of nuclear reactions in industry for material analysis called?",
+            "solution": "It's called neutron activation analysis.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It involves activating nuclei with neutrons.",
+            "answer": [
+                "Activation",
+                "Activation analysis"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Industrial Uses (Material Analysis)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Industrial Applications",
+                    "Material Analysis",
+                    "Nuclear Techniques"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.2.1.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Reactivity"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which ratio in a nucleus influences its stability and reactivity?",
+            "solution": "The neutron-to-proton ratio influences stability.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It compares neutrons to protons.",
+            "answer": [
+                "Neutron-to-proton",
+                "N/Z ratio"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Factors Influencing Reactivity (Neutron-to-Proton Ratio)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Neutron-Proton Ratio",
+                    "Nuclear Stability",
+                    "Reactivity"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.1.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Tunneling"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which quantum mechanical effect allows alpha particles to escape the nucleus?",
+            "solution": "The tunneling effect allows this escape.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a process where particles pass through potential barriers.",
+            "answer": [
+                "Tunneling"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Tunneling Effect (Conceptual)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Quantum Tunneling",
+                    "Alpha Decay",
+                    "Quantum Mechanics"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.3.3.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Electromagnetic"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Gamma rays fall under which spectrum of radiation?",
+            "solution": "They are part of the electromagnetic spectrum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "This spectrum includes radio waves to gamma rays.",
+            "answer": [
+                "Electromagnetic"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Frequency of Radiations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Gamma Rays",
+                    "Electromagnetic Spectrum",
+                    "Radiation"
+                ]
+            }
+        },
+        {
+            "id": "OW.NRE.1.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 4,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "Power"
+                ]
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the primary application of nuclear reactions in energy production called?",
+            "solution": "It's called nuclear power.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It refers to generating electricity from nuclear reactions.",
+            "answer": [
+                "Power",
+                "Nuclear power"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Energy Production (Nuclear Power)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Energy Production",
+                    "Nuclear Power",
+                    "Applications"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements correctly describes why nuclear reactions release more energy than chemical reactions?",
+            "solution": "Nuclear reactions involve changes in the nucleus, affecting the binding energy which is much larger than the energy changes involving electron rearrangements in chemical reactions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy scale of nuclear binding energies compared to chemical bond energies.",
+            "options": [
+                "A) Because nuclear reactions involve electrons moving to higher energy levels.",
+                "B) Because nuclear reactions involve changes in the nucleus, releasing large amounts of binding energy.",
+                "C) Because nuclear reactions occur at higher temperatures, increasing energy output.",
+                "D) Because nuclear reactions are influenced by external factors like pressure and humidity."
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Energy Released Compared to Chemical Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Energy",
+                    "Binding Energy",
+                    "Chemical vs Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.1.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which external parameter has the least effect on the rate of a nuclear reaction?",
+            "solution": "Nuclear reactions are largely unaffected by external conditions like temperature, pressure, or humidity because they involve changes in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which factors influence nuclear reactions versus chemical reactions.",
+            "options": [
+                "A) Temperature",
+                "B) Pressure",
+                "C) Humidity",
+                "D) Neutron-to-proton ratio in the nucleus"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Effect of External Parameters (Temperature, Pressure, Humidity)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "External Parameters",
+                    "Nuclear Reaction Rates",
+                    "Nuclear vs Chemical Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following is a medical application of nuclear reactions?",
+            "solution": "Radiation therapy uses nuclear reactions to target and destroy cancer cells.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how nuclear reactions are used to treat diseases.",
+            "options": [
+                "A) Radiation therapy",
+                "B) Magnetic resonance imaging",
+                "C) Ultrasound imaging",
+                "D) Antibiotic treatment"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Medical Applications (Radiation Therapy)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Medical Applications",
+                    "Radiation Therapy",
+                    "Nuclear Medicine"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.1.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What factor primarily influences a nucleus's likelihood to undergo a nuclear reaction?",
+            "solution": "The neutron-to-proton ratio is a key factor affecting nuclear stability and reactivity.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what affects nuclear stability.",
+            "options": [
+                "A) Electron configuration",
+                "B) Neutron-to-proton ratio",
+                "C) External temperature",
+                "D) Atomic mass number alone"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Factors Influencing Reactivity (Neutron-to-Proton Ratio)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Stability",
+                    "Neutron-Proton Ratio",
+                    "Reactivity"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Why can't we predict exactly when a particular nucleus will undergo radioactive decay?",
+            "solution": "Because nuclear decay is a quantum mechanical process that is inherently probabilistic; we can only predict decay rates statistically over large numbers of nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the role of probability in quantum mechanics.",
+            "options": [
+                "A) Due to external environmental influences",
+                "B) Because nuclear decay is a deterministic process",
+                "C) Because nuclear decay is a probabilistic quantum event",
+                "D) Because of inaccuracies in measurement devices"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Quantum Mechanics",
+                    "Radioactive Decay",
+                    "Probability"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "C"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following quantities is NOT conserved in all nuclear reactions?",
+            "solution": "Mass number (total number of nucleons) is not always conserved in nuclear reactions, especially in reactions where particles like neutrons are absorbed or emitted.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider conservation laws applicable to nuclear reactions.",
+            "options": [
+                "A) Charge",
+                "B) Momentum",
+                "C) Mass number",
+                "D) Energy (including mass-energy equivalence)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Conservation Laws in Nuclear Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Conservation Laws",
+                    "Mass Number",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.4.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "D"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In nuclear reactions, the Q value represents:",
+            "solution": "The Q value represents the net energy released or absorbed during a nuclear reaction.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what the difference in mass before and after the reaction indicates.",
+            "options": [
+                "A) The change in momentum",
+                "B) The net energy change (released or absorbed)",
+                "C) The charge difference between reactants and products",
+                "D) The quantum number associated with the reaction"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Definition and Significance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Q Value",
+                    "Energy Changes",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.5.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "B"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An endoergic nuclear reaction is characterized by:",
+            "solution": "Endoergic reactions absorb energy; they have a negative Q value.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy balance in the reaction.",
+            "options": [
+                "A) A positive Q value and energy release",
+                "B) A negative Q value and energy absorption",
+                "C) No net energy change",
+                "D) Spontaneous occurrence without energy input"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Endoergic Reactions",
+                    "Energy Absorption",
+                    "Q Value"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "C"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In alpha decay, the emitted alpha particle consists of:",
+            "solution": "An alpha particle is a helium nucleus, consisting of 2 protons and 2 neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the composition of an alpha particle.",
+            "options": [
+                "A) Two protons and two neutrons",
+                "B) One proton and one neutron",
+                "C) Two electrons",
+                "D) One electron and one positron"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Alpha Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Alpha Particles",
+                    "Nuclear Radiation"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "B"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which quantum mechanical phenomenon explains the emission of alpha particles from a nucleus?",
+            "solution": "The tunneling effect allows alpha particles to overcome the nuclear potential barrier and escape the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how particles can cross barriers they classically shouldn't.",
+            "options": [
+                "A) Tunneling effect",
+                "B) Photoelectric effect",
+                "C) Compton scattering",
+                "D) Uncertainty principle"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Tunneling Effect (Conceptual)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Quantum Tunneling",
+                    "Alpha Decay",
+                    "Quantum Mechanics"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "D"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "During beta-minus (β⁻) decay, a neutron in the nucleus transforms into:",
+            "solution": "In beta-minus decay, a neutron converts into a proton, emitting an electron and an antineutrino.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about charge conservation in the decay process.",
+            "options": [
+                "A) A proton, emitting an electron and an antineutrino",
+                "B) An electron, emitting a proton and a neutrino",
+                "C) A neutron, emitting a gamma photon",
+                "D) A proton, emitting a positron and a neutrino"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta-minus (β⁻) Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Neutron to Proton",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "A"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which type of nuclear decay involves the capture of an inner orbital electron by the nucleus?",
+            "solution": "Electron capture (K-capture) is the process where the nucleus captures an inner orbital electron.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's also known as K-capture.",
+            "options": [
+                "A) Beta-minus decay",
+                "B) Beta-plus decay",
+                "C) Electron capture",
+                "D) Gamma decay"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Electron Capture (K-capture)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Electron Capture",
+                    "Beta Decay",
+                    "Nuclear Processes"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.3.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "B"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Gamma decay involves the emission of:",
+            "solution": "Gamma decay involves the emission of high-energy photons (gamma rays) from an excited nucleus transitioning to a lower energy state.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the type of radiation that does not change the number of protons or neutrons.",
+            "options": [
+                "A) High-energy photons",
+                "B) Electrons",
+                "C) Neutrons",
+                "D) Alpha particles"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Gamma Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Gamma Rays",
+                    "Radiation",
+                    "Nuclear Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "C"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The binding energy per nucleon curve explains that energy can be released by:",
+            "solution": "Energy can be released by both fission of heavy nuclei and fusion of light nuclei, moving towards nuclei with higher binding energy per nucleon.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider processes that lead to nuclei with higher binding energy per nucleon.",
+            "options": [
+                "A) Fission of heavy nuclei only",
+                "B) Fusion of light nuclei only",
+                "C) Both fission and fusion processes",
+                "D) Neither fission nor fusion processes"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Fission",
+                    "Fusion"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 44,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "D"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a nuclear reactor, a controlled chain reaction is maintained using which material as a neutron moderator?",
+            "solution": "Materials like graphite or heavy water are used as neutron moderators to slow down neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider materials that slow down neutrons without absorbing them.",
+            "options": [
+                "A) Graphite",
+                "B) Uranium-235",
+                "C) Control rods made of cadmium",
+                "D) Liquid sodium"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Controlled and Uncontrolled Chain Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Reactors",
+                    "Neutron Moderators",
+                    "Chain Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "B"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which condition is essential for nuclear fusion to occur?",
+            "solution": "Extremely high temperatures and pressures are required to overcome the electrostatic repulsion between nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about what is needed to bring positively charged nuclei close enough to fuse.",
+            "options": [
+                "A) High temperature and pressure",
+                "B) Low temperature and high pressure",
+                "C) Low temperature and low pressure",
+                "D) Presence of a catalyst"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Requirements and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "High Temperature",
+                    "High Pressure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "D"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which fusion process primarily powers the sun?",
+            "solution": "The proton-proton chain reaction is the primary fusion process in the sun.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a series of reactions converting hydrogen to helium.",
+            "options": [
+                "A) Proton-proton chain",
+                "B) CNO cycle",
+                "C) Triple alpha process",
+                "D) Uranium fusion"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Reactions Inside the Sun",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Stellar Fusion",
+                    "Proton-Proton Chain",
+                    "Solar Energy"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "A"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which conservation law in nuclear reactions accounts for the spin states of particles?",
+            "solution": "Angular momentum conservation ensures that the total spin before and after the reaction remains constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's associated with rotational motion and spin.",
+            "options": [
+                "A) Charge conservation",
+                "B) Linear momentum conservation",
+                "C) Angular momentum conservation",
+                "D) Baryon number conservation"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Angular Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Angular Momentum",
+                    "Conservation Laws",
+                    "Spin States"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.6.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "B"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What must be supplied for an endoergic nuclear reaction to occur?",
+            "solution": "An endoergic reaction requires kinetic energy input equal to or greater than its threshold energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy balance in reactions that absorb energy.",
+            "options": [
+                "A) Kinetic energy exceeding the threshold energy",
+                "B) A catalyst to lower activation energy",
+                "C) Low temperatures to stabilize reactants",
+                "D) High neutron flux density"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Kinetic Energy Requirements for Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Endoergic Reactions",
+                    "Threshold Energy",
+                    "Energy Requirements"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": [
+                    "D"
+                ]
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The continuous energy spectrum observed in beta decay led to the postulation of which particle?",
+            "solution": "The neutrino was postulated to account for the missing energy and momentum, explaining the continuous spectrum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a nearly massless, neutral particle.",
+            "options": [
+                "A) Neutrino",
+                "B) Proton",
+                "C) Photon",
+                "D) Positron"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Continuous Energy Spectrum and Existence of Neutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Neutrino",
+                    "Particle Physics"
+                ]
+            }
+        }
+    ]
+}

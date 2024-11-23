@@ -1,0 +1,2206 @@
+{
+    "questions": [
+        {
+            "id": "SO.NST.2.5.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Given that the radius of a nucleus is approximately \\( R = R_0 A^{1/3} \\), where \\( R_0 = 1.2 \\times 10^{-15} \\) m, what is the approximate radius of a gold nucleus (\\( ^{197}_{79}Au \\))?",
+            "solution": "Using \\( R = R_0 A^{1/3} \\):\\n\\( R = 1.2 \\times 10^{-15} \\times 197^{1/3} \\)\\n\\( R \\approx 1.2 \\times 10^{-15} \\times 5.85 \\)\\n\\( R \\approx 7.02 \\times 10^{-15} \\) m",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate \\( A^{1/3} \\) and multiply by \\( R_0 \\).",
+            "options": [
+                "A) \\( 4.5 \\times 10^{-15} \\) m",
+                "B) \\( 7.0 \\times 10^{-15} \\) m",
+                "C) \\( 1.2 \\times 10^{-14} \\) m",
+                "D) \\( 9.0 \\times 10^{-15} \\) m"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Nuclear Size Estimation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Radius",
+                    "Calculations",
+                    "Mass Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.3.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Calculate the binding energy per nucleon for helium-4 nucleus, given that the mass of a proton is 1.007825 u, the mass of a neutron is 1.008665 u, and the mass of helium-4 nucleus is 4.002603 u. (1 u = 931.5 MeV/c²)",
+            "solution": "Mass defect \\( \\Delta m = [2(1.007825) + 2(1.008665)] - 4.002603 = 0.030377 \\) u\\nBinding energy \\( E = \\Delta m \\times 931.5 = 0.030377 \\times 931.5 = 28.3 \\) MeV\\nBinding energy per nucleon \\( = \\frac{28.3}{4} = 7.075 \\) MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate mass defect and then binding energy.",
+            "options": [
+                "A) 6.5 MeV",
+                "B) 7.1 MeV",
+                "C) 28.3 MeV",
+                "D) 14.1 MeV"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Binding Energy Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Calculations",
+                    "Mass Defect"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements best describes the significance of Einstein's mass-energy equivalence in nuclear binding energy?",
+            "solution": "Einstein's mass-energy equivalence explains that the mass defect in a nucleus corresponds to its binding energy, indicating mass can be converted to energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Relate mass defect to energy using \\( E=mc^2 \\).",
+            "options": [
+                "A) Mass and energy are unrelated in nuclear processes.",
+                "B) Mass defect is negligible and doesn't affect energy calculations.",
+                "C) Mass defect corresponds to binding energy via \\( E=mc^2 \\).",
+                "D) Binding energy increases the mass of the nucleus.",
+                "E) Mass defect can be ignored in large nuclei."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Einstein's Mass-Energy Equivalence",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Mass-Energy Equivalence",
+                    "Binding Energy",
+                    "Mass Defect"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.4.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 58,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In the binding energy per nucleon vs. mass number graph, what is the significance of the peak around iron (Fe) nuclei?",
+            "solution": "The peak indicates that iron nuclei have the highest binding energy per nucleon, making them the most stable nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what a higher binding energy per nucleon implies about stability.",
+            "options": [
+                "A) Iron nuclei are highly unstable.",
+                "B) Iron nuclei can easily undergo fission.",
+                "C) Iron nuclei have the lowest binding energy per nucleon.",
+                "D) Iron nuclei are the most stable due to highest binding energy per nucleon."
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy per Nucleon",
+                "concept": "Relation with Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Stability",
+                    "Iron Nuclei"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.5.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 52,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following correctly explains why the density of nuclear matter is approximately the same for all nuclei?",
+            "solution": "Because the volume of a nucleus is proportional to its mass number \\( A \\) (since \\( V \\propto R^3 \\propto A \\)) and mass is also proportional to \\( A \\), the density (mass/volume) remains roughly constant.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the proportionality of nuclear volume and mass with \\( A \\).",
+            "options": [
+                "A) Nuclear forces adjust density to be constant.",
+                "B) Both mass and volume scale linearly with \\( A \\), keeping density constant.",
+                "C) Heavier nuclei compress more, increasing density.",
+                "D) Lighter nuclei expand, decreasing their density."
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Density of Nuclear Matter",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Density",
+                    "Mass Number",
+                    "Proportionality"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.6.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 54,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which property of the strong nuclear force explains why it does not affect electrons orbiting the nucleus?",
+            "solution": "The strong nuclear force has a very short range, effective only at nuclear distances (~1 fm), so it does not affect electrons which are farther away.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the range of the strong nuclear force compared to atomic distances.",
+            "options": [
+                "A) It only affects particles with mass.",
+                "B) It is charge-dependent and doesn't affect electrons.",
+                "C) Its short range limits its effect to within the nucleus.",
+                "D) It is repulsive to electrons."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Properties of Strong Nuclear Force",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Range of Forces",
+                    "Nuclear Forces"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.7.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 56,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which experiment provided the first direct evidence for the existence of the neutrino?",
+            "solution": "The detection of neutrinos from the inverse beta decay process in the Cowan–Reines neutrino experiment provided the first direct evidence.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider experiments involving beta decay and conservation laws.",
+            "options": [
+                "A) Rutherford's gold foil experiment",
+                "B) Chadwick's neutron discovery",
+                "C) Cowan–Reines neutrino experiment",
+                "D) Millikan's oil-drop experiment"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Neutrino and Antineutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Neutrinos",
+                    "Experimental Physics",
+                    "Particle Detection"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.4.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 53,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Two nuclei have the same neutron number but different proton numbers. They are called:",
+            "solution": "Nuclei with the same neutron number but different proton numbers are called isotones.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They have the same number of neutrons.",
+            "options": [
+                "A) Isotopes",
+                "B) Isobars",
+                "C) Isotones",
+                "D) Isomers"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isotones",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Isotones",
+                    "Neutrons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 57,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "During beta-minus decay, a neutron transforms into a proton and emits an electron and an antineutrino. Which conservation law necessitated the introduction of the antineutrino in this process?",
+            "solution": "The conservation of angular momentum and energy required the introduction of the antineutrino to account for the missing energy and spin.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider conservation laws violated without the antineutrino.",
+            "options": [
+                "A) Conservation of mass",
+                "B) Conservation of charge",
+                "C) Conservation of energy and angular momentum",
+                "D) Conservation of baryon number"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Beta Minus Particles",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Conservation Laws",
+                    "Antineutrinos"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.5.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 59,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Estimate the density of nuclear matter using the nuclear radius formula \\( R = R_0 A^{1/3} \\) and given that \\( R_0 = 1.2 \\times 10^{-15} \\) m. Assume nucleon mass \\( m_N = 1.67 \\times 10^{-27} \\) kg.",
+            "solution": "Volume \\( V = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi (1.2 \\times 10^{-15} A^{1/3})^3 = \\frac{4}{3}\\pi (1.2 \\times 10^{-15})^3 A \\)\\nMass \\( m = A m_N \\)\\nDensity \\( \\rho = \\frac{m}{V} = \\frac{A m_N}{\\frac{4}{3}\\pi (1.2 \\times 10^{-15})^3 A} \\)\\nSimplify \\( \\rho = \\frac{m_N}{\\frac{4}{3}\\pi (1.2 \\times 10^{-15})^3} \\)\\nCalculate \\( \\rho \\approx 2.3 \\times 10^{17} \\) kg/m³",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate volume per nucleon and then find density.",
+            "options": [
+                "A) \\( 1.0 \\times 10^{14} \\) kg/m³",
+                "B) \\( 2.3 \\times 10^{17} \\) kg/m³",
+                "C) \\( 5.0 \\times 10^{12} \\) kg/m³",
+                "D) \\( 9.1 \\times 10^{18} \\) kg/m³"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Density of Nuclear Matter",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Density",
+                    "Calculations",
+                    "Physics Constants"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.6.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following properties is NOT characteristic of the strong nuclear force?",
+            "solution": "The strong nuclear force is independent of electric charge, short-ranged, and attractive between nucleons, but it does not act significantly at distances greater than a few femtometers.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about range and dependence on particle properties.",
+            "options": [
+                "A) It is short-ranged.",
+                "B) It acts between all nucleons.",
+                "C) It depends on electric charge.",
+                "D) It is attractive in nature."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Independent of Electric Charge",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Force Properties",
+                    "Electric Charge Independence"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.3.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "For a nucleus undergoing alpha decay, which of the following quantities is conserved?",
+            "solution": "In alpha decay, both mass number (A) and atomic number (Z) are conserved in the sense that the sum of A and Z before and after decay remains the same; however, individually, they decrease. Energy and momentum are conserved.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider fundamental conservation laws.",
+            "options": [
+                "A) Only mass number (A)",
+                "B) Only atomic number (Z)",
+                "C) Both mass number and atomic number",
+                "D) Energy and momentum"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Alpha Particle Emission for Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Conservation Laws",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 54,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The semi-empirical mass formula (Weizsäcker formula) accounts for several factors affecting nuclear binding energy. Which term accounts for the pairing of nucleons?",
+            "solution": "The pairing term accounts for the tendency of nucleons to pair up, contributing to the overall binding energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider terms that depend on whether the number of protons and neutrons are even or odd.",
+            "options": [
+                "A) Volume term",
+                "B) Surface term",
+                "C) Coulomb term",
+                "D) Pairing term"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Binding Energy Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Semi-Empirical Mass Formula",
+                    "Nuclear Models"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.1.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 58,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "As nuclei become larger, why does the strong nuclear force become less effective at holding the nucleus together?",
+            "solution": "Because the strong nuclear force is short-ranged, and in larger nuclei, nucleons at opposite ends are too far apart for the strong force to act effectively, while electrostatic repulsion between protons acts over longer distances.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the range of forces and the size of the nucleus.",
+            "options": [
+                "A) The strong force weakens with increasing nucleon number.",
+                "B) Neutrons lose their binding ability in large nuclei.",
+                "C) The short range of the strong force limits its effectiveness in large nuclei.",
+                "D) Protons neutralize the strong force in large nuclei."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Weakening of Nuclear Force at Large Distances",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Nuclear Instability",
+                    "Range of Forces"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.6.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 57,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements correctly describes the dependence of the strong nuclear force on the type of nucleons?",
+            "solution": "The strong nuclear force acts equally between all nucleons (protons and neutrons), regardless of their electric charge.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Is the force charge-dependent or charge-independent?",
+            "options": [
+                "A) It only acts between protons.",
+                "B) It only acts between neutrons.",
+                "C) It acts between all nucleons equally.",
+                "D) It is stronger between protons than neutrons."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Properties of Strong Nuclear Force",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Nucleon Interaction",
+                    "Charge Independence"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.6.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 56,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the typical range of the strong nuclear force?",
+            "solution": "The strong nuclear force has a range of about 1 to 3 femtometers (fm).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the size of a nucleus.",
+            "options": [
+                "A) 10^-10 meters",
+                "B) 1 to 3 femtometers",
+                "C) Infinite range",
+                "D) 10^-18 meters"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Short Range",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Range of Forces",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 59,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The valley of stability in the chart of nuclides represents nuclei with optimal neutron-to-proton ratios. Nuclei above the valley (neutron-rich) tend to decay via:",
+            "solution": "Neutron-rich nuclei above the valley tend to decay via beta-minus decay to reduce the neutron-to-proton ratio.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how nuclei reduce excess neutrons.",
+            "options": [
+                "A) Alpha decay",
+                "B) Beta-minus decay",
+                "C) Beta-plus decay",
+                "D) Electron capture"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Neutron-Proton Ratio",
+                    "Beta Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.3.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 58,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following decays is a process by which a proton-rich nucleus can increase its neutron-to-proton ratio?",
+            "solution": "Beta-plus decay converts a proton into a neutron, emitting a positron and a neutrino, increasing the neutron-to-proton ratio.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about decay processes that reduce the number of protons.",
+            "options": [
+                "A) Beta-minus decay",
+                "B) Alpha decay",
+                "C) Beta-plus decay",
+                "D) Neutron emission"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Proton to Neutron Conversion for Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Proton-Neutron Conversion"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.5.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 62,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "According to the binding energy per nucleon curve, why do both fusion of light nuclei and fission of heavy nuclei release energy?",
+            "solution": "Because nuclei lighter than iron release energy when fused (increasing binding energy per nucleon), and nuclei heavier than iron release energy when split, moving towards higher binding energy per nucleon.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the position of nuclei relative to iron on the binding energy curve.",
+            "options": [
+                "A) Both processes decrease total mass.",
+                "B) Both processes move nuclei towards higher binding energy per nucleon.",
+                "C) Energy is absorbed in both processes.",
+                "D) Only fusion releases energy, fission absorbs energy."
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy per Nucleon",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Reactions",
+                    "Energy Release"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In the context of nuclear physics, what does the term 'mass defect' refer to?",
+            "solution": "Mass defect refers to the difference between the mass of a completely assembled nucleus and the sum of the masses of its individual protons and neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the missing mass converted to binding energy.",
+            "options": [
+                "A) The mass lost due to radioactive decay.",
+                "B) The mass difference between isotopes.",
+                "C) The difference in mass between a nucleus and its constituent nucleons.",
+                "D) The mass gained when a nucleus captures a neutron."
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Formation of Nucleus and Mass Defect",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Binding Energy",
+                    "Nuclear Mass"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.4.Q21",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 58,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following pairs are isotones?",
+            "solution": "Isotones have the same number of neutrons. For \\( ^{14}_{6}C \\) and \\( ^{15}_{7}N \\), neutrons are 14-6=8 and 15-7=8, so they are isotones.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of neutrons in each nucleus.",
+            "options": [
+                "A) \\( ^{14}_{6}C \\) and \\( ^{14}_{7}N \\)",
+                "B) \\( ^{14}_{6}C \\) and \\( ^{15}_{7}N \\)",
+                "C) \\( ^{16}_{8}O \\) and \\( ^{14}_{6}C \\)",
+                "D) \\( ^{12}_{6}C \\) and \\( ^{14}_{6}C \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isotones",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Isotones",
+                    "Calculations",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.4.Q22",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An isolated neutron is unstable and decays with a half-life of approximately 15 minutes. What is the primary decay process of a free neutron?",
+            "solution": "A free neutron undergoes beta-minus decay, converting into a proton, electron, and antineutrino.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the beta decay of neutrons.",
+            "options": [
+                "A) Alpha decay",
+                "B) Beta-minus decay",
+                "C) Beta-plus decay",
+                "D) Gamma decay"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Neutrons",
+                "concept": "Charge, Mass, and Stability of Isolated Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Neutron Decay",
+                    "Beta Decay",
+                    "Particle Physics"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.3.Q23",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 56,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Protons are stable particles. Which conservation law ensures the stability of protons in isolation?",
+            "solution": "The conservation of baryon number ensures that protons, being the lightest baryons, cannot decay into lighter particles without violating baryon number conservation.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider fundamental conservation laws in particle physics.",
+            "options": [
+                "A) Conservation of charge",
+                "B) Conservation of energy",
+                "C) Conservation of baryon number",
+                "D) Conservation of lepton number"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Protons",
+                "concept": "Charge, Mass, and Stability of Isolated Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Proton Stability",
+                    "Conservation Laws",
+                    "Baryon Number"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.5.Q24",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 59,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "When a positron encounters an electron, they annihilate each other. What is the outcome of this annihilation?",
+            "solution": "They annihilate to produce two gamma-ray photons to conserve energy and momentum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider conservation of energy and momentum in annihilation.",
+            "options": [
+                "A) Production of a neutron",
+                "B) Emission of a neutrino",
+                "C) Emission of two gamma photons",
+                "D) Creation of a proton"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Positrons",
+                "concept": "Charge, Mass, and Stability of Isolated Positrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Annihilation",
+                    "Positrons",
+                    "Gamma Rays"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.6.Q25",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Alpha particles have a charge of +2e. How does their mass compare to that of a proton?",
+            "solution": "An alpha particle has approximately four times the mass of a proton since it consists of two protons and two neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the mass of protons and neutrons in the alpha particle.",
+            "options": [
+                "A) Equal to the mass of a proton",
+                "B) Twice the mass of a proton",
+                "C) Four times the mass of a proton",
+                "D) Half the mass of a proton"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Alpha Particles",
+                "concept": "Charge and Mass Comparison with Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Alpha Particles",
+                    "Mass Comparison",
+                    "Nuclear Composition"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.3.Q26",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 63,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Calculate the energy released when two deuterium nuclei fuse to form helium-4, given the masses: \\( ^{2}H \\) = 2.014102 u, \\( ^{4}He \\) = 4.002603 u. (1 u = 931.5 MeV/c²)",
+            "solution": "Mass of reactants: \\( 2 \\times 2.014102 = 4.028204 \\) u\\nMass defect: \\( 4.028204 - 4.002603 = 0.025601 \\) u\\nEnergy released: \\( 0.025601 \\times 931.5 = 23.85 \\) MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Compute mass defect and convert to energy.",
+            "options": [
+                "A) 2.4 MeV",
+                "B) 4.0 MeV",
+                "C) 23.8 MeV",
+                "D) 28.3 MeV"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Binding Energy Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Fusion Reactions",
+                    "Calculations",
+                    "Mass Defect"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.1.Q27",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 54,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which statement correctly describes the role of the nucleus in chemical reactions?",
+            "solution": "The nucleus remains largely unaffected during chemical reactions; chemical properties are determined by electron configurations.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which part of the atom participates in bonding.",
+            "options": [
+                "A) The nucleus changes its composition during reactions.",
+                "B) Protons in the nucleus determine chemical properties.",
+                "C) Neutrons in the nucleus are involved in chemical bonds.",
+                "D) The nucleus remains unchanged; electrons dictate chemical behavior."
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Core Presence and Chemical Invariance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nucleus",
+                    "Chemical Properties",
+                    "Electron Configuration"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.4.Q28",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 57,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which decay process can occur in a nucleus with an excess of neutrons to achieve stability?",
+            "solution": "Beta-minus decay, where a neutron is converted into a proton, emitting an electron and an antineutrino.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how to reduce the number of neutrons.",
+            "options": [
+                "A) Alpha decay",
+                "B) Beta-minus decay",
+                "C) Beta-plus decay",
+                "D) Positron emission"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Neutron to Proton Conversion for Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.5,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.3.Q29",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 52,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "If an element has an atomic number Z and a mass number A, how many neutrons does it have?",
+            "solution": "The number of neutrons is \\( N = A - Z \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Subtract the number of protons from the mass number.",
+            "options": [
+                "A) N = A + Z",
+                "B) N = Z - A",
+                "C) N = A - Z",
+                "D) N = A × Z"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Symbolic Representation of Nucleus",
+                "concept": "Determining Number of Nucleons, Protons, and Neutrons from Symbols",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Atomic Structure",
+                    "Calculations",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.2.Q30",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Einstein's mass-energy equivalence is crucial in understanding nuclear reactions. Which equation represents this principle?",
+            "solution": "Einstein's mass-energy equivalence is represented by \\( E = mc^2 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the most famous equation relating mass and energy.",
+            "options": [
+                "A) \\( E = mc \\)",
+                "B) \\( E = \\frac{1}{2}mv^2 \\)",
+                "C) \\( E = mc^2 \\)",
+                "D) \\( E = mgh \\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Einstein's Mass-Energy Equivalence",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Mass-Energy Equivalence",
+                    "Nuclear Physics",
+                    "Fundamental Equations"
+                ]
+            }
+        },
+        
+        {
+            "id": "NM.NST.3.3.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 20,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Calculate the binding energy (in MeV) of a deuteron (\\( ^{2}_{1}H \\)), given the mass of a proton is 1.007276 u, the mass of a neutron is 1.008665 u, and the mass of the deuteron is 2.013553 u. Use 1 u = 931.5 MeV/c².",
+            "solution": "First, calculate the mass of the separate nucleons:\\nMass of proton + neutron = 1.007276 u + 1.008665 u = 2.015941 u\\nMass defect \\( \\Delta m = 2.015941 \\) u - 2.013553 u = 0.002388 u\\nBinding energy \\( E = \\Delta m \\times 931.5 \\) MeV/u = 0.002388 u × 931.5 MeV/u ≈ 2.224 MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the mass defect and multiply by 931.5 MeV/u to find the binding energy.",
+            "answer": 2.224,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Binding Energy Calculations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Mass Defect",
+                    "Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.5.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 45,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Using the formula \\( R = R_0 A^{1/3} \\) with \\( R_0 = 1.2 \\) fm, calculate the approximate radius (in femtometers) of an aluminum nucleus with mass number \\( A = 27 \\).",
+            "solution": "Calculate \\( A^{1/3} = 27^{1/3} = 3 \\)\\nThen \\( R = 1.2 \\times 3 = 3.6 \\) fm",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Compute \\( A^{1/3} \\) and multiply by \\( R_0 \\).",
+            "answer": 3.6,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Radius Relation with Mass Number",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Radius",
+                    "Calculations",
+                    "Mass Number"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.3.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An atom has an atomic number \\( Z = 26 \\) and a mass number \\( A = 56 \\). Calculate the number of neutrons in the nucleus.",
+            "solution": "Number of neutrons \\( N = A - Z = 56 - 26 = 30 \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Subtract the atomic number from the mass number.",
+            "answer": 30,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Symbolic Representation of Nucleus",
+                "concept": "Determining Number of Nucleons, Protons, and Neutrons from Symbols",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.2,
+                    "calculation": 0.3,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Atomic Structure",
+                    "Calculations",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "How many nucleons are there in a nucleus of carbon-14 (\\( ^{14}_{6}C \\))?",
+            "solution": "The number of nucleons is equal to the mass number \\( A = 14 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "The mass number represents the total number of nucleons.",
+            "answer": 14,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Definition of Nucleons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nucleons",
+                    "Mass Number",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.3.2.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An alpha particle (\\( ^{4}_{2}He \\)) has a mass of 4.001506 u. Given that the mass of a proton is 1.007276 u and the mass of a neutron is 1.008665 u, calculate the binding energy per nucleon (in MeV) of the alpha particle. Use 1 u = 931.5 MeV/c².",
+            "solution": "Mass of 2 protons and 2 neutrons: \\( 2 \\times 1.007276 + 2 \\times 1.008665 = 4.031882 \\) u\\nMass defect \\( \\Delta m = 4.031882 - 4.001506 = 0.030376 \\) u\\nTotal binding energy \\( E = 0.030376 \\times 931.5 = 28.30 \\) MeV\\nBinding energy per nucleon \\( = 28.30 / 4 = 7.075 \\) MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate mass defect and divide the total binding energy by the number of nucleons.",
+            "answer": 7.075,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Binding Energy per Nucleon",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Calculations",
+                    "Mass Defect"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.2.6.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the strong nuclear force acts effectively up to a distance of approximately \\(10^{-x}\\) meters, what is the value of \\(x\\)?",
+            "solution": "The strong nuclear force is effective up to about 1 to 3 femtometers. Since 1 fm = \\(1 \\times 10^{-15}\\) meters, the value of \\(x\\) is 15.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Remember that 1 femtometer (fm) equals \\(10^{-15}\\) meters.",
+            "answer": 15,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Short Range",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Range of Forces",
+                    "Unit Conversion"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.3.5.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 70,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 20,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A certain fusion reaction releases 17.6 MeV of energy per event. If 5 such reactions occur, calculate the total energy released in MeV.",
+            "solution": "Total energy released = 17.6 MeV/event × 5 events = 88 MeV.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the energy per event by the number of events.",
+            "answer": 88,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.2,
+                    "calculation": 0.6,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Fusion Reactions",
+                    "Energy Calculations",
+                    "Unit Conversion"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.4.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 13,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Two isotopes of hydrogen are deuterium (\\( ^{2}_{1}H \\)) and tritium (\\( ^{3}_{1}H \\)). Calculate the number of neutrons in tritium.",
+            "solution": "Number of neutrons \\( N = A - Z = 3 - 1 = 2 \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Subtract atomic number from mass number.",
+            "answer": 2,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isotopes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Isotopes",
+                    "Neutrons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.3.1.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 48,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Calculate the mass defect (in atomic mass units) for a lithium-7 nucleus (\\( ^{7}_{3}Li \\)) given that the mass of a proton is 1.007825 u, the mass of a neutron is 1.008665 u, and the atomic mass of lithium-7 is 7.016005 u.",
+            "solution": "Mass of 3 protons and 4 neutrons: \\( 3 \\times 1.007825 + 4 \\times 1.008665 = 7.05651 \\) u\\nMass defect \\( \\Delta m = 7.05651 - 7.016005 = 0.040505 \\) u",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Sum the masses of individual nucleons and subtract the atomic mass.",
+            "answer": 0.040505,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Mass Defect",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Calculations",
+                    "Atomic Mass Units"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.4.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 44,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 14,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An isotope has a mass number \\( A = 40 \\) and contains 22 neutrons. Determine its atomic number \\( Z \\).",
+            "solution": "Atomic number \\( Z = A - N = 40 - 22 = 18 \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Subtract the number of neutrons from the mass number.",
+            "answer": 18,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isotopes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.2,
+                    "calculation": 0.3,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Atomic Number",
+                    "Calculations",
+                    "Nuclear Physics"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.4.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 52,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a neutron-to-proton ratio of 1.5. If its atomic number is 20, calculate the number of neutrons in its nucleus.",
+            "solution": "Number of neutrons \\( N = 1.5 \\times Z = 1.5 \\times 20 = 30 \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the atomic number by the neutron-to-proton ratio.",
+            "answer": 30,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Neutron-Proton Ratio",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Neutron-Proton Ratio",
+                    "Calculations",
+                    "Nuclear Instability"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.3.4.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 58,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Helium-4 (\\( ^{4}_{2}He \\)) has a total binding energy of approximately 28 MeV. Calculate its binding energy per nucleon (in MeV).",
+            "solution": "Binding energy per nucleon = Total binding energy / Mass number = 28 MeV / 4 = 7 MeV.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Divide the total binding energy by the number of nucleons.",
+            "answer": 7,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy per Nucleon",
+                "concept": "Relation with Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Calculations",
+                    "Iron Nuclei"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.6.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 46,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the electrostatic force between two protons separated by a distance of 2 femtometers is \\( F \\), and the Coulomb constant \\( k_e = 8.9875 \\times 10^9 \\) N·m²/C², calculate \\( F \\) in newtons. (Elementary charge \\( e = 1.602 \\times 10^{-19} \\) C)",
+            "solution": "Distance \\( r = 2 \\times 10^{-15} \\) m\\n\\( F = \\frac{k_e e^2}{r^2} = \\frac{(8.9875 \\times 10^9)(1.602 \\times 10^{-19})^2}{(2 \\times 10^{-15})^2} \\)\\n\\( F = \\frac{(8.9875 \\times 10^9)(2.5664 \\times 10^{-38})}{4 \\times 10^{-30}} = \\frac{2.3065 \\times 10^{-28}}{4 \\times 10^{-30}} = 5.766 \\times 10^{1} \\) N",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use Coulomb's law to calculate the force.",
+            "answer": 57.66,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Electrostatic Repulsion",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Electrostatic Force",
+                    "Calculations",
+                    "Coulomb's Law"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.4.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 48,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "How many electrons are there in a neutral atom of sulfur-32 (\\( ^{32}_{16}S \\))?",
+            "solution": "In a neutral atom, the number of electrons equals the atomic number \\( Z = 16 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Electrons equal protons in a neutral atom.",
+            "answer": 16,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Core Presence and Chemical Invariance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Electrons",
+                    "Atomic Number",
+                    "Neutral Atoms"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.4.3.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 55,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A nucleus has a neutron-to-proton ratio less than 1 and undergoes beta-plus decay to achieve stability. If its atomic number decreases by 1 during this process, by how many units does its neutron number change?",
+            "solution": "In beta-plus decay, a proton converts into a neutron, so the neutron number increases by 1.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Beta-plus decay increases neutron number by 1.",
+            "answer": 1,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Proton to Neutron Conversion for Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Nuclear Instability",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.3.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 68,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 19,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Using Einstein's mass-energy equivalence (\\( E = mc^2 \\)), calculate the energy equivalent (in MeV) of a mass defect of 0.001 u. (1 u = 931.5 MeV/c²)",
+            "solution": "Energy \\( E = \\Delta m \\times 931.5 \\) MeV/u = \\( 0.001 \\times 931.5 = 0.9315 \\) MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the mass defect by 931.5 MeV/u.",
+            "answer": 0.9315,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Einstein's Mass-Energy Equivalence",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Mass-Energy Equivalence",
+                    "Calculations",
+                    "Binding Energy"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.3.5.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 72,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 20,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In a fission reaction, a nucleus splits and releases 200 MeV of energy per event. How many such events are required to release a total of 1000 MeV of energy?",
+            "solution": "Number of events = Total energy / Energy per event = 1000 MeV / 200 MeV/event = 5.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Divide the total energy by the energy per event.",
+            "answer": 5,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.2,
+                    "calculation": 0.6,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Fission Reactions",
+                    "Energy Calculations",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.2.5.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 53,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Estimate the exponent \\( n \\) in the density of nuclear matter \\( \\rho = 2.31 \\times 10^{n} \\) kg/m³.",
+            "solution": "The density of nuclear matter is approximately \\( 2.31 \\times 10^{17} \\) kg/m³, so \\( n = 17 \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Nuclear densities are on the order of \\( 10^{17} \\) kg/m³.",
+            "answer": 17,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Density of Nuclear Matter",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Nuclear Density",
+                    "Calculations",
+                    "Physics Constants"
+                ]
+            }
+        },
+        {
+            "id": "NM.NST.2.5.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 50,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Given that the volume of a nucleus is directly proportional to its mass number \\( A \\), if a nucleus has twice the mass number of another, by what factor does its volume increase?",
+            "solution": "Since volume \\( V \\propto A \\), if \\( A \\) doubles, volume also doubles.\\nFactor of increase = 2",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the direct proportionality between volume and mass number.",
+            "answer": 2,
+            "range":0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Proportionality of Volume and Mass Number",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Volume",
+                    "Mass Number",
+                    "Proportionality"
+                ]
+            }
+        },
+        {
+            "id": "NU.NS.3.4.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 62,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A nucleus has a binding energy per nucleon of 7.6 MeV and a mass number of 12. Calculate its total binding energy in MeV.",
+            "solution": "Total binding energy = 7.6 MeV/nucleon × 12 nucleons = 91.2 MeV.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the binding energy per nucleon by the mass number.",
+            "answer": 91.2,
+            "range": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy per Nucleon",
+                "concept": "Relation with Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Calculations",
+                    "Nuclear Stability"
+                ]
+            }
+        }
+    ]
+}

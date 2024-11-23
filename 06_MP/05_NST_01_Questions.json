@@ -1,0 +1,2584 @@
+{
+    "questions": [
+        {
+            "id": "TF.NST.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 15,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Electrons are considered fundamental particles because they are not composed of smaller particles.",
+            "solution": "True. Electrons are elementary particles with no known substructure, making them fundamental particles.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the definition of a fundamental particle.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Meaning of Fundamental Particles",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Fundamental Particles",
+                    "Electrons",
+                    "Elementary Particles"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 16,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Electrons can reside inside the nucleus due to their small mass.",
+            "solution": "False. Electrons cannot reside inside the nucleus because their position is uncertain, and they cannot overcome the nuclear forces.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the uncertainty principle and forces inside the nucleus.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Uncertainty in Position and Inability to Reside in Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Electrons",
+                    "Nuclear Forces",
+                    "Uncertainty Principle"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.3.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 17,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Protons have a positive charge equal in magnitude to the electron's negative charge.",
+            "solution": "True. Protons carry a positive charge that is equal in magnitude but opposite in sign to that of electrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Compare the charges of protons and electrons.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Charge, Mass, and Stability of Isolated Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Protons",
+                    "Electric Charge",
+                    "Fundamental Particles"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.4.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Neutrons are unstable when isolated but stable inside the nucleus.",
+            "solution": "True. Isolated neutrons decay into protons over time, but they are stable within the nucleus due to nuclear forces.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the stability of neutrons inside and outside the nucleus.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Charge, Mass, and Stability of Isolated Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Neutrons",
+                    "Stability",
+                    "Nuclear Forces"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.5.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Positrons are the antiparticles of electrons and carry a positive charge.",
+            "solution": "True. Positrons are identical to electrons in mass but have a positive charge.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the properties of antiparticles related to electrons.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Charge, Mass, and Stability of Isolated Positrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Positrons",
+                    "Antiparticles",
+                    "Electric Charge"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.6.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Alpha particles are identical to helium nuclei.",
+            "solution": "True. Alpha particles consist of two protons and two neutrons, just like helium nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the composition of alpha particles.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Formation from Helium Atoms",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Alpha Particles",
+                    "Helium Nuclei",
+                    "Nuclear Composition"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.1.7.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Neutrinos have a significant mass and are easily detectable particles.",
+            "solution": "False. Neutrinos have a very tiny mass and interact weakly with matter, making them difficult to detect.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the properties of neutrinos in terms of mass and interaction.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Basic Properties",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.5,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Neutrinos",
+                    "Particle Detection",
+                    "Mass"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.1.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 18,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The nucleus of an atom is responsible for its chemical properties.",
+            "solution": "False. The chemical properties of an atom are determined by its electron configuration, not the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which part of the atom participates in chemical reactions.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Core Presence and Chemical Invariance",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nucleus",
+                    "Chemical Properties",
+                    "Electron Configuration"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 19,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nucleons refer to both protons and neutrons in the nucleus.",
+            "solution": "True. Nucleons are the collective term for protons and neutrons, the components of the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the particles that make up the nucleus.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Definition of Nucleons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Nucleons",
+                    "Protons",
+                    "Neutrons"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.3.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The mass number of a nucleus represents the total number of protons and electrons.",
+            "solution": "False. The mass number represents the total number of protons and neutrons in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall what particles contribute to the mass number.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Symbolic Representation of Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.4,
+                    "calculation": 0.0,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Mass Number",
+                    "Nuclear Symbols",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.4.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 21,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Isotopes are nuclei of the same element with different numbers of neutrons.",
+            "solution": "True. Isotopes have the same atomic number (protons) but different mass numbers due to varying neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how isotopes differ within the same element.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Isotopes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Isotopes",
+                    "Neutrons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.4.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Isobars are atoms of different elements with the same atomic number but different mass numbers.",
+            "solution": "False. Isobars have the same mass number but different atomic numbers (different elements).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what is constant in isobars.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Isobars",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Isobars",
+                    "Atomic Number",
+                    "Mass Number"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.5.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 24,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The radius of a nucleus is directly proportional to the cube of its mass number.",
+            "solution": "False. The nuclear radius is proportional to the cube root of the mass number, \\( R \\propto A^{1/3} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Recall the formula relating nuclear radius and mass number.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Radius Relation with Mass Number",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Radius",
+                    "Mass Number",
+                    "Proportionality"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.5.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The density of nuclear matter is approximately the same for all nuclei.",
+            "solution": "True. Nuclear density is roughly constant, regardless of the nucleus size.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how nuclear volume and mass scale with mass number.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Density of Nuclear Matter",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Density",
+                    "Nuclear Matter",
+                    "Atomic Nuclei"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.2.6.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 26,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The strong nuclear force is responsible for holding nucleons together and is independent of electric charge.",
+            "solution": "True. The strong nuclear force acts between all nucleons regardless of their charge.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the properties of the force that overcomes proton repulsion.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Independent of Electric Charge",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Nucleon Interaction",
+                    "Electric Charge Independence"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.3.1.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 27,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Binding energy of a nucleus is the energy required to separate it into its individual protons and electrons.",
+            "solution": "False. Binding energy is the energy required to separate a nucleus into its constituent protons and neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which particles are involved in nuclear binding.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "For Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.5,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nucleons",
+                    "Nuclear Forces"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.3.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "The mass of a nucleus is less than the sum of the masses of its individual nucleons.",
+            "solution": "True. This mass difference is called the mass defect and is related to the binding energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider mass-energy equivalence in nuclear formation.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Formation of Nucleus and Mass Defect",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Binding Energy",
+                    "Nuclear Mass"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.3.4.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Higher binding energy per nucleon indicates a more stable nucleus.",
+            "solution": "True. Nuclei with higher binding energy per nucleon are generally more stable.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the energy required to break apart the nucleus.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Relation with Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Stability",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.3.5.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclear fusion involves splitting heavy nuclei into lighter ones.",
+            "solution": "False. Nuclear fusion involves combining light nuclei to form heavier nuclei, releasing energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Distinguish between fusion and fission processes.",
+            "answer": "False",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Nuclear Fission",
+                    "Energy Release"
+                ]
+            }
+        },
+        {
+            "id": "TF.NST.4.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "truefalse",
+            "exerciseName": "True or False",
+            "questionText": "Nuclei with a high neutron-to-proton ratio tend to be unstable and may undergo beta-minus decay.",
+            "solution": "True. Excess neutrons can lead to instability, resulting in beta-minus decay where a neutron converts to a proton.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how nuclei adjust to achieve stability when they have too many neutrons.",
+            "answer": "True",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.5,
+                    "calculation": 0.0,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.2.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 20,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 5,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What term is used to collectively refer to protons and neutrons in the nucleus?",
+            "solution": "Protons and neutrons in the nucleus are collectively called nucleons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They are the particles that make up the nucleus.",
+            "answer": [
+                "Nucleon",
+                "Nucleons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Definition of Nucleons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nucleons",
+                    "Protons",
+                    "Neutrons"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which fundamental particle carries a negative electric charge and orbits the nucleus?",
+            "solution": "Electrons are fundamental particles that carry a negative electric charge and orbit the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a fundamental particle with a negative charge.",
+            "answer": [
+                "Electron",
+                "Electrons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Electrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Electrons",
+                    "Negative Charge",
+                    "Fundamental Particles"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.5.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 24,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the antiparticle of the electron, carrying a positive charge?",
+            "solution": "The positron is the antiparticle of the electron, carrying a positive charge.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's sometimes called a 'positive electron.'",
+            "answer": [
+                "Positron",
+                "Positrons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Positrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Positrons",
+                    "Antiparticles",
+                    "Positive Charge"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.6.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 6,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Alpha particles are identical to the nucleus of which element?",
+            "solution": "Alpha particles are identical to the nucleus of helium.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the second element on the periodic table.",
+            "answer": [
+                "Helium"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Formation from Helium Atoms",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Alpha Particles",
+                    "Helium Nuclei",
+                    "Nuclear Composition"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.4.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the neutral particle found in the nucleus with a mass similar to a proton?",
+            "solution": "The neutron is a neutral particle in the nucleus with a mass similar to a proton.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's named for its lack of charge.",
+            "answer": [
+                "Neutron",
+                "Neutrons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Neutrons",
+                    "Neutral Particles",
+                    "Nucleus"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 27,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What type of particle is emitted during beta-minus decay?",
+            "solution": "An electron is emitted during beta-minus decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a negatively charged particle.",
+            "answer": [
+                "Electron",
+                "Electrons",
+                "Beta particle",
+                "Beta particles"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Beta Minus Particles",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Electrons",
+                    "Radioactivity"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.1.7.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which nearly massless neutral particle is emitted along with an electron in beta-minus decay?",
+            "solution": "An antineutrino is emitted along with an electron in beta-minus decay.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the antiparticle of the neutrino.",
+            "answer": [
+                "Antineutrino",
+                "Electron antineutrino"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Neutrino and Antineutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Antineutrinos",
+                    "Beta Decay",
+                    "Neutrinos"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.4.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 26,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for atoms of the same element with different numbers of neutrons?",
+            "solution": "Atoms of the same element with different numbers of neutrons are called isotopes.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They have the same atomic number but different mass numbers.",
+            "answer": [
+                "Isotope",
+                "Isotopes"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Isotopes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Isotopes",
+                    "Atomic Structure",
+                    "Neutrons"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.6.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What force holds the protons and neutrons together in the nucleus?",
+            "solution": "The strong nuclear force holds protons and neutrons together in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's stronger than the electromagnetic force at short ranges.",
+            "answer": [
+                "Strong nuclear force",
+                "Strong force"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Strong Nuclear Force as the Stabilizing Force",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Nuclear Forces",
+                    "Nucleus"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.3.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What phenomenon explains the loss of mass when a nucleus is formed from its nucleons?",
+            "solution": "The mass defect explains the loss of mass when a nucleus is formed.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's called 'mass ______' due to the missing mass.",
+            "answer": [
+                "Mass defect",
+                "Mass deficiency"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Formation of Nucleus and Mass Defect",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Binding Energy",
+                    "Nuclear Mass"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.3.1.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for the energy required to separate a nucleus into its individual protons and neutrons?",
+            "solution": "This energy is called the binding energy of the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the energy that 'binds' the nucleus together.",
+            "answer": [
+                "Binding energy"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Definition of Binding Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Forces",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.3.5.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 33,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which process involves splitting a heavy nucleus into lighter nuclei, releasing energy?",
+            "solution": "This process is called fission.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's used in nuclear reactors and atomic bombs.",
+            "answer": [
+                "Fission",
+                "Nuclear fission"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Fission",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.3.5.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Which process involves combining light nuclei to form a heavier nucleus, releasing energy?",
+            "solution": "This process is called fusion.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It powers the sun and other stars.",
+            "answer": [
+                "Fusion",
+                "Nuclear fusion"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.4.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the name of atoms with the same mass number but different atomic numbers?",
+            "solution": "Atoms with the same mass number but different atomic numbers are called isobars.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They have the same 'bar' or mass number.",
+            "answer": [
+                "Isobar",
+                "Isobars"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Isobars",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Isobars",
+                    "Atomic Structure",
+                    "Mass Number"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.4.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for atoms with the same number of neutrons but different atomic numbers?",
+            "solution": "Atoms with the same number of neutrons but different atomic numbers are called isotones.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think 'tone' for neutrons.",
+            "answer": [
+                "Isotone",
+                "Isotones"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Isotones",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Isotones",
+                    "Neutrons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.6.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 38,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What property of the strong nuclear force allows it to overcome the electrostatic repulsion between protons?",
+            "solution": "The short range of the strong nuclear force allows it to be dominant at small distances.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's effective only over very small distances.",
+            "answer": [
+                "Short range",
+                "Short-range"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Short Range",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Short Range",
+                    "Nuclear Forces"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.3.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 39,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the term for the total number of protons and neutrons in a nucleus?",
+            "solution": "The total number of protons and neutrons is called the mass number.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's also known as the nucleon number.",
+            "answer": [
+                "Mass number",
+                "Nucleon number"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Symbolic Representation of Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Mass Number",
+                    "Nucleons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.4.2.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 40,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Nuclei with a high neutron-to-proton ratio may undergo which type of decay to achieve stability?",
+            "solution": "They may undergo beta-minus decay to convert neutrons to protons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a type of beta decay emitting electrons.",
+            "answer": [
+                "Beta-minus",
+                "Beta minus",
+                "Beta decay"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.4.3.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 42,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "Excess of which subatomic particle in the nucleus leads to instability due to Coulombic repulsion?",
+            "solution": "An excess of protons leads to instability due to Coulombic repulsion.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They are positively charged particles.",
+            "answer": [
+                "Proton",
+                "Protons"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Protons",
+                    "Coulombic Repulsion"
+                ]
+            }
+        },
+        {
+            "id": "OW.NST.2.5.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 43,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 12,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "oneword",
+            "exerciseName": "One Word Answer",
+            "questionText": "What is the order of approximate density of nuclear matter in SI units, considering it's roughly the same for all nuclei?",
+            "solution": "The density of nuclear matter is approximately \\( 2.3 \\times 10^{17} \\) kg/m³.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's an extremely high value, characteristic of neutron stars.",
+            "answer": [
+                "17"
+            ],
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Density of Nuclear Matter",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Density",
+                    "Nuclear Matter",
+                    "Physics Constants"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.1.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following is considered a fundamental particle?",
+            "solution": "Electrons are considered fundamental particles because they are not composed of smaller particles.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about particles that have no known substructure.",
+            "options": [
+                "A) Electron",
+                "B) Atom",
+                "C) Nucleus",
+                "D) Alpha particle"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Meaning of Fundamental Particles",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Fundamental Particles",
+                    "Electrons",
+                    "Elementary Particles"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 22,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the electric charge of an electron?",
+            "solution": "An electron has a negative electric charge equal to -1e.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the fundamental charge carried by electrons.",
+            "options": [
+                "A) \\(+1e\\)",
+                "B) \\(-1e\\)",
+                "C) 0",
+                "D) \\(+2e\\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Electrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Electrons",
+                    "Electric Charge",
+                    "Fundamental Particles"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.2.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Why can't electrons reside inside the nucleus?",
+            "solution": "Electrons cannot reside inside the nucleus due to the uncertainty principle and their inability to overcome nuclear forces.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the uncertainty in position and momentum of electrons.",
+            "options": [
+                "A) Due to their mass being too small",
+                "B) Due to the uncertainty principle",
+                "C) Because of strong nuclear force attraction",
+                "D) Because they are negatively charged"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Uncertainty in Position and Inability to Reside in Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Electrons",
+                    "Uncertainty Principle",
+                    "Nuclear Forces"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.3.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 23,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the electric charge of a proton?",
+            "solution": "A proton has a positive electric charge equal to +1e.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the fundamental charge carried by protons.",
+            "options": [
+                "A) \\(+1e\\)",
+                "B) \\(-1e\\)",
+                "C) 0",
+                "D) \\(+2e\\)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Protons",
+                    "Electric Charge",
+                    "Fundamental Particles"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.4.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 25,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the electric charge of a neutron?",
+            "solution": "A neutron is electrically neutral, having no charge (0).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Neutron's name suggests its charge.",
+            "options": [
+                "A) \\(+1e\\)",
+                "B) \\(-1e\\)",
+                "C) 0",
+                "D) \\(+2e\\)"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Neutrons",
+                    "Electric Charge",
+                    "Fundamental Particles"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.5.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 27,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is a positron?",
+            "solution": "A positron is the antiparticle of an electron, with the same mass but a positive charge.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the antiparticle of the electron.",
+            "options": [
+                "A) The antiparticle of the electron",
+                "B) The antiparticle of the proton",
+                "C) A neutral particle",
+                "D) A high-energy photon"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Positrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Positrons",
+                    "Antiparticles",
+                    "Positive Charge"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.6.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 26,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 8,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An alpha particle is identical to which of the following?",
+            "solution": "An alpha particle is identical to a helium nucleus, consisting of two protons and two neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the composition of alpha particles.",
+            "options": [
+                "A) A hydrogen nucleus",
+                "B) A helium nucleus",
+                "C) A proton",
+                "D) A neutron"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Alpha Particles",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Alpha Particles",
+                    "Helium Nuclei",
+                    "Nuclear Composition"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.1.7.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following is true about neutrinos?",
+            "solution": "Neutrinos have very little mass and interact weakly with matter, making them difficult to detect.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider their mass and interaction with matter.",
+            "options": [
+                "A) They have significant mass",
+                "B) They interact weakly with matter",
+                "C) They are easily detectable",
+                "D) They are charged particles"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fundamental Particles",
+                "concept": "Neutrino and Antineutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Neutrinos",
+                    "Particle Detection",
+                    "Mass"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.2.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 24,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 7,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Nucleons are the collective term for which particles?",
+            "solution": "Nucleons refer to protons and neutrons, the particles found in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They are the constituents of the nucleus.",
+            "options": [
+                "A) Electrons and protons",
+                "B) Protons and neutrons",
+                "C) Electrons and neutrons",
+                "D) All subatomic particles"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nucleus and Its Stability",
+                "concept": "Nucleons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Nucleons",
+                    "Protons",
+                    "Neutrons"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.3.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 29,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In the nuclear symbol \\(^{A}_{Z}X\\), what does the number \\(A\\) represent?",
+            "solution": "In the symbol, \\(A\\) represents the mass number, which is the total number of protons and neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It indicates the total number of nucleons.",
+            "options": [
+                "A) Atomic number",
+                "B) Mass number",
+                "C) Number of electrons",
+                "D) Charge number"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Symbolic Representation of Nucleus",
+                "concept": "Determining Number of Nucleons, Protons, and Neutrons from Symbols",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Nuclear Symbols",
+                    "Mass Number",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.4.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 28,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 9,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Isotopes are atoms of the same element that have different numbers of which particle?",
+            "solution": "Isotopes have different numbers of neutrons while having the same number of protons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They have the same atomic number but different mass numbers.",
+            "options": [
+                "A) Protons",
+                "B) Neutrons",
+                "C) Electrons",
+                "D) Protons and electrons"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isotopes",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 2
+                },
+                "tags": [
+                    "Isotopes",
+                    "Neutrons",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.4.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 30,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Isobars are atoms with the same:",
+            "solution": "Isobars have the same mass number but different atomic numbers.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "They have the same total number of nucleons.",
+            "options": [
+                "A) Atomic number",
+                "B) Mass number",
+                "C) Number of neutrons",
+                "D) Number of electrons"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Isotopes, Isobars, and Isotones",
+                "concept": "Isobars",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Isobars",
+                    "Mass Number",
+                    "Atomic Structure"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.5.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The radius of a nucleus is proportional to the mass number raised to what power?",
+            "solution": "The nuclear radius is proportional to the cube root of the mass number, so the power is 1/3.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the formula \\( R \\propto A^{1/3} \\).",
+            "options": [
+                "A) 1/3",
+                "B) 2/3",
+                "C) 1",
+                "D) 3"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Nuclear Size Estimation",
+                "concept": "Radius Relation with Mass Number",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Nuclear Radius",
+                    "Mass Number",
+                    "Proportionality"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.2.6.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 32,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which force is responsible for holding the nucleons together in the nucleus?",
+            "solution": "The strong nuclear force is responsible for holding protons and neutrons together in the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's stronger than the electromagnetic force at short distances.",
+            "options": [
+                "A) Gravitational force",
+                "B) Electromagnetic force",
+                "C) Strong nuclear force",
+                "D) Weak nuclear force"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Reasons for Stability",
+                "concept": "Strong Nuclear Force as the Stabilizing Force",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Strong Nuclear Force",
+                    "Nuclear Forces",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.1.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 33,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Binding energy is the energy required to:",
+            "solution": "Binding energy is the energy required to separate a nucleus into its individual protons and neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It involves breaking the nucleus into its basic components.",
+            "options": [
+                "A) Remove an electron from an atom",
+                "B) Separate a nucleus into protons and neutrons",
+                "C) Remove a proton from the nucleus",
+                "D) Break down an atom into subatomic particles"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Definition of Binding Energy",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Forces",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.2.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 36,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The difference between the mass of a nucleus and the sum of the masses of its individual nucleons is called:",
+            "solution": "This difference is known as the mass defect.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It accounts for the binding energy via mass-energy equivalence.",
+            "options": [
+                "A) Mass defect",
+                "B) Binding energy",
+                "C) Nuclear force",
+                "D) Isotopic mass"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy",
+                "concept": "Formation of Nucleus and Mass Defect",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Binding Energy",
+                    "Nuclear Mass"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.4.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 31,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Nuclei with higher binding energy per nucleon are generally:",
+            "solution": "Nuclei with higher binding energy per nucleon are more stable.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the energy required to break apart the nucleus.",
+            "options": [
+                "A) More stable",
+                "B) Less stable",
+                "C) Radioactive",
+                "D) Unstable"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Binding Energy per Nucleon",
+                "concept": "Relation with Stability",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 3
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Nuclear Stability",
+                    "Nucleons"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.3.5.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 33,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Fusion is the process where:",
+            "solution": "Fusion involves combining light nuclei to form heavier nuclei, releasing energy.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's the process powering the sun.",
+            "options": [
+                "A) Heavy nuclei split into lighter nuclei",
+                "B) Light nuclei combine to form heavier nuclei",
+                "C) Nuclei emit radiation",
+                "D) Neutrons are absorbed by nuclei"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Fission and Fusion Possibilities",
+                "concept": "Fission and Fusion Possibilities",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 4
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.4.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 35,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 11,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Nuclei with excess neutrons tend to undergo which type of decay?",
+            "solution": "They tend to undergo beta-minus decay, converting a neutron into a proton.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It involves the emission of an electron.",
+            "options": [
+                "A) Alpha decay",
+                "B) Beta-minus decay",
+                "C) Beta-plus decay",
+                "D) Gamma decay"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Neutrons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "SO.NST.4.3.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 34,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 10,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Nuclei with excess protons may undergo which type of decay?",
+            "solution": "They may undergo beta-plus decay, converting a proton into a neutron.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It involves the emission of a positron.",
+            "options": [
+                "A) Beta-minus decay",
+                "B) Beta-plus decay",
+                "C) Alpha decay",
+                "D) Gamma decay"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Structure",
+                "section": "Unstability of Nucleus",
+                "concept": "Unstability Due to Excess Protons",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 5
+                },
+                "tags": [
+                    "Nuclear Instability",
+                    "Beta Decay",
+                    "Proton-Neutron Conversion"
+                ]
+            }
+        }
+    ]
+}

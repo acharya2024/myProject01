@@ -1,0 +1,2204 @@
+{
+    "questions": [
+        {
+            "id": "SO.NRE.2.4.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 60,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 15,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a nuclear reaction, the Q value is negative. Which of the following statements is TRUE about this reaction?",
+            "solution": "A negative Q value indicates an endoergic reaction, meaning energy must be supplied for the reaction to occur. The reaction absorbs energy rather than releasing it.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider what a negative Q value implies about energy absorption or release.",
+            "options": [
+                "A) The reaction releases energy and is spontaneous.",
+                "B) The reaction absorbs energy and requires an external energy input.",
+                "C) The reaction neither absorbs nor releases energy.",
+                "D) The reaction is exoergic and occurs without any energy input."
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Q Value in Nuclear Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.8,
+                    "concept": 0.1,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Q Value",
+                    "Endoergic Reactions",
+                    "Energy Absorption"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 65,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 16,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A nuclear reaction is represented as \\( ^{14}_7N + ^{4}_2He \\rightarrow ^{17}_8O + X \\). Which particle does X represent to conserve both mass number and charge?",
+            "solution": "To conserve mass number and charge, we calculate:\\nMass number: 14 + 4 = 17 + A(X) ⇒ A(X) = 1\\nAtomic number: 7 + 2 = 8 + Z(X) ⇒ Z(X) = 1\\nSo, X is a proton \\( ^{1}_1H \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Apply conservation of mass number and atomic number to find X.",
+            "options": [
+                "A) Neutron \\( ^{1}_0n \\)",
+                "B) Proton \\( ^{1}_1H \\)",
+                "C) Alpha particle \\( ^{4}_2He \\)",
+                "D) Electron \\( ^{0}_{-1}e \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Conservation Laws in Nuclear Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Conservation Laws",
+                    "Nuclear Equations",
+                    "Particle Identification"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.5.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 70,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 17,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An alpha particle is accelerated towards a stationary \\( ^{197}_{79}Au \\) nucleus but fails to cause a nuclear reaction. Which property of the nuclear force explains this observation?",
+            "solution": "The nuclear force is a short-range force effective only over distances of about 1-3 femtometers. Since the alpha particle does not come close enough to the gold nucleus due to electrostatic repulsion, the nuclear force doesn't act.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the range of the nuclear force and the electrostatic repulsion between charged particles.",
+            "options": [
+                "A) Its long-range nature",
+                "B) Its short-range nature",
+                "C) Its dependence on particle velocity",
+                "D) Its dependence on external conditions like temperature"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Requirements for a Nucleus to Undergo a Nuclear Reaction",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.2,
+                    "calculation": 0.3,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Force",
+                    "Range of Forces",
+                    "Alpha Scattering"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 75,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 18,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A nucleus \\( ^{238}_{92}U \\) undergoes alpha decay to form \\( ^{234}_{90}Th \\). The kinetic energy of the emitted alpha particle is approximately 4.2 MeV. Assuming conservation of momentum, what can be said about the kinetic energy of the recoiling thorium nucleus?",
+            "solution": "Since momentum is conserved and the thorium nucleus is much heavier, it will have a kinetic energy much smaller than that of the alpha particle. Using \\( KE_{Th} = KE_{α} \\times (m_{α}/m_{Th}) \\), the kinetic energy of thorium is negligible compared to the alpha particle.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use conservation of momentum and the mass difference between the alpha particle and thorium nucleus.",
+            "options": [
+                "A) It is approximately equal to 4.2 MeV",
+                "B) It is significantly greater than 4.2 MeV",
+                "C) It is much less than 4.2 MeV",
+                "D) It has zero kinetic energy"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Distribution of Energy in Alpha Particle and Daughter Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.4,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Kinetic Energy Distribution",
+                    "Momentum Conservation"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 80,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 19,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Considering the quantum mechanical tunneling effect in alpha decay, which factor significantly increases the probability of decay?",
+            "solution": "A lower height and narrower width of the nuclear potential barrier increases the tunneling probability, thus increasing decay likelihood. This corresponds to higher kinetic energy of the alpha particle within the nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how barrier characteristics affect tunneling probability in quantum mechanics.",
+            "options": [
+                "A) Increasing the barrier width",
+                "B) Increasing the barrier height",
+                "C) Decreasing the barrier width and height",
+                "D) Increasing the mass of the alpha particle"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Probability Order and Reason for Finite Rate of Reaction (Conceptual)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Quantum Tunneling",
+                    "Alpha Decay",
+                    "Decay Probability"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 85,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 20,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A nucleus undergoes beta-plus decay. Which of the following statements correctly describes the effect on the atomic and mass numbers?",
+            "solution": "In beta-plus decay, a proton transforms into a neutron, emitting a positron and a neutrino. The atomic number decreases by 1, and the mass number remains unchanged.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the changes in proton and neutron numbers during beta-plus decay.",
+            "options": [
+                "A) Atomic number increases by 1; mass number remains the same",
+                "B) Atomic number decreases by 1; mass number remains the same",
+                "C) Atomic number remains the same; mass number decreases by 1",
+                "D) Both atomic and mass numbers decrease by 1"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta-plus (β⁺) Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Atomic Number Changes",
+                    "Nuclear Transformations"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 90,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 21,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In electron capture (K-capture), a nucleus captures an inner orbital electron. What immediate effect does this have on the electron configuration of the atom?",
+            "solution": "When an inner electron is captured, a vacancy is created in the K-shell. Electrons from higher energy levels drop down to fill this vacancy, emitting characteristic X-rays in the process.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how the electron shells adjust after the K-shell vacancy.",
+            "options": [
+                "A) Electrons are emitted from the atom to balance charge",
+                "B) The atom becomes ionized and remains in that state",
+                "C) Electrons from higher shells transition to lower shells, emitting X-rays",
+                "D) There is no change in electron configuration"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "K-Capture Phenomena and Associated X-Ray Generation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Electron Capture",
+                    "X-Ray Emission",
+                    "Atomic Electron Transitions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 95,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 22,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "During beta-minus decay, the continuous energy spectrum of emitted electrons suggests the presence of another particle. Which conservation law necessitated the postulation of this particle, and what is the particle?",
+            "solution": "The conservation of energy and momentum required the existence of the neutrino, a nearly massless, neutral particle emitted alongside the electron to account for the missing energy and momentum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider which conservation laws are involved in beta decay and what particle was introduced to satisfy them.",
+            "options": [
+                "A) Conservation of charge; positron",
+                "B) Conservation of energy and momentum; neutrino",
+                "C) Conservation of mass; neutron",
+                "D) Conservation of angular momentum; photon"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Continuous Energy Spectrum and Existence of Neutrino",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Neutrino",
+                    "Conservation Laws"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.3.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 100,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 23,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "A nucleus in an excited state emits a gamma photon and transitions to a lower energy state. If the energy of the emitted gamma photon is 1 MeV, what is the frequency of this photon? (Use \\( h = 4.1357 \\times 10^{-15} \\) eV·s)",
+            "solution": "Energy \\( E = h \\nu \\). Rearranged, \\( \\nu = E/h \\).\\n\\( \\nu = (1 \\times 10^6 \\text{ eV}) / (4.1357 \\times 10^{-15} \\text{ eV·s}) = 2.418 \\times 10^{20} \\text{ Hz} \\).",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation between energy and frequency for photons.",
+            "options": [
+                "A) \\( 2.418 \\times 10^{20} \\) Hz",
+                "B) \\( 1.509 \\times 10^{18} \\) Hz",
+                "C) \\( 7.242 \\times 10^{22} \\) Hz",
+                "D) \\( 4.835 \\times 10^{16} \\) Hz"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Frequency of Radiations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Gamma Decay",
+                    "Photon Energy",
+                    "Frequency Calculation"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 105,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 24,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In the fission of \\( ^{235}_{92}U \\) induced by a thermal neutron, which of the following pairs of fragments is most likely to be produced?",
+            "solution": "A common fission reaction of \\( ^{235}U \\) produces \\( ^{92}_{36}Kr \\) and \\( ^{141}_{56}Ba \\) along with neutrons. These fragments are typical due to the asymmetric fission probability curve.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the most probable fission fragment mass numbers in uranium fission.",
+            "options": [
+                "A) \\( ^{117}_{46}Pd \\) and \\( ^{117}_{46}Pd \\)",
+                "B) \\( ^{92}_{36}Kr \\) and \\( ^{141}_{56}Ba \\)",
+                "C) \\( ^{100}_{40}Zr \\) and \\( ^{135}_{52}Te \\)",
+                "D) \\( ^{50}_{20}Ca \\) and \\( ^{185}_{72}Hf \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Examples and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.5,
+                    "calculation": 0.1,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Fission",
+                    "Fission Fragments",
+                    "Uranium-235"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 110,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 25,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Calculate the Q value for the fusion reaction \\( ^{2}_1H + ^{3}_1H \\rightarrow ^{4}_2He + ^{1}_0n \\) using the following atomic masses:\\n\\( m(^{2}_1H) = 2.014102 \\) u,\\n\\( m(^{3}_1H) = 3.016049 \\) u,\\n\\( m(^{4}_2He) = 4.002603 \\) u,\\n\\( m(^{1}_0n) = 1.008665 \\) u.\\n(1 u = 931.5 MeV/c²)",
+            "solution": "Q value = [mass of reactants - mass of products] × 931.5 MeV/u\\n= [(2.014102 + 3.016049) - (4.002603 + 1.008665)] × 931.5\\n= [5.030151 - 5.011268] × 931.5\\n= 0.018883 u × 931.5 MeV/u = 17.60 MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Apply the mass-energy equivalence to calculate the energy released.",
+            "options": [
+                "A) 17.60 MeV",
+                "B) 4.25 MeV",
+                "C) 28.30 MeV",
+                "D) 0 MeV (reaction is energy neutral)"
+            ],
+            "answer": "A",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Q Value Calculations and Examples",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.2,
+                    "calculation": 0.6,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Q Value Calculation",
+                    "Mass Defect"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 115,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 26,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a nuclear reactor, control rods are used to control the rate of fission. What is the primary function of these control rods?",
+            "solution": "Control rods absorb excess neutrons to regulate the chain reaction, preventing it from becoming uncontrolled.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about how the neutron population is controlled in a reactor.",
+            "options": [
+                "A) They provide additional neutrons to sustain the chain reaction.",
+                "B) They absorb excess neutrons to control the fission rate.",
+                "C) They cool down the reactor by conducting heat away.",
+                "D) They act as fuel rods to supply fissile material."
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Controlled and Uncontrolled Chain Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Nuclear Reactors",
+                    "Control Rods",
+                    "Chain Reaction Control"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 120,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 27,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best explains why fusion reactions require extremely high temperatures to occur?",
+            "solution": "High temperatures provide nuclei with sufficient kinetic energy to overcome the electrostatic (Coulomb) repulsion between positively charged nuclei, allowing them to get close enough for the strong nuclear force to bind them.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the forces acting between two positively charged nuclei.",
+            "options": [
+                "A) To increase the reaction rate by providing activation energy",
+                "B) To overcome gravitational forces between nuclei",
+                "C) To overcome electrostatic repulsion between nuclei",
+                "D) To ensure the conservation of energy during the reaction"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Requirements and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Electrostatic Repulsion",
+                    "High Temperature Requirement"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 125,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 28,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which cycle is the dominant source of energy in heavier stars, and what element acts as a catalyst in this cycle?",
+            "solution": "The CNO (carbon-nitrogen-oxygen) cycle dominates in heavier stars. Carbon acts as a catalyst in this cycle, facilitating the fusion of hydrogen into helium.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider fusion cycles that involve elements heavier than hydrogen and helium.",
+            "options": [
+                "A) Proton-proton chain; hydrogen",
+                "B) Triple alpha process; helium",
+                "C) CNO cycle; carbon",
+                "D) Neutron capture process; iron"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Reactions Inside the Sun",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Stellar Fusion",
+                    "CNO Cycle",
+                    "Catalysis in Fusion"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.6.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 130,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 29,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "An endoergic nuclear reaction has a threshold energy of 5 MeV. If a particle with kinetic energy of 4 MeV is used to initiate the reaction, what will be the outcome?",
+            "solution": "Since the kinetic energy is less than the threshold energy, the reaction will not occur. The incoming particle does not have sufficient energy to overcome the energy barrier.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Compare the kinetic energy of the incoming particle with the threshold energy required.",
+            "options": [
+                "A) The reaction will occur, releasing excess energy",
+                "B) The reaction will occur, absorbing the necessary energy from the surroundings",
+                "C) The reaction will not occur due to insufficient energy",
+                "D) The reaction will occur, but at a slower rate"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Kinetic Energy Requirements for Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Endoergic Reactions",
+                    "Threshold Energy",
+                    "Reaction Feasibility"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 135,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 30,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In a nuclear reaction, the total rest mass of the products is greater than the total rest mass of the reactants. Which conservation law allows for this apparent discrepancy?",
+            "solution": "The conservation of mass-energy allows for mass to be converted into energy and vice versa. The increase in rest mass indicates that energy has been absorbed, corresponding to an endoergic reaction.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about Einstein's mass-energy equivalence principle.",
+            "options": [
+                "A) Conservation of charge",
+                "B) Conservation of linear momentum",
+                "C) Conservation of baryon number",
+                "D) Conservation of mass-energy (E=mc²)"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mass-Energy Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Mass-Energy Equivalence",
+                    "Conservation Laws",
+                    "Endoergic Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.1.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 140,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 31,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following statements best describes the effect of external temperature on the rate of a nuclear reaction?",
+            "solution": "Nuclear reactions are largely unaffected by external temperatures because they involve changes in the nucleus, which is not influenced by thermal conditions.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how nuclear reactions differ from chemical reactions in terms of external influences.",
+            "options": [
+                "A) Increasing temperature significantly increases the rate",
+                "B) Decreasing temperature significantly decreases the rate",
+                "C) Temperature has a negligible effect on the rate",
+                "D) Temperature fluctuations can stop a nuclear reaction"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Introduction to Nuclear Reactions",
+                "concept": "Effect of External Parameters (Temperature, Pressure, Humidity)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Nuclear Reaction Rates",
+                    "External Temperature",
+                    "Nuclear vs Chemical Reactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.1.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 145,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 32,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following nuclei is most likely to be unstable and undergo radioactive decay?",
+            "solution": "Nuclei with a high neutron-to-proton ratio are often unstable. \\( ^{14}_6C \\) has 8 neutrons and 6 protons, giving a ratio of 8/6 ≈ 1.33, which is higher than the stable ratio for light nuclei.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Compare the neutron-to-proton ratios of the given nuclei.",
+            "options": [
+                "A) \\( ^{12}_6C \\)",
+                "B) \\( ^{14}_6C \\)",
+                "C) \\( ^{16}_8O \\)",
+                "D) \\( ^{56}_{26}Fe \\)"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Stability of the Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Stability",
+                    "Neutron-Proton Ratio",
+                    "Radioactive Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 150,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 33,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "The half-life of a radioactive isotope is 5 hours. What fraction of the original sample remains undecayed after 15 hours?",
+            "solution": "Number of half-lives = 15 hours / 5 hours = 3. Fraction remaining = (1/2)³ = 1/8.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the half-life formula and calculate the number of half-lives elapsed.",
+            "options": [
+                "A) 1/2",
+                "B) 1/4",
+                "C) 1/8",
+                "D) 1/16"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.1,
+                    "calculation": 0.7,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.2.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 155,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 34,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In neutron activation analysis, a sample is bombarded with neutrons to produce radioactive isotopes. What is the primary purpose of this technique?",
+            "solution": "Neutron activation analysis is used for qualitative and quantitative analysis of elements in a sample by detecting the characteristic radiation emitted by the activated isotopes.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how induced radioactivity can help in material analysis.",
+            "options": [
+                "A) To initiate a chain reaction for energy production",
+                "B) To determine the age of archaeological samples",
+                "C) To analyze the elemental composition of a material",
+                "D) To reduce the radioactivity of nuclear waste"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Industrial Uses (Material Analysis)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.3,
+                    "calculation": 0.2,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Neutron Activation Analysis",
+                    "Material Analysis",
+                    "Industrial Applications"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.1.Q21",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 160,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 35,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following best describes the 'valley of stability' in the context of nuclear physics?",
+            "solution": "The valley of stability refers to a region on the chart of nuclides where stable nuclei reside, characterized by an optimal neutron-to-proton ratio that confers stability.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how the neutron-to-proton ratio affects nuclear stability.",
+            "options": [
+                "A) A graphical representation of energy levels in an atom",
+                "B) The region where unstable nuclei undergo decay rapidly",
+                "C) The set of nuclei with the highest binding energy per nucleon",
+                "D) The region where nuclei have a stable neutron-to-proton ratio"
+            ],
+            "answer": "D",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Effect on Stability of the Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Nuclear Stability",
+                    "Valley of Stability",
+                    "Neutron-Proton Ratio"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.1.Q22",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 165,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 36,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "At which approximate mass number does the binding energy per nucleon reach its maximum value?",
+            "solution": "The binding energy per nucleon reaches its maximum around mass number A ≈ 56, corresponding to iron-56, which is the most stable nucleus.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Think about the element known for having the most stable nucleus.",
+            "options": [
+                "A) A ≈ 26",
+                "B) A ≈ 56",
+                "C) A ≈ 100",
+                "D) A ≈ 200"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.2,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Binding Energy Curve",
+                    "Nuclear Stability",
+                    "Iron-56"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q23",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 170,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 37,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following challenges is the most significant in achieving controlled nuclear fusion on Earth?",
+            "solution": "The main challenge is containing the extremely hot plasma required for fusion without it touching any material walls, as no material can withstand such temperatures. Magnetic confinement (like in a tokamak) is one method being explored.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the difficulties in maintaining the conditions necessary for fusion reactions.",
+            "options": [
+                "A) Obtaining sufficient quantities of hydrogen isotopes",
+                "B) Achieving the necessary low temperatures for fusion",
+                "C) Containing high-temperature plasma for sustained reactions",
+                "D) Disposing of radioactive waste produced by fusion"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Requirements and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Plasma Containment",
+                    "Fusion Challenges"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q24",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 175,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 38,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which statement correctly describes the role of parity in nuclear reactions?",
+            "solution": "Parity involves the spatial inversion symmetry of wave functions. In nuclear reactions, parity is conserved unless the reaction involves weak interactions, such as in beta decay where parity is not conserved.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the conservation laws and when they might not hold.",
+            "options": [
+                "A) Parity is always conserved in nuclear reactions",
+                "B) Parity is never conserved in nuclear reactions",
+                "C) Parity is conserved except in weak interactions",
+                "D) Parity conservation depends on external conditions"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Angular Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Parity Conservation",
+                    "Nuclear Reactions",
+                    "Weak Interactions"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.2.Q25",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 180,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 39,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which of the following is an implication of the quantum mechanical nature of nuclear reactions?",
+            "solution": "One implication is that we cannot predict exactly when a particular nucleus will decay; we can only determine the probability per unit time (decay constant), leading to the concept of half-life.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider how quantum mechanics introduces probabilities into physical processes.",
+            "options": [
+                "A) Exact prediction of decay times for individual nuclei",
+                "B) The impossibility of measuring decay rates",
+                "C) The probabilistic nature of nuclear decay events",
+                "D) The dependence of decay rates on environmental conditions"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Quantum Mechanics",
+                    "Nuclear Decay",
+                    "Probability"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.3.2.Q26",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 185,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 40,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "In beta-plus decay, the emitted positron will eventually annihilate with an electron. What is the outcome of this annihilation process?",
+            "solution": "The positron and electron annihilate to produce two gamma-ray photons, each with energy of 511 keV, conserving energy and momentum.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider conservation of energy and momentum in particle-antiparticle annihilation.",
+            "options": [
+                "A) They form a neutron",
+                "B) They produce a single high-energy photon",
+                "C) They produce two gamma-ray photons",
+                "D) They produce a neutrino-antineutrino pair"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta-plus (β⁺) Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Positron Annihilation",
+                    "Gamma Rays",
+                    "Conservation Laws"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.2.3.Q27",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 190,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 41,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which conservation law is associated with the symmetry of physical laws under spatial translations?",
+            "solution": "Conservation of linear momentum is associated with translational symmetry according to Noether's theorem.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider Noether's theorem and how symmetries relate to conservation laws.",
+            "options": [
+                "A) Conservation of energy",
+                "B) Conservation of linear momentum",
+                "C) Conservation of angular momentum",
+                "D) Conservation of charge"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.7,
+                    "concept": 0.2,
+                    "calculation": 0.1,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Conservation Laws",
+                    "Noether's Theorem",
+                    "Symmetry"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.2.Q28",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 195,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 42,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which material is commonly used in thermal nuclear reactors as a moderator to slow down fast neutrons?",
+            "solution": "Heavy water (D₂O) is often used as a moderator because deuterium has low neutron absorption and effectively slows down neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider materials that effectively slow down neutrons without capturing them.",
+            "options": [
+                "A) Graphite",
+                "B) Heavy water",
+                "C) Liquid sodium",
+                "D) Boron carbide"
+            ],
+            "answer": "B",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Controlled and Uncontrolled Chain Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Neutron Moderators",
+                    "Nuclear Reactors",
+                    "Heavy Water"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.1.2.Q29",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 200,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 43,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "Which isotope is commonly used in positron emission tomography (PET) scans in medical imaging?",
+            "solution": "Fluorine-18 is commonly used in PET scans due to its suitable half-life and positron emission properties.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "It's a radioactive isotope of fluorine used as a tracer.",
+            "options": [
+                "A) Carbon-14",
+                "B) Technetium-99m",
+                "C) Fluorine-18",
+                "D) Iodine-131"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Medical Applications (Radiation Therapy)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.4,
+                    "calculation": 0.1,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Medical Imaging",
+                    "PET Scans",
+                    "Radioisotopes"
+                ]
+            }
+        },
+        {
+            "id": "SO.NRE.4.3.Q30",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 205,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 44,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "singleoption",
+            "exerciseName": "Single Option Correct",
+            "questionText": "What is the primary reason that fusion reactions produce less long-lived radioactive waste compared to fission reactions?",
+            "solution": "Fusion reactions primarily involve light nuclei like hydrogen isotopes, and the products are generally stable or have short half-lives, resulting in less long-lived radioactive waste.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider the types of nuclei involved and the stability of the products in fusion versus fission.",
+            "options": [
+                "A) Fusion reactions convert all mass into energy",
+                "B) Fusion reactions produce only non-radioactive elements",
+                "C) Fusion products are lighter and often stable isotopes",
+                "D) Fusion reactions do not produce any neutrons"
+            ],
+            "answer": "C",
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Fusion",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.4,
+                    "calculation": 0.2,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Radioactive Waste",
+                    "Environmental Impact"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q1",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 120,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 30,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Calculate the Q value (in MeV) for the nuclear reaction \\( ^{14}_7N (n, p) ^{14}_6C \\). Given masses: \\( m(^{14}_7N) = 14.003074 \\) u, \\( m(n) = 1.008665 \\) u, \\( m(^{14}_6C) = 14.003242 \\) u, \\( m(p) = 1.007276 \\) u. (1 u = 931.5 MeV/c²).",
+            "solution": "Q value = [mass of reactants - mass of products] × 931.5 MeV/u\\n= [(14.003074 + 1.008665) - (14.003242 + 1.007276)] × 931.5\\n= [15.011739 - 15.010518] × 931.5\\n= 0.001221 u × 931.5 MeV/u ≈ 1.14 MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the mass difference between reactants and products and convert it to energy.",
+            "answer": 1.14,
+            "answerRange": 0.1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Q Value Calculations and Examples",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.3,
+                    "calculation": 0.4,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Q Value",
+                    "Mass Defect",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.3.2.Q2",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 130,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 32,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A radioactive isotope has a half-life of 8 days. How many days will it take for the activity to decrease to 1/32 of its original value?",
+            "solution": "Activity decreases by a factor of (1/2)ⁿ after n half-lives.\\nSet (1/2)ⁿ = 1/32 ⇒ n = 5.\\nTotal time = n × half-life = 5 × 8 = 40 days.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives required to reach 1/32 activity.",
+            "answer": 40,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.1,
+                    "calculation": 0.7,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.1.Q3",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 140,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 35,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Calculate the approximate binding energy per nucleon (in MeV) of \\( ^{56}_{26}Fe \\) nucleus. Given mass of \\( ^{56}_{26}Fe \\) = 55.93494 u, mass of proton = 1.007825 u, mass of neutron = 1.008665 u, and 1 u = 931.5 MeV/c².",
+            "solution": "Total mass of 26 protons = 26 × 1.007825 u = 26.20345 u\\nTotal mass of 30 neutrons = 30 × 1.008665 u = 30.25995 u\\nTotal mass of separate nucleons = 26.20345 u + 30.25995 u = 56.4634 u\\nMass defect Δm = 56.4634 u - 55.93494 u = 0.52846 u\\nTotal binding energy = Δm × 931.5 MeV/u = 0.52846 u × 931.5 MeV/u ≈ 492.53 MeV\\nBinding energy per nucleon = 492.53 MeV / 56 ≈ 8.80 MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate mass defect and divide the total binding energy by the mass number.",
+            "answer": 9,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Binding Energy",
+                    "Mass Defect",
+                    "Nuclear Stability"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.2.Q4",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 150,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 37,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In a fission reaction, \\( ^{235}_{92}U \\) absorbs a neutron and splits into \\( ^{141}_{56}Ba \\), \\( ^{92}_{36}Kr \\), and additional neutrons. How many neutrons are emitted in this reaction?",
+            "solution": "Mass numbers: 235 + 1 = 141 + 92 + x ⇒ 236 = 233 + x ⇒ x = 3\\nAtomic numbers: 92 + 0 = 56 + 36 + y ⇒ 92 = 92 + y ⇒ y = 0\\nTherefore, 3 neutrons are emitted.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use conservation of mass number to find the number of neutrons emitted.",
+            "answer": 3,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Controlled and Uncontrolled Chain Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.3,
+                    "calculation": 0.3,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Nuclear Fission",
+                    "Neutron Emission",
+                    "Conservation Laws"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.3.1.Q5",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 160,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 40,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An alpha particle has a kinetic energy of 5 MeV when emitted from a nucleus. Assuming the daughter nucleus recoils with negligible kinetic energy, calculate the approximate speed of the alpha particle in \\( \\times 10^6 \\) m/s. (Mass of alpha particle \\( m_{α} = 6.644657 \\times 10^{-27} \\) kg, 1 eV = \\( 1.602 \\times 10^{-19} \\) J)",
+            "solution": "Kinetic energy \\( KE = \\frac{1}{2} m v^2 \\)\\n\\( 5 \\times 10^6 \\text{ eV} = 5 \\times 10^6 \\times 1.602 \\times 10^{-19} \\text{ J} = 8.01 \\times 10^{-13} \\text{ J} \\)\\n\\( v = \\sqrt{\\frac{2 KE}{m}} = \\sqrt{\\frac{2 \\times 8.01 \\times 10^{-13}}{6.644657 \\times 10^{-27}}} \\approx 4.90 \\times 10^7 \\text{ m/s} \\)\\n\\( v \\approx 49 \\times 10^6 \\text{ m/s} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the kinetic energy formula to solve for velocity.",
+            "answer": 49,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Distribution of Energy in Alpha Particle and Daughter Nucleus",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Alpha Decay",
+                    "Kinetic Energy",
+                    "Particle Velocity"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.2.Q6",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 170,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 42,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "If the decay constant of a radioactive isotope is \\( 0.0693 \\) day\\(^{-1}\\), calculate its half-life in days.",
+            "solution": "Half-life \\( T_{1/2} = \\frac{\\ln 2}{\\lambda} = \\frac{0.6931}{0.0693} = 10 \\) days.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the relation between decay constant and half-life.",
+            "answer": 10,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Decay Constant",
+                    "Half-Life"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.3.2.Q7",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 180,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 45,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A sample contains \\( 8 \\times 10^{20} \\) atoms of a radioactive isotope with a half-life of 2 hours. Calculate the number of atoms remaining undecayed after 6 hours in \\( \\times 10^{20} \\) atoms.",
+            "solution": "Number of half-lives \\( n = \\frac{6}{2} = 3 \\)\\nRemaining atoms \\( N = N_0 \\times (1/2)^n = 8 \\times 10^{20} \\times (1/2)^3 = 1 \\times 10^{20} \\) atoms.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of half-lives and apply exponential decay.",
+            "answer": 1,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Highly Probabilistic Nature of Nuclear Events",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.1,
+                    "calculation": 0.7,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Radioactive Decay",
+                    "Half-Life",
+                    "Exponential Decay"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.1.Q8",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 190,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 47,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Iron-56 has one of the highest binding energies per nucleon. Calculate the number of neutrons in \\( ^{56}_{26}Fe \\).",
+            "solution": "Number of neutrons = Mass number - Atomic number = 56 - 26 = 30 neutrons.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Subtract the atomic number from the mass number.",
+            "answer": 30,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Binding Energy Trends",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.5,
+                    "concept": 0.2,
+                    "calculation": 0.3,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Atomic Structure",
+                    "Neutron Number",
+                    "Nuclear Stability"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.4.Q9",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 200,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 50,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "Calculate the kinetic energy threshold (in MeV) required for the reaction \\( ^{3}_2He + ^{3}_2He \\rightarrow ^{4}_2He + 2p \\) to occur, given the masses: \\( m(^{3}_2He) = 3.016029 \\) u, \\( m(^{4}_2He) = 4.002603 \\) u, \\( m(p) = 1.007276 \\) u.",
+            "solution": "Q value = [mass of reactants - mass of products] × 931.5 MeV/u\\n= [2 × 3.016029 - (4.002603 + 2 × 1.007276)] × 931.5\\n= [6.032058 - 6.017155] × 931.5\\n= 0.014903 u × 931.5 MeV/u ≈ 13.89 MeV\\nSince Q is positive, the reaction releases energy, but due to Coulomb barrier, a kinetic energy threshold is required to overcome repulsion. The kinetic energy threshold is approximately equal to the Coulomb barrier, which for helium nuclei is about 20 MeV.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Consider both the Q value and the Coulomb barrier between two helium nuclei.",
+            "answer": 20,
+            "answerRange": 2,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Kinetic Energy Requirements for Endoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Threshold Energy",
+                    "Fusion Reactions",
+                    "Coulomb Barrier"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.2.Q10",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 210,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 52,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In a nuclear reactor, the average number of neutrons released per fission is 2.5. If the reactor operates at a steady-state chain reaction, what is the multiplication factor k?",
+            "solution": "At steady-state, the multiplication factor k = 1.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Steady-state implies that the chain reaction is self-sustaining but not increasing.",
+            "answer": 1,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Controlled and Uncontrolled Chain Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.6,
+                    "concept": 0.3,
+                    "calculation": 0.1,
+                    "difficultyIn10": 6
+                },
+                "tags": [
+                    "Nuclear Reactors",
+                    "Multiplication Factor",
+                    "Chain Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.3.Q11",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 220,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 55,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "The proton-proton chain reaction in the sun converts hydrogen into helium. If the sun converts \\( 6 \\times 10^{11} \\) kg of hydrogen into helium each second, calculate the energy released per second in \\( \\times 10^{26} \\) Joules. (Energy released per reaction ≈ 26 MeV, Avogadro's number \\( N_A = 6.022 \\times 10^{23} \\) mol\\(^{-1} \\), 1 u = 1.6605 × \\( 10^{-27} \\) kg, 1 eV = \\( 1.602 \\times 10^{-19} \\) J)",
+            "solution": "Number of moles of hydrogen converted per second: \\( n = \\frac{6 \\times 10^{11} \\text{ kg}}{1.008 \\text{ kg/mol}} \\approx 5.952 \\times 10^{11} \\text{ mol} \\)\\nNumber of reactions per second: \\( n \\times N_A = 5.952 \\times 10^{11} \\times 6.022 \\times 10^{23} \\approx 3.586 \\times 10^{35} \\)\\nTotal energy released: \\( 26 \\text{ MeV} \\times 3.586 \\times 10^{35} \\times 1.602 \\times 10^{-13} \\text{ J/MeV} \\approx 1.493 \\times 10^{26} \\text{ J} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Calculate the number of reactions and multiply by the energy per reaction.",
+            "answer": 149,
+            "answerRange": 10,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Nuclear Reactions Inside the Sun",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Stellar Processes",
+                    "Energy Calculation",
+                    "Fusion Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q12",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 230,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 57,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An excited nucleus emits a gamma photon of energy 1.33 MeV during gamma decay. Calculate the wavelength of this gamma photon in femtometers (fm). (Use \\( E = \\frac{hc}{λ} \\), \\( h = 4.1357 \\times 10^{-15} \\) eV·s, \\( c = 3 \\times 10^8 \\) m/s)",
+            "solution": "First, convert energy to Joules: \\( E = 1.33 \\times 10^6 \\times 1.602 \\times 10^{-19} \\) J\\n\\( E = 2.13066 \\times 10^{-13} \\) J\\nUsing \\( λ = \\frac{hc}{E} \\)\\n\\( λ = \\frac{4.1357 \\times 10^{-15} \\text{ eV·s} \\times 3 \\times 10^8 \\text{ m/s}}{1.33 \\times 10^6 \\text{ eV}} \\)\\n\\( λ = \\frac{1.24071 \\times 10^{-6} \\text{ eV·m}}{1.33 \\times 10^6 \\text{ eV}} \\)\\n\\( λ = 9.333 \\times 10^{-13} \\text{ m} = 93.33 \\text{ fm} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the photon energy-wavelength relation and convert units appropriately.",
+            "answer": 93,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Frequency of Radiations",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Gamma Decay",
+                    "Photon Wavelength",
+                    "Energy Calculations"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.1.Q13",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 240,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 60,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A certain nucleus has a neutron-to-proton ratio of 1.25 and contains 45 neutrons. Calculate the atomic number (number of protons) of this nucleus.",
+            "solution": "Let the number of protons be Z.\\nNeutron-to-proton ratio = N/Z = 1.25 ⇒ N = 1.25Z\\nGiven N = 45 ⇒ 1.25Z = 45 ⇒ Z = 36",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Set up the ratio N/Z and solve for Z.",
+            "answer": 36,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Factors Influencing Reactivity (Neutron-to-Proton Ratio)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.4,
+                    "concept": 0.2,
+                    "calculation": 0.4,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Neutron-Proton Ratio",
+                    "Atomic Number",
+                    "Nuclear Stability"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q14",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 250,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 62,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In a nuclear reaction, the sum of the initial masses is 12.00000 u, and the sum of the final masses is 11.99265 u. Calculate the energy released in the reaction in MeV.",
+            "solution": "Mass defect Δm = 12.00000 u - 11.99265 u = 0.00735 u\\nEnergy released = Δm × 931.5 MeV/u = 0.00735 u × 931.5 MeV/u ≈ 6.85 MeV",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the mass defect by 931.5 MeV/u to find the energy.",
+            "answer": 7,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Mass-Energy Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Mass Defect",
+                    "Energy Release",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.3.Q15",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 260,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 65,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In a certain nuclear reaction, the total linear momentum before the reaction is \\( 0 \\) kg·m/s. If an alpha particle is emitted with a momentum of \\( 6.64 \\times 10^{-19} \\) kg·m/s, calculate the recoil momentum of the daughter nucleus in \\( \\times 10^{-19} \\) kg·m/s.",
+            "solution": "By conservation of momentum, total momentum after reaction = total momentum before reaction = 0\\nTherefore, momentum of daughter nucleus = - momentum of alpha particle\\nRecoil momentum = \\( -6.64 \\times 10^{-19} \\) kg·m/s ⇒ Magnitude = \\( 6.64 \\times 10^{-19} \\) kg·m/s\\nAnswer: 6.64",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Apply conservation of linear momentum.",
+            "answer": 7,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Momentum Conservation",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Momentum Conservation",
+                    "Alpha Decay",
+                    "Recoil Momentum"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.4.3.Q16",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 270,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 67,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A fusion reactor aims to achieve a plasma temperature of \\( 1.5 \\times 10^8 \\) K. Calculate the average kinetic energy per particle in keV at this temperature. (Use \\( \\overline{KE} = \\frac{3}{2} k_B T \\), \\( k_B = 8.617 \\times 10^{-5} \\) eV/K)",
+            "solution": "Average kinetic energy \\( \\overline{KE} = \\frac{3}{2} k_B T \\)\\n\\( \\overline{KE} = \\frac{3}{2} \\times 8.617 \\times 10^{-5} \\times 1.5 \\times 10^8 \\) eV\\n\\( \\overline{KE} = 1.94 \\times 10^4 \\text{ eV} = 19.4 \\text{ keV} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the formula for average kinetic energy in terms of temperature.",
+            "answer": 19,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Fission and Fusion Reactions",
+                "concept": "Requirements and Energy Released",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.2,
+                    "calculation": 0.6,
+                    "difficultyIn10": 9
+                },
+                "tags": [
+                    "Nuclear Fusion",
+                    "Plasma Temperature",
+                    "Kinetic Energy"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.1.2.Q17",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 280,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 70,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "In neutron activation analysis, a sample is irradiated with neutrons, and a certain isotope in the sample has a cross-section of \\( 20 \\) barns. Calculate the number of nuclei activated per second if the neutron flux is \\( 1 \\times 10^{12} \\) neutrons/cm²·s and the sample contains \\( 1 \\times 10^{20} \\) atoms of that isotope. (1 barn = \\( 1 \\times 10^{-24} \\) cm²)",
+            "solution": "Activation rate \\( R = N \\times \\sigma \\times \\phi \\)\\n\\( R = (1 \\times 10^{20}) \\times (20 \\times 10^{-24} \\text{ cm}^2) \\times (1 \\times 10^{12} \\text{ n/cm}^2\\cdot\\text{s}) \\)\\n\\( R = (1 \\times 10^{20}) \\times (2 \\times 10^{-23}) \\times (1 \\times 10^{12}) \\)\\n\\( R = 2 \\times 10^{9} \\) nuclei/s",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use the formula \\( R = N \\sigma \\phi \\) for activation rate.",
+            "answer": 2,
+            "answerRange": 0,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Applications of Nuclear Reactions",
+                "concept": "Industrial Uses (Material Analysis)",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.3,
+                    "concept": 0.2,
+                    "calculation": 0.5,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Neutron Activation",
+                    "Cross-Section",
+                    "Nuclear Reactions"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.2.5.Q18",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 290,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 72,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An exoergic nuclear reaction releases 5 MeV of energy per reaction. If \\( 1 \\times 10^{18} \\) reactions occur, calculate the total energy released in joules. (1 eV = \\( 1.602 \\times 10^{-19} \\) J)",
+            "solution": "Total energy \\( E = 5 \\times 10^6 \\text{ eV} \\times 1 \\times 10^{18} \\times 1.602 \\times 10^{-19} \\text{ J/eV} \\)\\n\\( E = 8.01 \\times 10^5 \\text{ J} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the energy per reaction by the number of reactions and convert to joules.",
+            "answer": 801,
+            "answerRange": 10,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Properties of Nuclear Reactions",
+                "concept": "Exoergic Reactions",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.2,
+                    "concept": 0.3,
+                    "calculation": 0.5,
+                    "difficultyIn10": 8
+                },
+                "tags": [
+                    "Energy Calculation",
+                    "Exoergic Reactions",
+                    "Nuclear Energy"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.3.2.Q19",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 300,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 75,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "A beta particle is emitted with a kinetic energy of 1 MeV. Calculate its speed as a percentage of the speed of light c. (Rest mass of electron \\( m_e c^2 = 0.511 \\) MeV)",
+            "solution": "Total energy \\( E = K + m_e c^2 = 1 + 0.511 = 1.511 \\) MeV\\nRelativistic formula \\( E = \\gamma m_e c^2 \\), where \\( \\gamma = \\frac{1}{\\sqrt{1 - (v/c)^2}} \\)\\n\\( \\gamma = \\frac{1.511}{0.511} = 2.9589 \\)\\nSolving for \\( v/c \\):\\n\\( v/c = \\sqrt{1 - (1/\\gamma)^2} = \\sqrt{1 - (1/2.9589)^2} \\approx 0.9487 \\)\\nSo, speed is approximately 94.87% of c.",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Use relativistic energy relations to solve for v.",
+            "answer": 95,
+            "answerRange": 1,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Beta-minus (β⁻) Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.1,
+                    "concept": 0.2,
+                    "calculation": 0.7,
+                    "difficultyIn10": 10
+                },
+                "tags": [
+                    "Beta Decay",
+                    "Relativistic Physics",
+                    "Particle Velocity"
+                ]
+            }
+        },
+        {
+            "id": "NC.NRE.3.1.Q20",
+            "statistics": {
+                "attempts": 0,
+                "hintsAccessed": 0,
+                "solved": 0,
+                "successRate": 0,
+                "idealAverageTime": 310,
+                "averageTimeTaken": 0,
+                "medianTime": 0,
+                "timeStdDev": 77,
+                "firstAttemptSuccessRate": 0,
+                "commonIncorrectAnswers": []
+            },
+            "type": "numerical",
+            "exerciseName": "Numerical Correct",
+            "questionText": "An alpha particle emitted in radioactive decay has a mass of \\( 4.002602 \\) u. Calculate its rest energy in MeV. (1 u = 931.5 MeV/c²)",
+            "solution": "Rest energy \\( E = m c^2 = 4.002602 \\times 931.5 \\text{ MeV} = 3,731.66 \\text{ MeV} \\)",
+            "solutionGPTRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "Multiply the mass by 931.5 MeV/u.",
+            "answer": 3732,
+            "answerRange": 10,
+            "conceptStatistics": {
+                "chapter": "Nuclear Reactions",
+                "section": "Types of Nuclear Decay",
+                "concept": "Alpha Decay",
+                "source": "Generated",
+                "resolution": {
+                    "information": 0.1,
+                    "concept": 0.2,
+                    "calculation": 0.7,
+                    "difficultyIn10": 7
+                },
+                "tags": [
+                    "Alpha Particle",
+                    "Rest Energy",
+                    "Mass-Energy Equivalence"
+                ]
+            }
+        }
+    ]
+}
