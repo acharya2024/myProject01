@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | CEF </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Charges and Electric Fields</h1>
+                    <p class="lead" id="tagline">Interaction between charges</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Charge -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section1-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section1" aria-expanded="false" aria-controls="section1">
+                                <strong> Charge And Its Properties</strong>
+                            </button>
+                        </h2>
+                        <div id="section1" class="accordion-collapse collapse" aria-labelledby="section1-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The concept of <strong>charge</strong> is fundamental in understanding the
+                                    interactions of particles in the realm of electromagnetism. Much like mass is an
+                                    intrinsic property that causes particles to experience gravitational forces, charge
+                                    is a fundamental property that leads particles to experience electric and magnetic
+                                    forces. The SI unit of charge is the coulomb (C). The charges are only known to
+                                    occur on matterial objects, having finite mass.
+                                </p>
+                                <p>
+                                    Charges come in two distinct types, often referred to as <strong>polarity</strong>:
+                                    positive and negative. Particles with like charges repel each other, while those
+                                    with unlike charges attract.
+                                </p>
+                                <p>
+                                    The smallest stable quantity of charge known is the <strong>electronic
+                                        charge</strong>, denoted as \( e \), which has a magnitude of approximately \(
+                                    1.602 \times 10^{-19} \) coulombs. This unit is the charge carried by a single
+                                    proton, with electrons carrying a charge of the same magnitude but opposite
+                                    polarity. All observable charges are
+                                    integral multiples of this elementary charge.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p>
+                                        Some fundamental properties of charge are enlisted below:
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Additive Property of Charge:</strong></summary> The
+                                            total charge of a system is the algebraic sum of all individual charges
+                                            within it. This means that charges can be added together like real numbers,
+                                            taking into account their signs.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Conservation of Charge:</strong></summary> Charge is a
+                                            conserved quantity; during any physical process, the total charge remains
+                                            constant.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Quantisation of Charge:</strong></summary> Charges
+                                            exist only in discrete amounts that are integral multiples of the elementary
+                                            charge \( e \). This quantization is significant in microscopic systems but
+                                            is often negligible in macroscopic systems involving large amounts of
+                                            charge, where charge can be treated as continuous for practical
+                                            calculations.
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    When charges are distributed over a region of space, we describe this distribution
+                                    using <strong>charge density</strong>. For linear distributions, we define a linear
+                                    charge density \( \lambda \) as the charge per unit length. For surface
+                                    distributions, the surface charge density \( \sigma \) represents the charge per
+                                    unit area. In the case of volumetric distributions, the volume charge density \(
+                                    \rho \) denotes the charge per unit volume. These densities help us analyze electric
+                                    fields generated by continuous charge distributions.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p>Following are a few simple and practicle methods of charging an object:</p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Charging through Direct Contact:</strong></summary>
+                                            <p>
+                                                One common method is through direct contact, where a charged object touches
+                                            a neutral one, transferring some of its charge. For example, rubbing a glass
+                                            rod with silk transfers electrons from the glass to the silk, leaving the
+                                            rod positively charged.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Charging through Induction:</strong></summary>
+                                            <p>
+                                                Induction involves bringing a charged object near a conductor, causing a
+                                            redistribution of charges within the conductor without direct contact. This
+                                            phenomenon leverages the mobility of charges in conductors to induce a net
+                                            charge in a specific region.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div class="col-12 col-md-6">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/27_Charging_by_induction.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram illustrating the process of charging by induction, showing a charged rod near a neutral conductor causing charge separation.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Charging by Induction.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Section 2: Coulomb's Law -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="coulombLaw-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#coulombLaw" aria-expanded="false" aria-controls="coulombLaw">
+                                <strong>Coulomb's Law</strong>
+                            </button>
+                        </h2>
+                        <div id="coulombLaw" class="accordion-collapse collapse" aria-labelledby="coulombLaw-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <div class="accordion-body">
+                                    <p>
+                                        The force between two point charges is described by <strong>Coulomb's
+                                            Law</strong>. This fundamental principle states that the magnitude of the
+                                        electrostatic force \( F \) between two stationary point charges is directly
+                                        proportional to the product of the absolute values of the charges and inversely
+                                        proportional to the square of the distance \( r \) between them. Mathematically,
+                                        it is expressed as:
+                                    </p>
+                                    <p>
+                                        \(\qquad F = k \dfrac{|q_1 q_2|}{r^2}\)
+                                    </p>
+                                    <p>
+                                        where \( k \) is Coulomb's constant (\( k = \dfrac{1}{4\pi\varepsilon_0} \)),
+                                        and
+                                        \( \varepsilon_0 \) is the vacuum permittivity. The scalar form of Coulomb's Law
+                                        provides the magnitude of the force, while the direction is along the line
+                                        connecting the two charges, being repulsive if the charges are of like signs and
+                                        attractive if they are of opposite signs.
+                                    </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;">
+                                                <img src="img/01_Coloumb_law.png" class="figure-img img-fluid rounded"
+                                                    alt="Diagram showing two point charges q1 and q2 separated by a distance r, illustrating Coulomb's Law.">
+                                                <figcaption class="figure-caption text-center">Diagram: Coulomb's Law
+                                                    between Two Point Charges.</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;">
+                                                <img src="img/02_Coloumb_law_vector_form.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Diagram showing two point charges q1 and q2 separated by a displacement vector r, illustrating the vector form of Coulomb's Law.">
+                                            </figure>
+                                            <figcaption class="figure-caption text-center">Diagram: Vector Form of
+                                                Coulomb's Law between Two Point Charges.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        In vector form, Coulomb's Law incorporates both magnitude and direction:
+                                    </p>
+                                    <p>
+                                        \(\qquad \vec{F} = \dfrac{1}{4\pi\varepsilon_0} \dfrac{q_1 q_2}{r^2} \hat{r}\)
+                                    </p>
+                                    <p>
+                                        where \( \hat{r} \) is the unit vector pointing from one charge to the other.
+                                        Considering position vectors \( \vec{r}_1 \) and \( \vec{r}_2 \) for charges \(
+                                        q_1 \) and \( q_2 \) respectively, the force on \( q_2 \) due to \( q_1 \) is:
+                                    </p>
+                                    <p>
+                                        \(\qquad \vec{F}_{21} = \dfrac{1}{4\pi\varepsilon_0} \dfrac{q_1 q_2}{|\vec{r}_2
+                                        -
+                                        \vec{r}_1|^3} (\vec{r}_2 - \vec{r}_1)\)
+                                    </p>
+                                    <p>
+                                        The medium between the charges affects the force through its permittivity \(
+                                        \varepsilon \). In a medium other than vacuum, \( \varepsilon \) replaces \(
+                                        \varepsilon_0 \) in the formula, changing the magnitude of the force. This
+                                        effect will be explored in detail in the chapter on dielectrics.
+                                    </p>
+                                    <p>
+                                        An important principle in electrostatics is the <strong>principle of
+                                            superposition of forces</strong>. This principle states that the total force
+                                        acting on a charge due to multiple other charges is the vector sum of the
+                                        individual forces exerted by each charge. Experimentally, it has been observed
+                                        that when a charge \( q_0 \) is placed in the presence of several other charges
+                                        \( q_1, q_2, \ldots \), the force exerted by each charge on \( q_0 \) remains
+                                        unaffected by the presence of other charges in the surrounding. Therefore, the
+                                        net force on \( q_0 \) is obtained by adding up all these individual forces
+                                        vectorially.
+                                    </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 250px;">
+                                                <img src="img/03_Superposition_principle.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Diagram illustrating the principle of superposition, showing a charge q0 experiencing forces from multiple charges q1, q2, etc., and the resultant net force.">
+                                            </figure>
+                                            <figcaption class="figure-caption text-center">Diagram: Principle of
+                                                Superposition of Forces.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        In other words, the principle of superposition states that the total force
+                                        \(\vec{F}_{\text{net}}\) acting on a charge is the vector sum of all individual
+                                        forces \(\vec{F}_1, \vec{F}_2, \ldots, \vec{F}_n\) exerted by each surrounding
+                                        charge. Mathematically, this is expressed as:
+                                    </p>
+                                    <p>
+                                        \(\qquad\vec{F}_{\text{net on }q_0} = \vec{F}_{\text{due to 1}}+
+                                        \vec{F}_{\text{due to 2}}+\vec{F}_{\text{due to 3}}+...\).
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 3: Electric Field -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="electricFieldheading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#electricField" aria-expanded="false" aria-controls="electricField">
+                                <strong>Electric Field</strong>
+                            </button>
+                        </h2>
+                        <div id="electricField" class="accordion-collapse collapse"
+                            aria-labelledby="electricFieldheading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The electric field is a property of a point in space, determined by the influence of
+                                    charges in its surroundings. For example, if a 2 C charge placed at point P
+                                    experiences a force of 10 N along the x-axis due to nearby charges, replacing it
+                                    with a 4 C charge would result in a force of 20 N in the same direction. This
+                                    demonstrates that any charge placed at point P will experience a force of 5 N/C per
+                                    unit charge. This value of 5 N/C is the electric field at point P, which is
+                                    independent of the specific charge placed at P but depends entirely on the charges
+                                    distributed around P.
+                                </p>
+                                <p>
+                                    Mathematically, if a charge \( q \) is placed at a point in an electric field and
+                                    experiences a net force \( \vec{F} \), the electric field strength at that point is
+                                    given by:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{E} = \dfrac{\vec{F}}{q}\)
+                                </p>
+                                <p>
+                                    Here, \( q \) is the test charge. For accurate measurement of the electric field,
+                                    the test charge \( q_0 \) must be small enough to avoid altering the charge
+                                    distribution of the source charges.
+                                </p>
+                                <p>
+                                    The electric field is a vector quantity, meaning it has both magnitude and
+                                    direction. Its SI unit is Newton per Coulomb (N/C). The direction of the electric
+                                    field is radially outward from a positive charge and radially inward toward a
+                                    negative charge.
+                                </p>
+                                <p>
+                                    Using the principle of superposition of electrostatic forces, the resultant electric
+                                    field due to multiple charges can be calculated as:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{E}_\text{Resultant} = \vec{E}_1 + \vec{E}_2 + \ldots + \vec{E}_n\)
+                                </p>
+
+                                <ul class="list-group list-group-flush mb-4">
+                                    <p>
+                                        Below are detailed examples that demonstrate the calculation of electric fields
+                                        using the principle of superposition for different charge configurations:
+                                    </p>
+
+                                    <!-- Example 1: Electric Field Due to a Point Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Electric Field Due to a Point Charge</strong></summary>
+                                            <p>
+                                                Consider a point P at a distance \( r \) from a point charge \( Q \).
+                                                The electric field at point P is calculated using Coulomb’s law. The
+                                                magnitude of the electric field \( E \) is given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{1}{4\pi \varepsilon_0} \dfrac{|Q|}{r^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Here, \( \varepsilon_0 \) is the permittivity of free space. The
+                                                direction of the electric field is radially outward from \( Q \) if \( Q
+                                                \) is positive and radially inward if \( Q \) is negative.
+                                            </p>
+                                            <p>
+                                                In vector form, if \( \vec{r} \) is the position vector from \( Q \) to
+                                                point P, the electric field is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \vec{E} = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{r^3} \vec{r}
+                                                \)
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/04_Field_of_Point_Charge.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing a point charge Q and a point P at a distance r from it, illustrating the electric field calculation.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field Due to a Point Charge.</figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+
+                                    <!-- Example 2: Electric Field Due to Two Charges Along Axis -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Electric Field Due to Two Charges Along Axis</strong>
+                                            </summary>
+                                            <p>
+                                                Consider two charges, \( Q_1 \) and \( Q_2 \), of the same polarity
+                                                placed on the x-axis at positions \( x = -a \) and \( x = +a \),
+                                                respectively. Let us calculate the electric field at the midpoint of the
+                                                line joining the charges (point P at \( x = 0 \)).
+                                            </p>
+                                            <p>
+                                                The electric field at P due to \( Q_1 \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \vec{E}_1 = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q_1}{a^2} \hat{i}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Similarly, the electric field at P due to \( Q_2 \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \vec{E}_2 = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q_2}{a^2} (-\hat{i})
+                                                \)
+                                            </p>
+                                            <p>
+                                                Using the principle of superposition, the net electric field at P is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \vec{E}_\text{net} = \vec{E}_1 + \vec{E}_2
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting the values:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \vec{E}_\text{net} = \dfrac{1}{4\pi \varepsilon_0} \dfrac{(Q_1 -
+                                                Q_2)}{a^2} \hat{i}
+                                                \)
+                                            </p>
+                                            <p>
+                                                If \( Q_1 = Q_2 \), the net electric field at P is zero, as the fields
+                                                cancel each other.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/05_Field_midpoint_of_two_charges.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing two charges Q1 and Q2 along the x-axis, and the electric field calculation at the midpoint.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field Along Axis Due to Two Charges.</figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+
+                                    <!-- Example 3: Electric Field Due to Two Charges Along Perpendicular Bisector -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Electric Field Due to Two Charges Along Perpendicular
+                                                    Bisector</strong></summary>
+                                            <p>
+                                                Consider two equal charges \( Q \) located at \( (-a, 0) \) and \( (+a,
+                                                0) \) on the \(x\)-axis. Let us calculate the electric field at a point
+                                                P on
+                                                the perpendicular bisector at \( (0, y) \).
+                                            </p>
+                                            <p>
+                                                The distance of point P from each charge is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                r = \sqrt{a^2 + y^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The magnitude of the electric field due to each charge at P is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{r^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The electric fields due to the two charges are not aligned along the
+                                                same direction or line, so their algebraic sum cannot be directly
+                                                computed. Instead, the net electric field must be determined by
+                                                performing a vector sum. To achieve this, each electric field vector is
+                                                resolved into its components along the x and y axes. This is shown in
+                                                diagram below:
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/06_Field_equidistant_two_charges.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing two charges on the x-axis and point P on the perpendicular bisector, illustrating electric field calculation.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field Along Perpendicular Bisector.</figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/07_Field_equidistant_two_charges_resolution.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing resolution of electric field due to two charges on the x-axis.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field resolved along \(x\) and \(y\) axes.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                The x-components of the electric fields cancel out because they are
+                                                equal in magnitude but opposite in direction. The y-components, however,
+                                                add up because they are aligned in the same direction. Thus, the net
+                                                electric field at P is entirely along the y-direction and is calculated
+                                                as the sum of the y-components of the individual fields.
+                                            </p>
+
+                                            <p>
+                                                \(\qquad
+                                                E_y = 2E \sin\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( \sin\theta = \dfrac{a}{\sqrt{a^2 + y^2}} \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_y = 2 \left( \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{r^2} \right)
+                                                \dfrac{a}{r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Simplifying:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_y = \dfrac{1}{4\pi \varepsilon_0} \dfrac{2Qa}{(a^2 + y^2)^{3/2}}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4: Electric Field Lines-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-electric-field-lines-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electric-field-lines" aria-expanded="false"
+                                aria-controls="section-electric-field-lines">
+                                <strong>Electric Field Lines</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electric-field-lines" class="accordion-collapse collapse"
+                            aria-labelledby="section-electric-field-lines-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>Electric Field Lines</strong> are a visual representation of the electric
+                                    field in a region of space. They illustrate the direction of the electric field at
+                                    various points and the relative strength of the field, indicating the force a
+                                    positive test charge would experience at any given location. This is shown in
+                                    diagram below:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/08_Electric_Field_Line.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing the electric field lines.">
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Electric field line
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    To construct electric field lines, the direction of the electric field at multiple
+                                    points in a region is first represented by small arrows, each pointing in the
+                                    direction of the electric field. Connecting these arrows forms continuous lines,
+                                    known as electric field lines, which provide a clear depiction of the field's
+                                    behavior. The following diagram demonstrates this concept with examples:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/09_Electric_field_lines_positive_charge.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing the creation of electric field lines due to a point charge.">
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/11_Electric_field_lines_negative_charge.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing the creation of electric field lines due to a point charge.">
+                                        </figure>
+
+                                    </div>
+                                    <figcaption class="figure-caption text-center">Diagram: Electric field lines
+                                        generated by a point charge.</figcaption>
+                                </div>
+                                <p>
+                                    The two diagrams below represent the electric field lines drawn in a similar way for
+                                    two point charges with same and opposite polarity:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/13_Electric_field_lines_two_positive_charge.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing electric field lines due to two charges of same polarity.">
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Electric field lines
+                                            due to two charges of same polarity.</figcaption>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/12_Electric_field_lines_two_positive_negative_charge.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing electric field lines due to two charges of opposite polarity.">
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Electric field lines
+                                            due to two charges of opposite polarity.</figcaption>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush mb-4">
+                                    The following list provides fundamental properties of these electric field lines:
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Origin and Termination:</strong></summary>
+                                            <p>
+                                                Electric field lines always originate from positive charges and
+                                                terminate on negative charges or extend to infinity. For a positive
+                                                charge, the lines radiate outward, while for a negative charge, they
+                                                curve inward.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Tangent Direction:</strong></summary>
+                                            <p>
+                                                At any point, the tangent to an electric field line indicates the
+                                                direction of the electric field at that point.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/08_Electric_Field_Line.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing the tangent to an electric field line indicating the direction of the electric field at points P and Q.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Tangent to
+                                                        Electric Field Lines Indicating Direction.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Thus, the electric field lines in absence of charges can not make a
+                                                sharp turn. As, at the position of sharp turn the direction of electric
+                                                field will become undefined.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>No Intersection:</strong></summary>
+                                            <p>
+                                                Two electric field lines can never intersect. If they did, it would
+                                                imply two different directions for the electric field at a single point,
+                                                which is not possible.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Density Indicates Field Strength:</strong></summary>
+                                            <p>
+                                                The field's strength at any point is proportional to the density of the
+                                                electric field lines in that region. Higher density indicates a stronger
+                                                field, while lower density indicates a weaker field.
+                                            </p>
+                                        </details>
+                                    </li>]
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 5: Electric Field Results -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-electric-field-results-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electric-field-results" aria-expanded="false"
+                                aria-controls="section-electric-field-results">
+                                <strong>Electric Field Standard Results</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electric-field-results" class="accordion-collapse collapse"
+                            aria-labelledby="section-electric-field-results-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush mb-4">
+                                    <p>
+                                        Following are a few standard charge distributions and the results of electric
+                                        field at various points due to such charge distributions.
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Due to Uniformly Charged Ring</strong>
+                                            </summary>
+                                            <p>
+                                                A uniformly charged ring exhibits unique electric field properties,
+                                                depending on the location of the observation point. Below, we discuss
+                                                two key scenarios: the electric field at the center of the ring and the
+                                                electric field at a point along its axis.
+                                            </p>
+
+                                            <p><strong>1. Electric Field at the Center of the Ring:</strong></p>
+                                            <p>
+                                                At the center of a uniformly charged ring, the electric field is zero
+                                                due to symmetry. Consider a small segment \( AB \) of the ring and its
+                                                opposite segment \( CD \). The electric field produced by \( AB \) at
+                                                the center is canceled out by the field produced by \( CD \), as shown
+                                                in the diagram below. This cancellation occurs for all such opposite
+                                                pairs, resulting in a net electric field strength of zero at the center.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 180px;">
+                                                        <img src="img/14_1_charged_ring.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing uniformly charged ring.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: A Uniformly
+                                                        Charged Ring.</figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 180px;">
+                                                        <img src="img/14_Electric_field_at_center_of_ring.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing electric field cancellation at the center of a uniformly charged ring.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field at the Center of a Uniformly Charged Ring.</figcaption>
+                                                </div>
+                                            </div>
+
+                                            <p><strong>2. Electric Field at a Point on the Axis:</strong></p>
+                                            <p>
+                                                To calculate the electric field at a point \( P \) along the axis of the
+                                                ring (at a distance \( x \) from its center), consider the following
+                                                setup:
+                                            </p>
+                                            <ul>
+                                                <li>The ring has a total charge \( Q \) uniformly distributed over its
+                                                    circumference.</li>
+                                                <li>Its radius is \( R \), and the linear charge density is \( \lambda =
+                                                    \dfrac{Q}{2\pi R} \).</li>
+                                            </ul>
+                                            <p>
+                                                This is shown in the following diagram:
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/17_Uniformly_charged_ring.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing a point on the axis of a uniformly charged ring.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: A Point
+                                                        Along the Axis of a Uniformly Charged Ring.
+                                                    </figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/15_Electric_field_at_axis_of_ring.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing the electric field at a point on the axis of a uniformly charged ring.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field at a Point Along the Axis of a Uniformly Charged Ring.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                A small segment of length \( dl \) on the ring carries a charge \( dq
+                                                \), given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dq = \lambda dl = \dfrac{Q}{2\pi R} dl
+                                                \)
+                                            </p>
+                                            <p>
+                                                The electric field \( dE \) at point \( P \) due to this small charge
+                                                segment is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE = \dfrac{1}{4\pi \varepsilon_0} \dfrac{dq}{R^2 + x^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The vertical component of \( dE \), \( dE \sin \alpha \), is canceled by
+                                                the field due to the opposite segment of the ring. The horizontal
+                                                components \( dE \cos \alpha \) add up along the axis. Integrating these
+                                                components over the entire ring yields the total electric field at \( P
+                                                \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_P = \displaystyle\int dE \cos \alpha = \displaystyle\int_{0}^{2\pi R}
+                                                \dfrac{1}{4\pi
+                                                \varepsilon_0} \dfrac{dq}{R^2 + x^2} \cdot \dfrac{x}{\sqrt{R^2 + x^2}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( dq = \dfrac{Q}{2\pi R} dl \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_P = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Qx}{2\pi R (R^2 + x^2)^{3/2}}
+                                                \displaystyle\int_{0}^{2\pi R} dl
+                                                \)
+                                            </p>
+                                            <p>
+                                                Simplifying the integral:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_P = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Qx}{(R^2 + x^2)^{3/2}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The direction of this electric field is along the axis of the ring. The
+                                                field is maximum at \( x = R / \sqrt{2} \).
+                                            </p>
+
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Due to Uniformly Charged Arc</strong></summary>
+                                            <p>
+                                                Consider a circular arc of radius \( R \), uniformly charged with a
+                                                total charge \( Q \), which subtends an angle \( \theta \) at its center
+                                                \( C \). The task is to calculate the electric field strength at \( C \)
+                                                due to the charge distribution along the arc.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 150px;">
+                                                        <img src="img/18_Uniformly_charged_arc.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing a uniformly charged circular arc with radius R subtending an angle θ at its center.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: A Uniformly
+                                                        Charged Circular Arc.</figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 250px;">
+                                                        <img src="img/16_Electric_field_at_center_of_arc.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing a uniformly charged circular arc with radius R subtending an angle θ at its center.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field Due to a Uniformly Charged Circular Arc.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                To compute the electric field at the center, consider a small elemental
+                                                segment of the arc of angular width \( d\phi \) at an angle \( \phi \)
+                                                from the angle bisector (x-axis). The length of this elemental segment
+                                                is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dl = R \, d\phi
+                                                \)
+                                            </p>
+                                            <p>
+                                                The charge on this elemental segment is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dq = \lambda \, dl = \lambda R \, d\phi
+                                                \)
+                                            </p>
+                                            <p>
+                                                Here, \( \lambda = \dfrac{Q}{R\theta} \) is the linear charge density of
+                                                the arc.
+                                            </p>
+                                            <p>
+                                                The electric field produced at \( C \) by \( dq \) is given by Coulomb's
+                                                law:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE = \dfrac{1}{4\pi \varepsilon_0} \dfrac{dq}{R^2} = \dfrac{1}{4\pi
+                                                \varepsilon_0} \dfrac{\lambda \, d\phi}{R}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The component of \( dE \) perpendicular to the angle bisector cancels
+                                                out due to symmetry when integrated over the entire arc. The component
+                                                along the angle bisector (x-axis) contributes to the net electric field
+                                                and is given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE_x = dE \cos\phi = \dfrac{1}{4\pi \varepsilon_0} \dfrac{\lambda}{R}
+                                                \cos\phi \, d\phi
+                                                \)
+                                            </p>
+                                            <p>
+                                                Integrating \( dE_x \) over the limits \( -\theta/2 \) to \( \theta/2
+                                                \), the net electric field at \( C \) is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \displaystyle\int_{-\theta/2}^{\theta/2} \dfrac{1}{4\pi
+                                                \varepsilon_0}
+                                                \dfrac{\lambda}{R} \cos\phi \, d\phi
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( \lambda = \dfrac{Q}{R\theta} \), the field simplifies
+                                                to:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R^2 \theta}
+                                                \displaystyle\int_{-\theta/2}^{\theta/2} \cos\phi \, d\phi
+                                                \)
+                                            </p>
+                                            <p>
+                                                The integral of \( \cos\phi \) over these limits is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                \displaystyle\int_{-\theta/2}^{\theta/2} \cos\phi \, d\phi =
+                                                2\sin\dfrac{\theta}{2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting this result, the net electric field at \( C \) becomes:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{1}{4\pi \varepsilon_0} \dfrac{2Q}{R^2 \theta}
+                                                \sin\dfrac{\theta}{2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The direction of the electric field is along the angle bisector
+                                                (x-axis).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Due to Uniformly Charged Rod</strong></summary>
+                                            <p>
+                                                We derive the electric field at a general point \(P\) due to a uniformly
+                                                charged rod. This includes results for a finite rod at a point located
+                                                at a perpendicular distance from the rod and the special case of an
+                                                infinite rod.
+                                            </p>
+
+                                            <h5>Finite Rod</h5>
+                                            <p>
+                                                Consider a uniformly charged finite rod \(AB\) of length \(L\), with a
+                                                uniform linear charge density \( \lambda \). Let the point \(P\) be at a
+                                                perpendicular distance \(a\) from the rod. The ends of the rod subtend
+                                                angles \( \alpha \) and \( \beta \) at \(P\), as shown in the diagram.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/19_Uniformly_charged_rod.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram of a finite rod showing angles alpha and beta with respect to point P.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Finite Rod
+                                                        with Angles \( \alpha \) and \( \beta \).</figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/20_Electric_field_due_to_Uniformly_charged_rod.png"
+                                                            class="figure-img img-fluid rounded" alt="Diagram of a Electric
+                                                            field generated by an element of rod.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        field generated by an element of rod.</figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                To find the electric field, consider an infinitesimal element of length
+                                                \(dx\) at a distance \(x\) from the perpendicular line through \(P\).
+                                                This is shown in the diagram above. The charge on this element is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dq = \lambda \, dx
+                                                \)
+                                            </p>
+                                            <p>
+                                                The electric field \(dE\) at \(P\) due to this element is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE = \dfrac{1}{4\pi\varepsilon_0} \dfrac{dq}{r^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Resolving \(dE\) into components:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    \(dE_x = dE \cos\theta\)
+                                                </li>
+                                                <li>
+                                                    \(dE_y = dE \sin\theta\)
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Substituting for \(dE\) and using \( \cos\theta = \dfrac{a}{r} \) and \(
+                                                \sin\theta = \dfrac{x}{r} \), we get:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE_x = \dfrac{1}{4\pi\varepsilon_0} \dfrac{\lambda \, dx}{r^2} \cdot
+                                                \dfrac{a}{r}
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad dE_y = \dfrac{1}{4\pi\varepsilon_0} \dfrac{\lambda
+                                                \,
+                                                dx}{r^2} \cdot \dfrac{x}{r}\)
+                                            </p>
+                                            <p>
+                                                Let us simplify further by substituting \( x = a \tan\theta \). From
+                                                this substitution, we calculate:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    \( dx = a \sec^2\theta \, d\theta \)
+                                                </li>
+                                                <li>
+                                                    \( r = \sqrt{x^2 + a^2} = a \sec\theta \)
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Substituting these into the expressions for \(dE_x\) and \(dE_y\), we
+                                                get:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE_x = \dfrac{1}{4\pi\varepsilon_0} \dfrac{\lambda a}{(a \sec\theta)^3}
+                                                \cdot a \sec^2\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad
+                                                dE_x = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \cos\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE_y = \dfrac{1}{4\pi\varepsilon_0} \dfrac{\lambda a}{(a \sec\theta)^3}
+                                                \cdot x \cdot \sec^2\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad
+                                                dE_y =
+                                                \dfrac{\lambda}{4\pi\varepsilon_0
+                                                a} \sin\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                Now, integrate each component over the limits of \( \theta \), from \(
+                                                -\beta \) to \( \alpha \), where \( \alpha \) and \( \beta \) are the
+                                                angles subtended by the ends of the rod at \(P\):
+                                            </p>
+                                            <p>
+                                                For \(E_x\):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_x = \int_{-\beta}^{\alpha} \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \cos\theta \, d\theta = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \int_{-\beta}^{\alpha} \cos\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_x = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \left[\sin\theta\right]_{-\beta}^{\alpha}
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_x = \dfrac{\lambda}{4\pi\varepsilon_0 a} \left(\sin\alpha +
+                                                \sin\beta\right)
+                                                \)
+                                            </p>
+                                            <p>
+                                                For \(E_y\):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_y = \int_{-\beta}^{\alpha} \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \sin\theta \, d\theta = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \int_{-\beta}^{\alpha} \sin\theta \, d\theta
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_y = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \left[-\cos\theta\right]_{-\beta}^{\alpha}
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_y = \dfrac{\lambda}{4\pi\varepsilon_0 a} \left(\cos\beta -
+                                                \cos\alpha\right)
+                                                \)
+                                            </p>
+                                            <p>
+                                                Therefore, the components of the electric field at point \(P\) are:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E_x = \dfrac{\lambda}{4\pi\varepsilon_0 a} \left(\sin\alpha +
+                                                \sin\beta\right)
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\qquad E_y = \dfrac{\lambda}{4\pi\varepsilon_0 a}
+                                                \left(\cos\beta - \cos\alpha\right)
+                                                \)
+                                            </p>
+                                            <p> The components \( E_x \) and \( E_y \) can be combined vectorially to
+                                                find the net electric field at point \( P \). This is particularly
+                                                useful when analyzing the direction and magnitude of the resulting
+                                                field.
+                                            </p>
+                                            <p>
+                                                For the special case of an infinite rod, the angles subtended by
+                                                the ends of the rod become \( \alpha = \beta = \dfrac{\pi}{2} \), since
+                                                the rod effectively extends indefinitely in both directions.
+                                                Substituting these values simplifies the expressions for \( E_x \) and
+                                                \( E_y \), leading to the final result for the electric field due to an
+                                                infinite line of charge, given as: </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{\lambda}{2\pi\varepsilon_0 a}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The field is radial for an infinite rod, directed outward for \( \lambda
+                                                > 0 \) and inward for \( \lambda < 0 \). </p>
+
+                                        </details>
+                                    </li>
+
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Due to Uniformly Charged Disc</strong></summary>
+                                            <p>
+                                                Consider a uniformly charged disc of radius \( R \), having a surface
+                                                charge density \( \sigma \) (charge per unit area). We aim to calculate
+                                                the electric field at a point \( P \), located at a distance \( x \)
+                                                from the center of the disc along its axis. The setup is illustrated in
+                                                the diagram below.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/21_Uniformly_charged_disc.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram of a uniformly charged disc and the calculation of the electric field at a point P on its axis.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Uniformly
+                                                        Charged Disc and the Point of Interest \( P \) on its Axis.
+                                                    </figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/22_Electric_field_due_to_Uniformly_charged_disc.png"
+                                                            class="figure-img img-fluid rounded" alt="Diagram of a Considered
+                                                            element on disc causing electric field on axis">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Considered
+                                                        element on disc causing electric field \(d\vec{E}\) on axis.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                To compute the electric field at \( P \), consider an infinitesimal ring
+                                                element of radius \( r \) and thickness \( dr \) within the disc. The
+                                                charge on this ring is:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dq = \sigma \cdot (2\pi r \, dr)
+                                                \)
+                                            </p>
+                                            <p>
+                                                The electric field due to this infinitesimal ring at point \( P \) has
+                                                only the axial. The
+                                                infinitesimal electric field along the axis is given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE = \dfrac{1}{4\pi\varepsilon_0} \dfrac{dqx}{(r^2
+                                                + x^2)^{3/2}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( dq \), we get:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                dE = \dfrac{\sigma \cdot 2\pi r \, dr}{4\pi\varepsilon_0} \dfrac{x}{(r^2
+                                                + x^2)^{3/2}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                The total electric field \( E \) along the axis is obtained by
+                                                integrating \( dE \) over the entire disc, i.e., from \( r = 0 \) to \(
+                                                r = R \):
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \displaystyle\int_0^R \dfrac{\sigma x r \, dr}{2\varepsilon_0 (r^2 +
+                                                x^2)^{3/2}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Substituting \( u = r^2 + x^2 \), \( du = 2r \, dr \), and updating the
+                                                limits of integration, we have:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{\sigma x}{2\varepsilon_0} \displaystyle\int_{x^2}^{x^2 + R^2}
+                                                u^{-3/2} \,
+                                                du
+                                                \)
+                                            </p>
+                                            <p>
+                                                The integral \( \int u^{-3/2} \, du = -2u^{-1/2} \), so:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{\sigma x}{2\varepsilon_0} \left[ -2u^{-1/2}
+                                                \right]_{x^2}^{x^2 + R^2}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Simplifying:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                E = \dfrac{\sigma x}{\varepsilon_0} \left[ \dfrac{1}{\sqrt{x^2}} -
+                                                \dfrac{1}{\sqrt{x^2 + R^2}} \right]
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad
+                                                E = \dfrac{\sigma}{2\varepsilon_0} \left[ 1 - \dfrac{x}{\sqrt{x^2 +
+                                                R^2}} \right]
+                                                \)
+                                            </p>
+                                            <p>
+                                                The direction of the electric field is along the axis of the disc,
+                                                pointing away from the disc if \( \sigma > 0 \) (positive surface charge
+                                                density), and toward the disc if \( \sigma < 0 \) (negative surface
+                                                    charge density). </p>
+                                        </details>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Due to Spherical Charge Distribution</strong></summary>
+                                            <p>
+                                                The electric field due to a spherical charge distribution depends on
+                                                whether the sphere is a uniformly charged shell or a solid sphere.
+                                                Below, we analyze the electric field in both cases:
+                                            </p>
+
+                                            <p><strong>1. Uniformly Charged Spherical Shell:</strong></p>
+                                            <p>
+                                                A uniformly charged spherical shell exhibits unique electric field
+                                                behavior based on the position of the observation point:
+                                            </p>
+                                            <ul>
+                                                <li><strong>For points outside the shell (\(x \ge R\)):</strong></li>
+                                                <p>
+                                                    By symmetry, the electric field behaves as if the entire charge \( Q
+                                                    \) is concentrated at the center of the shell. The electric field
+                                                    strength at a point at distance \( x \) from the center is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    E_\text{out} = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{x^2}
+                                                    \)
+                                                </p>
+
+                                                <li><strong>For points inside the shell (\(x < R\)):</strong>
+                                                </li>
+                                                <p>
+                                                    The electric field strength is zero everywhere inside the shell due
+                                                    to symmetry. This result can be formally derived using Gauss's law
+                                                    (to be discussed in further chapters).
+                                                </p>
+                                            </ul>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/23_Uniformly_charged_sphere.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing electric field behavior inside and outside a uniformly charged spherical shell.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Inside point
+                                                        \(P_1\) and outside point \(P_2\) of a spherical charged shell.
+                                                    </figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/24_Electric_field_due_to_Uniformly_charged_sphere.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing electric field behavior inside and outside a uniformly charged spherical shell.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Diagram: Electric
+                                                        Field Due to a Uniformly Charged Spherical Shell.</figcaption>
+                                                </div>
+                                            </div>
+
+                                            <p><strong>2. Uniformly Charged Solid Sphere:</strong></p>
+                                            <p>
+                                                A uniformly charged solid sphere exhibits different electric field
+                                                characteristics for points inside and outside the sphere:
+                                            </p>
+                                            <ul>
+                                                <li><strong>For points outside the sphere (\(x \ge R\)):</strong></li>
+                                                <p>
+                                                    Similar to the spherical shell, the entire charge \( Q \) can be
+                                                    treated as concentrated at the center. The electric field strength
+                                                    is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    E_\text{out} = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{x^2}
+                                                    \)
+                                                </p>
+
+                                                <li><strong>For points inside the sphere (\(x < R\)):</strong>
+                                                </li>
+                                                <p>
+                                                    Following diagram represents a point inside a uniformly charged
+                                                    solid sphere:
+                                                </p>
+                                                <div class="row justify-content-center mb-4">
+                                                    <div
+                                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                        <figure style="max-width: 150px;">
+                                                            <img src="img/24_Uniformly_charged_solid_sphere.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram showing point inside solid sphere.">
+                                                        </figure>
+                                                        <figcaption class="figure-caption text-center">Diagram: Inside
+                                                            point
+                                                            \(P\) of a charged solid sphere.</figcaption>
+                                                    </div>
+
+                                                </div>
+                                                <p>
+                                                    The electric field strength at a point inside a uniformly charged
+                                                    sphere depends only on the charge enclosed within a smaller sphere
+                                                    of radius \( x \), centered at the same point as the larger sphere.
+                                                    This result follows from symmetry and the fact that the electric
+                                                    field inside a uniformly charged spherical shell is zero, as
+                                                    discussed in the context of Gauss's Law.
+                                                </p>
+                                                <p>
+                                                    For an interior point, the sphere can be visualized as consisting of
+                                                    two regions:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <strong>The inner sphere:</strong> A smaller sphere of radius \(
+                                                        x \), centered at the same point as the larger sphere, which
+                                                        contributes to the electric field at the point of interest.
+                                                    </li>
+                                                    <li>
+                                                        <strong>The outer shell:</strong> The remaining portion of the
+                                                        sphere, which is a spherical shell with an inner radius \( x \)
+                                                        and an outer radius \( R \), does not contribute to the electric
+                                                        field at any point inside it. This is a result of symmetry and
+                                                        the shell theorem.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    To calculate the electric field at a point inside the sphere at a
+                                                    distance \( x \) from its center, we first determine the total
+                                                    charge enclosed within the inner sphere of radius \( x \). The total
+                                                    charge of the sphere is distributed uniformly, so the charge
+                                                    enclosed within the smaller sphere is proportional to its volume.
+                                                    Using the volume formula for spheres, we find:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    q_\text{encl} = \dfrac{\text{Volume of inner sphere}}
+                                                    {\text{Volume of entire sphere}} \cdot Q
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    Substituting the volume formula for spheres (\( \text{Volume} =
+                                                    \frac{4}{3} \pi r^3 \)), the enclosed charge is:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    q_\text{encl} = Q \cdot \dfrac{\frac{4}{3} \pi x^3}{\frac{4}{3} \pi
+                                                    R^3}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    Simplifying:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    q_\text{encl} = \dfrac{Q x^3}{R^3}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    The electric field at the interior point is then calculated using
+                                                    Coulomb's law:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    E = \dfrac{1}{4 \pi \varepsilon_0} \dfrac{q_\text{encl}}{x^2}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    Substituting \( q_\text{encl} = \frac{Q x^3}{R^3} \):
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    E = \dfrac{1}{4 \pi \varepsilon_0} \dfrac{\frac{Q x^3}{R^3}}{x^2}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    Simplifying further:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    E = \dfrac{1}{4 \pi \varepsilon_0} \dfrac{Q x}{R^3}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    Thus, the electric field at any interior point is directly
+                                                    proportional to the distance \( x \) from the center of the sphere
+                                                    and is given by:
+                                                </p>
+                                                <p>
+                                                    \[
+                                                    E = \dfrac{1}{4 \pi \varepsilon_0} \dfrac{Q x}{R^3}
+                                                    \]
+                                                </p>
+                                                <p>
+                                                    This linear dependence on \( x \) demonstrates that the electric
+                                                    field increases linearly with distance from the center for points
+                                                    inside the sphere, reaching its maximum value at the surface.
+                                                </p>
+
+                                                <p>
+                                                    If the volume charge density \( \rho \) of the sphere is known, the
+                                                    total charge \( Q \) can be expressed as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    Q = \rho \cdot \dfrac{4}{3} \pi R^3
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    Substituting this into the expression for \( E_\text{in} \), we get:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    E_\text{in} = \dfrac{\rho x}{3 \varepsilon_0}
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    In vector form, the electric field at a point inside the sphere is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    \vec{E}_\text{in} = \dfrac{\rho \vec{x}}{3 \varepsilon_0}
+                                                    \)
+                                                </p>
+                                            </ul>
+                                            <p><strong>Graphical Representation:</strong></p>
+                                            <p>
+                                                The variation of the electric field as a function of distance from the
+                                                center of the sphere is shown in the graph below. The field increases
+                                                linearly within the sphere and decreases inversely with the square of
+                                                the distance outside the sphere.
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 300px;">
+                                                        <img src="img/25_Electric_field_due_to_Uniformly_charged_sphere_Graph.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Graph showing variation of electric field as a function of distance from the center of a uniformly charged sphere.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">Graph: Variation of
+                                                        Electric Field with Distance from the Center of a Uniformly
+                                                        Charged Sphere.</figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
