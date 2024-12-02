@@ -59,20 +59,30 @@
     - projectile like motion in electric and gravitational field [GPT instructions: Assume animation (in gif) to be present ]
     - oscillation of pendulum in electric and gravitational field [GPT instructions: Assume animation (in gif) to be present ]
 
-### Chapter 2: Electrostatic Potential Energy and Potential
-#### Section 1. Electrostatic Potential Energy
-- Definition and its relation with force
-- Potential energy
-    - system of two particles
-    - system of more than two particles
-- Work done in moving a charge
-    - slowly
-    - gaining kinetic energy
-- Conservation of energy involving motion of
-    - single charge
-    - multiple charge
 
-#### Section 2. Electrostatic Potential
+Keep the content more logical, easy to understand and one para connected logically to next para. Assume diagrams wherever required. Be accurate. Enhance redability. Explain things in detail. But no Jargon.
+### Chapter 2: Electrostatic Potential Energy and Potential
+#### Section 1. Electrostatic Potential Energy [accordion item]
+- Definition and its relation with force [GPT: Give definition. Emphasise on potential energy to be generated due to interaction between the charges. This PE can not be assigned to either particle]
+- Potential energy [GPT: Mention a general method of calculation of change in potential energy. Also mention PE is considered zero when no interaction occurs (that is when charges have a separation of infinity)]
+    - system of two particles [GPT: Derive the result assuming proper diagram]
+    - system of more than two particles [GPT: Start from two charge configuration. Mention initial PE. Then allow third charge to arrive from infinity. Then calculate increment in PE. Then mention final result for PE of three particle system.]
+    [GPT: Also extend the result to 4 particle system and then to n-particle system]
+    - Illustrative example 1 [GPT: Mention two identical charges released from rest. Calculate their speeds when the separation doubles]
+    - Illustrative example 2 [GPT: Mention charges at equilateral triangle vertices, identical. Calculate speeds when size of triangle doubles]
+    - Illustrative example 3 [GPT: Mention charges at equilateral triangle vertices, identical. If two of the charges are fixed, only one is set free, Calculate speed when it reaches infinity]
+    [EMPHASISE on the fact that it was needless to consider the potential energy of interaction of the two stationary charges as it was present in initial as well as final state. Hence if only one particle moves, we 
+    require to consider PE terms only involving the displaced particle. This is also called potential energy of the particle. But all the time potential energy is property of system's interaction.]
+- Potential energy of particle
+    [GPT: For a given system of charge, if only one charge gets displaced in a process, potential energy of the entire system changes. But only those terms of potential energy change which includes the displaced charge interactions. So, PE involving only such terms of displced charged 
+    particle is often called potential energy of particle.]
+- Work done in moving a charge [GPT: Use work energy theorem to estimate work done by the external agent. Correlate this to change in potential energy of the system]
+[we are finding work done by the external agent not the electric field]
+    - slowly [Assume initial and final PE is given. Get the answer in terms of chagne in PE]
+    - gaining kinetic energy[Assume initial and final (PE+KE) is given. Get the answer in terms of chagne in PE and KE]
+- Mention two illustrative examples
+
+#### Section 2. Electrostatic Potential [accordion item]
 - Definition
 - Determination of potential 
     - due to point charge
@@ -88,7 +98,7 @@
     - properties
     - examples due to pair of charges
 
-#### Section 3. Relation of Field and Potential
+#### Section 3. Relation of Field and Potential [accordion item]
 - Determination of electric field if 
     - potential is given
     - equipotential surfaces are drawn
