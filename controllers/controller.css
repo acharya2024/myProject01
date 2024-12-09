@@ -18,8 +18,22 @@
 
         .text-law {
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+            animation: shadowChange 3s infinite alternate ease-in-out;
         }
         
+        /* Keyframes for text-shadow animation */
+        @keyframes shadowChange {
+            0% {
+                text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
+            }
+            50% {
+                text-shadow: -2px -2px 6px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
+            }
+        }
 
         html {
             height: 100%;

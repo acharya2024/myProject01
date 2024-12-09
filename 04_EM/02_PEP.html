@@ -32,7 +32,7 @@
                                     Electrostatic Potential Energy
                                 </strong></button>
                         </h2>
-                        <div id="collapsePotentialEnergy" class="accordion-collapse collapse show"
+                        <div id="collapsePotentialEnergy" class="accordion-collapse collapse"
                             aria-labelledby="headingPotentialEnergy" data-bs-parent="#content">
                             <div class="accordion-body">
                                 <p>
@@ -306,17 +306,821 @@
                                             </div>
                                         </details>
                                     </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Many Particle System</strong></summary>
+                                            <p>
+                                                Building upon the concept of potential energy in two and three-particle
+                                                systems, we can extend our analysis to systems containing multiple
+                                                charges. Understanding the potential energy in a many-particle system
+                                                requires accounting for the interactions between every unique pair of
+                                                charges.
+                                            </p>
+                                            <p>
+                                                For a system of three charges \( q_1 \), \( q_2 \), and \( q_3 \)
+                                                separated by distances \( r_{12} \), \( r_{13} \), and \( r_{23} \), the
+                                                total potential energy \( U \) is the sum of the potential energies of
+                                                each unique pair:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                U = \frac{k q_1 q_2}{r_{12}} + \frac{k q_1 q_3}{r_{13}} + \frac{k q_2
+                                                q_3}{r_{23}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Extending this to four charges \( q_1 \), \( q_2 \), \( q_3 \), and \(
+                                                q_4 \), the total potential energy \( U \) includes all unique pairwise
+                                                interactions:
+                                            </p>
+                                            <p>
+                                                \(\qquad
+                                                U = \frac{k q_1 q_2}{r_{12}} + \frac{k q_1 q_3}{r_{13}} + \frac{k q_1
+                                                q_4}{r_{14}} + \frac{k q_2 q_3}{r_{23}} + \frac{k q_2 q_4}{r_{24}} +
+                                                \frac{k q_3 q_4}{r_{34}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                For a system containing \( n \) charges \( q_1, q_2, \ldots, q_n \),
+                                                each charge interacts with \( (n-1) \) other charges. However, this
+                                                approach counts each interaction twice (once for each pair \( (i, j) \)
+                                                and \( (j, i) \)). To account for this double-counting, we include a
+                                                factor of \( \frac{1}{2} \) in the summation. These interactions are
+                                                shown in diagram below:
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/31_Many_charge_system.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing multiple charges interacting in a system.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">
+                                                        Diagram: Interactions among multiple charges in a system.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Therefore, the total potential energy \( U \) of an \( n \)-particle
+                                                system is given by:
+                                            </p>
+                                            <p class="text-law text-center">
+                                                \(\qquad
+                                                U = \frac{1}{2} \sum_{\substack{i=1 \\ i \neq j}}^{n} \frac{k q_i
+                                                q_j}{r_{ij}}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Here:
+                                            </p>
+                                            <p>
+                                                - \( k \) is Coulomb's constant.<br>
+                                                - \( q_i \) and \( q_j \) are the magnitudes of the charges.<br>
+                                                - \( r_{ij} \) is the distance between charges \( q_i \) and \( q_j \).
+                                            </p>
+                                            <p>
+                                                The factor of \( \frac{1}{2} \) ensures that each unique pairwise
+                                                interaction is counted only once in the total potential energy.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-energy-conservation-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-energy-conservation" aria-expanded="false"
+                                aria-controls="section-energy-conservation">
+                                <strong>Energy Conservation Principles</strong>
+                            </button>
+                        </h2>
+                        <div id="section-energy-conservation" class="accordion-collapse collapse"
+                            aria-labelledby="section-energy-conservation-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <p>
+                                    The principle of conservation of mechanical energy states that in the absence of
+                                    dissipative forces (like friction or air resistance), the total mechanical energy
+                                    (kinetic energy + potential energy) of a system remains constant throughout its
+                                    motion. This principle is crucial in understanding various electrostatic phenomena
+                                    where charged particles move under the influence of electric forces.
+                                </p>
+                                <p>
+                                    The following examples illustrate the application of this principle in
+                                    electrostatics:
+                                </p>
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Illustrative Example 1: Two Identical Charges Released from
+                                                    Rest</strong></summary>
+
+                                            <p>
+                                                Two identical charges, each with charge \( q \) and mass \( m \), are
+                                                held at rest separated by a distance \( r \). Upon release, determine
+                                                the speed of each charge when the separation doubles to \( 2r \).
+                                            </p>
+                                            <p><strong>Solution</strong></p>
+                                            <p>
+                                                Initially, the system has potential energy \( E_i = k \frac{q^2}{r} \)
+                                                and no kinetic energy since the charges are at rest. When the charges
+                                                move apart to a separation of \( 2r \), the potential energy becomes \(
+                                                E_f = k \frac{q^2}{2r} \), and each charge gains kinetic energy \(
+                                                \frac{1}{2}mv^2 \).
+                                            </p>
+                                            <p>
+                                                Conservation of energy dictates that the initial potential energy equals
+                                                the final potential energy plus the total kinetic energy:
+                                                \(\qquad
+                                                E_i = E_f + 2 \left( \frac{1}{2}mv^2 \right)
+                                                \)
+                                                Substituting the values:
+                                                \(\qquad
+                                                k \frac{q^2}{r} = k \frac{q^2}{2r} + mv^2
+                                                \)
+                                                Solving for \( v \):
+                                                \(\qquad
+                                                mv^2 = k \frac{q^2}{2r} \implies v = \sqrt{\frac{k q^2}{2 m r}}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Illustrative Example 2: Charges at Equilateral Triangle
+                                                    Vertices</strong></summary>
+
+                                            <p>
+                                                Three identical charges, each with charge \( q \) and mass \( m \), are
+                                                placed at the vertices of an equilateral triangle with side length \( a
+                                                \). If the triangle uniformly expands so that each side becomes \( 2a
+                                                \), determine the speed of each charge after expansion.
+                                            </p>
+                                            <p><strong>Solution</strong></p>
+                                            <p>
+                                                The initial potential energy of the system is calculated based on the
+                                                three pairs of charges:
+                                                \(\qquad
+                                                U_i = 3k \frac{q^2}{a}
+                                                \)
+                                                After expansion, the potential energy becomes:
+                                                \(\qquad
+                                                U_f = 3k \frac{q^2}{2a}
+                                                \)
+                                                The change in potential energy is:
+                                                \(\qquad
+                                                \Delta U = U_f - U_i = -\frac{3k q^2}{2a}
+                                                \)
+                                                This loss in potential energy converts into kinetic energy:
+                                                \(\qquad
+                                                K_f = \frac{3k q^2}{2a}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Since there are three identical charges sharing the kinetic energy
+                                                equally, each charge has kinetic energy \( \frac{1}{2}mv^2 \).
+                                                Therefore:
+                                                \(\qquad
+                                                3 \times \frac{1}{2}mv^2 = \frac{3k q^2}{2a} \implies v = \sqrt{\frac{k
+                                                q^2}{m a}}
+                                                \)
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Illustrative Example 3: One Charge Released from
+                                                    Rest</strong></summary>
+
+                                            <p>
+                                                Three identical charges, each with charge \( q \) and mass \( m \), are
+                                                placed at the vertices of an equilateral triangle with side length \( a
+                                                \). Two of the charges are fixed, and the third charge is released from
+                                                rest. Determine the speed of the movable charge when it moves infinitely
+                                                far away from the fixed charges.
+                                            </p>
+                                            <p><strong>Solution</strong></p>
+                                            <p>
+                                                Initially, the potential energy of the movable charge due to the two
+                                                fixed charges is:
+                                                \(\qquad
+                                                U_i = 2k \frac{q^2}{a}
+                                                \)
+                                                When the movable charge moves infinitely far away, the potential energy
+                                                becomes:
+                                                \(\qquad
+                                                U_f = 0
+                                                \)
+                                                The change in potential energy is:
+                                                \(\qquad
+                                                \Delta U = U_f - U_i = -2k \frac{q^2}{a}
+                                                \)
+                                                This loss in potential energy converts into kinetic energy of the
+                                                movable charge:
+                                                \(\qquad
+                                                \frac{1}{2}mv^2 = 2k \frac{q^2}{a}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Solving for \( v \):
+                                                \(\qquad
+                                                v = \sqrt{\frac{4k q^2}{m a}}
+                                                \)
+                                            </p>
+                                            <p><strong>Note:</strong> Only the potential energy interactions involving
+                                                the movable charge are considered, as the potential energy between the
+                                                two fixed charges remains unchanged during the process.</p>
+                                        </details>
+                                    </li>
                                 </ul>
 
-                                </details>
-                                </li>
+
+                                <!-- Potential Energy of a Particle -->
+                                <p class="mt-3">
+                                    <strong>Potential Energy of a Particle:</strong>
+                                </p>
+                                <p>
+                                    In a system where only one charge moves while the others remain fixed, the system's
+                                    potential energy changes solely due to the interactions involving the moving charge.
+                                    These interactions are often simplified and referred to as the "potential energy of
+                                    the particle." However, it is crucial to recognize that potential energy is
+                                    inherently a property of the entire system's interactions, not just a single
+                                    particle.
+                                </p>
+                                <p>
+                                    Mathematically, the potential energy \( U \) of the
+                                    system can be expressed as the sum of the potential energies arising from each
+                                    interaction between the movable charge \(q\) and the fixed charges
+                                    \(q_1,\,q_2,\,q_3...q_n\):
+                                </p>
+                                <p>
+                                    \(\qquad U = \sum_{i=1}^{n} k \frac{q_i q}{r_i}\)
+                                </p>
+                                <p>
+                                    Also in terms of work done by electric field,
+                                </p>
+                                <p class="text-center text-law">
+                                    The electrostatic potential energy is defined as the negative of the work done by
+                                    the electric field in bringing the charge from infinity to that point.
+                                </p>
+                                <p>
+                                    Since the electrostatic force is a conservative force, the
+                                    work done in moving a charge between two points is independent of the path taken.
+                                    Following examples are helpful to understand the potential energy of a particle.
+                                </p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Illustrative Example 4: Potential Energy of a Particle in a
+                                                    Square Configuration</strong></summary>
+
+                                            <p>
+                                                Four identical charges, each with charge \( q \) and mass \( m \), are
+                                                placed at the corners of a square with side length \( a \). Determine
+                                                the electrostatic potential energy of one of the charges due to the
+                                                other three charges.
+                                            </p>
+                                            <p><strong>Solution</strong></p>
+                                            <p>
+                                                To calculate the potential energy of one charge in the square
+                                                configuration, we consider the interactions between this charge and the
+                                                other three charges.
+                                            </p>
+                                            <p>
+                                                Since, two charges are present at a distance \(a\) while one of the
+                                                charge is at a distance \(\sqrt{2}a\),
+                                            </p>
+                                            <p>
+
+                                                \[
+                                                U_{\text{total}} = k \frac{q^2}{a} + k
+                                                \frac{q^2}{\sqrt{2}a} + k \frac{q^2}{a}
+                                                \]
+                                            </p>
+                                            <p>
+                                                Therefore, the electrostatic potential energy of one charge in the
+                                                square configuration is:
+                                                \[
+                                                U = \frac{k q^2 (4 + \sqrt{2})}{2a}
+                                                \]
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Illustrative Example 5: Potential Energy of a Particle at
+                                                    the Center of a Uniformly Charged Ring</strong></summary>
+
+                                            <p>
+                                                A uniformly charged ring has a total charge \( Q \) and radius \( R \).
+                                                A point charge \( q \) is placed at the center of the ring. Determine
+                                                the electrostatic potential energy of the point charge due to the ring.
+                                            </p>
+                                            <p><strong>Solution</strong></p>
+                                            <p>
+                                                To calculate the electrostatic potential energy \( U \) of the point
+                                                charge \( q \) placed at the center of a uniformly charged ring, we
+                                                first calculate the potential energy \(dU\) of \(q\) with an
+                                                elemental charge \(dQ\) on the ring. Then we perform integration to get
+                                                total potential energy of \(q\). Thus,
+                                            </p>
+                                            <p>
+                                                \(\qquad dU=k\frac{qdQ}{R})
+                                            </p>
+                                            <p>
+                                                \(\qquad U=\displaystyle\int_0^Q k \frac{qdQ}{R})
+                                            </p>
+                                            <p>
+                                                Therefore, the potential energy of the point charge \( q \) at the
+                                                center of the uniformly charged ring is:
+
+                                            </p>
+                                            <p>
+                                                \(\qquad U=k\frac{qQ}{R})
+                                            </p>
+                                        </details>
+                                    </li>
                                 </ul>
 
                             </div>
-
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-electrostatic-potential-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electrostatic-potential" aria-expanded="false"
+                                aria-controls="section-electrostatic-potential">
+                                <strong>Electrostatic Potential</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electrostatic-potential" class="accordion-collapse collapse"
+                            aria-labelledby="section-electrostatic-potential-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
 
+                                <p>
+                                    Previously, we defined the potential energy of a charged particle at a point as the
+                                    negative of the work done by an electric field in bringing a unit positive charge
+                                    from infinity to that location. Building on this concept, the electrostatic
+                                    potential at a point is defined as the potential energy per unit charge of a
+                                    particle placed there. In other words,
+                                </p>
+                                <p class="text-center text-law">
+                                    The electrostatic potential at a point is the negative of the work done by the
+                                    electric field to bring a unit positive charge from infinity to that point.
+                                </p>
+                                <p>
+                                    Therefore, electrostatic potential is a property of a specific location in space
+                                    that represents the potential energy per unit charge a charge would have if placed
+                                    at that point. This means that the electrostatic potential quantifies how much
+                                    potential energy is available to a charge at a given position within an electric
+                                    field.
+                                </p>
+                                <p>
+                                    The electrostatic potential \( V \) at a point located at a distance \( r \) from a
+                                    point charge \( Q \) is a measure of the electric potential energy \(U\) per unit
+                                    charge for a sample charge \(q\) at that location.
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    U = \frac{1}{4\pi\varepsilon_0} \frac{qQ}{r}
+                                    \)
+                                </p>
+                                <p>
+                                    The potential \( V=\dfrac{U}{q} \) is mathematically expressed as:
+                                </p>
+                                <p class="text-center text-law">
+                                    \(
+                                    V = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r}
+                                    \)
+                                </p>
+                                <p>
+                                    The potential is positive if the point charge \( Q \) is positive, indicating that
+                                    work must be done against the electric field to bring a positive test charge closer
+                                    to \( Q \). Conversely, the potential is negative if \( Q \) is negative, meaning
+                                    that work is done by the electric field when bringing a positive test charge closer.
+                                </p>
+                                <p>
+                                    We observe here that the electrostatic potential \( V \) is a scalar quantity
+                                    having SI unit of Joule/Coulomb, often written as Volt (V). To find potential at a
+                                    point \(P\) due to a set of charges\( q_1, q_2, \ldots, q_n \), we calculate the
+                                    potential due to each charge and perform the scalar sum. For contineous charge
+                                    distributions, we require integration methods to know the potential at a point.
+                                </p>
+                                <p>
+                                    For continuous charge distributions, the potential at a point is obtained by
+                                    integrating over the entire charge distribution. If the charge distribution is
+                                    characterized by a linear charge density \( \lambda \), surface charge density \(
+                                    \sigma \), or volume charge density \( \rho \), the potential is given by:
+                                </p>
+                                <p>
+                                    \(\qquad V = \int \frac{1}{4\pi\varepsilon_0} \frac{dq}{r}\)
+                                </p>
+                                <p>
+                                    where \( dq \) is the infinitesimal charge element. These results are used for
+                                    deriving some standard results of electrostatic potential due to different charge
+                                    configurations in the next section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="equipotential-surfaces-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#equipotential-surfaces" aria-expanded="false"
+                                aria-controls="equipotential-surfaces">
+                                <strong>Equipotential Surfaces</strong>
+                            </button>
+                        </h2>
+                        <div id="equipotential-surfaces" class="accordion-collapse collapse"
+                            aria-labelledby="equipotential-surfaces-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Equipotential surfaces are imaginary
+                                    surfaces in space where the electric
+                                    potential is the same at every point.
+                                </p>
+                                <p>
+                                    For example, in the case of a point charge \( q \), the electric potential at a
+                                    distance \( r \) from the charge is
+                                    given by \( V = \frac{1}{4\pi \varepsilon_0} \frac{q}{r} \). This means that the
+                                    potential depends only on the
+                                    radial distance \( r \), and must remain constant on a sphere centered at the
+                                    charge. As a result, equipotential surfaces are concentric spheres centered on the
+                                    charge.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <p>
+                                        Following are properties of Equipotential Surfaces (EPS):
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Same potential at all points of EPS</summary>
+                                            An equipotential surface has the same electric potential at every point by
+                                            definition. This means that no
+                                            potential difference exists between any two points on the surface.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Different EPS do not intersect</summary>
+                                            If two equipotential surfaces were to intersect, it would imply that a point
+                                            on the intersection has two
+                                            different values of electric potential, which is physically impossible.
+                                            Therefore, equipotential surfaces
+                                            never intersect, maintaining the uniqueness of electric potential at any
+                                            given point in space.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>No work in moving charge along EPS</summary>
+                                            Moving a charge along an equipotential surface requires no work because the
+                                            electric potential energy
+                                            remains constant. The work done \( W = q \Delta V \), where \( \Delta V \)
+                                            is the change in potential, is
+                                            zero since \( \Delta V = 0 \) along the surface.
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Electric field lines are perpendicular to EPS</summary>
+                                            When a charge is moved along an equipotential surface, its potential energy
+                                            does not change. Since the work done by
+                                            the electric field is related to the change in potential energy (\( W =
+                                            -\Delta U \)), the work done by the electric
+                                            field is zero for any displacement along the equipotential surface. This is
+                                            only possible if the electric force on
+                                            the charge is perpendicular to its displacement. Consequently, electric
+                                            field lines are always perpendicular to
+                                            equipotential surfaces.
+                                        </details>
+
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    <strong>Examples:</strong>
+                                </p>
+                                <ul>
+                                    <li>
+                                        **Two Identical Charges:** Consider two positive charges of equal magnitude
+                                        placed at a certain distance apart.
+                                        The equipotential surfaces are symmetrically arranged, with higher potentials
+                                        near the charges. At points closer
+                                        to either charge, the surfaces bend around the charge, while at larger
+                                        distances, the surfaces appear circular.
+                                        <strong>Diagram:</strong> Equipotential surfaces for two identical charges,
+                                        showing symmetry and variation in
+                                        potential.
+                                    </li>
+                                    <li>
+                                        **Equal and Opposite Charges (Dipole):** For a dipole, consisting of a positive
+                                        charge \( +q \) and a negative
+                                        charge \( -q \) separated by a distance \( d \), the equipotential surfaces are
+                                        unique. Near each charge, the
+                                        surfaces are spherical. In the region between the charges, the surfaces bend
+                                        sharply, forming elongated shapes
+                                        along the dipole axis. The potential in this region transitions from positive to
+                                        negative.
+                                        <strong>Diagram:</strong> Equipotential surfaces for a dipole, illustrating the
+                                        influence of opposite charges on
+                                        surface shape.
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="field-potential-relation-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#field-potential-relation" aria-expanded="false"
+                                aria-controls="field-potential-relation">
+                                <strong>Relation of Field and Potential</strong>
+                            </button>
+                        </h2>
+                        <div id="field-potential-relation" class="accordion-collapse collapse"
+                            aria-labelledby="field-potential-relation-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <!-- Determination of Electric Field -->
+                                <p>
+                                    <strong>Determination of Electric Field:</strong>
+                                </p>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>If Potential is Given</strong></summary>
+                                            <p>
+                                                The electric field \( \vec{E} \) at any point is related to the
+                                                potential \( V \) through the spatial rate of change of the potential.
+                                                Mathematically, this relationship is expressed as:
+                                                \(\qquad
+                                                \vec{E} = -\nabla V
+                                                \)
+                                                For a one-dimensional case, where the potential varies only along the \(
+                                                x \)-axis:
+                                                \(\qquad
+                                                E_x = -\frac{dV}{dx}
+                                                \)
+                                                The negative sign indicates that the electric field points in the
+                                                direction of decreasing potential.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>If Equipotential Surfaces are Drawn</strong></summary>
+                                            <p>
+                                                When equipotential surfaces are drawn, the electric field is
+                                                perpendicular to these surfaces at every point. The magnitude of the
+                                                electric field can be calculated as:
+                                                \(\qquad
+                                                E = -\frac{\Delta V}{\Delta x}
+                                                \)
+                                                Here, \( \Delta V \) is the potential difference between two adjacent
+                                                equipotential surfaces, and \( \Delta x \) is the perpendicular distance
+                                                between them.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <!-- Determination of Potential -->
+                                <p>
+                                    <strong>Determination of Potential:</strong>
+                                </p>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>If Uniform Electric Field is Given</strong></summary>
+                                            <p>
+                                                For a uniform electric field \( \vec{E} \), the potential difference \(
+                                                \Delta V \) between two points separated by a distance \( d \) along the
+                                                field direction is given by:
+                                                \(\qquad
+                                                \Delta V = -E \cdot d
+                                                \)
+                                                Here, \( E \) is the magnitude of the electric field, and \( d \) is the
+                                                displacement along the direction of the field. The negative sign
+                                                reflects the fact that the potential decreases in the direction of the
+                                                field.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>If Non-Uniform Electric Field is Given</strong></summary>
+                                            <p>
+                                                For a non-uniform electric field, the potential difference between two
+                                                points \( A \) and \( B \) is calculated by integrating the electric
+                                                field along the path:
+                                                \(\qquad
+                                                V_B - V_A = -\int_A^B \vec{E} \cdot d\vec{l}
+                                                \)
+                                                Here, \( d\vec{l} \) is an infinitesimal displacement vector along the
+                                                path from \( A \) to \( B \), and \( \vec{E} \) is the electric field at
+                                                each point along the path.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>If Electric Field Lines are Drawn</strong></summary>
+                                            <p>
+                                                If electric field lines are drawn, the potential difference \( \Delta V
+                                                \) between two points can be estimated by analyzing the density and
+                                                direction of the field lines. The field lines point in the direction of
+                                                decreasing potential, and the potential difference is proportional to
+                                                the number of lines crossed per unit distance.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section-standard-results-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-standard-results" aria-expanded="false"
+                                aria-controls="section-standard-results">
+                                <strong>Standard Results of Potential</strong>
+                            </button>
+                        </h2>
+                        <div id="section-standard-results" class="accordion-collapse collapse"
+                            aria-labelledby="section-standard-results-heading" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Standard results in electrostatic potential are useful for solving problems
+                                    involving different charge
+                                    configurations. Below are key results derived for specific cases.
+                                </p>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <!-- Point Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to a Point Charge</strong></summary>
+                                            <p>
+                                                For a point charge \( q \) located at a distance \( r \) from a point,
+                                                the potential at that
+                                                point is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                V = \frac{1}{4\pi \varepsilon_0} \frac{q}{r}
+                                                \]
+                                            </p>
+                                            <p>
+                                                The potential is scalar, and its sign depends on the sign of the charge
+                                                \( q \). Positive charges
+                                                produce positive potential, and negative charges produce negative
+                                                potential.
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                    <!-- Ring Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to a Uniformly Charged Ring</strong>
+                                            </summary>
+                                            <p>
+                                                For a uniformly charged ring of radius \( R \) and total charge \( Q \),
+                                                the potential at a
+                                                point on its axis at a distance \( x \) from the center is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                V = \frac{1}{4\pi \varepsilon_0} \frac{Q}{\sqrt{x^2 + R^2}}
+                                                \]
+                                            </p>
+                                            <p>
+                                                This is obtained by summing the contributions from all infinitesimal
+                                                charges on the ring.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <!-- Disc Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to a Uniformly Charged Disc</strong>
+                                            </summary>
+                                            <p>
+                                                For a uniformly charged disc of radius \( R \) with surface charge
+                                                density \( \sigma \),
+                                                the potential at a point on its axis at a distance \( x \) is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                V = \frac{\sigma}{2\varepsilon_0} \left( \sqrt{x^2 + R^2} - x \right)
+                                                \]
+                                            </p>
+                                            <p>
+                                                This result is derived by integrating over the area of the disc.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <!-- Sphere Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to a Uniformly Charged Sphere</strong>
+                                            </summary>
+                                            <p>
+                                                For a uniformly charged sphere of radius \( R \) and total charge \( Q
+                                                \):
+                                            </p>
+                                            <p>
+                                                **Outside the Sphere (\( r \geq R \)):**
+                                                \[
+                                                V = \frac{1}{4\pi \varepsilon_0} \frac{Q}{r}
+                                                \]
+                                            </p>
+                                            <p>
+                                                **Inside the Sphere (\( r < R \)):** \[ V=\frac{1}{4\pi \varepsilon_0}
+                                                    \frac{Q}{R} \left( \frac{3}{2} - \frac{r^2}{2R^2} \right) \] </p>
+                                                    <p>
+                                                        This result assumes the sphere is non-conducting and the charge
+                                                        is uniformly distributed throughout its volume.
+                                                    </p>
+                                        </details>
+                                    </li>
+                                    <!-- Line Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to a Uniformly Charged Rod</strong></summary>
+                                            <p>
+                                                Consider a uniformly charged rod of length \( L \) with linear charge
+                                                density \( \lambda \).
+                                                The potential at a point \( P \) on the perpendicular bisector at a
+                                                distance \( d \) is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                V = \frac{\lambda}{4\pi \varepsilon_0} \ln \left( \frac{\sqrt{L^2 +
+                                                4d^2} + L}{\sqrt{L^2 + 4d^2} - L} \right)
+                                                \]
+                                            </p>
+                                            <p>
+                                                This result is derived by integrating the contribution of infinitesimal
+                                                charge elements along the rod.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <!-- Infinite Line Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Difference Due to an Infinite Line
+                                                    Charge</strong></summary>
+                                            <p>
+                                                For an infinite line charge with linear charge density \( \lambda \),
+                                                the potential difference
+                                                between two points at distances \( r_1 \) and \( r_2 \) is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                \Delta V = \frac{\lambda}{2\pi \varepsilon_0} \ln \left( \frac{r_2}{r_1}
+                                                \right)
+                                                \]
+                                            </p>
+                                            <p>
+                                                This result is derived using the electric field of an infinite line
+                                                charge.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <!-- Infinite Sheet Charge -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Potential Due to an Infinite Sheet of Charge</strong>
+                                            </summary>
+                                            <p>
+                                                For an infinite sheet of charge with surface charge density \( \sigma
+                                                \), the potential difference
+                                                between two points at distances \( x_1 \) and \( x_2 \) perpendicular to
+                                                the sheet is:
+                                            </p>
+                                            <p>
+                                                \[
+                                                \Delta V = -\frac{\sigma}{\varepsilon_0} (x_2 - x_1)
+                                                \]
+                                            </p>
+                                            <p>
+                                                The potential varies linearly with distance from the sheet.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

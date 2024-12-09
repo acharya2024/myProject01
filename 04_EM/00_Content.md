@@ -68,6 +68,9 @@ Keep the content more logical, easy to understand and one para connected logical
     - system of two particles [GPT: Derive the result assuming proper diagram]
     - system of more than two particles [GPT: Start from two charge configuration. Mention initial PE. Then allow third charge to arrive from infinity. Then calculate increment in PE. Then mention final result for PE of three particle system.]
     [GPT: Also extend the result to 4 particle system and then to n-particle system]
+#### Section 2. Energy conservation principles [accordion item]
+- Mention the principle of conservation of mechanical energy, to be applicable in absence of dissipative forces. And to follow following examples to understand its application in electrostatics:
+- Each example in ul-li. and each example inside details summary tag.
     - Illustrative example 1 [GPT: Mention two identical charges released from rest. Calculate their speeds when the separation doubles]
     - Illustrative example 2 [GPT: Mention charges at equilateral triangle vertices, identical. Calculate speeds when size of triangle doubles]
     - Illustrative example 3 [GPT: Mention charges at equilateral triangle vertices, identical. If two of the charges are fixed, only one is set free, Calculate speed when it reaches infinity]
@@ -314,80 +317,209 @@ Keep the content more logical, easy to understand and one para connected logical
 
 ### Chapter 1: Capacitance
 
-#### Section 1. Capacitors
+#### Section 1. Isolated capacitors
 - Definition of capacitance of isolated conductors
-- Charge distribution on connecting two isolated conductors
+    - factors affecting the capacitance
+    - capacitance of spherical conductor
+- Connecting isolated conductors
+    - charge redistribution for two conductors
+    - charge redistribution for multiple conductors
 - Energy stored in isolated conductors
-- Charge distribution on connecting two isolated conductors
+    - work done in charging an isolated conductor
+    - energy stored in terms of capacitance
+    - heat generated in redistribution of charge on connecting two conductors
 
 #### Section 2. Types of Capacitors
-- Parallel plate capacitor and its capacitance
-- Spherical capacitor and its capacitance
-- Cylindrical capacitor and its capacitance
+- Ideal design of capacitors
+- Parallel plate capacitor
+    - charge distribution
+    - electric field between the plates
+    - force between the plates
+    - potential difference between plates
+    - capacitance
+    - work done in charging and the energy stored
+- Electrostatic potential energy density
+    - formula and justification for parallel plate capacitors
+    - total energy in small volume
+    - total energy in any volume with uniform or non-uniform electric field
+    - self energy of charged systems
+        - charged spherical conductor
+        - charged spherical insulator
+    - relation of self and interaction energy
+- Spherical capacitor
+    - capacitance
+    - energy stored
+        - region where energy is stored
+        - using energy density and work done in charging
+        - amount of energy stored        
+- Cylindrical capacitor
+    - capacitance
 
 #### Section 3. Simple Circuits
-- Determination of charges on capacitors in circuits
-- Series and parallel combination analysis and equivalent capacitance derivation 
-- Equivalent determination and charge determination
-- Practice problems
-- Wheatstone bridge principle and problems
-- Energy stored/dissipated in circuit on changing connections
-- Practice problems
+- Circuits with single capacitor and single battery
+    - determination of charges
+    - work done by battery in charging
+    - energy stored in capacitors
+    - heat dissipated in circuit
+- Series and parallel combination
+    - formula for equivalent capacitance
+    - circuits extending to infinity
+    - charge determination on each capacitor
+- Changing connections
+    - circuits with only capacitors
+        - redistribution of charges and energy
+        - heat dissipated and energy stored
+        - connecting two charged capacitors with same or opposite polarity
+    - circuits with capacitors and battery
+        - variation in charges
+        - heat dissipated
+        - work done by battery
+- Changing capacitance
+    - by slowly increasing/decreasing separation between plates
+        - charge flown, heat, work done by external agent
+    - short circuiting a capacitor
+- Wheatstone bridge principle
+    - finding equivalent capacitance
+    - finding charges
+    - changing connections
 
 #### Section 4. Dielectrics
-- Definition and properties
-- Changes in circuit by insertion and removal of dielectric
-- Work done in insertion and removal of dielectric from capacitors
-- Energy analysis in circuits with insertion and removal of dielectric
+- Introduction
+    - definition
+    - effect on placement between two charges
+    - amount of induced charge on dielectric surface
+- Effects of dielectric in capacitors
+    - formula modifications for
+        - capacitance
+        - induced charge on capacitor
+        - electric field inside/outside dielectric
+    - Isolated capacitors
+        - charge, potential, electric field, energy
+        - work done by agent in placing dielectric
+        - force on dielectric
+    - battery connected capacitors
+        - charge, potential, electric field, energy
+        - work done by battery
+        - work done by agent in placing dielectric
+        - force on dielectric
+- Effects in circuits in removal/insertion of dielectric
+    - Capacitance, Charge, potential difference Variations
+    - work done by external agent and battery
+    - heat generated in the process
+    - force on dielectric
 
 ### Chapter 2: Resistors and Electrical Circuits
 
 #### Section 1. Current and Current Density
-- Definition of average and instantaneous current and problems
-- Current density as vector quantity
+- Introduction
+    - average and instantaneous current
+    - graphs of charge and current
+    - calculations for motion of contineous charge through a surface
+- Current density
+    - vector quantity
 
 #### Section 2. Conduction in Metals
-- Derivation of Ohm’s law in various forms
-- Resistance, resistivity, mobility and drift velocity
-- Problems for drift velocity, current density, electric field etc
+- Motion of free electrons in metals
+    - random motion and drift motion
+    - relation of current and drift velocity
+    - relation of drift velocity and electric field
+    - temperature dependence of the relations
+- Ohm's law [Vector form]
+    - the law and the constant terms (mobility, resistivity, conductivity)
+    - comparison of various terms for current in variable cross-section
+    - currents within solid materials
+        - spherically symmetric charge flow
+        - cylindrically symmetric charge flow
+- Ohm's law [Scalar form]
+    - the law and resistance
+    - thermal coefficient of resistance
+    - factors affecting resistance
+    - resistance of different shapes
+        - cuboid along different directions
+        - cylinder and sphere
+        - cylinder of variable cross section
+    - equivalent resistivity
+- Colour coding of resistors 
 
 #### Section 3. Simple Circuits
-- Colour coding of resistors 
-- Resistance and potential difference across resistor
-- Heat dissipated across resistor and power/work developed by battery
+- Circuits with one resistor and battery
+    - potential difference and current
+    - power delivered by battery
+    - formula for heat dissipated in resistors
+- Ratings of Devices (fuse)
+    - voltage ratings
+    - power ratings
+- Series and parallel combination calculations
+    - of equivalent resistance
+    - of current in different parts
+    - of power dissipated in different parts
 - Equivalent resistance of series and parallel combination of resistors
 - Problems to find equivalent resistance and current in resistors
 
 #### Section 4. Miscellaneous Circuits
 - Wheatstone bridge principle
+    - identification of wheatstone bridge
+    - more than one bridge
 - Simple symmetric circuits
-- Unbalanced Wheatstone bridge
-- Problem practice
-- Cubical network of resistors
+    - disconnecting a connected wire [hexagonal circuits]
+    - unbalanced but symmetric Wheatstone bridge
+    - Cubical network of resistors
+        - across body diagonal
+        - across face diagonal
+        - across adjacent corners
+- nodal method
+    - various brances meeting at a node
+- Advanced Methods
+    - Principle of superposition
+    - Star delta transformation
+
 
 ### Chapter 3: Electrical Devices
 
 #### Section 1. Cell
-- Definition of emf, internal resistance and relation with potential difference
-- Maximum power dissipation theorem
+- Introduction
+    - Definition of emf
+    - internal resistance
+    - relation with potential difference
 - Charging and discharging of cells
-- Grouping of cells and simple problems
+    - work done by cell
+    - potential difference across the cell
+- Maximum power dissipation theorem
+- Grouping of cells
+    - formula for series and parallel grouping
+    - current, voltage and power distribution in grouping
 
 #### Section 2. Measuring Devices
-- Working of galvanometer, various sensitivity and its drawbacks
-- Conversion of galvanometer into voltmeter and ammeter
+- Galvanometer
+    - construction of galvanometer
+    - working of galvanometer
+    - various sensitivity and its drawbacks
+- Conversion of galvanometer into voltmeter
+- Conversion of galvanometer into ammeter
 
 #### Section 3. Experiments
-- Ohm’s law verification 
-- Meter bridge experiment and problems
+- Ohm's law verification
+    - Experimental details
+    - Circuit and graphs
+- Meter bridge experiment
+    - Principle used and formula
+    - possible variations in experiment
+        - internal resistance of cell/jockey/wire
+        - interchange of standard and unknown resistance
+        - interchange of galvanometer and unknown resistance
 - Potentiometer experiment
-- Problems based on Meter bridge and Potentiometer
+    - to compare emf of cells
+    - to find internal resistance of cells
 
 #### Section 4. RC Circuits
 - RC circuits in initial and steady state
 - RC circuits in transient state
-- Simple problems based on variation in charge of capacitor
-- Efficiency and co-efficient of performance
+    - Charging
+        - equations for charge and current
+        - graph and significance of time constant
+    - Discharging
+        - equations for charge and current
+        - graph and significance of time constant
 
 ### Chapter 4: Heat Transfer
 

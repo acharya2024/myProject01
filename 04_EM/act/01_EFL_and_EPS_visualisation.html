@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Physics Simulations</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">Electric Fields and Equipotential Surfaces</h1>
+        <h2 class="text-center">Activity: #1</h2>
+        <h2 class="text-center text-muted">Interactive Charge Visualization</h2>
+        <div class="card">
+            <div class="card-body">
+                <strong>Instructions for Use:</strong>
+                <ol>
+                    <li><strong>Add Charges:</strong> Use the controls to add up to three charges to the canvas.</li>
+                    <li><strong>Select Charge Value:</strong> Choose a charge value of -2C, -1C, 1C, or 2C for each charge.
+                    </li>
+                    <li><strong>Position Charges:</strong> Drag and drop charges to desired positions on the canvas.
+                    </li>
+                    <li><strong>Visualize Fields:</strong> After placing the charges, the electric field lines and
+                        equipotential surfaces will be displayed.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card canvas-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div id="simulationCanvas-holder">
+                            <canvas id="simulationCanvas" width="600" height="600"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                        <div id="arrowButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m291-421-83-83 272-272 272 272-83 83-189-189-189 189Z" />
+                            </svg>
+                        </div>
+                        <div id="controlCard" class="card">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Charge Controls:</strong></p>
+                                <!-- Charge 1 Controls -->
+                                <div class="container mt-4">
+                                    <div class="row">
+                                        <!-- Charge 1 Controls -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="charge-control p-3 border rounded d-flex flex-column align-items-center">
+                                                <h5>Charge 1</h5>
+                                                <select id="charge1Value" class="form-select mb-2">
+                                                    <option value="-2">-2C</option>
+                                                    <option value="-1">-1C</option>
+                                                    <option value="1" selected>1C</option>
+                                                    <option value="2">2C</option>
+                                                </select>
+                                                <button class="btn btn-light w-100" id="addCharge1">Add</button>
+                                            </div>
+                                        </div>
+                                        <!-- Charge 2 Controls -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="charge-control p-3 border rounded d-flex flex-column align-items-center">
+                                                <h5>Charge 2</h5>
+                                                <select id="charge2Value" class="form-select mb-2">
+                                                    <option value="-2">-2C</option>
+                                                    <option value="-1" selected>-1C</option>
+                                                    <option value="1">1C</option>
+                                                    <option value="2">2C</option>
+                                                </select>
+                                                <button class="btn btn-light w-100" id="addCharge2">Add</button>
+                                            </div>
+                                        </div>
+                                        <!-- Charge 3 Controls -->
+                                        <div class="col-md-4 mb-3">
+                                            <div class="charge-control p-3 border rounded d-flex flex-column align-items-center">
+                                                <h5>Charge 3</h5>
+                                                <select id="charge3Value" class="form-select mb-2">
+                                                    <option value="-2">-2C</option>
+                                                    <option value="-1">-1C</option>
+                                                    <option value="1">1C</option>
+                                                    <option value="2" selected>2C</option>
+                                                </select>
+                                                <button class="btn btn-light w-100" id="addCharge3">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Reset Button -->
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <button class="btn btn-info w-100" id="resetButton">Reset Simulation</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // script.js
+
+        // Get references to HTML elements
+        const canvas = document.getElementById('simulationCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const addCharge1Btn = document.getElementById('addCharge1');
+        const addCharge2Btn = document.getElementById('addCharge2');
+        const addCharge3Btn = document.getElementById('addCharge3');
+
+        const charge1ValueSelect = document.getElementById('charge1Value');
+        const charge2ValueSelect = document.getElementById('charge2Value');
+        const charge3ValueSelect = document.getElementById('charge3Value');
+
+        const resetButton = document.getElementById('resetButton');
+
+        // Variables to store charges
+        let charges = [];
+        const maxCharges = 3;
+        const chargeRadius = 15; // Radius for drawing charges
+        const minSeparation = chargeRadius * 2; // Minimum separation between charges
+
+        // Variables for dragging
+        let isDragging = false;
+        let draggedCharge = null;
+
+        // Event listeners for adding charges
+        addCharge1Btn.addEventListener('click', () => addCharge(1));
+        addCharge2Btn.addEventListener('click', () => addCharge(2));
+        addCharge3Btn.addEventListener('click', () => addCharge(3));
+
+        // Event listener for reset button
+        resetButton.addEventListener('click', resetSimulation);
+
+        // Canvas mouse event listeners
+        canvas.addEventListener('mousedown', canvasMouseDown);
+        canvas.addEventListener('mousemove', canvasMouseMove);
+        canvas.addEventListener('mouseup', canvasMouseUp);
+
+        // Add touch event listeners for mobile devices
+        canvas.addEventListener('touchstart', canvasMouseDown);
+        canvas.addEventListener('touchmove', canvasMouseMove);
+        canvas.addEventListener('touchend', canvasMouseUp);
+
+        // Function to add a charge
+        function addCharge(chargeNumber) {
+            if (charges.length >= maxCharges) {
+                alert('Maximum number of charges added.');
+                return;
+            }
+
+            let valueSelect;
+            let addButton;
+
+            switch (chargeNumber) {
+                case 1:
+                    valueSelect = charge1ValueSelect;
+                    addButton = addCharge1Btn;
+                    break;
+                case 2:
+                    valueSelect = charge2ValueSelect;
+                    addButton = addCharge2Btn;
+                    break;
+                case 3:
+                    valueSelect = charge3ValueSelect;
+                    addButton = addCharge3Btn;
+                    break;
+                default:
+                    return;
+            }
+
+            const value = parseInt(valueSelect.value);
+
+            // Place the charge at a default position
+            const position = {
+                x: canvas.width / 2 + (charges.length * 50) - 50,
+                y: canvas.height / 2
+            };
+
+            // Create the charge object
+            const charge = {
+                id: chargeNumber,
+                value: value,
+                x: position.x,
+                y: position.y,
+                isDragging: false
+            };
+
+            charges.push(charge);
+
+            // Disable the add button to prevent adding more than one of the same charge
+            addButton.disabled = true;
+
+            // Draw the charges
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawCharges();
+            drawFieldLinesAndEquipotentials();
+        }
+
+        // Function to reset the simulation
+        function resetSimulation() {
+            charges = [];
+            addCharge1Btn.disabled = false;
+            addCharge2Btn.disabled = false;
+            addCharge3Btn.disabled = false;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Function to get mouse or touch position
+        function getMousePos(e) {
+            const rect = canvas.getBoundingClientRect();
+            let clientX, clientY;
+
+            if (e.touches && e.touches.length > 0) {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            } else {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+
+            // Calculate scale factors in case the canvas is scaled
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            const x = (clientX - rect.left) * scaleX;
+            const y = (clientY - rect.top) * scaleY;
+
+            return { x, y };
+        }
+
+
+        // Mouse event handlers
+        function canvasMouseDown(e) {
+            e.preventDefault();
+            const mousePos = getMousePos(e);
+            const rect = canvas.getBoundingClientRect();
+
+            const mouseX = mousePos.x
+            const mouseY = mousePos.y
+
+            // Check if a charge is clicked
+            for (let charge of charges) {
+                const dx = mouseX - charge.x;
+                const dy = mouseY - charge.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < chargeRadius) {
+                    charge.isDragging = true;
+                    draggedCharge = charge;
+                    isDragging = true;
+                    // Remove field lines and equipotential surfaces during dragging
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    drawCharges();
+                    break;
+                }
+            }
+        }
+
+
+        function canvasMouseMove(e) {
+            if (isDragging && draggedCharge) {
+                e.preventDefault();
+                const mousePos = getMousePos(e);
+                const mouseX = mousePos.x;
+                const mouseY = mousePos.y;
+
+                // Enforce minimum separation between charges
+                let canMove = true;
+                for (let charge of charges) {
+                    if (charge !== draggedCharge) {
+                        const dx = mouseX - charge.x;
+                        const dy = mouseY - charge.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < minSeparation) {
+                            canMove = false;
+                            break;
+                        }
+                    }
+                }
+
+                if (canMove) {
+                    draggedCharge.x = mouseX;
+                    draggedCharge.y = mouseY;
+                }
+
+                // Redraw charges during dragging
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawCharges();
+            }
+        }
+
+        function canvasMouseUp(e) {
+            if (isDragging && draggedCharge) {
+                e.preventDefault();
+                draggedCharge.isDragging = false;
+                draggedCharge = null;
+                isDragging = false;
+                // After dropping, draw the field lines and equipotential surfaces
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawCharges();
+                drawFieldLinesAndEquipotentials();
+            }
+        }
+
+        // Function to draw charges
+        function drawCharges() {
+            for (let charge of charges) {
+                // Set color based on charge value
+                ctx.fillStyle = charge.value > 0 ? 'red' : 'blue';
+                ctx.beginPath();
+                ctx.arc(charge.x, charge.y, chargeRadius, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.closePath();
+
+                // Draw charge value
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(charge.value, charge.x, charge.y);
+                // const absolutePos = getAbsolutePosition(charge);
+
+            }
+        }
+
+        // Function to draw field lines and equipotential surfaces
+        function drawFieldLinesAndEquipotentials() {
+            if (charges.length === 0) return;
+
+            // Parameters for calculation
+            const gridSize = 10; // Adjust for resolution
+            const potentialLevels = 20; // Number of equipotential lines
+            const fieldLineSteps = 500; // Steps to trace field lines
+            const fieldLineStepSize = 5; // Distance between steps
+
+            // Calculate potential at grid points
+            const potentials = [];
+            const cols = Math.floor(canvas.width / gridSize) + 1;
+            const rows = Math.floor(canvas.height / gridSize) + 1;
+            for (let i = 0; i < cols; i++) {
+                potentials[i] = [];
+                for (let j = 0; j < rows; j++) {
+                    const x = i * gridSize;
+                    const y = j * gridSize;
+                    let potential = 0;
+                    for (let charge of charges) {
+                        const dx = x - charge.x;
+                        const dy = y - charge.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance === 0) continue;
+                        potential += charge.value / distance;
+                    }
+                    potentials[i][j] = potential;
+                }
+            }
+
+            // Draw equipotential lines using Marching Squares
+            drawEquipotentialLines(potentials, gridSize, potentialLevels);
+
+            // Draw electric field lines
+            drawElectricFieldLines(fieldLineSteps, fieldLineStepSize);
+        }
+
+        // Function to draw equipotential lines using Marching Squares
+        function drawEquipotentialLines(potentials, gridSize, levels) {
+            // Find potential range
+            const flatPotentials = potentials.flat();
+            const minPotential = Math.min(...flatPotentials);
+            const maxPotential = Math.max(...flatPotentials);
+            const potentialStep = (maxPotential - minPotential) / levels;
+
+            for (let level = 1; level <= levels; level++) {
+                const targetPotential = minPotential + level * potentialStep;
+                ctx.strokeStyle = `rgba(0, 255, 0, 0.7)`;
+
+                for (let i = 0; i < potentials.length - 1; i++) {
+                    for (let j = 0; j < potentials[i].length - 1; j++) {
+                        // Calculate the center of the cell
+                        const cellCenterX = i * gridSize + gridSize / 2;
+                        const cellCenterY = j * gridSize + gridSize / 2;
+
+                        // // Check if the cell center is at least 2 * chargeRadius away from all charges
+                         let skipCell = false;
+                        for (let charge of charges) {
+                            const dx = cellCenterX - charge.x;
+                            const dy = cellCenterY - charge.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            if (distance <  chargeRadius) {
+                                skipCell = true;
+                                break;
+                            }
+                        }
+                        if (skipCell) continue;
+                        // Get the potential values at the corners of the cell
+                        const tl = potentials[i][j]; // top-left
+                        const tr = potentials[i + 1][j]; // top-right
+                        const br = potentials[i + 1][j + 1]; // bottom-right
+                        const bl = potentials[i][j + 1]; // bottom-left
+
+                        // Determine the index for the marching squares case
+                        let index = 0;
+                        if (tl >= targetPotential) index |= 8;  // Bit 3
+                        if (tr >= targetPotential) index |= 4;  // Bit 2
+                        if (br >= targetPotential) index |= 2;  // Bit 1
+                        if (bl >= targetPotential) index |= 1;  // Bit 0
+
+                        // Skip cells where all corners are above or below the target potential
+                        if (index === 0 || index === 15) continue;
+
+                        // Determine the line segments to draw
+                        const lines = getMarchingSquaresLines(index, i, j, potentials, targetPotential, gridSize);
+
+                        // Draw the line segments
+                        for (let line of lines) {
+                            ctx.beginPath();
+                            ctx.setLineDash([5, 5]); // Creates a dotted line pattern: 5px dash followed by 5px gap
+                            ctx.strokeStyle = 'black'; // Sets the stroke color to black
+                            ctx.lineWidth = 1; // Optional: Adjust line width as needed
+                            ctx.moveTo(line[0].x, line[0].y);
+                            ctx.lineTo(line[1].x, line[1].y);
+                            ctx.stroke();
+                            ctx.closePath();
+                        }
+
+                        // Reset the line dash to solid for other drawings
+                        ctx.setLineDash([]);
+                    }
+                }
+            }
+        }
+
+        // Function to get line segments for a given marching squares case
+        function getMarchingSquaresLines(index, i, j, potentials, targetPotential, gridSize) {
+            const x = i * gridSize;
+            const y = j * gridSize;
+            const lines = [];
+
+            // Interpolate between grid points
+            const interpolate = (p1, p2, v1, v2) => {
+                const t = (targetPotential - v1) / (v2 - v1);
+                return {
+                    x: p1.x + t * (p2.x - p1.x),
+                    y: p1.y + t * (p2.y - p1.y)
+                };
+            };
+
+            // Grid point positions
+            const p0 = { x: x, y: y };                        // Top-left
+            const p1 = { x: x + gridSize, y: y };             // Top-right
+            const p2 = { x: x + gridSize, y: y + gridSize };  // Bottom-right
+            const p3 = { x: x, y: y + gridSize };             // Bottom-left
+
+            // Potential values at corners
+            const v0 = potentials[i][j];
+            const v1Val = potentials[i + 1][j];
+            const v2 = potentials[i + 1][j + 1];
+            const v3 = potentials[i][j + 1];
+
+            // Edge points
+            const edgePoints = {};
+
+            // Determine the edge intersections
+            if ((index & 1) !== (index & 2)) {
+                edgePoints.e1 = interpolate(p3, p2, v3, v2);
+            }
+            if ((index & 2) !== (index & 4)) {
+                edgePoints.e2 = interpolate(p2, p1, v2, v1Val);
+            }
+            if ((index & 4) !== (index & 8)) {
+                edgePoints.e3 = interpolate(p1, p0, v1Val, v0);
+            }
+            if ((index & 8) !== (index & 1)) {
+                edgePoints.e0 = interpolate(p0, p3, v0, v3);
+            }
+
+            // Define the line segments for each case
+            const cases = {
+                1: [['e0', 'e1']],
+                2: [['e1', 'e2']],
+                3: [['e0', 'e2']],
+                4: [['e2', 'e3']],
+                5: [['e0', 'e3'], ['e1', 'e2']], // Ambiguous case
+                6: [['e1', 'e3']],
+                7: [['e0', 'e3']],
+                8: [['e0', 'e3']],
+                9: [['e1', 'e3']],
+                10: [['e0', 'e1'], ['e2', 'e3']], // Ambiguous case
+                11: [['e2', 'e3']],
+                12: [['e0', 'e2']],
+                13: [['e1', 'e2']],
+                14: [['e0', 'e1']],
+            };
+
+            const segments = cases[index];
+
+            if (segments) {
+                for (let seg of segments) {
+                    const p1 = edgePoints[seg[0]];
+                    const p2 = edgePoints[seg[1]];
+                    if (p1 && p2) {
+                        lines.push([p1, p2]);
+                    }
+                }
+            }
+
+            return lines;
+        }
+        // Function to draw electric field lines
+        function drawElectricFieldLines(steps, stepSize) {
+            // Starting points around charges
+            const startingPoints = [];
+            const linesPerCharge = 12; // Adjust for number of lines per charge
+
+            for (let charge of charges) {
+                for (let i = 0; i < linesPerCharge; i++) {
+                    const angle = (Math.PI * 2 / linesPerCharge) * i;
+                    const x = charge.x + (chargeRadius + 1) * Math.cos(angle);
+                    const y = charge.y + (chargeRadius + 1) * Math.sin(angle);
+                    startingPoints.push({ x, y, chargeValue: charge.value });
+                }
+            }
+
+            // Trace field lines
+            for (let point of startingPoints) {
+                let x = point.x;
+                let y = point.y;
+                ctx.strokeStyle = 'black'; // Black color for field lines
+                ctx.lineWidth = 1;
+                ctx.setLineDash([]); // Solid lines
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+
+                const lineSegments = []; // To store the path for arrow head placement
+
+                for (let i = 0; i < steps; i++) {
+                    const eField = calculateElectricField(x, y);
+                    const eMagnitude = Math.sqrt(eField.ex * eField.ex + eField.ey * eField.ey);
+                    if (eMagnitude === 0) break;
+
+                    // Normalize the field vector
+                    const ex = eField.ex / eMagnitude;
+                    const ey = eField.ey / eMagnitude;
+
+                    // Determine direction based on charge sign
+                    const direction = point.chargeValue > 0 ? 1 : -1;
+
+                    // Move a step in the direction of the field
+                    x += direction * ex * stepSize;
+                    y += direction * ey * stepSize;
+
+                    ctx.lineTo(x, y);
+                    lineSegments.push({ fromX: x - direction * ex * stepSize, fromY: y - direction * ey * stepSize, toX: x, toY: y });
+
+                    // Stop if out of bounds
+                    if (x < 0 || x > canvas.width || y < 0 || y > canvas.height) break;
+
+                    // Stop if near another charge
+                    let nearCharge = false;
+                    for (let charge of charges) {
+                        const dx = x - charge.x;
+                        const dy = y - charge.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < chargeRadius) {
+                            nearCharge = true;
+                            break;
+                        }
+                    }
+                    if (nearCharge) break;
+                }
+
+                ctx.stroke();
+                ctx.closePath();
+
+                // Add arrow heads at random positions along the line
+                if (lineSegments.length > 0) {
+                    const numberOfArrows = 3; // Number of arrow heads per line
+                    for (let i = 0; i < numberOfArrows; i++) {
+                        const randomIndex = Math.floor(0.2 * (i + 1) * lineSegments.length);
+                        const segment = lineSegments[randomIndex];
+                        if (point.chargeValue > 0) {
+                            drawArrowHead(ctx, segment.fromX, segment.fromY, segment.toX, segment.toY);
+                        }
+                        else {
+                            drawArrowHead(ctx, segment.toX, segment.toY, segment.fromX, segment.fromY);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Function to calculate electric field at a point
+        function calculateElectricField(x, y) {
+            let ex = 0;
+            let ey = 0;
+
+            for (let charge of charges) {
+                const dx = x - charge.x;
+                const dy = y - charge.y;
+                const distanceSquared = dx * dx + dy * dy;
+                const distance = Math.sqrt(distanceSquared);
+                if (distanceSquared === 0) continue;
+
+                const fieldMagnitude = charge.value / distanceSquared;
+                ex += fieldMagnitude * (dx / distance);
+                ey += fieldMagnitude * (dy / distance);
+            }
+
+            return { ex, ey };
+        }
+
+
+        function getAbsolutePosition(charge) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: rect.left + charge.x,
+                y: rect.top + charge.y
+            };
+        }
+        
+        function drawArrowHead(ctx, fromX, fromY, toX, toY, arrowLength = 10, arrowAngle = Math.PI / 6) {
+            const angle = Math.atan2(toY - fromY, toX - fromX);
+            ctx.beginPath();
+            ctx.moveTo(toX, toY);
+            ctx.lineTo(toX - arrowLength * Math.cos(angle - arrowAngle), toY - arrowLength * Math.sin(angle - arrowAngle));
+            ctx.moveTo(toX, toY);
+            ctx.lineTo(toX - arrowLength * Math.cos(angle + arrowAngle), toY - arrowLength * Math.sin(angle + arrowAngle));
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../00_Assets/lib/documentReady.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
