@@ -4,7 +4,10 @@
                 background-color: black;
             }
         }
-
+        model-viewer{
+            width: 200px;
+            height: 200px;
+        }
         .accordion-body p {
             text-align: justify;
             padding: 5px;

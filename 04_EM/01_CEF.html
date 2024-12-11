@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../controllers/controller.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,10 +101,13 @@
                                         <details>
                                             <summary><strong>Charging through Direct Contact:</strong></summary>
                                             <p>
-                                                One common method is through direct contact, where a charged object touches
-                                            a neutral one, transferring some of its charge. For example, rubbing a glass
-                                            rod with silk transfers electrons from the glass to the silk, leaving the
-                                            rod positively charged.
+                                                One common method is through direct contact, where a charged object
+                                                touches
+                                                a neutral one, transferring some of its charge. For example, rubbing a
+                                                glass
+                                                rod with silk transfers electrons from the glass to the silk, leaving
+                                                the
+                                                rod positively charged.
                                             </p>
                                         </details>
                                     </li>
@@ -112,9 +116,11 @@
                                             <summary><strong>Charging through Induction:</strong></summary>
                                             <p>
                                                 Induction involves bringing a charged object near a conductor, causing a
-                                            redistribution of charges within the conductor without direct contact. This
-                                            phenomenon leverages the mobility of charges in conductors to induce a net
-                                            charge in a specific region.
+                                                redistribution of charges within the conductor without direct contact.
+                                                This
+                                                phenomenon leverages the mobility of charges in conductors to induce a
+                                                net
+                                                charge in a specific region.
                                             </p>
                                             <div class="row justify-content-center mb-4">
                                                 <div class="col-12 col-md-6">
@@ -123,14 +129,15 @@
                                                             class="figure-img img-fluid rounded"
                                                             alt="Diagram illustrating the process of charging by induction, showing a charged rod near a neutral conductor causing charge separation.">
                                                     </figure>
-                                                    <figcaption class="figure-caption text-center">Diagram: Charging by Induction.
+                                                    <figcaption class="figure-caption text-center">Diagram: Charging by
+                                                        Induction.
                                                     </figcaption>
                                                 </div>
                                             </div>
                                         </details>
                                     </li>
                                 </ul>
-                                
+
                             </div>
 
                         </div>
@@ -531,6 +538,7 @@
                                         <figcaption class="figure-caption text-center">Diagram: Electric field line
                                         </figcaption>
                                     </div>
+
                                 </div>
                                 <p>
                                     To construct electric field lines, the direction of the electric field at multiple
@@ -539,23 +547,27 @@
                                     known as electric field lines, which provide a clear depiction of the field's
                                     behavior. The following diagram demonstrates this concept with examples:
                                 </p>
+                                
                                 <div class="row justify-content-center mb-4">
                                     <div
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure style="max-width: 200px;">
-                                            <img src="img/09_Electric_field_lines_positive_charge.png"
-                                                class="figure-img img-fluid rounded"
-                                                alt="Diagram showing the creation of electric field lines due to a point charge.">
+                                        <figure>
+                                            <model-viewer src="blend/01_Spherical Electric Field Lines.glb"                                                
+                                                alt="Diagram showing the creation of electric field lines due to a point charge."
+                                                auto-rotate camera-controls ar>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">Due to positive charge</figcaption>
                                         </figure>
                                     </div>
                                     <div
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure style="max-width: 200px;">
-                                            <img src="img/11_Electric_field_lines_negative_charge.png"
-                                                class="figure-img img-fluid rounded"
-                                                alt="Diagram showing the creation of electric field lines due to a point charge.">
+                                        <figure>
+                                            <model-viewer src="blend/01_Spherical Electric Field Lines2.glb"                                                
+                                                alt="Diagram showing the creation of electric field lines due to a point charge."
+                                                auto-rotate camera-controls ar>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">Due to negative charge</figcaption>
                                         </figure>
-
                                     </div>
                                     <figcaption class="figure-caption text-center">Diagram: Electric field lines
                                         generated by a point charge.</figcaption>
@@ -567,10 +579,10 @@
                                 <div class="row justify-content-center mb-4">
                                     <div
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure style="max-width: 300px;">
-                                            <img src="img/13_Electric_field_lines_two_positive_charge.png"
-                                                class="figure-img img-fluid rounded"
-                                                alt="Diagram showing electric field lines due to two charges of same polarity.">
+                                        <figure>
+                                            <model-viewer src="blend/02_EFL_due_to_pair_of_positive_charge.glb"                                                
+                                            alt="Diagram showing electric field lines due to two charges of same polarity."
+                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;">
                                         </figure>
                                         <figcaption class="figure-caption text-center">Diagram: Electric field lines
                                             due to two charges of same polarity.</figcaption>
@@ -578,9 +590,9 @@
                                     <div
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
                                         <figure style="max-width: 300px;">
-                                            <img src="img/12_Electric_field_lines_two_positive_negative_charge.png"
-                                                class="figure-img img-fluid rounded"
-                                                alt="Diagram showing electric field lines due to two charges of opposite polarity.">
+                                            <model-viewer src="blend/02_EFL_due_to_pair_of_positive-negative_charge.glb"                                                
+                                            alt="Diagram showing electric field lines due to two charges of opposite polarity."
+                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;">
                                         </figure>
                                         <figcaption class="figure-caption text-center">Diagram: Electric field lines
                                             due to two charges of opposite polarity.</figcaption>
