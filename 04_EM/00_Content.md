@@ -141,34 +141,83 @@ Keep the content more logical, easy to understand and one para connected logical
     - resolution of dipole to obtain electric field
 - Force between dipoles
 
+
+[Special instructions: make the content fluidic, one para should appear in continuation to other, Use diagrams. Use "following diagram explains it" type of statements assuming a diagram of all the requirements is mentioned. In place of expected diagram you mention :[Diagram containing.....]. A little bit of jargon is fine. Target students are of 16-18 years of age. Everything in paragraph, not in summary details tags. Not required to keep headings for everything. Keep it fluidic.]
+
 ### Chapter 4: Gauss's Law
-#### Section 1. Electric Flux
+#### Section 1. Electric Flux [Accordion item]
+- Area as a vector
+    - Direction and the magnitude
+    [GPT Instructions:  Mention area is considered perpendicular to surface. Also if the surface is a closed surface, then area is perpendicularly outwards. Assume a diagram which is actually a 3D model-viewer in glb format, with a simple disc with arrow along perpendicular bisector indicating direction of the area vector. Also one more cuboid to illustrate area vectors to be outwards perpendicularly]
+    - Component of area vectors
+    [GPT Instructions:  Correlate area vector with any other vector, for taking components. Then consider inclined plane surface(assume diagram as 3D model-viewer in glb) of a prism, whose vertical and horizontal surfaces are the components of inclined area. Explain it well. ]
+    - Resultant of curved surface areas
+    [GPT Instructions:  Just like we can resolve an area, we can combine two areas too.Give suitable examples. Then assume a curved portion of a sphere. Explain the resultant of all individual infinitasimal small areas. In a separate paragraph, show that total area vector of a closed surface is always zero.]
+
 - Electric flux
     - definition and formula
+    [GPT Instructions: Define it for small area ds. Mention it as scalar, can be positive negative and its SI unit. Then explain physical significance of Electric flux in a separate paragraph. ]
     - through flat surfaces in uniform and non-uniform field
+    [GPT Instructions:  Simply explain method of calculation for non-uniform electric field. Explain the method of integration.]
     - through curved surfaces in uniform field
+    [GPT Instructions: Mention the method to take E out of the integration and then get the vector sum of all ds areas. ]
     - through closed surfaces
-#### Section 2. Gauss's law
-- Statement of Gauss's law and limitations
-- Flux calculations using Gauss's law
+    [GPT Instructions:  Show that it will be zero if given electric field is uniform]
+#### Section 2. Solid Angle [Accordion item]
+- Definition and examples
+[GPT Instructions:  Definition. Assume a model viewer in glb format. Give examples for complete solid angle as 4pi. Also like if a person stands on large ground, the entire open sky subtends an angle of 2pi steradians on person's eye.]
+- Various results
+[GPT Instructions: First give an explanation that two surfaces one curved one flat, with the same boundary subtend same solid angle at any point. Calcular result for solid angle subtended by a part of spherical surface at its center. COnsider the semi apex angle subtended at the center by this surface is theta. Get solid angle in terms of theta.]
+#### Section 3. Gauss's law
+- Statement of Gauss's law
+[GPT Instructions:  ]
+- Important points to understand
+[GPT Instructions:  ]
+- Symmetric distribution of flux
+[GPT Instructions:  ]
+#### Section 4. Flux calculations
+- To find flux
     - using symmetry
+    [GPT Instructions:  ]
     - using integrations
+    [GPT Instructions:  ]
     - using solid angles
-#### Section 3. Applications of Gauss's law
-- Applications of Gauss's law to find electric field
-    - due to point charge
-    - due to long line charge
-    - due to hollow and solid cylinder
-    - due to hollow and solid sphere (uniform or non-uniform)
+    [GPT Instructions:  ]
+- To find enclosed charge
+    - with given electric field distribution
+    [GPT Instructions:  ]
+    - with given potential distribution
+    [GPT Instructions:  ]
+#### Section 5. Finding Electric field using Gauss's law
+- Using spherical symmetry
+    - Due to point charge
+    [GPT Instructions:  ]
+    - Due to spherical shell
+    [GPT Instructions:  ]
+    - Due to uniform solid sphere
+    [GPT Instructions:  ]
+    - Due to non-uniform solid sphere
+    [GPT Instructions:  ]
+- Using cylindrical symmetry
+    - Due to line charge
+    [GPT Instructions:  ]
+    - Due to hollow cylinder
+    [GPT Instructions:  ]
+    - Due to solid cylinder
+    [GPT Instructions:  ]
+- Using planar symmetry
+    - due to large thin and thin sheet
+    [GPT Instructions:  ]
     - due to large thin and thick sheet
+    [GPT Instructions:  ]
 
 ### Chapter 5. Electrostatics of Conductors
 #### Section 1. Conductor and properties
 - general properties
-    - bevaviour in external electric field
+    - Existance of movable charges
     - interaction with external charges
-- Electrostatic properties of conductors
     - induction properties
+- Electrostatic properties of conductors    
     - zero electric field and constant potential properties
     - interaction with external electric field lines
     - electric field just outside surface

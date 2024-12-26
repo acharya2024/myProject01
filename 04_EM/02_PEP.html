@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -242,7 +244,7 @@
                                             </p>
                                             <p>
                                                 \(\qquad
-                                                U_{13} = \frac{k q_1 q_3}{r_{13}}, \quad U_{23} = \frac{k
+                                                U_{13} = \dfrac{k q_1 q_3}{r_{13}}, \quad U_{23} = \dfrac{k
                                                 q_2 q_3}{r_{23}}
                                                 \)
                                             </p>
@@ -258,7 +260,7 @@
                                             </p>
                                             <p>
                                                 \(\qquad
-                                                \Delta U = \frac{k q_1 q_3}{r_{13}} + \frac{k q_2
+                                                \Delta U = \dfrac{k q_1 q_3}{r_{13}} + \dfrac{k q_2
                                                 q_3}{r_{23}}
                                                 \)
                                             </p>
@@ -271,8 +273,8 @@
                                             </p>
                                             <p>
                                                 \(\qquad
-                                                U_f = U_i + \Delta U = \frac{k q_1 q_2}{r_{12}} + \frac{k
-                                                q_1 q_3}{r_{13}} + \frac{k q_2 q_3}{r_{23}}
+                                                U_f = U_i + \Delta U = \dfrac{k q_1 q_2}{r_{12}} + \dfrac{k
+                                                q_1 q_3}{r_{13}} + \dfrac{k q_2 q_3}{r_{23}}
                                                 \)
                                             </p>
                                             <p>
@@ -281,8 +283,8 @@
                                             </p>
                                             <p class="text-law text-center">
                                                 \(\qquad
-                                                U = U_{12} + U_{13} + U_{23} = \frac{k q_1 q_2}{r_{12}} +
-                                                \frac{k q_1 q_3}{r_{13}} + \frac{k q_2 q_3}{r_{23}}
+                                                U = U_{12} + U_{13} + U_{23} = \dfrac{k q_1 q_2}{r_{12}} +
+                                                \dfrac{k q_1 q_3}{r_{13}} + \dfrac{k q_2 q_3}{r_{23}}
                                                 \)
                                             </p>
                                             <p>
@@ -324,7 +326,7 @@
                                             </p>
                                             <p>
                                                 \(\qquad
-                                                U = \frac{k q_1 q_2}{r_{12}} + \frac{k q_1 q_3}{r_{13}} + \frac{k q_2
+                                                U = \dfrac{k q_1 q_2}{r_{12}} + \dfrac{k q_1 q_3}{r_{13}} + \dfrac{k q_2
                                                 q_3}{r_{23}}
                                                 \)
                                             </p>
@@ -335,9 +337,9 @@
                                             </p>
                                             <p>
                                                 \(\qquad
-                                                U = \frac{k q_1 q_2}{r_{12}} + \frac{k q_1 q_3}{r_{13}} + \frac{k q_1
-                                                q_4}{r_{14}} + \frac{k q_2 q_3}{r_{23}} + \frac{k q_2 q_4}{r_{24}} +
-                                                \frac{k q_3 q_4}{r_{34}}
+                                                U = \dfrac{k q_1 q_2}{r_{12}} + \dfrac{k q_1 q_3}{r_{13}} + \dfrac{k q_1
+                                                q_4}{r_{14}} + \dfrac{k q_2 q_3}{r_{23}} + \dfrac{k q_2 q_4}{r_{24}} +
+                                                \dfrac{k q_3 q_4}{r_{34}}
                                                 \)
                                             </p>
                                             <p>
@@ -345,7 +347,7 @@
                                                 each charge interacts with \( (n-1) \) other charges. However, this
                                                 approach counts each interaction twice (once for each pair \( (i, j) \)
                                                 and \( (j, i) \)). To account for this double-counting, we include a
-                                                factor of \( \frac{1}{2} \) in the summation. These interactions are
+                                                factor of \( \dfrac{1}{2} \) in the summation. These interactions are
                                                 shown in diagram below:
                                             </p>
                                             <div class="row justify-content-center mb-4">
@@ -367,7 +369,7 @@
                                             </p>
                                             <p class="text-law text-center">
                                                 \(\qquad
-                                                U = \frac{1}{2} \sum_{\substack{i=1 \\ i \neq j}}^{n} \frac{k q_i
+                                                U = \dfrac{1}{2} \sum_{\substack{i=1 \\ i \neq j}}^{n} \dfrac{k q_i
                                                 q_j}{r_{ij}}
                                                 \)
                                             </p>
@@ -380,7 +382,7 @@
                                                 - \( r_{ij} \) is the distance between charges \( q_i \) and \( q_j \).
                                             </p>
                                             <p>
-                                                The factor of \( \frac{1}{2} \) ensures that each unique pairwise
+                                                The factor of \( \dfrac{1}{2} \) ensures that each unique pairwise
                                                 interaction is counted only once in the total potential energy.
                                             </p>
                                         </details>
@@ -426,25 +428,25 @@
                                             </p>
                                             <p><strong>Solution</strong></p>
                                             <p>
-                                                Initially, the system has potential energy \( E_i = k \frac{q^2}{r} \)
+                                                Initially, the system has potential energy \( E_i = k \dfrac{q^2}{r} \)
                                                 and no kinetic energy since the charges are at rest. When the charges
                                                 move apart to a separation of \( 2r \), the potential energy becomes \(
-                                                E_f = k \frac{q^2}{2r} \), and each charge gains kinetic energy \(
-                                                \frac{1}{2}mv^2 \).
+                                                E_f = k \dfrac{q^2}{2r} \), and each charge gains kinetic energy \(
+                                                \dfrac{1}{2}mv^2 \).
                                             </p>
                                             <p>
                                                 Conservation of energy dictates that the initial potential energy equals
                                                 the final potential energy plus the total kinetic energy:
                                                 \(\qquad
-                                                E_i = E_f + 2 \left( \frac{1}{2}mv^2 \right)
+                                                E_i = E_f + 2 \left( \dfrac{1}{2}mv^2 \right)
                                                 \)
                                                 Substituting the values:
                                                 \(\qquad
-                                                k \frac{q^2}{r} = k \frac{q^2}{2r} + mv^2
+                                                k \dfrac{q^2}{r} = k \dfrac{q^2}{2r} + mv^2
                                                 \)
                                                 Solving for \( v \):
                                                 \(\qquad
-                                                mv^2 = k \frac{q^2}{2r} \implies v = \sqrt{\frac{k q^2}{2 m r}}
+                                                mv^2 = k \dfrac{q^2}{2r} \implies v = \sqrt{\dfrac{k q^2}{2 m r}}
                                                 \)
                                             </p>
                                         </details>
@@ -466,27 +468,28 @@
                                                 The initial potential energy of the system is calculated based on the
                                                 three pairs of charges:
                                                 \(\qquad
-                                                U_i = 3k \frac{q^2}{a}
+                                                U_i = 3k \dfrac{q^2}{a}
                                                 \)
                                                 After expansion, the potential energy becomes:
                                                 \(\qquad
-                                                U_f = 3k \frac{q^2}{2a}
+                                                U_f = 3k \dfrac{q^2}{2a}
                                                 \)
                                                 The change in potential energy is:
                                                 \(\qquad
-                                                \Delta U = U_f - U_i = -\frac{3k q^2}{2a}
+                                                \Delta U = U_f - U_i = -\dfrac{3k q^2}{2a}
                                                 \)
                                                 This loss in potential energy converts into kinetic energy:
                                                 \(\qquad
-                                                K_f = \frac{3k q^2}{2a}
+                                                K_f = \dfrac{3k q^2}{2a}
                                                 \)
                                             </p>
                                             <p>
                                                 Since there are three identical charges sharing the kinetic energy
-                                                equally, each charge has kinetic energy \( \frac{1}{2}mv^2 \).
+                                                equally, each charge has kinetic energy \( \dfrac{1}{2}mv^2 \).
                                                 Therefore:
                                                 \(\qquad
-                                                3 \times \frac{1}{2}mv^2 = \frac{3k q^2}{2a} \implies v = \sqrt{\frac{k
+                                                3 \times \dfrac{1}{2}mv^2 = \dfrac{3k q^2}{2a} \implies v =
+                                                \sqrt{\dfrac{k
                                                 q^2}{m a}}
                                                 \)
                                             </p>
@@ -510,7 +513,7 @@
                                                 Initially, the potential energy of the movable charge due to the two
                                                 fixed charges is:
                                                 \(\qquad
-                                                U_i = 2k \frac{q^2}{a}
+                                                U_i = 2k \dfrac{q^2}{a}
                                                 \)
                                                 When the movable charge moves infinitely far away, the potential energy
                                                 becomes:
@@ -519,18 +522,18 @@
                                                 \)
                                                 The change in potential energy is:
                                                 \(\qquad
-                                                \Delta U = U_f - U_i = -2k \frac{q^2}{a}
+                                                \Delta U = U_f - U_i = -2k \dfrac{q^2}{a}
                                                 \)
                                                 This loss in potential energy converts into kinetic energy of the
                                                 movable charge:
                                                 \(\qquad
-                                                \frac{1}{2}mv^2 = 2k \frac{q^2}{a}
+                                                \dfrac{1}{2}mv^2 = 2k \dfrac{q^2}{a}
                                                 \)
                                             </p>
                                             <p>
                                                 Solving for \( v \):
                                                 \(\qquad
-                                                v = \sqrt{\frac{4k q^2}{m a}}
+                                                v = \sqrt{\dfrac{4k q^2}{m a}}
                                                 \)
                                             </p>
                                             <p><strong>Note:</strong> Only the potential energy interactions involving
@@ -560,7 +563,7 @@
                                     \(q_1,\,q_2,\,q_3...q_n\):
                                 </p>
                                 <p>
-                                    \(\qquad U = \sum_{i=1}^{n} k \frac{q_i q}{r_i}\)
+                                    \(\qquad U = \sum_{i=1}^{n} k \dfrac{q_i q}{r_i}\)
                                 </p>
                                 <p>
                                     Also in terms of work done by electric field,
@@ -598,17 +601,17 @@
                                             </p>
                                             <p>
 
-                                                \[
-                                                U_{\text{total}} = k \frac{q^2}{a} + k
-                                                \frac{q^2}{\sqrt{2}a} + k \frac{q^2}{a}
-                                                \]
+                                                \(\qquad
+                                                U_{\text{total}} = k \dfrac{q^2}{a} + k
+                                                \dfrac{q^2}{\sqrt{2}a} + k \dfrac{q^2}{a}
+                                                \)
                                             </p>
                                             <p>
                                                 Therefore, the electrostatic potential energy of one charge in the
                                                 square configuration is:
-                                                \[
-                                                U = \frac{k q^2 (4 + \sqrt{2})}{2a}
-                                                \]
+                                                \(\qquad
+                                                U = \dfrac{k q^2 (4 + \sqrt{2})}{2a}
+                                                \)
                                             </p>
                                         </details>
                                     </li>
@@ -632,10 +635,10 @@
                                                 total potential energy of \(q\). Thus,
                                             </p>
                                             <p>
-                                                \(\qquad dU=k\frac{qdQ}{R})
+                                                \(\qquad dU=k\dfrac{qdQ}{R})
                                             </p>
                                             <p>
-                                                \(\qquad U=\displaystyle\int_0^Q k \frac{qdQ}{R})
+                                                \(\qquad U=\displaystyle\int_0^Q k \dfrac{qdQ}{R})
                                             </p>
                                             <p>
                                                 Therefore, the potential energy of the point charge \( q \) at the
@@ -643,7 +646,7 @@
 
                                             </p>
                                             <p>
-                                                \(\qquad U=k\frac{qQ}{R})
+                                                \(\qquad U=k\dfrac{qQ}{R})
                                             </p>
                                         </details>
                                     </li>
@@ -689,7 +692,7 @@
                                 </p>
                                 <p>
                                     \(\qquad
-                                    U = \frac{1}{4\pi\varepsilon_0} \frac{qQ}{r}
+                                    U = \dfrac{1}{4\pi\varepsilon_0} \dfrac{qQ}{r}
                                     \)
                                 </p>
                                 <p>
@@ -697,7 +700,7 @@
                                 </p>
                                 <p class="text-center text-law">
                                     \(
-                                    V = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r}
+                                    V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{Q}{r}
                                     \)
                                 </p>
                                 <p>
@@ -720,7 +723,7 @@
                                     \sigma \), or volume charge density \( \rho \), the potential is given by:
                                 </p>
                                 <p>
-                                    \(\qquad V = \int \frac{1}{4\pi\varepsilon_0} \frac{dq}{r}\)
+                                    \(\qquad V = \displaystyle\int \dfrac{1}{4\pi\varepsilon_0} \dfrac{dq}{r}\)
                                 </p>
                                 <p>
                                     where \( dq \) is the infinitesimal charge element. These results are used for
@@ -742,100 +745,98 @@
                             aria-labelledby="equipotential-surfaces-heading" data-bs-parent="#content">
                             <div class="accordion-body">
                                 <p>
-                                    Equipotential surfaces are imaginary
-                                    surfaces in space where the electric
+                                    Equipotential surfaces are imaginary surfaces in space where the electric
                                     potential is the same at every point.
                                 </p>
                                 <p>
                                     For example, in the case of a point charge \( q \), the electric potential at a
-                                    distance \( r \) from the charge is
-                                    given by \( V = \frac{1}{4\pi \varepsilon_0} \frac{q}{r} \). This means that the
-                                    potential depends only on the
+                                    distance \( r \) from the charge is given by \( V = \dfrac{1}{4\pi \varepsilon_0}
+                                    \dfrac{q}{r} \). This means that the potential depends only on the
                                     radial distance \( r \), and must remain constant on a sphere centered at the
                                     charge. As a result, equipotential surfaces are concentric spheres centered on the
                                     charge.
                                 </p>
                                 <ul class="list-group list-group-flush">
                                     <p>
-                                        Following are properties of Equipotential Surfaces (EPS):
+                                        Equipotential surfaces provide valuable insight into the relationship between
+                                        electrostatic forces, electric field lines, and potential energy. Let us
+                                        consider what happens when a charge moves along an equipotential surface:
                                     </p>
                                     <li class="list-group-item">
-                                        <details>
-                                            <summary>Same potential at all points of EPS</summary>
-                                            An equipotential surface has the same electric potential at every point by
-                                            definition. This means that no
-                                            potential difference exists between any two points on the surface.
-                                        </details>
+                                        <p>
+                                            Since potential at a point represents potential energy per unit charge, the
+                                            potential energy of the charge remains constant when it moves along the
+                                            equipotential surface. This is because the potential does not vary across
+                                            the surface.
+                                        </p>
                                     </li>
                                     <li class="list-group-item">
-                                        <details>
-                                            <summary>Different EPS do not intersect</summary>
-                                            If two equipotential surfaces were to intersect, it would imply that a point
-                                            on the intersection has two
-                                            different values of electric potential, which is physically impossible.
-                                            Therefore, equipotential surfaces
-                                            never intersect, maintaining the uniqueness of electric potential at any
-                                            given point in space.
-                                        </details>
+                                        <p>
+                                            The work done by electrostatic forces is zero. If any work were done, the
+                                            electrostatic potential energy of the system would change, which contradicts
+                                            the definition of an equipotential surface.
+                                        </p>
                                     </li>
                                     <li class="list-group-item">
-                                        <details>
-                                            <summary>No work in moving charge along EPS</summary>
-                                            Moving a charge along an equipotential surface requires no work because the
-                                            electric potential energy
-                                            remains constant. The work done \( W = q \Delta V \), where \( \Delta V \)
-                                            is the change in potential, is
-                                            zero since \( \Delta V = 0 \) along the surface.
-                                        </details>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary>Electric field lines are perpendicular to EPS</summary>
-                                            When a charge is moved along an equipotential surface, its potential energy
-                                            does not change. Since the work done by
-                                            the electric field is related to the change in potential energy (\( W =
-                                            -\Delta U \)), the work done by the electric
-                                            field is zero for any displacement along the equipotential surface. This is
-                                            only possible if the electric force on
-                                            the charge is perpendicular to its displacement. Consequently, electric
-                                            field lines are always perpendicular to
+                                        <p>
+                                            Electric field lines are always perpendicular to equipotential surfaces. If
+                                            electric field lines were not perpendicular, there would be a component of
+                                            the electric field along the surface, resulting in non-zero work done by
+                                            electrostatic forces. This violates the fundamental property of
                                             equipotential surfaces.
-                                        </details>
-
+                                        </p>
                                     </li>
                                 </ul>
-
                                 <p>
-                                    <strong>Examples:</strong>
+                                    Thus, if in a given region, electric field lines are drawn we can find a surface
+                                    which is always perpendicular to the electric field lines to represent the
+                                    equipotential surfaces. Following are a few examples of equipotential surfaces
+                                    drawn:
                                 </p>
-                                <ul>
-                                    <li>
-                                        **Two Identical Charges:** Consider two positive charges of equal magnitude
-                                        placed at a certain distance apart.
-                                        The equipotential surfaces are symmetrically arranged, with higher potentials
-                                        near the charges. At points closer
-                                        to either charge, the surfaces bend around the charge, while at larger
-                                        distances, the surfaces appear circular.
-                                        <strong>Diagram:</strong> Equipotential surfaces for two identical charges,
-                                        showing symmetry and variation in
-                                        potential.
-                                    </li>
-                                    <li>
-                                        **Equal and Opposite Charges (Dipole):** For a dipole, consisting of a positive
-                                        charge \( +q \) and a negative
-                                        charge \( -q \) separated by a distance \( d \), the equipotential surfaces are
-                                        unique. Near each charge, the
-                                        surfaces are spherical. In the region between the charges, the surfaces bend
-                                        sharply, forming elongated shapes
-                                        along the dipole axis. The potential in this region transitions from positive to
-                                        negative.
-                                        <strong>Diagram:</strong> Equipotential surfaces for a dipole, illustrating the
-                                        influence of opposite charges on
-                                        surface shape.
-                                    </li>
-                                </ul>
-
-
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <model-viewer src="blend/03_Spherical Equipotential Surfaces.glb"
+                                                alt="Diagram showing Equipotential Surfaces due to point charges"
+                                                auto-rotate camera-controls ar>
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Equipotential Surfaces
+                                            due to point charges.</figcaption>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <model-viewer src="blend/04_EPS_due_to_line_charge.glb"
+                                                alt="Diagram showing Equipotential Surfaces due to pair of positive charges"
+                                                auto-rotate camera-controls ar>
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Equipotential Surfaces
+                                            due long line charge</figcaption>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <model-viewer src="blend/03_Spherical Equipotential Surfaces.glb"
+                                                alt="Diagram showing Equipotential Surfaces due to point charges"
+                                                auto-rotate camera-controls ar>
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Equipotential Surfaces
+                                            due large charged sheet.</figcaption>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <model-viewer src="blend/04_EPS_due_to_line_charge.glb"
+                                                alt="Diagram showing Equipotential Surfaces due to pair of positive charges"
+                                                auto-rotate camera-controls ar>
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Equipotential Surfaces
+                                            due given electric field lines</figcaption>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -850,96 +851,200 @@
                         <div id="field-potential-relation" class="accordion-collapse collapse"
                             aria-labelledby="field-potential-relation-heading" data-bs-parent="#content">
                             <div class="accordion-body">
-                                <!-- Determination of Electric Field -->
                                 <p>
-                                    <strong>Determination of Electric Field:</strong>
+                                    If a positive charge is released in an electric field, it will naturally start to
+                                    travel
+                                    along the field lines with increasing kinetic energy and decreasing potential
+                                    energy. This implies that the potential energy of a positive charge decreases in the
+                                    direction of the electric field. Since potential is defined as potential energy per
+                                    unit charge, the potential must also decrease along the direction of the electric
+                                    field.
                                 </p>
-                                <ul class="list-group list-group-flush mb-4">
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>If Potential is Given</strong></summary>
-                                            <p>
-                                                The electric field \( \vec{E} \) at any point is related to the
-                                                potential \( V \) through the spatial rate of change of the potential.
-                                                Mathematically, this relationship is expressed as:
-                                                \(\qquad
-                                                \vec{E} = -\nabla V
-                                                \)
-                                                For a one-dimensional case, where the potential varies only along the \(
-                                                x \)-axis:
-                                                \(\qquad
-                                                E_x = -\frac{dV}{dx}
-                                                \)
-                                                The negative sign indicates that the electric field points in the
-                                                direction of decreasing potential.
-                                            </p>
-                                        </details>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>If Equipotential Surfaces are Drawn</strong></summary>
-                                            <p>
-                                                When equipotential surfaces are drawn, the electric field is
-                                                perpendicular to these surfaces at every point. The magnitude of the
-                                                electric field can be calculated as:
-                                                \(\qquad
-                                                E = -\frac{\Delta V}{\Delta x}
-                                                \)
-                                                Here, \( \Delta V \) is the potential difference between two adjacent
-                                                equipotential surfaces, and \( \Delta x \) is the perpendicular distance
-                                                between them.
-                                            </p>
-                                        </details>
-                                    </li>
-                                </ul>
+                                <p>
+                                    Furthermore, the electric field must always be perpendicular to equipotential
+                                    surfaces. If the field were not perpendicular, moving a charge along the
+                                    equipotential surface would result in work being done, which contradicts the
+                                    definition of equipotential surfaces. This perpendicularity ensures that the
+                                    electric field represents the direction of the steepest potential decrease. Hence,
+                                </p>
+                                <p class="text-center text-law">
+                                    Potential decreases in the direction of electric field. If potential doesn't
+                                    change along a perticular direction, the component of electric field along that
+                                    direction is zero.
+                                </p>
+                                <p>
+                                    If the electric field in a region is known, the potential difference between any two
+                                    points in that region is uniquely determined. This relationship arises from the
+                                    connection between electrostatic force and electrostatic potential energy, which
+                                    allows us to relate the electric field to the potential. The relationship is
+                                    expressed as follows:
+                                </p>
+                                <p>
+                                    The change in electrostatic potential energy \( \Delta U \) for moving a charge \( q
+                                    \) from point \( A \) to point \( B \) in the presence of an electric field \(
+                                    \vec{E} \) along a path \( \vec{ds} \) is given by:
+                                </p>
+                                <p>
+                                    \(\qquad dU = -\left(q\vec{E} \cdot \vec{ds}\right)\)
+                                </p>
+                                <p>
+                                    Dividing through by \( q \), we find the change in potential \( \Delta V \) between
+                                    points \( A \) and \( B \) as:
+                                </p>
+                                <p class="text-center text-law">
+                                    \( \Delta V = -\displaystyle\int_A^B \left(\vec{E} \cdot \vec{ds}\right)\)
+                                </p>
+                                <p>
+                                    This equation states that the potential difference between two points is the
+                                    negative line integral of the electric field along any path connecting those points.
+                                </p>
+                                <p>
+                                    Conversely, if the electrostatic potential \( V \) is known as a function of
+                                    position in space, the electric field \( \vec{E} \) can be determined by
+                                    differentiation. Let’s derive this step by step.
+                                </p>
+                                <p>
+                                    Consider a charge \( q \) being displaced along the \( x \)-axis by a small distance
+                                    \( dx \). The negative of the work done by the electrostatic force gives the change
+                                    in potential energy:
+                                </p>
+                                <p>
+                                    \(\qquad dU = -\left(q\vec{E} \cdot \vec{ds}\right)\)
+                                </p>
+                                <p>
+                                    During the displacement, the \( y \)- and \( z \)-coordinates remain constant, so \(
+                                    \vec{ds} = dx\hat{i} \). Substituting this:
+                                </p>
+                                <p>
+                                    \(\qquad dU = -\left(q(E_x\hat{i} + E_y\hat{j} + E_z\hat{k}) \cdot
+                                    dx\hat{i}\right)\)
+                                </p>
+                                <p>
+                                    Simplifying, since only the \( x \)-component contributes:
+                                </p>
+                                <p>
+                                    \(\qquad dU = -qE_x dx\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad dV = -E_x dx\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad E_x=-\dfrac{dV}{dx}\)
+                                </p>
+                                <p>
+                                    The expression \( dV = -E_x dx\) relates the infinitesimal change in potential
+                                    \( dV \) to the electric field component along the \( x \)-axis: \( E_x \), and a
+                                    small displacement \( dx \) along the \( x \)-axis. Also this relation is based on
+                                    the assumption that \(y\) and \(z\) co-ordinates of the particle remain unchanged.
+                                    Thus,
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad E_x=-\left(\dfrac{dV}{dx}\right)_{y,z\to \text{constant}}\)
+                                </p>
+                                <p>
+                                    Another mathematical way to write the same expression is:
+                                </p>
+                                <p>
+                                    \(\qquad \quad E_x=-\dfrac{\partial V}{\partial x}\)
+                                </p>
+                                <p>
+                                    The partial derivative \( \dfrac{\partial V}{\partial x} \) simply means we are
+                                    calculating how the potential \( V \) changes when we vary only \( x \).
 
-                                <!-- Determination of Potential -->
-                                <p>
-                                    <strong>Determination of Potential:</strong>
                                 </p>
+                                <p>
+                                    Similarly, considering displacements along the \( y \)- and \( z \)-axes, we derive:
+                                </p>
+                                <p>
+                                    \(\qquad E_y = -\dfrac{\partial V}{\partial y}, \quad E_z = -\dfrac{\partial
+                                    V}{\partial z}\)
+                                </p>
+                                <p>
+                                    Combining all components, the electric field is expressed in vector form as:
+                                </p>
+                                <p class="text-center text-law">
+                                    \(\vec{E} = -\left(\dfrac{\partial V}{\partial x}\hat{i} +
+                                    \dfrac{\partial V}{\partial y}\hat{j} + \dfrac{\partial V}{\partial
+                                    z}\hat{k}\right)\)
+                                </p>
+                                <p>
+                                    The following illustrative examples further explain the relationship between
+                                    electric field and potential:
+                                </p>
+
                                 <ul class="list-group list-group-flush mb-4">
                                     <li class="list-group-item">
                                         <details>
-                                            <summary><strong>If Uniform Electric Field is Given</strong></summary>
+                                            <summary><strong>Potential when electric field is zero</strong></summary>
                                             <p>
-                                                For a uniform electric field \( \vec{E} \), the potential difference \(
-                                                \Delta V \) between two points separated by a distance \( d \) along the
-                                                field direction is given by:
-                                                \(\qquad
-                                                \Delta V = -E \cdot d
-                                                \)
-                                                Here, \( E \) is the magnitude of the electric field, and \( d \) is the
-                                                displacement along the direction of the field. The negative sign
-                                                reflects the fact that the potential decreases in the direction of the
-                                                field.
+                                                Consider the electric field inside a uniformly charged hollow sphere. By
+                                                symmetry, the electric field inside the sphere is zero at every point.
+                                                As a result, the potential inside the sphere is constant because there
+                                                is no field to create a potential difference between any two points.
+                                            </p>
+                                            <p>
+                                                This constant potential equals the potential at the surface of the
+                                                sphere, which is calculated as:
+                                            </p>
+                                            <p>
+                                                \(\qquad V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R}\)
+                                            </p>
+                                            <p>
+                                                Here, \( Q \) is the total charge on the sphere, and \( R \) is its
+                                                radius. Since the electric field is zero inside, the potential remains
+                                                uniform and unaffected by changes in position within the sphere.
                                             </p>
                                         </details>
                                     </li>
                                     <li class="list-group-item">
                                         <details>
-                                            <summary><strong>If Non-Uniform Electric Field is Given</strong></summary>
+                                            <summary><strong>Potential difference for a constant electric field</strong>
+                                            </summary>
                                             <p>
-                                                For a non-uniform electric field, the potential difference between two
-                                                points \( A \) and \( B \) is calculated by integrating the electric
-                                                field along the path:
-                                                \(\qquad
-                                                V_B - V_A = -\int_A^B \vec{E} \cdot d\vec{l}
-                                                \)
-                                                Here, \( d\vec{l} \) is an infinitesimal displacement vector along the
-                                                path from \( A \) to \( B \), and \( \vec{E} \) is the electric field at
-                                                each point along the path.
+                                                Consider a uniformly charged infinite plane sheet, which creates a
+                                                constant electric field \( E \) perpendicular to its surface. The
+                                                potential difference \( \Delta V \) between two points at distances \(
+                                                x_1 \) and \( x_2 \) from the sheet is given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad \Delta V = -E (x_2 - x_1)\)
+                                            </p>
+                                            <p>
+                                                This result follows directly from the relationship \( \Delta V = -\int
+                                                \vec{E} \cdot \vec{ds} \), where the electric field is constant and
+                                                parallel to the displacement vector.
+                                            </p>
+                                            <p>
+                                                Thus, the potential decreases linearly as we move away from the sheet,
+                                                with the direction of decrease being in the direction of the
+                                                electric field.
                                             </p>
                                         </details>
                                     </li>
                                     <li class="list-group-item">
                                         <details>
-                                            <summary><strong>If Electric Field Lines are Drawn</strong></summary>
+                                            <summary><strong>Potential and field due to a point charge</strong>
+                                            </summary>
                                             <p>
-                                                If electric field lines are drawn, the potential difference \( \Delta V
-                                                \) between two points can be estimated by analyzing the density and
-                                                direction of the field lines. The field lines point in the direction of
-                                                decreasing potential, and the potential difference is proportional to
-                                                the number of lines crossed per unit distance.
+                                                The potential \( V \) due to a point charge \( q \) at a distance \( r
+                                                \) is given by:
+                                            </p>
+                                            <p>
+                                                \(\qquad V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{q}{r}\)
+                                            </p>
+                                            <p>
+                                                Differentiating this expression with respect to \( r \), the electric
+                                                field \( E \) is obtained as:
+                                            </p>
+                                            <p>
+                                                \(\qquad E = -\dfrac{dV}{dr} = \dfrac{1}{4\pi \varepsilon_0}
+                                                \dfrac{q}{r^2}\)
+                                            </p>
+                                            <p>
+                                                This calculation shows how the electric field is derived as the position
+                                                rate of change of the potential. The direction of the electric field is
+                                                radially outward for a positive charge and radially inward for a
+                                                negative charge, consistent with the direction of decreasing potential.
                                             </p>
                                         </details>
                                     </li>
@@ -964,160 +1069,417 @@
                                     configurations. Below are key results derived for specific cases.
                                 </p>
                                 <ul class="list-group list-group-flush mb-4">
-                                    <!-- Point Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to a Point Charge</strong></summary>
-                                            <p>
-                                                For a point charge \( q \) located at a distance \( r \) from a point,
-                                                the potential at that
-                                                point is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                V = \frac{1}{4\pi \varepsilon_0} \frac{q}{r}
-                                                \]
-                                            </p>
-                                            <p>
-                                                The potential is scalar, and its sign depends on the sign of the charge
-                                                \( q \). Positive charges
-                                                produce positive potential, and negative charges produce negative
-                                                potential.
-                                            </p>
-                                        </details>
-                                    </li>
+                                    <ul class="list-group-flush">
+                                        <!-- Ring Charge -->
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Potential Due to a Uniformly Charged Ring</strong>
+                                                </summary>
+                                                <p>
+                                                    Consider a ring of radius \( R \) carrying a total charge \( Q \),
+                                                    uniformly distributed along its circumference.
 
-                                    <!-- Ring Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to a Uniformly Charged Ring</strong>
-                                            </summary>
-                                            <p>
-                                                For a uniformly charged ring of radius \( R \) and total charge \( Q \),
-                                                the potential at a
-                                                point on its axis at a distance \( x \) from the center is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                V = \frac{1}{4\pi \varepsilon_0} \frac{Q}{\sqrt{x^2 + R^2}}
-                                                \]
-                                            </p>
-                                            <p>
-                                                This is obtained by summing the contributions from all infinitesimal
-                                                charges on the ring.
-                                            </p>
-                                        </details>
-                                    </li>
-                                    <!-- Disc Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to a Uniformly Charged Disc</strong>
-                                            </summary>
-                                            <p>
-                                                For a uniformly charged disc of radius \( R \) with surface charge
-                                                density \( \sigma \),
-                                                the potential at a point on its axis at a distance \( x \) is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                V = \frac{\sigma}{2\varepsilon_0} \left( \sqrt{x^2 + R^2} - x \right)
-                                                \]
-                                            </p>
-                                            <p>
-                                                This result is derived by integrating over the area of the disc.
-                                            </p>
-                                        </details>
-                                    </li>
-                                    <!-- Sphere Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to a Uniformly Charged Sphere</strong>
-                                            </summary>
-                                            <p>
-                                                For a uniformly charged sphere of radius \( R \) and total charge \( Q
-                                                \):
-                                            </p>
-                                            <p>
-                                                **Outside the Sphere (\( r \geq R \)):**
-                                                \[
-                                                V = \frac{1}{4\pi \varepsilon_0} \frac{Q}{r}
-                                                \]
-                                            </p>
-                                            <p>
-                                                **Inside the Sphere (\( r < R \)):** \[ V=\frac{1}{4\pi \varepsilon_0}
-                                                    \frac{Q}{R} \left( \frac{3}{2} - \frac{r^2}{2R^2} \right) \] </p>
-                                                    <p>
-                                                        This result assumes the sphere is non-conducting and the charge
-                                                        is uniformly distributed throughout its volume.
-                                                    </p>
-                                        </details>
-                                    </li>
-                                    <!-- Line Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to a Uniformly Charged Rod</strong></summary>
-                                            <p>
-                                                Consider a uniformly charged rod of length \( L \) with linear charge
-                                                density \( \lambda \).
-                                                The potential at a point \( P \) on the perpendicular bisector at a
-                                                distance \( d \) is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                V = \frac{\lambda}{4\pi \varepsilon_0} \ln \left( \frac{\sqrt{L^2 +
-                                                4d^2} + L}{\sqrt{L^2 + 4d^2} - L} \right)
-                                                \]
-                                            </p>
-                                            <p>
-                                                This result is derived by integrating the contribution of infinitesimal
-                                                charge elements along the rod.
-                                            </p>
-                                        </details>
-                                    </li>
-                                    <!-- Infinite Line Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Difference Due to an Infinite Line
-                                                    Charge</strong></summary>
-                                            <p>
-                                                For an infinite line charge with linear charge density \( \lambda \),
-                                                the potential difference
-                                                between two points at distances \( r_1 \) and \( r_2 \) is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                \Delta V = \frac{\lambda}{2\pi \varepsilon_0} \ln \left( \frac{r_2}{r_1}
-                                                \right)
-                                                \]
-                                            </p>
-                                            <p>
-                                                This result is derived using the electric field of an infinite line
-                                                charge.
-                                            </p>
-                                        </details>
-                                    </li>
-                                    <!-- Infinite Sheet Charge -->
-                                    <li class="list-group-item">
-                                        <details>
-                                            <summary><strong>Potential Due to an Infinite Sheet of Charge</strong>
-                                            </summary>
-                                            <p>
-                                                For an infinite sheet of charge with surface charge density \( \sigma
-                                                \), the potential difference
-                                                between two points at distances \( x_1 \) and \( x_2 \) perpendicular to
-                                                the sheet is:
-                                            </p>
-                                            <p>
-                                                \[
-                                                \Delta V = -\frac{\sigma}{\varepsilon_0} (x_2 - x_1)
-                                                \]
-                                            </p>
-                                            <p>
-                                                The potential varies linearly with distance from the sheet.
-                                            </p>
-                                        </details>
-                                    </li>
-                                </ul>
+                                                    We wish to find the potential at a point
+                                                    \( P \) on the axis of the ring, located a distance \( x \) from the
+                                                    center of the ring.
+                                                </p>
+                                                <p>
+                                                    Assume a point \( P \) on the axis as shown in the
+                                                    diagram. Consider a small element of the ring
+                                                    with charge \( dq \).
+                                                </p>
+                                                <p>
+                                                    The distance from this charge
+                                                    element \( dq \) to the point \( P \) is the
+                                                    same for all elements of the ring due to symmetry, and is equal to
+                                                    \(r = \sqrt{R^2 + x^2} \)
+                                                </p>
+                                                <p>
+                                                    The infinitesimal potential
+                                                    contribution is:
+
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    dV = \dfrac{1}{4\pi
+                                                    \varepsilon_0} \dfrac{dq}{\sqrt{R^2 + x^2}}.
+                                                    \)
+                                                </p>
+
+                                                <p>
+                                                    \(\qquad
+                                                    V = \displaystyle\int_0^{Q} \dfrac{1}{4\pi \varepsilon_0}
+                                                    \dfrac{dq}{\sqrt{R^2 + x^2}}.
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    Since \( x \) is constant for
+                                                    every element, the integration gives:
+
+                                                </p>
+                                                <p class="text-center text-law">
+                                                    \(
+                                                    V_\text{ring} = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{\sqrt{x^2 +
+                                                    R^2}}.
+                                                    \)
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <!-- Disc Charge -->
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Potential Due to a Uniformly Charged Disc</strong>
+                                                </summary>
+                                                <p>
+                                                    Consider a uniformly charged disc of radius \( R \) with surface
+                                                    charge density \(\sigma\). We want the potential
+                                                    at a point on the axis of the disc, a distance \( x \) from its
+                                                    center.
+                                                </p>
+                                                <p>
+                                                    Divide the disc into infinitesimal rings of radius \(
+                                                    r \) and thickness \( dr \) as shown in the diagram.
+                                                    Each ring has a charge \( dQ = \sigma (2\pi r dr) \).
+                                                </p>
+                                                <p>
+                                                    From the previous derivation
+                                                    for a ring,
+                                                    the potential at a point on its axis is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad
+                                                    dV = \dfrac{1}{4\pi \varepsilon_0} \dfrac{\sigma (2\pi r
+                                                    dr)}{\sqrt{r^2 + x^2}}.
+                                                    \)
+                                                </p>
+                                                <p>
+
+                                                    \(\Rightarrow\quad
+                                                    V = \displaystyle\int_0^R \dfrac{\sigma (2\pi r)}{4\pi
+                                                    \varepsilon_0 \sqrt{r^2 +
+                                                    x^2}} dr
+
+                                                    \)
+                                                </p>
+                                                <p>
+
+                                                    \(\Rightarrow\quad
+                                                    V = \dfrac{\sigma}{2\varepsilon_0} \displaystyle\int_0^R
+                                                    \dfrac{r}{\sqrt{r^2 + x^2}}
+                                                    dr.
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    Using a substitution \( u = r^2 + x^2 \) gives \( du = 2r dr \), so
+                                                    \( r dr = \dfrac{du}{2} \). With proper limits,
+
+                                                </p>
+                                                <p>
+                                                    \(\qquad V=\dfrac{\sigma}{2\varepsilon_0}
+                                                    \dfrac{1}{2}\displaystyle\int_{x^2}^{R^2
+                                                    + x^2} \dfrac{1}{\sqrt{u}} du
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad V=\dfrac{\sigma}{2\varepsilon_0}
+                                                    \dfrac{1}{2}[2(\sqrt{u})]_{x^2}^{R^2+x^2}
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad V= \dfrac{\sigma}{2\varepsilon_0} \left(\sqrt{R^2
+                                                    + x^2} - x\right)
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    Thus, potential at distances \(x\) from a uniformly charged disc
+                                                    with surface charge density \(\sigma\) is given as
+                                                </p>
+                                                <p class="text-center text-law">
+                                                    \(
+                                                    \Delta V_\text{disc} = \dfrac{\sigma}{2\varepsilon_0} \left(
+                                                    \sqrt{x^2 + R^2} - x
+                                                    \right).
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    This is to be remembered that potential decreases as we move away
+                                                    from the positively charged sheet.
+                                                </p>
+                                            </details>
+                                        </li>
+                                        <!-- Sphere Charge -->
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Potential Due to a Uniformly Charged Sphere</strong>
+                                                </summary>
+
+                                                <!-- Hollow Sphere -->
+                                                <p><strong>1. Potential Due to a Hollow Sphere:</strong></p>
+
+                                                <!-- Outside the Hollow Sphere -->
+                                                <p><strong>a) Outside the Hollow Sphere (\( r \geq R \)):</strong></p>
+                                                <p>
+                                                    By symmetry and the shell theorem, for points outside a uniformly
+                                                    charged hollow sphere of radius \( R \) carrying a total charge \( Q
+                                                    \), the potential is the same as that due to a point charge \( Q \)
+                                                    located at the center of the sphere:
+                                                </p>
+                                                <p>
+                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{r} \quad
+                                                    \text{for } r \geq R.\)
+                                                </p>
+
+                                                <!-- Inside the Hollow Sphere -->
+                                                <p><strong>b) Inside the Hollow Sphere (\( r < R \)):</strong>
+                                                </p>
+                                                <p>
+                                                    For points inside a uniformly charged hollow sphere, there is no
+                                                    electric field due to the spherical symmetry of charge distribution
+                                                    (Gauss's law). Since the electric field is zero, the potential
+                                                    remains constant throughout the interior of the sphere and is equal
+                                                    to the potential on its surface:
+                                                </p>
+                                                <p>
+                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R} \quad
+                                                    \text{for } r < R.\) </p>
+                                                        <p>
+                                                            Hence, for a hollow sphere, the potential is constant inside
+                                                            the sphere and decreases inversely with distance outside the
+                                                            sphere.
+
+                                                        </p>
+
+                                                        <!-- Solid Sphere -->
+                                                        <p><strong>2. Potential Due to a Solid Sphere:</strong></p>
+
+                                                        <!-- Outside the Solid Sphere -->
+                                                        <p><strong>a) Outside the Solid Sphere (\( r \geq R
+                                                                \)):</strong></p>
+                                                        <p>
+                                                            For points outside a uniformly charged solid sphere, the
+                                                            charge distribution does not matter, and the potential
+                                                            behaves as if the entire charge \( Q \) were concentrated at
+                                                            the center of the sphere (by symmetry and the shell
+                                                            theorem). The potential is given by:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad V = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{r}
+                                                            \quad \text{for } r \geq R.\)
+                                                        </p>
+
+                                                        <!-- Inside the Solid Sphere -->
+                                                        <p><strong>b) Inside the Solid Sphere (\( r < R \)):</strong>
+                                                        </p>
+                                                        <p>
+                                                            Inside a uniformly charged solid sphere, the potential
+                                                            arises from the contributions of all charges within the
+                                                            sphere. Using the volume charge density:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad \rho = \dfrac{3Q}{4\pi R^3},\)
+                                                        </p>
+                                                        <p>
+                                                            the charge enclosed within a smaller sphere of radius \( r
+                                                            \) is:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad Q_\text{encl} = \rho \cdot \dfrac{4}{3} \pi r^3 = Q
+                                                            \cdot \dfrac{r^3}{R^3}.\)
+                                                        </p>
+                                                        <p>
+                                                            From Gauss's law, the electric field inside the sphere at a
+                                                            distance \( r \) is:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad E = \dfrac{1}{4\pi \varepsilon_0}
+                                                            \dfrac{Qr}{R^3}.\)
+                                                        </p>
+                                                        <p>
+                                                            To find the potential, we integrate the electric field from
+                                                            \( r \) to \( R \) and add the potential at the surface \(
+                                                            V(R) \):
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad V(r) = V(R) - \displaystyle\int_r^R E \, dr.\)
+                                                        </p>
+                                                        <p>
+                                                            Substituting \( E = \dfrac{1}{4\pi \varepsilon_0}
+                                                            \dfrac{Qr}{R^3} \), we find:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad V(r) = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R} -
+                                                            \displaystyle\int_r^R \dfrac{1}{4\pi \varepsilon_0}
+                                                            \dfrac{Qr'}{R^3} \,
+                                                            dr'.\)
+                                                        </p>
+                                                        <p>
+                                                            Performing the integral:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad \displaystyle\int_r^R \dfrac{Qr'}{R^3} \, dr' =
+                                                            \dfrac{Q}{R^3}
+                                                            \cdot \dfrac{R^2 - r^2}{2},\)
+                                                        </p>
+                                                        <p>
+                                                            the potential inside becomes:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad V(r) = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R} -
+                                                            \dfrac{1}{4\pi \varepsilon_0} \cdot \dfrac{Q}{R^3} \cdot
+                                                            \dfrac{R^2 - r^2}{2}.\)
+                                                        </p>
+                                                        <p>
+                                                            Simplifying:
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad V(r) = \dfrac{1}{4\pi \varepsilon_0} \dfrac{Q}{R}
+                                                            \left[1 - \dfrac{R^2 - r^2}{2R^2}\right] = \dfrac{1}{4\pi
+                                                            \varepsilon_0} \dfrac{Q}{R} \left[\dfrac{3}{2} -
+                                                            \dfrac{r^2}{2R^2}\right].\)
+                                                        </p>
+
+                                                        <!-- Final Results -->
+                                                        <p><strong>3. Final Results:</strong></p>
+                                                        <ul>
+                                                            <li><strong>Hollow Sphere:</strong></li>
+                                                            <ul>
+                                                                <li><strong>Outside (\( r \geq R \)):</strong></li>
+                                                                <p>
+                                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0}
+                                                                    \dfrac{Q}{r}.\)
+                                                                </p>
+                                                                <li><strong>Inside (\( r < R \)):</strong>
+                                                                </li>
+                                                                <p>
+                                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0}
+                                                                    \dfrac{Q}{R}.\)
+                                                                </p>
+                                                            </ul>
+                                                            <li><strong>Solid Sphere:</strong></li>
+                                                            <ul>
+                                                                <li><strong>Outside (\( r \geq R \)):</strong></li>
+                                                                <p>
+                                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0}
+                                                                    \dfrac{Q}{r}.\)
+                                                                </p>
+                                                                <li><strong>Inside (\( r < R \)):</strong>
+                                                                </li>
+                                                                <p>
+                                                                    \(\qquad V = \dfrac{1}{4\pi \varepsilon_0}
+                                                                    \dfrac{Q}{R} \left(\dfrac{3}{2} -
+                                                                    \dfrac{r^2}{2R^2}\right).\)
+                                                                </p>
+                                                            </ul>
+                                                        </ul>
+                                                        <p>
+                                                            This comprehensive discussion covers both hollow and solid
+                                                            spheres, highlighting the distinctions in their potential
+                                                            distributions inside and outside.
+                                                        </p>
+                                            </details>
+                                        </li>
+
+                                        <!-- Infinite Line Charge -->
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Potential Difference Due to an Infinite Line
+                                                        Charge</strong></summary>
+                                                <p>
+                                                    Consider an infinite line charge with a uniform linear charge
+                                                    density \( \lambda \). The electric field at a distance \( r \) from
+                                                    the line charge is given by:
+                                                </p>
+                                                <p>
+                                                    \(\qquad E = \dfrac{\lambda}{2\pi \varepsilon_0 r}\)
+                                                </p>
+                                                <p>
+                                                    To find the potential difference \( \Delta V \) between two points
+                                                    at distances \( r_1 \) and \( r_2 \) from the line charge, we use
+                                                    the relationship between potential and electric field:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \Delta V = -\displaystyle\int_{r_1}^{r_2} \vec{E} \cdot
+                                                    \vec{dr}\)
+                                                </p>
+                                                <p>
+                                                    Since the electric field is radial, the integral simplifies to:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \Delta V = -\displaystyle\int_{r_1}^{r_2}
+                                                    \dfrac{\lambda}{2\pi
+                                                    \varepsilon_0 r} \, dr\)
+                                                </p>
+                                                <p>
+                                                    Evaluating the integral:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \Delta V = -\dfrac{\lambda}{2\pi \varepsilon_0}
+                                                    \displaystyle\int_{r_1}^{r_2} \dfrac{1}{r} \, dr =
+                                                    -\dfrac{\lambda}{2\pi
+                                                    \varepsilon_0} [\ln(r)]_{r_1}^{r_2}\)
+                                                </p>
+                                                <p>
+                                                    Simplifying further:
+                                                </p>
+                                                <p class="text-center text-law">
+                                                    \( \Delta V_\text{long rod} = \dfrac{\lambda}{2\pi \varepsilon_0}
+                                                    \ln\left(\dfrac{r_1}{r_2}\right)\)
+                                                </p>
+                                                <p>
+                                                    Thus, the potential difference between the two points is
+                                                    proportional to the logarithm of their relative distances from the
+                                                    line charge.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <!-- Infinite Sheet Charge -->
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Potential Due to an Infinite Sheet of Charge</strong>
+                                                </summary>
+                                                <p>
+                                                    Consider an infinite sheet of charge with surface charge density \(
+                                                    \sigma \). The electric field due to the sheet is constant and given
+                                                    by:
+                                                </p>
+                                                <p>
+                                                    \(\qquad E = \dfrac{\sigma}{2\varepsilon_0}\)
+                                                </p>
+                                                <p>
+                                                    To determine the potential difference \( \Delta V \) between two
+                                                    points at distances \( x_1 \) and \( x_2 \) from the sheet, we use
+                                                    the relation:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \Delta V = -\displaystyle\int_{x_1}^{x_2} E \, dx\)
+                                                </p>
+                                                <p>
+                                                    Substituting the constant electric field:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \Delta V = -\displaystyle\int_{x_1}^{x_2}
+                                                    \dfrac{\sigma}{2\varepsilon_0}
+                                                    \, dx\)
+                                                </p>
+                                                <p>
+                                                    Since \( E \) is constant, the integral simplifies to:
+                                                </p>
+                                                <p class="text-center text-law">
+                                                    \( \Delta V_\text{infinite sheet} = -\dfrac{\sigma}{2\varepsilon_0}
+                                                    (x_2 - x_1)\)
+                                                </p>
+                                                <p>
+                                                    Thus, the potential difference is linearly proportional to the
+                                                    separation \( x_2 - x_1 \), with the direction of decrease aligned
+                                                    with the electric field.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                    </ul>
+
                             </div>
                         </div>
                     </div>

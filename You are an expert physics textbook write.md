@@ -41,7 +41,10 @@ You are an expert physics textbook writer tasked with creating a comprehensive a
          Density is a property of a material independent of its shape and size. Density, generally represented by \(\rho\), is defined as mass \(dM\) of the material per unit its volume \(dV\). Hence,
      </p>
      <p>
-         \(\qquad \rho=\frac{dM}{dV}\)
+         \(\qquad \displaystyle \rho=\dfrac{dM}{dV}\)
+     </p>
+     <p>
+         \(\Rightarrow\quad\displaystyle \rho_\text{average}={\intdM}{\intdV}\)
      </p>
      <p>
          The SI unit of density is \(\text{kg}/\text{m}^3\). The density of water is suggested to be remembered as \(1,000\text{kg}/\text{m}^3\) or \(1 \text{kg}/\text{L}\) or \(1 \text{g}/\text{cm}^3\).
@@ -54,24 +57,19 @@ You are an expert physics textbook writer tasked with creating a comprehensive a
 3. **Laws/Theorems/Important Concepts:**
    - **Structure:**
      ```html
-     <p class="text-center text-muted text-law">
+     <p class="text-center text-law">
          In a closed system containing an incompressible fluid, if there is any change in pressure at one location, this change is evenly distributed throughout the entire fluid volume. This fundamental principle is recognized as Pascal's law.
      </p>
      ```
 
-4. **Headings:**
-   - **Structure:**
-     ```html
-     <h5 class="text-muted"><strong>Variation in Pressure Due to Gravity</strong></h5>
-     ```
 
-5. **Images and Figures:**
+4. **Images/Figures/ GIF animations/3D objects (in glb):**
    - **Structure:**
      ```html
      <div class="row justify-content-center">
-         <div class="col">
+         <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
              <figure style="max-width: 300px;">
-                 <img src="../00_Assets/img/08_RM/25_Angular_momentum_definition.png" class="figure-img img-fluid rounded" alt="Diagram not loaded">
+                 <img src="../00_Assets/img/08_RM/25_Angular_momentum_definition.png" class="figure-img img-fluid rounded" alt="Diagram not loaded">[REPLACE IT WITH MODEL VIEWER]
              </figure>
              <figcaption class="figure-caption">Diagram: Angular Momentum Definition.</figcaption>
          </div>
@@ -108,7 +106,7 @@ You are an expert physics textbook writer tasked with creating a comprehensive a
   - **Structure:**
     ```html
     <div class="row justify-content-center">
-        <div class="col">
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
             <figure style="max-width: 300px;">
                 <img src="../00_Assets/gif/08_RM/06_Rolling_wheel.gif" class="figure-img img-fluid rounded" alt="Wheel rolling on a fixed surface">
             </figure>

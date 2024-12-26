@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | GSL </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Gauss's Law</h1>
+                    <p class="lead" id="tagline">The law of field lines</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-electric-flux">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electric-flux" aria-expanded="false"
+                                aria-controls="section-electric-flux">
+                                <strong>Electric Flux</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electric-flux" class="accordion-collapse collapse show"
+                            aria-labelledby="heading-electric-flux" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    In physics, the area associated with a surface is treated as a vector quantity. For
+                                    a small, flat surface \( S \), its area vector is defined as the vector
+                                    perpendicular (normal) to the surface, with a magnitude equal to the area of \( S
+                                    \). Each surface possesses an area vector that is perpendicular to it, and the
+                                    magnitude of this vector corresponds to the surface area. By convention, the
+                                    direction of the area vector points outward, perpendicular to the surface.
+                                    Specifically, for closed surfaces such as spheres or cuboids, the area vectors
+                                    consistently point outward, representing the outward-facing normals.
+                                </p>
+                                <p>
+                                    To better understand area vectors, the following 3D diagrams illustrate how each
+                                    segment of a three-dimensional shape has an area vector that points away from the
+                                    enclosed region:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/06_Area vector for surface.glb"
+                                                alt="Diagram showing the area vector of a surface." auto-rotate
+                                                camera-controls ar>
+                                                <span slot="hotspot" data-position="1.6m 1m -1.2m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(\vec{ds}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">Area Vector for a Single
+                                                Surface</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/06_Area vectors for object.glb"
+                                                alt="Diagram showing area vectors of different surfaces of an object."
+                                                auto-rotate camera-controls ar>
+
+                                                <span slot="hotspot-A1" data-position="1m 4m 1m" data-normal="1m 0m 0m">
+                                                    \(\vec{A_1}\)
+                                                </span>
+                                                <span slot="hotspot-A2" data-position="4m -1m -0.8m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_2}\)
+                                                </span>
+                                                <span slot="hotspot-A3" data-position="0.8m -1m -4m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{A_3}\)
+                                                </span>
+                                                <span slot="hotspot-A4" data-position="-4m -1m 0.8m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_4}\)
+                                                </span>
+                                                <span slot="hotspot-A5" data-position="0.8m 1m 4m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{A_5}\)
+                                                </span>
+                                                <span slot="hotspot-A6" data-position="1m -4m 1m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_6}\)
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">Area Vectors for Different
+                                                Surfaces of an Object</figcaption>
+                                        </figure>
+                                    </div>
+                                    <figcaption class="figure-caption text-center">Diagram: Area Vectors of Various
+                                        Surfaces</figcaption>
+                                </div>
+                                <p>
+                                    Additionally, area vectors can be decomposed or resolved into their respective
+                                    components, similar to other vector quantities like forces. If the area vector
+                                    associated with a surface is \(\vec{A}\), it can be expressed in terms of its
+                                    components \(A_x\), \(A_y\), and \(A_z\) along the three coordinate axes as follows:
+                                </p>
+                                <p>
+                                    \(\qquad \vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}\)
+                                </p>
+                                <p>
+                                    The component \(A_x\) corresponds to a surface lying in the \(y\)-\(z\) plane.
+                                    Similarly, the components \(A_y\) and \(A_z\) are associated with surfaces in the
+                                    \(x\)-\(z\) plane and the \(x\)-\(y\) plane, respectively. This decomposition is
+                                    illustrated in the following diagram:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/07_Components of area.glb"
+                                                alt="Diagram showing the components of an area vector." auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="35deg">
+                                                <span slot="hotspot-x" data-position="4.2m 0m 0m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(x\)
+                                                </span>
+                                                <span slot="hotspot-y" data-position="0m 3.5m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(y\)
+                                                </span>
+                                                <span slot="hotspot-z" data-position="0m 0m 3.7m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(z\)
+                                                </span>
+                                                <span slot="hotspot-A" data-position="2.8m 2m 2.8m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(\vec{A}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Components of an Area Vector
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    TO understand the conponents in terms of \(\sin\theta\) and \(\cos\theta\), consider
+                                    an example of a rectangular surface of dimensions \(l\times b\). The surface makes
+                                    an angle \(\theta\) with horizontal. In sucha a case, this inclined surface can be
+                                    projected on horizontal and vertical surface as shown:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/07_Components of inclined surface area.glb"
+                                                alt="Diagram showing the components of an inclined surface area."
+                                                auto-rotate camera-controls ar style="width: 150px; height: 150px;"
+                                                field-of-view="35deg">
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Components of an Inclined Surface Area
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    In the following diagram click on the vertical component of the area A.
+                                </p>
+                                
+                                <div class="row justify-content-center mb-4">
+                                    <div class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer 
+                                                id="modelViewer1"
+                                                src="blend/07_Components of inclined surface area.glb"
+                                                alt="Diagram showing the components of an inclined surface area."
+                                                auto-rotate 
+                                                camera-controls 
+                                                ar 
+                                                style="width: 150px; height: 150px;"
+                                                field-of-view="35deg">
+                                                
+                                                <!-- Use a span for the hotspot -->
+                                                <button slot="hotspot-12" data-position="1m 0m 0m" data-normal="1m 0m 0m">
+                                                    \(x\)
+                                                </button>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Components of an Inclined Surface Area
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", () => {
+                                        // Function to initialize hotspots for a given model-viewer
+                                        function initializeHotspots(modelViewerId, hotspotSlot, alertMessage) {
+                                            const modelViewer = document.getElementById(modelViewerId);
+                                            
+                                            if (!modelViewer) {
+                                                console.error(`ModelViewer with id="${modelViewerId}" not found.`);
+                                                return;
+                                            }
+                                            
+                                            // Wait for the model-viewer to load
+                                            modelViewer.addEventListener("load", () => {
+                                                const hotspot = modelViewer.querySelector(`[slot="${hotspotSlot}"]`);
+                                                
+                                                if (hotspot) {
+                                                    hotspot.style.cursor = "pointer"; // Indicate interactivity
+                                                    hotspot.addEventListener("click", () => {
+                                                        alert(alertMessage);
+                                                    });
+                                                } else {
+                                                    console.error(`Hotspot with slot="${hotspotSlot}" not found in modelViewer "${modelViewerId}".`);
+                                                }
+                                            });
+                                        }
+                                        
+                                        // Initialize hotspots for each model-viewer instance
+                                        initializeHotspots("modelViewer1", "hotspot-12", "You clicked on hotspot 12!");
+                                        // Add more initializations as needed for other model-viewers
+                                        // initializeHotspots("modelViewer2", "hotspot-21", "You clicked on hotspot 21!");
+                                    });
+                                </script>
+                                
+                                <p>
+                                    On curved surfaces, the overall area vector can be considered as the vector sum of
+                                    numerous infinitesimal area vectors \(\mathrm{d}\vec{S}\). For instance, take a
+                                    curved section of a sphere. By summing all the tiny outward-pointing area vectors
+                                    that constitute this section, we obtain the total vector area for that segment.
+                                    Notably, for a closed surface, the total (net) area vector is always zero because
+                                    the outward area vectors on opposite sides cancel each other out. This cancellation
+                                    is a fundamental geometric principle underlying Gauss’s law.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-solid-angle">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-solid-angle" aria-expanded="false"
+                                aria-controls="section-solid-angle">
+                                <strong>Solid Angle</strong>
+                            </button>
+                        </h2>
+                        <div id="section-solid-angle" class="accordion-collapse collapse"
+                            aria-labelledby="heading-solid-angle" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The concept of a <strong>solid angle</strong> is the three-dimensional analogue of a
+                                    plane angle in two
+                                    dimensions. It measures how “large” an object appears when viewed from a particular
+                                    point. Formally, the
+                                    solid angle subtended by an object at a point is the area it projects on a unit
+                                    sphere centered at that
+                                    point. Its SI unit is the steradian (sr). A full sphere subtends a solid angle of
+                                    \(4\pi \, \mathrm{sr}\).
+                                    As a simple example, if you stand on flat ground and look upward, the open sky above
+                                    you subtends about
+                                    \(2\pi \, \mathrm{sr}\), corresponding to half of the total sphere:
+                                    <strong>[Diagram showing the relationship between a sphere and solid
+                                        angle]</strong>.
+                                </p>
+                                <p>
+                                    A useful property of solid angles is that two surfaces, sharing the same boundary,
+                                    will subtend the same
+                                    solid angle at a given point, whether one surface is curved and the other is flat.
+                                    To see why, imagine
+                                    cutting off a “cap” from a sphere. The curved spherical cap and any flat surface
+                                    that “seals” that cap
+                                    along the same boundary curve subtend the same solid angle at the sphere’s center.
+                                    This principle can be
+                                    applied to simplify many geometric and physical calculations.
+                                </p>
+                                <p>
+                                    If a spherical cap subtends a semi-apex angle \(\theta\) at the center of the
+                                    sphere, its solid angle
+                                    \(\Omega\) is given by:
+                                </p>
+                                <p class="text-center text-law">
+                                    \(\Omega = 2\pi (1 - \cos \theta)\)
+                                </p>
+                                <p>
+                                    This expression connects the geometry of the cap (the angle \(\theta\)) to the size
+                                    of the solid angle.
+                                    In electromagnetism and other areas of physics, solid angles often come into play
+                                    when calculating flux
+                                    through spherical surfaces or understanding radiation patterns from a point source.
+                                    Recognizing how much
+                                    of a sphere’s surface is “covered” by an object or field lines is essential to
+                                    accurate computations of
+                                    flux and related quantities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

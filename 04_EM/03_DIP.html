@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | DIP </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Electric Dipole</h1>
+                    <p class="lead" id="tagline">Pair of equal and opposite charge</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Electric Dipole and Its Moment -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section1-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section1" aria-expanded="false" aria-controls="section1">
+                                <strong>Electric Dipole and Its Moment</strong>
+                            </button>
+                        </h2>
+                        <div id="section1" class="accordion-collapse collapse" aria-labelledby="section1-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    If some charge of a neutral particle is displaced, the system is
+                                    now consists of a pair of equal and opposite charges with the charges having some
+                                    separation. Such system is called electric dipole.
+                                </p>
+                                <p>
+                                    In other words, an electric dipole is defined as a pair of equal and opposite
+                                    charges separated by a fixed distance. This is shown in diagram below:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 130px;">
+                                            <img src="img/32_charge_removed_from_neutral_particle.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing removal of charge q from a neutral particle">
+
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: removal of charge \(q\)
+                                            from a neutral particle.</figcaption>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 170px;">
+                                            <img src="img/33_electric_dipole.png" class="figure-img img-fluid rounded"
+                                                alt="Diagram showing an electric dipole">
+
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: An electric dipole.
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    We study about such electric dipoles because they can
+                                    interact with external electric fields and also generate their own electric fields.
+                                    In this section, we will systematically study the effects experienced by and
+                                    produced by electric dipoles.
+                                </p>
+                                <p>
+                                    The strength of an electric dipole is measured by its dipole moment. For an electric
+                                    dipole consisting of two equal and opposite charges \( +q \) and \( -q \), separated
+                                    by a displacement \( \vec{l} \), the dipole moment \( \vec{p} \) is defined as:
+                                </p>
+                                <p>
+                                    \(\qquad\vec{p} = q \vec{l}\)
+                                </p>
+                                <p>
+                                    The displacement \( \vec{l} \) is measured from the negative charge to the positive
+                                    charge. The dipole moment of an electric dipole is a vector quantity and has an SI
+                                    unit of Coulomb meter \(\left(\text{Cm}\right)\).
+                                </p>
+                                <p>
+                                    A more general definition of the dipole moment \( \vec{p} \) for any system of
+                                    charges, where the charges are \( q_1, q_2, q_3, \dots, q_n \) located at position
+                                    vectors \( \vec{r}_1, \vec{r}_2, \vec{r}_3, \dots, \vec{r}_n \) as shown:
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 200px;">
+                                            <img src="img/34_electric_dipole_general_definition.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram showing set of charges in space">
+
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">Diagram: Dipole moment of any set
+                                            of charges.</figcaption>
+                                    </div>
+                                </div>
+                                <p>
+                                    Calculation of total dipole moment of the system is done by:
+                                </p>
+                                <p>
+                                    \(\qquad\vec{p} = q_1 \vec{r}_1 + q_2 \vec{r}_2 + q_3 \vec{r}_3 + \dots\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad\vec{p} = \sum_i q_i \vec{r}_i\)
+                                </p>
+                                <p>
+                                    For a system consisting of \( +q \) at position \( \vec{r}_1 \) and \( -q \) at
+                                    position \( \vec{r}_2 \), this general definition simplifies to:
+                                </p>
+                                <p>
+                                    \(\qquad\vec{p} = q \vec{r}_1 + (-q) \vec{r}_2\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad\vec{p} = q (\vec{r}_1 - \vec{r}_2)\)
+                                </p>
+                                <p>
+                                    Here, \( \vec{r}_1 - \vec{r}_2 \) represents the position vector \( \vec{l} \),
+                                    which points from the negative charge to the positive charge, as mentioned earlier.
+                                    So again we get,
+                                </p>
+                                <p>
+                                    \(\qquad\vec{p} = q \vec{l}\)
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    Following are a few examples which illustrate various methods of calculating
+                                    the electric dipole moment of a system of charges.
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Pair of equal and opposite charges</summary>
+                                            <div class="accordion-body">
+                                                <p>
+                                                    We discussed for an electric
+                                                    dipole consisting of two equal and opposite charges \( +q \) and \(
+                                                    -q \), separated
+                                                    by a displacement \( \vec{l} \), the dipole moment \( \vec{p} \) is
+                                                    defined as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad\vec{p} = q \vec{l}\)
+                                                </p>
+                                                <p>
+                                                    In practice, if positions of the two charges and their
+                                                    magnitudes are known, the calculation is straightforward. For
+                                                    instance, if \(
+                                                    q = 5\,\text{C} \) and \(\vec{l} = 2\,\hat{i} +
+                                                    3\,\hat{j}\,\text{m}\), then:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p} = (5\,\text{C})(2\,\hat{i} + 3\,\hat{j}\,\text{m})
+                                                    \)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \vec{p}=
+                                                    \left(10\,\hat{i} + 15\,\hat{j}\,\right)\text{Cm}\)
+                                                </p>
+                                            </div>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>A number of pairs</summary>
+                                            <div class="accordion-body">
+                                                <p>
+                                                    In many situations, you may encounter multiple dipoles or a
+                                                    collection of charges that can be grouped into pairs of equal and
+                                                    opposite charges. Each pair contributes its own dipole moment, and
+                                                    the net dipole moment of the entire system is the vector sum of the
+                                                    dipole moments of all these individual pairs.
+                                                </p>
+                                                <p>
+                                                    Suppose you have several pairs of charges: \( (+q_1, -q_1)\),
+                                                    \((+q_2,
+                                                    -q_2)\), \((+q_3, -q_3), \ldots \) as shown in diagram below:
+                                                </p>
+                                                <div class="row justify-content-center mb-4">
+                                                    <div
+                                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                        <figure style="max-width: 200px;">
+                                                            <img src="img/35_set_of_dipole_charges.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram showing set of dipoles">
+                                                            <figcaption class="figure-caption text-center">Diagram: A
+                                                                set of dipoles.</figcaption>
+
+                                                        </figure>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                        <figure style="max-width: 200px;">
+                                                            <img src="img/35_set_of_dipole_charges_pairing.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram showing set of dipoles with pairing">
+                                                            <figcaption class="figure-caption text-center">Diagram:
+                                                                Pairing
+                                                                in a set of dipoles.</figcaption>
+                                                        </figure>
+
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Each pair \( i \) has its own
+                                                    dipole
+                                                    moment \( \vec{p_i} \). The total dipole moment of the system is
+                                                    given by:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p}_{\text{total}} = \vec{p_1} + \vec{p_2} + \vec{p_3}
+                                                    + \cdots\)
+                                                </p>
+                                                <p>
+                                                    For example, consider three dipoles arranged in a triangular
+                                                    configuration. Suppose the charges are as shown in diagram:
+                                                </p>
+                                                <div class="row justify-content-center mb-4">
+                                                    <div
+                                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                        <figure style="max-width: 200px;">
+                                                            <img src="img/36_dipole_moment_of_two_dipoles.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram showing set of dipoles">
+                                                            <figcaption class="figure-caption text-center">Diagram:
+                                                                Calculation of dipole moment.</figcaption>
+
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    We are to calculate the net dipole moment of this system.
+                                                </p>
+                                                <p>
+                                                    Using the general result for the dipole moment \(\vec{p}\):
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p} = \sum_i q_i \vec{r}_i \)
+                                                </p>
+                                                <p>
+                                                    Substituting the given charges:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p} = q(-a\hat{i} + 0\hat{j}) + q(a\hat{i} + 0\hat{j})
+                                                    + (-2q)(0\hat{i} + a\hat{j})\)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \vec{p} = q(-a\hat{i}) + q(a\hat{i}) -
+                                                    2q(a\hat{j})\)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \vec{p} = -2qa\hat{j}\)
+                                                </p>
+                                                <p>
+                                                    Thus, using the direct summation method, the net dipole moment is:
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p} = -2qa\hat{j}\)
+                                                </p>
+                                                <p>
+                                                    <strong>Alternately</strong>,
+                                                    Notice that the total charge is zero (\(q + q - 2q = 0\)), so we can
+                                                    think of the \(-2q\) charge as composed of two \(-q\) charges at the
+                                                    same point \((0,a)\). This is shown below:
+                                                </p>
+                                                <div class="row justify-content-center mb-4">
+
+                                                    <div
+                                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                        <figure style="max-width: 200px;">
+                                                            <img src="img/36_pairing_in_dipole_moment_of_two_dipoles.png"
+                                                                class="figure-img img-fluid rounded"
+                                                                alt="Diagram showing pairing set of dipoles">
+                                                            <figcaption class="figure-caption text-center">Diagram:
+                                                                Charges
+                                                                forming two dipoles.</figcaption>
+
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    This allows us to form two dipoles:
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            Dipole 1: \( +q \) at \((-a,0)\) and \(-q\) at \((0,a)\)
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad \vec{p}_1 = q [(-a - 0)\hat{i} + (0 - a)\hat{j}] =
+                                                            q(-a\hat{i} - a\hat{j})\)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Dipole 2: \( +q \) at \((a,0)\) and \(-q\) at \((0,a)\)
+                                                        </p>
+                                                        <p>
+                                                            \(\qquad \vec{p}_2 = q [(a - 0)\hat{i} + (0 - a)\hat{j}] =
+                                                            q(a\hat{i} - a\hat{j})\)
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    Now, the net dipole moment is the vector sum of \(\vec{p}_1\) and
+                                                    \(\vec{p}_2\):
+                                                </p>
+                                                <p>
+                                                    \(\qquad \vec{p}_{\text{net}} = \vec{p}_1 + \vec{p}_2 = [q(-a\hat{i}
+                                                    -
+                                                    a\hat{j})] + [q(a\hat{i} - a\hat{j})]\)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \vec{p}_{\text{net}} = q(-a + a)\hat{i} + q(-a -
+                                                    a)\hat{j}\)
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad \vec{p}_{\text{net}} = -2qa\hat{j}\)
+                                                </p>
+                                                <p>
+                                                    This matches the result we obtained using the first method. Thus,
+                                                    whether by direct summation or by considering the system as two
+                                                    dipoles, we find the same result.
+                                                </p>
+                                            </div>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Continuous distribution of charge</summary>
+                                            <div class="accordion-body">
+                                                <p>
+                                                    In situations where charge is not localized at specific points but
+                                                    is distributed continuously over a region, the dipole moment is
+                                                    calculated using an integral. This extends the general definition of
+                                                    dipole moment from a discrete sum to a continuous distribution:
+                                                </p>
+                                                <p>
+                                                    \(\qquad\displaystyle \vec{p} = \int \vec{r} \, dq\)
+                                                </p>
+                                                <p>
+                                                    Here, \(\vec{r}\) represents the position vector of an infinitesimal
+                                                    charge element \(dq\). To account for both positive and negative
+                                                    charges separately, the integral can be split as follows:
+                                                </p>
+                                                <p>
+                                                    \(\qquad\displaystyle \vec{p} = \int_0^{+Q} \vec{r} \, dq +
+                                                    \int_0^{-Q}
+                                                    \vec{r} \, dq\)
+                                                </p>
+                                                <p>
+                                                    We can define a "center of positive charge" at the position vector
+                                                    \(\vec{r}_{(+)}\), which represents the location where the entire
+                                                    positive charge \(+Q\) could be considered concentrated to produce
+                                                    the same dipole moment. This is given by:
+                                                </p>
+                                                <p>
+                                                    \(\qquad\displaystyle (+Q)\vec{r}_{(+)} = \int_0^{+Q} \vec{r} \,
+                                                    dq\)
+                                                </p>
+
+                                                <p>
+                                                    \(\Rightarrow\quad\displaystyle \vec{r}_{(+)} = \dfrac{1}{Q} \left(
+                                                    \int_0^{+Q}
+                                                    \vec{r} \, dq \right)\)
+                                                </p>
+                                                <p>
+                                                    A similar analysis on negative charge distribution separately gives,
+                                                </p>
+                                                <p>
+                                                    \(\Rightarrow\quad\displaystyle \vec{r}_{(-)} = \dfrac{1}{Q} \left(
+                                                    \int_0^{-Q}
+                                                    \vec{r} \, dq \right)\)
+                                                </p>
+                                                <p>
+                                                    These expressions closely resemble the formula for the center of
+                                                    mass, which is defined as:
+                                                </p>
+                                                <p>
+                                                    \(\qquad\displaystyle \vec{r}_\text{CM} =
+                                                    \dfrac{1}{M} \int_0^{+M} \vec{r} \, dm \)
+                                                </p>
+                                                <p>
+                                                    Thus, we can draw the following conclusion:
+                                                </p>
+                                                <p class="text-center text-law">
+                                                    For the calculation of the dipole moment of a charge distribution,
+                                                    the positive charge distribution can be treated as being
+                                                    concentrated at its "center of charge," which is conceptually
+                                                    similar to the center of mass for a similar mass distribution.
+                                                </p>
+                                                <ul class="list-group-flush">
+                                                    To further clarify this concept, study the following two examples
+                                                    <li class="list-group-item">
+                                                        <details>
+                                                            <summary>
+                                                                Positive charge distribution on rod
+                                                            </summary>
+
+                                                            <p>
+                                                                Consider a system where a negative
+                                                                charge \(-q\) is placed at the
+                                                                origin \((0,0)\), and a positive charge \(+q\) is
+                                                                continuously
+                                                                distributed along a rod extending from \((x_0,0)\) to
+                                                                \((x_0+L,0)\) as shown:
+                                                            </p>
+                                                            <div class="row justify-content-center mb-4">
+
+                                                                <div
+                                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                                    <figure style="max-width: 200px;">
+                                                                        <img src="img/37_dipole_for_charge_on_rod.png"
+                                                                            class="figure-img img-fluid rounded"
+                                                                            alt="Diagram showing positive charge of dipole on a rod">
+                                                                        <figcaption class="figure-caption text-center">
+                                                                            Diagram:
+                                                                            Positive charge of dipole on a rod.
+                                                                        </figcaption>
+
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            <p>
+                                                                The linear charge density (uniform) of the rod is
+                                                                \(\lambda = \dfrac{q}{L}\).
+                                                            </p>
+                                                            <p>
+                                                                The position of an infinitesimal element of charge \(dq
+                                                                =
+                                                                \lambda\,dx\) on the rod is \(\vec{r} = x\hat{i}\),
+                                                                where \(x\)
+                                                                ranges from \(x_0\) to \(x_0+L\).
+                                                            </p>
+                                                            <div class="row justify-content-center mb-4">
+                                                                <div
+                                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                                    <figure style="max-width: 200px;">
+                                                                        <img src="img/37_element_of_dipole_for_charge_on_rod.png"
+                                                                            class="figure-img img-fluid rounded"
+                                                                            alt="Diagram showing element dq on rod">
+                                                                        <figcaption class="figure-caption text-center">
+                                                                            Diagram:
+                                                                            Considered element \(dq\) on the rod.
+                                                                        </figcaption>
+
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            <p>The dipole moment due
+                                                                to this
+                                                                positive charge distribution is:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} = \int_{x_0}^{x_0+L}
+                                                                \lambda\,x\,\hat{i}\,dx \)
+                                                            </p>
+                                                            <p>
+                                                                Substituting \(\lambda = q/L\):
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} =
+                                                                \dfrac{q}{L}\int_{x_0}^{x_0+L}
+                                                                x\,\hat{i}\,dx \)
+                                                            </p>
+                                                            <p>
+                                                                Evaluating the integral:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle\vec{p}_{+} =
+                                                                \dfrac{q}{L}\left[\dfrac{x^2}{2}\right]_{x_0}^{x_0+L}\hat{i}\)
+
+                                                            </p>
+                                                            <p>
+                                                                \(\Rightarrow\quad\displaystyle \vec{p}_{+}
+                                                                = \dfrac{q}{L}\left(\dfrac{(x_0+L)^2 -
+                                                                x_0^2}{2}\right)\hat{i}\)
+                                                            </p>
+                                                            <p>
+                                                                This simplifies to:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} = q\left(x_0 +
+                                                                \dfrac{L}{2}\right)\hat{i}\)
+                                                            </p>
+                                                            <p>
+                                                                Hence, the positive charge distribution's dipole moment
+                                                                is the same
+                                                                as if all the \(+q\) were concentrated at \((x_0 +
+                                                                \dfrac{L}{2},
+                                                                0)\). Thus, instead of performing the integral every
+                                                                time, one could
+                                                                directly place the entire positive charge \(+q\) at its
+                                                                "center of
+                                                                charge" \((x_0 + L/2,0)\) and compute the dipole moment
+                                                                relative to
+                                                                the negative charge at the origin, yielding \(\vec{p} =
+                                                                q(x_0 +
+                                                                L/2)\hat{i}\).
+                                                            </p>
+                                                        </details>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <details>
+                                                            <summary>
+                                                                Positive charge distribution on semicircle
+                                                            </summary>
+                                                            <p>
+                                                                Consider a semicircular arc of radius \(R\) lying, say,
+                                                                in the upper
+                                                                half of the \(x\)-\(y\) plane. Let a total positive
+                                                                charge \(+q\) be
+                                                                uniformly distributed along this semicircle, and let a
+                                                                negative
+                                                                charge \(-q\) be located at the center of the semicircle
+                                                                (its center
+                                                                of curvature). This is shown below:
+                                                            </p>
+                                                            <div class="row justify-content-center mb-4">
+                                                                <div
+                                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                                    <figure style="max-width: 200px;">
+                                                                        <img src="img/38_dipole_for_charge_on_semiring.png"
+                                                                            class="figure-img img-fluid rounded"
+                                                                            alt="Diagram showing positive charge of dipole on a semicircle">
+                                                                        <figcaption class="figure-caption text-center">
+                                                                            Diagram:
+                                                                            Positive charge of dipole on a semicircle.
+                                                                        </figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                                <div
+                                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                                    <figure style="max-width: 200px;">
+                                                                        <img src="img/38_element_for_dipole_for_charge_on_semiring.png"
+                                                                            class="figure-img img-fluid rounded"
+                                                                            alt="Diagram showing element dq on semiring">
+                                                                        <figcaption class="figure-caption text-center">
+                                                                            Diagram:
+                                                                            Considered element \(dq\) on the semiring.
+                                                                        </figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            <p>
+                                                                Parametrically, the semicircle can be described as
+                                                                \(\vec{r}(\theta)
+                                                                = R\cos\theta\,\hat{i} + R\sin\theta\,\hat{j}\), with
+                                                                \(\theta\)
+                                                                running from \(0\) to \(\pi\). The linear charge density
+                                                                for the
+                                                                semicircle is \(\lambda = \dfrac{q}{\pi R}\). For a
+                                                                small
+                                                                element of
+                                                                length \(d\ell = R\,d\theta\), the infinitesimal charge
+                                                                is \(dq =
+                                                                \lambda R\,d\theta = \dfrac{q}{\pi}d\theta\).
+                                                            </p>
+                                                            <p>
+                                                                The dipole moment due to the positive charge
+                                                                distribution is:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} = \int dq\,\vec{r} =
+                                                                \int_{0}^{\pi}
+                                                                \dfrac{q}{\pi} \bigl(R\cos\theta\,\hat{i} +
+                                                                R\sin\theta\,\hat{j}\bigr) d\theta\)
+                                                            </p>
+                                                            <p>
+                                                                Evaluating the integrals:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} = \dfrac{qR}{\pi}
+                                                                \left[
+                                                                \left(\int_{0}^{\pi}\cos\theta\,d\theta\right)\hat{i} +
+                                                                \left(\int_{0}^{\pi}\sin\theta\,d\theta\right)\hat{j}
+                                                                \right]\)
+                                                            </p>
+
+                                                            <p>
+                                                                We know:
+                                                                \(\int_{0}^{\pi}\cos\theta\,d\theta = 0\) and
+                                                                \(\int_{0}^{\pi}\sin\theta\,d\theta = 2\).
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p}_{+} = \dfrac{qR}{\pi} [
+                                                                (0)\hat{i} +
+                                                                (2)\hat{j} ] = \dfrac{2qR}{\pi}\hat{j}\)
+                                                            </p>
+                                                            <p>
+                                                                Thus, the positive charge on the semicircle creates a
+                                                                dipole moment
+                                                                \(\vec{p}_{+} = \dfrac{2qR}{\pi}\hat{j}\). With the
+                                                                negative charge
+                                                                \(-q\) at the origin, the net dipole moment \(\vec{p}\)
+                                                                is just
+                                                                \(\vec{p}_{+}\) (since the negative charge at the center
+                                                                contributes
+                                                                no additional moment about that point).
+                                                            </p>
+                                                            <p>
+                                                                Using the "center of charge" approach, the uniform
+                                                                semicircular
+                                                                distribution of positive charge can be thought of as
+                                                                concentrated at
+                                                                its charge centroid. For a uniformly charged semicircle,
+                                                                the
+                                                                centroid along the vertical direction is known to be at
+                                                                \((0,\dfrac{2R}{\pi})\). Hence, placing a charge \(+q\)
+                                                                at
+                                                                \((0,\dfrac{2R}{\pi})\) and a charge \(-q\) at the
+                                                                origin
+                                                                \((0,0)\),
+                                                                the dipole moment is simply:
+                                                            </p>
+                                                            <p>
+                                                                \(\qquad\displaystyle \vec{p} = q\left(0\hat{i} +
+                                                                \dfrac{2R}{\pi}\hat{j}\right) =
+                                                                \dfrac{2qR}{\pi}\hat{j}\)
+                                                            </p>
+                                                            <p>
+                                                                This matches the integral result, confirming that using
+                                                                the concept
+                                                                of "center of charge" greatly simplifies the process of
+                                                                finding the
+                                                                dipole moment for continuous distributions.
+                                                            </p>
+                                                        </details>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </details>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Effects of Electric Field on Dipole -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section2-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section2" aria-expanded="false" aria-controls="section2">
+                                <strong>Force and Torque on Dipole</strong>
+                            </button>
+                        </h2>
+                        <div id="section2" class="accordion-collapse collapse" aria-labelledby="section2-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    In this section, we consider an electric dipole placed in an external electric
+                                    field and examine the effects experienced by the dipole. Specifically, we will
+                                    discuss the force on the dipole and the torque acting on it due to the presence
+                                    of the electric field.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Force on Dipole</strong></summary>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <strong>In Uniform Electric Field</strong>
+                                                    <p>
+                                                        Consider an electric dipole placed in a uniform electric
+                                                        field. The dipole consists of two charges of equal magnitude
+                                                        but opposite sign, separated by a small distance. In a uniform
+                                                        field, each charge experiences a force equal in magnitude
+                                                        but opposite in direction to the force on the other charge. As a
+                                                        result, the dipole as a whole does not move forward or backward
+                                                        in a uniform field.
+                                                    </p>
+                                                    <div class="row justify-content-center mb-4">
+                                                        <div
+                                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                            <figure style="max-width: 200px;">
+                                                                <img src="img/40_Dipole_in_uniform_electric_field.png"
+                                                                    class="figure-img img-fluid rounded"
+                                                                    alt="Diagram showing dipole in a uniform electric field">
+                                                                <figcaption class="figure-caption text-center">
+                                                                    Diagram:
+                                                                    Dipole placed in a uniform electric field.
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <p>
+                                                        Thus, in a uniform electric field, there is no net
+                                                        (translational)
+                                                        force acting on the dipole. However, the dipole can still
+                                                        experience a torque that may rotate it, aligning its dipole
+                                                        moment with the direction of the electric field.
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <strong>Non-Uniform Electric Field</strong>
+                                                    <p>
+                                                        Now, consider what happens if the electric field is not uniform.
+                                                        Suppose we have a dipole aligned along the \(x\)-axis, with a
+                                                        positive charge \(+q\) at position \(x + \Delta x\) and a
+                                                        negative
+                                                        charge \(-q\) at position \(x\). The dipole moment is:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad p = q\,\Delta x \)
+                                                    </p>
+                                                    <p>
+                                                        In a non-uniform field, the electric field strength differs from
+                                                        point to point. Let \(E(x)\) be the electric field at position
+                                                        \(x\). Then the forces on the two charges are:
+                                                    </p>
+                                                    <p>
+                                                        On the positive charge at \(x + \Delta x\): \(F_{+} = qE(x +
+                                                        \Delta x)\)
+                                                    </p>
+                                                    <p>
+                                                        On the negative charge at \(x\): \(F_{-} = -qE(x)\)
+                                                    </p>
+                                                    <p>
+                                                        This is shown in diagram below:
+                                                    </p>
+                                                    <div class="row justify-content-center mb-4">
+                                                        <div
+                                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                            <figure style="max-width: 200px;">
+                                                                <img src="img/41_Dipole_in_non_uniform_electric_field.png"
+                                                                    class="figure-img img-fluid rounded"
+                                                                    alt="Diagram showing dipole in a non uniform electric field">
+                                                                <figcaption class="figure-caption text-center">
+                                                                    Diagram:
+                                                                    Dipole placed in a non uniform electric field.
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <p>
+                                                        The net force on the dipole is:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad F = qE(x + \Delta x) - qE(x)\)
+                                                    </p>
+                                                    <p>
+                                                        This shows how the force changes if the field changes between
+                                                        \(x\) and \(x + \Delta x\). The term \(\dfrac{E(x + \Delta
+                                                        x)-E(x)}{\Delta x}\)
+                                                        represents how quickly \(E\) varies with \(x\). As \(\Delta x\)
+                                                        (the separation of the dipole) becomes very small, this ratio
+                                                        approaches the derivative of \(E\) with respect to \(x\).
+                                                    </p>
+                                                    <p>
+                                                        Thus:
+                                                    </p>
+                                                    <p>
+                                                        \(\qquad F = q\Delta x \dfrac{E(x + \Delta x)-E(x)}{\Delta x}\)
+                                                    </p>
+                                                    <p>
+                                                        Taking the limit as \(\Delta x \to 0\):
+                                                    </p>
+                                                    <p class="text-center text-law">
+                                                        \(\qquad F = p \dfrac{dE}{dx}\)
+                                                    </p>
+                                                    <p>
+                                                        This indicates that if the electric field changes along the
+                                                        \(x\)-direction, the dipole experiences a net force. If \(E\) is
+                                                        uniform (\(\dfrac{dE}{dx}=0\)), there is no net force on the
+                                                        dipole.
+                                                    </p>
+                                                    <p>
+                                                        In other words, a dipole in a non-uniform electric field
+                                                        experiences a force that depends on how quickly the field
+                                                        changes in space and on the strength of the dipole moment.
+                                                    </p>
+                                                    <p>
+                                                        <strong>General Case:</strong>
+                                                    </p>
+                                                    <p>
+                                                        In the most general scenario, where the dipole moment
+                                                        \( \vec{p} \) and the electric field \( \vec{E} \) are both
+                                                        vectors,
+                                                        the net force on the dipole in a non-uniform electric field
+                                                        depends on the variations of all components of \(\vec{E}\) in
+                                                        all three spatial directions.
+                                                    </p>
+                                                    <p class="text-center text-law">
+                                                        \(
+                                                        \vec{F} = \left( p_x \dfrac{\partial E_x}{\partial x} \right)
+                                                        \hat{i} + \left( p_y \dfrac{\partial E_y}{\partial y} \right)
+                                                        \hat{j} + \left( p_z \dfrac{\partial E_z}{\partial z} \right)
+                                                        \hat{k}
+                                                        \)
+                                                    </p>
+                                                    <p>
+                                                        Here, \( p_x \), \( p_y \), and \( p_z \) are the components of
+                                                        \(\vec{p}\) along the \( x \)-, \( y \)-, and \( z \)-axes,
+                                                        respectively.
+                                                        The partial derivatives \(\dfrac{\partial E_x}{\partial x}\),
+                                                        \(\dfrac{\partial E_y}{\partial y}\), and \(\dfrac{\partial
+                                                        E_z}{\partial z}\)
+                                                        show how each component of the electric field changes in its
+                                                        respective direction.
+                                                    </p>
+                                                    <p>
+                                                        This final vector form reveals that the dipole experiences a
+                                                        force where the electric field varies in space. The direction
+                                                        and
+                                                        magnitude of this force depend on both the orientation of the
+                                                        dipole moment and the manner in which the electric field’s
+                                                        magnitude and direction change.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Torque on Dipole</strong></summary>
+                                            <p>
+                                                Consider the torque acting on a dipole in a
+                                                uniform electric field \(\vec{E}\). The negative charge
+                                                \(-q\) at position \(\vec{r}\) feels a force
+                                                \(-q\vec{E}\),
+                                                and the positive charge \(+q\) at
+                                                \((\vec{r}+\Delta\vec{r})\) feels a force \(+q\vec{E}\). Refer the diagram below:
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/41_Torque_visualisation_on_dipole_in_uniform_electric_field.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing rotational effect of forces on a dipole">
+                                                        <figcaption class="figure-caption text-center">
+                                                            Diagram:
+                                                            Rotational effect of forces on a dipole.
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/41_Torque_on_dipole_in_uniform_electric_field.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing forces generating torque on a dipole">
+                                                        <figcaption class="figure-caption text-center">
+                                                            Diagram:
+                                                            Forces generating torque on a dipole.
+                                                        </figcaption>
+                                                    </figure>
+                                                </div> 
+                                                                                                        
+                                            </div>
+                                            <p>
+                                                Although these two forces are equal and opposite, if
+                                                \(\Delta\vec{r}\) is not parallel to \(\vec{E}\), their
+                                                lines
+                                                of action do not coincide, creating a couple that can
+                                                rotate the dipole.
+                                            </p>
+                                            <p>
+                                                The torque \(\vec{\tau}\) about the chosen origin is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\vec{\tau} = \left(\vec{r}\right) \times
+                                                \left(-q\vec{E}\right)
+                                                +\left(\vec{r}+\Delta\vec{r}\right) \times
+                                                \left(q\vec{E}\right)\)
+                                            </p>
+                                            <p>
+                                                Upon simplification:
+                                            </p>
+                                            <p>
+                                                \(\qquad\vec{\tau} = q\Delta\vec{r} \times \vec{E}\)
+                                            </p>
+                                            <p>
+                                                Since \(q\Delta\vec{r}=\vec{p}\), we get:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\vec{\tau} = \vec{p} \times \vec{E}\)
+                                            </p>
+                                            <p>
+                                                This result shows that the torque acting on a dipole in
+                                                a
+                                                uniform electric field depends solely on the dipole
+                                                moment
+                                                and the field. It tries to rotate the dipole so that
+                                                \(\vec{p}\) aligns with \(\vec{E}\).
+                                            </p>
+                                            <p>
+                                                Also, importantly, the net torque on the dipole is the
+                                                same
+                                                regardless of the point about which we choose to
+                                                calculate
+                                                it. This indicates that the torque is a property of the
+                                                dipole itself, independent of the specific origin
+                                                chosen.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 3: Energy of Dipole -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section3-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section3" aria-expanded="false" aria-controls="section3">
+                                <strong>Potential Energy of Dipole</strong>
+                            </button>
+                        </h2>
+                        <div id="section3" class="accordion-collapse collapse" aria-labelledby="section3-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Consider an electric dipole placed in a uniform electric field \(\vec{E}\).
+                                    As we have seen, the dipole experiences no net translational force in a uniform
+                                    field,
+                                    but it can experience a torque that tends to align its dipole moment \(\vec{p}\)
+                                    with \(\vec{E}\).
+                                </p>
+                                <p>
+                                    The potential energy of the dipole in the electric field is defined in terms of the
+                                    work
+                                    done against the electric field’s torque to change the dipole’s orientation. We
+                                    choose
+                                    the configuration where the dipole is oriented at \(90^\circ\) to the field as our
+                                    reference
+                                    point of zero potential energy. This choice is a matter of convenience and does not
+                                    affect
+                                    the physics, only the zero point of energy.
+                                </p>
+                                <p>
+                                    Suppose the dipole initially makes an angle \(\theta_1\) with the electric field
+                                    \(\vec{E}\).
+                                    We now rotate it slowly to another angle \(\theta_2\), ensuring that it moves
+                                    quasi-statically
+                                    (without gaining kinetic energy). To do this, an external agent must apply a torque
+                                    equal
+                                    and opposite to the field’s torque.
+                                </p>
+                                <p>
+                                    The torque due to the field is \(\tau = pE \sin\theta\). If the dipole is rotated by
+                                    a small
+                                    angle \(d\theta\), the small amount of work done by the external agent is:
+                                </p>
+                                <p>
+                                    \( \qquad dW = pE \sin\theta \, d\theta \)
+                                </p>
+                                <p>
+                                    Integrating from \(\theta_1\) to \(\theta_2\):
+                                </p>
+                                <p>
+                                    \( \qquad W = \int_{\theta_1}^{\theta_2} pE \sin\theta \, d\theta = pE(\cos\theta_1
+                                    -
+                                    \cos\theta_2) \)
+                                </p>
+                                <p>
+                                    If we take \(\theta=90^\circ\) as our zero potential energy configuration, then at
+                                    \(\theta=90^\circ\),
+                                    \(\cos(90^\circ)=0\). Measuring potential energy relative to this orientation, the
+                                    potential
+                                    energy at a general angle \(\theta\) is:
+                                </p>
+                                <p>
+                                    \( \qquad U(\theta) = pE(\cos 90^\circ - \cos\theta) = -pE\cos\theta \)
+                                </p>
+                                <p>
+                                    Using the dot product \(\vec{p}\cdot\vec{E} = pE\cos\theta\), we can write:
+                                </p>
+                                <p>
+                                    \( \qquad U = -\vec{p}\cdot\vec{E} \)
+                                </p>
+                                <p>
+                                    We can arrive at the same expression by considering the electric potential at the
+                                    positions
+                                    of the two charges comprising the dipole. Suppose the dipole consists of a positive
+                                    charge
+                                    \(+q\) and a negative charge \(-q\) separated by a distance \(2a\). The total
+                                    potential energy
+                                    of the dipole in the external field is the sum of the energies of each charge in the
+                                    field’s
+                                    potential.
+                                </p>
+                                <p>
+                                    When the dipole is oriented at \(90^\circ\) to the field, the positive and negative
+                                    charges lie
+                                    on the same equipotential surface, making the net potential energy zero. As you
+                                    rotate the
+                                    dipole away from \(90^\circ\), one charge moves to a region of higher potential and
+                                    the other
+                                    to a region of lower potential, resulting in a net potential energy that matches the
+                                    earlier
+                                    derived expression \(-pE\cos\theta\).
+                                </p>
+                                <p>
+                                    The dipole is considered a rigid object: the distance between the charges does not
+                                    change.
+                                    Therefore, the internal electrostatic energy due to the interaction between the +q
+                                    and -q
+                                    charges remains constant. We do not consider this internal energy when discussing
+                                    the
+                                    potential energy in the external field, as it does not vary during the rotation
+                                    process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4: Electrostatic Potential by Dipole -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section4-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section4" aria-expanded="false" aria-controls="section4">
+                                <strong>Electrostatic Potential by Dipole</strong>
+                            </button>
+                        </h2>
+                        <div id="section4" class="accordion-collapse collapse" aria-labelledby="section4-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Consider an electric dipole consisting of two charges: \(-q\) placed at a point
+                                    \(A\)
+                                    and \(+q\) placed at a point \(B\), separated by a small distance \(d\). Let the
+                                    midpoint
+                                    of the line segment \(AB\) be \(O\), so that \(AO = BO = \dfrac{d}{2}\). The dipole
+                                    moment is
+                                    defined as \(\vec{p} = q\,\vec{d}\), where \(\vec{d}\) is the vector from the
+                                    negative to the
+                                    positive charge.
+                                </p>
+                                <p>
+                                    We want to find the electric potential at a point \(P\) located at a distance \(r\)
+                                    from \(O\),
+                                    making an angle \(\theta\) with the dipole axis (the line along \(\vec{p}\)). We
+                                    assume that
+                                    \(r \gg d\), meaning the point \(P\) is far away compared to the dipole separation.
+                                </p>
+                                <p>
+                                    The electric potential at a point due to a point charge \(q\) at a distance \(R\)
+                                    is:
+                                </p>
+                                <p>
+                                    \(V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{q}{R}\).
+                                </p>
+                                <p>
+                                    For the dipole, we have two charges:
+                                </p>
+                                <ul>
+                                    <li><em>Negative charge \(-q\)</em> at \(A\), distance from \(P\) approximately \(r
+                                        + \dfrac{d}{2}\cos\theta\).</li>
+                                    <li><em>Positive charge \(+q\)</em> at \(B\), distance from \(P\) approximately \(r
+                                        - \dfrac{d}{2}\cos\theta\).</li>
+                                </ul>
+                                <p>
+                                    These distances are found by projecting the dipole axis onto the line from \(O\) to
+                                    \(P\)
+                                    and using the geometry for large \(r\).
+                                </p>
+                                <p>
+                                    The total potential at \(P\) due to the dipole is:
+                                </p>
+                                <p>
+                                    \(V = V_{+q} + V_{-q} = \dfrac{1}{4\pi\varepsilon_0}\left(\dfrac{q}{r -
+                                    \dfrac{d}{2}\cos\theta} - \dfrac{q}{r + \dfrac{d}{2}\cos\theta}\right).\)
+                                </p>
+                                <p>
+                                    Because \(r \gg d\), we can simplify this expression. The difference in denominators
+                                    leads to a factor
+                                    involving \(\cos\theta\) and \(d\). After simplification, the dominant term emerges
+                                    as:
+                                </p>
+                                <p>
+                                    \(V \approx \dfrac{1}{4\pi\varepsilon_0} \dfrac{q d \cos\theta}{r^2}.\)
+                                </p>
+                                <p>
+                                    Recognizing that \(p = q d\), we get the final expression for the potential of a
+                                    dipole at a far point \(P\):
+                                </p>
+                                <p class="text-center text-law">
+                                    \(V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p \cos\theta}{r^2}.\)
+                                </p>
+                                <p>
+                                    This result shows that the potential due to a dipole decreases faster with distance
+                                    (\(1/r^2\)) than that of a single charge (\(1/r\)).
+                                    The factor \(\cos\theta\) indicates that the potential depends on the orientation of
+                                    the dipole relative to the observation point.
+                                    Along the axis of the dipole (\(\theta = 0^\circ\)), the potential is maximum, and
+                                    at the equatorial line (\(\theta = 90^\circ\)), the potential is zero.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 5: Electric field by Dipole -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="section5-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section5" aria-expanded="false" aria-controls="section5">
+                                <strong>Electric field by Dipole</strong>
+                            </button>
+                        </h2>
+                        <div id="section5" class="accordion-collapse collapse" aria-labelledby="section5-heading"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <p>
+                                    We have already found the electrostatic potential due to an electric
+                                    dipole at a point \(P\) located at a distance \(r\) from the dipole’s
+                                    center \(O\), making an angle \(\theta\) with the dipole axis:
+                                </p>
+                                <p>
+                                    \( V\qquad = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p \cos\theta}{r^2} \),
+                                </p>
+                                <p>
+                                    where \(p = qd\) is the dipole moment. To find the electric field
+                                    \(\vec{E}\) at \(P\), we use the relation:
+                                </p>
+                                <p>
+                                    \(\vec{E} = -\nabla V\).
+                                </p>
+                                <p>
+                                    Since we are dealing with spherical coordinates (with \(r\) and \(\theta\)
+                                    defining the position of \(P\)), the electric field can be decomposed into
+                                    two perpendicular components: one along the radial direction (away from
+                                    or toward the dipole) and the other along a direction perpendicular to
+                                    this radius vector (the transverse direction, related to changes in
+                                    angle \(\theta\)).
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <strong>Radial Component of \(\vec{E}\)</strong>
+                                        <p>
+                                            Consider first a small displacement \(dr\) along the line from \(O\) to
+                                            \(P\).
+                                            In this scenario, \(\theta\) stays constant while \(r\) changes from \(r\)
+                                            to
+                                            \(r + dr\). The radial component of the electric field is obtained by
+                                            differentiating \(V\) with respect to \(r\), treating \(\theta\) as
+                                            constant:
+                                        </p>
+                                        <p>
+                                            \( \qquad E_r = -\dfrac{\partial V}{\partial r} \).
+                                        </p>
+                                        <p>
+                                            Starting from \( V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p \cos\theta}{r^2}
+                                            \):
+                                        </p>
+                                        <p>
+                                            \( \qquad E_r = -\dfrac{1}{4\pi\varepsilon_0} \dfrac{\partial}{\partial
+                                            r}\left(\dfrac{p\cos\theta}{r^2}\right)
+                                            = -\dfrac{1}{4\pi\varepsilon_0} p\cos\theta
+                                            \dfrac{d}{dr}\left(\dfrac{1}{r^2}\right). \)
+                                        </p>
+                                        <p>
+                                            Since \(\dfrac{d}{dr}\left(\dfrac{1}{r^2}\right) = -\dfrac{2}{r^3}\), we
+                                            have:
+                                        </p>
+                                        <p>
+                                            \( \qquad E_r = -\dfrac{1}{4\pi\varepsilon_0} p\cos\theta
+                                            \left(-\dfrac{2}{r^3}\right)
+                                            = \dfrac{1}{4\pi\varepsilon_0} \dfrac{2p\cos\theta}{r^3}. \)
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Transverse Component of \(\vec{E}\)</strong>
+                                        <p>
+                                            Now consider a small angular displacement \(d\theta\) at nearly constant
+                                            \(r\).
+                                            In this case, we find the transverse component of the electric field by
+                                            differentiating \(V\) with respect to \(\theta\):
+                                        </p>
+                                        <p>
+                                            \( \qquad E_\theta = -\dfrac{1}{r}\dfrac{\partial V}{\partial \theta}. \)
+                                        </p>
+                                        <p>
+                                            With \( V = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p \cos\theta}{r^2} \), we
+                                            get:
+                                        </p>
+                                        <p>
+                                            \(\dfrac{\partial V}{\partial \theta} = \dfrac{1}{4\pi\varepsilon_0}
+                                            \dfrac{p}{r^2}\dfrac{\partial(\cos\theta)}{\partial \theta}
+                                            = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p}{r^2}(-\sin\theta).\)
+                                        </p>
+                                        <p>
+                                            Thus:
+                                        </p>
+                                        <p>
+                                            \( \qquad E_\theta =
+                                            -\dfrac{1}{r}\left(\dfrac{1}{4\pi\varepsilon_0}\dfrac{p(-\sin\theta)}{r^2}\right)
+                                            = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p\sin\theta}{r^3}. \)
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Combining these two components, the total electric field at \(P\) is:
+                                </p>
+                                <p>
+                                    \( \qquad E = \sqrt{E_r^2 + E_\theta^2} =
+                                    \dfrac{1}{4\pi\varepsilon_0}\dfrac{p}{r^3}\sqrt{(2\cos\theta)^2 +
+                                    (\sin\theta)^2}. \)
+                                </p>
+                                <p>
+                                    This can be simplified to:
+                                </p>
+                                <p>
+                                    \( \qquad E = \dfrac{1}{4\pi\varepsilon_0}\dfrac{p}{r^3}\sqrt{3\cos^2\theta + 1}. \)
+                                </p>
+                                <p>
+                                    The direction of the resultant field depends on \(\theta\) and can be
+                                    described
+                                    in terms of an angle \(\alpha\) it makes with the radial direction. One
+                                    finds that
+                                    \(\alpha = \tan^{-1}\left(\dfrac{1}{2}\tan\theta\right)\), indicating the
+                                    field’s orientation
+                                    changes with the position around the dipole.
+                                </p>
+                                <strong>Special Cases</strong>
+                                <ul>
+                                    <li>
+                                        <em>\(\theta = 0^\circ\) (On the Dipole Axis):</em> Here, the potential
+                                        is maximum and the field
+                                        simplifies to \( E = \dfrac{1}{4\pi\varepsilon_0} \dfrac{2p}{r^3} \),
+                                        directed along the axis.
+                                        This position is often called the “end-on” position.
+                                    </li>
+                                    <li>
+                                        <em>\(\theta = 90^\circ\) (On the Equatorial Line):</em> The potential
+                                        here is zero, but the field
+                                        is \( E = \dfrac{1}{4\pi\varepsilon_0} \dfrac{p}{r^3} \), directed
+                                        perpendicular to the axis.
+                                        This is known as the “broadside-on” position.
+                                    </li>
+                                </ul>
+                                <p>
+                                    In all cases, the dipole field falls off rapidly with distance (\(1/r^3\)),
+                                    making it much weaker
+                                    at large distances compared to the field of a single point charge
+                                    (\(1/r^2\)).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

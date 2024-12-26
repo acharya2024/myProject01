@@ -12,7 +12,6 @@
             text-align: justify;
             padding: 5px;
         }
-
         .accordion-body p:hover {
             transition: box-shadow .2s;
             border-radius: 5px;
