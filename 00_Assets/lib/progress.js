@@ -103,4 +103,30 @@ $("response").click(function () {
 //         }
 //         return null;
 //     }
+// Function to initialize hotspots for a given model-viewer
+// function initializeHotspots(modelViewerId, hotspotSlot, alertMessage) {
+//         const modelViewer = document.getElementById(modelViewerId);
+        
+//         if (!modelViewer) {
+//             console.error(`ModelViewer with id="${modelViewerId}" not found.`);
+//             return;
+//         }
+        
+//         // Wait for the model-viewer to load
+//         modelViewer.addEventListener("load", () => {
+//             const hotspot = modelViewer.querySelector(`[slot="${hotspotSlot}"]`);
+            
+//             if (hotspot) {
+//                 hotspot.style.cursor = "pointer"; // Indicate interactivity
+//                 hotspot.addEventListener("click", () => {
+//                     alert(alertMessage);
+//                 });
+//             } else {
+//                 console.error(`Hotspot with slot="${hotspotSlot}" not found in modelViewer "${modelViewerId}".`);
+//             }
+//         });
+// // Initialize hotspots for each model-viewer instance
+// initializeHotspots("modelViewer1", "hotspot-12", "You clicked on hotspot 12!");
+// Add more initializations as needed for other model-viewers
+// initializeHotspots("modelViewer2", "hotspot-21", "You clicked on hotspot 21!");
 // });

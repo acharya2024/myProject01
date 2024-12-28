@@ -37,6 +37,265 @@
                             aria-labelledby="heading-electric-flux" data-bs-parent="#content">
                             <div class="accordion-body">
                                 <p>
+                                    In physics, the area of a surface is often regarded as a vector quantity. For a
+                                    small, flat surface \(S\), its area vector is defined as the vector perpendicular
+                                    (normal) to the surface, having a magnitude equal to the area of \(S\). By this
+                                    convention, all area vectors for closed surfaces (such as those on spheres or
+                                    cuboids) point outward, consistent with outward-facing normals.
+                                </p>
+
+                                <p>
+                                    The 3D diagrams below help visualize this concept: each face or patch of a shape has
+                                    an area vector that points away from the enclosed region.
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/06_Area vector for surface.glb"
+                                                alt="Diagram showing the area vector of a surface." auto-rotate
+                                                camera-controls ar>
+                                                <span slot="hotspot" data-position="1.6m 1m -1.2m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(\vec{ds}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Area Vector for a Single Surface
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/06_Area vectors for object.glb"
+                                                alt="Diagram showing area vectors of different surfaces of an object."
+                                                auto-rotate camera-controls ar>
+                                                <span slot="hotspot-A1" data-position="1m 4m 1m" data-normal="1m 0m 0m">
+                                                    \(\vec{A_1}\)
+                                                </span>
+                                                <span slot="hotspot-A2" data-position="4m -1m -0.8m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_2}\)
+                                                </span>
+                                                <span slot="hotspot-A3" data-position="0.8m -1m -4m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{A_3}\)
+                                                </span>
+                                                <span slot="hotspot-A4" data-position="-4m -1m 0.8m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_4}\)
+                                                </span>
+                                                <span slot="hotspot-A5" data-position="0.8m 1m 4m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{A_5}\)
+                                                </span>
+                                                <span slot="hotspot-A6" data-position="1m -4m 1m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{A_6}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Area Vectors for Different Surfaces of an Object
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <figcaption class="figure-caption text-center">
+                                        Diagram: Area Vectors of Various Surfaces
+                                    </figcaption>
+                                </div>
+
+                                <p>
+                                    Just like any other vector, area vectors can be broken down into components. If the
+                                    area vector for a surface is \(\vec{A}\), it can be written as:
+                                </p>
+                                <p>
+                                    \(\quad \vec{A} = A_x \hat{i} \;+\; A_y \hat{j} \;+\; A_z \hat{k}\).
+                                </p>
+                                <p>
+                                    Here, \(A_x\) is the portion of the area vector pointing along the \(x\)-axis (i.e.,
+                                    corresponding to the surface’s projection in the \(y\)-\(z\) plane), \(A_y\) along
+                                    the \(y\)-axis (projection in the \(x\)-\(z\) plane), and \(A_z\) along the
+                                    \(z\)-axis (projection in the \(x\)-\(y\) plane). The diagram below illustrates the
+                                    decomposition of an area vector into these components.
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/07_Components of area.glb"
+                                                alt="Diagram showing the components of an area vector." auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="35deg">
+                                                <span slot="hotspot-x" data-position="4.2m 0m 0m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(x\)
+                                                </span>
+                                                <span slot="hotspot-y" data-position="0m 3.5m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(y\)
+                                                </span>
+                                                <span slot="hotspot-z" data-position="0m 0m 3.7m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(z\)
+                                                </span>
+                                                <span slot="hotspot-A" data-position="2.8m 2m 2.8m"
+                                                    data-normal="0m 0m 1m">
+                                                    \(\vec{A}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Components of an Area Vector
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    To see how these components can be computed, imagine a rectangular surface of length
+                                    \(l\) and breadth \(b\) that is inclined at some angle \(\theta\) from the
+                                    horizontal. If you look at this rectangular patch from different views, you can
+                                    identify the horizontal and vertical components of its area by projecting the
+                                    surface onto those planes.
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/07_Components of inclined surface area.glb"
+                                                alt="Diagram showing the components of an inclined surface area."
+                                                auto-rotate camera-controls ar style="width: 150px; height: 150px;"
+                                                field-of-view="35deg">
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Components of an Inclined Surface Area
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    The area of the inclined surface in the diagram above is \( l \times b \). This
+                                    surface is inclined at an angle \(\theta\) with respect to the horizontal plane. As
+                                    a result, the projection of the inclined surface onto the horizontal plane forms an
+                                    area of \( l b \cos\theta \), while the projection onto the vertical plane forms an
+                                    area of \( l b \sin\theta \). This approach is consistent with the method of
+                                    resolving any vector, such as force or displacement, into two perpendicular
+                                    components.
+                                </p>
+
+                                <p>
+                                    These ideas extend naturally to curved surfaces. For a curved surface, the total
+                                    area vector \(\vec{S}\) is the sum (or integral) of all the infinitesimal area
+                                    vectors \(\mathrm{d}\vec{S}\). Each \(\mathrm{d}\vec{S}\) corresponds to a small
+                                    patch on the curved surface, oriented perpendicularly outward. By integrating over
+                                    the entire surface—like a spherical cap—the contributions from these small patches
+                                    combine to form one resultant area vector. In the diagram below, many small arrows
+                                    represent these elemental area vectors, and the large arrow stands for their overall
+                                    sum \(\vec{S}\).
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end mb-4 mb-md-0">
+                                        <figure>
+                                            <model-viewer src="blend/09_Area vector of curved surfaces.glb"
+                                                alt="Diagram showing elemental area vectors of a curved surface."
+                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="35deg">
+                                                <span slot="hotspot-x" data-position="1m 0.7m 0m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{ds}\)
+                                                </span>
+                                                <span slot="hotspot-y" data-position="0.2m 1.5m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Elemental area vectors of a curved surface.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Notice that if the shape is symmetric about a vertical axis (like a dome), the
+                                    vertical components of the infinitesimal area vectors add up along that axis.
+                                    Consequently, when calculating the total, you can consider only the projections of
+                                    these small patches onto the horizontal plane. Each patch’s vertical component
+                                    (\(\mathrm{d}\vec{S}_\text{vertical}\)) sums to give the resultant \(\vec{S}\). The
+                                    following figure illustrates a single patch’s vertical component:
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/10_Component of curved surface area.glb"
+                                                alt="Diagram showing component of curved surface element" auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="90deg">
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Component of curved surface element.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    In essence, the total area vector of a curved surface can be obtained by summing all
+                                    these projected (vertical) components. If you project that curved surface onto the
+                                    horizontal plane, you get a shape whose area vector matches the net result of the
+                                    curved surface itself. The figure below highlights this idea, showing that for two
+                                    surfaces sharing the same boundary—one curved and one flat—the final area vectors
+                                    are identical.
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/11_Same area vector for same boundary.glb"
+                                                alt="Diagram showing Same area vector for same boundary." auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="35deg">
+                                                <span slot="hotspot-y1" data-position="0.2m 1m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
+                                                <span slot="hotspot-y2" data-position="0.2m 4m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Same area vector for same boundary.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Therefore:
+                                </p>
+                                <p class="text-center text-law">
+                                    For two different surfaces sharing the same boundary, the net area vector is the
+                                    same.
+                                </p>
+
+                                <p>
+                                    All these concepts—area vectors, their components, and the summation of
+                                    infinitesimal contributions—are critical building blocks for understanding flux.
+                                    They set the stage for applying Gauss’s law, where the flux of certain fields (like
+                                    the electric field) through a surface depends on precisely these ideas of area and
+                                    its orientation.
+                                </p>
+                                <p>
                                     In physics, the area associated with a surface is treated as a vector quantity. For
                                     a small, flat surface \( S \), its area vector is defined as the vector
                                     perpendicular (normal) to the surface, with a magnitude equal to the area of \( S
@@ -151,7 +410,7 @@
                                     </div>
                                 </div>
                                 <p>
-                                    TO understand the conponents in terms of \(\sin\theta\) and \(\cos\theta\), consider
+                                    To understand the calculation of magnitude of the conponents, consider
                                     an example of a rectangular surface of dimensions \(l\times b\). The surface makes
                                     an angle \(\theta\) with horizontal. In sucha a case, this inclined surface can be
                                     projected on horizontal and vertical surface as shown:
@@ -172,77 +431,123 @@
                                     </div>
                                 </div>
                                 <p>
-                                    In the following diagram click on the vertical component of the area A.
+                                    On any curved surface, the total area vector \(\vec{S}\) is obtained by summing (or
+                                    integrating) all the infinitesimal area vectors \(\vec{dS}\). Each of these
+                                    infinitesimal vectors corresponds to a very small patch of the surface and points
+                                    perpendicularly outward from that patch. In the case of a curved region—such as a
+                                    cap of a sphere—each patch may be oriented differently, so its \(\vec{dS}\)
+                                    points in a slightly different direction. By adding all these infinitesimal vectors,
+                                    we obtain the net (or resultant) area vector for the curved surface. In the
+                                    following diagram, small outward-pointing arrows represent the elemental area
+                                    vectors, and the net vector is shown as a larger arrow:
                                 </p>
-                                
+
                                 <div class="row justify-content-center mb-4">
-                                    <div class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end mb-4 mb-md-0">
                                         <figure>
-                                            <model-viewer 
-                                                id="modelViewer1"
-                                                src="blend/07_Components of inclined surface area.glb"
-                                                alt="Diagram showing the components of an inclined surface area."
-                                                auto-rotate 
-                                                camera-controls 
-                                                ar 
-                                                style="width: 150px; height: 150px;"
+                                            <model-viewer src="blend/09_Area vector of curved surfaces.glb"
+                                                alt="Diagram showing elemental area vectors of a curved surface."
+                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;"
                                                 field-of-view="35deg">
-                                                
-                                                <!-- Use a span for the hotspot -->
-                                                <button slot="hotspot-12" data-position="1m 0m 0m" data-normal="1m 0m 0m">
-                                                    \(x\)
-                                                </button>
+                                                <span slot="hotspot-x" data-position="1m 0.7m 0m"
+                                                    data-normal="1m 0m 0m">
+                                                    \(\vec{ds}\)
+                                                </span>
+                                                <span slot="hotspot-y" data-position="0.2m 1.5m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
                                             </model-viewer>
                                             <figcaption class="figure-caption text-center">
-                                                Components of an Inclined Surface Area
+                                                Elemental area vectors of a curved surface.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    The direction of resultant of all such area vectors \(\vec{ds}\) has a direction
+                                    along the symmetrical axis, shown by the vertical arrow \(\vec{S}\). So, in the
+                                    process of finding the resultant area vector, only vertical components
+                                    \(\vec{ds}_\text{vertical}\) is to be added. The component of \(\vec{S}\) along
+                                    vertical direction \(\vec{ds}_\text{vertical}\) is shown in for an elemental surface
+                                    in following diagram:
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/10_Component of curved surface area.glb"
+                                                alt="Diagram showing component of curved surface element" auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="90deg">
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Component of curved surface element.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    The diagram above illustrates that, the vertical component \(\vec{ds}_
+                                    \text{vertical}\) can also be considered as area vector associated with projection
+                                    of the inclined surface on the horizontal surface.
+                                </p>
+                                <p>
+                                    Thus, to find resultant of all surface area elements \(\vec{ds}\), each surface
+                                    elements projection in horizontal plane should be considered. Thus, the resultant
+                                    becomes same as that of area vector of projection this curved surface on horizontal
+                                    plane. This is shown in diagram below.
+                                </p>
+
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/11_Same area vector for same boundary.glb"
+                                                alt="Diagram showing Same area vector for same boundary." auto-rotate
+                                                camera-controls ar style="width: 300px; height: 300px;"
+                                                field-of-view="35deg">
+                                                <span slot="hotspot-y1" data-position="0.2m 1m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
+                                                <span slot="hotspot-y2" data-position="0.2m 4m 0m"
+                                                    data-normal="0m 1m 0m">
+                                                    \(\vec{S}\)
+                                                </span>
+                                            </model-viewer>
+                                            <figcaption class="figure-caption text-center">
+                                                Same area vector for same boundary.
                                             </figcaption>
                                         </figure>
                                     </div>
                                 </div>
 
-                                <script>
-                                    document.addEventListener("DOMContentLoaded", () => {
-                                        // Function to initialize hotspots for a given model-viewer
-                                        function initializeHotspots(modelViewerId, hotspotSlot, alertMessage) {
-                                            const modelViewer = document.getElementById(modelViewerId);
-                                            
-                                            if (!modelViewer) {
-                                                console.error(`ModelViewer with id="${modelViewerId}" not found.`);
-                                                return;
-                                            }
-                                            
-                                            // Wait for the model-viewer to load
-                                            modelViewer.addEventListener("load", () => {
-                                                const hotspot = modelViewer.querySelector(`[slot="${hotspotSlot}"]`);
-                                                
-                                                if (hotspot) {
-                                                    hotspot.style.cursor = "pointer"; // Indicate interactivity
-                                                    hotspot.addEventListener("click", () => {
-                                                        alert(alertMessage);
-                                                    });
-                                                } else {
-                                                    console.error(`Hotspot with slot="${hotspotSlot}" not found in modelViewer "${modelViewerId}".`);
-                                                }
-                                            });
-                                        }
-                                        
-                                        // Initialize hotspots for each model-viewer instance
-                                        initializeHotspots("modelViewer1", "hotspot-12", "You clicked on hotspot 12!");
-                                        // Add more initializations as needed for other model-viewers
-                                        // initializeHotspots("modelViewer2", "hotspot-21", "You clicked on hotspot 21!");
-                                    });
-                                </script>
-                                
                                 <p>
-                                    On curved surfaces, the overall area vector can be considered as the vector sum of
-                                    numerous infinitesimal area vectors \(\mathrm{d}\vec{S}\). For instance, take a
-                                    curved section of a sphere. By summing all the tiny outward-pointing area vectors
-                                    that constitute this section, we obtain the total vector area for that segment.
-                                    Notably, for a closed surface, the total (net) area vector is always zero because
-                                    the outward area vectors on opposite sides cancel each other out. This cancellation
-                                    is a fundamental geometric principle underlying Gauss’s law.
+                                    Thus we conclude:
                                 </p>
-
+                                <p class="text-center text-law">
+                                    For two different surfaces having same boundaries, the area vectors are the same.
+                                </p>
+                                <p>
+                                    An especially important result occurs for closed surfaces: the total area vector for
+                                    a completely enclosed volume is always zero because all outward vectors on one part
+                                    of the surface cancel with those on the opposite side. However, for an open surface
+                                    bounded by a loop (like the edge of a circular rim), the net area vector depends
+                                    only on that boundary. As a result, if a curved surface and a flat disc share the
+                                    exact same boundary, they will have the same total area vector. The figure below
+                                    demonstrates how, despite the surface curvature, the resultant area vector matches
+                                    that of a flat disc bounded by the same rim:
+                                </p>
+                                <p>
+                                    These illustrations clarify how area vectors on both curved and flat surfaces play a
+                                    fundamental role in understanding concepts like electric flux and Gauss’s law.
+                                    Whether one surface is curved or flat, if they share the same boundary, the
+                                    resultant (net) area vector is identical, emphasizing that the boundary alone
+                                    determines the overall area vector for an open surface.
+                                </p>
                             </div>
                         </div>
                     </div>
