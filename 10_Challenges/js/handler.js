@@ -183,5 +183,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
         
-    //requireOfflineMode()
+    requireOfflineMode()
 });
