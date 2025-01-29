@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Your device does not support Bookman Old Style font. Consider using a web-safe alternative like Georgia or Times New Roman.");
         }
     }
-    checkFontSupport();
+    //checkFontSupport();
 
     // Function to replace diagram placeholders with image paths
     function processDiagrams(text, questionId) {

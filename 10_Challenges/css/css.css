@@ -1,6 +1,7 @@
 .accordion {
-    font-family: "Bookman Old Style", Georgia, serif;
+    font-family: "Bookman Old Style", "Times New Roman", Times, serif;
 }
+
 li details{
     margin-left: 10px
 }
