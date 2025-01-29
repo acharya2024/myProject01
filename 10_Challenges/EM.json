@@ -155,7 +155,7 @@
       "solution": "Consider a point P in the cavity at a position vector \\(\\vec{r}\\) from the centre of cylinder and at a position vector \\(\\vec{r}_1\\) from the centre of cavity as shown.  DIAGRAM[1,170] \\nIf \\(\\vec{E}\\) be the electric field strength at P due to the complete charge of the cylinder (inside cavity also) then we know electric field inside a uniformly charged cylinder is given as\\n\\(\\vec{E} = \\dfrac{\\rho \\vec{r}}{2\\epsilon_0}\\)\\nSimilarly, if we assume that the charge is only there in the region of the cavity and hence this will also be a uniformly charged small cylinder. If \\(\\vec{E}_1\\) be the electric field only due to the cavity charge then\\n\\(\\vec{E}_1 = \\dfrac{\\rho\\vec{r}_1}{2\\epsilon_0}\\)\\nNow the electric field due to the charged cylinder in the cavity at point P can be given as\\n\\(\\vec{E}_{net} = \\vec{E}-\\vec{E}_1\\) (As now charge of cavity is removed)\\n\\(\\Rightarrow \\vec{E}_{net} = \\dfrac{\\rho}{2\\epsilon_0}(\\vec{r} - \\vec{r}_1) = \\dfrac{\\rho\\vec{a}}{2\\epsilon_0}\\)    [\\(\\because \\vec{r} - \\vec{r}_1 = \\vec{a}\\)]",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
-      "hint": "Use the principle of superposition. The electric field inside the cavity can be found by subtracting the electric field due to a cylinder of charge density -ρ occupying the cavity from the electric field due to the larger cylinder.",
+      "hint": "Use the principle of superposition. The electric field inside the cavity can be found by subtracting the electric field due to a cylinder of charge density -\\rho occupying the cavity from the electric field due to the larger cylinder.",
       "methodOfSolving": [
         "The electric field inside a uniformly charged infinite cylinder of charge density \\(\\rho\\) at a distance \\(r\\) from the axis is \\(E = \\dfrac{\\rho r}{2\\epsilon_0}\\).  The direction is radial.",
         "Let \\(\\vec{r}\\) be the position vector of point P from the center of the larger cylinder, and \\(\\vec{r_1}\\) be the position vector of P from the center of the cavity.  The vector \\(\\vec{a}\\) points from the center of the larger cylinder to the center of the cavity.",
@@ -907,7 +907,7 @@
       },
       "type": "Subjective",
       "questionText": "A wire carrying a current \\(I\\) is bent into the shape of an exponential spiral, \\(r = e^{\\theta}\\) from \\(\\theta = 0\\) to \\(\\theta = 2\\pi\\) as shown in figure. To complete a loop, the ends of the spiral are connected by a straight wire along the x-axis. Find the magnitude and direction of \\(\\vec{B}\\) at the origin.\\n\\nDIAGRAM[1,250]",
-      "solution": "Before we start with the problem, we must know and keep in mind that the angle \\(\\beta\\) between a radial line and its tangent line at any point on the curve \\(r = f(\\theta)\\) are related to the function as\\n\\(\\tan\\beta = \\frac{r}{\\frac{dr}{d\\theta}}\\)\\nFrom Biot-Savart’s Law, we know that there is no contribution from the straight portion of the wire since \\(d\\vec{l} \\times \\vec{r} = 0\\). For the field of the spiral, we have\\n\\(d\\vec{B} = \\frac{\\mu_0 I}{4\\pi} \\frac{(d\\vec{l} \\times \\hat{r})}{r^2}\\)\\n\\nDIAGRAM[2,250]\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\frac{|d\\vec{l}|\\sin\\theta|\\hat{r}|}{r^2}\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\sqrt{2}dr \\left[\\sin\\left(\\frac{3\\pi}{4}\\right)\\right]\\frac{1}{r^2}\\)\\nThus in this case, we have \\(r = e^{\\theta}\\) and so we get \\(\\tan\\beta = 1\\) and \\(\\beta = \\frac{\\pi}{4}\\). Therefore, the angle between \\(d\\vec{l}\\) and \\(\\hat{r}\\) is \\((\\pi - \\beta) = \\frac{3\\pi}{4}\\). Also\\n\\(d\\vec{l} = \\frac{dr}{\\sin\\left(\\frac{\\pi}{4}\\right)} = \\sqrt{2} dr\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} r^{-2} dr = \\frac{-\\mu_0 I}{4\\pi}(r^{-1})|_0^{2\\pi}\\)\\nSubstitute \\(r = e^{\\theta}\\), we get\\n\\(B = \\frac{-\\mu_0 I}{4\\pi}(e^{-\\theta})|_0^{2\\pi} = \\frac{-\\mu_0 I}{4\\pi}(e^{-2\\pi} - e^0)\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi}(1 - e^{-2\\pi})\\) out of the page.",
+      "solution": "Before we start with the problem, we must know and keep in mind that the angle \\(\\beta\\) between a radial line and its tangent line at any point on the curve \\(r = f(\\theta)\\) are related to the function as\\n\\(\\tan\\beta = \\frac{r}{\\frac{dr}{d\\theta}}\\)\\nFrom Biot-Savart's Law, we know that there is no contribution from the straight portion of the wire since \\(d\\vec{l} \\times \\vec{r} = 0\\). For the field of the spiral, we have\\n\\(d\\vec{B} = \\frac{\\mu_0 I}{4\\pi} \\frac{(d\\vec{l} \\times \\hat{r})}{r^2}\\)\\n\\nDIAGRAM[2,250]\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\frac{|d\\vec{l}|\\sin\\theta|\\hat{r}|}{r^2}\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\sqrt{2}dr \\left[\\sin\\left(\\frac{3\\pi}{4}\\right)\\right]\\frac{1}{r^2}\\)\\nThus in this case, we have \\(r = e^{\\theta}\\) and so we get \\(\\tan\\beta = 1\\) and \\(\\beta = \\frac{\\pi}{4}\\). Therefore, the angle between \\(d\\vec{l}\\) and \\(\\hat{r}\\) is \\((\\pi - \\beta) = \\frac{3\\pi}{4}\\). Also\\n\\(d\\vec{l} = \\frac{dr}{\\sin\\left(\\frac{\\pi}{4}\\right)} = \\sqrt{2} dr\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} r^{-2} dr = \\frac{-\\mu_0 I}{4\\pi}(r^{-1})|_0^{2\\pi}\\)\\nSubstitute \\(r = e^{\\theta}\\), we get\\n\\(B = \\frac{-\\mu_0 I}{4\\pi}(e^{-\\theta})|_0^{2\\pi} = \\frac{-\\mu_0 I}{4\\pi}(e^{-2\\pi} - e^0)\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi}(1 - e^{-2\\pi})\\) out of the page.",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
       "hint": "Use the Biot-Savart law and consider the symmetry of the problem. Note that there is no contribution from the straight wire segment.",
@@ -1047,7 +1047,7 @@
       },
       "type": "Subjective",
       "questionText": "A conducting wire PQ of length \\(l = 1\\text{ m}\\) is moved in a uniform magnetic field \\(B = 4\\text{ T}\\) with constant velocity \\(v = 2\\text{ ms}^{-1}\\) towards right as shown in Figure.  If \\(R = 2 \\Omega\\), \\(C = 1 \\text{ F}\\) and \\(L = 4 \\text{ H}\\) then, answer the following questions.\\n\\nDIAGRAM[1,200]\\n(a) If \\(V_P\\) and \\(V_Q\\) are potentials of the point P and Q respectively, then find \\(V_P - V_Q\\).\\n(b) Find the potential difference across the inductor.\\n(c) What is the potential difference across the capacitor?\\n(d) Calculate the potential difference across the resistor.\\n(e) Determine the rate of change of current in the inductor.\\n(f) Find the current through capacitor at \\(t = 2\\text{ s}\\).\\n(g) Calculate the current through resistor at \\(t = 2\\text{ s}\\).\\n(h) What is the current through inductor at \\(t = 2\\text{ s}\\)?\\n(i) Find the current through wire PQ at \\(t = 2\\text{ s}\\).\\n(j) Calculate the force required to move the wire with the given constant velocity of 2 ms⁻¹ at t=2s.\\n(k) Find the energy supplied per second by the source.\\n(l) Calculate the total power generated by the applied external force.\\n(m) What is the magnetic energy stored per second in inductor at \\(t = 2\\text{ s}\\)?\\n(n) Find the energy dissipated per second in the resistor at \\(t = 2\\text{ s}\\).\\n(o) Calculate the electrostatic energy stored per second in capacitor at \\(t = 2\\text{ s}\\).",
-      "solution": "(a) Using Fleming's Right Hand Rule, we see that the induced current in the wire PQ is from Q to P. So, we have\\n\\(V_P - V_Q = \\varepsilon = Blv = (4)(1)(2) = 8 \\text{ V}\\)\\n(b) Inductor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_L = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(c) Capacitor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_c = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(d) Resistor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_R = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(e) Since \\(V_L = 8 \\text{ V}\\)\\n\\(\\Rightarrow L\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow 4\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow \\frac{di}{dt} = 2 \\text{ As}^{-1}\\)\\n(f) Charge on the capacitor is\\n\\(Q = C\\varepsilon = (1)(8) = 8 \\text{ coulomb}\\)\\n\\(\\Rightarrow i_2 = \\frac{dQ}{dt} = \\frac{d}{dt}(8) = 0\\)\\n(g) Current through resistor is\\n\\(i_3 = \\frac{\\varepsilon}{R} = \\frac{8}{2} = 4 \\text{ A}\\)\\n(h) Since rate of change of current in inductor is \\(\\frac{di_1}{dt} = 2 \\text{ As}^{-1}\\)\\nSo, current in the inductor at \\(t = 2\\text{ s}\\) is\\n\\(i_1 = \\left(\\frac{di_1}{dt}\\right)\\Delta t = (2)(2) = 4 \\text{ A}\\)\\n(i) Since wire PQ is acting as source of emf and supplies current i₁ to inductor, i₂ to capacitor and i₃ to resistor, so current through wire PQ is\\n\\(i = i_1 + i_2 + i_3 = 4 + 0 + 4 = 8 \\text{ A}\\)\\n(j) To keep the wire PQ moving with constant velocity, an external force that equals the magnetic force on the current carrying conductor should be applied on it.\\n\\(\\Rightarrow F_{external} = F_{magnetic} = Bil = (4)(8)(1) = 32 \\text{ N}\\)\\n(k) Energy supplied per second by the source is\\n\\(P_{supplied} = \\varepsilon i = (8)(8) = 64 \\text{ W}\\)\\n(l) Power generated by the applied external force is\\n\\(P_{external\\ force} = F_{ext} v = (32)(2) = 64 \\text{ W}\\)\\n(m) Magnetic energy stored per second in inductor is\\n\\(\\frac{dU_m}{dt} = \\frac{d}{dt}\\left(\\frac{1}{2}Li^2\\right) = \\frac{1}{2}L\\frac{d}{dt}(i^2) = \\frac{L}{2} 2i \\frac{di}{dt} = Li\\frac{di}{dt}\\)\\nSince \\(\\frac{di1}{dt} = 2 \\text{ As}^{-1}\\) and \\(i_1 = 4 \\text{ A}\\) at \\(t = 2\\text{ s}\\)\\n\\(\\Rightarrow \\frac{dU_m}{dt} = Li_1\\frac{di_1}{dt} = (4)(4)(2) = 32 \\text{ W}\\)\\n(n) Energy dissipated per second in the resistor at \\(t = 2\\text{ s}\\) is\\n\\(P_{Resistor} = i_3^2 R = (4^2)(2) = 32 \\text{ W}\\)\\n(o) Electrostatic stored per second in capacitor at \\(t = 2\\text{ s}\\) is\\n\\(\\frac{dU_e}{dt} = \\frac{d}{dt}\\left(\\frac{Q^2}{2C}\\right) = \\frac{1}{2C} \\frac{d}{dt}(Q^2) = \\frac{Q}{C}\\frac{dQ}{dt} = \\frac{Q}{C}i_2\\)\\nSince \\(i_2 = 0\\)\\n\\(\\Rightarrow \\frac{dU_e}{dt} = 0\\)",
+      "solution": "*(a)* Using Fleming's Right Hand Rule, we see that the induced current in the wire PQ is from Q to P. So, we have\\n\\(V_P - V_Q = \\varepsilon = Blv = (4)(1)(2) = 8 \\text{ V}\\)\\n*(b)* Inductor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_L = \\varepsilon = Blv = 8 \\text{ V}\\)\\n*(c)* Capacitor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_c = \\varepsilon = Blv = 8 \\text{ V}\\)\\n*(d)* Resistor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_R = \\varepsilon = Blv = 8 \\text{ V}\\)\\n*(e)* Since \\(V_L = 8 \\text{ V}\\)\\n\\(\\Rightarrow L\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow 4\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow \\frac{di}{dt} = 2 \\text{ As}^{-1}\\)\\n*(f)* Charge on the capacitor is\\n\\(Q = C\\varepsilon = (1)(8) = 8 \\text{ coulomb}\\)\\n\\(\\Rightarrow i_2 = \\frac{dQ}{dt} = \\frac{d}{dt}(8) = 0\\)\\n*(g)* Current through resistor is\\n\\(i_3 = \\frac{\\varepsilon}{R} = \\frac{8}{2} = 4 \\text{ A}\\)\\n*(h)* Since rate of change of current in inductor is \\(\\frac{di_1}{dt} = 2 \\text{ As}^{-1}\\)\\nSo, current in the inductor at \\(t = 2\\text{ s}\\) is\\n\\(i_1 = \\left(\\frac{di_1}{dt}\\right)\\Delta t = (2)(2) = 4 \\text{ A}\\)\\n*(i)* Since wire PQ is acting as source of emf and supplies current i₁ to inductor, i₂ to capacitor and i₃ to resistor, so current through wire PQ is\\n\\(i = i_1 + i_2 + i_3 = 4 + 0 + 4 = 8 \\text{ A}\\)\\n*(j)* To keep the wire PQ moving with constant velocity, an external force that equals the magnetic force on the current carrying conductor should be applied on it.\\n\\(\\Rightarrow F_{external} = F_{magnetic} = Bil = (4)(8)(1) = 32 \\text{ N}\\)\\n*(k)* Energy supplied per second by the source is\\n\\(P_{supplied} = \\varepsilon i = (8)(8) = 64 \\text{ W}\\)\\n*(l)* Power generated by the applied external force is\\n\\(P_{external\\ force} = F_{ext} v = (32)(2) = 64 \\text{ W}\\)\\n*(m)* Magnetic energy stored per second in inductor is\\n\\(\\frac{dU_m}{dt} = \\frac{d}{dt}\\left(\\frac{1}{2}Li^2\\right) = \\frac{1}{2}L\\frac{d}{dt}(i^2) = \\frac{L}{2} 2i \\frac{di}{dt} = Li\\frac{di}{dt}\\)\\nSince \\(\\frac{di1}{dt} = 2 \\text{ As}^{-1}\\) and \\(i_1 = 4 \\text{ A}\\) at \\(t = 2\\text{ s}\\)\\n\\(\\Rightarrow \\frac{dU_m}{dt} = Li_1\\frac{di_1}{dt} = (4)(4)(2) = 32 \\text{ W}\\)\\n*(n)* Energy dissipated per second in the resistor at \\(t = 2\\text{ s}\\) is\\n\\(P_{Resistor} = i_3^2 R = (4^2)(2) = 32 \\text{ W}\\)\\n*(o)* Electrostatic stored per second in capacitor at \\(t = 2\\text{ s}\\) is\\n\\(\\frac{dU_e}{dt} = \\frac{d}{dt}\\left(\\frac{Q^2}{2C}\\right) = \\frac{1}{2C} \\frac{d}{dt}(Q^2) = \\frac{Q}{C}\\frac{dQ}{dt} = \\frac{Q}{C}i_2\\)\\nSince \\(i_2 = 0\\)\\n\\(\\Rightarrow \\frac{dU_e}{dt} = 0\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
       "hint": "Use Fleming's right-hand rule for the induced emf.  Apply Kirchhoff's laws and consider the relationships between voltage, current, and power in the circuit elements.",
@@ -1057,6 +1057,385 @@
         "Use the appropriate formulas to calculate the currents, forces, and power/energy values."
       ],
       "answer": "(a) 8 V \\n(b) 8 V \\n(c) 8 V \\n(d) 8 V \\n(e) 2 As⁻¹ \\n(f) 0 \\n(g) 4 A \\n(h) 4 A \\n(i) 8 A \\n(j) 32 N \\n(k) 64 W \\n(l) 64 W \\n(m) 32 W \\n(n) 32 W \\n(o) 0 W "
+    },
+    {
+      "id": "EM-0039",
+      "title": "Frequency Interval in Series LCR Circuit",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "LCR Circuit",
+          "Resonance",
+          "Bandwidth",
+          "Frequency"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Prove that in a series LCR circuit, the frequencies at which the current amplitude falls to \\(\\frac{1}{\\sqrt{2}}\\) of the current at resonance are separated by an interval equal to \\(\\frac{R}{2\\pi L}\\).",
+      "solution": "At resonance, we have\\n\\(f_0 = \\frac{1}{2\\pi\\sqrt{LC}}\\)\\n\\(\\Rightarrow I_0 = \\frac{V_0}{R} \\quad \\text{{as Z = R}}\\)\\nAccording to the problem, we have \\(I = \\frac{I_0}{\\sqrt{2}}\\)\\n\\nDIAGRAM[1,200]\\n\\(\\Rightarrow \\frac{1}{\\sqrt{2}}\\frac{V_0}{R} = \\frac{V_0}{\\sqrt{R^2 + \\left(\\omega L - \\frac{1}{\\omega C}\\right)^2}}\\)\\n\\(\\Rightarrow 2R^2 = R^2 + \\left(\\omega L - \\frac{1}{\\omega C}\\right)^2\\)\\n\\(\\Rightarrow \\omega L - \\frac{1}{\\omega C} = \\pm R\\)\\nIf \\(f_1\\) and \\(f_2\\) are two corresponding frequencies, then\\n\\(2\\pi f_1 L - \\frac{1}{2\\pi f_1 C} = R \\quad ...(1)\\)\\n\\(2\\pi f_2 L - \\frac{1}{2\\pi f_2 C} = -R \\quad ...(2)\\)\\nDividing (1) by \\(f_2\\), (2) by \\(f_1\\) and solving, we get\\n\\(\\frac{2\\pi f_1 L}{f_2} - \\frac{1}{2\\pi f_1 f_2 C} = \\frac{R}{f_2}\\)\\n\\(\\frac{2\\pi f_2 L}{f_1} - \\frac{1}{2\\pi f_1 f_2 C} = \\frac{-R}{f_1}\\)\\nSubtracting the above two equations:\\n\\(2\\pi L\\left(\\frac{f_1}{f_2} - \\frac{f_2}{f_1}\\right) = R\\left(\\frac{1}{f_2} + \\frac{1}{f_1}\\right)\\)\\n\\(2\\pi L\\left(\\frac{f_1^2 - f_2^2}{f_1 f_2}\\right) = R\\left(\\frac{f_1 + f_2}{f_1 f_2}\\right)\\)\\n\\(2\\pi L(f_1 - f_2)\\left(\\frac{f_1 + f_2}{f_1 f_2}\\right) = R\\left(\\frac{f_1 + f_2}{f_1 f_2}\\right)\\)\\n\\(2\\pi L(f_1 - f_2) = R\\)\\n\\(f_1 - f_2 = \\frac{R}{2\\pi L}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The current amplitude in a series LCR circuit is given by \\(I = \\frac{V_0}{\\sqrt{R^2 + (\\omega L - \\frac{1}{\\omega C})^2}}\\). At resonance, \\(\\omega_0 = \\frac{1}{\\sqrt{LC}}\\) and \\(I_0 = \\frac{V_0}{R}\\).",
+      "methodOfSolving": [
+        "Write the expression for the current amplitude in a series LCR circuit.",
+        "Set the current amplitude to \\(\\frac{1}{\\sqrt{2}}\\) of the resonant current.",
+        "Solve for the frequencies f1 and f2.",
+        "Find the difference f1 - f2."
+      ],
+      "answer": "\\(f_1 - f_2 = \\frac{R}{2\\pi L}\\)"
+    },
+    {
+      "id": "EM-0040",
+      "title": "Magnetic Field due to Displacement Current",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Displacement Current",
+          "Magnetic Field",
+          "Ampere-Maxwell Law",
+          "Capacitor"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two circular plates each of radius 0.1 m are used to form a parallel plate capacitor. If displacement current between the plates is \\(2\\pi\\) ampere, then calculate the magnetic field produced by displacement current 4 cm from the axis of the plates.\\n\\nDIAGRAM[1,300]",
+      "solution": "Current density of the displacement current is\\n\\(J_d = \\frac{2\\pi}{\\pi (0.1)^2} = \\frac{2}{0.01} = 200 \\text{ Am}^{-2}\\)\\nSince, \\(J_d = \\frac{I_d}{A}\\)\\n\\(\\implies i_d = J_d \\times \\pi (0.04)^2\\)\\n\\(\\implies i_d = 200 \\times \\pi \\times 16 \\times 10^{-4}\\)\\n\\(\\implies i_d = 32\\pi \\times 10^{-2} \\text{ A}\\)\\n\\(\\implies i_d = 1 \\text{ A}\\)\\nSince, \\(\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 i_{enclosed}\\)\\n\\(\\implies B \\times 2\\pi (0.04) = 4\\pi \\times 10^{-7} \\times 1\\)\\n\\(\\implies B = \\frac{2 \\times 10^{-7}}{4 \\times 10^{-2}} = 0.5 \\times 10^{-5}\\)\\n\\(\\implies B = 5 \\times 10^{-6} \\text{ T}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the displacement current density. Use Ampere-Maxwell's law to find the magnetic field.",
+      "methodOfSolving": [
+        "Find the displacement current density Jd.",
+        "Calculate the enclosed displacement current within a circle of radius 4 cm.",
+        "Apply Ampere-Maxwell's law to find the magnetic field at a distance of 4 cm from the axis."
+      ],
+      "answer": "\\(5 \\times 10^{-6} \\text{ T}\\)"
+    },
+    {
+      "id": "EM-0041",
+      "title": "Stable Equilibrium of a Charged Particle",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Equilibrium",
+          "Coulomb's Law",
+          "Stability"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A particle of mass \\(m\\) and charge \\(q\\) is attached to a light insulating thread of length \\(L\\). The other end of the thread is secured at point O. Exactly below point O, there is a small ball having charge \\(Q\\) fixed on an insulating horizontal surface. The particle remains in equilibrium vertically above the ball with the string taut. Distance of the ball from point O is \\(L\\). Find the minimum value of \\(Q\\) for which the particle will be in a stable equilibrium for any gentle horizontal push given to it.\\n\\nDIAGRAM[1,150]",
+      "solution": "In equilibrium\\n\\(\\frac{KQq}{(2L)^2} = mg \\implies Q \\geq \\frac{4L^2 mg}{Kq}\\)\\nNow consider the particle in a slightly displaced position\\nEquilibrium will be stable if tangential component (along TT) of electrostatic repulsion is greater than the tangential component of \\(mg\\).\\n\\nDIAGRAM[2,250]\\n\\(\\implies F_e \\sin\\left(\\frac{\\theta}{2}\\right) \\geq mg\\sin\\theta\\)\\nFor small displacement,\\n\\(\\sin\\theta \\approx \\theta\\)\\n\\(\\sin\\frac{\\theta}{2} \\approx \\frac{\\theta}{2}\\)\\n\\(\\therefore K\\frac{qQ}{(2L)^2} \\frac{\\theta}{2} \\geq mg\\theta\\)\\n\\(\\therefore Q \\geq \\frac{8L^2 mg}{Kq} = \\frac{32\\pi \\epsilon_0 L^2 mg}{q}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "For stable equilibrium, the net tangential force due to the electrostatic repulsion and the weight of the particle should restore the particle to its equilibrium position.",
+      "methodOfSolving": [
+        "Write the condition for equilibrium in the vertical direction.",
+        "Consider a small horizontal displacement and analyze the tangential forces.",
+        "For stable equilibrium, the tangential component of the electrostatic force should be greater than or equal to the tangential component of the weight."
+      ],
+      "answer": "\\(\\frac{32\\pi \\epsilon_0 L^2 mg}{q}\\)"
+    },
+    {
+      "id": "EM-0042",
+      "title": "Electric Field Due to Charged Spheres",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electric Field",
+          "Charged Sphere",
+          "Volume Charge Density",
+          "Superposition"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In the figure shown, spheres \\(S_1\\), \\(S_2\\) and \\(S_3\\) have radii \\(R\\), \\(2R\\) and \\(4R\\) respectively. \\(C_1\\), \\(C_2\\) and \\(C_3\\) are centers of the three spheres lying in a plane. Angle \\(\\angle C_1 C_2 C_3\\) is right angle. Sphere \\(S_3\\) has a uniformly spread volume charge density of \\(4\\rho\\). The remaining part of \\(S_2\\) has uniform charge density of \\(2\\rho\\) and the left over part of \\(S_1\\) has a uniform charge density of \\(\\rho\\).\\n\\nDIAGRAM[1,300]\\n(a) Find electric field at a point A at a distance \\(\\frac{R}{8}\\) from \\(C_3\\) on the line \\(C_2 C_3\\) (see figure)\\n(b) Find electric field at point B at a distance \\(\\frac{R}{4}\\) from \\(C_2\\) on the line \\(C_3 C_2\\) (see figure)",
+      "solution": "(a) Field at A:\\nDue to \\(\\rho\\) is \\(E_1 = \\frac{\\rho}{3\\epsilon_0}\\left(\\frac{R}{2}\\right)\\) parallel to \\(C_1 C_2\\)\\nDue to \\(2\\rho\\) is \\(E_2 = \\frac{2\\rho}{3\\epsilon_0}\\left(\\frac{R}{4}\\right)\\) parallel to \\(C_2 C_3 = \\frac{\\rho R}{3\\epsilon_0 \\cdot 2}\\)\\nDue to \\(3\\rho\\) is \\(\\frac{4\\rho}{3\\epsilon_0} \\frac{R}{8}\\) parallel to \\(C_4 = \\frac{\\rho R}{3\\epsilon_0 \\cdot 2}\\)\\n\\nDIAGRAM[2,150]\\n\\(\\therefore E_A = \\sqrt{E_1^2 + (E_2 + E_3)^2} = \\frac{\\sqrt{5}}{6}\\frac{\\rho R}{\\epsilon_0}\\)\\n(b) Field at B\\nDue to \\(\\rho\\) is \\(E_1 = \\frac{\\rho}{3\\epsilon_0} \\frac{R}{2}\\) parallel to \\(C_1 C_2\\)\\nDue to \\(2\\rho\\) in entire sphere \\(S_2\\) is \\(E_2 = \\frac{2\\rho R}{3\\epsilon_0 \\cdot 4}\\) in direction \\(C_2 B\\)\\nDue to \\(2\\rho\\) in \\(S_3\\) is\\n\\(E_3 = \\frac{1}{4\\pi \\epsilon_0} \\frac{\\frac{4}{3} \\pi \\left(\\frac{R}{4}\\right)^3 \\cdot 2\\rho}{\\left(\\frac{R}{2}\\right)^2} = \\frac{\\rho R}{3\\epsilon_0 \\cdot 8}\\) in direction \\(C_3 B\\)\\n\\nDIAGRAM[3,150]\\n\\(E_B = \\sqrt{E_1^2 + (E_2 + E_3)^2} = \\frac{\\sqrt{41}}{24} \\frac{\\rho R}{\\epsilon_0}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the principle of superposition. Calculate the electric field due to each sphere individually and then add them vectorially.",
+      "methodOfSolving": [
+        "Calculate the electric field due to each sphere at point A.",
+        "Add the electric fields vectorially to find the net electric field at A.",
+        "Repeat the process for point B."
+      ],
+      "answer": "(a) \\(E_A = \\frac{\\sqrt{5}}{6}\\frac{\\rho R}{\\epsilon_0}\\)\\n(b) \\(E_B = \\frac{\\sqrt{41}}{24} \\frac{\\rho R}{\\epsilon_0}\\)"
+    },
+    {
+      "id": "EM-0043",
+      "title": "Charged Particle in Concentric Spherical Shells",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Circular Motion",
+          "Energy Conservation",
+          "Electric Field"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two concentric spherical shells have radii \\(R\\) and \\(2R\\). The outer shell is grounded and the inner one is given a charge \\(+Q\\). A small particle having mass \\(m\\) and charge \\(-q\\) enters the outer shell through a small hole in it. The speed of the charge entering the shell was \\(u\\) and its initial line of motion was at a distance \\(a = \\sqrt{2}R\\) from the centre.\\n\\nDIAGRAM[1,250]\\n(a) Find the radius of curvature of the path of the particle immediately after it enters the shell.\\n(b) Find the speed with which the particle will hit the inner sphere. Assume that distribution of charge on the spheres do not change due to presence of the charge particle.",
+      "solution": "Charge \\(-Q\\) is induced on the inner surface of the outer shell. There is no charge on the outer surface of the shell as it is grounded.\\nAn electric field exists in the space between the two shells.\\n\\(E = \\frac{KQ}{R^2}\\) for \\(R < r < 2R\\)\\nJust after the charge enters, it experience a force due to this electric field directed towards the centre.\\n\\(F = \\frac{KQq}{R^2}\\)\\n\\nDIAGRAM[2,200]\\nComponent of this force perpendicular to the direction of instantaneous velocity u is\\n\\(F_L = F\\sin\\theta = \\frac{F a}{\\sqrt{2}R} = \\frac{KQq a}{\\sqrt{2}R^3}\\)\\nIf radius of curvature of the path is \\(r\\)\\n\\(\\frac{mu^2}{r} = F_L\\)\\n\\(\\implies r = \\frac{mu^2}{F_L} = \\frac{\\sqrt{2}mu^2 R^3}{KQqa}\\)\\n\\(\\implies r = \\frac{16\\sqrt{2} \\pi \\epsilon_0 R^3 mu^2}{Qq a}\\)\\n(b) The potential difference between the two spheres is\\n\\(V_{inner} - V_{outer} = \\frac{KQ}{R} - \\frac{KQ}{2R} = \\frac{KQ}{2R}\\)\\nEnergy conservation for the charge entering the shell gives:\\n\\(\\frac{1}{2}mv^2 + (-q)V_{inner} = \\frac{1}{2}mu^2 + (-q)V_{outer}\\)\\n\\(\\implies \\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + q(V_{inner} - V_{outer})\\)\\n\\(\\implies \\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + \\frac{Qq}{8\\pi\\epsilon_0 R}\\)\\n\\(\\implies v = \\sqrt{u^2 + \\frac{Qq}{4\\pi\\epsilon_0 mR}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Consider the force on the charged particle due to the electric field between the shells and use the formula for centripetal force.\\n(b) Use the principle of energy conservation.",
+      "methodOfSolving": [
+        "(a) Apply Coulomb's law to find the electric force on the particle. Use the formula for centripetal force to relate this force to the radius of curvature.",
+        "(b) Apply the principle of energy conservation to find the speed of the particle when it hits the inner sphere."
+      ],
+      "answer": "(a) \\(r = \\frac{\\sqrt{2}mu^2 R^3}{KQqa}\\)\\n(b) \\(v = \\sqrt{u^2 + \\frac{Qq}{4\\pi\\epsilon_0 mR}}\\)"
+    },
+    {
+      "id": "EM-0044",
+      "title": "Force between Charged Sphere and Hemisphere",
+      "statistics": {
+        "numberOfDiagrams": 4,
+        "idealAverageTimeInS": 1200,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Coulomb's Law",
+          "Electric Field",
+          "Charged Sphere",
+          "Hemisphere",
+          "Superposition",
+          "Integration"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A spherical shell of radius \\(R\\) carries a uniformly distributed surface charge \\(q\\). A hemispherical shell of radius \\(r < R\\) is placed covering it with its centre coinciding with that of the sphere of radius \\(R\\). The hemisphere has a uniform surface charge \\(q/2\\) on it. The charge distribution on the sphere and the hemisphere is not affected due to each other. \\n\\nDIAGRAM[1,200]\\n(a) Calculate the force that the sphere will exert on the hemisphere.\\n(b) Now half of the inner sphere is removed along with its charge (i.e., the remaining half has charge \\(q/2\\)). Find the force between the bigger and smaller hemispheres in the two cases shown in figure (a) and figure (b).\\n\\nDIAGRAM[2,200]\\n(c) Explain why the force in part (b) is different in the two cases.\\nDIAGRAM[3,200]",
+      "solution": "(a) The sphere can be replaced with a point charge \\((q)\\) at its centre. We can either calculate the force applied by \\(q\\) on each ring element of the hemisphere and add it to get the resultant force or we can calculate electric field produced by the hemisphere at its centre (by considering similar ring elements). Let's proceed to the second method.\\nRecall that field due to a charged ring on its axis is given by\\n\\(E = \\frac{1}{4\\pi\\epsilon_0} \\frac{Qx}{(R^2 + x^2)^{3/2}}\\)\\nConsider a ring element on the hemisphere as shown.\\n\\nDIAGRAM[4,250]\\nCharge on the ring \\(= \\frac{q}{2\\pi R^2}(2\\pi R)\\sin\\theta d\\theta = Q\\cos\\theta d\\theta\\)\\n\\(dE_{ring} = \\frac{1}{4\\pi\\epsilon_0} \\frac{(Q\\cos\\theta d\\theta)R\\sin\\theta}{(R^2 + R^2 \\sin^2\\theta)^{3/2}} = \\frac{Q}{4\\pi\\epsilon_0 R} \\frac{\\cos\\theta \\sin\\theta d\\theta}{(1 + \\sin^2\\theta)^{3/2}}\\)\\nPut \\(r = 1 + \\sin^2\\theta\\)\\n\\(\\implies dr = 2\\sin\\theta \\cos\\theta d\\theta \\implies \\frac{dr}{2} = \\sin\\theta \\cos\\theta d\\theta\\)\\n\\(\\implies E = \\frac{Q}{8\\pi\\epsilon_0 R} \\int_1^2 \\frac{dr}{r^{3/2}} = \\frac{Q}{8\\pi\\epsilon_0 R}\\left[-2r^{-1/2}\\right]_1^2 = \\frac{Q}{4\\pi\\epsilon_0 R}\\left(1 - \\frac{1}{\\sqrt{2}}\\right)\\)\\nRequired force\\n\\(F = Eq = \\frac{Qq}{4\\pi\\epsilon_0 R}\\left(1 - \\frac{1}{\\sqrt{2}}\\right)\\)\\n(b) Complete the outer sphere.\\nNow this sphere will exert no force on the inner hemisphere.\\nThis means the two hemispheres in the outer sphere exert equal and opposite force on the inner hemisphere.\\nCall the forces on inner sphere due to two halves \\(H_1\\) and \\(H_2\\) of outer sphere as \\(F_1\\) and \\(F_2\\).\\n\\(F_1 = F_2 = F^{'}\\) (say)\\nNow complete the inner sphere with outer sphere as hemispherical\\nNow, force between one half of inner sphere (h1) and the outer sphere is very much like that between H1 and inner hemisphere in previous drawing.\\nForce between \\(H_2\\) and outer hemisphere is like \\(F_2\\) in previous drawing.\\n\\(\\implies\\) Resultant force on inner ball due to outer hemisphere is \\(F_1 + F_2 = 2F(-)\\)\\nThis force is already known to us from the previous question.\\n\\(\\implies\\) Force between the outer and the inner hemispheres = half the answer obtained in last question\\n\\(F = \\frac{Q}{8\\pi\\epsilon_0 R^2}\\left(1 - \\frac{1}{\\sqrt{2}}\\right)\\)\\n\\nDIAGRAM[5,250]\\n(c) In case (a), the force is attractive because the charges on the inner and outer hemispheres are opposite.  In case (b),\\nDIAGRAM[6,250] the force is repulsive because the charges are the same.  The difference comes from the way the charges are arranged and interact. The solution provided does not sufficiently explain why this is the case.",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "(a) Use the method of superposition or consider a ring element in the hemisphere and integrate. \\n(b) The removal of half the inner sphere changes the charge distribution and affects the interaction with the outer sphere.\\n(c) Consider how the charge distribution affects the nature of the force.",
+      "methodOfSolving": [
+        "(a) Calculate the electric field due to the outer sphere at the center of the hemisphere and then compute the force on the hemisphere.",
+        "(b) Consider the force between the hemispheres in case (a) and (b) separately. Note the change in charge distribution.",
+        "(c) Discuss the role of charge distribution in determining the attractive and repulsive forces."
+      ],
+      "answer": "(a) \\(F = \\frac{Qq}{4\\pi\\epsilon_0 R}\\left(1 - \\frac{1}{\\sqrt{2}}\\right)\\)\\n(b) \\(F = \\frac{Q}{8\\pi\\epsilon_0 R^2}\\left(1 - \\frac{1}{\\sqrt{2}}\\right)\\) \\n(c) Explained in the solution."
+    },
+    {
+      "id": "EM-0045",
+      "title": "Electric Potential of a Charged Hemispherical Bowl",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Potential",
+          "Hemisphere",
+          "Surface Charge Density"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A hemispherical bowl of radius \\(R\\) carries a uniform surface charge density of \\(\\sigma\\). Find potential at a point \\(P\\) located just outside the rim of the bowl (see figure). Also calculate the potential at a point A located at a distance \\(R/2\\) from the centre on the equatorial plane.\\n\\nDIAGRAM[1,200]",
+      "solution": "Potential at centre\\n\\(V_C = \\frac{KQ}{R} = \\frac{1}{4\\pi\\epsilon_0} \\frac{2\\pi R^2 \\sigma}{R} = \\frac{\\sigma R}{2\\epsilon_0}\\)\\n\\nDIAGRAM[2,200]\\nPotential at point P and A will also be same because the electric field at all points of the circular base is perpendicular to the circular surface. When one moves from C to P, he is travelling on an equipotential surface.\\nTherefore, potential at P and A is same and is equal to \\(V_C\\).\\n\\(V_P = V_A = \\frac{\\sigma R}{2\\epsilon_0}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The potential at the rim of the bowl is the same as the potential at the center of the bowl due to symmetry. Use the formula for the potential due to a uniformly charged sphere.",
+      "methodOfSolving": [
+        "Calculate the total charge Q on the hemispherical bowl.",
+        "Use the formula for the potential due to a uniformly charged sphere to find the potential at the center of the bowl.",
+        "Note that the potential at the rim is the same as the potential at the center due to symmetry."
+      ],
+      "answer": "\\(V_P = V_A = \\frac{\\sigma R}{2\\epsilon_0}\\)"
+    },
+    {
+      "id": "EM-0046",
+      "title": "Equivalent Resistance of an Infinite Network",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Equivalent Resistance",
+          "Infinite Network",
+          "Series Parallel Combination"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "An infinite network of resistances has been made as shown in the Figure. Each resistance is \\(R\\). Find the equivalent resistance between A and B.\\n\\nDIAGRAM[1,300]",
+      "solution": "Points 1 and 2 are equipotential. They can be connected together. Points 3, 4, 5 and 6 are equipotential. Thee together. And so on.\\n\\nDIAGRAM[2,350]\\n\\nDIAGRAM[3,350]\\n\\nDIAGRAM[4,200]\\n\\(\\therefore\\) Equivalent is\\n\\(R_0 = R + \\left[\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + ... \\infty\\right]\\)\\n\\(= R\\left[\\frac{1}{1 - \\frac{1}{2}}\\right] = 2R\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Notice the symmetry in the network.  The equivalent resistance can be found by considering the pattern of series and parallel combinations.",
+      "methodOfSolving": [
+        "Identify the repeating pattern in the infinite network.",
+        "Assume the equivalent resistance of the infinite network is \\(R_0\\).",
+        "Express \\(R_0\\) in terms of \\(R\\) and the equivalent resistance of the remaining part of the network.",
+        "Solve the resulting equation for \\(R_0\\)."
+      ],
+      "answer": "\\(2R\\)"
+    },
+    {
+      "id": "EM-0047",
+      "title": "Magnetic Field due to a Semicircular Arc",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Biot-Savart Law",
+          "Magnetic Field",
+          "Semicircle",
+          "Integration"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A current carrying wire is in the shape of a semicircle of radius \\(R\\) and has current \\(I\\). \\(M\\) is midpoint of the arc and point \\(P\\) lies on extension of MC at a distance \\(2R\\) from M. Find the magnetic field due to circular arc at point P.\\n\\nDIAGRAM[1,250]",
+      "solution": "Point P lies on the circumference of the circle. Consider an element subtending angle \\(d\\theta\\) at the centre of the circle. Field at P due to this element is given by Biot – Savart law.\\n\\(dB = \\frac{\\mu_0 I}{4\\pi} \\frac{dl \\sin(90^\\circ - \\frac{\\theta}{2})}{l^2}\\)\\nWhere \\(dl = Rd\\theta\\) and \\(r = 2R\\cos\\left(\\frac{\\theta}{2}\\right)\\)\\n\\nDIAGRAM[2,300]\\n\\(\\implies dB = \\frac{\\mu_0 I}{4\\pi} \\frac{Rd\\theta \\cos\\left(\\frac{\\theta}{2}\\right)}{[2R\\cos\\left(\\frac{\\theta}{2}\\right)]^2} = \\frac{\\mu_0 I}{16\\pi R} \\sec\\left(\\frac{\\theta}{2}\\right)d\\theta\\)\\nDirection of \\(dB\\) is \\(\\odot\\)\\nNote: If you consider an identical element in the other quadrant, field at P due to the element is -\\n\\(dB = \\frac{\\mu_0 I}{4\\pi} \\frac{Rd\\theta \\sin(90^\\circ - \\frac{\\theta}{2})}{[2R\\cos(\\frac{\\theta}{2})]^2} = -\\frac{\\mu_0 I}{16\\pi R} \\sec\\left(\\frac{\\theta}{2}\\right)d\\theta\\)\\nAll elements contribute in same direction and resultant field is\\n\\(B = 2 \\times \\frac{\\mu_0 I}{16\\pi R} \\int_0^{\\pi/2} \\sec\\left(\\frac{\\theta}{2}\\right)d\\theta\\)\\n\\( = \\frac{\\mu_0 I}{4\\pi R} [2\\ln(\\sec\\frac{\\theta}{2} + \\tan\\frac{\\theta}{2})]_0^{\\pi/2}\\)\\n\\(= \\frac{\\mu_0 I}{4\\pi R} [2\\ln(\\sqrt{2} + 1) - 2\\ln(1 + 0)]\\)\\n\\( = \\frac{\\mu_0 I}{4\\pi R} 2\\ln(\\sqrt{2} + 1) = \\frac{\\mu_0 I}{2\\pi R}\\ln(\\sqrt{2} + 1)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the Biot-Savart law to find the magnetic field due to a small current element. Integrate over the semicircular arc to find the total magnetic field.",
+      "methodOfSolving": [
+        "Apply the Biot-Savart law to a small element of the semicircular arc.",
+        "Express the magnetic field dB in terms of the current I, radius R, and the angle θ.",
+        "Integrate dB over the semicircle (from θ=0 to θ=π)."
+      ],
+      "answer": "\\(\\frac{\\mu_0 I}{2\\pi R}\\ln(\\sqrt{2} + 1)\\)"
+    },
+    {
+      "id": "EM-0048",
+      "title": "Magnetic Induction due to Current Spreading on a Conducting Sheet",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Induction",
+          "Ampere's Law",
+          "Conducting Sheet",
+          "Symmetry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A straight current carrying wire has its one end attached to an infinity conducting sheet (shown as a circle in the figure). The other end of the wire goes to infinity and the wire is perpendicular to the sheet. The current spreads uniformly on the surface of the sheet. Calculate the magnitude of magnetic induction field at a point P at a distance \\(d\\) from the straight wire. Current in the wire is \\(I\\).\\n\\nDIAGRAM[1,250]",
+      "solution": "Consider an Amperian loop in shape of a circle passing through P. Due to symmetry field at all points on the circle will have same magnitude and tangential direction.\\n\\(\\implies \\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I\\)\\n\\(\\implies B(2\\pi d) = \\mu_0 I\\)\\n\\(\\implies B = \\frac{\\mu_0 I}{2\\pi d}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Due to the symmetry of the problem, use Ampere's law with a circular Amperian loop passing through point P.",
+      "methodOfSolving": [
+        "Construct a circular Amperian loop around the wire, passing through point P.",
+        "Use Ampere's law to relate the line integral of the magnetic field around the loop to the enclosed current.",
+        "Due to symmetry, the magnetic field has constant magnitude along the loop. Solve for B."
+      ],
+      "answer": "\\(B = \\frac{\\mu_0 I}{2\\pi d}\\)"
+    },
+    {
+      "id": "EM-0049",
+      "title": "Circular Arc Shape of a Current-Carrying Wire in a Magnetic Field",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Force",
+          "Current-Carrying Wire",
+          "Circular Arc",
+          "Equilibrium"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A light freely deformable conducting wire with insulation has its two ends (A and C) fixed to the ceiling. The two vertical parts of the wire are close to each other. A load of mass \\(m\\) is attached to the middle of the wire. The entire region has a uniform horizontal magnetic field \\(B\\) directed out of the plane of the figure. Prove that the two parts of the wire take the shape of circular arcs when a current \\(I\\) is passed through the wire. Neglect the magnetic interaction between the two parts of the wire.\\n\\nDIAGRAM[1,100]",
+      "solution": "Magnetic force on any small element of the wire is perpendicular to its length. It means that the tension will be constant along the wire.\\nConsider a small segment of the wire subtending a small angle \\(\\Delta\\theta\\) at the centre of curvature. Magnetic force is\\n\\(F_m = I(R\\Delta\\theta)B\\)\\nThis is balanced by components of tension\\n\\(= 2T\\sin\\left(\\frac{\\Delta\\theta}{2}\\right) = T\\Delta\\theta\\)\\n\\(\\implies T\\Delta\\theta = I(R\\Delta\\theta)B \\implies T = IRB\\)\\n\\(\\text{Or, } R = \\frac{T}{IB} = \\text{constant}\\)\\n\\nDIAGRAM[2,200]\\nRadius of curvature remains constant means that the two segments will take the shape of circular arcs.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the forces acting on a small segment of the wire. The magnetic force should be balanced by the components of tension.",
+      "methodOfSolving": [
+        "Consider a small segment of the wire and draw a free body diagram showing the forces acting on it.",
+        "The magnetic force on the segment is balanced by the components of tension along the wire.",
+        "Show that the radius of curvature is constant, implying a circular arc shape."
+      ],
+      "answer": "Proved in the solution"
+    },
+    {
+      "id": "EM-0050",
+      "title": "Induced Electric Field in a Circular Conductor",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Induced Electric Field",
+          "Faraday's Law",
+          "Ohm's Law",
+          "Circular Conductor"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A uniform magnetic field \\(B\\) exists perpendicular to the plane of the Figure in a circular region of radius \\(b\\) with its centre at O. A circular conductor of radius \\(a < b\\) and centre at O is made by joining two semicircular wires ABC and ADC. The two segments have same cross section but different resistances \\(R_1\\) and \\(R_2\\) respectively. The magnetic field is increased with time and there is an induced current in the conductor.\\n\\nDIAGRAM[1,150]\\n(a) Find the ratio of electric fields inside the conductors ABC and ADC.\\n(b) Explain why the electric field in two conductors is different despite the fact that the magnetic field is symmetrical.",
+      "solution": "(a) Current (and hence current density) in the entire loop must be same.\\nFrom microscopic form of Ohm's law we can write\\n\\(\\sigma E_1 = \\sigma E_2 = I\\implies \\frac{E_1}{E_2} = \\frac{R_1}{R_2}\\)\\n\\nDIAGRAM[2,200]\\n(b) The induced electric field must be uniform everywhere in the circular conductor. It is given by\\n\\(2\\pi a E_m = \\pi a^2 \\frac{dB}{dt} \\implies E_m = \\frac{a}{2}\\frac{dB}{dt}\\)\\nThere is accumulation of charge at the junctions which produce additional electric field in the conductor. If \\(R_1 > R_2\\), then \\(E_1 > E_2\\). In this case the charge at the upper junction is negative and charge at the lower junction will be positive. In figure \\(E_0^{'}\\) is electric field due to charge.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) The current density must be the same throughout the conductor because the conductor has uniform cross-section.  Use Ohm's law to relate the electric field to the current density.\\n(b) Consider the effect of charge accumulation at the junctions.",
+      "methodOfSolving": [
+        "(a) Relate the electric field in each semicircular wire to the current density and resistance using Ohm's law.",
+        "(b) Explain how charge accumulation at junctions due to the induced EMF affects the electric field in each semicircular wire."
+      ],
+      "answer": "(a) \\(\\frac{E_1}{E_2} = \\frac{R_1}{R_2}\\)\\n(b) Explained in the solution"
+    },
+    {
+      "id": "EM-0051",
+      "title": "RLC Circuit Analysis with Switch",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RLC Circuit",
+          "Steady State",
+          "Transient Response",
+          "Energy Dissipation"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In the circuit shown, switch S is kept closed and the circuit is in steady state.\\n\\nDIAGRAM[1,200]\\n(a) Find reading of the ideal voltmeter.\\n(b) Now the switch is opened. Find the reading of the voltmeter immediately after the switch is opened.\\n(c) Find the heat dissipated in resistance R after the switch is opened.",
+      "solution": "(a) There is no current through capacitors, voltmeters and inductors are zero resistance, when the circuit is in steady state. The effective circuit is as shown.\\n\\nDIAGRAM[2,200]\\nReading of voltmeter \\(= E = V_E = V_G\\) and \\(V_G - V_D = E\\)\\n(b) The current through inductors and the voltages across the capacitors cannot change immediately. Current, before the switch is opened, is \\(I = \\frac{E}{R}\\) through both inductors.\\n\\nDIAGRAM[3,200]\\nAfter opening the switch, the current in R and the inductor B and D must be same (since voltmeter does not conduct). It implies that current through R is still I and \\(V_B - V_D = RI = E\\). The current I in GD will loop through GDGB. The current I in the inductor between A and G must loop through AGEA.\\n\\(\\therefore V_D - V_G = 2E\\)\\n\\(V_D - V_G = 3E\\)\\n(c) When switch was opened the capacitor between A and E was uncharged. The circuit is effectively two disjoint loops -BGD and AGE.\\nEnergy stored in L and C gets dissipated in R.\\n\\(U_R = \\frac{1}{2} LI^2 + \\frac{1}{2} CE^2\\)\\n\\(= \\frac{1}{2} L \\left(\\frac{E}{R}\\right)^2 + \\frac{1}{2} CE^2 = \\frac{1}{2} E^2 \\left(\\frac{L}{R^2} + C\\right)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) In steady state, the capacitors act as open circuits.  \\n(b) The current through the inductors cannot change instantaneously.  Consider the loops formed after the switch is opened.\\n(c) The energy stored in the inductor and capacitor is dissipated in the resistor.",
+      "methodOfSolving": [
+        "(a) Analyze the circuit in steady state, considering the capacitors as open circuits.",
+        "(b) Analyze the circuit immediately after the switch is opened considering that inductor current and capacitor voltage cannot change instantaneously.",
+        "(c) Calculate the total energy stored in the inductor and capacitor and equate it to the heat dissipated in the resistor."
+      ],
+      "answer": "(a) E\\n(b) 3E\\n(c) \\(\\frac{1}{2} E^2 \\left(\\frac{L}{R^2} + C\\right)\\)"
+    },
+    {
+      "id": "EM-0052",
+      "title": "RLC Circuit Analysis with Multiple Switches",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RLC Circuit",
+          "Impedance",
+          "Resonance",
+          "Angular Frequency"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In the circuit shown in the figure, one of the three switches is kept closed and other two are open. The value of resistance is \\(R = 20 \\Omega\\). When the angular frequency (\\(\\omega\\)) of the 100 V source is adjusted to 500 rad/s, 1000 rad/s and 2000 rad/s it was found that the current \\(I\\) was 4A, 5A and 4A respectively.\\n\\nDIAGRAM[1,250]\\n(a) Which switch is closed? (\\(S_1\\), \\(S_2\\) or \\(S_3\\))\\n(b) Find the value of \\(L\\) and \\(C\\).",
+      "solution": "When current is 5A, the impedance is\\n\\(Z = \\frac{V}{I} = \\frac{100}{5} = 20 \\Omega\\)\\nThis is equal to R.\\nHence for \\(\\omega = 1000\\text{ rad/s}\\)\\n\\(Z = R = 20 \\Omega\\)\\nThis is possible only if \\(S_1\\) is closed and\\n\\(\\omega_r L = \\frac{1}{\\omega_r C}\\)\\n\\(\\implies LC = \\frac{1}{\\omega_r^2} = \\frac{1}{10^6} \\quad ...(i)\\)\\nWhen \\(\\omega = 500 \\text{ rad/s}\\), \\(I = 4 \\text{ A}\\)\\n\\(Z = \\frac{100}{4} = 25 \\Omega\\)\\n\\(\\sqrt{R^2 + X^2} = 25 \\implies X = 15 \\Omega\\)\\n\\(\\frac{1}{\\omega C} - \\omega L = 15 \\quad ...(ii)\\)\\n[Note that X is not \\(\\omega L - \\frac{1}{\\omega C}\\), since on increasing the frequency from 500 rad/s to 1000 rad/s the impedance is decreasing]\\nSolving (i) and (ii) \\(L = 10 \\text{ mH}\\), \\(C = 100 \\mu F\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) When the impedance is equal to R, the circuit is in resonance.  Analyze the circuit configurations to determine which switch should be closed for resonance at 1000 rad/s.\\n(b) Use the impedance values at different frequencies to set up equations to solve for L and C.",
+      "methodOfSolving": [
+        "(a) Analyze the impedance at ω = 1000 rad/s. Determine which switch configuration results in Z = R.",
+        "(b) Write the impedance equations at ω = 500 rad/s and ω = 1000 rad/s. Solve these equations simultaneously to find L and C."
+      ],
+      "answer": "(a) \\(S_1\\)\\n(b) \\(L = 10\\text{ mH, } C = 100\\mu F\\)"
     }
   ]
 }

@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function requireOfflineMode() {
         const contentDiv = document.getElementById("content");
         const message = document.createElement("p");
-        message.textContent = "Turn off net to see questions.";
+        message.textContent = "Turn off your device's internet to see questions.";
         message.style.position = "absolute";
         message.style.top = "50%";
         message.style.left = "50%";
@@ -183,5 +183,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
         
-    requireOfflineMode()
+    //requireOfflineMode()
 });
