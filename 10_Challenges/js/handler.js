@@ -268,5 +268,5 @@ function formatText(text) {
         window.addEventListener("offline", updateVisibility);
     }
 
-    requireOfflineMode();
+    //requireOfflineMode();
 });
