@@ -21,3 +21,22 @@ details > summary::before {
 details[open] > summary::before {
     content: "-"; /* Change to minus sign when the details are open */
 }
+
+@media (max-width: 768px) {
+    ul.list-group-flush {
+        margin-left: 0 !important;
+        /* Remove left margin for the <ul> */
+        padding: 0 !important;
+        /* Remove any padding from the <ul> */
+    }
+
+    ul.list-group-flush>li.list-group-item {
+        margin-left: 0 !important;
+        /* Remove individual <li> left margin */
+        padding: 10px !important;
+        border-radius: 5px !important;
+        /* Optional: Rounded corners */
+        margin-bottom: 10px !important;
+        /* Add spacing between <li> elements */
+    }
+}

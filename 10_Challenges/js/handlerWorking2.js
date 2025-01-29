@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function getUserName() {
         let userName = localStorage.getItem("userName");
         if (!userName) {
-            userName = "user1"//prompt("Please enter your name:");
+            userName = prompt("Please enter your name:");
             if (userName) {
                 localStorage.setItem("userName", userName);
             }
@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create details for the entire question
             const questionDetails = document.createElement("details");
             const questionSummary = document.createElement("summary");
-
-            // Use textContent instead of <strong> to allow toggling style.fontWeight
-            questionSummary.textContent = `${index + 1}. ${question.title || "Question Title"}`;
-            questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
+            questionSummary.innerHTML = `<strong>${index + 1}. ${question.title || "Question Title"}</strong>`;
+            if (solvedQuestions.has(question.id)) {
+                questionSummary.style.fontWeight = "normal"; // Mark as solved if already done
+            }
             questionDetails.appendChild(questionSummary);
 
             // Add question text
@@ -87,67 +87,38 @@ document.addEventListener("DOMContentLoaded", function () {
                 const answerSummary = document.createElement("summary");
                 answerSummary.textContent = "Answer Key";
                 answerDetails.appendChild(answerSummary);
-
                 const answerContent = document.createElement("div");
                 answerContent.innerHTML = wrapTextInParagraphs(question.answer);
                 answerDetails.appendChild(answerContent);
-
                 questionDetails.appendChild(answerDetails);
 
                 // Add "Got the answer!" button
                 const gotAnswerButton = document.createElement("button");
-                gotAnswerButton.textContent = "Mark as done!";
+                gotAnswerButton.textContent = "Got the answer!";
                 gotAnswerButton.classList.add("btn", "btn-success", "mt-2");
                 gotAnswerButton.onclick = function () {
-                    // Hide the button
                     gotAnswerButton.style.display = "none";
-                    // Remove bold to mark as solved
-                    questionSummary.style.fontWeight = "normal";
-                    // Save solved status
+                    const parentDetails = gotAnswerButton.closest("details"); // Find the parent <details>
+                    const questionSummary = parentDetails.closest("li").querySelector("summary"); // Find the question's summary
+                    if (questionSummary) {
+                        questionSummary.style.fontWeight = "normal"; // Remove bold to mark as solved
+                    }
                     solvedQuestions.add(question.id);
                     localStorage.setItem("solvedQuestions", JSON.stringify([...solvedQuestions]));
                 };
+                
                 answerDetails.appendChild(gotAnswerButton);
             }
-            else{
-                const answerDetails = document.createElement("details");
-                const answerSummary = document.createElement("summary");
-                answerSummary.textContent = "Answer Key";
-                answerDetails.appendChild(answerSummary);
-
-                const answerContent = document.createElement("div");
-                answerContent.innerHTML = wrapTextInParagraphs("To prove");
-                answerDetails.appendChild(answerContent);
-
-                questionDetails.appendChild(answerDetails);
-
-                // Add "Got the answer!" button
-                const gotAnswerButton = document.createElement("button");
-                gotAnswerButton.textContent = "Mark as done!";
-                gotAnswerButton.classList.add("btn", "btn-success", "mt-2");
-                gotAnswerButton.onclick = function () {
-                    // Hide the button
-                    gotAnswerButton.style.display = "none";
-                    // Remove bold to mark as solved
-                    questionSummary.style.fontWeight = "normal";
-                    // Save solved status
-                    solvedQuestions.add(question.id);
-                    localStorage.setItem("solvedQuestions", JSON.stringify([...solvedQuestions]));
-                };
-                answerDetails.appendChild(gotAnswerButton);
-            }
-
+            
             // Create details for hint if available
             if (question.hint) {
                 const hintDetails = document.createElement("details");
                 const hintSummary = document.createElement("summary");
                 hintSummary.textContent = "Hint";
                 hintDetails.appendChild(hintSummary);
-
                 const hintContent = document.createElement("div");
                 hintContent.innerHTML = wrapTextInParagraphs(question.hint);
                 hintDetails.appendChild(hintContent);
-
                 questionDetails.appendChild(hintDetails);
             }
 
@@ -157,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const methodSummary = document.createElement("summary");
                 methodSummary.textContent = "Method to Solve";
                 methodDetails.appendChild(methodSummary);
-
                 const methodList = document.createElement("ul");
                 question.methodOfSolving.forEach((step, stepIndex) => {
                     const stepItem = document.createElement("li");
@@ -165,7 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     methodList.appendChild(stepItem);
                 });
                 methodDetails.appendChild(methodList);
-
                 questionDetails.appendChild(methodDetails);
             }
 
@@ -176,10 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 solutionSummary.textContent = "Detailed Solution";
                 solutionDetails.appendChild(solutionSummary);
 
+                //solutionDetails.setAttribute("open", "true"); // Add open attribute to all details
+
                 const solutionContent = document.createElement("div");
                 solutionContent.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
                 solutionDetails.appendChild(solutionContent);
-
                 questionDetails.appendChild(solutionDetails);
             }
 
@@ -188,9 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         contentDiv.appendChild(questionList);
-
-        // Trigger MathJax to render math expressions
-        if (window.MathJax) {
+         // Trigger MathJax to render math expressions
+         if (window.MathJax) {
             MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
         }
     }
@@ -207,31 +176,35 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Your device does not support Bookman Old Style font. Consider using a web-safe alternative like Georgia or Times New Roman.");
         }
     }
+    
     checkFontSupport();
 
+
+    
     // Function to replace diagram placeholders with image paths
     function processDiagrams(text, questionId) {
         return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
             return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px; margin-left: 30px;">`;
         });
     }
-// Function to wrap text in <p> tags for new lines
-function wrapTextInParagraphs(text) {
-    return text
-        .split("\\n")
-        .map((line) => {
-            if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
-                // Add margin for lines starting with \( but not containing \Rightarrow
-                return `<p style="margin-left: 20px;">${line}</p>`;
-            }
-            return `<p>${line}</p>`;
-        })
-        .join("");
-}
-function formatText(text) {
-    return text
-        .replace(/\*(.*?)\*/g, "<strong>$1</strong>") // Bold for *WORD*
-}
+
+    // Function to wrap text in <p> tags for new lines
+    function wrapTextInParagraphs(text) {
+        return text
+            .split("\\n")
+            .map((line) => {
+                if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                    // Add margin for lines starting with \( but not containing \Rightarrow
+                    return `<p style="margin-left: 20px;">${line}</p>`;
+                }
+                return `<p>${line}</p>`;
+            })
+            .join("");
+    }
+    function formatText(text) {
+        return text
+            .replace(/\*(.*?)\*/g, "<strong>$1</strong>") // Bold for *WORD*
+    }
     // Function to enforce offline mode
     function requireOfflineMode() {
         const message = document.createElement("p");
@@ -268,5 +241,5 @@ function formatText(text) {
         window.addEventListener("offline", updateVisibility);
     }
 
-    requireOfflineMode();
+    //requireOfflineMode();
 });
