@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../controllers/controller.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -26,15 +29,15 @@
                 </div>
                 <div class="accordion" id="content">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading-electric-flux">
+                        <h2 class="accordion-header" id="heading-area-as-vector">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#section-electric-flux" aria-expanded="false"
-                                aria-controls="section-electric-flux">
-                                <strong>Electric Flux</strong>
+                                data-bs-target="#section-area-as-vector" aria-expanded="false"
+                                aria-controls="section-area-as-vector">
+                                <strong>Area as a vector</strong>
                             </button>
                         </h2>
-                        <div id="section-electric-flux" class="accordion-collapse collapse show"
-                            aria-labelledby="heading-electric-flux" data-bs-parent="#content">
+                        <div id="section-area-as-vector" class="accordion-collapse collapse"
+                            aria-labelledby="heading-area-as-vector" data-bs-parent="#content">
                             <div class="accordion-body">
                                 <p>
                                     In physics, the area of a surface is often regarded as a vector quantity. For a
@@ -54,8 +57,7 @@
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
                                         <figure>
                                             <model-viewer src="blend/06_Area vector for surface.glb"
-                                                alt="Diagram showing the area vector of a surface." auto-rotate
-                                                camera-controls ar>
+                                                alt="Diagram showing the area vector of a surface." camera-controls ar>
                                                 <span slot="hotspot" data-position="1.6m 1m -1.2m"
                                                     data-normal="0m 0m 1m">
                                                     \(\vec{ds}\)
@@ -71,7 +73,7 @@
                                         <figure>
                                             <model-viewer src="blend/06_Area vectors for object.glb"
                                                 alt="Diagram showing area vectors of different surfaces of an object."
-                                                auto-rotate camera-controls ar>
+                                                camera-controls ar>
                                                 <span slot="hotspot-A1" data-position="1m 4m 1m" data-normal="1m 0m 0m">
                                                     \(\vec{A_1}\)
                                                 </span>
@@ -115,7 +117,7 @@
                                 </p>
                                 <p>
                                     Here, \(A_x\) is the portion of the area vector pointing along the \(x\)-axis (i.e.,
-                                    corresponding to the surface’s projection in the \(y\)-\(z\) plane), \(A_y\) along
+                                    corresponding to the surface's projection in the \(y\)-\(z\) plane), \(A_y\) along
                                     the \(y\)-axis (projection in the \(x\)-\(z\) plane), and \(A_z\) along the
                                     \(z\)-axis (projection in the \(x\)-\(y\) plane). The diagram below illustrates the
                                     decomposition of an area vector into these components.
@@ -126,9 +128,8 @@
                                         class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
                                         <figure>
                                             <model-viewer src="blend/07_Components of area.glb"
-                                                alt="Diagram showing the components of an area vector." auto-rotate
-                                                camera-controls ar style="width: 300px; height: 300px;"
-                                                field-of-view="35deg">
+                                                alt="Diagram showing the components of an area vector." camera-controls
+                                                ar style="width: 300px; height: 300px;" field-of-view="35deg">
                                                 <span slot="hotspot-x" data-position="4.2m 0m 0m"
                                                     data-normal="1m 0m 0m">
                                                     \(x\)
@@ -167,7 +168,7 @@
                                         <figure>
                                             <model-viewer src="blend/07_Components of inclined surface area.glb"
                                                 alt="Diagram showing the components of an inclined surface area."
-                                                auto-rotate camera-controls ar style="width: 150px; height: 150px;"
+                                                camera-controls ar style="width: 150px; height: 150px;"
                                                 field-of-view="35deg">
                                             </model-viewer>
                                             <figcaption class="figure-caption text-center">
@@ -190,7 +191,7 @@
                                 <p>
                                     These ideas extend naturally to curved surfaces. For a curved surface, the total
                                     area vector \(\vec{S}\) is the sum (or integral) of all the infinitesimal area
-                                    vectors \(\mathrm{d}\vec{S}\). Each \(\mathrm{d}\vec{S}\) corresponds to a small
+                                    vectors \(d\vec{S}\). Each \(d\vec{S}\) corresponds to a small
                                     patch on the curved surface, oriented perpendicularly outward. By integrating over
                                     the entire surface—like a spherical cap—the contributions from these small patches
                                     combine to form one resultant area vector. In the diagram below, many small arrows
@@ -204,7 +205,7 @@
                                         <figure>
                                             <model-viewer src="blend/09_Area vector of curved surfaces.glb"
                                                 alt="Diagram showing elemental area vectors of a curved surface."
-                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;"
+                                                camera-controls ar style="width: 300px; height: 300px;"
                                                 field-of-view="35deg">
                                                 <span slot="hotspot-x" data-position="1m 0.7m 0m"
                                                     data-normal="1m 0m 0m">
@@ -226,9 +227,9 @@
                                     Notice that if the shape is symmetric about a vertical axis (like a dome), the
                                     vertical components of the infinitesimal area vectors add up along that axis.
                                     Consequently, when calculating the total, you can consider only the projections of
-                                    these small patches onto the horizontal plane. Each patch’s vertical component
-                                    (\(\mathrm{d}\vec{S}_\text{vertical}\)) sums to give the resultant \(\vec{S}\). The
-                                    following figure illustrates a single patch’s vertical component:
+                                    these small patches onto the horizontal plane. Each patch's vertical component
+                                    (\(d\vec{S}_\text{vertical}\)) sums to give the resultant \(\vec{S}\). The
+                                    following figure illustrates a single patch's vertical component:
                                 </p>
 
                                 <div class="row justify-content-center mb-4">
@@ -236,7 +237,7 @@
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
                                         <figure>
                                             <model-viewer src="blend/10_Component of curved surface area.glb"
-                                                alt="Diagram showing component of curved surface element" auto-rotate
+                                                alt="Diagram showing component of curved surface element"
                                                 camera-controls ar style="width: 300px; height: 300px;"
                                                 field-of-view="90deg">
                                             </model-viewer>
@@ -261,7 +262,7 @@
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
                                         <figure>
                                             <model-viewer src="blend/11_Same area vector for same boundary.glb"
-                                                alt="Diagram showing Same area vector for same boundary." auto-rotate
+                                                alt="Diagram showing Same area vector for same boundary."
                                                 camera-controls ar style="width: 300px; height: 300px;"
                                                 field-of-view="35deg">
                                                 <span slot="hotspot-y1" data-position="0.2m 1m 0m"
@@ -284,274 +285,41 @@
                                     Therefore:
                                 </p>
                                 <p class="text-center text-law">
-                                    For two different surfaces sharing the same boundary, the net area vector is the
-                                    same.
-                                </p>
-
-                                <p>
-                                    All these concepts—area vectors, their components, and the summation of
-                                    infinitesimal contributions—are critical building blocks for understanding flux.
-                                    They set the stage for applying Gauss’s law, where the flux of certain fields (like
-                                    the electric field) through a surface depends on precisely these ideas of area and
-                                    its orientation.
+                                    For two different surfaces sharing the same boundary, the net area vector has the
+                                    same magnitude. The directions may be same or just opposite, depending upon
+                                    considered face.
                                 </p>
                                 <p>
-                                    In physics, the area associated with a surface is treated as a vector quantity. For
-                                    a small, flat surface \( S \), its area vector is defined as the vector
-                                    perpendicular (normal) to the surface, with a magnitude equal to the area of \( S
-                                    \). Each surface possesses an area vector that is perpendicular to it, and the
-                                    magnitude of this vector corresponds to the surface area. By convention, the
-                                    direction of the area vector points outward, perpendicular to the surface.
-                                    Specifically, for closed surfaces such as spheres or cuboids, the area vectors
-                                    consistently point outward, representing the outward-facing normals.
-                                </p>
-                                <p>
-                                    To better understand area vectors, the following 3D diagrams illustrate how each
-                                    segment of a three-dimensional shape has an area vector that points away from the
-                                    enclosed region:
+                                    This is shown in following animation, where the two surfaces (the curved surface and
+                                    a flat surface) have congruent boundaries and hence have the same area vectors:
                                 </p>
                                 <div class="row justify-content-center mb-4">
                                     <div
                                         class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
                                         <figure>
-                                            <model-viewer src="blend/06_Area vector for surface.glb"
-                                                alt="Diagram showing the area vector of a surface." auto-rotate
-                                                camera-controls ar>
-                                                <span slot="hotspot" data-position="1.6m 1m -1.2m"
-                                                    data-normal="0m 0m 1m">
-                                                    \(\vec{ds}\)
-                                                </span>
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">Area Vector for a Single
-                                                Surface</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div
-                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure>
-                                            <model-viewer src="blend/06_Area vectors for object.glb"
-                                                alt="Diagram showing area vectors of different surfaces of an object."
-                                                auto-rotate camera-controls ar>
+                                            <model-viewer
+                                                src="blend/12_Same area vector for same boundary animation.glb"
+                                                alt="Diagram showing Same area vector for same boundary animation."
+                                                camera-controls ar autoplay field-of-view="6deg" style="width: 300px; ">
 
-                                                <span slot="hotspot-A1" data-position="1m 4m 1m" data-normal="1m 0m 0m">
-                                                    \(\vec{A_1}\)
-                                                </span>
-                                                <span slot="hotspot-A2" data-position="4m -1m -0.8m"
-                                                    data-normal="1m 0m 0m">
-                                                    \(\vec{A_2}\)
-                                                </span>
-                                                <span slot="hotspot-A3" data-position="0.8m -1m -4m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(\vec{A_3}\)
-                                                </span>
-                                                <span slot="hotspot-A4" data-position="-4m -1m 0.8m"
-                                                    data-normal="1m 0m 0m">
-                                                    \(\vec{A_4}\)
-                                                </span>
-                                                <span slot="hotspot-A5" data-position="0.8m 1m 4m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(\vec{A_5}\)
-                                                </span>
-                                                <span slot="hotspot-A6" data-position="1m -4m 1m"
-                                                    data-normal="1m 0m 0m">
-                                                    \(\vec{A_6}\)
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">Area Vectors for Different
-                                                Surfaces of an Object</figcaption>
-                                        </figure>
-                                    </div>
-                                    <figcaption class="figure-caption text-center">Diagram: Area Vectors of Various
-                                        Surfaces</figcaption>
-                                </div>
-                                <p>
-                                    Additionally, area vectors can be decomposed or resolved into their respective
-                                    components, similar to other vector quantities like forces. If the area vector
-                                    associated with a surface is \(\vec{A}\), it can be expressed in terms of its
-                                    components \(A_x\), \(A_y\), and \(A_z\) along the three coordinate axes as follows:
-                                </p>
-                                <p>
-                                    \(\qquad \vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}\)
-                                </p>
-                                <p>
-                                    The component \(A_x\) corresponds to a surface lying in the \(y\)-\(z\) plane.
-                                    Similarly, the components \(A_y\) and \(A_z\) are associated with surfaces in the
-                                    \(x\)-\(z\) plane and the \(x\)-\(y\) plane, respectively. This decomposition is
-                                    illustrated in the following diagram:
-                                </p>
-                                <div class="row justify-content-center mb-4">
-                                    <div
-                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
-                                        <figure>
-                                            <model-viewer src="blend/07_Components of area.glb"
-                                                alt="Diagram showing the components of an area vector." auto-rotate
-                                                camera-controls ar style="width: 300px; height: 300px;"
-                                                field-of-view="35deg">
-                                                <span slot="hotspot-x" data-position="4.2m 0m 0m"
-                                                    data-normal="1m 0m 0m">
-                                                    \(x\)
-                                                </span>
-                                                <span slot="hotspot-y" data-position="0m 3.5m 0m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(y\)
-                                                </span>
-                                                <span slot="hotspot-z" data-position="0m 0m 3.7m"
-                                                    data-normal="0m 0m 1m">
-                                                    \(z\)
-                                                </span>
-                                                <span slot="hotspot-A" data-position="2.8m 2m 2.8m"
-                                                    data-normal="0m 0m 1m">
-                                                    \(\vec{A}\)
-                                                </span>
                                             </model-viewer>
                                             <figcaption class="figure-caption text-center">
-                                                Components of an Area Vector
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <p>
-                                    To understand the calculation of magnitude of the conponents, consider
-                                    an example of a rectangular surface of dimensions \(l\times b\). The surface makes
-                                    an angle \(\theta\) with horizontal. In sucha a case, this inclined surface can be
-                                    projected on horizontal and vertical surface as shown:
-                                </p>
-                                <div class="row justify-content-center mb-4">
-                                    <div
-                                        class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
-                                        <figure>
-                                            <model-viewer src="blend/07_Components of inclined surface area.glb"
-                                                alt="Diagram showing the components of an inclined surface area."
-                                                auto-rotate camera-controls ar style="width: 150px; height: 150px;"
-                                                field-of-view="35deg">
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">
-                                                Components of an Inclined Surface Area
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <p>
-                                    On any curved surface, the total area vector \(\vec{S}\) is obtained by summing (or
-                                    integrating) all the infinitesimal area vectors \(\vec{dS}\). Each of these
-                                    infinitesimal vectors corresponds to a very small patch of the surface and points
-                                    perpendicularly outward from that patch. In the case of a curved region—such as a
-                                    cap of a sphere—each patch may be oriented differently, so its \(\vec{dS}\)
-                                    points in a slightly different direction. By adding all these infinitesimal vectors,
-                                    we obtain the net (or resultant) area vector for the curved surface. In the
-                                    following diagram, small outward-pointing arrows represent the elemental area
-                                    vectors, and the net vector is shown as a larger arrow:
-                                </p>
-
-                                <div class="row justify-content-center mb-4">
-                                    <div
-                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end mb-4 mb-md-0">
-                                        <figure>
-                                            <model-viewer src="blend/09_Area vector of curved surfaces.glb"
-                                                alt="Diagram showing elemental area vectors of a curved surface."
-                                                auto-rotate camera-controls ar style="width: 300px; height: 300px;"
-                                                field-of-view="35deg">
-                                                <span slot="hotspot-x" data-position="1m 0.7m 0m"
-                                                    data-normal="1m 0m 0m">
-                                                    \(\vec{ds}\)
-                                                </span>
-                                                <span slot="hotspot-y" data-position="0.2m 1.5m 0m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(\vec{S}\)
-                                                </span>
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">
-                                                Elemental area vectors of a curved surface.
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <p>
-                                    The direction of resultant of all such area vectors \(\vec{ds}\) has a direction
-                                    along the symmetrical axis, shown by the vertical arrow \(\vec{S}\). So, in the
-                                    process of finding the resultant area vector, only vertical components
-                                    \(\vec{ds}_\text{vertical}\) is to be added. The component of \(\vec{S}\) along
-                                    vertical direction \(\vec{ds}_\text{vertical}\) is shown in for an elemental surface
-                                    in following diagram:
-                                </p>
-
-                                <div class="row justify-content-center mb-4">
-                                    <div
-                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure>
-                                            <model-viewer src="blend/10_Component of curved surface area.glb"
-                                                alt="Diagram showing component of curved surface element" auto-rotate
-                                                camera-controls ar style="width: 300px; height: 300px;"
-                                                field-of-view="90deg">
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">
-                                                Component of curved surface element.
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <p>
-                                    The diagram above illustrates that, the vertical component \(\vec{ds}_
-                                    \text{vertical}\) can also be considered as area vector associated with projection
-                                    of the inclined surface on the horizontal surface.
-                                </p>
-                                <p>
-                                    Thus, to find resultant of all surface area elements \(\vec{ds}\), each surface
-                                    elements projection in horizontal plane should be considered. Thus, the resultant
-                                    becomes same as that of area vector of projection this curved surface on horizontal
-                                    plane. This is shown in diagram below.
-                                </p>
-
-                                <div class="row justify-content-center mb-4">
-                                    <div
-                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                                        <figure>
-                                            <model-viewer src="blend/11_Same area vector for same boundary.glb"
-                                                alt="Diagram showing Same area vector for same boundary." auto-rotate
-                                                camera-controls ar style="width: 300px; height: 300px;"
-                                                field-of-view="35deg">
-                                                <span slot="hotspot-y1" data-position="0.2m 1m 0m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(\vec{S}\)
-                                                </span>
-                                                <span slot="hotspot-y2" data-position="0.2m 4m 0m"
-                                                    data-normal="0m 1m 0m">
-                                                    \(\vec{S}\)
-                                                </span>
-                                            </model-viewer>
-                                            <figcaption class="figure-caption text-center">
-                                                Same area vector for same boundary.
+                                                Animation: Same area vector for same boundary.
                                             </figcaption>
                                         </figure>
                                     </div>
                                 </div>
 
                                 <p>
-                                    Thus we conclude:
+                                    For any closed surface, there are no boundaries, or we consider the boundary to have
+                                    zero circumference. As a result,
                                 </p>
                                 <p class="text-center text-law">
-                                    For two different surfaces having same boundaries, the area vectors are the same.
-                                </p>
-                                <p>
-                                    An especially important result occurs for closed surfaces: the total area vector for
-                                    a completely enclosed volume is always zero because all outward vectors on one part
-                                    of the surface cancel with those on the opposite side. However, for an open surface
-                                    bounded by a loop (like the edge of a circular rim), the net area vector depends
-                                    only on that boundary. As a result, if a curved surface and a flat disc share the
-                                    exact same boundary, they will have the same total area vector. The figure below
-                                    demonstrates how, despite the surface curvature, the resultant area vector matches
-                                    that of a flat disc bounded by the same rim:
-                                </p>
-                                <p>
-                                    These illustrations clarify how area vectors on both curved and flat surfaces play a
-                                    fundamental role in understanding concepts like electric flux and Gauss’s law.
-                                    Whether one surface is curved or flat, if they share the same boundary, the
-                                    resultant (net) area vector is identical, emphasizing that the boundary alone
-                                    determines the overall area vector for an open surface.
+                                    The total area vector for any closed surface is always zero.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading-solid-angle">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -564,55 +332,1642 @@
                             aria-labelledby="heading-solid-angle" data-bs-parent="#content">
                             <div class="accordion-body">
                                 <p>
-                                    The concept of a <strong>solid angle</strong> is the three-dimensional analogue of a
-                                    plane angle in two
-                                    dimensions. It measures how “large” an object appears when viewed from a particular
-                                    point. Formally, the
-                                    solid angle subtended by an object at a point is the area it projects on a unit
-                                    sphere centered at that
-                                    point. Its SI unit is the steradian (sr). A full sphere subtends a solid angle of
-                                    \(4\pi \, \mathrm{sr}\).
-                                    As a simple example, if you stand on flat ground and look upward, the open sky above
-                                    you subtends about
-                                    \(2\pi \, \mathrm{sr}\), corresponding to half of the total sphere:
-                                    <strong>[Diagram showing the relationship between a sphere and solid
-                                        angle]</strong>.
+                                    Solid angles are the three-dimensional equivalents of the familiar two-dimensional
+                                    angles that measure how wide something appears in a plane. In 2D, an arc subtends an
+                                    angle at the center of a circle, while in 3D, the base of a cone subtends a solid
+                                    angle at its apex. The following 3D model illustrates this concept:
+                                </p>
+
+                                <div class="row justify-content-center mb-4 model-container">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer alt="Diagram showing closed surface in electric field."
+                                                camera-controls ar style="width: 300px;" field-of-view="35deg"
+                                                class="model-viewer" data-links='[
+                                                "13_solid angle less.glb",
+                                                "13_solid angle moderate.glb",
+                                                "13_solid angle large.glb"
+                                                ]' data-captions='[
+                                                "Small solid angle.",
+                                                "Moderate solid angle.",
+                                                "Large solid angle."
+                                                ]'>
+                                                <ul class="nav nav-tabs button-group">
+                                                    Solid angle: <li class="nav-item">
+                                                        <a class="nav-link active" data-index="0" href="#">small</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-index="1" href="#">moderate</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-index="2" href="#">large</a>
+                                                    </li>
+                                                </ul>
+                                            </model-viewer>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    To understand solid angles, let's begin with the idea of plane angles in two
+                                    dimensions. In 2D geometry, a plane angle \( \alpha \) is defined by the ratio of a
+                                    circle's arc length to its radius:
                                 </p>
                                 <p>
-                                    A useful property of solid angles is that two surfaces, sharing the same boundary,
-                                    will subtend the same
-                                    solid angle at a given point, whether one surface is curved and the other is flat.
-                                    To see why, imagine
-                                    cutting off a “cap” from a sphere. The curved spherical cap and any flat surface
-                                    that “seals” that cap
-                                    along the same boundary curve subtend the same solid angle at the sphere’s center.
-                                    This principle can be
-                                    applied to simplify many geometric and physical calculations.
+                                    \(\qquad
+                                    \alpha = \dfrac{\text{arc length}(l)}{\text{radius}(r)}
+                                    \)<equationDetail>[For planer angle]</equationDetail>
                                 </p>
                                 <p>
-                                    If a spherical cap subtends a semi-apex angle \(\theta\) at the center of the
-                                    sphere, its solid angle
-                                    \(\Omega\) is given by:
+                                    The standard unit for plane angles is the radian (\(\mathrm{rad}\)), with one full
+                                    revolution around a circle measuring \( 2\pi \, \mathrm{rad} \). Extending this
+                                    concept to three dimensions gives us solid angles. A solid angle \( \Omega \) is
+                                    defined as the ratio of an area on a sphere to the square of its radius:
+                                </p>
+                                <p>
+                                    \(\qquad
+                                    \Omega = \dfrac{\text{area on the sphere}}{\text{(radius)}^2}=\dfrac{{\Delta
+                                    A}}{{r}^2}
+                                    \)<equationDetail>[For solid angle]</equationDetail>
+                                </p>
+                                <p>
+                                    When the radius of the sphere is set to 1 (a unit sphere), \( \Omega \) is simply
+                                    the
+                                    area an object projects onto that sphere. The standard unit for solid angles is the
+                                    steradian (\(\mathrm{sr}\)).
+                                </p>
+                                <p>
+                                    To visualize solid angles, imagine a sphere of radius 1 centered at a point \( O \).
+                                    Any object or surface around \( O \) casts a “shadow” on the surface of this
+                                    unit sphere. The area of this shadow corresponds to the solid angle subtended by the
+                                    object. Hence, we define the solid angle as:
                                 </p>
                                 <p class="text-center text-law">
-                                    \(\Omega = 2\pi (1 - \cos \theta)\)
+                                    Solid angle subtended by an object \(B\) at a point \(O\) is the projection of \(B\)
+                                    onto a spherical surface of unit radius centered at \(O\).
                                 </p>
                                 <p>
-                                    This expression connects the geometry of the cap (the angle \(\theta\)) to the size
-                                    of the solid angle.
-                                    In electromagnetism and other areas of physics, solid angles often come into play
-                                    when calculating flux
-                                    through spherical surfaces or understanding radiation patterns from a point source.
-                                    Recognizing how much
-                                    of a sphere’s surface is “covered” by an object or field lines is essential to
-                                    accurate computations of
-                                    flux and related quantities.
+                                    The 3D model below shows the solid angle \(\Omega\) subtended by a blackboard at a
+                                    point. The solid angle \(\Omega\) is the area of the shaded region on the sphere,
+                                    which is the blackboard's projection. We assume the sphere has a unit radius.
+                                    Likewise, the next model illustrates how different objects subtend varying solid
+                                    angles.
                                 </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/14_Solid angle of blackboard.glb"
+                                                alt="Diagram illustrating the concept of blackboard at a point."
+                                                camera-controls ar style="width: 300px;" field-of-view="65deg">
+                                            </model-viewer>
+
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">
+                                            Solid angle \(\Omega\) of blackboard at a point.
+                                        </figcaption>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer src="blend/14_Solid angle of objects.glb"
+                                                alt="Diagram illustrating the concept of solid angles." camera-controls
+                                                ar style="width: 300px;" field-of-view="65deg">
+                                            </model-viewer>
+
+                                        </figure>
+                                        <figcaption class="figure-caption text-center">
+                                            Amount of solid angle of different objects as their projected area on unit
+                                            radius sphere.
+                                        </figcaption>
+                                    </div>
+                                </div>
+
+                                <p>In two dimensions, a full circle subtends \( 2\pi \, \mathrm{rad} \), while in three
+                                    dimensions, a full sphere subtends \( 4\pi \, \mathrm{sr} \).
+                                </p>
+
+                                <p>
+                                    For instance, if you stand on flat ground and look straight up, the hemisphere of
+                                    the
+                                    sky that you see is half of the sphere, which subtends a solid angle of \( 2\pi \,
+                                    \mathrm{sr} \). Also, the blanket of air around the Earth (the atmosphere) subtends
+                                    a solid angle of \( 4\pi \, \mathrm{sr} \) at center of Earth.
+                                </p>
+                                <ul class="list list-group-flush">
+                                    <p>
+                                        Below are several key properties of solid angles that are essential for
+                                        understanding Gauss's Law:
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Same Solid Angle for Surfaces with the Same Boundary</summary>
+                                            <p>
+                                                If two surfaces (for example, \(S_1\) and \(S_2\)) share the same
+                                                boundary curve and are viewed from the same point \(P\), they subtend
+                                                the same solid angle. This is because both surfaces cast identical
+                                                "shadows" on a unit radius spherical surface centered at \(P\).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Dependence on Observation Point</summary>
+                                            <p>
+                                                The solid angle subtended by an object depends on the position of the
+                                                observation point relative to the object. Moving the observation point
+                                                closer to the object increases the solid angle, while moving it farther
+                                                away decreases the solid angle.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Surface orientation</summary>
+                                            <p>
+                                                For a small elemental surface \(\vec{ds}\) at position vector
+                                                \(\vec{r}\), to find
+                                                solid angle subtended by it we must calculate the component of
+                                                \(\vec{ds}\) in the direction of \(\vec{r}\). If this component is
+                                                \(ds_r\), then the solid angle subtended by \(\vec{ds}\) at origin is:
+                                            </p>
+                                            <p>
+                                                \(\qquad d\Omega=\dfrac{ds_r}{r^2}\)
+                                            </p>
+                                            <p>
+                                                The component \(ds_r\) is equal to \(ds\cos\theta\). The component of
+                                                \(\vec{ds}\) in the direction of \(\vec{r}\) is shown
+                                                in following 3D model:
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure>
+                                                        <model-viewer src="blend/16_Area component for solid angle.glb"
+                                                            alt="Diagram illustrating component of area to find solid angle."
+                                                            camera-controls ar style="width: 300px; height:200px"
+                                                            field-of-view="35deg">
+                                                        </model-viewer>
+
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">
+                                                        Taking component of \(\vec{ds}\) to find solid angle at apex of
+                                                        cone (origin).
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Solid Angle of a Cone</summary>
+                                            <p>
+                                                For a cone with a semi-apex angle \(\theta\), the solid angle \(\Omega\)
+                                                subtended by the base of the cone at its apex is:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\qquad
+                                                \Omega = 2\pi (1 - \cos \theta)
+                                                \)
+                                            </p>
+                                            <p>
+                                                Although this formula might seem complex at first glance, it offers
+                                                several intuitive insights:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <strong>Pointed Cone (\(\theta = 0\)):</strong> When the semi-apex
+                                                    angle approaches zero, the base of the cone becomes a single point.
+                                                    Substituting \(\theta = 0\) into the formula yields \(\Omega = 0\),
+                                                    indicating no solid angle is subtended.
+                                                </li>
+                                                <li>
+                                                    <strong>Hemisphere (\(\theta = \frac{\pi}{2}\)):</strong> When the
+                                                    semi-apex angle is \(90^\circ\), the cone covers a hemisphere.
+                                                    Plugging \(\theta = \frac{\pi}{2}\) into the formula gives \(\Omega
+                                                    = 2\pi \, \mathrm{sr}\), which is half of the total solid angle of a
+                                                    sphere.
+                                                </li>
+                                                <li>
+                                                    <strong>Full Sphere (\(\theta = \pi\)):</strong> When the semi-apex
+                                                    angle is \(180^\circ\), the cone encompasses an entire sphere.
+                                                    Substituting \(\theta = \pi\) results in \(\Omega = 4\pi \,
+                                                    \mathrm{sr}\), representing the total solid angle around a point.
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-electric-flux">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electric-flux" aria-expanded="false"
+                                aria-controls="section-electric-flux">
+                                <strong>Electric Flux</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electric-flux" class="accordion-collapse collapse"
+                            aria-labelledby="heading-electric-flux" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Electric flux measures the quantity of the electric field passing through a given
+                                    surface. It quantifies how the electric field interacts with the surface and is a
+                                    fundamental concept in understanding electric fields and their effects on various
+                                    surfaces.
+                                </p>
+                                <p>
+                                    For an infinitesimal surface \( d\vec{S} \) in an electric field \( \vec{E} \), the
+                                    electric flux \( d\phi \) is given by:
+                                </p>
+                                <p class="text-center text-law">
+                                    \(\qquad d\phi = \vec{E} \cdot d\vec{S} \)
+                                </p>
+                                <p>
+                                    Here, \( d\vec{S} \) is a vector whose magnitude equals the infinitesimal area and
+                                    whose direction is perpendicular to the surface, pointing outward. The dot product
+                                    accounts for the angle between the electric field and the surface normal. The
+                                    elctric flux can be positive, negative or zero and has an SI unit of
+                                    \(\text{Nm}^2/\text{C}\) or \(\text{V}\text{m}\).
+                                </p>
+                                <p>
+                                    To calculate the electric flux through a significant sized surface, we perform
+                                    integration:
+                                </p>
+                                <p>
+                                    \(\qquad \phi = \displaystyle\int_{S} \vec{E} \cdot d\vec{S} \)
+                                </p>
+                                <p>
+                                    If the electric field \( \vec{E} \) is uniform, the total electric flux \(
+                                    \phi \) through the surface gets simplified as:
+                                </p>
+                                <p>
+                                    \(\qquad \phi = \vec{E} \cdot\left(\displaystyle\int_{S} d\vec{S}\right) \)
+                                </p>
+                                <p>
+                                    \(\qquad \phi = \vec{E} \cdot \vec{S} \)
+                                </p>
+                                <p>
+                                    Thus, we conclude for electric flux \(\phi\) through any general surface \(S\),
+                                </p>
+                                <p class="text-center text-law">
+                                    \(\qquad \phi = \displaystyle\int_{S} \vec{E} \cdot d\vec{S} \)
+                                </p>
+                                <p>And for uniform electric fields,</p>
+                                <p class="text-center text-law">
+                                    \(\qquad \phi = \vec{E} \cdot \vec{S} \)
+                                </p>
+                                <p>
+                                    The following illustrative examples are designed to help understand the concept
+                                    of electric flux in different scenarios:
+                                </p>
+                                <ul class="list list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Flat Surface and a Uniform Electric Field</strong>
+                                            </summary>
+                                            <p>
+                                                Consider a flat rectangular surface with an area vector \( \vec{S} =
+                                                3\hat{i} + 4\hat{j} \, \mathrm{m}^2 \), placed in a uniform
+                                                electric field \( \vec{E} = 5\hat{i} + 2\hat{j} \, \mathrm{N/C}
+                                                \). The electric flux through this surface is given by:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \vec{E} \cdot \vec{S} = (5\hat{i} + 2\hat{j})
+                                                \cdot (3\hat{i} + 4\hat{j})\)
+                                            </p>
+                                            <p>
+                                                Expanding the dot product:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = (5 \cdot 3) + (2 \cdot 4) = 15 + 8 = 23 \, \mathrm{V \cdot
+                                                m}\)
+                                            </p>
+                                            <p>
+                                                Thus, the flux through the flat surface is \( 23 \, \mathrm{V m}
+                                                \).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Curved Surface and Uniform Electric Field</strong>
+                                            </summary>
+                                            <p>
+                                                Consider a hemispherical dome with radius \( R = 2 \, \mathrm{m} \),
+                                                placed in a uniform electric field \( \vec{E} = 10\hat{k} \,
+                                                \mathrm{N/C} \). To find the electric flux through this surface:
+                                            </p>
+                                            <p>
+                                                \(\qquad \phi = \vec{E} \cdot \vec{S} \) <equationDetail>[Since given
+                                                    electric field is constant]</equationDetail>
+                                            </p>
+                                            <p>
+                                                The area vector of the curved surface can be treated as
+                                                its projection onto a plane perpendicular to \( \vec{E} \).
+                                                The projected area is a circle of radius \( R \), so its area is:
+                                            </p>
+                                            <p>
+                                                \(\qquad S = \pi R^2 = \pi (2)^2 = 4\pi \, \mathrm{m}^2 \)
+                                            </p>
+                                            <p>
+                                                Since the field is uniform and perpendicular to the flat circular
+                                                projection, the flux is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\phi = \vec{E} \cdot \vec{S} = E S\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\phi = (10)(4\pi) = 40\pi \,
+                                                \mathrm{V \cdot m}\)
+                                            </p>
+                                            <p>
+                                                Hence, the flux through the curved surface is \( 40\pi \, \mathrm{V
+                                                \cdot m} \).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Non-Uniform Electric Field</strong></summary>
+                                            <p>
+                                                Consider a square surface lying in the \( xy \)-plane, with one
+                                                vertex at the origin \((0, 0, 0)\) and the sides of length \( a = 2
+                                                \, \mathrm{m} \). The surface is oriented perpendicular to the \( z
+                                                \)-axis, and the area vector is \( \vec{S} = S \, \hat{k} \). Assume
+                                                a non-uniform electric field given by \( \vec{E}(x, z) = E(x)\hat{k}
+                                                \), where \( E(x) = 5x \, \mathrm{N/C} \). The setup is illustrated
+                                                in the following diagram (a).
+                                            </p>
+                                            <div class="row justify-content-center mb-4">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/42_Flux_by_non_uniform_electric_field.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram for calculating flux by non-uniform electric field.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">
+                                                        (a) Electric flux due to non-uniform electric field.
+                                                    </figcaption>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure style="max-width: 200px;">
+                                                        <img src="img/42_Elemental_Flux_by_non_uniform_electric_field.png"
+                                                            class="figure-img img-fluid rounded"
+                                                            alt="Diagram showing elemental area for flux calculation.">
+                                                    </figure>
+                                                    <figcaption class="figure-caption text-center">
+                                                        (b) Elemental area \(adx\) for flux \(d\phi\) calculation.
+                                                    </figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                To calculate the electric flux through this surface, we break it
+                                                into thin vertical strips of thickness \( dx \), extending
+                                                along the \( y \)-direction. Each strip has an area element \(
+                                                d\vec{S} = dx \cdot a \, \hat{k} \), where \( a = 2 \, \mathrm{m} \) is
+                                                the length of the strip. This is shown in diagram (b) above.
+                                            </p>
+                                            <p>
+                                                The total flux is then obtained by integrating the electric field
+                                                over the entire surface:
+                                            </p>
+                                            <p>
+                                                \(\qquad \phi = \displaystyle\int_{S} \vec{E} \cdot d\vec{S} \)
+                                            </p>
+
+                                            <p>
+                                                \(\Rightarrow\quad \phi = \displaystyle\int_{0}^2 \left(5x\hat{k}\right)
+                                                \cdot \left(2\,dx\hat{k}\right) \,\,\mathrm{Vm}\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad \phi = 10\displaystyle\int_{0}^2 x dx
+                                                \,\,\mathrm{Vm}\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\phi = 10 \left[\frac{x^2}{2}\right]_0^2 \, \mathrm{V
+                                                \cdot m}\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\phi = 10 \cdot 2 = 20 \, \mathrm{V \cdot m}\)
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Flux Through a closed Cubical Surface</strong></summary>
+                                            <p>
+                                                Consider a cubical surface with edge length \( a \), aligned with the
+                                                coordinate axes, such that one face lies between \( x = a \) and \( x =
+                                                2a \), while the cube spans from \( y = 0 \) to \( y = a \) and \( z = 0
+                                                \) to \( z = a \). The electric field in this region is given as \(
+                                                \vec{E} = \alpha x \hat{i} \), where \( \alpha \) is a constant.
+                                            </p>
+                                            <p>
+                                                To find the total flux through the cubical surface, we compute the flux
+                                                through each face of the cube separately. Assume the following labeling
+                                                for the faces:
+                                            </p>
+                                            <ul>
+                                                <li>Face 1: \( x = a \), outward normal is \( -\hat{i} \).</li>
+                                                <li>Face 2: \( x = 2a \), outward normal is \( \hat{i} \).</li>
+                                                <li>Face 3: \( y = 0 \), outward normal is \( -\hat{j} \).</li>
+                                                <li>Face 4: \( y = a \), outward normal is \( \hat{j} \).</li>
+                                                <li>Face 5: \( z = 0 \), outward normal is \( -\hat{k} \).</li>
+                                                <li>Face 6: \( z = a \), outward normal is \( \hat{k} \).</li>
+                                            </ul>
+                                            <p>
+                                                **Step 1: Flux Through Face 1 (\( x = a \))**<br>
+                                                The electric field on this face is \( \vec{E} = \alpha a \hat{i} \), and
+                                                the area vector is \( \mathrm{d}\vec{S} = -\hat{i} \, \mathrm{d}y \,
+                                                \mathrm{d}z \). The flux is:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_1 = \int_{0}^{a} \int_{0}^{a} (\alpha a)(-\hat{i}) \cdot
+                                                (-\hat{i}) \, \mathrm{d}y \, \mathrm{d}z\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow \Phi_1 = \alpha a \int_{0}^{a} \int_{0}^{a} \mathrm{d}y \,
+                                                \mathrm{d}z = \alpha a \cdot a^2 = \alpha a^3\).
+                                            </p>
+                                            <p>
+                                                **Step 2: Flux Through Face 2 (\( x = 2a \))**<br>
+                                                The electric field here is \( \vec{E} = \alpha (2a) \hat{i} \), and the
+                                                area vector is \( \mathrm{d}\vec{S} = \hat{i} \, \mathrm{d}y \,
+                                                \mathrm{d}z \). The flux is:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_2 = \int_{0}^{a} \int_{0}^{a} (\alpha (2a)) \hat{i} \cdot \hat{i}
+                                                \, \mathrm{d}y \, \mathrm{d}z\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow \Phi_2 = (2\alpha a) \int_{0}^{a} \int_{0}^{a} \mathrm{d}y
+                                                \, \mathrm{d}z = 2\alpha a \cdot a^2 = 2\alpha a^3\).
+                                            </p>
+                                            <p>
+                                                **Step 3: Flux Through Other Faces**<br>
+                                                For faces 3, 4, 5, and 6, the electric field is either perpendicular to
+                                                the area vector or zero. Hence, the flux through these faces is zero:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_3 = \Phi_4 = \Phi_5 = \Phi_6 = 0\).
+                                            </p>
+                                            <p>
+                                                **Total Flux Through the Cube:**<br>
+                                                The total flux is the sum of the fluxes through all six faces:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_{\text{total}} = \Phi_1 + \Phi_2 + \Phi_3 + \Phi_4 + \Phi_5 +
+                                                \Phi_6 = \alpha a^3 + 2\alpha a^3 + 0 + 0 + 0 + 0 = 3\alpha a^3\).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Flux Through a Spherical Surface With Charge at
+                                                    Center</strong></summary>
+                                            <p>
+                                                Consider a spherical surface of radius \( R \) centered around a point
+                                                charge \( q \). The electric field due to the charge is radially outward
+                                                and given by:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\vec{E} = \frac{q}{4\pi \varepsilon_0 R^2} \hat{r}\),
+                                            </p>
+                                            <p>
+                                                where \( \hat{r} \) is the unit vector in the radial direction. The area
+                                                vector for the spherical surface is \( \mathrm{d}\vec{S} = R^2
+                                                \sin\theta \, \mathrm{d}\theta \, \mathrm{d}\phi \, \hat{r} \).
+                                            </p>
+                                            <p>
+                                                The flux through the surface is:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \iint_{S} \vec{E} \cdot \mathrm{d}\vec{S}\).
+                                            </p>
+                                            <p>
+                                                Substituting \( \vec{E} \) and \( \mathrm{d}\vec{S} \):
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \iint_{S} \frac{q}{4\pi \varepsilon_0 R^2} \hat{r} \cdot
+                                                \left( R^2 \sin\theta \, \mathrm{d}\theta \, \mathrm{d}\phi \, \hat{r}
+                                                \right)\).
+                                            </p>
+                                            <p>
+                                                Simplifying:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \frac{q}{4\pi \varepsilon_0 R^2} \iint_{S} R^2 \sin\theta \,
+                                                \mathrm{d}\theta \, \mathrm{d}\phi\).
+                                            </p>
+                                            <p>
+                                                The term \( R^2 \) cancels out, and the integral becomes:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \frac{q}{4\pi \varepsilon_0} \int_{0}^{2\pi} \mathrm{d}\phi
+                                                \int_{0}^{\pi} \sin\theta \, \mathrm{d}\theta\).
+                                            </p>
+                                            <p>
+                                                Evaluating the integrals:
+                                            </p>
+                                            <p>
+                                                \(\int_{0}^{\pi} \sin\theta \, \mathrm{d}\theta =
+                                                [-\cos\theta]_{0}^{\pi} = 2\),
+                                            </p>
+                                            <p>
+                                                \(\int_{0}^{2\pi} \mathrm{d}\phi = 2\pi\).
+                                            </p>
+                                            <p>
+                                                Substituting back:
+                                            </p>
+                                            <p class="text-center text-law">
+                                                \(\Phi_E = \frac{q}{4\pi \varepsilon_0} \cdot 2\pi \cdot 2 =
+                                                \frac{q}{\varepsilon_0}\).
+                                            </p>
+                                            <p>
+                                                Hence, the flux through the spherical surface is \( \Phi_E =
+                                                \frac{q}{\varepsilon_0} \).
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-Gauss-law">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Gauss-law" aria-expanded="false"
+                                aria-controls="section-Gauss-law">
+                                <strong>Gauss's Law</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Gauss-law" class="accordion-collapse collapse"
+                            aria-labelledby="heading-Gauss-law" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Consider a closed surface \(S\) placed in a region containing electric fields as
+                                    shown in 3D model (a) below:
+                                </p>
+                                <div class="row justify-content-center mb-4 model-container">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure>
+                                            <model-viewer alt="Diagram showing closed surface in electric field."
+                                                camera-controls ar style="width: 200px;" field-of-view="35deg"
+                                                class="model-viewer" data-links='[
+                                                "15_Closed surface in electric field.glb",
+                                                "15_Flux in Closed surface in electric field.glb",
+                                                "15_Flux analysis on Closed surface in electric field.glb"
+                                                ]' data-captions='[
+                                                "Closed surface in an electric field.",
+                                                "Flux in Closed surface in an electric field.",
+                                                "Flux analysis on Closed surface in an electric field."
+                                                ]'>
+                                                <ul class="nav nav-tabs button-group">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-index="0" href="#">(a)</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-index="1" href="#">(b)</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-index="2" href="#">(c)</a>
+                                                    </li>
+                                                </ul>
+                                            </model-viewer>
+                                            <figcaption class="text-muted"></figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p>
+                                    In the above part (b) of 3D models, a set of small surfaces are considered. For
+                                    different positions of small area \(\vec{ds}\) the flux is different. It can be
+                                    observed that:
+                                <ul>
+                                    <li>
+                                        <p>
+                                            when the electric field lines are entering the Gaussian surface,
+                                            \(\vec{E}\) makes obtuse angle with \(\vec{ds}\). So,
+                                        </p>
+                                        <p>
+                                            \(\qquad d\phi<0\) </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            when the electric field lines are exiting the Gaussian surface,
+                                            \(\vec{E}\) makes acute angle with \(\vec{ds}\). So,
+                                        </p>
+                                        <p>
+                                            \(\qquad d\phi>0\)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            when the electric field lines are just tangential to the surface,
+                                            \(\vec{E}\) makes right angle with \(\vec{ds}\). So,
+                                        </p>
+                                        <p>
+                                            \(\qquad d\phi=0\)
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Thus the flux gives an idea of how much electric field lines are exiting from a
+                                    closed surface. Entry of the electric field lines leads to negative and
+                                    tangential electric field lines lead to zero flux at those spots.
+                                </p>
+                                <p>
+                                    Also it is intuitive that:
+                                </p>
+                                <ul>
 
 
+                                    <li>
+                                        <p>
+                                            if no net charge is present within the closed surface, all electric field
+                                            lines that enter the Gaussian surface (causing negative flux) should also
+                                            come out of the Gaussian surface (causing positive flux). So, the total flux
+                                            through the Gaussian surface will
+                                            become zero:
+                                        </p>
+                                        <p>
+                                            \(\qquad \Phi_\text{Total}=0\)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            if net positive charge is present within the closed surface, more electric
+                                            field
+                                            lines should be coming out of the Gaussian surface. So, the total flux will
+                                            become positive:
+                                        </p>
+                                        <p>
+                                            \(\qquad \Phi_\text{Total}>0\)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            if net negative charge is present within the closed surface, more electric
+                                            field
+                                            lines should be entering into the Gaussian surface. So, the total flux will
+                                            become negative:
+                                        </p>
+                                        <p>
+                                            \(\qquad \Phi_\text{Total}<0\) </p>
+                                    </li>
+
+                                </ul>
+
+
+
+                                </p>
+                                <p>
+                                    With the above understanding of total flux through a closed surface (Gaussian
+                                    surface), let us first understand Gauss's law intuitively. Once we grasp the essence
+                                    of this law, we will explore how it can be derived formally using fundamental
+                                    concepts of area vectors and solid angles, providing both logical reasoning and
+                                    mathematical clarity. The law states:
+                                </p>
+
+                                <p class="text-law text-center">
+                                    "The total electric flux through a closed surface is equal to
+                                    \(\frac{1}{\epsilon_0}\) times the net charge enclosed within the surface."
+                                </p>
+                                <p>
+                                    Mathematically, for a closed surface \( S \), if the electric field at various
+                                    points on the surface is
+                                    given by \( \vec{E} \), the net flux \( \Phi_E \) through the surface is expressed
+                                    as:
+                                </p>
+                                <p class="text-law text-center">
+                                    \(\displaystyle \Phi_E = \int_S \vec{E} \cdot \mathrm{d}\vec{S} =
+                                    \dfrac{Q_\text{enclosed}}{\epsilon_0}\)
+                                </p>
+                                <p>
+
+                                    Here, \( Q_\text{enclosed} \) represents the total charge enclosed within the closed
+                                    surface.
+                                </p>
+                                <p>
+                                    Gauss's law holds true for any closed surface, regardless of its shape, size, or how
+                                    the charge is
+                                    distributed inside it. Its practical utility arises in problems where it simplifies
+                                    the calculation of
+                                    electric fields by using the enclosed charge.
+                                </p>
+                                <ul class="list list-group-flush">
+                                    <p>
+                                        Below are some key concepts and implications of Gauss's law:
+                                    </p>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>The electric field \( \vec{E} \) is the resultant
+                                                    field</strong></summary>
+                                            <p>
+                                                The \( \vec{E} \) in Gauss's law represents the total electric field at
+                                                each point on the
+                                                surface, regardless of the source of the field. This includes
+                                                contributions from all charges
+                                                inside and outside the closed surface.
+                                            </p>
+                                            <p>
+                                                For example, if there are external charges outside the closed surface,
+                                                they contribute to the
+                                                electric field at points on the surface but do not affect \(
+                                                Q_\text{enclosed} \). The law
+                                                accounts only for the net charge inside the surface.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>\( Q_\text{enclosed} \) accounts for charges inside the
+                                                    surface</strong></summary>
+                                            <p>
+                                                The \( Q_\text{enclosed} \) term in Gauss's law includes only the
+                                                charges that are physically
+                                                enclosed within the closed surface \( S \). Charges outside the surface,
+                                                no matter how strong
+                                                their fields are, do not contribute to \( Q_\text{enclosed} \) but may
+                                                influence the electric
+                                                field \( \vec{E} \) on the surface.
+                                            </p>
+                                            <p>
+                                                For instance, in a spherical Gaussian surface enclosing a point charge
+                                                \( q \), the
+                                                \( Q_\text{enclosed} = q \), irrespective of the presence of other
+                                                charges outside the sphere.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Electric flux depends on the net charge, not its
+                                                    distribution</strong></summary>
+                                            <p>
+                                                Gauss's law reveals that the electric flux through a closed surface
+                                                depends only on the net
+                                                charge enclosed, not on how the charge is distributed within the
+                                                surface. For example,
+                                                whether a charge \( q \) is concentrated at a point or spread uniformly
+                                                inside the surface,
+                                                the total flux remains the same.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Shape and size of the closed surface do not matter</strong>
+                                            </summary>
+                                            <p>
+                                                The electric flux through a closed surface depends only on the net
+                                                charge enclosed, not on
+                                                the shape or size of the surface. For instance, a spherical surface, a
+                                                cubical surface, or an
+                                                irregularly shaped surface enclosing the same charge will all yield the
+                                                same total flux.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Electric flux through closed surfaces with no
+                                                    charge</strong></summary>
+                                            <p>
+                                                If a closed surface encloses no net charge (\( Q_\text{enclosed} = 0
+                                                \)), the total electric
+                                                flux through the surface is zero. This does not mean the electric field
+                                                \( \vec{E} \) is zero
+                                                everywhere on the surface. It only implies that the field lines entering
+                                                the surface equal
+                                                those exiting it, resulting in no net flux.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>
+                                    This Gauss's law has many applications in finding the electric field in symmetrical
+                                    charge distribution and understanding a few properties of conductors. Before
+                                    entering into such applications, lets first discuss the general proof of Gauss's
+                                    law.
+                                </p>
+                                <details>
+                                    <summary>
+                                        <strong>
+                                            Generalised proof of Gauss's law
+                                        </strong>
+                                    </summary>
+                                    <p>
+                                        Consider a small surface area \(\vec{ds}\) at a position \(\vec{r}\) from a
+                                        charge \(q\). The flux through this surface is given as:
+                                    </p>
+                                    <p>
+                                        \(\qquad d\phi=\frac{1}{4\pi\epsilon_0}\dfrac{q}{r^2}\hat{r}\cdot\vec{ds}\)
+                                    </p>
+                                    <p>
+                                        Here, \(\hat{r}\) represents the unit vector along the direction of \(\vec{r}\).
+                                        The variables are shown in the following 3D model:
+                                    </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-12 d-flex flex-column align-items-center justify-content-end">
+                                            <figure>
+                                                <model-viewer src="blend/17_Gauss law proof.glb"
+                                                    alt="Diagram showing the components of an area vector."
+                                                    camera-controls ar style="width: 200px; height: 200px;"
+                                                    field-of-view="35deg">
+                                                </model-viewer>
+                                                <figcaption class="figure-caption text-center">
+                                                    \(ds_r\) as component of \(\vec{ds}\)
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Since the term \(\hat{r}\cdot\vec{ds}\) represents the component of \(\vec{ds}\)
+                                        in the direction of \(\vec{r}\), the elemental flux \(\d\phi\) simplifies to:
+                                    </p>
+                                    <p>
+                                        \(\qquad d\phi=\frac{1}{4\pi\epsilon_0}\dfrac{q}{r^2}{ds_r}\)
+                                    </p>
+                                    <p>
+                                        If the solid angle subtended by \(ds_r\) at the position of the charge is
+                                        \(d\Omega\), then:
+                                    </p>
+                                    <p>
+                                        \(\qquad d\phi=\frac{1}{4\pi\epsilon_0}\dfrac{q}{r^2}{r^2d\Omega}\)
+                                        <equationDetail>[As \(d\Omega=\frac{ds_r}{r^2}\)]</equationDetail>
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad d\phi=\dfrac{q}{4\pi\epsilon_0}d\Omega\)
+                                    </p>
+                                    <p>
+                                        Integrating over the complete solid angle:
+                                    </p>
+                                    <p>
+                                        \(\qquad\displaystyle \int_0^\Phi d\phi=\dfrac{q}{4\pi\epsilon_0}\int_0^{4\pi}
+                                        d\Omega\)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad \Phi=\dfrac{q}{\epsilon_0}\)
+                                    </p>
+                                    <p>
+                                        Thus, we conclude:
+                                    </p>
+                                    <p>
+                                        The total flux of a charge \(q\) through a closed surface enclosing it is
+                                        \(\dfrac{q}{\epsilon_0}\).
+                                    </p>
+                                    <p>
+                                        <strong>Generalization to Multiple Charges</strong>
+                                    </p>
+                                    <p>
+                                        If instead of a single charge, we enclose several charges \( q_1, q_2, \ldots,
+                                        q_n \) within the same closed surface, each charge contributes its own flux
+                                        according to the result we derived for a single charge. Because the electric
+                                        field follows the principle of superposition, the total electric flux is simply
+                                        the sum of the individual fluxes due to each enclosed charge:
+                                    </p>
+                                    <p>
+                                        \(\qquad\Phi = \Phi_1 + \Phi_2 + \cdots + \Phi_n.\)
+                                    </p>
+                                    <p>
+                                        Using \(\Phi_i = \tfrac{q_i}{\epsilon_0}\) for each enclosed charge \(q_i\), we
+                                        get:
+                                    </p>
+                                    <p>
+                                        \(\qquad
+                                        \Phi = \frac{q_1}{\epsilon_0} + \frac{q_2}{\epsilon_0} + \cdots +
+                                        \frac{q_n}{\epsilon_0}
+                                        \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad
+                                        \Phi = \frac{q_1 + q_2 + \cdots + q_n}{\epsilon_0}
+                                        \)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad
+                                        \Phi = \frac{Q_{\text{enclosed}}}{\epsilon_0}
+                                        \)
+                                    </p>
+                                    <p>
+                                        Here, \( Q_{\text{enclosed}} = q_1 + q_2 + \cdots + q_n \) is the total charge
+                                        inside the surface. Thus, <strong>no matter how many charges are present or how
+                                            they are arranged</strong>, the net flux through any closed surface depends
+                                        only on the sum of those charges. This confirms the general
+                                        applicability of Gauss's law: <strong>the flux through a closed surface is
+                                            entirely determined by the total enclosed charge.</strong>
+                                    </p>
+                                </details>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-Application-to-find-flux">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Application-to-find-flux" aria-expanded="false"
+                                aria-controls="section-Application-to-find-flux">
+                                <strong>Application: in finding flux</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Application-to-find-flux" class="accordion-collapse collapse"
+                            aria-labelledby="heading-Application-to-find-flux" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                Through a closed surface, we can calculate the electric flux directly by using the
+                                Gauss's law. But for an open surface we generally use either the symmtry principles or
+                                solid angle concept to find the net electric flux. This is illustrated below:
+
+                                <ul class="list list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Using symmetry: through a hemisphere </strong></summary>
+                                            <p>
+                                                Consider a charge \( q \) placed at the center of a hemisphere of
+                                                radius
+                                                \( R \).
+                                                The electric field lines emerging from the charge are radially
+                                                outward
+                                                and
+                                                uniformly distributed in all directions. On the curved surface of
+                                                the
+                                                hemisphere,
+                                                these lines intersect the surface perpendicularly (due to symmetry),
+                                                leading to a
+                                                straightforward flux calculation.
+                                            </p>
+                                            <p> If the entire sphere of radius \( R \) were
+                                                considered instead of
+                                                just the hemisphere, we know from Gauss's law that the total flux
+                                                through the
+                                                sphere is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{sphere} = \dfrac{q}{\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                Because a hemisphere is exactly half of a closed sphere (by surface
+                                                area
+                                                and by
+                                                symmetry around the center), the flux through its curved surface
+                                                alone
+                                                will be
+                                                half of the flux through the full sphere:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{hemisphere} = \dfrac{\Phi_\text{sphere}}{2} =
+                                                \dfrac{q}{2\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                The result can be extended to even smaller (but symmetric) parts of
+                                                spherical surface. Following 3D model illustrates this:
+                                            </p>
+                                            <div class="row justify-content-center mb-4 model-container">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure>
+                                                        <model-viewer
+                                                            alt="Diagram showing closed surface in electric field."
+                                                            camera-controls ar style="width: 300px;"
+                                                            field-of-view="25deg" camera-orbit="1.57rad 1.5rad 6m"
+                                                            class="model-viewer" data-links='[
+                                                                "18_flux through full sphere.glb",
+                                                                "18_flux through half sphere.glb",
+                                                                "18_flux through quarter sphere.glb"
+                                                                ]' data-captions='[
+                                                                "Flux through full sphere \\(\\Phi=\\frac{q}{\\epsilon_0}\\).",
+                                                                "Flux through half sphere \\(\\Phi=\\frac{q}{2\\epsilon_0}\\).",
+                                                                "Flux through quarter sphere \\(\\Phi=\\frac{q}{4\\epsilon_0}\\)."
+                                                                ]'>
+                                                            <ul class="nav nav-tabs button-group">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-index="0"
+                                                                        href="#">Full</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-index="1" href="#">Half</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-index="2"
+                                                                        href="#">Quarter</a>
+                                                                </li>
+                                                            </ul>
+                                                        </model-viewer>
+
+                                                    </figure>
+
+                                                    <figcaption class="text-muted"></figcaption>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </li>
+
+                                    <!-- Example 2: Square (face of a cube) -->
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Using symmetry: through a square surface</strong></summary>
+                                            <p>
+                                                Now consider a charge \( q \) placed a perpendicular distance \( l/2
+                                                \)
+                                                from
+                                                the center of a square surface of side length \( l \). Directly
+                                                calculating
+                                                the flux through this single square can be challenging because the
+                                                electric
+                                                field is not uniform over the surface.
+                                            </p>
+                                            <p>
+                                                We can embed this square as one face of a cube
+                                                of
+                                                side \( l \). And hence, construct 5 more similar square sheets around
+                                                the charge making a cube with charge present at the body center. This is
+                                                shown in following 3D model:
+                                            </p>
+                                            <div class="row justify-content-center mb-4 model-container">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure>
+                                                        <model-viewer
+                                                            alt="Diagram showing closed surface in electric field."
+                                                            camera-controls ar style="width: 300px;"
+                                                            field-of-view="25deg" camera-orbit="1.57rad 1.5rad 6m"
+                                                            class="model-viewer" data-links='[
+                                                                "19_Flux through square sheet.glb",
+                                                                "19_Flux through 6 square sheets.glb"
+                                                                ]' data-captions='[
+                                                                "Single sheet at distance \\(l/2\\) from charge.",
+                                                                "6 sheets forming a cube with charge at center."
+                                                                ]'>
+                                                            <ul class="nav nav-tabs button-group">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-index="0"
+                                                                        href="#">sheet</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-index="1" href="#">cube</a>
+                                                                </li>
+                                                            </ul>
+                                                        </model-viewer>
+
+                                                    </figure>
+
+                                                    <figcaption class="text-muted"></figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                For the charge placed at the geometric center of the cube, the
+                                                total
+                                                flux
+                                                through the cube is (by Gauss's law):
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{cube} = \dfrac{q}{\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                Since a cube has six identical faces, the flux is evenly distributed
+                                                among them:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{square} = \dfrac{\Phi_\text{cube}}{6} =
+                                                \dfrac{q}{6\epsilon_0}.\)
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Using solid angle: through a disc</strong></summary>
+                                            <p>
+                                                Consider a point charge \( q \) placed at a distance \( x \) along the
+                                                axis from the center of a disc of radius \( R \). The total electric
+                                                flux emanating from the charge
+                                                \( q \) is uniformly spread over all solid angles surrounding the
+                                                charge. To find the flux through the disc, we calculate the fraction of
+                                                the total solid angle subtended by the disc at the charge's position.
+                                            </p>
+                                            <p>
+                                                The total flux \( \Phi_\text{total} \) from the charge in complete solid
+                                                angle of \(4\pi\) around it, is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{total} = \dfrac{q}{\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                Since the flux is uniformly distributed over the solid angle \( 4\pi \),
+                                                the flux per unit solid angle is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\dfrac{d\Phi}{d\Omega} = \dfrac{q}{4\pi\epsilon_0}\)
+                                            </p>
+                                            <p>
+                                                The disc subtends a solid angle at the
+                                                charge's position. To determine this, consider the cone formed
+                                                by the charge as apex and the disc as base. The semi-apex angle of this
+                                                cone is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\cos\theta = \dfrac{x}{\sqrt{R^2+x^2}}\)
+                                            </p>
+                                            <div class="row justify-content-center mb-4 model-container">
+                                                <div
+                                                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                    <figure>
+                                                        <model-viewer
+                                                            alt="Diagram showing closed surface in electric field."
+                                                            camera-controls ar style="width: 300px;"
+                                                            field-of-view="25deg" camera-orbit="0.4rad 1.5rad 6m"
+                                                            class="model-viewer" data-links='[
+                                                                "20_Flux through disc.glb",
+                                                                "20_Flux through disc with cone.glb"
+                                                                ]' data-captions='[
+                                                                "Disc at a distance \\(x\\) from point charge.",
+                                                                "Disc subtending a cone at the charge."
+                                                                ]'>
+                                                            <ul class="nav nav-tabs button-group">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-index="0"
+                                                                        href="#">Disc</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-index="1" href="#">Cone</a>
+                                                                </li>
+                                                            </ul>
+                                                        </model-viewer>
+
+                                                    </figure>
+
+                                                    <figcaption class="text-muted"></figcaption>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Hence, the solid angle \( \Omega \) subtended by the disc at the
+                                                charge's location is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Omega = 2\pi \bigl(1 - \cos\theta\bigr)\)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad\Omega = 2\pi \left(1 - \dfrac{x}{\sqrt{x^2 +
+                                                R^2}}\right)\)
+                                            </p>
+                                            <p>
+                                                Using the flux per unit solid angle, the flux \( \Phi_\text{disc} \)
+                                                through the disc is:
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{disc} = \dfrac{d\Phi}{d\Omega} \cdot \Omega \)
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{disc} =\dfrac{q}{4\pi\epsilon_0} \cdot 2\pi \left(1 -
+                                                \dfrac{x}{\sqrt{x^2 +
+                                                R^2}}\right)\)
+                                            </p>
+                                            <p>
+                                                \(\qquad\Phi_\text{disc} = \dfrac{q}{2\epsilon_0} \left(1 -
+                                                \dfrac{x}{\sqrt{x^2 + R^2}}\right).\)
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-Application-to-find-field">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-Application-to-find-field" aria-expanded="false"
+                                aria-controls="section-Application-to-find-field">
+                                <strong>Application: in finding field</strong>
+                            </button>
+                        </h2>
+                        <div id="section-Application-to-find-field" class="accordion-collapse collapse"
+                            aria-labelledby="heading-Application-to-find-field" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    If a given charge distribution is symmetric, then Gauss's law can be used to find
+                                    the electric field at a general point. Here symmetry may be of following types:
+                                </p>
+                                <ul>
+                                    <li><strong>Spherical</strong>: Like a point charge or uniformly spread charge on a
+                                        sphere.</li>
+                                    <li><strong>Cylindrical</strong>: Like a line charge or uniformly spread charge on a
+                                        cylinder.</li>
+                                    <li><strong>Planer</strong>: Like a large uniformly charged plane sheet.</li>
+                                </ul>
+                                <p>
+                                    We discuss the methods of calculations of electric field in following categories:
+                                </p>
+                                <ul class="list list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Spherical symmetric charge distribution</summary>
+                                            <p>
+                                                Consider a spherically symmetric total charge \(Q\) distributed in a
+                                                region around the origin of co-ordinates. Let the charge distribution be
+                                                limited within a distance \(R\) from the origin. We will use the
+                                                techniques of Gauss's law and symmetry to find the electric field at
+                                                any general position \(r\) from the origin.
+                                            </p>
+                                            <p><strong>For outside the charge distribution \(\left(r>R\right)\)</strong>
+                                            </p>
+                                            <p>
+                                                To find the electric field at a point \(P\) at a distance \(r\)
+                                                from the origin, we consider a Gaussian surface (a closed surface)
+                                                in the shape of a sphere centered at the origin. Using symmetry we
+                                                can conclude that:
+                                            </p>
+                                            DIagram here
+                                            [a-charge, point P and GAussian surface]
+                                            [b- electric field lines on the surface (not too dense)]
+                                            <ul>
+                                                <li>
+                                                    The electric field is radially outwards at all points of
+                                                    the Gaussian surface.
+                                                </li>
+                                                <li>
+                                                    The magnitudes of electric field are equal at all points of
+                                                    the Gaussian surface.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Now using Gauss's law on the Gaussian surface,
+                                            </p>
+                                            <p>
+                                                \(\qquad\displaystyle\oint \vec{E} \cdot d\vec{A}
+                                                = \frac{Q_{\text{enc}}}{\epsilon_0}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Since the electric field \(\vec{E}\) at every point on the Gaussian
+                                                surface points radially outward, the angle between \(\vec{E}\) and
+                                                \(d\vec{A}\) is zero.
+                                            </p>
+                                            <p>
+                                                \(\qquad\displaystyle\oint {E} d{A}
+                                                = \frac{Q_{\text{enc}}}{\epsilon_0}
+                                                \)
+                                            </p>
+                                            <p>
+                                                Since the magnitude of the electric field
+                                                \( E \) on a spherical Gaussian surface of
+                                                radius \( r \) is constant at every point on that surface.
+                                            </p>
+                                            <p>
+                                                \(\qquad {E}\displaystyle\oint d{A}
+                                                = \frac{Q_{\text{enc}}}{\epsilon_0}
+                                                \)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad E \times (4 \pi r^2)=
+                                                \frac{Q_{\text{enc}}}{\epsilon_0}\)
+                                            </p>
+                                            <p>
+                                                Since \(r > R\), the enclosed charge \(Q_{\text{enc}}\) is the
+                                                total charge \(Q\) (the entire distribution). Therefore,
+                                            </p>
+                                            <p class="text-center text-law">\(
+                                                E = \frac{Q}{4\pi \epsilon_0 r^2}.
+                                                \)
+                                            </p>
+                                            <p>
+                                                This shows that outside the spherically symmetric charge
+                                                distribution, the electric field is the same as if all the charge
+                                                were concentrated at the center (like a point charge).
+                                            </p>
+
+
+                                            <p><strong>For inside the charge distribution \(\left(r <
+                                                        R\right)\)</strong>
+                                            </p>
+                                            <p>
+                                                We again choose a Gaussian surface, which is a sphere of radius \(r\lt R
+                                                \). All previously mentioned results of symmetry are still the same.
+                                            </p>
+                                            <p>
+                                                By Gauss's law,
+                                            </p>
+                                            <p>
+                                                \(\qquad\displaystyle\oint \vec{E} \cdot d\vec{A} =
+                                                \frac{Q_{\text{enc}}}{\epsilon_0}\)</p>
+                                            <p>
+
+                                                Since the electric field is radially outward and has the
+                                                same magnitude \( E \) on the Gaussian surface,
+                                            </p>
+                                            \(\qquad
+                                            E \times (4\pi r^2) = \frac{Q_{\text{enc}}}{\epsilon_0}.
+                                            \)
+                                            </p>
+                                            <p>
+                                                \(\Rightarrow\quad
+                                                E = \frac{Q_{\text{enc}}}{4\pi \epsilon_0 \, r^2}.
+                                                \)
+
+                                            </p>
+                                            <p>
+                                                Here \( Q_{\text{enc}} \) is the charge enclosed by the
+                                                sphere of radius \( r \).
+                                            </p>
+                                            <p>
+                                                So, under a special condition of finding electric field inside a
+                                                uniformly charged hollow sphere of radius \(R\), the charge enclosed
+                                                inside a spherical Gaussian surface of radius \(r\)(\(r\lt R\)) is zero.
+                                                Therefore, inside a unifromly charged hollow sphere, electric field is
+                                                zero everywhere.
+                                            </p>
+                                            <p><strong>Assuming uniform charge per unit volume \(\rho\) for the charged
+                                                    region, </strong></p>
+                                            <p>
+                                                If the total charge \( Q \) is uniformly distributed within
+                                                the sphere of radius \( R \),
+                                                the charge density \(\rho\) is constant:
+                                            </p>
+                                            <p>
+                                                \(\qquad\rho = \frac{Q}{\text{Volume of the sphere}} =
+                                                \frac{Q}{\tfrac{4}{3}\pi R^3}\)
+                                            </p>
+                                            <p>
+                                                For \( r \lt R \), the enclosed charge is </p>
+                                            <p>
+                                                \(\quad Q_{\text{enc}}=\rho \times
+                                                \frac{4}{3}\pi r^3=\left(\frac{Q}{\tfrac{4}{3}\pi R^3}\right)
+                                                \times
+                                                \frac{4}{3}\pi r^3=Q \,\frac{r^3}{R^3}. \)
+                                            </p>
+                                            <p>
+                                                Substituting \(
+                                                Q_{\text{enc}} \), we get </p>
+                                            <p>
+                                                \(\qquad E=\frac{Q
+                                                \,\tfrac{r^3}{R^3}}{4\pi
+                                                \epsilon_0 \, r^2}=\dfrac{Q}{4\pi \epsilon_0 R^3}\, r. \)
+                                            </p>
+
+
+                                            <p>This
+                                                shows
+                                                that <strong>inside</strong> a uniformly charged solid
+                                                sphere, the electric field
+                                                increases linearly with \( r \).
+                                            </p>
+
+
+                                            <!-- Tabular form of results -->
+                                            <p class="text-center"><strong>Summary of results</strong></p>
+                                            <table class="table ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Distribution</th>
+                                                        <th>Electric Field \(E\)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Hollow spherical shell -->
+                                                    <tr>
+                                                        <td>Inside hollow Spherical Shell (radius = R)</td>
+                                                        <td>\(E = 0\)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Outside hollow Spherical Shell (radius = R)</td>
+                                                        <td>\(\displaystyle E = \frac{Q}{4\pi \epsilon_0 \,
+                                                            r^2}\)</td>
+                                                    </tr>
+                                                    <!-- Uniform solid sphere -->
+                                                    <tr>
+                                                        <td>Outside uniform Solid Sphere (radius = R)</td>
+                                                        <td>\(\displaystyle E = \frac{Q}{4\pi \epsilon_0
+                                                            R^3}\, r\)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Inside uniform Solid Sphere (radius = R)</td>
+                                                        <td>\(\displaystyle E = \frac{Q}{4\pi \epsilon_0 \,
+                                                            r^2}\)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Cylindrical symmetric charge distribution</summary>
+
+                                            <p>
+                                                Now let us consider a <em>cylindrically</em> symmetric charge
+                                                distribution of
+                                                radius \(R\). We use the same Gauss's law approach, but our Gaussian
+                                                surface will
+                                                be a cylinder (coaxial with the charged cylinder) instead of a sphere.
+                                            </p>
+
+                                            <!-- Outside (r > R) -->
+                                            <p><strong>For outside the charge distribution \(\left(r >
+                                                    R\right)\)</strong></p>
+                                            <p>
+                                                Consider an infinitely long cylinder of radius \(R\) with uniform volume
+                                                charge per unit axial length \(\lambda\). Let us find the electric field
+                                                at a point at
+                                                distance \(r\) \((r > R)\) from the axis of the cylinder.
+                                            </p>
+                                            <p>
+                                                We take as a Gaussian surface a coaxial cylinder of length \(L\) and
+                                                radius \(r\).
+                                                By symmetry:
+                                            </p>
+                                            DIAGRAM Here
+                                            [a- line charge, cylinder (each face named), point P]
+                                            [b- electric field lines]
+                                            <ul>
+                                                <li>The electric field \(\vec{E}\) at every point of the curved surface
+                                                    of
+                                                    the Gaussian cylinder is radially outward (perpendicular to the
+                                                    axis).
+                                                </li>
+                                                <li>The magnitude \(\,E\,\) is constant at all points on that curved
+                                                    surface.
+                                                </li>
+                                                <li>No flux passes through the flat circular ends (top and bottom)
+                                                    because
+                                                    \(\vec{E}\) is parallel to those end surfaces.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                By Gauss's law,
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle \oint \vec{E} \cdot d\vec{A} =
+                                                \frac{Q_{\text{enc}}}{\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                On the curved surface of radius \(r\),
+                                                \(\, \vec{E} \cdot d\vec{A} = E\, dA\) and \(E=\text{constant}\). Thus:
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle E\oint d{A} = \frac{Q_{\text{enc}}}{\epsilon_0}\)
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle E \times (2 \pi r \, L) =
+                                                \frac{Q_{\text{enc}}}{\epsilon_0}\)
+                                            </p>
+                                            <p>
+                                                Since \(r > R\), the enclosed charge is the charge within radius \(R\):
+                                                \(\quad Q_{\text{enc}} = \lambda \, L\)
+                                                Therefore,
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle E \, (2 \pi r L) = \frac{\lambda L}{\epsilon_0}
+                                                \)
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle
+                                                E = \frac{\lambda \, }{2\pi \epsilon_0 \, r}
+                                                \)
+                                            </p>
+
+                                            <!-- Inside (r < R) -->
+                                            <p><strong>For inside the charge distribution \(\left(r <
+                                                        R\right)\)</strong>
+                                            </p>
+                                            <p>
+                                                For a <strong>hollow cylindrical shell</strong> (an infinitely
+                                                long thin cylindrical shell of radius \(R\)
+                                                carrying uniform surface charge density \(\sigma\)), there is no
+                                                charge enclosed
+                                                for \(r \lt R\). Thus, \(E=0\) for \(r\lt R\). </p>
+                                            <p>
+                                                For a point inside a uniformly charged solid cylinder, we again
+                                                use a coaxial cylindrical Gaussian surface of radius \(r \gt
+                                                R\)
+                                                and length \(L\). Considering charge per unit volume present in
+                                                the
+                                                cylindrical region as \(\rho\), the enclosed charge is that of a
+                                                smaller cylinder of radius \(r\): \(\quad Q_{\text{enc}}=\rho
+                                                \,\pi
+                                                r^2 L\). </p>
+                                            <p>Hence, by Gauss's law: </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle E \times (2 \pi r \, L) = \frac{\rho \,\pi r^2
+                                                L}{\epsilon_0}
+                                                \;\;\Longrightarrow\;\;
+                                                E = \frac{\rho\,r}{2 \epsilon_0}.
+                                                \)
+                                            </p>
+                                            <p>
+                                                Thus, inside a uniformly charged cylinder, the electric field
+                                                increases linearly with \(r\).
+                                            </p>
+
+
+                                            <!-- Tabular form of Cylindrical Results -->
+                                            <p class="text-center"><strong>Summary of Cylindrical
+                                                    Results</strong></p>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Distribution (Infinite Length)</th>
+                                                        <th>Electric Field \(E\)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Hollow cylindrical shell -->
+                                                    <tr>
+                                                        <td>Inside hollow Cylindrical Shell
+                                                        </td>
+                                                        <td>\(\displaystyle E = 0\)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Outside hollow Cylindrical Shell </td>
+                                                        <td>\(\displaystyle E = \frac{\lambda}{2 \pi
+                                                            \epsilon_0 \, r}\)</td>
+                                                    </tr>
+                                                    <!-- Uniform solid cylinder -->
+                                                    <tr>
+                                                        <td>Inside uniform Solid Cylinder 
+                                                        </td>
+                                                        <td>\(\displaystyle E = \frac{\rho\,r}{2
+                                                            \,\epsilon_0}\)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Outside uniform Solid Cylinder
+                                                        </td>
+                                                        <td>\(\displaystyle E = \frac{\lambda}{2 \pi
+                                                            \epsilon_0 \, r}\)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Planar symmetric charge distribution</summary>
+                                            <p>
+                                                Now let us consider an <strong>infinitely large plane</strong> with
+                                                uniform charge
+                                                density. We use a cylinder-shaped Gaussian surface that straddles the
+                                                plane (its flat
+                                                faces parallel to the charged plane). By symmetry:
+                                            </p>
+                                            <ul>
+                                                <li>The electric field \(\vec{E}\) is perpendicular to the plane and has
+                                                    the same magnitude
+                                                    on both sides.
+                                                </li>
+                                                <li>The flux through the curved surface of the cylinder is zero because
+                                                    \(\vec{E}\) is parallel to that surface.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Let the surface charge density be \(\sigma\). Then the charge enclosed
+                                                by the cylinder
+                                                is \(\sigma \times (\text{area of cylinder face})\). Applying Gauss's
+                                                law:
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle \oint \vec{E}\cdot d\vec{A} =
+                                                \frac{Q_{\text{enc}}}{\epsilon_0}.\)
+                                            </p>
+                                            <p>
+                                                Since there are two faces of area \(A\) (top and bottom of the cylinder)
+                                                each with
+                                                electric field \(E\) passing through them, the left side becomes:
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle E \cdot A + E \cdot A = 2EA.\)
+                                            </p>
+                                            <p>
+                                                And \(Q_{\text{enc}} = \sigma A\). Hence,
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle 2EA = \frac{\sigma A}{\epsilon_0}
+                                                \)
+                                            </p>
+                                            <p class="ms-4">
+                                                \(\displaystyle  E = \frac{\sigma}{2\,\epsilon_0}.
+                                                \)
+                                            </p>
+                                            <p>
+                                                Therefore, the magnitude of the electric field due to a single infinite
+                                                charged plane
+                                                (with surface charge density \(\sigma\)) is
+                                                \(\displaystyle \frac{\sigma}{2\epsilon_0}\), directed normally away
+                                                from the plane.
+                                            </p>
+                                        </details>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

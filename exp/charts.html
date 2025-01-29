@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Graphs with Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dynamic Graphs with Chart.js</h1>
+    <p>Below are examples of dynamically generated graphs using attributes defined in HTML.</p>
+
+    <!-- Graph Containers -->
+    <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5,6"
+        data-datasets='[{"label": "Displacement", "data": [0,10,10,7.5,5,2.5,0], "borderColor": "red"}]'
+        data-title="Displacement vs Time" data-x-title="Time (s)" data-y-title="Displacement (m)">
+    </div>
+
+    <div class="chart-container" data-type="bar" data-labels="0,1,2,3,4"
+        data-datasets='[{"label": "Velocity", "data": [0,10,20,30,40], "backgroundColor": "blue"}]'
+        data-title="Velocity vs Time" data-x-title="Time (s)" data-y-title="Velocity (m/s)">
+    </div>
+
+    <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+        data-datasets='[{"label": "Acceleration", "data": [0,2,4,6,8,10], "borderColor": "green"}]'
+        data-title="Acceleration vs Time" data-x-title="Time (s)" data-y-title="Acceleration (m/s^2)">
+    </div>
+
+    <!-- JavaScript to Generate Graphs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const containers = document.querySelectorAll(".chart-container");
+
+            containers.forEach((container, index) => {
+                const ctx = document.createElement("canvas");
+                container.appendChild(ctx);
+
+                // Extract attributes
+                const type = container.getAttribute("data-type") || "line";
+                const labels = container.getAttribute("data-labels").split(",");
+                const datasets = JSON.parse(container.getAttribute("data-datasets"));
+                const title = container.getAttribute("data-title") || `Graph ${index + 1}`;
+                const xTitle = container.getAttribute("data-x-title") || "";
+                const yTitle = container.getAttribute("data-y-title") || "";
+
+                // Generate the chart
+                new Chart(ctx, {
+                    type: type,
+                    data: {
+                        labels: labels,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: title,
+                                font: {
+                                    family: 'Times New Roman', // Set font for chart title
+                                    size: 16
+                                }
+                            },
+                            tooltip: {
+                                bodyFont: {
+                                    family: 'Times New Roman' // Set font for tooltip
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: xTitle !== "",
+                                    text: xTitle,
+                                    font: {
+                                        family: 'Times New Roman', // Set font for x-axis title
+                                        size: 14
+                                    }
+                                },
+                                ticks: {
+                                    font: {
+                                        family: 'Times New Roman', // Set font for x-axis ticks
+                                        size: 12
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: yTitle !== "",
+                                    text: yTitle,
+                                    font: {
+                                        family: 'Times New Roman', // Set font for y-axis title
+                                        size: 14
+                                    }
+                                },
+                                ticks: {
+                                    font: {
+                                        family: 'Times New Roman', // Set font for y-axis ticks
+                                        size: 12
+                                    }
+                                }
+                            }
+                        }
+                        ,
+                        onClick: (evt, activeElements) => {
+                            if (activeElements.length) {
+                                const index = activeElements[0].index;
+                                const datasetIndex = activeElements[0].datasetIndex;
+                                const dataset = datasets[datasetIndex];
+                                const label = labels[index];
+                                const value = dataset.data[index];
+                                alert(`Label: ${label}, Value: ${value}`);
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

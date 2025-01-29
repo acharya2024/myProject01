@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Graphical Analysis of Motion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Graphical Analysis of Motion</h1>
+                    <p class="lead" id="tagline">The visualisation of motion</p>
+                    <hr class="my-4">
+
+                    <div class="accordion" id="content"> <!-- Section 1: Fundamental of a Graph -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFundamental"> <button
+                                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFundamental" aria-expanded="false"
+                                    aria-controls="collapseFundamental"> <strong>Fundamentals of graphs</strong>
+                                </button> </h2>
+                            <div id="collapseFundamental" class="accordion-collapse collapse"
+                                aria-labelledby="headingFundamental" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>Graphs are powerful tools for visualizing data and understanding relationships
+                                        between variables. They're used in various fields, not just physics. For
+                                        instance, a cricket match score graph shows how the runs scored change over
+                                        time, and a stock market graph tracks changes in stock prices.</p>
+                                    <p>Graphs can show increasing trends, decreasing trends, or no trend at all. An
+                                        <em>increasing trend</em> means the y-axis variable increases as the x-axis
+                                        variable increases. A <em>decreasing trend</em> means the y-axis variable
+                                        decreases as the x-axis variable increases. The slope of the graph represents
+                                        this trend quantitatively.
+                                    </p> <strong>Slope of a graph</strong>
+                                    <p>The <em>slope</em> of a graph quantifies how steep the graph is. For a
+                                        straight-line graph, the slope is constant. A steeper line has a higher
+                                        magnitude of slope (it could be positive or negative), indicating a faster rate
+                                        of change. A flatter line has a lower slope magnitude, showing a slower rate of
+                                        change.</p>
+                                    <p>Imagine a graph of temperature throughout the day. From morning to noon, the
+                                        temperature typically increases. This would be represented by an upward-sloping
+                                        line on the graph, indicating a <em>positive slope</em> as shown: </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="Morning,Noon,Evening"
+                                                data-datasets='[{"label": "Temperature", "data": [15,25,20], "borderColor": "blue"}]'
+                                                data-title="Temperature Throughout the Day" data-x-title="Time of Day"
+                                                data-y-title="Temperature (°C)" data-x-step-size="1"
+                                                data-y-step-size="5" data-x-min="0" data-x-max="6" data-y-min="0"
+                                                data-y-max="30" data-show-x-axis="true" data-show-y-axis="true"></div>
+                                        </div>
+                                    </div>
+                                    <p> The positive slope tells us that as time increases (moves to the right on the
+                                        x-axis), the temperature also increases (moves up on the y-axis). As time
+                                        progresses from noon to evening, the temperature generally decreases, resulting
+                                        in a downward-sloping line with a <em>negative slope</em>. Here, as time
+                                        increases, the temperature decreases. </p>
+                                    <p>For curves, every point may have different slope, in that case we draw tangent at
+                                        desired point to find the slope at that point.</p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Steep Positive Slope", "data": [0,4,8,12,16,20], "borderColor": "blue"}]'
+                                                data-title="Steep Positive Slope" data-x-title="x" data-y-title="y"
+                                                data-x-step-size="1" data-y-step-size="4" data-x-min="0" data-x-max="6"
+                                                data-y-min="0" data-y-max="24" data-show-x-axis="true"
+                                                data-show-y-axis="true"> </div>
+                                            <figcaption class="figure-caption text-center"> \(y = 4x\) </figcaption>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Less Steep Slope", "data": [0,1,2,3,4,5], "borderColor": "green"}]'
+                                                data-title="Less Steep Slope" data-x-title="x" data-y-title="y"
+                                                data-x-step-size="1" data-y-step-size="1" data-x-min="0" data-x-max="6"
+                                                data-y-min="0" data-y-max="24" data-show-x-axis="true"
+                                                data-show-y-axis="true"> </div>
+                                            <figcaption class="figure-caption text-center">\(y=x\)</figcaption>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Negative Slope", "data": [6,4,2,0,-2,-4], "borderColor": "red"}]'
+                                                data-title="Steep Negative Slope" data-x-title="x" data-y-title="y"
+                                                data-x-step-size="1" data-y-step-size="2" data-x-min="0" data-x-max="6"
+                                                data-y-min="-4" data-y-max="8" data-show-x-axis="true"
+                                                data-show-y-axis="true"> </div>
+                                            <figcaption class="figure-caption text-center">\(y = -2x + 6\)</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>If we draw a line connecting two points A and B on a curved position-time graph,
+                                        this line is called a <em>secant</em>, and its slope gives the <em>average
+                                            velocity</em> between those two times. </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/01_Points AB on a curve.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Curve showing points A and B."> </figure>
+                                            <figcaption class="figure-caption text-center">Graph: Showing points A and
+                                                B.</figcaption>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/01_Slope of secant between A and B.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Curve showing slope of secant between A and B."> </figure>
+                                            <figcaption class="figure-caption text-center">Graph: Slope of secant
+                                                between A and B.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p> In the above graph, the value of \(\tan\theta\) is known as slope of line
+                                        \(AB\). Its slope is given as: </p>
+                                    <p> \(\qquad \text{Slope}=\tan\theta=\dfrac{\Delta x}{\Delta t}\) </p>
+                                    <p> Thus, slope of the secant \(AB\) represents nothing but the average velocity in
+                                        the time interval of \(\Delta t\). </p>
+                                    <p> \(\Rightarrow\quad \text{Average velocity}=\tan\theta\) </p>
+                                    <p>As the time interval between points A and B gets smaller and smaller (the points
+                                        get closer), </p>
+                                    <ul>
+                                        <li> the secant line AB approaches the <em>tangent</em> to the curve at point B
+                                        </li>
+                                        <li> the average velocity between AB approaches the <em>instantaneous
+                                                velovity</em> at point B </li>
+                                    </ul>
+                                    <p> This is shown in the animated graph below: </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img src="gif/01_slope_from_graph.gif"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Animated graph showing slope of a tangent."> </figure>
+                                            <figcaption class="figure-caption text-center">Graph: Variation of Secant AB
+                                                transforming into tangent at B.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p> Thus, we conclude that: </p>
+                                    <p class="text-center text-law"> The slope of a tangent drawn at a point in position
+                                        time graph, represents the instantaneous velocity of associated particle at that
+                                        time. </p>
+                                    <p> This relation of slope can be extended to any graph in general. For example, the
+                                        slope of a tangent drawn at a point in velocity time graph, represents the
+                                        instantaneous acceleration of associated particle at that time. In general, </p>
+                                    <p class="text-center text-law"> The slope of a tangent drawn at a point in any
+                                        general graph, represents the rate of change of quantity on \(y\)-axis with
+                                        respect to \(x\)-axis. </p> <strong>Area of a graph</strong>
+                                    <p>Let's consider a velocity-time graph where a particle's velocity changes in
+                                        steps:</p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/02_Stepped graph of velocity.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Graph showing stepped variation of velocity."> </figure>
+                                            <figcaption class="figure-caption text-center">Graph: Variation of Variation
+                                                of velocity with time.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>The particle has a constant velocity of \(2 \, \text{m/s}\) for \(2 \,
+                                        \text{s}\), then \(4 \, \text{m/s}\) for the next \(2 \, \text{s}\), and finally
+                                        \(6 \, \text{m/s}\) for the next \(2 \, \text{s}\). The total displacement can
+                                        be calculated by summing the displacements during each interval:</p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/02_Stepped graph of velocity area-1.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Graph showing stepped variation of velocity."> </figure>
+                                            <figcaption class="figure-caption text-center">Displacement from 0s to 2s:
+                                                \(2\,\text{m/s}\times 2\,\text{s}=4\, \text{m}\).</figcaption>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/02_Stepped graph of velocity area-2.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Graph showing stepped variation of velocity."> </figure>
+                                            <figcaption class="figure-caption text-center">Displacement from 2s to 4s:
+                                                \(4\,\text{m/s}\times 2\,\text{s}=8\, \text{m}\).</figcaption>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img
+                                                    src="img/02_Stepped graph of velocity area-3.png"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Graph showing stepped variation of velocity."> </figure>
+                                            <figcaption class="figure-caption text-center">Displacement from 4s to 6s:
+                                                \(6\,\text{m/s}\times 2\,\text{s}=12\, \text{m}\).</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>The total displacement becomes \(24 \,\text{m}\). Notice that each term in the
+                                        sum is the area of a rectangular section under the velocity-time graph. This
+                                        leads to a general principle:</p>
+                                    <p class="text-center text-law"> The total displacement is the area under the
+                                        velocity-time graph </p>
+                                    <p>If the velocity changes continuously (not in steps), we can still apply this
+                                        principle. We divide the time into very small intervals \(\Delta t\). Over each
+                                        small interval, we assume the velocity remains essentially constant. The
+                                        displacement during each interval is approximately \(v \Delta t\) (the area of a
+                                        very thin rectangle). Summing up these small displacements (or areas) gives an
+                                        approximation of the total displacement.
+                                    </p>
+                                    <p> As \(\Delta t\) becomes infinitesimally
+                                        small, this sum approaches the exact area under the curve, which is the precise
+                                        displacement. This is shown in animated graph below:
+                                    </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <figure style="max-width: 300px;"> <img src="gif/02_area_from_graph.gif"
+                                                    class="figure-img img-fluid rounded"
+                                                    alt="Graph showing area in velocity time graph."> </figure>
+                                            <figcaption class="figure-caption text-center">Graph: Area in velocity time
+                                                graph.</figcaption>
+                                        </div>
+                                    </div>
+                                    <p>This process of summing infinitesimally small areas is known as
+                                        <em>integration</em> in calculus. For finite size of the time intervals, the
+                                        displacement will be:
+                                    </p>
+                                    <p>
+                                        \(\qquad \displaystyle\Delta s={{v}_{1}}\Delta t+{{v}_{2}}\Delta
+                                        t+{{v}_{3}}\Delta t+{{v}_{4}}\Delta t+...+{{v}_{n}}\Delta t\)
+                                    </p>
+                                    <p>
+                                        \(\Rightarrow\quad\displaystyle \Delta s=\sum\limits_{i=1}^{n}{{{v}_{i}}\Delta
+                                        t}\)
+                                    </p>
+                                    <p>
+                                        But if each time interval becomes infinitasimally small, we write the same
+                                        summation in terms of integration as:
+                                    </p>
+                                    <p>
+                                        \(\qquad \displaystyle\Delta s=\int\limits_{{{t}_{1}}}^{{{t}_{2}}}{vdt}\)
+                                    </p>
+                                    <p>Thus,</p>
+                                    <p class="text-law text-center">
+                                        For any general graph of \(y\) vs. \(x\), the area below the curve is
+                                        represented by the integration:
+                                        \(\displaystyle\int\limits_{{{x}_{1}}}^{{{x}_{2}}}{ydx}\)
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- Section 2: Standard Graphs -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingVelocityTimeGraphs"> <button
+                                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseVelocityTimeGraphs" aria-expanded="false"
+                                    aria-controls="collapseVelocityTimeGraphs"> <strong>Standard graphs for
+                                        motion</strong> </button> </h2>
+                            <div id="collapseVelocityTimeGraphs" class="accordion-collapse collapse"
+                                aria-labelledby="headingVelocityTimeGraphs" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        Before we proceed into some standard graphs generally used to understand motion
+                                        of an object, lets conclude about the two direct informations we get from any
+                                        graph:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>The slope of graph represents rate of change of quantity on \(y\)-axis
+                                                relative to the quantity on \(x\)-axis. This rate of change is simply
+                                                the differentiation of quantity on \(y\)-axis with respect to the
+                                                quantity on \(x\)-axis</p>
+                                        </li>
+                                        <li>
+                                            <p>The area under the curve in a graph shows how the quantity on the
+                                                \(y\)-axis builds up as the quantity on the \(x\)-axis changes.
+                                                Mathematically, this is the integral of \(y\) with respect to \(x\).</p>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Using the concepts discussed so far, the following graphical relations between
+                                        displacement \(s\), velocity \(v\) and the acceleration \(a\) vs. time \(t\)
+                                        become obvious :
+                                    </p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <p>
+                                                \(s-t\text{ graph}\xrightarrow{\mathbf{Differentiation}}v\)
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <p>
+                                                \(v-t\text{ graph}\xrightarrow{\mathbf{Differentiation}}{a}\)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <p>
+                                                \(a-t\text{ graph}\xrightarrow{\mathbf{Integration}}\text{Change in }v\)
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <p>
+                                                \(v-t\text{ graph}\xrightarrow{\mathbf{Integration}}
+                                                \text{Change in position}(s)\)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>Velocity-time graphs are particularly useful because they provide multiple pieces
+                                        of information about an object's motion. The slope of the graph gives the
+                                        instantaneous acceleration (\(a = \frac{dv}{dt}\)), and the area under the curve
+                                        gives the displacement. Now, for different types of motion performed by an
+                                        object the examples of graphs are enlisted as follows:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary> <strong>Case 1: Constant Velocity</strong> </summary>
+                                                <p>In this case, the slope of velocity time graph is zero, indicating
+                                                    zero acceleration. The displacement increases linearly with time.
+                                                </p>
+                                                <div class="row justify-content-center mb-4">
+                                                    <!-- Velocity vs Time Chart -->
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end ">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Velocity", "data": [5,5,5,5,5,5], "borderColor": "blue"}]'
+                                                            data-title="Velocity vs Time (Constant Velocity)"
+                                                            data-x-title="Time (s)" data-y-title="Velocity (m/s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="8"
+                                                            data-annotations='[{"xValue": 2, "yValue": 6, "content": "Slope (acceleration) is zero", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-show-x-axis="true" data-show-y-axis="true"> </div>
+                                                    </div> <!-- Acceleration vs Time Chart -->
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end ">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Acceleration", "data": [0,0,0,0,0,0], "borderColor": "green"}]'
+                                                            data-title="Acceleration vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="4"
+                                                            data-annotations='[{"xValue": 2.5, "yValue": 1, "content": "Value of acceleration is zero", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-y-title="Acceleration (m/s²)" data-show-x-axis="true"
+                                                            data-show-y-axis="true"> </div>
+                                                    </div> <!-- Displacement vs Time Chart -->
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end ">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Displacement", "data": [0,5,10,15,20,25], "borderColor": "red"}]'
+                                                            data-title="Displacement vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="30"
+                                                            data-y-title="Displacement (m)"
+                                                            data-annotations='[{"xValue": 1.5, "yValue": 18, "content": "Displacement continuously increases", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-show-x-axis="true" data-show-y-axis="true"> </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary> <strong>Case 2: Increasing Velocity (Constant
+                                                        Acceleration)</strong> </summary>
+                                                <p>The slope of velocity time graph is positive and constant, indicating
+                                                    constant positive acceleration. The displacement increases with time
+                                                    at an increasing rate (curved graph).</p>
+                                                <div class="row justify-content-center mb-4 ">
+                                                    <!-- Velocity vs Time Chart -->
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Velocity", "data": [0,2,4,6,8,10], "borderColor": "blue"}]'
+                                                            data-title="Velocity vs Time (Increasing Velocity)"
+                                                            data-x-title="Time (s)" data-x-step-size="1"
+                                                            data-y-step-size="1" data-x-min="0" data-x-max="6"
+                                                            data-y-min="0" data-y-max="12"
+                                                            data-annotations='[{"xValue": 1.5, "yValue": 7, "content": "Slope (acceleration) is positive", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-y-title="Velocity (m/s)" data-show-x-axis="true"
+                                                            data-show-y-axis="true"> </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Acceleration", "data": [2,2,2,2,2,2], "borderColor": "green"}]'
+                                                            data-title="Acceleration vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="4"
+                                                            data-y-title="Acceleration (m/s^2)"
+                                                            data-annotations='[{"xValue": 2.5, "yValue": 2.5, "content": "Acceleration is positive and constant", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-show-x-axis="true" data-show-y-axis="true"> </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Displacement", "data": [0,1,4,9,16,25], "borderColor": "red"}]'
+                                                            data-title="Displacement vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="30"
+                                                            data-annotations='[{"xValue": 2.5, "yValue" : 20, "content": "Slope contineously increases" , "backgroundColor": "rgba(54, 162, 235, 0.25)" }]'
+                                                            data-y-title=" Displacement (m)" data-show-x-axis="true"
+                                                            data-show-y-axis="true"> </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Case 3: Decreasing Velocity (Constant
+                                                        Deceleration)</strong> </summary>
+                                                <p>The slope of velocity time graph is negative and constant,
+                                                    representing constant negative acceleration (deceleration). The
+                                                    displacement initially increases but at a decreasing rate,
+                                                    eventually reaching a maximum and potentially starting to decrease
+                                                    if the velocity becomes negative.</p>
+                                                <div class="row justify-content-center mb-4 ">
+                                                    <!-- Velocity vs Time Chart -->
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Velocity", "data": [10,8,6,4,2,0], "borderColor": "blue"}]'
+                                                            data-title="Velocity vs Time (Decreasing Velocity)"
+                                                            data-x-title="Time (s)" data-y-title="Velocity (m/s)"
+                                                            data-x-step-size="1" data-y-step-size="1" data-x-min="0"
+                                                            data-x-max="6" data-y-min="0" data-y-max="12"
+                                                            data-show-x-axis="true"
+                                                            data-annotations='[{"xValue": 3, "yValue": 8, "content": "Slope (acceleration) is negative", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-show-y-axis="true"></div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Acceleration", "data": [-2,-2,-2,-2,-2,-2], "borderColor": "green"}]'
+                                                            data-title="Acceleration vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1"
+                                                            data-y-title="Acceleration (m/s^2)" data-x-step-size="1"
+                                                            data-y-step-size="1" data-x-min="0" data-x-max="6"
+                                                            data-y-min="-4"
+                                                            data-annotations='[{"xValue": 2.5, "yValue": -0.5, "content": "Acceleration is constant and negative", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-y-max="2" data-show-x-axis="true"
+                                                            data-show-y-axis="true"> </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-end">
+                                                        <div class="chart-container" data-type="line"
+                                                            data-labels="0,1,2,3,4,5"
+                                                            data-datasets='[{"label": "Displacement", "data": [0,9,16,21,24,25], "borderColor": "red"}]'
+                                                            data-title="Displacement vs Time" data-x-title="Time (s)"
+                                                            data-x-step-size="1" data-y-step-size="1"
+                                                            data-y-title="Displacement (m)" data-x-step-size="1"
+                                                            data-annotations='[{"xValue": 3, "yValue": 5, "content": "Slope contineously decreases", "backgroundColor": "rgba(54, 162, 235, 0.25)"}]'
+                                                            data-y-step-size="1" data-x-min="0" data-x-max="6"
+                                                            data-y-min="0" data-y-max="30" data-show-x-axis="true"
+                                                            data-show-y-axis="true"> </div>
+                                                    </div>
+                                                </div>
+                                            </details>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInteractiveGraphsVtoA"> <button
+                                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInteractiveGraphsVtoA" aria-expanded="false"
+                                    aria-controls="collapseInteractiveGraphsVtoA"> <strong>Graph conversions: Velocity
+                                        to Acceleration</strong>
+                                </button> </h2>
+                            <div id="collapseInteractiveGraphsVtoA" class="accordion-collapse collapse"
+                                aria-labelledby="headingInteractiveGraphsVtoA" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>Here are a set of velocity time graphs to be converted into acceleration time
+                                        graphs. Observe the given velocity time graph and correctly plot the
+                                        acceleration time graph given next to it.</p>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[5, 15, 25, 20, 10, 0]"
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container me-3"
+                                                data-key='[{"x":0,"y":10},{"x":1,"y":10},{"x":2,"y":-5},{"x":3,"y":-10},{"x":4,"y":-10}]'
+                                                data-ymin="-20" data-ymax="20" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[0, 20, 20, 0, -20, -20]"
+                                                data-ymin="-30" data-ymax="30" data-stepsize="10">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":20},{"x":1,"y":0},{"x":2,"y":-20},{"x":3,"y":-20},{"x":4,"y":0}]'
+                                                data-ymin="-30" data-ymax="30" data-stepsize="10">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[0,5,10,15,20,25]"
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":5},{"x":3,"y":5},{"x":4,"y":5}]'
+                                                data-ymin="-5" data-ymax="10" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[25,20,15,10,5,0]"
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":-5},{"x":1,"y":-5},{"x":2,"y":-5},{"x":3,"y":-5},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="5" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[10,10,10,10,10,10]"
+                                                data-ymin="0" data-ymax="20" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
+                                                data-ymin="-5" data-ymax="5" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[0,0,0,0,0,0]" data-ymin="-5"
+                                                data-ymax="5" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
+                                                data-ymin="-5" data-ymax="5" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[0, -10, -20, -20, -10, 0]"
+                                                data-ymin="-25" data-ymax="5" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":-10},{"x":1,"y":-10},{"x":2,"y":0},{"x":3,"y":10},{"x":4,"y":10}]'
+                                                data-ymin="-20" data-ymax="20" data-stepsize="10">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[15,10,10,15,15,10]"
+                                                data-ymin="0" data-ymax="20" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":-5},{"x":1,"y":0},{"x":2,"y":5},{"x":3,"y":0},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[0,5,15,30,20,5]"
+                                                data-ymin="0" data-ymax="35" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":5},{"x":1,"y":10},{"x":2,"y":15},{"x":3,"y":-10},{"x":4,"y":-15}]'
+                                                data-ymin="-20" data-ymax="20" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="velocity-container" data-datasets="[10, 15, 20, 15, 10, 5]"
+                                                data-ymin="0" data-ymax="25" data-stepsize="5">
+                                                <canvas class="velocityChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acceleration-container"
+                                                data-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":-5},{"x":3,"y":-5},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5">
+                                                <canvas class="accelerationChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInteractiveGraphsAtoV">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInteractiveGraphsAtoV" aria-expanded="false"
+                                    aria-controls="collapseInteractiveGraphsAtoV">
+                                    <strong>Graph Conversions: Acceleration to Velocity</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseInteractiveGraphsAtoV" class="accordion-collapse collapse"
+                                aria-labelledby="headingInteractiveGraphsAtoV" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>Here are a set of acceleration time graphs to be converted into velocity time
+                                        graphs. Observe the given acceleration time graph and correctly plot the
+                                        velocity time graph given next to it. The initial velocity \(u\) in each case,
+                                        is given within graph itself.
+                                    </p>
+
+                                    <!-- ====== Question Set 1 (A→V) ====== -->
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <!-- Acceleration Graph (Given) -->
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":0},{"x":3,"y":-5},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5"
+                                                data-annotation="u: 10 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+
+                                        <!-- Velocity Chart (User Plots) -->
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":10},{"x":1,"y":15},{"x":2,"y":20},{"x":3,"y":20},{"x":4,"y":15}]'
+                                                data-ymin="0" data-ymax="20" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <!-- Check Button -->
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":0},{"x":3,"y":-5},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5"
+                                                data-annotation="u: 10 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":10},{"x":1,"y":15},{"x":2,"y":20},{"x":3,"y":20},{"x":4,"y":15}]'
+                                                data-ymin="0" data-ymax="20" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":-10},{"x":1,"y":0},{"x":2,"y":10},{"x":3,"y":0},{"x":4,"y":-10}]'
+                                                data-ymin="-15" data-ymax="15" data-stepsize="5"
+                                                data-annotation="u: 0 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":0},{"x":1,"y":-10},{"x":2,"y":-10},{"x":3,"y":0},{"x":4,"y":0}]'
+                                                data-ymin="-15" data-ymax="5" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":0},{"x":1,"y":5},{"x":2,"y":-5},{"x":3,"y":0},{"x":4,"y":5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5"
+                                                data-annotation="u: 5 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":10},{"x":3,"y":5},{"x":4,"y":5}]'
+                                                data-ymin="0" data-ymax="15" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":10},{"x":1,"y":0},{"x":2,"y":-10},{"x":3,"y":0},{"x":4,"y":10}]'
+                                                data-ymin="-15" data-ymax="15" data-stepsize="5"
+                                                data-annotation="u: 15 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":15},{"x":1,"y":25},{"x":2,"y":25},{"x":3,"y":15},{"x":4,"y":15}]'
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <hr>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":-5},{"x":1,"y":0},{"x":2,"y":5},{"x":3,"y":0},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5"
+                                                data-annotation="u: 10 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":10},{"x":1,"y":5},{"x":2,"y":5},{"x":3,"y":10},{"x":4,"y":10}]'
+                                                data-ymin="0" data-ymax="15" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <hr>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
+                                                data-ymin="-5" data-ymax="5" data-stepsize="5"
+                                                data-annotation="u: 0 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
+                                                data-ymin="-5" data-ymax="5" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <hr>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":0},{"x":1,"y":5},{"x":2,"y":0},{"x":3,"y":-5},{"x":4,"y":0}]'
+                                                data-ymin="-10" data-ymax="10" data-stepsize="5"
+                                                data-annotation="u: -5 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":-5},{"x":1,"y":-5},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="5" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <hr>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":10},{"x":1,"y":-5},{"x":2,"y":0},{"x":3,"y":5},{"x":4,"y":-5}]'
+                                                data-ymin="-10" data-ymax="15" data-stepsize="5"
+                                                data-annotation="u: 15 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":15},{"x":1,"y":25},{"x":2,"y":20},{"x":3,"y":20},{"x":4,"y":25}]'
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <hr>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":-10},{"x":1,"y":10},{"x":2,"y":-10},{"x":3,"y":10},{"x":4,"y":-10}]'
+                                                data-ymin="-20" data-ymax="20" data-stepsize="10"
+                                                data-annotation="u: 0 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":0},{"x":1,"y":-10},{"x":2,"y":0},{"x":3,"y":-10},{"x":4,"y":0}]'
+                                                data-ymin="-20" data-ymax="10" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="acc-given-container"
+                                                data-acc-key='[{"x":0,"y":5},{"x":1,"y":10},{"x":2,"y":-5},{"x":3,"y":-10},{"x":4,"y":0}]'
+                                                data-ymin="-15" data-ymax="15" data-stepsize="5"
+                                                data-annotation="u: 10 m/s">
+                                                <canvas class="accGivenChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                            <div class="vel-plot-container"
+                                                data-velocity-key='[{"x":0,"y":10},{"x":1,"y":15},{"x":2,"y":25},{"x":3,"y":20},{"x":4,"y":10}]'
+                                                data-ymin="0" data-ymax="30" data-stepsize="5">
+                                                <canvas class="velocityPlotChart"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div
+                                                class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                                <button class="btn btn-primary check-btn-atoV">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- ====== Additional Question Sets (A→V) can go here, same structure ====== -->
+                                    <!-- Just duplicate the row with "motion-graphs-set-atoV" and update data- attributes -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingContinuouslyChangingSlopes">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseContinuouslyChangingSlopes" aria-expanded="false"
+                                    aria-controls="collapseContinuouslyChangingSlopes">
+                                    <strong>Continuously Changing Slopes</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseContinuouslyChangingSlopes" class="accordion-collapse collapse"
+                                aria-labelledby="headingContinuouslyChangingSlopes" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>
+                                        In the real world, motion is rarely limited to constant or stepwise slopes (like straight lines).
+                                        Most motions involve curves, where the slope changes continuously. Understanding these curves is
+                                        critical for analyzing the dynamics of motion.
+                                    </p>
+                                    <p>
+                                        A continuously changing slope indicates a variable rate of change. In a position-time graph, this
+                                        means the velocity isn't constant—suggesting acceleration or deceleration. Similarly, in a
+                                        velocity-time graph, a changing slope indicates non-uniform acceleration.
+                                    </p>
+                        
+                                    <p><strong>Understanding Linearly Changing Slopes</strong></p>
+                                    <p>
+                                        One special case of continuously changing slopes is when the slope itself changes at a constant rate.
+                                        In a position-time graph, this would create a parabolic curve, such as \( s = t^2 \). The corresponding
+                                        slope (velocity) increases linearly, forming a straight line in the slope-time graph.
+                                    </p>
+                        
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-6 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="-5,-4,-3,-2,-1,0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Position (m)", "data": [25,16,9,4,1,0,1,4,9,16,25], "borderColor": "blue"}]'
+                                                data-title="Position vs. Time (s = t²)" data-x-title="Time (s)" data-y-title="Position (m)"
+                                                data-x-step-size="1" data-y-step-size="1" data-x-min="-10" data-x-max="10" data-y-min="0" data-y-max="30"
+                                                data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <p>
+                                        In the above graph, the slope (velocity) changes linearly over time. For instance:
+                                        <ul>
+                                            <li>The slope is negative at \(t = -2\), indicating backward motion.</li>
+                                            <li>The slope becomes zero at \(t = 0\), indicating the object is momentarily at rest.</li>
+                                            <li>The slope increases positively after \(t = 0\), reflecting forward motion with increasing speed.</li>
+                                        </ul>
+                                        This curve represents non-uniform motion.
+                                    </p>
+                        <hr><hr><hr>
+                                    <p><strong>Practical Examples of Continuously Changing Slopes</strong></p>
+                                   
+                                    <p><strong>Key Insights for Curved Graphs</strong></p>
+                                    <p>When interpreting curved graphs, keep these points in mind:</p>
+                                    <ul>
+                                        <li><strong>Positive Slope:</strong> Indicates increasing position or velocity.</li>
+                                        <li><strong>Negative Slope:</strong> Indicates decreasing position or velocity.</li>
+                                        <li><strong>Steeper Curve:</strong> Represents a faster rate of change (greater velocity or acceleration).</li>
+                                        <li><strong>Flatter Curve:</strong> Represents a slower rate of change (lower velocity or acceleration).</li>
+                                        <li><strong>Inflection Points:</strong> Points where the curvature changes, indicating a change in acceleration's direction.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="js/graphInteraction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

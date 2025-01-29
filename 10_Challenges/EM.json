@@ -1,0 +1,1062 @@
+{
+  "questions": [
+    {
+      "id": "EM-0001",
+      "title": "Ratio of Charges for Equilibrium of a Charged Particle",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Coulomb's Law",
+          "Equilibrium"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A rigid insulated wire frame in the form of a right-angled triangle ABC is set in a vertical plane as shown in the figure. \\nDIAGRAM[1,200]\\nTwo beads of equal masses \\(m\\) each and carrying the charges \\(q_1\\) and \\(q_2\\) are connected by a cord of length \\(l\\) and can slide without friction on the wires. Considering the case when the beads are stationary determine\\n(a) the angle \\(\\alpha\\)\\n(b) the tension in the cord and\\n (c)the normal reaction on the beads.",
+      "solution": "(a) The forces acting on bead at P having charge \\(q_1\\) are\\n(i) Weight \\(mg\\) acting vertically downward\\n(ii) Tension \\(T\\) in the string along the length PQ\\n(iii) The electric force \\(F = \\frac{1}{4\\pi\\epsilon_0}\\frac{q_1 q_2}{l^2}\\) between the beads along the length PQ\\n(iv) Normal reaction \\(N_1\\) of wire on bead.\\n\\nDIAGRAM[2,200]\\nFor bead P to be in equilibrium,\\n\\(mg\\cos60^{\\circ} = (T + F)\\sin\\alpha \\quad ...(1)\\)\\nand \\(N_1 = mg\\cos30^{\\circ} + (T + F)\\cos\\alpha \\quad ...(2)\\)\\nFor bead Q to be in equilibrium,\\n\\(mg\\sin60^{\\circ} = (T - F)\\cos\\alpha \\quad ...(3)\\)\\nand \\(N_2 = mg\\cos60^{\\circ} + (T - F)\\sin\\alpha \\quad ...(4)\\)\\nDividing (3) by (1)\\n\\(\\tan60^{\\circ} = \\tan\\alpha\\)\\nHence, \\(\\alpha = 60^{\\circ}\\)\\n(b) Hence, From (3),\\n\\(\\Rightarrow T - F = mg\\)\\n\\(\\Rightarrow T = mg + F = mg + \\frac{q_1 q_2}{4\\pi\\epsilon_0 l^2}\\)\\n (c) From (2) and (4), we have\\n\\(N_1 = mg\\cos30^{\\circ} + (T+F)\\cos60^{\\circ} = \\sqrt{3}mg\\)\\nand \\(N_2 = mg\\sin30^{\\circ} + mg\\cos60^{\\circ} = mg\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Analyze the forces acting on each bead and apply equilibrium conditions.\\n(b) Use the equilibrium equations to find the tension.\\n(c) Consider the forces when the string is cut and the condition for the beads to remain stationary.",
+      "methodOfSolving": [
+        "(a) Draw free body diagrams for each bead. Apply equilibrium conditions in the x and y directions. These x and y directions to be chosen appropriatly",
+        "(b) Solve the equilibrium equations to find the tension in the cord.",
+        "(c) Analyze the forces after the cord is cut.  Set the net force on each bead to zero to find the condition for equilibrium."
+      ],
+      "answer": "(a) \\(\\alpha = 60^{\\circ}\\)\\n(b) \\(T = mg + \\frac{q_1 q_2}{4\\pi\\epsilon_0 l^2}\\)\\n(c) \\(\\sqrt{3}mg; mg\\)"
+    },
+    {
+      "id": "EM-0002",
+      "title": "Motion of Charged Balls in Electric Field",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 780,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electric Field",
+          "Impulse-Momentum Theorem",
+          "Vector Components"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two balls of charge \\(q_1\\) and \\(q_2\\) initially have velocities of equal magnitude and same direction. After a uniform electric field has been applied for a certain time interval, the direction of the first ball changes by \\(60^\\circ\\), and the velocity magnitude is reduced by half.  The direction of velocity of the second ball changes thereby \\(90^\\circ\\).\\nDIAGRAM[1,200]\\n(a) Determine the magnitude of the charge to mass ratio of the second ball if it is equal to \\(\\alpha_1\\) for the first ball.\\n(b) In what ratio will the velocity of the second ball change? Ignore the electrostatic interaction between the balls.",
+      "solution": "(a) Let the electric field acting on each ball be given by \\(\\vec{E} = E_x\\hat{i} + E_y\\hat{j}\\).\\nDIAGRAM[2,200]\\nFrom Impulse Momentum equation, we have Impulse = Change in momentum.\\nLet the final velocities of the balls be \\(\\vec{v}_1\\) and \\(\\vec{v}_2\\). Noting that \\(v_1 = \\dfrac{v}{2}\\), we have\\n\\(\\dfrac{q_1}{m_1}(E_x\\hat{i} + E_y\\hat{j})\\Delta t = m_1\\left[\\dfrac{v}{2}(\\cos 60^\\circ \\hat{i} + \\sin 60^\\circ \\hat{j}) - v\\hat{i}\\right]\\) ...(1)\\n\\(\\dfrac{q_2}{m_2}(E_x\\hat{i} + E_y\\hat{j})\\Delta t = m_2[v_2(\\cos 90^\\circ\\hat{i} + \\sin 90^\\circ\\hat{j}) - v\\hat{i}]\\) ...(2)\\nOn comparing the x and y-components on both sides of equation (1), we get\\n\\(\\dfrac{q_1}{m_1} E_x \\Delta t = -\\dfrac{3}{4}v\\)  ...(3)\\n\\(\\dfrac{q_1}{m_1} E_y \\Delta t = \\dfrac{\\sqrt{3}}{4}v\\)  ...(4)\\nSimilarly, from equation (2), we get\\n\\(\\dfrac{q_2}{m_2} E_x \\Delta t = -v\\)  ...(5)\\n\\(\\dfrac{q_2}{m_2} E_y \\Delta t = v_2\\)  ...(6)\\nFrom equations (3) and (5), by dividing the equations expressing x-components, we get\\n\\(\\dfrac{\\dfrac{q_1}{m_1}}{\\dfrac{q_2}{m_2}} = \\dfrac{3}{4}\\Rightarrow \\dfrac{q_2}{m_2} = \\dfrac{4}{3}\\dfrac{q_1}{m_1} = \\dfrac{4}{3}\\alpha_1\\)\\n(b) Also \\(\\dfrac{q_1}{m_1} = \\dfrac{\\sqrt{3}v}{4v_2} = \\alpha_1\\)\\n\\(\\Rightarrow \\dfrac{\\sqrt{3}v}{4v_2} = \\dfrac{3}{4}\\dfrac{v}{v_2}\\Rightarrow v_2 = \\dfrac{v}{\\sqrt{3}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the impulse-momentum theorem. The impulse due to the electric field is equal to the change in momentum.  Resolve the velocities and the electric field into components. For first ball resolve the velocity \\(\\dfrac{\\vec{v}}{2}\\) vector in terms of \\(\\hat{i}\\) and \\(\\hat{j}\\) components, and compare it with \\(\\vec{v}\\).",
+      "methodOfSolving": [
+        "Write the impulse-momentum equations for both balls, resolving the velocities into \\(x\\) and \\(y\\) components:  \\(\\dfrac{q_i}{m_i}\\vec{E}\\Delta t = m_i(\\vec{v}_i' - \\vec{v}_i)\\), where \\(i=1,2\\), \\(\\vec{v}_i\\) is the initial velocity, and \\(\\vec{v}_i'\\) is the final velocity.",
+        "For the first ball, \\(\\vec{v}_1 = v\\hat{i}\\) and \\(\\vec{v}_1' = \\dfrac{v}{2}(\\cos60^\\circ\\hat{i} + \\sin60^\\circ\\hat{j})\\).  For the second ball, \\(\\vec{v}_2 = v\\hat{i}\\) and \\(\\vec{v}_2' = v_2\\hat{j}\\).",
+        "Compare the \\(x\\) and \\(y\\) components of the impulse-momentum equation for the first ball to find \\(\\dfrac{q_1}{m_1}E_x\\Delta t\\) and \\(\\dfrac{q_1}{m_1}E_y\\Delta t\\).",
+        "Compare the \\(x\\) and \\(y\\) components for the second ball to find \\(\\dfrac{q_2}{m_2}E_x\\Delta t\\) and \\(\\dfrac{q_2}{m_2}E_y\\Delta t\\).",
+        "Divide the equations to find \\(\\dfrac{q_2/m_2}{q_1/m_1}\\) and \\(v_2\\)."
+      ],
+      "answer": "(a) \\(\\dfrac{4\\alpha_1}{3}\\) \\n (b) \\(\\dfrac{1}{\\sqrt{3}}\\)"
+    },
+    {
+      "id": "EM-0003",
+      "title": "Electric Force Between Two Dipoles",
+      "statistics": {
+        "numberOfDiagrams": 4,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Dipole",
+          "Electric Field",
+          "Coulomb's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Electrostatic force between two dipoles of dipole moments \\(p_1\\) and \\(p_2\\) lying at a separation \\(r\\) (\\(r \\gg a\\)) is\\n\\(F = \\begin{cases} \\dfrac{6p_1p_2}{4\\pi\\epsilon_0 r^4}, & \\text{when dipoles are placed coaxially} \\ \\dfrac{3p_1p_2}{4\\pi\\epsilon_0 r^4}, & \\text{when dipoles are placed perpendicular to each other} \\end{cases}\\)\\nThe above results have been derived here to give you a view of the fundamentals related to dipoles. Please keep in mind that the above results are obtained on the basis of assumption that the centres of the dipoles lie far apart from each other i.e., \\(r \\gg 2a\\) for each one of them.\\n(a) Derive the expression for force \\(F\\) when dipoles are placed coaxially.\\n(b) Derive the expression for force \\(F\\) when dipoles are placed perpendicular to each other.",
+      "solution": "(a) CASE-1: When the dipoles are placed coaxially.\\nDIAGRAM[1,250]\\nConsider two dipoles with dipole moments \\(\\vec{p}_1\\) and \\(\\vec{p}_2\\) (as shown) with their centers at distance \\(r\\) (\\(r \\gg 2a\\)). The electric field of the dipole 1 placed on the left side exerts a net force on the dipole 2 placed to its right.\\nThe electric field due to 1 at the centre of 2 is\\n\\(E = \\dfrac{2p_1}{4\\pi\\epsilon_0 r^3}\\) (from A to B)\\n\\(\\Rightarrow dE = \\dfrac{2p_1}{4\\pi \\epsilon_0} d(r^{-3}) = \\dfrac{6p_1}{4\\pi \\epsilon_0 r^4} dr\\) ...(1)\\nDIAGRAM[2,200]\\nC is midpoint of dipole 2 with AB = dr\\nLet the \\(-q\\) charge of dipole be placed at A and the \\(+q\\) charge be placed at B. So, the electric field at A (where \\(-q\\) lies) is\\n\\(E_A = E + |dE|\\)\\n(Obviously field due to dipole 1 is stronger at A in comparison to B)\\nand \\(E_B = E - |dE|\\)\\nAs a result of this, force on \\(-q\\) at A is \\(F_1 = qE_A\\) (towards left)\\nand that on \\(+q\\) at B is \\(F_2 = qE_B\\) (towards right)\\nNet force on the dipole is \\(F = F_1 - F_2\\) (towards left)\\n\\(F = q(E_A - E_B) = q[(E+|dE|) - (E-|dE|)] = 2q|dE|\\)\\n\\(\\Rightarrow F = 2q \\dfrac{6p_1}{4\\pi \\epsilon_0 r^4}dr = \\dfrac{6p_1p_2}{4\\pi\\epsilon_0r^4}\\)   [\\(\\because 2q(dr) = p_2\\)]\\n(b) CASE-2: When the dipoles are placed perpendicular to each other.\\nDIAGRAM[3,200]\\nProceeding exactly the same way as in case-1, we get\\n\\(F = \\dfrac{3p_1 p_2}{4\\pi\\epsilon_0 r^4}\\)\\nAll assumptions here are exactly the same as before, other than that the field due to dipole 1 at the centre of 2 will be\\n\\(E = \\dfrac{p_1}{4\\pi\\epsilon_0 r^3}\\)DIAGRAM[4,50]\\nand hence we get \\(F = \\dfrac{3p_1p_2}{4\\pi\\epsilon_0 r^4}\\) as the force between the dipoles placed perpendicular to each other.",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "(a) Find the electric field \\(E\\) due to the first dipole at the center of the second dipole. Since the separation between the dipoles is much larger than their individual sizes, there is a slight change \\(dE\\) in electric field across the length of the second dipole. Then, find the net force on the second dipole due to this slightly non-uniform field.\\n(b) Procedure is similar to that in part (a).",
+      "methodOfSolving": [
+        "(a) The electric field \\(E\\) due to dipole 1 at the center of dipole 2 is \\(\\dfrac{2p_1}{4\\pi\\epsilon_0 r^3}\\). Since the dipole separation \\(r\\) is not constant, find \\(dE\\) by differentiating \\(E\\) with respect to \\(r\\). Calculate the force on each charge of the second dipole due to the electric field, considering \\(dE\\). The net force is the difference between these two forces.",
+        "(b) Use the same procedure as (a), but for perpendicular dipoles, the electric field at the center of dipole 2 due to dipole 1 is \\(\\dfrac{p_1}{4\\pi \\epsilon_0 r^3}\\)."
+      ],
+      "answer": "(a) \\(\\dfrac{6p_1p_2}{4\\pi\\epsilon_0r^4}\\)\\n(b) \\(\\dfrac{3p_1p_2}{4\\pi\\epsilon_0r^4}\\)"
+    },
+    {
+      "id": "EM-0004",
+      "title": "Electric Flux Through an Inclined Cylinder",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 420,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Flux",
+          "Gauss's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A cylinder of height \\(H\\) and radius \\(R\\) is placed in a uniform electric field (as shown) such that the axis of the cylinder makes an angle \\(\\theta\\) with the vertical. Calculate the flux through the cylinder.\\nDIAGRAM[1,200]",
+      "solution": "Looking at the cylinder from -x-axis, it appears as shown in the figure.\\nDIAGRAM[2,300]\\nPerpendicular component of area \\(A_1 = A_1+A_2+A_3\\).\\nNow \\(A_1 = A_2\\)\\n\\(A_1 = \\left(\\dfrac{\\pi R^2}{2}\\right)\\sin\\theta\\)\\nand \\(A_3 = 2HR\\cos\\theta\\)\\nTotal perpendicular component of area is\\n\\(A_\\perp = 2\\left(\\dfrac{\\pi R^2}{2}\\right)\\sin\\theta + 2HR\\cos\\theta\\)\\n\\(A_\\perp = 2RH\\cos\\theta + \\pi R^2 \\sin\\theta\\)\\nThus, flux passing through cylinder is\\n\\(\\phi = EA_\\perp = E(2RH\\cos\\theta + \\pi R^2\\sin\\theta)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The flux through the cylinder is the product of the electric field and the projected area perpendicular to the field. Consider how the area of the cylinder appears when viewed along the direction of the electric field.",
+      "methodOfSolving": [
+        "The flux is given by \\(\\phi = \\vec{E} \\cdot \\vec{A}\\), where \\(\\vec{A}\\) is the area vector perpendicular to the surface.",
+        "When viewed from the -x direction, the projected area perpendicular to the electric field consists of two semicircular areas and a rectangular area.",
+        "The area of each semicircle is \\(\\dfrac{1}{2}\\pi R^2\\), and their projected area perpendicular to \\(E\\) is \\(\\dfrac{1}{2}\\pi R^2 \\sin\\theta\\). The total projected area due to two semicircles is then \\(\\pi R^2\\sin\\theta\\).",
+        "The rectangular area is \\(2RH\\), and its projected area perpendicular to \\(E\\) is \\(2RH\\cos\\theta\\).",
+        "The total projected area \\(A_\\perp\\) is the sum of the projected semicircular and rectangular areas.",
+        "Calculate the flux using \\(\\phi = EA_\\perp\\)."
+      ],
+      "answer": "\\(E(2RH\\cos\\theta + \\pi R^2\\sin\\theta)\\)"
+    },
+    {
+      "id": "EM-0005",
+      "title": "Angle of Electric Field Line Termination",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Field Lines",
+          "Electric Flux",
+          "Gauss's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two charges \\(+q_1\\) and \\(-q_2\\) are placed at A and B respectively. A line of force emanates from \\(q_1\\) at an angle \\(\\alpha\\) with the line AB. At what angle will it terminate at \\(-q_2\\)?\\nDIAGRAM[1,180]",
+      "solution": "A line can leave \\(+q_1\\) in a cone of apex angle \\(\\alpha\\) and then enter \\(-q_2\\) in a cone of apex angle \\(\\beta\\).\\nSo, flux due to the charge \\(+q_1\\) is \\n\\(\\phi_1 = \\dfrac{q_1}{2\\epsilon_0}(1-\\cos\\alpha)\\), and that due to the charge \\(-q_2\\) is \\n\\(\\phi_2 = \\dfrac{q_2}{2\\epsilon_0}(1-\\cos\\beta)\\).\\nDIAGRAM[2,240]\\nSince, we know that only one line is leaving \\(q_1\\) to enter \\(-q_2\\). So, we can say\\n\\(\\dfrac{\\phi_1}{\\phi_2} = \\dfrac{N_1}{N_2} = \\dfrac{1}{1}\\)\\n\\(\\Rightarrow \\dfrac{q_1}{2\\epsilon_0}(1-\\cos\\alpha) = \\dfrac{q_2}{2\\epsilon_0}(1-\\cos\\beta)\\)\\n\\(\\Rightarrow q_1\\left(2\\sin^2\\dfrac{\\alpha}{2}\\right) = q_2\\left(2\\sin^2\\dfrac{\\beta}{2}\\right)\\)\\n\\(\\Rightarrow \\sin\\dfrac{\\beta}{2} = \\sqrt{\\dfrac{q_1}{q_2}}\\sin\\dfrac{\\alpha}{2}\\)\\n\\(\\Rightarrow \\beta = 2\\sin^{-1}\\left[\\sqrt{\\dfrac{q_1}{q_2}}\\sin\\dfrac{\\alpha}{2}\\right]\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the flux through cones subtended by the field lines at each charge.  The flux emanating from \\(+q_1\\) must be equal to the flux terminating at \\(-q_2\\).",
+      "methodOfSolving": [
+        "The flux through a cone of apex angle \\(\\theta\\) due to a charge \\(q\\) is given by \\(\\phi = \\dfrac{q}{2\\epsilon_0}(1-\\cos\\theta)\\).",
+        "The flux leaving \\(+q_1\\) at angle \\(\\alpha\\) is equal to the flux entering \\(-q_2\\) at angle \\(\\beta\\).  Therefore, \\(\\dfrac{q_1}{2\\epsilon_0}(1-\\cos\\alpha) = \\dfrac{q_2}{2\\epsilon_0}(1-\\cos\\beta)\\).",
+        "Use the trigonometric identity \\(1-\\cos\\theta = 2\\sin^2\\left(\\dfrac{\\theta}{2}\\right)\\) and solve for \\(\\beta\\)."
+      ],
+      "answer": "\\(2\\sin^{-1}\\left[\\sqrt{\\dfrac{q_1}{q_2}}\\sin\\dfrac{\\alpha}{2}\\right]\\)"
+    },
+    {
+      "id": "EM-0006",
+      "title": "Electric Field Inside Cylindrical Cavity",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 540,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Field",
+          "Gauss's Law",
+          "Superposition"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Inside an infinitely long circular cylinder charged uniformly with volume density \\(\\rho\\) there is a circular cylindrical cavity. The distance between the axes of the cylinder and the cavity is equal to \\(\\vec{a}\\). Find the electric field strength \\(\\vec{E}\\) inside the cavity. The permittivity is assumed to be equal to unity.",
+      "solution": "Consider a point P in the cavity at a position vector \\(\\vec{r}\\) from the centre of cylinder and at a position vector \\(\\vec{r}_1\\) from the centre of cavity as shown.  DIAGRAM[1,170] \\nIf \\(\\vec{E}\\) be the electric field strength at P due to the complete charge of the cylinder (inside cavity also) then we know electric field inside a uniformly charged cylinder is given as\\n\\(\\vec{E} = \\dfrac{\\rho \\vec{r}}{2\\epsilon_0}\\)\\nSimilarly, if we assume that the charge is only there in the region of the cavity and hence this will also be a uniformly charged small cylinder. If \\(\\vec{E}_1\\) be the electric field only due to the cavity charge then\\n\\(\\vec{E}_1 = \\dfrac{\\rho\\vec{r}_1}{2\\epsilon_0}\\)\\nNow the electric field due to the charged cylinder in the cavity at point P can be given as\\n\\(\\vec{E}_{net} = \\vec{E}-\\vec{E}_1\\) (As now charge of cavity is removed)\\n\\(\\Rightarrow \\vec{E}_{net} = \\dfrac{\\rho}{2\\epsilon_0}(\\vec{r} - \\vec{r}_1) = \\dfrac{\\rho\\vec{a}}{2\\epsilon_0}\\)    [\\(\\because \\vec{r} - \\vec{r}_1 = \\vec{a}\\)]",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the principle of superposition. The electric field inside the cavity can be found by subtracting the electric field due to a cylinder of charge density -ρ occupying the cavity from the electric field due to the larger cylinder.",
+      "methodOfSolving": [
+        "The electric field inside a uniformly charged infinite cylinder of charge density \\(\\rho\\) at a distance \\(r\\) from the axis is \\(E = \\dfrac{\\rho r}{2\\epsilon_0}\\).  The direction is radial.",
+        "Let \\(\\vec{r}\\) be the position vector of point P from the center of the larger cylinder, and \\(\\vec{r_1}\\) be the position vector of P from the center of the cavity.  The vector \\(\\vec{a}\\) points from the center of the larger cylinder to the center of the cavity.",
+        "The electric field \\(\\vec{E}\\) at P due to the larger cylinder (as if there were no cavity) is \\(\\vec{E} = \\dfrac{\\rho\\vec{r}}{2\\epsilon_0}\\).",
+        "The electric field \\(\\vec{E_1}\\) at P due to a cylinder with charge density \\(-\\rho\\) occupying the cavity would be \\(\\vec{E_1} = \\dfrac{-\\rho\\vec{r_1}}{2\\epsilon_0}\\).",
+        "By the principle of superposition, the actual field inside the cavity is \\(\\vec{E}_{net} = \\vec{E} - \\vec{E_1} = \\dfrac{\\rho}{2\\epsilon_0}(\\vec{r} - \\vec{r_1}) = \\dfrac{\\rho\\vec{a}}{2\\epsilon_0}\\)."
+      ],
+      "answer": "\\(\\dfrac{\\rho\\vec{a}}{2\\epsilon_0}\\)"
+    },
+    {
+      "id": "EM-0007",
+      "title": "Electrostatic Potential Energy of Equilibrium Charge System",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electrostatic Potential Energy",
+          "Equilibrium",
+          "Work Done"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "For a system of charges aligned in such a way that each individual charge is in equilibrium, prove that the electrostatic potential energy of the system is zero.",
+      "solution": "Consider a system of point charges where each charge is in equilibrium due to the net electrostatic force exerted by all other charges. We will analyze the electrostatic potential energy of this system.\\nImagine scaling up the system, increasing the distances between every pair of charges by a common factor k (\\(k \\gt 1\\)). Since electrostatic force is proportional to \\(1/r^2\\), scaling all distances by \\(k\\) reduces each individual force by a factor of \\(1/k^2\\). Because each charge was initially in equilibrium (net force of zero), and each force acting on a charge is scaled by the same factor, the net force on each charge remains zero after scaling.\\nNow, let's consider the work done on the system during this scaling process. This scaling is performed by an external agent, not the electrostatic forces. As each charge is moved outwards by the external agent, the net electrostatic force on it remains zero. Since work done on a charge is the integral of the net force on it over its displacement, and the net force is consistently zero, the work done by electrostatic forces on each charge during scaling is zero. Consequently, the total work done by electrostatic forces on the entire system, observed from any inertial frame, is also zero.\\nBecause electrostatic forces are conservative, the work done by them is equal to the negative change in potential energy: \\(W = -\\Delta U\\). Since the work done is zero, the change in potential energy (\\(\\Delta U\\)) during scaling is also zero. This means the potential energy of the scaled system (\\(U_{final}\\)) is equal to the potential energy of the original system (\\(U_{initial}\\)).\\nIf we scale the system to infinity (\\(k \\rightarrow \\infty\\)), the charges become infinitely separated, and their electrostatic interaction becomes zero. By definition, the electrostatic potential energy of an infinitely separated system of charges is zero (\\(U_{final} = 0\\)).\\n\\nSince \\(U_{final} = U_{initial}\\) and \\(U_{final} = 0\\), we conclude that the initial potential energy \\(U_{initial}\\) must also be zero.\\nTherefore, for a system of charges in equilibrium, the electrostatic potential energy of the system is zero.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider scaling the system by increasing the distance between all charges by a common factor. Analyze how this scaling affects the equilibrium and the potential energy of the system. Think about the work done by electrostatic forces during this scaling.",
+      "methodOfSolving": [
+        "Assume a system of charges where each charge is in equilibrium.",
+        "Consider scaling the system by increasing inter-particle distances by a factor \\(k\\).",
+        "Argue that equilibrium is maintained after scaling due to the inverse square law.",
+        "Show that the work done by electrostatic forces during scaling is zero because the net force on each charge remains zero.",
+        "Relate zero work done to zero change in potential energy.",
+        "Consider scaling to infinity, where potential energy is zero.  Conclude that the initial potential energy must also be zero."
+      ]
+    },
+    {
+      "id": "EM-0008",
+      "title": "Maximum Speed of Charged Balls After String Cut",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 660,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Energy Conservation",
+          "Momentum Conservation",
+          "Repulsive Force"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Four balls, each with mass \\(m\\), are connected by four non-conducting strings to form a square with side \\(l\\), as shown in Figure. The assembly is placed on a horizontal nonconducting frictionless surface. Balls 3 and 4 each have charge \\(q\\), and balls 1 and 2 are uncharged. Find the maximum speed of balls 3 and 4 after the string connecting them is cut.\\nDIAGRAM[1,140]",
+      "solution": "Initially, since no external horizontal forces act on the set of four balls, the center of mass of the system stays fixed at the initial location of the center of the square. As the charged balls 4 and 3 swing out and away from each other, balls 1 and 2 move down with equal y-components of velocity.DIAGRAM[2,150]\\nThe maximum kinetic energy point is illustrated.\\nFor system energy to be conserved,\\n\\(\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{l} = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{3l} + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2\\)\\n\\(\\Rightarrow \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{2q^2}{3l} = 2mv^2\\)\\n\\(\\Rightarrow v = \\sqrt{\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{3ml}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The initial electrostatic potential energy of the charged balls is converted into kinetic energy when the string is cut. Use conservation of energy and consider the motion or rest of the center of mass.",
+      "methodOfSolving": [
+        "The initial electrostatic potential energy is \\(U_i = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{l}\\).",
+        "When the string is cut, the charged balls repel each other, converting potential energy into kinetic energy.  The center of mass remains stationary. When the speed is maximum, the balls form an equilateral triangle.",
+        "The final potential energy is \\(U_f = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{\\sqrt{3}l}\\). Each of the four balls acquires kinetic energy \\(\\dfrac{1}{2}mv^2\\). When the velocity becomes maximum, balls 3 and 4 are equidistant from balls 1, 2 and center of mass, respectively.",
+        "Apply conservation of energy: \\(U_i = U_f + 4(\\dfrac{1}{2}mv^2)\\).",
+        "Solve for \\(v\\)."
+      ],
+      "answer": "\\(\\sqrt{\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{3ml}}\\)"
+    },
+    {
+      "id": "EM-0009",
+      "title": "Charge Distribution on Parallel Metallic Plates",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 780,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Capacitance",
+          "Charge Distribution",
+          "Electric Potential"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Three identical metallic plates are kept parallel to one another at a separation of \\(a\\) and \\(b\\). The outer plates are connected by a thin conducting wire, and a charge \\(Q\\) is placed on the central plate.\\nDIAGRAM[1,140]\\n Find the final charges on all six faces of the plates shown.",
+      "solution": "Let the charge distribution in all the six faces be as shown in figure. While distributing the charge on different faces, we have used the fact that two opposite faces have equal and opposite charges on them.\\nDIAGRAM[2,200]\\nNet charge on plates A and C is zero. Hence,\\n\\(q_2 - q_1 + q_3 + (q_1 - Q) = 0\\)\\n\\(\\Rightarrow q_2 + q_3 = Q\\) ...(1)\\nFurther, A and C are at same potentials. If \\(E_1\\) be the field between the plates A and B and that between B and C is \\(E_2\\), then\\n\\(V_A - V_B = E_2b\\)\\n\\(V_B - V_C = E_1a\\)\\nSince \\(V_A = V_C\\), so \\(V_A - V_B = V_C - V_B\\), hence\\n\\(E_1a = E_2b\\Rightarrow \\dfrac{q_1}{A\\epsilon_0}a = \\dfrac{(Q-q_1)}{A\\epsilon_0}b\\)\\n\\(\\Rightarrow q_1 = \\dfrac{Qb}{a+b}\\)  ...(2)  [A = Area of plates]\\nElectric field inside any conducting plate (say inside C) is zero. Therefore,\\n\\(\\dfrac{q_2}{2A\\epsilon_0} - \\dfrac{q_1}{2A\\epsilon_0} + \\dfrac{q_1}{2A\\epsilon_0} + \\dfrac{(Q-q_1)}{2A\\epsilon_0} - \\dfrac{q_1}{2A\\epsilon_0} + \\dfrac{Q}{2A\\epsilon_0} - \\dfrac{q_3}{2A\\epsilon_0} = 0\\)\\n\\(\\Rightarrow q_2 - q_3 = 0\\) ...(3)\\nSolving equations (1), (2) and (3), we get\\n\\(q_1 = \\dfrac{Qb}{a+b}, \\quad q_2 = \\dfrac{Q}{2}, \\quad q_3 = \\dfrac{Q}{2}\\)\\nHence, the charges on the different faces are as follows:\\nFace 1: \\(\\qquad q_2 = \\dfrac{Q}{2}\\)\\nFace 2: \\(\\qquad-q_1 = -\\dfrac{Qb}{a+b}\\)\\nFace 3: \\(\\qquad q_1 = \\dfrac{Qb}{a+b}\\)\\nFace 4: \\(\\qquad Q - q_1 = \\dfrac{Qa}{a+b}\\)\\n Face 5: \\(\\qquad q_1 - Q = -\\dfrac{Qa}{a+b}\\)\\nFace 6: \\(\\qquad q_3 = \\dfrac{Q}{2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The net charge on the outer plates is zero. Since the outer plates are connected, they are at the same potential.  The electric field inside a conductor is zero.  Use these conditions to find the charges on each face.",
+      "methodOfSolving": [
+        "Let \\(q_1\\), \\(q_2\\), and \\(q_3\\) be the charges on the faces as shown in the diagram.  The net charge on plates A and C is zero.",
+        "Since plates A and C are connected by a wire, they are at the same potential.  Use the relationship between electric field and potential difference for parallel plates:  \\(V = Ed\\), where \\(E\\) is the electric field and \\(d\\) is the separation between plates.",
+        "The electric field inside a conductor is zero. Apply this condition to plate C.",
+        "Solve the resulting equations to find \\(q_1\\), \\(q_2\\), and \\(q_3\\)."
+      ],
+      "answer": "Counting sequencially from left, \\nFace 1: \\(\\qquad q_2 = \\dfrac{Q}{2}\\)\\nFace 2: \\(\\qquad-q_1 = -\\dfrac{Qb}{a+b}\\)\\nFace 3: \\(\\qquad q_1 = \\dfrac{Qb}{a+b}\\)\\nFace 4: \\(\\qquad Q - q_1 = \\dfrac{Qa}{a+b}\\)\\n Face 5: \\(\\qquad q_1 - Q = -\\dfrac{Qa}{a+b}\\)\\nFace 6: \\(\\qquad q_3 = \\dfrac{Q}{2}\\)"
+    },
+    {
+      "id": "EM-0010",
+      "title": "Equilibrium Condition for Hemispherical Shells",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Field",
+          "Electric Pressure",
+          "Equilibrium"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Consider a thin spherical shell of radius \\(R\\) having charge \\(q\\) distributed uniformly on it. At the center of the shell, a negative point charge \\(-q_0\\) is placed. The shell is cut in two identical hemispherical portions along a diametrical section yy' as shown. Due to mutual repulsion, the two hemispherical parts tend to move away from each other, but due to the attraction of \\(-q_0\\), they may stay in equilibrium. Find the condition of equilibrium of the hemispherical shells. Calculate the minimum value of \\(q_0\\) to attain this equilibrium.\\nDIAGRAM[1,150]",
+      "solution": "Let the outward electric pressure at every point of the spherical shell, due to its own charge \\(q\\), be \\(P_1\\). Then\\n\\(P_1 = \\dfrac{\\sigma^2}{2\\epsilon_0} = \\dfrac{1}{2\\epsilon_0}\\left(\\dfrac{q}{4\\pi R^2}\\right)^2 = \\dfrac{q^2}{32\\pi^2\\epsilon_0 R^4}\\)    [\\(\\because \\sigma = \\dfrac{q}{4\\pi R^2}\\)]\\nDue to charge \\(-q_0\\), the electric field on the surface of the shell is \\(E = \\dfrac{q_0}{4\\pi\\epsilon_0 R^2}\\) (radially inwards).\\nThis electric field pulls every point of the shell in an inward direction. Let the inward pressure on the surface of the shell due to this negative point charge at the center be \\(P_2\\). Then\\n\\(P_2 = \\sigma E = \\left(\\dfrac{q}{4\\pi R^2}\\right)\\left(\\dfrac{q_0}{4\\pi\\epsilon_0 R^2}\\right) = \\dfrac{qq_0}{16\\pi^2\\epsilon_0 R^4}\\)\\nFor equilibrium of the hemispherical shell, or for the shells not to separate,\\n\\(P_2 \\ge P_1\\)\\n\\(\\Rightarrow \\dfrac{qq_0}{16\\pi^2\\epsilon_0 R^4} \\ge \\dfrac{q^2}{32\\pi^2 \\epsilon_0 R^4}\\)\\n\\(\\Rightarrow q_0 \\ge \\dfrac{q}{2}\\)\\n\\(\\Rightarrow q_{0_{min}} = \\dfrac{q}{2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The hemispherical shells experience outward pressure due to the charge \\(q\\) and inward pressure due to the charge \\(-q_0\\). For equilibrium, the inward pressure must be greater than or equal to the outward pressure.",
+      "methodOfSolving": [
+        "The outward pressure \\(P_1\\) due to the charge \\(q\\) on the shell is given by \\(P_1 = \\dfrac{\\sigma^2}{2\\epsilon_0}\\), where \\(\\sigma = \\dfrac{q}{4\\pi R^2}\\) is the surface charge density.",
+        "The electric field \\(E\\) at the surface of the shell due to the charge \\(-q_0\\) at the center is \\(E = \\dfrac{q_0}{4\\pi\\epsilon_0 R^2}\\) (radially inwards).",
+        "The inward pressure \\(P_2\\) due to this field is \\(P_2 = \\sigma E\\).",
+        "For equilibrium, \\(P_2 \\ge P_1\\).  Substitute the expressions for \\(P_1\\) and \\(P_2\\) and solve for the minimum value of \\(q_0\\)."
+      ],
+      "answer": "\\(\\dfrac{q}{2}\\)"
+    },
+    {
+      "id": "EM-0011",
+      "title": "Work Done to Increase Shell Radius",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Potential Energy",
+          "Work-Energy Theorem"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Figure shows a shell of radius \\(R\\) having charge \\(q_1\\) uniformly distributed over it. \\nDIAGRAM[1,100]\\nA point charge \\(q\\) is placed at the centre of the shell. Find the work required to increase the radius of the shell from \\(R\\) to \\(R_1\\) (\\(R_1 > R\\)).",
+      "solution": "Work done = Decrease in Potential Energy\\n\\(\\Rightarrow \\text{Work} = U_i - U_f\\)\\n\\nDIAGRAM[2,150]\\n\\nNow \\(U_i = (\\text{SE})_q + (\\text{SE})_{q_1} + (\\text{IE})\\)\\n\\(\\Rightarrow U_i = (\\text{SE})_q + \\dfrac{q_1^2}{8\\pi \\epsilon_0 R} + \\dfrac{q_1q}{4\\pi\\epsilon_0 R}\\)\\nand \\(U_f = (\\text{SE})_q + \\dfrac{q_1^2}{8\\pi\\epsilon_0 R_1} + \\dfrac{q_1 q}{4\\pi\\epsilon_0 R_1}\\)\\n\\(\\Rightarrow \\text{Work done} = U_i - U_f\\)\\n\\(W = \\dfrac{1}{4\\pi\\epsilon_0} \\left(\\dfrac{q_1^2}{2R} + \\dfrac{q_1q}{R} - \\dfrac{q_1^2}{2R_1} - \\dfrac{q_1q}{R_1}\\right)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The work done is equal to the decrease in potential energy. Calculate the initial and final potential energies of the system, considering the self-energy of the shell and the interaction energy between the shell and the point charge. In other words, change in self energy of shell and change in interaction energy of \\(q\\) and \\(q_1\\).",
+      "methodOfSolving": [
+        "The initial potential energy \\(U_i\\) is the sum of the shell's self-energy (SE) and the interaction energy (IE) between the shell and the point charge.  The self energy of shell \\((\\text{SE})_{q_1}\\) is given by \\(\\dfrac{q_1^2}{8\\pi\\epsilon_0 R}\\) and the interaction energy \\(q\\) and \\(q_1\\) is \\(\\dfrac{qq_1}{4\\pi \\epsilon_0 R}\\).",
+        "The final potential energy \\(U_f\\) is calculated similarly, using \\(R_1\\) instead of \\(R\\).",
+        "The work done is \\(W = U_i - U_f\\)."
+      ],
+      "answer": "\\(\\dfrac{1}{4\\pi\\epsilon_0}\\left(\\dfrac{q_1^2}{2R} + \\dfrac{q_1q}{R} - \\dfrac{q_1^2}{2R_1} - \\dfrac{q_1q}{R_1}\\right)\\)"
+    },
+    {
+      "id": "EM-0012",
+      "title": "Radius of Equipotential Sphere Enclosing Dipole",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 660,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Dipole",
+          "Electric Field",
+          "Equipotential Surface"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A point electric dipole with a moment \\(\\vec{p}\\) is placed in an external uniform electric field whose strength equals \\(\\vec{(}E_0}\\), with \\(\\vec{p}\\) parallel to \\(\\vec{E_0}\\). In this case, one of the equipotential surfaces enclosing the dipole forms a sphere. Find the radius of this sphere.",
+      "solution": "The electric field due to a dipole is given by\\n\\(E = \\dfrac{1}{4\\pi\\epsilon_0} \\dfrac{p}{R^3} \\sqrt{1+3\\cos^2\\theta}\\)\\nand its direction with the radius vector \\(\\vec{r}\\) is given by \\(\\tan\\alpha = \\dfrac{1}{2}\\tan\\theta\\), so that \\(E_r\\) and \\(E_\\theta\\) are the radial and transverse component of electric field due to the dipole and \\(E_0\\sin\\theta\\) and \\(E_0\\cos\\theta\\) are two rectangular components of external field \\(E_0\\). Since, at equipotential surface, there is no tangential components of electric field. So \\(E_0\\sin\\theta\\) must be equal and opposite to \\(E_\\theta=E\\sin\\alpha\\).\\nDIAGRAM[1,200]\\nHence, \\(E_0\\sin\\theta = E\\sin\\alpha\\)\\n\\(\\Rightarrow E_0 = \\dfrac{E\\sin\\alpha}{\\sin\\theta} = \\dfrac{1}{4\\pi\\epsilon_0} \\dfrac{p}{R^3} \\dfrac{\\sqrt{1+3\\cos^2\\theta}}{\\sin\\theta} \\times \\dfrac{\\sin\\theta}{\\sqrt{1+3\\cos^2\\theta}}\\times\\dfrac{1}{\\sin\\theta} \\times \\dfrac{x}{1}\\)\\n\\(\\Rightarrow \\dfrac{1}{4\\pi\\epsilon_0 R^3}p=E_0 \\Rightarrow 4\\pi \\epsilon_0 R^3 E_0 = p\\)\\n\\(R = \\sqrt[3]{\\dfrac{p}{4\\pi\\epsilon_0 E_0}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The electric field due to the dipole and the external field combine to create an equipotential surface.  On an equipotential surface, the tangential component of the electric field is zero. The electric field due to the dipole has a radial component and a transverse component. At some value of theta both adds to get the resultant field. Note that equipotential surfaces are always perpendicular to the field lines, so tangential components are zero.",
+      "methodOfSolving": [
+        "The electric field due to the dipole is \\(E = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{p}{R^3}\\sqrt{1+3\\cos^2\\theta}\\).  Its direction makes an angle \\(\\alpha\\) with the radial direction, given by \\(\\tan\\alpha = \\dfrac{1}{2}\\tan\\theta\\).",
+        "The external field \\(E_0\\) is parallel to the dipole moment \\(p\\). Resolve \\(E\\) and \\(E_0\\) into radial and tangential components.",
+        "On the equipotential surface, the tangential component of the net electric field is zero.  Therefore, \\(E_0\\sin\\theta = E\\sin\\alpha\\).",
+        "Substitute the expressions for \\(E\\) and \\(\\sin\\alpha\\) (from \\(\\tan\\alpha\\)) and solve for \\(R\\)."
+      ],
+      "answer": "\\(\\sqrt[3]{\\dfrac{p}{4\\pi\\epsilon_0 E_0}}\\)"
+    },
+    {
+      "id": "EM-0013",
+      "title": "Force to Hold Cut Sphere Together",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Electric Field",
+          "Electric Pressure",
+          "Gauss's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Consider a metal sphere of radius \\(R\\) that is cut in two along a plane whose minimum distance from the sphere's centre is \\(h\\). The sphere is uniformly charged by a total electric charge \\(Q\\). Find the force necessary to hold the two parts of the sphere together.\\nDIAGRAM[1,150]",
+      "solution": "At the surface of the charged sphere, whether it consists of a single piece or two pieces close together, the electric field strength from Gauss's law is\\n\\(E = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{Q}{R^2}\\).\\nThe electric charge per unit surface area is \\(\\sigma = \\dfrac{Q}{4\\pi R^2}\\).\\nThis electric field exerts a force \\(\\Delta F = \\dfrac{1}{2}\\sigma E \\Delta Q\\) on the charge \\(\\Delta Q = \\sigma \\Delta A\\) which resides on a surface of area \\(\\Delta A\\), as illustrated in figure. The reason for the factor of \\(\\dfrac{1}{2}\\) is that the electric field strength is \\(E\\) at the outer surface of the sphere is zero inside and hence its average value comes out to be \\(\\dfrac{E}{2}\\).\\nThe force per unit area exerted by the charges on the pieces of the sphere is therefore\\n\\(\\dfrac{\\Delta F}{\\Delta A} = \\dfrac{Q^2}{32\\pi\\epsilon_0 R^4} = p\\)\\nThe required force can be considered to be analogous to the force with which two pieces of the sphere and this force is also the product of \\(p\\) and the cross-sectional area of the intersection plane and sphere.\\nDIAGRAM[2,150]\\nSo, \\(F = p a = p(\\pi x^2)\\)\\n\\(\\Rightarrow F = p \\pi(R^2-h^2) = \\dfrac{Q^2}{32\\pi \\epsilon_0 R^4}(R^2 - h^2)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The force required to hold the two parts of the sphere together is equal to the electrostatic repulsion between them. This force can be calculated using the concept of electric pressure.  The force per unit area exerted by the charges on the sphere. Multiply this pressure with area of circle to get the force. Area of the circle is \\(\\pi x^2\\), which is given to be \\(R^2-h^2\\).",
+      "methodOfSolving": [
+        "The electric field at the surface of a uniformly charged sphere is \\(E = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{Q}{R^2}\\). The surface charge density is \\(\\sigma = \\dfrac{Q}{4\\pi R^2}\\).",
+        "The electric field exerts a force \\(\\Delta F = \\dfrac{1}{2} \\sigma E \\Delta A\\) on a small area \\(\\Delta A\\).  The factor of 1/2 comes because the field is zero inside the sphere and E outside, so the average is E/2.",
+        "The pressure \\(p\\) is \\(p = \\dfrac{\\Delta F}{\\Delta A} = \\dfrac{1}{2}\\sigma E = \\dfrac{Q^2}{32\\pi\\epsilon_0 R^4}\\).",
+        "The force required to hold the sphere together is the product of this pressure and the cross-sectional area: \\(F = pa = p\\pi(R^2-h^2)\\)."
+      ],
+      "answer": "\\(\\dfrac{Q^2(R^2-h^2)}{32\\pi\\epsilon_0R^4}\\)"
+    },
+    {
+      "id": "EM-0014",
+      "title": "Potential Difference between Concentric Shells",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electrostatics",
+          "Potential",
+          "Concentric Shells",
+          "Earthing"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two concentric shells of radii \\(R\\) and \\(2R\\) are shown in figure. Initially a charge \\(q\\) is imparted to the inner shell. Now key \\(K_1\\) is closed and opened and then key \\(K_2\\) is closed and opened. After the keys \\(K_1\\) and \\(K_2\\) are alternately closed \\(n\\) times each, find the potential difference between the shells. Note that finally the key \\(K_2\\) remains closed.\\nDIAGRAM[1,150]\\n",
+      "solution": "When \\(K_1\\) is closed first time, outer sphere is earthed and the potential on it becomes zero. Let the charge on it be \\(q_1\\).\\n\\(V_i = \\) Potential due to charge on inner sphere and that due to charge on outer sphere\\n\\(V_i = \\dfrac{1}{4\\pi\\epsilon_0}\\left[\\dfrac{q}{2R} + \\dfrac{q_1}{2R}\\right] = 0\\)\\n\\(\\Rightarrow q_1 = -q\\)\\nWhen \\(K_2\\) is closed first time, the potential \\(V_2\\) on inner sphere becomes zero as it is earthed. Let the new charge on inner sphere be \\(q_2\\).\\n\\(0 = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q_2}{R} + \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{(-q)}{2R}\\)\\n\\(\\Rightarrow q_2 = \\dfrac{q}{2}\\)\\nNow when \\(K_1\\) will be closed second time, charge on outer sphere will be \\(-q_2\\), i.e., \\(\\dfrac{-q}{2}\\).\\nAfter one event involving closure and opening of \\(K_1\\) and \\(K_2\\), charge is reduced to half its initial value.\\nSimilarly, when \\(K_1\\) will be closed \\(n^{th}\\) time, charge on outer sphere will be \\(\\dfrac{-q}{2^{n-1}}\\)\\nAfter closing of \\(K_2\\) \\(n^{th}\\) time, charge on inner shell will be reduced to half the previous value.\\nBe negative of half the charge on outer shell, i.e., \\(\\left(+\\dfrac{q}{2^n}\\right)\\) and potential on it will be zero.\\nFor potential of outer shell,\\n\\(V_0 = \\dfrac{1}{4\\pi\\epsilon_0}\\left(\\dfrac{\\dfrac{q}{2^n}}{2R}\\right) + \\dfrac{1}{4\\pi\\epsilon_0}\\left(\\dfrac{\\dfrac{-q}{2^{n-1}}}{2R}\\right)\\)\\n\\(\\Rightarrow V_0 = \\dfrac{-q(-1+2)}{4\\pi\\epsilon_0 \\cdot 2^{n+1}R} = \\dfrac{-q}{4\\pi\\epsilon_0 \\cdot 2^{n+1}R}\\)\\nPotential difference \\(= V_0 - V_i = \\dfrac{-q}{4\\pi\\epsilon_0 2^{n+1}R} - 0\\)\\n\\(\\Rightarrow V_0 - V_i = \\dfrac{-q}{4\\pi\\epsilon_0 2^{n+1}R}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the potential on the outer sphere when \\(K_1\\) is closed and then the potential on the inner sphere when \\(K_2\\) is closed.  Think about how the charges redistribute in each step.",
+      "methodOfSolving": [
+        "Calculate the charge induced on the outer shell when \\(K_1\\) is closed.",
+        "Calculate the charge on the inner shell after \\(K_2\\) is closed.",
+        "Determine the pattern of charge distribution after \\(n\\) cycles.",
+        "Calculate the potential on the outer shell and inner shell after \\(n\\) cycles.",
+        "Find the potential difference between the shells."
+      ],
+      "answer": "\\(\\dfrac{-q}{4\\pi\\epsilon_0 2^{n+1}R}\\)"
+    },
+    {
+      "id": "EM-0015",
+      "title": "Capacitance of Two Conducting Spherical Shells",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Capacitance",
+          "Electrostatics",
+          "Spherical Shells",
+          "Potential",
+          "Electric Field",
+          "Self Energy",
+          "Interaction Energy"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In case of two conducting spherical shells having radii \\(a\\) and \\(b (b > a)\\) calculate the capacity of the system if\\n(a) shells are concentric and inner is given a charge while outer earthed\\n(b) shells are concentric and the outer is given a charge while the inner is earthed\\n(c) shells carry equal and opposite charges and are separated by a distance \\(d\\). Can you try to solve this part, using the concept of self energy and interaction energy?",
+      "solution": "(a) Since the outer sphere is earthed hence, its potential will be zero, i.e., \\(V_B = 0\\). If \\(q'\\) is the charge induced on shell B, then\\n\\(\\dfrac{q + q'}{4\\pi\\epsilon_0 b} = 0\\)\\n\\(\\Rightarrow q' = -q\\)\\n\\nDIAGRAM[1,150]\\n\\nSo electric field at a point P between the shells is\\n\\(E = E_A + E_B = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q}{r^2}\\) [as \\(E_B = E_{in} = 0\\)]\\n\\(\\Rightarrow \\dfrac{-dV}{dr} = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q}{r^2}\\) [as \\(E = -\\dfrac{dV}{dr}\\)]\\n\\(\\Rightarrow \\displaystyle\\int_V^0 dV = \\dfrac{q}{4\\pi\\epsilon_0}\\displaystyle\\int_a^b \\dfrac{dr}{r^2}\\)\\n\\(\\Rightarrow V = \\dfrac{q}{4\\pi\\epsilon_0} \\left(\\dfrac{1}{a} - \\dfrac{1}{b}\\right)\\)\\nSince, \\(C = \\dfrac{q}{V}\\)\\n\\(\\Rightarrow C = \\dfrac{4\\pi\\epsilon_0 ab}{b - a} \\quad ...(1)\\)\\nFrom this it is clear that\\n(i) As \\(b \\to \\infty\\) equation (1) reduces to \\(C \\to 4\\pi\\epsilon_0 a\\).\\nSo, we can say that, a spherical conductor is a spherical capacitor with its other plate of infinite radius.\\n(ii) As \\(a\\) and \\(b\\) both become very large such that \\(b - a\\) has a finite and small value, say \\(d\\), then \\(4\\pi ab = 4\\pi a^2 = 4\\pi\\dfrac{A}{d}\\) \\(= A\\) and so equation (1) reduces to \\(C = \\dfrac{\\epsilon_0 A}{d}\\) and hence we observe that a spherical capacitor behaves as a parallel plate capacitor when its spherical surfaces have large radii and are close to each other.\\n(b) In this situation \\(V_A = 0\\) so if \\(q'\\) is the charge induced on shell A, then\\n\\(\\dfrac{1}{4\\pi\\epsilon_0} \\left(\\dfrac{q'}{a} + \\dfrac{q}{b}\\right) = 0\\)\\n\\(\\Rightarrow q' = -\\dfrac{a}{b}q\\)\\nSince no field will exist at P due to B as P lies inside the shells, so the field at a point P, between the conductor is\\n\\(E = E_A + E_B = \\dfrac{1}{4\\pi\\epsilon_0} \\dfrac{q'}{r^2}\\)\\n\\nDIAGRAM[2,120]\\n\\n\\(\\Rightarrow \\dfrac{dV}{dr} = \\dfrac{1}{4\\pi\\epsilon_0} \\left(-\\dfrac{a}{b}\\dfrac{q}{r^2}\\right)\\)\\n\\(\\Rightarrow C_1 = \\dfrac{b}{a}C (< C)\\) [as \\(b > a\\)] ...(2)\\nAlso, we note that in this situation \\(q_B\\) is not equal to \\(-q_A\\) and hence the system is not a capacitor. However, we observe that\\n\\(C_1 = \\dfrac{4\\pi\\epsilon_0 b^2}{b - a} = \\dfrac{4\\pi\\epsilon_0 ab}{b - a} + 4\\pi\\epsilon_0 b = C_{AB} + C_B\\)\\nThis system is equivalent to a spherical capacitor (of inner radius \\(a\\) and outer radius \\(b\\) and a spherical conductor of radius \\(b\\) connected in parallel. This is because the charge \\(q\\) given to the outer shell distributes in such a way that \\(\\left(\\dfrac{a}{b}\\right)q\\) remains on its inner side while the remaining \\(q\\left[1 - \\left(\\dfrac{a}{b}\\right)\\right]\\) lies on its outer side. Hence,\\n\\(\\left|\\dfrac{q_{in}}{q_{out}}\\right|_B = \\dfrac{\\dfrac{a}{b}q}{q - \\left(\\dfrac{a}{b}\\right)q} = \\dfrac{a}{b - a}\\)\\nand the system becomes equivalent to two capacitors in parallel having a common potential \\(V\\).\\n(c) To find the capacitance in this situation, let us consider a point P at a distance r from centre of A on the line joining the centres of two spheres. If E be the net field at this point P, then\\n\\(E = \\dfrac{q}{4\\pi\\epsilon_0 r^2} + \\dfrac{q}{4\\pi\\epsilon_0 (d - r)^2}\\)\\n\\(\\Rightarrow \\dfrac{dV}{dr} = \\dfrac{q}{4\\pi\\epsilon_0} \\left[\\dfrac{1}{r^2} + \\dfrac{1}{(d - r)^2}\\right]\\) [as \\(E = \\dfrac{dV}{dr}\\)]\\n\\(\\Rightarrow \\displaystyle\\int_{V_A}^{V_B}dV = \\dfrac{q}{4\\pi\\epsilon_0} \\displaystyle\\int_a^b \\left[\\dfrac{1}{r^2} + \\dfrac{1}{(d - r)^2}\\right]dr\\)\\n\\(\\Rightarrow V_A - V_B = \\dfrac{q}{4\\pi\\epsilon_0}\\left[-\\dfrac{1}{r} + \\dfrac{1}{(d - r)}\\right]_a^b\\)\\n\\(\\Rightarrow V_A - V_B = \\dfrac{q}{4\\pi\\epsilon_0}\\left[\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{1}{(d - a)} - \\dfrac{1}{(d - b)}\\right]\\)\\nFor \\(d \\gg a\\) and \\(d \\gg b\\), we get\\n\\(\\Rightarrow V_A - V_B = V = \\dfrac{q}{4\\pi\\epsilon_0}\\left[\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{2}{d}\\right]\\)\\n\\nDIAGRAM[3,300]\\n\\nSince \\(C = \\dfrac{q}{|\\Delta V|}\\)\\n\\(\\Rightarrow C_2 = \\dfrac{4\\pi\\epsilon_0}{\\left(\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{2}{d}\\right)} \\quad ...(3)\\)\\nUsing Concept of Self Energy and Interaction Energy\\nThe self energy of a spherical conductor is\\n\\(U_s = \\dfrac{1}{2}qV = \\dfrac{1}{2}\\left[\\dfrac{q^2}{4\\pi\\epsilon_0 R}\\right]\\) [as \\(V = \\dfrac{q}{4\\pi\\epsilon_0 R}\\)]\\nwhile interaction energy of two point charges separated by a distance \\(r\\)\\n\\(U_i = qV = \\dfrac{q_1 q_2}{4\\pi\\epsilon_0 r}\\)\\nSo total potential energy of the system is\\n\\(U = \\begin{bmatrix}Self \\\\ Energy \\\\ of A\\end{bmatrix} + \\begin{bmatrix}Self \\\\ Energy \\\\ of B\\end{bmatrix} + \\begin{bmatrix}Interaction \\\\ Energy \\\\ of AB\\end{bmatrix}\\)\\n\\(\\Rightarrow U = U_A + U_B + U_{AB}\\)\\n\\(\\Rightarrow U = \\dfrac{q^2}{8\\pi\\epsilon_0 a} + \\dfrac{(-q)^2}{8\\pi\\epsilon_0 b} + \\dfrac{q(-q)}{4\\pi\\epsilon_0 d}\\)\\n\\(\\Rightarrow U = \\dfrac{1}{2} \\cdot \\dfrac{q^2}{4\\pi\\epsilon_0}\\left(\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{2}{d}\\right)\\)\\nSince, we have \\(U = \\dfrac{(q^2)}{2C}\\)\\n\\(\\Rightarrow C_2 = \\dfrac{4\\pi\\epsilon_0}{\\left(\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{2}{d}\\right)}\\)\\nThis result is identical to the result obtained earlier, using the method of electric field.\\nNow, if \\(d \\to \\infty\\) then\\n\\(C_2' = \\dfrac{4\\pi\\epsilon_0}{\\left(\\dfrac{1}{a} + \\dfrac{1}{b}\\right)}\\)\\n\\(\\Rightarrow C_2' < C_2\\)\\nAlso, \\(\\dfrac{1}{C_2'} = \\dfrac{1}{4\\pi\\epsilon_0 a} + \\dfrac{1}{4\\pi\\epsilon_0 b} = \\dfrac{1}{C_A} + \\dfrac{1}{C_B}\\)\\nand hence the given system becomes equivalent to two capacitors \\(C_A (= 4\\pi\\epsilon_0 a)\\) and \\(C_B (= 4\\pi\\epsilon_0 b)\\) in series.\\nAlso, we observe that in this ILLUSTRATION, (a) and (c) represent capacitors (as here the two conductors have equal and opposite charges) while arrangement given in (b) is not a capacitor (because \\(q_B\\) is not equal to \\(-q_A\\)).",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Consider the potential of the outer shell to be zero and calculate the induced charge. Then, calculate the potential difference between the shells and use \\(C = q/V\\).\\n(b) Similar to (a), but this time the inner shell is earthed.\\n(c) Calculate the electric field at a point between the spheres and integrate to find the potential difference. Alternatively, calculate the self-energies and interaction energy of the system and use the relation \\(U = q^2 / 2C\\).",
+      "methodOfSolving": [
+        "(a) Use the concept of earthing and potential due to spherical shells.",
+        "(b) Apply the same principles as in (a) with the inner shell earthed.",
+        "(c) Calculate the net electric field and integrate to find the potential difference, or use the energy method by calculating self and interaction energies."
+      ],
+      "answer": "(a) \\(C = \\dfrac{4\\pi\\epsilon_0 ab}{b - a}\\)\\n(b) \\(C_1 = \\dfrac{4\\pi\\epsilon_0 b^2}{b - a}\\)\\n(c) \\(C_2 = \\dfrac{4\\pi\\epsilon_0}{\\left(\\dfrac{1}{a} + \\dfrac{1}{b} - \\dfrac{2}{d}\\right)}\\)"
+    },
+    {
+      "id": "EM-0016",
+      "title": "Parallel Plate Capacitor with Spring",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Capacitance",
+          "Spring",
+          "SHM",
+          "Equilibrium",
+          "Oscillations"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A parallel plate capacitor with air as a dielectric is arranged horizontally, such that its one plate is fixed and the other plate is connected with a perpendicular spring. \\nDIAGRAM[1,100]\\nThe area of each plate is \\(A\\). In the steady position, the separation between the plates is \\(d_0\\). When the capacitor is connected with an electric source with the voltage \\(V\\), a new equilibrium appears, such that the new separation between the plates becomes \\(d_1\\). Assuming mass of the upper plate to be \\(m\\), find the\\n(a) spring constant \\(K\\).\\n(b) maximum voltage for a given \\(K\\) in which an equilibrium is possible.\\n(c) angular frequency of the oscillating system around the equilibrium value \\(d_1\\) (amplitude of the oscillation \\(<< d_1\\)).",
+      "solution": "(a) Let the initial extension in the spring, in equilibrium situation be \\(x_0\\). Then, for equilibrium of lower plate 2, we must have \\(Kx_0\\) (acting upwards) balancing \\(mg\\) (acting downwards).\\n\\(Kx_0 = mg\\)\\nWhen the voltage source is connected, then the plate separation changes from \\(d_0\\) to \\(d_1\\) as a result of which the extension of the spring becomes \\((d_0 - d_1) + x_0\\) so that net extension in the spring becomes \\(x_0 + (d_0 - d_1)\\).\\nWhen equilibrium is attained again, we have\\n\\(K[x_0 + (d_0 - d_1)] = mg + \\dfrac{1}{2} \\epsilon_0 E^2 A\\)\\nSince, \\(Kx_0 = mg\\)\\n\\(K(d_0 - d_1) = \\dfrac{1}{2} \\epsilon_0 \\left(\\dfrac{V}{d_1}\\right)^2 A \\quad ...(1)\\)\\n\\(\\Rightarrow K = \\dfrac{\\epsilon_0 A V^2}{2d_1^2(d_0 - d_1)}\\)\\n(b) From equation (1), we have\\n\\(V^2 = \\dfrac{2Kd_1^2(d_0 - d_1)}{\\epsilon_0 A} = \\dfrac{2K}{\\epsilon_0 A}(d_0 d_1^2 - d_1^3) \\quad ...(2)\\)\\nDifferentiating w.r.t. \\(d_1\\), we get\\n\\(2V\\left(\\dfrac{dV}{dd_1}\\right) = \\dfrac{2K}{A \\epsilon_0} (2d_0 d_1 - 3d_1^2)\\)\\nFor \\(V\\) to be maximum, we have \\(\\left(\\dfrac{dV}{dd_1}\\right) = 0\\)\\n\\(\\Rightarrow 2d_0 d_1 - 3d_1^2 = 0\\)\\n\\(\\Rightarrow d_1 = \\dfrac{2}{3}d_0\\)\\nSubstituting \\(d_1 = \\dfrac{2d_0}{3}\\) in (2), we get\\n\\(V_{max}^2 = \\dfrac{2K}{\\epsilon_0 A} \\left(\\dfrac{2}{3}d_0\\right)^2 \\left(d_0 - \\dfrac{2}{3}d_0\\right)\\)\\n\\(\\Rightarrow V_{max} = \\dfrac{2d_0}{3} \\sqrt{\\dfrac{2Kd_0}{3A\\epsilon_0}} \\quad ...(3)\\)\\n(c) Let a small displacement \\(x\\) be given to the upper plate in the downward direction from the equilibrium position. Then the net force on the plate is\\n\\(F = -K[x_0 + (d_0 - d_1) + x] + mg + \\dfrac{1}{2}\\epsilon_0 A \\left[\\dfrac{V^2}{(d_1 - x)^2}\\right]\\)\\n\\(\\{\\because E = \\dfrac{V}{d_1 - x}\\}\\)\\n\\(\\Rightarrow F = -K(d_0 - d_1) - Kx + \\dfrac{1}{2} \\epsilon_0 A \\dfrac{V^2}{d_1^2} \\left(1 - \\dfrac{x}{d_1}\\right)^{-2}\\)\\n\\(\\Rightarrow F = -Kx \\left(\\dfrac{3d_1 - 2d_0}{d_1}\\right)\\)\\n\\(\\Rightarrow m\\ddot{x} = -Kx \\left(\\dfrac{3d_1 - 2d_0}{d_1}\\right)\\)\\n\\(\\Rightarrow \\ddot{x} + \\dfrac{K}{m} \\left(\\dfrac{3d_1 - 2d_0}{d_1}\\right)x = 0\\)\\nCompare with the standard equation of SHM, \\(\\ddot{x} + \\omega^2 x = 0\\), we get\\n\\(\\omega = \\sqrt{\\dfrac{K}{m}\\left(\\dfrac{3d_1 - 2d_0}{d_1}\\right)}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a)  Balance the forces acting on the upper plate in both equilibrium positions (without and with voltage applied).  \\n(b) Find an expression for V in terms of d1 and maximize it.\\n(c)  Consider a small displacement from the equilibrium position and analyze the net force.  The resulting equation should resemble the equation of SHM.",
+      "methodOfSolving": [
+        "(a) Apply equilibrium conditions to the plate.",
+        "(b) Differentiate the expression for V^2 with respect to d1 and set it to zero to find the maximum voltage.",
+        "(c) Write the force equation for a small displacement from equilibrium and compare it with the standard equation of SHM."
+      ],
+      "answer": "(a) \\(K = \\dfrac{\\epsilon_0 A V^2}{2d_1^2(d_0 - d_1)}\\)\\n(b) \\(V_{max} = \\dfrac{2d_0}{3} \\sqrt{\\dfrac{2Kd_0}{3A\\epsilon_0}}\\)\\n(c) \\(\\omega = \\sqrt{\\dfrac{K}{m}\\left(\\dfrac{3d_1 - 2d_0}{d_1}\\right)}\\)"
+    },
+    {
+      "id": "EM-0017",
+      "title": "Parallel Plate Capacitors Connected by a Spring",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Capacitance",
+          "Spring",
+          "KVL",
+          "Equilibrium"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Two parallel plate capacitors with area \\(A\\) are connected through a conducting spring of natural length \\(l\\) in series as shown. Plates P and S have fixed positions at separation \\(d\\). Now the plates are connected by a battery of emf \\(E\\) as shown. If the extension in the spring in equilibrium is equal to the separation between the plates, find the spring constant \\(k\\).\\n\\nDIAGRAM[1,200]",
+      "solution": "Let charge on capacitors be \\(q\\) and separation between plates P and Q and R and S be \\(x\\) at any time.\\nDistance between plates P and Q and R and S is same because the force acting on them is same.\\n\\nDIAGRAM[2,200]\\n\\nCapacitance of capacitor PQ is given by\\n\\(C_1 = \\dfrac{\\epsilon_0 A}{x}\\)\\nCapacitance of capacitor RS is given by\\n\\(C_2 = \\dfrac{\\epsilon_0 A}{x}\\)\\nFrom Kirchhoff's Voltage Law (KVL), we have\\n\\(\\dfrac{q}{C_1} + \\dfrac{q}{C_2} = E\\)\\n\\(\\Rightarrow q = \\dfrac{2x}{\\epsilon_0 A E}\\)\\nAt this moment extension in spring, \\(y = d - 2x - l\\) and force on plate Q towards P is given by\\n\\(F_1 = \\dfrac{q^2}{2A\\epsilon_0} = \\dfrac{\\epsilon_0^2 A^2 E^2}{8Ax^2 \\epsilon_0} = \\dfrac{A\\epsilon_0 E^2}{8x^2} \\quad ...(1)\\)\\nSpring force on plate Q due to extension in spring is given by\\n\\(F_2 = ky\\)\\nAt equilibrium,\\nSeparation between the plates = Extension in the spring\\nThus \\(x = y = d - 2x - l\\)\\n\\(\\Rightarrow x = \\dfrac{d - l}{3} \\quad ...(2)\\)\\n\\(\\Rightarrow F_1 = F_2 = kx = ky \\quad ...(3)\\)\\nFrom equations (1) and (3), we get\\n\\(\\dfrac{A\\epsilon_0 E^2}{8x^2} = ky = kx\\)\\n\\(\\Rightarrow x = \\left(\\dfrac{A\\epsilon_0 E^2}{8k}\\right)^{\\dfrac{1}{3}} \\quad ...(4)\\)\\nFrom equations (2) and (4), we get\\n\\(\\left(\\dfrac{d - l}{3}\\right)^3 = \\dfrac{A\\epsilon_0 E^2}{8k}\\)\\n\\(\\Rightarrow k = \\dfrac{27\\epsilon_0 AE^2}{8(d - l)^3}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use KVL to find the charge on the capacitors. Calculate the electrostatic force on the plates and equate it to the spring force at equilibrium.  Consider the condition that the extension in the spring equals the plate separation.",
+      "methodOfSolving": [
+        "Apply KVL to the circuit to determine the charge on the capacitors.",
+        "Calculate the electrostatic force on one of the movable plates.",
+        "Determine the force exerted by the spring.",
+        "Equate the electrostatic force and spring force at equilibrium.",
+        "Use the given condition that plate separation equals spring extension."
+      ],
+      "answer": "\\(k = \\dfrac{27\\epsilon_0 AE^2}{8(d - l)^3}\\)"
+    },
+    {
+      "id": "EM-0018",
+      "title": "Equivalent Resistance of a Dodecagon Network",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Equivalent Resistance",
+          "Circuit Analysis",
+          "Symmetry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A network of 12 resistors each of value \\(R = 6 \\Omega\\) are interconnected as shown in figure, being placed along the sides of a regular dodecagon. Each of the terminals 1, 2, 3, ..., 12 has been connected directly by insulated wires (other than nearest) each of the 9 terminals each of resistance \\(R\\), there being 9 wires from each terminal making 108 wire connections totally. [Only one set of 9 wires, from terminal 1 have been shown]. \\nDIAGRAM[1,200]\\nFind:\\n (a) the equivalent resistance of the network when the current enters at the terminal 1 and leaves at terminal 2.\\n(b) If the above network were generalised so that there are \\(n\\) (\\(n =\\) even) resistors each of resistance \\(R\\) placed along the sides of a regular \\(n\\) sided polygon and if each terminal point of a resistor were connected by \\((n - 2)\\) insulated wires each of resistance \\(R\\), directly to the \\((n - 2)\\) terminals, other than its, nearest terminals, find the equivalent resistance across any two terminals of the network (i.e., current entering at one of the two terminals and leaving by the other).",
+      "solution": "(a) Since each of the terminals is connected by an insulated wire to each of the remaining 11 terminals by a resistor \\(R\\), the symmetry shows all the twelve terminals to be symmetrically equivalent before any voltage is applied.\\nHowever, asymmetry is introduced just at the point where current enters and also at the point where the current leaves the circuit. All other ten points are symmetry points, all at the same potential. Hence the given network reduces to the following network\\n\\nDIAGRAM[2,300]\\n\\nThus if \\(X\\) be the equivalent resistance between \\(P\\) and \\(Q\\)\\n\\(\\dfrac{1}{X} = \\dfrac{1}{2R} + \\dfrac{1}{2R} + ...\\text{ to 10 terms }+ \\dfrac{1}{R}\\)\\n\\(\\dfrac{1}{X} = \\dfrac{10}{2R} + \\dfrac{1}{R} = \\dfrac{6}{R}\\)\\nHence \\(X = \\dfrac{R}{6}\\)\\nThe equivalent resistance \\(= \\dfrac{R}{6} = \\dfrac{6}{6} = 1 \\Omega\\)\\n(b) Proceeding in the same manner as in (a) we find that the equivalent resistor is given by \\(X\\) where\\n\\(\\dfrac{1}{X} = \\dfrac{1}{2R} + \\dfrac{1}{2R} + ... \\text{ to } (n-2) \\text{ terms } + \\dfrac{1}{R}\\)\\n\\(\\dfrac{1}{X} = \\dfrac{n-2}{2R} + \\dfrac{1}{R} = \\dfrac{n}{2R}\\)\\nHence equivalent resistance \\(= \\dfrac{2R}{n}\\)\\nThe above symmetry simplification can be done only if \\(n\\) is even.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Due to symmetry, all points except the entry and exit points are at the same potential.  The network simplifies to a set of parallel resistors between the entry and exit points.",
+      "methodOfSolving": [
+        "(a) Exploit the symmetry of the circuit to simplify it.",
+        "(b) Generalize the simplification process for \\(n\\) resistors."
+      ],
+      "answer": "(a) \\(1 \\Omega\\)\\n(b) \\(\\dfrac{2R}{n}\\)"
+    },
+    {
+      "id": "EM-0019",
+      "title": "Equivalent Resistance of Infinite Triangles",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Equivalent Resistance",
+          "Infinite Series",
+          "Symmetry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A frame made of thin homogeneous wire is shown in figure. Assume that the number of successively embedded equilateral triangle with sides decreasing by half tends to infinity. The side AB has a resistance \\(R_0\\). Find the equivalent resistance between A and B.\\n\\nDIAGRAM[1,200]",
+      "solution": "Let \\(R_0\\) be the resistance of the largest triangle.  Then each side has resistance \\(R_0/3\\). The next embedded triangle will have side length half of the larger triangle. Since resistance is proportional to length, the resistance of each side of the smaller triangle will be \\(R_0/6\\). Thus, the equivalent resistance of the smaller triangle will be \\(R_1 = R_0/6\\).\\nWhen these two triangles are connected, the equivalent resistance \\(R_{eq}\\) can be calculated using the formula for parallel resistors:\\n\\(\\dfrac{1}{R_{eq}} = \\dfrac{1}{R_0/3 + R_1/3} + \\dfrac{2}{R_0/3}\\)\\n\\(\\dfrac{1}{R_{eq}} = \\dfrac{1}{\\dfrac{R_0}{3} + \\dfrac{R_0}{18}} + \\dfrac{6}{R_0} = \\dfrac{18}{7R_0} + \\dfrac{6}{R_0} = \\dfrac{60}{7R_0}\\)\\n\\(R_{eq} = \\dfrac{7}{60}R_0 \\approx \\dfrac{7}{60}R_0 = \\dfrac{7R_0}{60} \\approx \\dfrac{R_0}{6}\\)\\nIf \\(n\\) such triangles are embedded, then\\n\\(R_n = \\dfrac{R_0}{3 \\times 2^n}\\)\\nNow if \\(n \\to \\infty\\), then the equivalent resistance will be \\(\\dfrac{2}{7}R_0\\).",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "Consider the resistance of each side of the triangles.  How does the resistance change as the triangles get smaller?  Use the parallel resistance formula to find the equivalent resistance.",
+      "methodOfSolving": [
+        "Calculate the resistance of each side of the outer triangle.",
+        "Determine the resistance of the next embedded triangle.",
+        "Apply the parallel resistance formula repeatedly as more triangles are embedded.",
+        "Consider the limit as the number of triangles approaches infinity."
+      ],
+      "answer": "\\(\\dfrac{2}{7}R_0\\)"
+    },
+    {
+      "id": "EM-0020",
+      "title": "Unknown Resistance Measurement with Two Ammeters",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Ammeter",
+          "Resistance",
+          "Circuit Analysis"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Consider two different ammeters in which the currents are proportional to the respective deflections of the needle. The first ammeter is connected to a resistor of resistance \\(R_1\\) and the second to a resistor of unknown resistance \\(R_x\\). Firstly, the ammeters are connected in series between points A and B (as shown in figure). In this case the readings of the ammeters are \\(n_1\\) and \\(n_2\\). Then the ammeters are connected in parallel between A and B (as shown in figure) and indicate \\(N_1\\) and \\(N_2\\). Determine the unknown resistance \\(R_x\\) of the second resistor.\\nDIAGRAM[1,200]\\n",
+      "solution": "The currents in the ammeters are proportional to deflections produced, let \\(\\alpha_1\\) and \\(\\alpha_2\\) be the proportionality constants.\\n\\(I_1 = \\alpha_1 n_1\\)\\n\\(I_2 = \\alpha_2 n_2\\)\\nThe ammeters are in series, hence\\n\\(I_1 = I_2\\)\\n\\(\\Rightarrow \\alpha_1 n_1 = \\alpha_2 n_2 \\quad ...(1)\\)\\nIn the second arrangement the potential drops across resistors are equal as they are in parallel arrangement. Resistances of ammeters have been ignored assuming them to be ideal.\\nThus we have \\(I_1' R_1 = I_2' R_x\\)\\nAlso \\(I_1' = \\alpha_1 N_1\\) and \\(I_2' = \\alpha_2 N_2\\)\\n\\(\\Rightarrow R_1 \\alpha_1 N_1 = R_x \\alpha_2 N_2 \\quad ...(2)\\)\\nFrom equations (1) and (2), eliminating \\(\\alpha_1\\) and \\(\\alpha_2\\), we get\\n\\(R_1 N_1 = R_x N_2\\)\\n\\(\\Rightarrow R_x = \\dfrac{R_1 n_2 N_1}{n_1 N_2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "In the series connection, the currents through the ammeters are equal. In the parallel connection, the voltage drops across the resistors are equal.",
+      "methodOfSolving": [
+        "Write the expressions for the currents in terms of the deflections and proportionality constants.",
+        "Apply the condition for series connection (equal currents).",
+        "Apply the condition for parallel connection (equal voltage drops).",
+        "Eliminate the proportionality constants to find Rx."
+      ],
+      "answer": "\\(R_x = \\dfrac{R_1 n_2 N_1}{n_1 N_2}\\)"
+    },
+    {
+      "id": "EM-0021",
+      "title": "Post Office Box - Maximum and Minimum Resistance",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Post Office Box",
+          "Resistance Measurement",
+          "Wheatstone Bridge"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Calculate the maximum and minimum values of unknown resistance \\(X\\), which can be determined using the post office box shown in the figure?\\n\\nDIAGRAM[1,400]",
+      "solution": "\\(X = \\dfrac{QR}{P}\\)\\nSo, maximum value of \\(x\\) is given by\\n\\(X_{max} = \\dfrac{Q_{max} R_{max}}{P_{min}}\\)\\n\\(\\Rightarrow X_{max} = \\dfrac{1000(11110)}{10}\\)\\n\\(\\Rightarrow X_{max} = 1111 \\text{ k}\\Omega\\)\\n\\(X_{min} = \\dfrac{Q_{min} R_{min}}{P_{max}}\\)\\n\\(\\Rightarrow X_{min} = \\dfrac{(10)(1)}{1000}\\)\\n\\(\\Rightarrow X_{min} = 0.01 \\Omega\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The unknown resistance X is given by \\(X = \\dfrac{QR}{P}\\). To find the maximum and minimum values of X, consider the maximum and minimum values of Q, R, and P.",
+      "methodOfSolving": [
+        "Recall the formula for the unknown resistance in a post office box: \\(X = \\dfrac{QR}{P}\\).",
+        "To maximize X, maximize Q and R, and minimize P.",
+        "To minimize X, minimize Q and R, and maximize P."
+      ],
+      "answer": "\\(X_{max} = 1111 \\text{ k}\\Omega\\); \\(X_{min} = 0.01 \\Omega\\)"
+    },
+    {
+      "id": "EM-0022",
+      "title": "RC Circuit Analysis",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RC Circuit",
+          "Kirchhoff's Laws",
+          "Charging Capacitor",
+          "Current"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In the circuit shown in figure, the battery is an ideal one, with emf \\(V\\). The capacitor is initially uncharged. The switch S is closed at time \\(t = 0\\).\\n\\nDIAGRAM[1,200]\\n(a) Find the charge \\(Q\\) on the capacitor at time \\(t\\).\\n(b) Find the current in AB at time \\(t\\). What is its limiting value as \\(t \\to \\infty\\)?",
+      "solution": "Let at any time \\(t\\) charge on capacitor C be \\(Q\\) and currents are as shown. Since, charge \\(Q\\) will increase with time \\(t\\). Therefore,\\n\\(I_1 = \\dfrac{dQ}{dt}\\)\\n\\nDIAGRAM[2,200]\\n\\n(a) Applying Kirchhoff's Second Law in Loop MNABM\\n\\(V = (I - I_1)R + IR\\)\\n\\(\\Rightarrow V = 2IR - I_1 R \\quad ...(1)\\)\\nSimilarly, applying Kirchhoff's Second Law in Loop MNSTM, we have\\n\\(V = I_1 R + \\dfrac{Q}{C} + IR \\quad ...(2)\\)\\nEliminating I from equations (1) and (2), we get\\n\\(V = 3I_1R + \\dfrac{2Q}{C}\\)\\n\\(\\Rightarrow 3I_1R = V - \\dfrac{2Q}{C}\\)\\n\\(\\Rightarrow I_1 = \\dfrac{1}{3R}\\left(V - \\dfrac{2Q}{C}\\right)\\)\\n\\(\\Rightarrow \\dfrac{dQ}{dt} = \\dfrac{1}{3R}\\left(V - \\dfrac{2Q}{C}\\right)\\)\\n\\(\\Rightarrow \\dfrac{dQ}{V - \\dfrac{2Q}{C}} = \\dfrac{dt}{3R}\\)\\n\\(\\Rightarrow \\displaystyle\\int_0^Q \\dfrac{dQ}{V - \\dfrac{2Q}{C}} = \\displaystyle\\int_0^t \\dfrac{dt}{3R}\\)\\nThis equation gives\\n\\(Q = \\dfrac{CV}{2}(1 - e^{-2t/3RC})\\)\\n(b) \\(I_1 = \\dfrac{dQ}{dt} = \\dfrac{V}{3R}e^{-2t/3RC}\\)\\nFrom equation (1), we get\\n\\(I = \\dfrac{V + I_1 R}{2R} = \\dfrac{V + \\dfrac{V}{3}e^{-2t/3RC}}{2R}\\)\\nSo, current through AB is given by\\n\\(I_2 = I - I_1 = \\dfrac{V + \\dfrac{V}{3}e^{-2t/3RC}}{2R} - \\dfrac{V}{3R}e^{-2t/3RC}\\)\\n\\(I_2 = \\dfrac{V}{2R} - \\dfrac{V}{6R}e^{-2t/3RC}\\)\\n\\(I_2 = \\dfrac{V}{2R}\\) as \\(t \\to \\infty\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply Kirchhoff's voltage law to the loops in the circuit.  Relate the current through the capacitor to the rate of change of charge on the capacitor.",
+      "methodOfSolving": [
+        "Apply Kirchhoff's second law to the two loops in the circuit.",
+        "Express the current through the capacitor in terms of dQ/dt.",
+        "Solve the resulting differential equation to find the charge Q as a function of time.",
+        "Differentiate Q(t) to find the current I1(t).",
+        "Use Kirchhoff's current law to find I2(t)."
+      ],
+      "answer": "(a) \\(Q = \\dfrac{CV}{2}(1 - e^{-2t/3RC})\\)\\n(b) \\(I_2 = \\dfrac{V}{2R} - \\dfrac{V}{6R}e^{-2t/3RC}\\), Limiting value = \\(\\dfrac{V}{2R}\\)"
+    },
+    {
+      "id": "EM-0023",
+      "title": "Charge and Heat Loss in an RC Circuit with Two Capacitors",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RC Circuit",
+          "Capacitors",
+          "KVL",
+          "Charge Conservation",
+          "Energy Loss"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "The capacitor \\(C_1\\) in figure initially carries a charge \\(q_0\\). When the switches \\(S_1\\) and \\(S_2\\) are shut, capacitor \\(C_1\\) is connected in series to a resistor \\(R\\) and a second capacitor \\(C_2\\), which initially does not carry any charge.\\n\\nDIAGRAM[1,200]\\n(a) Find the charges deposited on the capacitors and the current through R as a function of time.\\n(b) What is the heat lost in the resistor after a long time of closing the switch?",
+      "solution": "(a) Suppose at a moment \\(t\\) the charge deposited on \\(C_1\\) is \\(q(t)\\). Then,\\n\\(V_{C_1} = \\dfrac{q(t)}{C_1}\\) and \\(V_{C_2} = \\dfrac{q_0 - q(t)}{C_2}\\)\\n\\(V_R = IR\\) where \\(I = -\\dfrac{dq}{dt}\\)\\n\\nDIAGRAM[2,200]\\nApplying KVL, we get\\n\\(\\dfrac{q}{C_1} - (\\dfrac{q_0 - q}{C_2}) = IR = -R\\dfrac{dq}{dt}\\)\\n\\(\\Rightarrow R\\dfrac{dq}{dt} + \\left(\\dfrac{1}{C_1} + \\dfrac{1}{C_2}\\right)q = \\dfrac{q_0}{C_2}\\)\\nPut \\(\\dfrac{1}{C} = \\dfrac{1}{C_1} + \\dfrac{1}{C_2}\\), we get\\n\\(R\\dfrac{dq}{dt} + \\dfrac{q}{C} = \\dfrac{q_0}{C_2}\\)\\n\\(\\Rightarrow \\dfrac{dq}{dt} + \\dfrac{q}{RC} = \\dfrac{q_0}{C_2}\\dfrac{q}{C}\\)\\n\\(\\Rightarrow R\\dfrac{dq}{dt} = \\dfrac{1}{C_2}(\\dfrac{C}{C_2}q_0 - q)\\)\\n\\(\\Rightarrow \\displaystyle\\int \\dfrac{dq}{\\dfrac{q_0 C}{C_2} - q} = \\displaystyle\\int_0^t \\dfrac{dt}{RC}\\)\\n\\(\\Rightarrow \\log_e \\left(\\dfrac{\\dfrac{q - C}{C_2}q_0}{q_0 - \\dfrac{C}{C_2}q_0}\\right) = -\\dfrac{t}{RC}\\)\\n\\(\\Rightarrow q - \\dfrac{C}{C_2}q_0 = q_0 \\left(1 - \\dfrac{C}{C_2}\\right) e^{-\\dfrac{t}{RC}}\\)\\n\\(\\Rightarrow q = q(t) = q_0 \\left[\\left(1 - \\dfrac{C}{C_2}\\right)e^{-\\dfrac{t}{RC}} + \\dfrac{C}{C_2}\\right]\\) where \\(C = \\dfrac{C_1 C_2}{C_1 + C_2}\\)\\n\\(\\Rightarrow I(t) = -\\dfrac{dq}{dt} = \\dfrac{q_0}{RC_1}e^{-\\dfrac{t}{RC}}\\)\\nCharge on \\(C_2\\), \\(q_2 = q_0 - q(t) = q_0 C_1(1 - e^{-\\dfrac{t}{RC}})\\)\\nSo, we observe that the charge on \\(q_1\\) decays and that on \\(q_2\\) grows exponentially.\\n(b) Electrostatic energy at \\(t = 0\\) is\\n\\(U(0) = \\dfrac{q_0^2}{2C_1}\\)\\nElectrostatic energy at \\(t \\to \\infty\\) is final energy given by\\n\\(U_f = U(\\infty) = \\dfrac{q_0^2}{2(C_1 + C_2)}\\)\\nSince, Heat Loss \\(= -\\Delta U = U_i - U_f\\)\\n\\(\\Rightarrow -\\Delta U = U(0) - U(\\infty) = \\dfrac{q_0^2 C_2}{2C_1(C_1 + C_2)}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Apply KVL to the circuit and solve the resulting differential equation for q(t).  Remember that current I = -dq/dt.\\n(b) Calculate the initial and final electrostatic energy stored in the capacitors. The difference is the heat lost in the resistor.",
+      "methodOfSolving": [
+        "(a) Use KVL and the relationship between current and charge to set up a differential equation. Solve the equation to get q(t) and then differentiate to get I(t).",
+        "(b) Calculate initial and final energy stored in the capacitors and find the difference."
+      ],
+      "answer": "(a) \\(q(t) = q_0 \\left[\\left(1 - \\dfrac{C}{C_2}\\right)e^{-\\dfrac{t}{RC}} + \\dfrac{C}{C_2}\\right]\\) where \\(C = \\dfrac{C_1 C_2}{C_1 + C_2}\\), \\(I(t) = \\dfrac{q_0}{RC_1}e^{-\\dfrac{t}{RC}}\\)\\n(b) Heat Loss = \\(\\dfrac{q_0^2 C_2}{2C_1(C_1 + C_2)}\\)"
+    },
+    {
+      "id": "EM-0024",
+      "title": "Temperature Dependence of a Conductor",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 600,
+        "Unit": "Heat and Thermodynamics",
+        "tags": [
+          "Heat Capacity",
+          "Resistance",
+          "Temperature",
+          "Power Dissipation",
+          "Energy Conservation"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A conductor has a temperature independent resistance \\(R\\) and a total heat capacity \\(C\\). At the moment \\(t = 0\\) it is connected to a dc voltage \\(V\\). Find the time dependence of the conductor's temperature \\(T\\) assuming the thermal power dissipated into surrounding space to vary as \\(q = k(T - T_0)\\) where \\(k\\) is a constant, \\(T_0\\) is the environmental temperature (equal to conductor's temperature at the initial moment).",
+      "solution": "Here energy is being generated in the resistance at a rate of \\(\\dfrac{V^2}{R}\\). Of which part of energy is being lost in the environment and the rest is utilized in raising the temperature of conductor. So, applying the Law of Conservation of Energy, we get\\n\\(\\begin{bmatrix} Energy \\\\ supplied \\\\ by the dc \\\\ source per \\\\ unit time\\end{bmatrix} = \\begin{bmatrix} Energy lost \\\\ in the \\\\ environment \\\\ per \\\\ unit time\\end{bmatrix} + \\begin{bmatrix} Energy used \\\\ in raising the \\\\ temperature of \\\\ the conductor \\\\ per unit time\\end{bmatrix}\\)\\nHence, \\(\\dfrac{V^2}{R} = k(T - T_0) + C(\\dfrac{dT}{dt})\\)\\n\\(\\Rightarrow C \\left(\\dfrac{dT}{dt}\\right) = \\dfrac{V^2}{R} - k(T - T_0)\\)\\n\\(\\Rightarrow \\dfrac{dT}{\\dfrac{V^2}{R} - k(T - T_0)} = \\dfrac{dt}{C}\\)\\nIntegrating the above expression, we get\\n\\(\\displaystyle\\int_{T_0}^T \\dfrac{dT}{\\dfrac{V^2}{R} - k(T - T_0)} = \\displaystyle\\int_0^t \\dfrac{dt}{C}\\)\\nSolving this equation, we get\\n\\(T = T_0 + \\dfrac{V^2}{kR}\\left(1 - e^{-\\dfrac{kt}{C}}\\right)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the principle of conservation of energy. The power supplied by the DC source equals the sum of the power dissipated into the environment and the power used to raise the conductor's temperature.",
+      "methodOfSolving": [
+        "Write the energy balance equation.",
+        "Formulate the differential equation relating temperature and time.",
+        "Integrate the differential equation to find the time dependence of the temperature."
+      ],
+      "answer": "\\(T = T_0 + \\dfrac{V^2}{kR}\\left(1 - e^{-\\dfrac{kt}{C}}\\right)\\)"
+    },
+    {
+      "id": "EM-0025",
+      "title": "Voltage Controlled Switch and RC Circuit",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RC Circuit",
+          "Time Constant",
+          "Voltage Controlled Switch",
+          "Period",
+          "Waveform"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "The switch in figure closes when \\(\\Delta V_c > \\dfrac{2\\Delta V}{3}\\) and opens when \\(\\Delta V_c < \\dfrac{\\Delta V}{3}\\). The voltmeter reads a voltage as plotted in figure. What is the period \\(T\\) of the waveform in terms of \\(R_1, R_2\\) and \\(C\\)?\\n\\nDIAGRAM[1,250]\\n\\nDIAGRAM[2,300]",
+      "solution": "Start at the point when the voltage has just reached \\(\\dfrac{2\\Delta V}{3}\\) and the switch has just closed. The voltage is \\(\\dfrac{2}{3}\\Delta V\\) and is decaying towards 0 V with a time constant \\(R_2 C\\).\\n\\(\\Delta V_c(t) = \\left[\\dfrac{2}{3} \\Delta V\\right]e^{-\\dfrac{t_1}{R_2C}}\\)\\n\\nDIAGRAM[2,250]\\n\\nLet, \\(\\Delta V_c (t) = \\dfrac{1}{3}\\Delta V\\), at time \\(t_1\\), then\\n\\(\\dfrac{1}{3}\\Delta V = \\left[\\dfrac{2}{3}\\Delta V\\right]e^{-\\dfrac{t_1}{R_2C}}\\)\\n\\(\\Rightarrow e^{-\\dfrac{t_1}{R_2C}} = \\dfrac{1}{2} \\Rightarrow t_1 = R_2 C \\log_e 2\\)\\nAfter the switch opens, the voltage is \\(\\dfrac{1}{3}\\Delta V\\), increasing toward \\(\\Delta V\\) with time constant \\((R_1+R_2)C\\), so\\n\\(\\Delta V_c(t) = \\Delta V - \\left[\\dfrac{2}{3}\\Delta V\\right]e^{-\\dfrac{t}{(R_1 + R_2)C}}\\)\\nLet \\(\\Delta V_c(t) = \\dfrac{2}{3}\\Delta V\\), in further time \\(t_2\\), then\\n\\(\\Rightarrow \\dfrac{2}{3}\\Delta V = \\Delta V - \\dfrac{2}{3} \\Delta V e^{-\\dfrac{t_2}{(R_1 + R_2)C}}\\)\\n\\(\\Rightarrow e^{-\\dfrac{t_2}{(R_1+R_2)C}} = \\dfrac{1}{2}\\)\\n\\(\\Rightarrow t_2 = (R_1 + R_2)C \\log_e 2\\)\\n\\(\\Rightarrow T = t_1 + t_2 = (R_1 + 2R_2)C \\log_e 2\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Analyze the charging and discharging cycles of the capacitor.  Determine the time constants for each cycle.",
+      "methodOfSolving": [
+        "Determine the time constant for the discharging phase when the switch is closed.",
+        "Calculate the time taken for the voltage to drop from (2/3)ΔV to (1/3)ΔV.",
+        "Determine the time constant for the charging phase when the switch is open.",
+        "Calculate the time taken for the voltage to rise from (1/3)ΔV to (2/3)ΔV.",
+        "Add the two times to find the period T."
+      ],
+      "answer": "\\(T = (R_1 + 2R_2)C \\log_e 2\\)"
+    },
+    {
+      "id": "EM-0026",
+      "title": "Resistance of an Infinite Wire Grid",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Resistance",
+          "Infinite Grid",
+          "Symmetry",
+          "Superposition",
+          "Thevenin's Theorem"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "There is an infinite wire grid with cells in the form of equilateral triangles. The resistance of each wire between neighbouring joint connections is \\(R_0\\). Fing the net resistance of the whole grid between the points A and B as shown \\nDIAGRAM[1,300]",
+      "solution": "Since net resistance is to be found between A and B. So let a current \\(I\\) enter at A and then exit at B.\\nWhen \\(I\\) enters at A then by symmetry a current \\(\\dfrac{I}{6}\\) must flow in the branch AB from A to B.\\nFor current \\(I\\) to exit from B, a current \\(\\dfrac{I}{6}\\) must flow in the branch AB from A to B. Super-imposing the two, we conclude that a current \\(\\left(\\dfrac{I}{6} + \\dfrac{I}{6}\\right)\\) must flow in the branch AB from A to B.\\nAccording to Thevenin's Theorem we have\\n\\(I_{total} R_{eq} = V_{AB} = \\left(\\dfrac{I}{6} + \\dfrac{I}{6}\\right)R_0 = \\dfrac{IR_0}{3}\\)\\n\\(\\Rightarrow IR_{eq} = \\dfrac{IR_0}{3}\\)\\n\\(\\Rightarrow R_{eq} = \\dfrac{R_0}{3}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use symmetry and superposition principles. Consider the current distribution when current enters at A and exits at B.",
+      "methodOfSolving": [
+        "Apply symmetry to determine the current distribution in the grid.",
+        "Use superposition to find the total current flowing through the branch AB.",
+        "Apply Thevenin's theorem to calculate the equivalent resistance."
+      ],
+      "answer": "\\(\\dfrac{R_0}{3}\\)"
+    },
+    {
+      "id": "EM-0027",
+      "title": "Electron Projected in a Magnetic Field",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Field",
+          "Circular Motion",
+          "Electron",
+          "Velocity"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A uniform magnetic field \\(B\\) exists in the annular space enclosed between two cylindrical shells of the inner radius \\(a\\) and outer radius of \\(b\\) as shown in Figure.\\n\\nDIAGRAM[1,150]\\nAn electron is projected from the surface of inner cylindrical shell perpendicular to it with some initial velocity. The magnetic field is directed along the common axis of the cylindrical shells. Calculate the maximum initial velocity with which this electron should be projected so that it will not hit the inner surface of the outer shell.",
+      "solution": "The electron follows a circular path with centre C such that it just escapes the outer shell tangentially and does not collide with it as shown in Figure.\\n\\nDIAGRAM[2,150]\\nThe radius of the circular path followed by electron is given by\\n\\(r = \\dfrac{mv}{eB} \\quad ...(1)\\)\\nAlso, we observe that the length OC is given by\\n\\(b - r = \\sqrt{a^2 + r^2}\\)\\n\\(\\Rightarrow b^2 + r^2 - 2br = a^2 + r^2\\)\\n\\(\\Rightarrow r = \\dfrac{b^2 - a^2}{2b} \\quad ...(2)\\)\\nEquating (1) and (2), we get\\n\\(\\dfrac{mv}{eB} = \\dfrac{b^2 - a^2}{2b}\\)\\n\\(\\Rightarrow v = \\dfrac{eB(b^2 - a^2)}{2mb}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The electron will follow a circular path due to the magnetic field.  For the electron to not hit the outer shell, the radius of its circular path must be such that it just grazes the outer shell.",
+      "methodOfSolving": [
+        "Determine the radius of the circular path of the electron in terms of its velocity and the magnetic field.",
+        "Relate this radius to the radii of the inner and outer shells.",
+        "Solve for the maximum velocity."
+      ],
+      "answer": "\\(v = \\dfrac{eB(b^2 - a^2)}{2mb}\\)"
+    },
+    {
+      "id": "EM-0028",
+      "title": "Motion of a Charged Particle in Crossed Electric and Magnetic Fields",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 900,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electric Field",
+          "Magnetic Field",
+          "Crossed Fields",
+          "Cycloid",
+          "SHM",
+          "Velocity",
+          "Displacement"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A particle of charge \\(q\\) and mass \\(m\\) is emitted at rest from the origin with zero initial velocity into a region of uniform electric and magnetic fields. The electric field \\(\\vec{E} = E_0 \\hat{i}\\) is acting along x-axis and magnetic field \\(\\vec{B} = B_0 \\hat{j}\\) along y-axis.  Find:\\n(a) the maximum x-coordinate of the particle.\\n(b) the maximum speed of the particle.\\n(c) the nature of the path followed by the particle.",
+      "solution": "Electric field will provide the particle an acceleration (and therefore a velocity component) in x-direction and the magnetic field will rotate the particle in xz-plane (perpendicular to B). Hence, at any instant of time its velocity (and hence, position) will have only x and z components. Let at time \\(t\\) its velocity be, \\n\\(\\vec{v} = v_x \\hat{i} + v_z \\hat{k}\\)\\nNet force on it at this instant is\\n\\(\\vec{F} = \\vec{F_e} + \\vec{F_m} = q\\vec{E} + q(\\vec{v} \\times \\vec{B})\\)\\n\\(\\Rightarrow \\vec{F} = q[E_0 \\hat{i} + (v_x \\hat{i} + v_z \\hat{k}) \\times (B_0 \\hat{j})]\\)\\n\\(\\Rightarrow \\vec{F}= q(E_0 - v_z B_0)\\hat{i} + qv_x B_0 \\hat{k}\\)\\nFrom Newton's Second Law, we have \\(\\vec{F} = m\\vec{a}\\)\\n\\(\\Rightarrow \\vec{a} = \\dfrac{\\vec{F}}{m} = a_x \\hat{i} + a_z \\hat{k}\\)\\nwhere, \\(a_x = \\dfrac{q}{m}(E_0 - v_z B_0) \\quad ...(1)\\) and \\(a_z = \\dfrac{q}{m} v_x B_0 \\quad ...(2)\\)\\nDifferentiating Equation (1) w.r.t. time, we have,\\n\\(\\dfrac{da_x}{dt} = \\dfrac{d^2 v_x}{dt^2} = -\\dfrac{qB_0}{m} \\left(\\dfrac{dv_z}{dt}\\right)\\)\\nSince, \\(\\dfrac{dv_z}{dt} = a_z = \\dfrac{qB_0}{m}v_x\\)\\n\\(\\Rightarrow \\dfrac{d^2 v_x}{dt^2} = -\\left(\\dfrac{qB_0}{m}\\right)^2 v_x \\quad ...(3)\\)\\nComparing this equation with the differential equation of SHM \\(\\left[\\dfrac{d^2 y}{dt^2} = -\\omega^2 y\\right]\\), we get\\n\\(\\omega = \\dfrac{qB_0}{m}\\)\\nand the general solution of Equation (3) is,\\n\\(v_x = A\\sin(\\omega t + \\phi) \\quad ...(4)\\)\\nAt time \\(t = 0\\), \\(v_x = 0\\), hence, \\(\\phi = 0\\)\\nAgain, \\(\\dfrac{dv_x}{dt} = A\\omega \\cos(\\omega t) \\quad [\\text{as } \\phi = 0]\\)\\nFrom equation (1),\\n\\(a_x = \\dfrac{qE_0}{m}\\) at \\(t = 0\\), as \\(v_z = 0\\) at \\(t = 0\\)\\n\\(\\Rightarrow A\\omega = \\dfrac{qE_0}{m}\\)\\n\\(\\Rightarrow A = \\dfrac{qE_0}{m\\omega}\\)\\nSubstituting \\(\\omega = \\dfrac{qB_0}{m}\\), we get \\(A = \\dfrac{qE_0}{m \\left[\\dfrac{qB_0}{m}\\right]} = \\dfrac{E_0}{B_0}\\)\\nTherefore, equation (4) becomes,\\n\\(v_x = \\dfrac{E_0}{B_0} \\sin(\\omega t)\\) where \\(\\omega = \\dfrac{qB_0}{m} \\quad ...(5)\\)\\nNow substituting value of \\(v_x\\) in equation (2), we get\\n\\(a_z = \\dfrac{dv_z}{dt} = \\dfrac{qE_0}{m}\\sin(\\omega t)\\)\\n\\(\\Rightarrow \\displaystyle\\int_0^{v_z} dv_z = \\dfrac{qE_0}{m} \\displaystyle\\int_0^t \\sin(\\omega t) dt\\)\\n\\(\\Rightarrow v_z = \\dfrac{qE_0}{m\\omega}(1 - \\cos(\\omega t))\\)\\nAgain substituting \\(\\omega = \\dfrac{qB_0}{m}\\), we get\\n\\(v_z = \\dfrac{E_0}{B_0} (1 - \\cos(\\omega t)) \\quad ...(6)\\)\\nOn integrating equations for \\(v_x\\) and \\(v_z\\) from (5) and (6), and knowing that at \\(t = 0\\), \\(x = 0\\) and \\(z = 0\\), we get\\n\\(x = \\dfrac{E_0}{B_0 \\omega}(1 - \\cos\\omega t)\\) and \\(z = \\dfrac{E_0}{B_0}(\\omega t - \\sin\\omega t)\\)\\nThese equations are the equations for a cycloid which is defined as the path generated by the point on the circumference of a wheel rolling on a ground.\\n\\nDIAGRAM[1,300]\\n\\nIn the present case, radius of the rolling wheel is \\(\\dfrac{E_0}{B_0 \\omega}\\). The maximum displacement along x-direction is \\(\\dfrac{2E_0}{B_0 \\omega}\\). The x-displacement becomes zero at \\(t = 0, \\dfrac{2\\pi}{\\omega}, \\dfrac{4\\pi}{\\omega}\\), etc.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The electric field accelerates the particle along the x-axis, while the magnetic field causes circular motion in the xz-plane.  The resulting motion is a cycloid.",
+      "methodOfSolving": [
+        "Write the expression for the Lorentz force acting on the particle.",
+        "Apply Newton's second law to determine the equations of motion.",
+        "Solve the differential equations to find the velocity components vx and vz as functions of time.",
+        "Integrate the velocity components to find the x and z coordinates as functions of time.",
+        "Analyze the equations to determine the nature of the path and the maximum displacement and speed."
+      ],
+      "answer": "(a) Maximum x-coordinate = \\(\\dfrac{2E_0}{B_0 \\omega}\\) where \\(\\omega = \\dfrac{qB_0}{m}\\)\\n(b) Maximum speed = \\(\\dfrac{2E_0}{B_0}\\)\\n(c) Cycloidal path"
+    },
+    {
+      "id": "EM-0029",
+      "title": "Lorentz Force between Moving Charges",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Lorentz Force",
+          "Magnetic Field",
+          "Moving Charges",
+          "Vector Calculus"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Point charges \\(Q_1\\) and \\(Q_2\\) are constrained to move along the x and y-axes, respectively, with the same uniform speed \\(v\\). At time \\(t = 0\\), both the charges are at the origin. Calculate the Lorentz force \\(F\\) acting on \\(Q_2\\) due to the magnetic field of \\(Q_1\\) at time \\(t\\).",
+      "solution": "The expression for the magnetic field \\(\\vec{B}\\) at a point P at position vector \\(\\vec{r}\\) from the charge \\(Q\\) moving with a velocity \\(\\vec{v}\\) is\\n\\(\\vec{B} = \\dfrac{\\mu_0}{4\\pi} \\dfrac{Q(\\vec{v} \\times \\vec{r})}{r^3}\\)\\nSince both charges start from the origin at \\(t = 0\\), so the position vector of the charge \\(Q_1\\) is \\(\\vec{r_1} = \\vec{v_1}t\\) and the position vector of the charge \\(Q_2\\) is \\(\\vec{r_2} = \\vec{v_2}t\\). The vector displacement \\(\\vec{r}\\) of \\(Q_2\\) w.r.t. \\(Q_1\\) is\\n\\(\\vec{r_{12}} = (\\vec{v_2} - \\vec{v_1})t\\)\\nThe magnetic field at the position of \\(Q_2\\) due to the charge \\(Q_1\\) is\\n\\(\\vec{B} = \\dfrac{\\mu_0}{4\\pi} \\dfrac{Q_1 (\\vec{v_1} \\times \\vec{r_{12}})}{r_{12}^3} = \\dfrac{\\mu_0}{4\\pi} \\dfrac{Q_1 [\\vec{v_1} \\times (\\vec{v_2} - \\vec{v_1})t]}{r_{12}^3} = \\dfrac{\\mu_0}{4\\pi} \\dfrac{Q_1 (\\vec{v_1} \\times \\vec{v_2})t}{r^3}\\)\\nThe force on a charge \\(Q_2\\) moving with at velocity \\(\\vec{v_2}\\) in a magnetic field \\(\\vec{B}\\) is\\n\\(\\vec{F_{21}} = Q_2 (\\vec{v_2} \\times \\vec{B})\\)\\n\\(\\Rightarrow \\vec{F_{21}} = \\left[\\dfrac{\\mu_0 Q_2}{4\\pi r_{12}^3}\\right][\\vec{v_2} \\times [\\vec{v_1} \\times (\\vec{v_2} - \\vec{v_1})]]\\)\\nSince \\(\\vec{v_1} \\times \\vec{v_1} = 0\\), so we get\\n\\(\\vec{F_{21}} = \\left[\\dfrac{\\mu_0 Q_2}{4\\pi r_{12}^3}\\right][\\vec{v_2} \\times (\\vec{v_1} \\times \\vec{v_2})] \\quad ...(1)\\)\\nTaking \\(\\vec{v_1} = v\\hat{i}\\) and \\(\\vec{v_2} = v\\hat{j}\\), we get\\n\\(\\vec{v_1} \\times \\vec{v_2} = v^2 \\hat{k}\\)\\n\\(\\vec{v_2} \\times (\\vec{v_1} \\times \\vec{v_2}) = v^3 \\hat{i}\\) and \\n\\( |\\vec{v_1} - \\vec{v_2}| = (\\sqrt{2}v)^{3/2}\\)\\nFrom equation (1), the magnetic force is given by\\n\\(\\vec{F_{21}} = \\dfrac{\\mu_0}{4\\pi} \\dfrac{Q_1 Q_2}{2\\sqrt{2} v^2 t^3}v^3\\hat{i}\\)\\n\\(\\Rightarrow \\vec{F_{21}} = \\dfrac{\\mu_0 Q_1 Q_2 v}{8\\pi t \\sqrt{2}}\\hat{i}\\), parallel to the x-axis.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "First, find the magnetic field produced by Q1 at the position of Q2. Then, use the formula for the Lorentz force on a moving charge in a magnetic field.",
+      "methodOfSolving": [
+        "Calculate the magnetic field B due to Q1 at the position of Q2.",
+        "Determine the Lorentz force F on Q2 due to the magnetic field B."
+      ],
+      "answer": "\\(\\vec{F_{21}} = \\dfrac{\\mu_0 Q_1 Q_2 v}{8\\pi t \\sqrt{2}}\\hat{i}\\)"
+    },
+    {
+      "id": "EM-0030",
+      "title": "Magnetic Field of a Solenoid Wound with a Conducting Strip",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Solenoid",
+          "Magnetic Field",
+          "Current Density",
+          "Ampere's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A thin conducting strip of width \\(h\\) is tightly wound in the shape of a very long cylindrical coil with cross-sectional radius \\(R\\) to make a single layer straight solenoid as shown in figure.\\n\\nDIAGRAM[1,250]\\nA direct current \\(I\\) flows through the strip. Find the magnetic induction inside and outside the solenoid as a function of the distance \\(r\\) from its axis.",
+      "solution": "Let us consider one loop, then open it and draw it as shown in Figure.\\n\\nDIAGRAM[2,150]\\nSince the current is flowing in a strip of width \\(h\\) so, the current per unit strip width is given by\\n\\(j = \\dfrac{I}{h}\\)\\nThis current per unit length (also called linear current density) can be resolved in two components \\(j_x\\) and \\(j_y\\) as shown in Figure.\\n\\nDIAGRAM[3,220]\\nOutside this type of solenoid, the magnetic field will be due to the component of current along the axis of solenoid as shown in Figure (c).\\n\\nDIAGRAM[4,160]\\nFor current density \\(j_x = j\\sin\\theta\\) along the length of solenoid, by applying Amperes Circuital Law, we get\\n\\(B_{out}(2\\pi r) = \\mu_0 I_x\\)\\nwhere \\(I_x = j_x (2\\pi R)\\)\\n\\(\\Rightarrow I_x = j\\sin\\theta (2\\pi R)\\)\\nFrom Figure (a), we have\\n\\(\\sin\\theta = \\dfrac{2\\pi R}{h}\\)\\n\\(\\Rightarrow I_x = j\\left(\\dfrac{2\\pi R}{h}\\right)(2\\pi R) = jh\\)\\n\\(\\Rightarrow B_{out} = \\dfrac{\\mu_0 I_x}{2\\pi r} = \\dfrac{\\mu_0 jh}{2\\pi r} = \\dfrac{\\mu_0 I}{2\\pi r}\\)\\nInside this type of solenoid, the magnetic field will be due to the component of current perpendicular to the axis of the solenoid. Due to component of current density perpendicular to length of solenoid, we have\\n\\(B = \\mu_0 n I_y\\), where\\n\\(n = \\dfrac{N}{h} = \\dfrac{1}{h}\\) and \\(I_y = (j\\cos\\theta)h = I\\cos\\theta\\)\\n\\(\\Rightarrow B_{inside} = \\mu_0 \\left(\\dfrac{1}{h}\\right)(I\\cos\\theta)\\)\\n\\(\\Rightarrow B_{inside} = \\dfrac{\\mu_0 I}{h}\\sqrt{1 - \\left(\\dfrac{h}{2\\pi R}\\right)^2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the current per unit width of the strip. Resolve this current density into components parallel and perpendicular to the solenoid axis. Apply Ampere's law.",
+      "methodOfSolving": [
+        "Calculate the current density j.",
+        "Resolve j into components jx and jy.",
+        "Apply Ampere's circuital law to find the magnetic field outside the solenoid (using jx).",
+        "Apply Ampere's circuital law to find the magnetic field inside the solenoid (using jy)."
+      ],
+      "answer": "Outside: \\(B_{out} = \\dfrac{\\mu_0 I}{2\\pi r}\\)\\nInside: \\(B_{inside} = \\dfrac{\\mu_0 I}{h}\\sqrt{1 - \\left(\\dfrac{h}{2\\pi R}\\right)^2}\\)"
+    },
+    {
+      "id": "EM-0031",
+      "title": "Magnetic Dipole Moment of a Rotating Charged Cone",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Dipole Moment",
+          "Rotating Charge",
+          "Cone",
+          "Angular Velocity"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A charge \\(Q\\) is uniformly distributed over the slant surface of a thin walled right circular cone of semi-vertex angle \\(\\theta\\) and height \\(h\\) as shown in Figure. The cone is uniformly rotated about its axis at angular velocity \\(\\omega\\). Calculate the magnetic dipole moment associated with the cone.\\n\\nDIAGRAM[1,160]",
+      "solution": "\\(M = IA = \\left(\\dfrac{\\text{Charge Circulating}}{\\text{Period of Revolution}}\\right)\\text{(Area of loop)}\\)\\nLet us consider a small, current carrying loop element, having thickness \\(dx\\) at a distance \\(x\\) from the base of the cone as shown in Figure.\\n\\nDIAGRAM[2,200]DIAGRAM[3,150]\\nIf \\(dM\\) is the magnetic moment of this small loop having charge \\(dq\\), radius \\(r\\) and rotating with angular velocity \\(\\omega\\) then we have\\n\\(dM = iA = \\left[\\dfrac{dq}{\\left(\\dfrac{2\\pi}{\\omega}\\right)}\\right]A = \\dfrac{\\omega}{2\\pi}(dq)A\\)\\nwhere \\(A\\) is area of the loop or the area circulated by the charge \\(dq\\) in the loop. Also, we know that\\n\\(dq = \\sigma dA\\), where \\(\\sigma = \\dfrac{Q}{\\pi Rl}\\), \\(dA = (2\\pi r)\\dfrac{dx}{\\cos\\theta}\\)\\nand \\(l\\) is the slant height of the cone given by \\(l = \\dfrac{h}{\\cos\\theta}\\)\\n\\(\\Rightarrow dM = \\left(\\dfrac{\\omega}{2\\pi}\\right) \\left(\\dfrac{Q}{\\pi Rl}\\right) (2\\pi r) \\left(\\dfrac{dx}{\\cos\\theta}\\right)(\\pi r^2) \\quad ...(1)\\)\\nAlso, from figure we observe that\\n\\(\\tan\\theta = \\dfrac{R}{h} = \\dfrac{r}{h-x}\\)\\n\\(\\Rightarrow r = \\left(\\dfrac{h-x}{h}\\right)R\\)\\nSo, from (1), we get\\n\\(dM = \\left(\\dfrac{\\omega}{2\\pi}\\right) \\left(\\dfrac{Q\\cos\\theta}{\\pi Rh}\\right) \\left(\\dfrac{2\\pi r^2 R}{\\cos\\theta}\\right) \\left(\\dfrac{h-x}{h}\\right)^3 dx\\)\\n\\(\\Rightarrow M = \\displaystyle\\int dM = \\dfrac{\\omega QR^2}{h^4} \\displaystyle\\int_0^h (h-x)^3 dx\\)\\n\\(\\Rightarrow M = \\dfrac{\\omega QR^2}{h^4} \\left[\\dfrac{(h-x)^4}{-4}\\right]_0^h\\)\\n\\(\\Rightarrow M = \\dfrac{\\omega QR^2}{h^4} \\left(0 - \\dfrac{h^4}{-4}\\right)\\)\\n\\(\\Rightarrow M = \\dfrac{1}{4}Q\\omega R^2 = \\dfrac{1}{4}Q\\omega h^2 \\tan^2\\theta\\)\\nSince we know that the Gyromagnetic ratio for such an arrangement is given by\\n\\(\\gamma = \\dfrac{M}{L} = \\dfrac{Q}{2m}\\)\\nwhere M is to be calculated and \\(L = I\\omega\\). For a thin walled cone, \\(I = \\dfrac{1}{2}mR^2\\). So, we get\\n\\(M = I\\omega \\dfrac{Q}{2m} = \\left(\\dfrac{1}{2} mR^2\\right) \\dfrac{\\omega Q}{2m} = \\dfrac{1}{4}Q\\omega R^2\\)\\n\\(\\Rightarrow M = \\dfrac{1}{4}Q\\omega h^2 \\tan^2\\theta\\) \\n{we could have bypassed the process of integration}",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider a small loop element of the cone. Find the magnetic moment of this element and integrate to find the total magnetic moment.",
+      "methodOfSolving": [
+        "Express the magnetic moment dM of a small loop element in terms of its charge, radius, and angular velocity.",
+        "Relate the charge dq of the loop element to the total charge Q and the area of the cone.",
+        "Express the radius r of the loop element in terms of the height h and the semi-vertex angle θ.",
+        "Integrate dM over the height of the cone to find the total magnetic moment M."
+      ],
+      "answer": "\\(M = \\dfrac{1}{4}Q\\omega R^2 = \\dfrac{1}{4}Q\\omega h^2 \\tan^2\\theta\\)"
+    },
+    {
+      "id": "EM-0032",
+      "title": "Magnetic Pressure on a Solenoid",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 300,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Solenoid",
+          "Magnetic Pressure",
+          "Magnetic Field"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Find the magnetic pressure which the lateral surface of a long straight solenoid with \\(n\\) turns per unit length experiences when a current \\(I\\) flows through it.",
+      "solution": "In case of a long solenoid, the magnetic field is zero outside the solenoid and \\(B = \\mu_0 nI\\) inside the solenoid. So, the magnetic pressure on the surface of solenoid is given by\\n\\(P_m = \\frac{B^2}{2\\mu_0} = \\frac{1}{2}\\mu_0 n^2 I^2\\)",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "The magnetic pressure is given by \\(P_m = \\frac{B^2}{2\\mu_0}\\). Recall the expression for the magnetic field inside a long solenoid.",
+      "methodOfSolving": [
+        "Write down the formula for magnetic pressure.",
+        "Substitute the expression for the magnetic field inside a solenoid.",
+        "Simplify the expression to find the magnetic pressure."
+      ],
+      "answer": "\\(\\frac{1}{2}\\mu_0 n^2 I^2\\)"
+    },
+    {
+      "id": "EM-0033",
+      "title": "Magnetic Field of an Exponential Spiral Wire",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Biot-Savart Law",
+          "Magnetic Field",
+          "Spiral",
+          "Integration"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A wire carrying a current \\(I\\) is bent into the shape of an exponential spiral, \\(r = e^{\\theta}\\) from \\(\\theta = 0\\) to \\(\\theta = 2\\pi\\) as shown in figure. To complete a loop, the ends of the spiral are connected by a straight wire along the x-axis. Find the magnitude and direction of \\(\\vec{B}\\) at the origin.\\n\\nDIAGRAM[1,250]",
+      "solution": "Before we start with the problem, we must know and keep in mind that the angle \\(\\beta\\) between a radial line and its tangent line at any point on the curve \\(r = f(\\theta)\\) are related to the function as\\n\\(\\tan\\beta = \\frac{r}{\\frac{dr}{d\\theta}}\\)\\nFrom Biot-Savart’s Law, we know that there is no contribution from the straight portion of the wire since \\(d\\vec{l} \\times \\vec{r} = 0\\). For the field of the spiral, we have\\n\\(d\\vec{B} = \\frac{\\mu_0 I}{4\\pi} \\frac{(d\\vec{l} \\times \\hat{r})}{r^2}\\)\\n\\nDIAGRAM[2,250]\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\frac{|d\\vec{l}|\\sin\\theta|\\hat{r}|}{r^2}\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} \\sqrt{2}dr \\left[\\sin\\left(\\frac{3\\pi}{4}\\right)\\right]\\frac{1}{r^2}\\)\\nThus in this case, we have \\(r = e^{\\theta}\\) and so we get \\(\\tan\\beta = 1\\) and \\(\\beta = \\frac{\\pi}{4}\\). Therefore, the angle between \\(d\\vec{l}\\) and \\(\\hat{r}\\) is \\((\\pi - \\beta) = \\frac{3\\pi}{4}\\). Also\\n\\(d\\vec{l} = \\frac{dr}{\\sin\\left(\\frac{\\pi}{4}\\right)} = \\sqrt{2} dr\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi} \\int_0^{2\\pi} r^{-2} dr = \\frac{-\\mu_0 I}{4\\pi}(r^{-1})|_0^{2\\pi}\\)\\nSubstitute \\(r = e^{\\theta}\\), we get\\n\\(B = \\frac{-\\mu_0 I}{4\\pi}(e^{-\\theta})|_0^{2\\pi} = \\frac{-\\mu_0 I}{4\\pi}(e^{-2\\pi} - e^0)\\)\\n\\(\\Rightarrow B = \\frac{\\mu_0 I}{4\\pi}(1 - e^{-2\\pi})\\) out of the page.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the Biot-Savart law and consider the symmetry of the problem. Note that there is no contribution from the straight wire segment.",
+      "methodOfSolving": [
+        "Write down the Biot-Savart law for the magnetic field due to a current element.",
+        "Determine the angle between dl and r.",
+        "Express dl in terms of dr.",
+        "Integrate the Biot-Savart law over the spiral path.",
+        "Determine the direction of the magnetic field using the right-hand rule."
+      ],
+      "answer": "\\(\\frac{\\mu_0 I}{4\\pi}(1 - e^{-2\\pi})\\) out of the page"
+    },
+    {
+      "id": "EM-0034",
+      "title": "Magnetic Flux through a Rectangle inside a Cylindrical Wire",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Flux",
+          "Ampere's Law",
+          "Cylindrical Wire"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A very long, cylindrical wire of radius \\(R\\) carries a current \\(I_0\\) uniformly distributed across the cross section of the wire. Calculate the magnetic flux through a rectangle that has one side of length \\(L\\) running down the centre of the wire and another side of length \\(R\\), as shown in Figure.\\n\\nDIAGRAM[1,300]",
+      "solution": "Let us find the magnetic field at a distance \\(r\\) from the centre of the wire and divide the rectangle into narrow infinitesimal strips of width \\(dr\\). The magnetic flux through each infinitesimal strip will then be integrated to get the total flux.\\n\\nDIAGRAM[2,300]\\nFrom Ampere's Law, the field inside the wire is\\n\\(B = \\left(\\frac{\\mu_0 I}{2\\pi R^2}\\right)r\\)\\nThe field \\(B\\) is normal to the area of the strip \\(Ldr\\), so angle between \\(B\\) and \\(dA\\) is \\(0^{\\circ}\\). Hence,\\n\\(d\\phi_B = B.dA = \\left(\\frac{\\mu_0 I_0 r}{2\\pi R^2}\\right)(Ldr)\\cos(0^{\\circ})\\)\\n\\(\\phi_B = \\int d\\phi = \\frac{\\mu_0 I_0 L}{2\\pi R^2} \\int_0^R r dr\\)\\n\\(\\Rightarrow \\phi_B = \\frac{\\mu_0 I_0 L}{4\\pi}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Ampere's law to find the magnetic field inside the wire as a function of the radial distance. Then, integrate the magnetic flux over the area of the rectangle.",
+      "methodOfSolving": [
+        "Apply Ampere's law to find the magnetic field B(r) inside the wire.",
+        "Consider an infinitesimal strip of width dr and length L within the rectangle.",
+        "Calculate the magnetic flux dΦ through this strip.",
+        "Integrate dΦ from r=0 to r=R to find the total magnetic flux."
+      ],
+      "answer": "\\(\\frac{\\mu_0 I_0 L}{4\\pi}\\)"
+    },
+    {
+      "id": "EM-0035",
+      "title": "Motion of a Bar on Rails in a Magnetic Field",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Magnetic Field",
+          "Motional EMF",
+          "Newton's Laws",
+          "Terminal Velocity"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A bar of mass \\(m\\) is pulled horizontally across parallel rails by a massless string that passes over an ideal pulley and is attached to a suspended object of mass \\(M\\) as shown in Figure. The uniform magnetic field has a magnitude \\(B\\) and the distance between the rails is \\(l\\). The rails are connected at one end by a load resistor \\(R\\). Derive an expression that gives the horizontal speed of the bar as a function of time, assuming that the suspended object is released with the bar at rest at \\(t = 0\\). Assume no friction between rails and bar. Also find the terminal velocity obtained by the bar.\\n\\nDIAGRAM[1,300]",
+      "solution": "For the suspended mass \\(M\\), we have\\n\\(Mg - T = Ma \\quad ...(1)\\)\\nFor the bar connected to the suspended mass \\(M\\),\\n\\(T - BIl = ma \\quad ...(2)\\)\\nwhere \\(I = \\frac{\\varepsilon}{R} = \\frac{Blv}{R} \\quad ...(3)\\)\\n\\(\\Rightarrow Mg - BIl = (M+m)a\\)\\n\\(\\Rightarrow Mg - \\frac{B^2 l^2 v}{R} = (M+m)a\\)\\n\\(\\Rightarrow a = \\frac{dv}{dt} = \\frac{Mg}{M+m} - \\frac{B^2 l^2}{(R(M+m))}v\\)\\n\\(\\Rightarrow a = \\frac{dv}{dt} = \\alpha - \\beta v\\) where \\(\\alpha = \\frac{Mg}{M+m}\\), \\(\\beta = \\frac{B^2 l^2}{R(M+m)}\\)\\n\\(\\Rightarrow \\frac{dv}{dt} = \\alpha - \\beta v\\)\\n\\(\\Rightarrow \\int_0^v \\frac{dv}{\\alpha - \\beta v} = \\int_0^t dt\\)\\n\\(\\Rightarrow -\\frac{1}{\\beta}\\log_e{(\\alpha - \\beta v)}|_0^v = t\\)\\n\\(\\Rightarrow \\log_e{\\left(\\frac{\\alpha - \\beta v}{\\alpha}\\right)} = -\\beta t\\)\\n\\(\\Rightarrow v = \\frac{\\alpha}{\\beta}(1 - e^{-\\beta t})\\)\\n\\(\\Rightarrow v = \\frac{MgR}{B^2 l^2} \\left[1 - e^{-\\frac{B^2 l^2 t}{R(M+m)}}\\right]\\)\\nAt the terminal velocity of the bar, say \\(v_T\\), we have\\n\\(\\Rightarrow Mg - \\frac{B^2 l^2 v_T}{R} = 0\\)\\n\\(\\Rightarrow Mg = \\frac{B^2 l^2}{R}v_T\\)\\n\\(\\Rightarrow v_T = \\frac{MgR}{B^2 l^2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply Newton's second law to both the bar and the suspended mass. Consider the motional EMF induced in the bar and the resulting current.",
+      "methodOfSolving": [
+        "Write the force balance equations for the hanging mass and the bar.",
+        "Express the current in the bar in terms of the induced EMF and the resistance R.",
+        "Relate the induced EMF to the velocity of the bar and the magnetic field.",
+        "Combine the equations and solve the resulting differential equation for the velocity v(t).",
+        "To find the terminal velocity, set the acceleration to zero in the velocity equation."
+      ],
+      "answer": "\\(v(t) = \\frac{MgR}{B^2 l^2} \\left[1 - e^{-\\frac{B^2 l^2 t}{R(M+m)}}\\right]\\)\\nTerminal Velocity: \\(v_T = \\frac{MgR}{B^2 l^2}\\)"
+    },
+    {
+      "id": "EM-0036",
+      "title": "Velocity of a Charge due to Changing Magnetic Field in a Solenoid",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Solenoid",
+          "Induced Electric Field",
+          "Impulse",
+          "Faraday's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A long solenoid has \\(n\\) turns per unit length, radius \\(R\\) and carries a current \\(I\\) is kept in gravity free region. From its axis, at a distance twice that of its radius, a charge \\(+q\\) and mass \\(m\\) is placed. If the current in solenoid is suddenly switched off, find the velocity attained by the charge.",
+      "solution": "The magnetic field inside the solenoid is along the axis of the solenoid and is given by\\n\\(B_{inside} = \\mu_0 nI\\)\\n\\nDIAGRAM[1,250]\\nLet the duration in which field drops to zero after switching off the current in the solenoid be \\(\\Delta t\\). Due to the switching off the current to the solenoid, an electric field \\(E_{nc}\\) is induced at a distance \\(x = 2R\\) i.e., outside the solenoid in this time interval \\(\\Delta t\\). So, we have\\n\\(E_{nc}(2\\pi x) = -A \\left(\\frac{\\Delta B}{\\Delta t}\\right) = -\\pi R^2 \\left(\\frac{0 - \\mu_0 nI}{\\Delta t}\\right)\\)\\n\\(\\Rightarrow E_{nc}(2\\pi x) = \\pi R^2 \\left(\\frac{\\mu_0 nI}{\\Delta t}\\right)\\)\\n\\(\\Rightarrow E_{nc} = R \\frac{R}{2x} \\frac{\\mu_0 nI}{\\Delta t} = \\frac{R}{2(2R)}\\frac{\\mu_0 nI}{\\Delta t} = \\frac{R}{4} \\left(\\frac{\\mu_0 nI}{\\Delta t}\\right) \\quad ...(1)\\)\\nDue to this induced electric field, the charge \\(+q\\) experiences an impulse in this duration which is given by\\n\\(F\\Delta t = mv - 0\\)\\n\\(\\Rightarrow (qE_{nc})\\Delta t = mv\\)\\nUsing equation (1), we get\\n\\(q\\left[\\frac{R}{4}\\left(\\frac{\\mu_0 nI}{\\Delta t}\\right)\\right]\\Delta t = mv\\)\\n\\(\\Rightarrow v = \\frac{\\mu_0 nIqR}{4m}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Faraday's law of electromagnetic induction to find the induced electric field. Then, calculate the impulse experienced by the charge due to the induced electric field and relate it to the change in momentum.",
+      "methodOfSolving": [
+        "Calculate the magnetic field inside the solenoid.",
+        "Apply Faraday's law to find the induced electric field outside the solenoid when the current is switched off.",
+        "Determine the impulse on the charge due to the induced electric field.",
+        "Relate the impulse to the change in momentum of the charge to find its final velocity."
+      ],
+      "answer": "\\(\\frac{\\mu_0 nIqR}{4m}\\)"
+    },
+    {
+      "id": "EM-0037",
+      "title": "RL Circuit Analysis",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "RL Circuit",
+          "Kirchhoff's Laws",
+          "Inductor Current",
+          "Differential Equation"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "The switch in Figure is open for \\(t < 0\\) and then closed at time \\(t = 0\\). Find the current in the inductor and the current in the switch as functions of time thereafter.\\n\\nDIAGRAM[1,300]",
+      "solution": "For loop abefa, we have\\n\\(-4I - 4(I - I_1) + 10 = 0\\)\\n\\(\\Rightarrow -4I_1 + 8I = 10 \\quad ...(1)\\)\\nFor loop bcdeb, we have\\n\\(-8I_1 - (1)\\frac{dI_1}{dt} + 4(I - I_1) = 0\\)\\n\\(\\Rightarrow -12I_1 + 4I = \\frac{dI_1}{dt} \\quad ...(2)\\)\\n\\nDIAGRAM[2,300]\\nMultiplying (2) by 2 and then subtracting from (1), we get\\n\\(-4I_1 + 24I_1 = 10 - 2\\frac{dI_1}{dt}\\)\\n\\(\\Rightarrow 20I_1 = 10 - 2\\frac{dI_1}{dt}\\)\\n\\(\\Rightarrow \\frac{dI_1}{dt} = 5 - 10I_1\\)\\n\\(\\Rightarrow \\int_0^{I_1} \\frac{dI_1}{5 - 10I_1} = \\int_0^t dt\\)\\n\\(\\Rightarrow -\\frac{1}{10} \\log_e{(5 - 10I_1)}|_0^{I_1} = t\\)\\n\\(\\Rightarrow \\log_e{\\left(\\frac{5 - 10I_1}{5}\\right)} = -10t\\)\\n\\(\\Rightarrow 5 - 10I_1 = 5e^{-10t}\\)\\n\\(\\Rightarrow I_1 = 0.5(1 - e^{-10t})\\text{ A} \\quad \\text{{current through the inductor}}\\)\\nThe current through the switch is \\(I\\), calculated from either of the equations to be\\n\\(I = \\frac{1}{8}(10 + 4I_1)\\)\\n\\(\\Rightarrow I = 1.25 + 0.5I_1\\)\\n\\(\\Rightarrow I = 1.25 + (0.5)(0.5)(1 - e^{-10t})\\)\\n\\(\\Rightarrow I = 1.25 + 0.25 - 0.25e^{-10t}\\)\\n\\(\\Rightarrow I = (1.5 - 0.25e^{-10t})\\text{ A} \\quad \\text{{current through the switch}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply Kirchhoff's voltage law to the two loops in the circuit. Solve the resulting system of differential equations.",
+      "methodOfSolving": [
+        "Write down Kirchhoff's voltage law for the two loops in the circuit.",
+        "Solve the resulting system of equations to find the currents I and I1 as functions of time."
+      ],
+      "answer": "Inductor Current: \\(I_1 = 0.5(1 - e^{-10t})\\text{ A}\\)\\nSwitch Current: \\(I = (1.5 - 0.25e^{-10t})\\text{ A}\\)"
+    },
+    {
+      "id": "EM-0038",
+      "title": "Moving Wire in Magnetic Field and RLC Circuit",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 1200,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Motional EMF",
+          "RLC Circuit",
+          "Magnetic Force",
+          "Energy",
+          "Power"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A conducting wire PQ of length \\(l = 1\\text{ m}\\) is moved in a uniform magnetic field \\(B = 4\\text{ T}\\) with constant velocity \\(v = 2\\text{ ms}^{-1}\\) towards right as shown in Figure.  If \\(R = 2 \\Omega\\), \\(C = 1 \\text{ F}\\) and \\(L = 4 \\text{ H}\\) then, answer the following questions.\\n\\nDIAGRAM[1,200]\\n(a) If \\(V_P\\) and \\(V_Q\\) are potentials of the point P and Q respectively, then find \\(V_P - V_Q\\).\\n(b) Find the potential difference across the inductor.\\n(c) What is the potential difference across the capacitor?\\n(d) Calculate the potential difference across the resistor.\\n(e) Determine the rate of change of current in the inductor.\\n(f) Find the current through capacitor at \\(t = 2\\text{ s}\\).\\n(g) Calculate the current through resistor at \\(t = 2\\text{ s}\\).\\n(h) What is the current through inductor at \\(t = 2\\text{ s}\\)?\\n(i) Find the current through wire PQ at \\(t = 2\\text{ s}\\).\\n(j) Calculate the force required to move the wire with the given constant velocity of 2 ms⁻¹ at t=2s.\\n(k) Find the energy supplied per second by the source.\\n(l) Calculate the total power generated by the applied external force.\\n(m) What is the magnetic energy stored per second in inductor at \\(t = 2\\text{ s}\\)?\\n(n) Find the energy dissipated per second in the resistor at \\(t = 2\\text{ s}\\).\\n(o) Calculate the electrostatic energy stored per second in capacitor at \\(t = 2\\text{ s}\\).",
+      "solution": "(a) Using Fleming's Right Hand Rule, we see that the induced current in the wire PQ is from Q to P. So, we have\\n\\(V_P - V_Q = \\varepsilon = Blv = (4)(1)(2) = 8 \\text{ V}\\)\\n(b) Inductor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_L = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(c) Capacitor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_c = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(d) Resistor being connected in parallel to the emf source PQ has same potential difference developed across the emf source. So\\n\\(V_R = \\varepsilon = Blv = 8 \\text{ V}\\)\\n(e) Since \\(V_L = 8 \\text{ V}\\)\\n\\(\\Rightarrow L\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow 4\\frac{di}{dt} = 8\\)\\n\\(\\Rightarrow \\frac{di}{dt} = 2 \\text{ As}^{-1}\\)\\n(f) Charge on the capacitor is\\n\\(Q = C\\varepsilon = (1)(8) = 8 \\text{ coulomb}\\)\\n\\(\\Rightarrow i_2 = \\frac{dQ}{dt} = \\frac{d}{dt}(8) = 0\\)\\n(g) Current through resistor is\\n\\(i_3 = \\frac{\\varepsilon}{R} = \\frac{8}{2} = 4 \\text{ A}\\)\\n(h) Since rate of change of current in inductor is \\(\\frac{di_1}{dt} = 2 \\text{ As}^{-1}\\)\\nSo, current in the inductor at \\(t = 2\\text{ s}\\) is\\n\\(i_1 = \\left(\\frac{di_1}{dt}\\right)\\Delta t = (2)(2) = 4 \\text{ A}\\)\\n(i) Since wire PQ is acting as source of emf and supplies current i₁ to inductor, i₂ to capacitor and i₃ to resistor, so current through wire PQ is\\n\\(i = i_1 + i_2 + i_3 = 4 + 0 + 4 = 8 \\text{ A}\\)\\n(j) To keep the wire PQ moving with constant velocity, an external force that equals the magnetic force on the current carrying conductor should be applied on it.\\n\\(\\Rightarrow F_{external} = F_{magnetic} = Bil = (4)(8)(1) = 32 \\text{ N}\\)\\n(k) Energy supplied per second by the source is\\n\\(P_{supplied} = \\varepsilon i = (8)(8) = 64 \\text{ W}\\)\\n(l) Power generated by the applied external force is\\n\\(P_{external\\ force} = F_{ext} v = (32)(2) = 64 \\text{ W}\\)\\n(m) Magnetic energy stored per second in inductor is\\n\\(\\frac{dU_m}{dt} = \\frac{d}{dt}\\left(\\frac{1}{2}Li^2\\right) = \\frac{1}{2}L\\frac{d}{dt}(i^2) = \\frac{L}{2} 2i \\frac{di}{dt} = Li\\frac{di}{dt}\\)\\nSince \\(\\frac{di1}{dt} = 2 \\text{ As}^{-1}\\) and \\(i_1 = 4 \\text{ A}\\) at \\(t = 2\\text{ s}\\)\\n\\(\\Rightarrow \\frac{dU_m}{dt} = Li_1\\frac{di_1}{dt} = (4)(4)(2) = 32 \\text{ W}\\)\\n(n) Energy dissipated per second in the resistor at \\(t = 2\\text{ s}\\) is\\n\\(P_{Resistor} = i_3^2 R = (4^2)(2) = 32 \\text{ W}\\)\\n(o) Electrostatic stored per second in capacitor at \\(t = 2\\text{ s}\\) is\\n\\(\\frac{dU_e}{dt} = \\frac{d}{dt}\\left(\\frac{Q^2}{2C}\\right) = \\frac{1}{2C} \\frac{d}{dt}(Q^2) = \\frac{Q}{C}\\frac{dQ}{dt} = \\frac{Q}{C}i_2\\)\\nSince \\(i_2 = 0\\)\\n\\(\\Rightarrow \\frac{dU_e}{dt} = 0\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Fleming's right-hand rule for the induced emf.  Apply Kirchhoff's laws and consider the relationships between voltage, current, and power in the circuit elements.",
+      "methodOfSolving": [
+        "Use Fleming's right-hand rule to find the direction of induced current and the polarity of the induced emf.",
+        "Analyze the circuit to determine the potential differences across each element.",
+        "Use the appropriate formulas to calculate the currents, forces, and power/energy values."
+      ],
+      "answer": "(a) 8 V \\n(b) 8 V \\n(c) 8 V \\n(d) 8 V \\n(e) 2 As⁻¹ \\n(f) 0 \\n(g) 4 A \\n(h) 4 A \\n(i) 8 A \\n(j) 32 N \\n(k) 64 W \\n(l) 64 W \\n(m) 32 W \\n(n) 32 W \\n(o) 0 W "
+    }
+  ]
+}

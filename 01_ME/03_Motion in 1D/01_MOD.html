@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Motion on Straight Line</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Motion in a Straight Line</h1>
+                    <p class="lead" id="tagline">All about displacement, velocity and acceleration.</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Distance and Speed -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDistanceSpeed">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDistanceSpeed" aria-expanded="false"
+                                aria-controls="collapseDistanceSpeed">
+                                <strong>Distance and Speed</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseDistanceSpeed" class="accordion-collapse collapse"
+                            aria-labelledby="headingDistanceSpeed" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Distance is a measure of the actual path length traversed by an object between two
+                                    points. It is important to note that distance is a property of the path taken, not
+                                    just the initial and final positions. It also inherently involves a time interval
+                                    over which the motion occurs.</p>
+
+                                <p>Average speed is defined as the total distance traveled divided by the total time
+                                    taken. Mathematically, it can be expressed as:</p>
+                                <p>
+                                    \( \qquad \text{Average Speed} = \dfrac{\text{Total Distance}}{\text{Total Time}} \)
+                                </p>
+
+                                <p>For example, if a car travels a distance of 100 kilometers in 2 hours, its average
+                                    speed is:</p>
+                                <p>
+                                    \( \qquad \text{Average Speed} = \dfrac{100 \, \text{km}}{2 \, \text{h}} = 50 \,
+                                    \text{km/h} \)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 2: Average Speed for Variations in Speed -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAvgSpeedVariations">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAvgSpeedVariations" aria-expanded="false"
+                                aria-controls="collapseAvgSpeedVariations">
+                                <strong>Average Speed for Variations in Speed</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseAvgSpeedVariations" class="accordion-collapse collapse"
+                            aria-labelledby="headingAvgSpeedVariations" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>This section focuses on problem-solving techniques related to average speed when the
+                                    speed of an object is not constant.</p>
+                                    
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Case 1: Total Distance and Total Time Given</strong>
+                                            </summary>
+                                            <p>If the total distance and total time are given, the average speed is
+                                                simply calculated as: </p>
+                                            <p>
+                                                \( \qquad \text{Average Speed} = \dfrac{\text{Total
+                                                Distance}}{\text{Total Time}} \)
+                                            </p>
+                                            <p><em>Example:</em> A cyclist travels a total distance of 50 km in 2.5
+                                                hours. The average speed is \(50 \, \text{km} / 2.5 \, \text{h} = 20 \,
+                                                \text{km/h}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Case 2: Equal Time Intervals, Different Speeds</strong>
+                                            </summary>
+                                            <p>If a particle travels for two equal time intervals \(t\) with speeds
+                                                \(v_1\) and \(v_2\), covering distances \(d_1 = v_1 t\) and \(d_2 = v_2
+                                                t\) respectively, the average speed is:</p>
+                                            <p>
+                                                \( \qquad v_{avg} = \dfrac{d_1 + d_2}{2t} = \dfrac{v_1 t + v_2 t}{2t} =
+                                                \dfrac{v_1 + v_2}{2} \)
+                                            </p>
+                                            <p><em>Example:</em> A car travels at 40 km/h for 1 hour and then at 60 km/h
+                                                for another hour. The average speed is \((40 + 60)/2 = 50 \,
+                                                \text{km/h}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Case 3: Unequal Time Intervals, Different Speeds</strong>
+                                            </summary>
+                                            <p>If a particle travels for time intervals \(t_1\) and \(t_2\) with speeds
+                                                \(v_1\) and \(v_2\) respectively, the average speed is:</p>
+                                            <p>\( \qquad v_{avg} = \dfrac{v_1 t_1 + v_2 t_2}{t_1 + t_2}\)</p>
+                                            <p><em>Example:</em> A train travels at 70 km/h for 2 hours and then at 50
+                                                km/h for 3 hours. The average speed is \((70 \cdot 2 + 50 \cdot 3)/(2+3)
+                                                = 58 \, \text{km/h}\).</p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Case 4: Equal Distance Intervals, Different Speeds</strong>
+                                            </summary>
+                                            <p>If a particle travels equal distances \(d\) with speeds \(v_1\) and
+                                                \(v_2\), the time taken for each part is \(t_1 = d/v_1\) and \(t_2 =
+                                                d/v_2\). The average speed is:</p>
+                                            <p>\( \qquad v_{avg} = \dfrac{2d}{t_1 + t_2} = \dfrac{2d}{\dfrac{d}{v_1} +
+                                                \dfrac{d}{v_2}} = \dfrac{2v_1 v_2}{v_1 + v_2} \)</p>
+                                            <p><em>Example:</em> A person walks 10 km at 4 km/h and then another 10 km
+                                                at 6 km/h. The average speed is \((2 \cdot 4 \cdot 6) / (4 + 6) = 4.8 \,
+                                                \text{km/h}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Case 5: Unequal Distance Intervals, Different
+                                                    Speeds</strong></summary>
+                                            <p> If a particle travels distances \(d_1\) and \(d_2\) with speeds \(v_1\)
+                                                and \(v_2\), the average speed is: </p>
+                                            <p> \( \qquad v_{avg} = \dfrac{d_1 + d_2}{\dfrac{d_1}{v_1} +
+                                                \dfrac{d_2}{v_2}}
+                                                \)</p>
+                                            <p><em>Example:</em> A plane flies 3000 km at 600 km/h and then 2000 km at
+                                                500 km/h. The average speed is \((3000 + 2000) / (3000/600 + 2000/500) =
+                                                545.45 \, \text{km/h}\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p>Consider a particle moving according to the equation \(x = t^2\), where
+                                    \(x\) is the position in meters and \(t\) is the time in seconds. To better
+                                    understand this motion, the following table illustrates the particle's position
+                                    at specific times:
+                                </p>
+                                <table class="table table-bordered text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Time (\(t\)) [s]</th>
+                                            <th>Position (\(x = t^2\)) [m]</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p><strong>Let's start by finding the average speed from \(t = 0\) to \(t =
+                                                4\):</strong></p>
+                                        <p>
+                                            At \(t = 0\), the position is \(x = 0^2 = 0 \, \text{m}\).<br>
+                                            At \(t = 4\), the position is \(x = 4^2 = 16 \, \text{m}\).<br>
+                                            Average speed is calculated as:
+                                        </p>
+                                        <p>
+                                            \(\text{Average Speed} = \dfrac{16 - 0}{4 - 0} = 4 \, \text{m/s}\)
+                                        </p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p><strong>Now, let's calculate the average speed from \(t = 2\) to \(t =
+                                                5\):</strong></p>
+                                        <p>
+                                            At \(t = 2\), the position is \(x = 2^2 = 4 \, \text{m}\).<br>
+                                            At \(t = 5\), the position is \(x = 5^2 = 25 \, \text{m}\).<br>
+                                            Average speed is:
+                                        </p>
+                                        <p>
+                                            \(\text{Average Speed} = \dfrac{25 - 4}{5 - 2} = 7 \, \text{m/s}\)
+                                        </p>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p> The speed at \(t = 2 \, \text{s}\) represents how fast the particle is
+                                            moving at that instant. Imagine an observer opening their eyes for a very
+                                            short moment exactly at \(t = 2 \, \text{s}\). The question is: what speed
+                                            would this observer measure? </p>
+                                        <p> At first, you might think the speed is zero because the particle moves such
+                                            a tiny distance during the short time. However, while the distance is small,
+                                            the time interval is also very small. The ratio of distance to
+                                            time—speed—doesn't necessarily have to be small. To understand this better,
+                                            let's analyze it mathematically. </p>
+                                        <p> To determine the instantaneous speed at \(t = 2 \, \text{s}\), we calculate
+                                            the average speed over progressively smaller intervals around \(t = 2 \,
+                                            \text{s}\). </p>
+                                        <ul>
+                                            <li>
+                                                <p>From \(t = 2.0 \, \text{s}\) to \(t = 2.1 \, \text{s}\):</p>
+                                                <p> \(\qquad v_{\text{avg}} = \dfrac{2.1^2 - 2^2}{2.1 - 2} \,
+                                                    \text{m/s}\) </p>
+                                                <p> \(\Rightarrow\quad v_{\text{avg}} = \dfrac{4.41 - 4}{0.1} = 4.1 \,
+                                                    \text{m/s}\) </p>
+                                            </li>
+                                            <li>
+                                                <p>From \(t = 2.00 \, \text{s}\) to \(t = 2.01 \, \text{s}\):</p>
+                                                <p> \(\qquad v_{\text{avg}} = \dfrac{2.01^2 - 2^2}{2.01 - 2} \,
+                                                    \text{m/s}\) </p>
+                                                <p> \(\Rightarrow\quad v_{\text{avg}} = \dfrac{4.0401 - 4}{0.01} = 4.01
+                                                    \, \text{m/s}\) </p>
+                                            </li>
+                                            <li>
+                                                <p> To generalize, let's calculate the average speed from \(t = 2 \,
+                                                    \text{s}\) to \(t = (2 + h) \, \text{s}\), where \(h\) is a very
+                                                    small positive number: </p>
+                                                <p> \(\qquad v_{\text{avg}} = \dfrac{(2 + h)^2 - 2^2}{h} \, \text{m/s}\)
+                                                </p>
+                                                <p> \(\Rightarrow\quad v_{\text{avg}} = \dfrac{4 + 4h + h^2 - 4}{h} = (4
+                                                    +
+                                                    h) \, \text{m/s}\) </p>
+                                            </li>
+                                        </ul>
+                                        <p> Now, the question arises: how small can we set \(h\)? An obvious answer
+                                            might be \(h = 0\), but this leads to problems: </p>
+                                        <ul>
+                                            <li>
+                                                <p> If \(h = 0\), it implies the observer never opened their eyes, as
+                                                    the observation interval becomes zero. Without an observation
+                                                    interval, measuring speed becomes meaningless. </p>
+                                            </li>
+                                            <li>
+                                                <p> During the calculation: </p>
+                                                <p> \(\qquad \dfrac{4 + 4h + h^2 - 4}{h} = (4 + h) \, \text{m/s}\), </p>
+                                                <p> we canceled \(h\) from the numerator and denominator. If \(h = 0\),
+                                                    we can no longer perform this cancellation, making the calculation
+                                                    undefined. </p>
+                                            </li>
+                                        </ul>
+                                        <p> To resolve this, we let \(h\) approach zero, denoted as \(h \to 0\). This
+                                            means \(h\) becomes infinitesimally close to zero but never exactly zero. By
+                                            doing so, we ensure a non-zero observation interval while also allowing us
+                                            to simplify the calculation. </p>
+                                        <p> As \(h \to 0\), the average speed calculated as \((4 + h) \, \text{m/s}\)
+                                            approaches \(4 \, \text{m/s}\), because \(h\) becomes negligible when added
+                                            to 4. </p>
+                                        <p> Thus, the instantaneous speed of the particle at \(t = 2 \, \text{s}\) is
+                                            \(4 \, \text{m/s}\). </p>
+                                        <p> This process demonstrates how instantaneous speed is the limit of average
+                                            speed over infinitesimally small time intervals. We will explore this
+                                            concept further in the next section. </p>
+                                        <p>
+                                            Now with a more formal approach, let us try to calculate speed at any
+                                            general time \(t\).
+                                        </p>
+                                        <p>The speed at \(t\) represents how fast the particle is moving at that
+                                            instant. To determine this, we calculate the average speed over a very small
+                                            time interval \(\Delta t\) around \(t\).</p>
+                                        <p>From \(t\) to \(t + \Delta t\):</p>
+                                        <p>\( \qquad v_{\text{avg}} = \dfrac{(t+\Delta t)^2 - t^2}{(t + \Delta t) - t}
+                                            \)
+                                        </p>
+                                        <p>\( \Rightarrow v_{\text{avg}} = \dfrac{t^2 + 2t\Delta t + (\Delta t)^2 -
+                                            t^2}{\Delta t} \)</p>
+                                        <p>\( \Rightarrow v_{\text{avg}} = \dfrac{2t\Delta t + (\Delta t)^2}{\Delta t} =
+                                            2t + \Delta t\)</p>
+                                        <p>As \(\Delta t\) approaches zero (written as \(\Delta t \to 0\)),
+                                            \(v_{\text{avg}}\) approaches \(2t\). Therefore, the instantaneous speed
+                                            \(v\) at any time \(t\) is \(2t\).</p>
+                                        <p>This means that the rate of change of \(t^2\) with respect to \(t\) is
+                                            \(2t\). In calculus, we say that the <em>derivative</em> of \(t^2\) is
+                                            \(2t\), and we represent this as:</p>
+                                        <p>\( \qquad \dfrac{d}{dt}(t^2) = 2t \)</p>
+                                        <p> This concept of finding the rate of change at any instant is fundamental to
+                                            calculus, and we'll explore it further in the next section with more general
+                                            functions.</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 3: Instantaneous speed -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingInstantaneousSpeed">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInstantaneousSpeed" aria-expanded="false"
+                                aria-controls="collapseInstantaneousSpeed">
+                                <strong>Instantaneous Speed</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseInstantaneousSpeed" class="accordion-collapse collapse"
+                            aria-labelledby="headingInstantaneousSpeed" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Instantaneous speed represents how fast an object is moving at a specific instant in
+                                    time.
+                                    It's like taking the concept of average speed and shrinking the time interval until
+                                    it becomes
+                                    infinitesimally small. This allows us to measure the rate of change of position at
+                                    an exact moment.
+                                </p>
+                                <p>
+                                    Mathematically, if \(x\) represents the position of an object at time \(t\), the
+                                    instantaneous speed \(v\) is defined as:
+                                </p>
+                                <p>
+                                    \(\qquad v = \lim_{\Delta t \to 0} \dfrac{\Delta x}{\Delta t} = \dfrac{dx}{dt} \)
+                                </p>
+                                <p>
+                                    This formula introduces the concept of <strong>differentiation</strong>, represented
+                                    by \(\dfrac{dx}{dt}\),
+                                    which means "the rate of change of position (\(x\)) with respect to time (\(t\))."
+                                    It tells us how much
+                                    the position changes for an infinitesimally small change in time.
+                                </p>
+                                <p>
+                                    Differentiation allows us to calculate instantaneous rates of change, such as speed.
+                                    It's a powerful tool
+                                    in physics and mathematics. For example, in the function \(x = t^2\), the derivative
+                                    tells us how \(x\)
+                                    changes with time. The mathematical result for its derivative is written as:
+                                </p>
+                                <p>
+                                    \(\qquad \dfrac{dx}{dt}=\dfrac{t^2}{t}=2t\)
+                                </p>
+                                <p>
+                                    To build familiarity, here's a table of basic differentiation formulas. These will
+                                    help us compute
+                                    instantaneous speeds for various types of motion.
+                                </p>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Function, \(x\)</th>
+                                            <th>Derivative, \(\dfrac{dx}{dt}\)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(t^2\)</td>
+                                            <td>\(2t\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^3\)</td>
+                                            <td>\(3t^2\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^n\)</td>
+                                            <td>\(nt^{n-1}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sqrt{t}\)</td>
+                                            <td>\(\dfrac{1}{2\sqrt{t}}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^2+t^3\)</td>
+                                            <td>\(2t+3t^2\)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h6><strong>Let's Apply These Formulas</strong></h6>
+                                <p>
+                                    Understanding differentiation is easiest when we apply it to specific examples.
+                                    Let's calculate the
+                                    instantaneous speed for different types of motion. FOllowing examples contain
+                                    different expressions of distance \(x\) in meters depending on \(t\) in seconds.
+                                    Lets find dependence of speed \(v\) on time in each case.
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x = 5t^3\)</strong></summary>
+                                            <p>
+                                                Here, \(x = 5t^3\). To find \(v\), we differentiate \(x\) with respect
+                                                to \(t\):
+                                            </p>
+                                            <p>
+                                                \(\qquad v = \dfrac{dx}{dt} = 5 \cdot 3t^{3-1} = 15t^2\)
+                                            </p>
+                                            <p>
+                                                This tells us that the instantaneous speed at any time \(t\) is
+                                                \(15t^2\). For instance:
+                                            </p>
+                                            <ul>
+                                                <li>At \(t = 1 \, \text{s}\), \(v = 15 \cdot 1^2 = 15 \, \text{m/s}\)
+                                                </li>
+                                                <li>At \(t = 2 \, \text{s}\), \(v = 15 \cdot 2^2 = 60 \, \text{m/s}\)
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(x = 7t + 3\)</strong></summary>
+                                            <p>
+                                                For this linear motion, \(x = 7t + 3\). Differentiating:
+                                            </p>
+                                            <p>
+                                                \(\qquad v = \dfrac{dx}{dt} = 7\)
+                                            </p>
+                                            <p>
+                                                Here, the instantaneous speed is constant and equals \(7 \,
+                                                \text{m/s}\), regardless of the time \(t\).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(x = 2t^2 + 4t + 1\)</strong></summary>
+                                            <p>
+                                                For this quadratic motion, \(x = 2t^2 + 4t + 1\). Differentiating:
+                                            </p>
+                                            <p>
+                                                \(\qquad v = \dfrac{dx}{dt} = 2 \cdot 2t + 4 = 4t + 4\)
+                                            </p>
+                                            <p>
+                                                This gives the instantaneous speed as a function of time. For instance:
+                                            </p>
+                                            <ul>
+                                                <li>At \(t = 1 \, \text{s}\), \(v = 4 \cdot 1 + 4 = 8 \, \text{m/s}\)
+                                                </li>
+                                                <li>At \(t = 3 \, \text{s}\), \(v = 4 \cdot 3 + 4 = 16 \, \text{m/s}\)
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4: Displacement and Velocity -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDisplacementVelocity">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDisplacementVelocity" aria-expanded="false"
+                                aria-controls="collapseDisplacementVelocity">
+                                <strong>Displacement and Velocity</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseDisplacementVelocity" class="accordion-collapse collapse"
+                            aria-labelledby="headingDisplacementVelocity" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Displacement, unlike distance, is a vector quantity. It measures the <em>change</em>
+                                    in position of an
+                                    object, considering both the magnitude and direction of the change. It depends only
+                                    on the initial and
+                                    final positions, not the path taken.</p>
+                                <p>In one dimension, displacement can be represented by positive and negative values
+                                    along a straight
+                                    line, for example, the x-axis. A positive displacement means movement in the
+                                    positive x-direction (e.g.,
+                                    east), and a negative displacement indicates movement in the negative x-direction
+                                    (e.g., west).</p>
+
+                                <p>For example, if a person walks 10 m east and then 3 m west, the total distance
+                                    traveled is 10 m + 3 m
+                                    = 13 m. However, the displacement is +10 m - 3 m = +7 m (or 7 m east).</p>
+
+                                <p><strong>Average Velocity</strong></p>
+                                <p>Average velocity is defined as the displacement covered by a particle in a given time
+                                    interval divided by the time interval:</p>
+                                <p>\( \qquad \text{Average Velocity} = \dfrac{\text{Displacement}}
+                                    {\text{Time Interval}}\)</p>
+
+                                <p>For example, consider a particle that starts at \(x = 0\), moves to \(x = +5\) m in 2
+                                    seconds, and then to \(x
+                                    = +2\) m in another 3 seconds. Lets find its average velocity in following steps:
+                                </p>
+
+                                <p>\(\qquad\)Displacement (0 to 2s) = \(+5\) m. </p>
+                                <p>\(\qquad\)Displacement (2s to 5s) = \(+2\) m \(-\) \(+5\) m = \(-3\) m. </p>
+                                <p>\(\qquad\)Total Displacement (0 to 5s) = \(+2\) m. </p>
+                                <p>\(\qquad\)Now, average velocity (0 to 5s) = \(\dfrac{+2 \, \text{m}}{5 \,
+                                    \text{s}} = +0.4\) m/s.</p>
+
+
+                                <p><strong>Instantaneous Velocity</strong></p>
+                                <p>Instantaneous velocity, similar to instantaneous speed, is the velocity at a specific
+                                    moment. Instantaneous velocity at a time \(t\) is the average velocity from time
+                                    \(t\) to time \(t+\Delta t\) such that the time interval \(\Delta t\) is
+                                    infinitesimally small (\(\Delta t\to0\)). It's the
+                                    rate of change of displacement with respect to time. We calculate it using
+                                    differentiation:</p>
+                                <p>\( \qquad v = \dfrac{dx}{dt}\)</p>
+                                <p>The difference between instantaneous speed and velocity is that velocity includes
+                                    direction (positive or
+                                    negative in one dimension). A negative velocity means the object is moving in the
+                                    negative
+                                    x-direction.</p>
+                                <p>For a given position equation x(t) lets calculate instantaneous velocity using
+                                    following examples with position \(x(t)\) in meters depending on time \(t\) in
+                                    seconds as:</p>
+
+                                <details>
+                                    <summary><strong>Example 1: \(x(t) = 2t^2 - 3t\)</strong></summary>
+                                    <p>Differentiating x(t) with respect to time:</p>
+                                    <p>\(\qquad v(t) = \dfrac{dx}{dt} = 4t - 3\)</p>
+                                    <p>This gives us the instantaneous velocity at any time \(t\).</p>
+                                    <ul>
+                                        <li> At \(t=1\)s, \(v(1) = 4(1) - 3 = +1\) m/s (moving in positive direction).
+                                        </li>
+                                        <li> At \(t=2\)s, \(v(2) = 4(2) - 3 = +5\) m/s (moving in positive direction).
+                                        </li>
+                                        <li> At \(t=3\)s, \(v(3) = 4(3) - 3 = +9\) m/s (moving in positive direction).
+                                        </li>
+                                    </ul>
+                                </details>
+
+                                <details>
+                                    <summary><strong>Example 2: \(x(t) = t^3 + 2\)</strong></summary>
+                                    <p>Differentiating:</p>
+                                    <p>\(\qquad v(t) = \dfrac{dx}{dt} = 3t^2\)</p>
+                                    <ul>
+                                        <li>At \(t=0.5\)s, \(v(0.5) = 3(0.5)^2 = +0.75\) m/s.</li>
+                                        <li>At \(t=1\)s, \(v(1) = 3(1)^2 = +3\) m/s.</li>
+                                        <li>At \(t=2\)s, \(v(2) = 3(2)^2 = +12\) m/s.</li>
+                                    </ul>
+                                </details>
+
+                                <details>
+                                    <summary><strong>Example 3: \(x(t) = 4t\)</strong></summary>
+                                    <p>Differentiating:</p>
+                                    <p>\(\qquad v(t) = \dfrac{dx}{dt} = 4\)</p>
+                                    <p>The velocity is constant, \(v(t) = +4\) m/s for all \(t\).</p>
+                                </details>
+
+                                <details>
+                                    <summary><strong>Example 4: \(x(t) = 5 - 2t^2\)</strong></summary>
+                                    <p>Differentiating:</p>
+                                    <p>\(\qquad v(t) = \dfrac{dx}{dt} = -4t\)</p>
+                                    <ul>
+                                        <li>At \(t=1\)s, \(v(1) = -4(1) = -4\) m/s (moving in negative direction).</li>
+                                        <li>At \(t=2\)s, \(v(2) = -4(2) = -8\) m/s (moving in negative direction).</li>
+                                    </ul>
+                                </details>
+
+                                <details>
+                                    <summary><strong>Example 5: \(x(t) = \dfrac{1}{2}at^2 + ut + x_0\) (where \(a\),
+                                            \(u\), and \(x_0\) are constants)</strong></summary>
+                                    <p>This is a general equation for motion with constant acceleration.</p>
+                                    <p>Differentiating:</p>
+                                    <p>\(\qquad v(t) = \dfrac{dx}{dt} = at + u\)</p>
+                                    <p>The velocity is a linear function of time. If \(a=2 \, \text{m/s}^2\), \(u=5 \,
+                                        \text{m/s}\), and \(x_0=1 \, \text{m}\), then:</p>
+                                    <ul>
+                                        <li>At \(t=0\)s, \(v(0) = 2(0) + 5 = +5\) m/s.</li>
+                                        <li>At \(t=3\)s, \(v(3) = 2(3) + 5 = +11\) m/s.</li>
+                                    </ul>
+                                </details>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 5: Acceleration -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAcceleration">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAcceleration" aria-expanded="false"
+                                aria-controls="collapseAcceleration">
+                                <strong>Acceleration</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseAcceleration" class="accordion-collapse collapse"
+                            aria-labelledby="headingAcceleration" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Acceleration is the rate of change of velocity with respect to time. It's a vector
+                                    quantity, meaning
+                                    it has both magnitude and direction. </p>
+                                <p>First, average acceleration is the change in velocity in a given time interval
+                                    divided by the time interval over
+                                    which the change
+                                    occurs:</p>
+                                <p>\( \qquad a_{\text{avg}} = \dfrac{\Delta v}{\Delta t} = \dfrac{v_f - v_i}{t_f -
+                                    t_i}\)
+                                </p>
+                                <p>where \(v_i\) and \(v_f\) are the initial and final velocities at times \(t_i\) and
+                                    \(t_f\)
+                                    respectively.</p>
+                                <p>For example, if a car's velocity changes from \(+20 \, \text{m/s}\) to \(+30 \,
+                                    \text{m/s}\) in
+                                    \(5 \, \text{s}\), then its average acceleration is:</p>
+                                <p>\(\qquad a_{\text{avg}} = \dfrac{30 - 20}{5} = 2 \, \text{m/s}^2\)</p>
+                                <p>If the velocity changes from \(+10 \, \text{m/s}\) to \(-5 \, \text{m/s}\) in 2
+                                    seconds, then</p>
+                                <p>\(\qquad a_{\text{avg}} = \dfrac{-5 - 10}{2} = -7.5 \, \text{m/s}^2\)</p>
+                                <p>The negative sign signifies that the acceleration is in the opposite direction to
+                                    the initial velocity (deceleration).</p>
+                                <p><strong>Instantaneous Acceleration</strong></p>
+                                <p>Instantaneous acceleration is the acceleration at a specific instant in time. It's
+                                    the limit of the
+                                    average acceleration as the time interval approaches zero. Just as instantaneous
+                                    velocity is the
+                                    derivative of position with respect to time, instantaneous acceleration is the
+                                    derivative of velocity
+                                    with respect to time:</p>
+                                <p>\( \qquad a = \lim_{\Delta t \to 0} \dfrac{\Delta v}{\Delta t} = \dfrac{dv}{dt} \)
+                                </p>
+                                <p>For example, if the velocity \(v(t)\) in m/s of a particle depends on time \(t\) in
+                                    seconds given by \(v(t) = 3t^2 - 2t + 1\), its
+                                    instantaneous acceleration is:</p>
+                                <p>\(\qquad a(t) = \dfrac{dv}{dt} = 6t - 2\)</p>
+                                <ul>
+                                    <li>At \(t=1\)s, \(a(1) = 6(1) - 2 = 4\) m/s².</li>
+                                    <li>At \(t=2\)s, \(a(2) = 6(2) - 2 = 10\) m/s².</li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 6: Equations of Motion -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEquationsMotion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEquationsMotion" aria-expanded="false"
+                                aria-controls="collapseEquationsMotion">
+                                <strong>Equations of Motion</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseEquationsMotion" class="accordion-collapse collapse"
+                            aria-labelledby="headingEquationsMotion" data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <p><strong>Uniformly Accelerated Motion</strong></p>
+                                <p>Uniformly accelerated motion means that the acceleration of an object remains
+                                    constant over time—it
+                                    doesn't change in magnitude or direction. In such cases, we can use a set of
+                                    equations to describe the
+                                    motion. These are known as the equations of motion.</p>
+
+                                <p><strong>First Equation of Motion</strong></p>
+                                <p>If acceleration \(a\) is constant, the change in velocity \(\Delta v\) over a time
+                                    interval \(\Delta t = t - 0 = t\) is simply \(a \times t \). If the initial velocity
+                                    is u, at time t=0, and the final velocity is \(v\), then \(\Delta v = v - u\).</p>
+                                <p>\(\qquad a \cdot t = v-u\)</p>
+                                <p>\(\qquad \Rightarrow v = u + at \)</p>
+                                <details>
+                                    <summary>Example 1:</summary>
+                                    <p>A car starts from rest (\(u=0\)) and accelerates at \(2 \, \text{m/s}^2\) for \(5
+                                        \,
+                                        \text{s}\). Its final velocity is:</p>
+                                    <p>\(\qquad v = 0 + (2)(5) = 10 \, \text{m/s}\)</p>
+
+                                </details>
+                                <details>
+                                    <summary>Example 2:</summary>
+                                    <p>A train moving at \(20 \, \text{m/s}\) decelerates at \(1 \, \text{m/s}^2\) for
+                                        \(10 \,
+                                        \text{s}\).
+                                        Its final velocity is:</p>
+                                    <p>\(\qquad v = 20 + (-1)(10) = 10 \, \text{m/s}\)</p>
+
+                                </details>
+
+
+                                <p><strong>Second Equation of Motion</strong></p>
+                                <p>For uniformly accelerated motion, the average velocity is given by:</p>
+                                <p>\( \qquad v_{\text{avg}} = \frac{u + v}{2} \)</p>
+                                <p>The displacement \(s\) is the average velocity multiplied by the time \(t\):</p>
+                                <p>\( \qquad s = v_{\text{avg}} \cdot t = \left(\frac{u+v}{2}\right) t\)</p>
+                                <p>Substituting \(v = u + at\) from the first equation:</p>
+                                <p>\( \qquad s = \left(\frac{u + u + at}{2}\right) t = \left(\frac{2u+at}{2}\right)t\)
+                                </p>
+                                <p>\( \qquad \Rightarrow s = ut + \frac{1}{2}at^2 \)</p>
+
+                                <details>
+                                    <summary>Example 1:</summary>
+                                    <p>A ball is thrown upward with an initial velocity of \(10 \, \text{m/s}\). How
+                                        high does it go
+                                        before
+                                        stopping momentarily? (Assume \(a = -9.8 \, \text{m/s}^2\))</p>
+                                    <p>When it stops, \(v=0\). Using the third equation (derived next):</p>
+                                    <p>\( \qquad v^2=u^2+2as\)</p>
+                                    <p>\(\qquad 0=10^2+2(-9.8)(s)\)</p>
+                                    <p>\(\qquad 19.6 s=100\)</p>
+                                    <p>\(\qquad \Rightarrow s=5.1 m\)</p>
+                                </details>
+                                <details>
+                                    <summary>Example 2:</summary>
+                                    <p>A car initially at rest accelerates at \(5 \, \text{m/s}^2\) for \(10 \,
+                                        \text{s}\). The
+                                        distance it travels is:</p>
+                                    <p>\(\qquad s = (0)(10) + \frac{1}{2}(5)(10^2) = 250 \, \text{m}\)</p>
+                                </details>
+                                <details>
+                                    <summary>Example 3:</summary>
+                                    <p> A stone is dropped from a cliff and hits the ground below after \(4 \,
+                                        \text{s}\). What is the height of the cliff? (Assume \(a = +9.8 \,
+                                        \text{m/s}^2\))</p>
+                                    <p>\(s=(0)(4)+1/2(9.8)(16)= 78.4 \text{m}\)</p>
+                                </details>
+
+
+
+                                <p><strong>Third Equation of Motion</strong></p>
+                                <p>From the first equation, \(t = (v - u) / a\). Substituting this into the second
+                                    equation:</p>
+                                <p>\( \qquad s = u\left(\frac{v-u}{a}\right) +
+                                    \frac{1}{2}a\left(\frac{v-u}{a}\right)^2\)</p>
+
+                                <p>\( \qquad \Rightarrow 2as= 2uv -2u^2 + v^2 -2uv + u^2\)</p>
+                                <p>\( \qquad \Rightarrow v^2 = u^2 + 2as \)</p>
+
+                                <details>
+                                    <summary>Example 1:</summary>
+                                    <p>A car moving at \(20 \, \text{m/s}\) brakes with a constant deceleration of \(5
+                                        \,
+                                        \text{m/s}^2\). How far does it travel before stopping?</p>
+                                    <p>\(\qquad 0 = 20^2 + 2(-5)s \Rightarrow s = 40 \, \text{m}\) </p>
+                                </details>
+                                <details>
+                                    <summary>Example 2:</summary>
+                                    <p>A ball is dropped from a height of \(10 \, \text{m}\). What is its speed just
+                                        before hitting the ground? (Take \(a = 9.8 \, \text{m/s}^2\))</p>
+                                    <p>\(\qquad v^2 = 0 + 2(9.8)(10) \Rightarrow v \approx 14 \, \text{m/s}\)</p>
+                                </details>
+                                <details>
+                                    <summary>Example 3:</summary>
+                                    <p>A cyclist accelerates uniformly from \(10 \, \text{m/s}\) to \(20 \, \text{m/s}\)
+                                        covering \(30 \, \text{m}\). What is his acceleration?</p>
+                                    <p>\(20^2=10^2+2(a)(30)\)</p>
+                                    <p>\(60a=400-100\)</p>
+                                    <p>\(a=300/60=5 \text{m/s}^2\)</p>
+
+                                </details>
+
+
+
+                                <p><strong>Summary Table for Equations of Motion</strong></p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Equation</th>
+                                            <th>When to Use</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(v = u + at\)</td>
+                                            <td>When displacement (\(s\)) is not given or required.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(s = ut + \frac{1}{2}at^2\)</td>
+                                            <td>When final velocity (\(v\)) is not given or required.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(v^2 = u^2 + 2as\)</td>
+                                            <td>When time (\(t\)) is not given or required.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Important Note:</strong> These equations are valid only for uniformly
+                                    accelerated
+                                    motion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

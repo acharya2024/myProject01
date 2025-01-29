@@ -32,6 +32,58 @@ $("response").click(function () {
                 }, 1000); // You can adjust the duration (in milliseconds) as needed
         });
 })
+
+$(document).ready(function () {
+        // Handle navigation clicks
+        $(".nav-link").on("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+    
+            const navLink = $(this); // Current nav-link clicked
+            const container = navLink.closest(".model-container"); // Parent container
+            const modelViewer = container.find(".model-viewer"); // Model viewer within the container
+            const figCaption = container.find("figcaption"); // Figcaption to update
+            // Parse data-links and data-captions attributes
+            const links = JSON.parse(modelViewer.attr("data-links"));
+            const captions = JSON.parse(modelViewer.attr("data-captions"));
+    
+            const index = navLink.data("index"); // Get the index from data-index
+    
+            // Update model-viewer src and figcaption
+            if (index >= 0 && index < links.length) {
+                modelViewer.attr("src", "blend/" + links[index]); // Update the 3D model src
+                // Update the caption text
+                figCaption.fadeOut(200, function () {
+                        $(this).text(captions[index]).fadeIn(200);
+                        MathJax.typesetPromise([figCaption[0]]); // Rerun MathJax for the updated caption
+                    });
+                    
+    
+                // Update active class for nav-tabs
+                navLink.closest(".nav-tabs").find(".nav-link").removeClass("active");
+                navLink.addClass("active");
+            } else {
+                console.error("Invalid index or data missing.");
+            }
+        });
+    
+        // Automatically click the first nav-item for each model-viewer on load
+        $(".model-container").each(function () {
+            const firstNavItem = $(this).find(".nav-link").first();
+            firstNavItem.trigger("click");
+        });
+        document.querySelectorAll('p').forEach(p => {
+                p.setAttribute('tabindex', '0');
+              });
+              
+            
+            
+            
+    });
+    
+
+
+
+
 //         $(document).ready(function () {
 //     // Initialize
 //     $('.accordion-button:first').removeClass('locked').addClass('unlocked');

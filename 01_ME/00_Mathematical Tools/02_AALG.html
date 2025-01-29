@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Advanced Algebra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Advanced Algebra</h1>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+
+                    <!-- Section 1: Sequences and Series -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSequencesSeries">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSequencesSeries" aria-expanded="false"
+                                aria-controls="collapseSequencesSeries">
+                                <strong>Sequences and Series</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseSequencesSeries" class="accordion-collapse collapse"
+                            aria-labelledby="headingSequencesSeries" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Sequences and series are important concepts in mathematics with several applications
+                                    in physics for describing patterns and progressions in physical phenomena. For
+                                    example,
+                                    the distances covered by a freely falling body in successive time intervals form an
+                                    AP.</p>
+
+                                <p><strong>Arithmetic Progressions (AP):</strong></p>
+                                <p>An arithmetic progression is a sequence where the difference between consecutive
+                                    terms remains constant. This constant difference is called the common difference,
+                                    denoted
+                                    by \(d\). The \(n^{th}\) term (\(a_n\)) of an AP can be calculated by:</p>
+                                <p>\(\qquad a_n = a_1 + (n-1)d\)</p>
+                                <p>where \(a_1\) is the first term. The sum (\(S_n\)) of the first \(n\) terms of an AP
+                                    is given by:</p>
+                                <p>\(\qquad S_n = \frac{n}{2}(2a_1 + (n-1)d)\)</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1</summary>
+                                            <p> If the first term is 2, and the common difference is 3, then find the
+                                                \(10^{th}\) term and sum up to first 10 terms.</p>
+                                            <p>\( \qquad a_{10} = 2+(10-1)3 = 2+27=29\)</p>
+                                            <p>\( \qquad S_{10} = \frac{10}{2}(2(2) + (10-1)3) \)</p>
+                                            <p>\( \qquad S_{10} = 5(4+27) = 155\)</p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2</summary>
+                                            <p> A body starts from rest and moves with uniform acceleration of \(2 \,
+                                                \text{m/s}^2\). Find the distance covered by it in \(n^{th}\) second.
+                                            </p>
+                                            <p>Velocity after \((n-1)\) seconds is </p>
+                                            <p>\(\qquad v_{n-1} = 0+(n-1)(2) =
+                                                2(n-1)\)
+                                            </p>
+                                            <p>Velocity after \(n\) seconds is </p>
+                                            <p>\(\qquad v_n = 0+n(2) = 2n\)</p>
+                                            <p>The average velocity during \(n^{th}\) second is </p>
+                                            <p>\(\qquad \frac{v_{n-1} +
+                                                v_n}{2} = \frac{2(n-1)+2n}{2} = 2n-1 \text{m/s}\) </p>
+                                            <p>The distance covered is equal to average velocity during \(n^{th}\)
+                                                second \(\times \) time (which is 1s). Thus \(s= 2n-1 \text{m}\).</p>
+                                            <p>This shows that the distances covered form an AP with \(a_1=1\),
+                                                \(a_2=3\), \(a_3=5\) etc. with common difference \(d=2\). </p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+
+                                <p><strong>Geometric Progressions (GP):</strong></p>
+                                <p>A geometric progression is a sequence where each term is multiplied by a constant
+                                    value to obtain the next term. This constant is called the common ratio, denoted by
+                                    \(r\).
+                                    The \(n^{th}\) term of a GP is given by \(a_n = a_1 r^{n-1} \) where \(a_1\) is
+                                    first term. The sum (\(S_n\)) of first \(n\) terms is given by:</p>
+                                <p>\(\qquad S_n = \frac{a_1(1-r^n)}{1-r} \qquad \text{if } r\lt 1 \) </p>
+                                <p>\(\qquad S_n = \frac{a_1(r^n-1)}{r-1} \qquad \text{if } r>1 \)</p>
+                                <p> If \(|r| \lt 1\) then the sum of infinite number of terms of the series is written
+                                    as</p>
+                                <p>
+                                    \(\qquad S_{\infty}=\frac{a_1}{1-r}\).</p>
+
+
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1</summary>
+                                            <p>If \(a_1=2\) and \(r=3\) then \(4^{th}\) term \(a_4 = a_1
+                                                r^3 = 2(3)^3 = 54\)
+                                                and the sum up to 4 terms is \(S_4 =
+                                                \frac{2(3^4-1)}{3-1} = 80\).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2</summary>
+                                            <p> A ball is dropped from height \(h\). It bounces back to
+                                                \(\frac{h}{2}\).
+                                                Then it goes to \(\frac{h}{4}\) and so on. The total
+                                                distance covered
+                                                during infinite bounces is:</p>
+                                            <p>\(\qquad
+                                                S=h+2(\frac{h}{2})+2(\frac{h}{4})+2(\frac{h}{8})+.....\)
+                                            </p>
+                                            <p>\(\Rightarrow\quad S= h+2(\frac{h/2}{1-1/2})= h+2h=3h\)
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Binomial Theorem -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingBinomial">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseBinomial" aria-expanded="false"
+                                aria-controls="collapseBinomial">
+                                <strong>Binomial Theorem</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseBinomial" class="accordion-collapse collapse" aria-labelledby="headingBinomial"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>The binomial theorem helps expand expressions of the form \((a+b)^n\). For a
+                                    positive integer \(n\):</p>
+                                <p>
+                                    \(\qquad (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\),
+                                </p>
+                                <p>
+                                    where \(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)
+                                </p>
+                                <p>For any index \(n\) (even fractional or negative):</p>
+                                <p>
+                                    \(\qquad (1+x)^n = 1 + \frac{n}{1!}x + \frac{n(n-1)}{2!}x^2 +
+                                    \frac{n(n-1)(n-2)}{3!}x^3
+                                    + ... \)
+                                </p>
+                                <p>If \(|x| \ll 1\) then \((1+x)^n \approx 1 + nx\).</p>
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1</summary>
+                                            <p>\(\qquad (1+x)^3 = 1 + \frac{3}{1!}x + \frac{3(2)}{2!}x^2 +
+                                                \frac{3(2)(1)}{3!}x^3\)</p>
+                                            <p>\(\Rightarrow\quad (1+x)^3 = 1+3x+3x^2+x^3 \)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2</summary>
+                                            <p>Suppose we are calculating potential at height \(h\) from earth
+                                                surface due to earth's gravitation as:</p>
+                                            <p>\(\qquad V = -\frac{GM}{R+h} \)</p>
+                                            <p>\(\qquad V = -\frac{GM}{R(1+\frac{h}{R})} =
+                                                -\frac{GM}{R}(1+\frac{h}{R})^{-1}\)</p>
+                                            <p>\(\qquad V = -\frac{GM}{R}(1+\frac{h}{R})^{-1}\)</p>
+                                            <p>If \(h\ll R\) then \((1+\frac{h}{R})^{-1} \approx (1-\frac{h}{R}) \),
+                                                thus</p>
+                                            <p>\(\qquad V \approx -\frac{GM}{R}(1-\frac{h}{R})\).</p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Power Series -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPowerSeries">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePowerSeries" aria-expanded="false"
+                                aria-controls="collapsePowerSeries">
+                                <strong>Power Series</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePowerSeries" class="accordion-collapse collapse"
+                            aria-labelledby="headingPowerSeries" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Power series expansions are invaluable for approximating functions and understanding
+                                    their behavior, particularly for small values of the variable.</p>
+
+                                <p><strong>Maclaurin Series:</strong></p>
+                                <p>A Maclaurin series is a special type of Taylor series expansion of a function about
+                                    zero:</p>
+                                <p>\(\qquad f(x) = f(0) + \frac{f'(0)}{1!}x + \frac{f''(0)}{2!}x^2 +
+                                    \frac{f'''(0)}{3!}x^3 + ...\)</p>
+                                <p>Maclaurin series of some standard functions for \(|x| \ll 1\):</p>
+                                <p>
+                                    \(\qquad e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ...\)
+                                    <br>
+                                    \(\Rightarrow\quad e^x \approx 1+x\)
+
+                                </p>
+                                <p>
+                                    \(\qquad \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - ...\)
+                                    <br>
+                                    \(\Rightarrow\quad \sin(x) \approx x\)
+
+                                </p>
+                                <p>
+                                    \(\qquad \cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - ...\)
+                                    <br>
+                                    \(\Rightarrow\quad \cos(x) \approx 1 - \frac{x^2}{2} \approx 1\)
+
+                                </p>
+                                <p>
+                                    \(\qquad \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - ...\)
+                                    <br>
+                                    \(\Rightarrow\quad \ln(1+x) \approx x\)
+
+
+                                </p>
+                                <p>
+                                    \(\qquad (1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + ... \)
+                                    <br>
+                                    \(\Rightarrow\quad (1+x)^n \approx 1+nx\)
+                                </p>
+                                <p>
+                                    Consider the following examples, as the application of these results:
+                                </p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Approximating Trigonometric Value</summary>
+                                            <p>Calculate approximate value of \(\sin(0.01)\).</p>
+                                            <p>\(\qquad \sin(0.01) \approx 0.01\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Approximating Numerical Expressions</summary>
+                                            <p>Let's say you need to calculate \((1.001)^3\) without a calculator. Using
+                                                the binomial theorem, we can approximate this value easily. We rewrite
+                                                (1.001) as \(1 + 0.001\) and set \(x=0.001\).</p>
+                                            <p>\(\qquad(1+x)^n = 1 + nx + \frac{n(n-1)}{2!} x^2 +
+                                                \frac{n(n-1)(n-2)}{3!}x^3 + ...\)</p>
+                                            <p>In our case, \(x = 0.001\) and \(n = 3\). So, </p>
+                                            <p>\(\qquad(1.001)^3 = (1 + 0.001)^3 = 1 + 3(0.001) +
+                                                \frac{3(2)}{2}(0.001)^2 + \frac{3(2)(1)}{6}(0.001)^3\)</p>
+                                            <p>\(\Rightarrow\quad(1.001)^3 = 1 + 3(0.001) + \frac{3(2)}{2}(0.001)^2 +
+                                                \frac{3(2)(1)}{6}(0.001)^3\)</p>
+                                            <p>\(\qquad = 1 + 0.003 + 3(0.000001) + 1(0.000000001)\)</p>
+                                            <p>\(\qquad = 1 + 0.003 + 0.000003 + 0.000000001\)</p>
+                                            <p>\(\qquad = 1.003003001\)</p>
+                                            <p>Since \(x = 0.001\) is much smaller than 1, we can approximate
+                                                \((1+x)^3\) by taking only first two terms of the series as:</p>
+                                            <p>\((1.001)^3 \approx 1 + 3(0.001) = 1.003\)</p>
+                                            <p>This approximation is very close to the actual value and demonstrates how
+                                                the binomial theorem can be used
+                                                for quick estimations.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4: Application of Results -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingApplications">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseApplications" aria-expanded="false"
+                                aria-controls="collapseApplications">
+                                <strong>Applications of Results</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseApplications" class="accordion-collapse collapse"
+                            aria-labelledby="headingApplications" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Let's apply the concepts we've learned to solve some problems. Enter your numerical
+                                    answers in the input
+                                    boxes and click the "Check" button to verify.</p>
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 1:</strong> What is the approximate value of \((1.002)^5\)?
+                                            (Round to three decimal
+                                            places if needed.)</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton1" data-answer="1.010">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 2:</strong> Find the \(6^{th}\) term of an arithmetic
+                                            progression with first term \(a_1 = 3\) and common difference \(d = 2\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton2" data-answer="13">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 3:</strong> Calculate the sum of the first 5 terms of a
+                                            geometric progression with \(a_1 =
+                                            1\) and \(r = 2\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton3" data-answer="31">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 4:</strong> What is the approximate value of
+                                            \(\frac{1}{1.01}\), rounded to four decimal
+                                            places? (Hint: use Binomial Approximation)</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton4" data-answer="0.990">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 5:</strong> Using the binomial approximation, estimate \((1 -
+                                            0.02)^{10}\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton5" data-answer="0.817">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 6:</strong> Find the sum of the infinite geometric series \(1
+                                            + \frac{1}{2} +
+                                            \frac{1}{4} + \frac{1}{8} + ...\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton6" data-answer="2">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 7:</strong> If the first term of an AP is 5 and the common
+                                            difference is -3, what is the
+                                            \(10^{th}\) term?</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton7" data-answer="-22">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 8:</strong> Find the sum of the first 8 terms of the
+                                            arithmetic sequence: 2, 5, 8,
+                                            11,.... </p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton8" data-answer="100">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 9:</strong> If \(a_n\) represents the \(n^{th}\) term of an
+                                            AP and if \(a_1=5\),
+                                            \(a_4=14\), find \(a_2\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton9" data-answer="8">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 10:</strong> Find \(5^{th}\) term of a GP, whose \(3^{rd}\)
+                                            term is 4. [Assume
+                                            \(r=2\)]</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton10" data-answer="16">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 11:</strong> Find \(\cos(0.01)\) using power series
+                                            expansion. (Round to three decimal places if needed.)</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton11" data-answer="0.99995">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 12:</strong> Find \(\sin(0.005)\) using series expansion.
+                                            (Round to three decimal places if needed.)</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton12" data-answer="0.005">Check</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 13:</strong> Use binomial approximation to find the value of
+                                            \(\sqrt[3]{1.009}\).
+                                        </p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton13" data-answer="1.003">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 14:</strong> Approximate \((1-0.01)^{1/4}\)
+                                            using binomial approximation. (Round to four decimal places if needed.)
+                                        </p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton14" data-answer="0.9975">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 15:</strong> If the sum of an infinite GP is 2 and the common
+                                            ratio is 1/4,
+                                            find the first term \(a_1\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton15" data-answer="1.333">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 16:</strong> Find the sum of the first 15 multiples of 8.</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton16" data-answer="960">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 17:</strong> Find \(e^{0.01}\) using Maclaurin Series
+                                            expansion up to the linear term.</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton17" data-answer="1.010">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 18:</strong> Use the series expansion of \(\ln(1+x)\) to
+                                            approximate
+                                            \(\ln(1.05)\)
+                                            to four decimal places.</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton18" data-answer="0.0488">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 19:</strong> The sum of an infinite GP is 6. And the first
+                                            term is 4.
+                                            Find the common ratio of the series.</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton19" data-answer="0.333">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 20:</strong> If the first term of a GP is 3, and the common
+                                            ratio is 1/3. Find
+                                            the sum of infinite terms.</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton20" data-answer="4.5">Check</button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- End of accordion -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ... (Scripts and MathJax same as in examples) ... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="js/quickResponseCheck.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

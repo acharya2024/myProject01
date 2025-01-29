@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Algebra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Algebra</h1>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Fundamentals of Algebra -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFundamentals">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFundamentals" aria-expanded="false"
+                                aria-controls="collapseFundamentals">
+                                <strong>Fundamentals of Algebra</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFundamentals" class="accordion-collapse collapse"
+                            aria-labelledby="headingFundamentals" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Algebra forms the foundation of physics, enabling us to express physical
+                                    relationships concisely and solve problems using symbols and equations.</p>
+
+                                <p><strong>Variables and Constants:</strong></p>
+                                <p><em>Variables</em> represent quantities that can change, such as position (\(x\)),
+                                    time (\(t\)), speed (\(v\)), or temperature (\(T\)). <em>Constants</em>, in
+                                    contrast, have fixed values, like acceleration due to gravity (\(g\)), speed of
+                                    light (\(c\)), or the mass of an electron (\(m_e\)).</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Free Fall</summary>
+                                            <p>In the equation \(h = \frac{1}{2}gt^2\), \(h\) (height) and \(t\) (time)
+                                                are variables, while \(g\) (acceleration due to gravity) is a constant.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Ohm's Law</summary>
+                                            <p>In Ohm's law, \(V = IR\), voltage (\(V\)) and current (\(I\)) might be
+                                                variables, while resistance (\(R\)) could be constant depending on the
+                                                circuit.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p><strong>Algebraic Expressions and Equations:</strong></p>
+                                <p><em>Algebraic expressions</em> combine variables, constants, and mathematical
+                                    operations. An <em>equation</em> states that two expressions are equal.</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Kinetic Energy</summary>
+                                            <p>The kinetic energy of an object is given by the expression
+                                                \(\frac{1}{2}mv^2\), where \(m\) is mass and \(v\) is velocity.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Newton's Second Law</summary>
+                                            <p>Newton's second law is represented by the equation \(F = ma\), where
+                                                \(F\) is force, \(m\) is mass, and \(a\) is acceleration.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+
+                                <p><strong>Working with Units:</strong></p>
+                                <p>Nearly all physical quantities have <em>units</em>, which tell us what scale or
+                                    standard is used to measure the quantity. Using consistent units in equations is
+                                    crucial for getting correct results. Inconsistent units can lead to incorrect
+                                    calculations and misinterpretations of physical phenomena.</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Converting Area Units</summary>
+                                            <p>Suppose you have a square with sides of length 2 meters. Its area is \(2
+                                                \, \text{m} \times 2 \, \text{m} = 4 \, \text{m}^2\). To express this
+                                                area in square centimeters (\(\text{cm}^2\)), we need to convert meters
+                                                to centimeters. </p>
+                                            <p>Since, 1 meter = 100 centimeters, \(2 \, \text{m} = 200
+                                                \, \text{cm}\). </p>
+                                            <p>Thus the area can be written as \(200 \, \text{cm}
+                                                \times 200 \, \text{cm} = 40000 \, \text{cm}^2\). Notice that \(4 \,
+                                                \text{m}^2 = 4 \times (100 \, \text{cm})^2 = 4 \times 10000 \,
+                                                \text{cm}^2 = 40000 \, \text{cm}^2\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Converting Speed Units</summary>
+                                            <p>A car is traveling at 72 kilometers per hour (km/h). To express this
+                                                speed in meters per second (m/s), we use the conversions 1 km = 1000 m
+                                                and 1 h = 3600 s:</p>
+                                            <p>\( \qquad 72 \, \text{km/h} = \frac{72 \times 1000 \, \text{m}}{3600 \,
+                                                \text{s}} = \frac{72000}{3600} \, \text{m/s} = 20 \, \text{m/s} \)</p>
+                                            <p>Note that we multiplied by 1000 (to convert km to m) and divided by 3600
+                                                (to convert h to s).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 3: Unit Consistency in Equations</summary>
+                                            <p>In the equation \(s = ut + \frac{1}{2}at^2\), each term must have the
+                                                same units (units of distance). If \(s\) is measured in meters (m),
+                                                \(u\) (initial velocity) should be in meters per second (m/s), \(t\)
+                                                (time) in seconds (s), and \(a\) (acceleration) in meters per second
+                                                squared (m/s²). </p>
+                                            <p>Let's check: \(ut\) has units of \(\text{m/s} \cdot \text{s} = \text{m}\)
+                                                and \(\frac{1}{2}at^2\) has units of \(\text{m/s}^2 \cdot \text{s}^2 =
+                                                \text{m}\). All terms have units of meters, ensuring dimensional
+                                                consistency. </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 4: Another Example of Conversion </summary>
+                                            <p>Newton's law of gravitation states that \(F=G\frac{m_1 m_2}{r^2}\), where
+                                                \(F\) is the force, \(G\) is gravitational constant, \(m_1\) and \(m_2\)
+                                                are the masses of two objects and \(r\) is the distance between them.
+                                            </p>
+                                            <p>The value of G in SI units is \(6.674 \times 10^{-11} \,
+                                                \text{N m}^2/\text{kg}^2 \). If we consider all the masses in grams and
+                                                distances in cm, then what will be the value of \(G\) in CGS units?</p>
+                                            <p> Since, \(1 \, \text{N} = 10^5 \, \text{dyn}\), \(1 \, \text{m} = 100 \,
+                                                \text{cm}\) and \(1 \, \text{kg} = 1000 \, \text{g}\) , thus \(G\) can
+                                                be written as:</p>
+                                            <p>\(\qquad G = 6.674 \times 10^{-11} \frac{\text{N m}^2}{\text{kg}^2} =
+                                                6.674 \times
+                                                10^{-11} \frac{10^5 \text{dyn} \, (100 \, \text{cm})^2}{(1000 \,
+                                                \text{g})^2} = 6.674 \times 10^{-8} \, \text{dyn cm}^2/\text{g}^2\)</p>
+
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p><strong>Ratios and Proportions:</strong></p>
+                                <p>A <em>ratio</em> compares two quantities. A <em>proportion</em> equates two ratios.
+                                    <em>Direct proportion</em>: One quantity increases as the other increases
+                                    proportionally. <em>Inverse proportion</em>: One increases as the other decreases
+                                    proportionally.
+                                </p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Density</summary>
+                                            <p>Density is defined as the ratio of mass to volume: \(\rho =
+                                                \frac{m}{V}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Ideal Gas Law</summary>
+                                            <p>The ideal gas law, \(PV = nRT\), can be used to set up proportions. At
+                                                constant temperature, pressure is inversely proportional to volume.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+
+                                <p><strong>Exponents and Scientific Notation:</strong></p>
+                                <p><em>Exponents</em> indicate repeated multiplication (e.g., \(10^3 = 10 \times 10
+                                    \times 10\)). <em>Scientific notation</em> expresses a number as a product of a
+                                    number between 1 and 10 and a power of 10 (e.g., \(3 \times 10^8\)).</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Area of a Square</summary>
+                                            <p>If the side of a square is \(x\), its area is \(x^2\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Planck's Constant</summary>
+                                            <p>Planck's constant is approximately \(6.626 \times 10^{-34} \, \text{J
+                                                s}\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 2: Quadratic Equations (Same structure as Section 1, with examples) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingQuadratic">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseQuadratic" aria-expanded="false"
+                                aria-controls="collapseQuadratic">
+                                <strong>Quadratic Equations</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseQuadratic" class="accordion-collapse collapse"
+                            aria-labelledby="headingQuadratic" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Quadratic equations, of the form \(ax^2 + bx + c = 0\) (\(a \neq 0\)), are essential
+                                    for solving various physics problems.</p>
+
+                                <p><strong>Factoring Methods:</strong></p>
+                                <p>Some quadratic equations can be solved by factoring the quadratic expression into two
+                                    binomials.</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: \(x^2 - 5x + 6 = 0\)</summary>
+                                            <p>Factoring gives \((x-2)(x-3)=0\), so the solutions are \(x=2\) and
+                                                \(x=3\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: \(2x^2 + 3x - 2 = 0\)</summary>
+                                            <p>Factoring gives \((2x - 1)(x + 2) = 0\), leading to solutions
+                                                \(x=\frac{1}{2}\) and \(x=-2\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p><strong>Quadratic Formula:</strong></p>
+                                <p>The quadratic formula provides solutions for any quadratic equation: \(\qquad x =
+                                    \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: \(x^2 + 2x - 3 = 0\)</summary>
+                                            <p>Applying the formula: \(x = \frac{-2 \pm \sqrt{2^2 - 4(1)(-3)}}{2(1)} =
+                                                \frac{-2 \pm \sqrt{16}}{2} = \frac{-2 \pm 4}{2}\), giving \(x=1\) and
+                                                \(x=-3\).</p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: \(3x^2 - 5x + 1 = 0\)</summary>
+                                            <p>Using the formula: \(x = \frac{5 \pm \sqrt{(-5)^2 - 4(3)(1)}}{2(3)} =
+                                                \frac{5 \pm \sqrt{13}}{6}\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p><strong>Nature of Roots (Discriminant):</strong></p>
+                                <p>The <em>discriminant</em>, \(b^2 - 4ac\), determines the nature of the roots.</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: \(x^2 - 4x + 4 = 0\)</summary>
+                                            <p>Discriminant: \((-4)^2 - 4(1)(4) = 0\). One real (repeated) root.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: \(2x^2 + x + 1 = 0\)</summary>
+                                            <p>Discriminant: \(1^2 - 4(2)(1) = -7 < 0\). Two complex roots.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <p><strong>Applications in Physics:</strong></p>
+                                <p>Quadratic equations arise in diverse physics contexts.</p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Projectile Motion</summary>
+                                            <p>The height \(h\) of a projectile at time \(t\) can be modeled by \(h(t) =
+                                                ut - \frac{1}{2}gt^2\) (for vertical motion), a quadratic equation in
+                                                \(t\). </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Equilibrium Position</summary>
+                                            <p>Finding the equilibrium position of a spring-mass system involves solving
+                                                a quadratic equation representing the net force.</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 3: Application of Results -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingApplications">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseApplications" aria-expanded="false"
+                                aria-controls="collapseApplications">
+                                <strong>Applications of Results</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseApplications" class="accordion-collapse collapse"
+                            aria-labelledby="headingApplications" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Let's practice applying the algebra concepts we've reviewed. Enter your numerical
+                                    answers and click "Check."
+                                </p>
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 1:</strong> Solve for \(x\): \(3x + 5 = 14\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton1" data-answer="3">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 2:</strong> If \(v = u + at\), and \(v = 20\), \(u = 5\), and
+                                            \(t = 3\),
+                                            find \(a\). </p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton2" data-answer="5">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 3:</strong> If the area of a square is 64 cm², what is the
+                                            length of one side
+                                            (in cm)?</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton3" data-answer="8">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 4:</strong> Solve the quadratic equation: \(x^2 - 7x + 12 =
+                                            0\). Enter the
+                                            smaller root first, then the larger.</p>
+
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer1" aria-describedby="checkButton"
+                                                placeholder="Smaller root">
+
+                                        </div>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer2" aria-describedby="checkButton"
+                                                placeholder="Larger root">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton4" data-answer1="3" data-answer2="4">Check</button>
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 5:</strong> If \(F = ma\), and \(F = 15 \, \text{N}\) and \(m
+                                            = 3
+                                            \, \text{kg}\),
+                                            what is \(a\) (in m/s²)?</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton5" data-answer="5">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 6:</strong> Solve for \(v\): \(2v^2 - 50 = 0\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton6" data-answer="5">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 7:</strong> If a car travels 120 km in 2 hours, what is its
+                                            average speed in
+                                            m/s?
+                                        </p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton7" data-answer="16.666">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 8:</strong> If the density of a material is \(2 \,
+                                            \text{g/cm}^3\) and its
+                                            mass is 50 g, what is its volume (in cm³)?</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton8" data-answer="25">Check</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 9:</strong> The number 0.000045 is written in scientific
+                                            notation as \(x \times 10^y\), where \(1 \le x < 10\) and \(y\) is an
+                                                integer. Find the value of \(x + y\).</p>
+                                                <div class="input-group mb-3" style="max-width: 300px;">
+                                                    <input type="number"
+                                                        class="form-control form-control-sm checkable-input"
+                                                        aria-label="Answer" aria-describedby="checkButton"
+                                                        placeholder="Enter your answer">
+                                                    <button class="btn btn-outline-secondary btn-sm check-button"
+                                                        type="button" id="checkButton9"
+                                                        data-answer="-0.5">Check</button>
+                                                </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><strong>Problem 10:</strong> Solve for x: \(2x^2+1=19\).</p>
+                                        <div class="input-group mb-3" style="max-width: 300px;">
+                                            <input type="number" class="form-control form-control-sm checkable-input"
+                                                aria-label="Answer" aria-describedby="checkButton"
+                                                placeholder="Enter your answer">
+                                            <button class="btn btn-outline-secondary btn-sm check-button" type="button"
+                                                id="checkButton10" data-answer="3">Check</button>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of accordion -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ... (Scripts and MathJax same as in examples) ... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="js/quickResponseCheck.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

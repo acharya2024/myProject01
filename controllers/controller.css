@@ -1,122 +1,180 @@
+@media print {
+    body {
+        background-color: black;
+    }
+}
 
-        @media print {
-            body {
-                background-color: black;
-            }
-        }
-        model-viewer{
-            width: 200px;
-            height: 200px;
-        }
-        .accordion-body p {
-            text-align: justify;
-            padding: 5px;
-        }
-        .accordion-body p:hover {
-            transition: box-shadow .2s;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px #e1e1e1;
-        }
+model-viewer {
+    width: 200px;
+    height: 200px;
+}
 
-        .text-law {
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+.accordion-body p {
+    text-align: justify;
+    padding: 5px;
+}
 
-            animation: shadowChange 3s infinite alternate ease-in-out;
-        }
-        
-        /* Keyframes for text-shadow animation */
-        @keyframes shadowChange {
-            0% {
-                text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
-            }
-            50% {
-                text-shadow: -2px -2px 6px rgba(0, 0, 0, 0.5);
-            }
-            100% {
-                text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
-            }
-        }
+.accordion-body p:hover {
+    transition: box-shadow .2s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #e1e1e1;
+}
 
-        html {
-            height: 100%;
-        }
+.text-law {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 
-        #content {
-            font-family: 'Times New Roman', Times, serif;
-        }
+    animation: shadowChange 3s infinite alternate ease-in-out;
+}
 
-        div {
-            overflow: auto;
-        }
+/* Keyframes for text-shadow animation */
+@keyframes shadowChange {
+    0% {
+        text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
+    }
 
-        explained {
-            text-shadow: 0px 0px 1px;
-        }
+    50% {
+        text-shadow: -2px -2px 6px rgba(0, 0, 0, 0.5);
+    }
 
-        figure,
-        figcaption {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
+    100% {
+        text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.5);
+    }
+}
 
-        math {
-            margin-left: 10%;
-        }
+html {
+    height: 100%;
+}
 
-        equationDetail {
-            float: right;
-        }
+#content {
+    font-family: 'Times New Roman', Times, serif;
+}
 
-        interaction {
-            border: 20px;
-        }
+div {
+    overflow: auto;
+}
 
-        .activity-invitation {
-            min-width: 300px;
-            border-radius: 17px;
-            background: #ffffff;
-            box-shadow: 5px 5px 10px #f0f0f0,
-                -5px -5px 10px #ffffff;
-        }
+explained {
+    text-shadow: 0px 0px 1px;
+}
 
-        .explore:hover {
-            border-radius: 7px;
-            background: #ffffff;
-            box-shadow: 5px 5px 49px #e0e0e0,
-                -5px -5px 49px #ffffff;
-        }
+figure,
+figcaption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
-        details[open] summary~* {
-            animation: sweep .5s ease-in-out;
-        }
+math {
+    margin-left: 10%;
+}
 
-        @keyframes sweep {
-            0% {
-                opacity: 0;
-                margin-top: -10px
-            }
+equationDetail {
+    float: right;
+}
 
-            100% {
-                opacity: 1;
-                margin-top: 0px
-            }
-        }
+interaction {
+    border: 20px;
+}
 
-        .locked {
-            background-color: hsla(162, 100%, 92%, 0.286);
-            /* Light grey */
-        }
+.activity-invitation {
+    min-width: 300px;
+    border-radius: 17px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #f0f0f0,
+        -5px -5px 10px #ffffff;
+}
 
-        .unlocked {
-            background-color: hsl(162, 100%, 85%);
-            ;
-            /* Slightly darker grey */
-        }
+.explore:hover {
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 5px 5px 49px #e0e0e0,
+        -5px -5px 49px #ffffff;
+}
 
-        .read {
-            background-color: hsl(162, 81%, 79%);
-            ;
-            /* Even darker grey */
-        }
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
+}
+
+.locked {
+    background-color: hsla(162, 100%, 92%, 0.286);
+    /* Light grey */
+}
+
+.unlocked {
+    background-color: hsl(162, 100%, 85%);
+    ;
+    /* Slightly darker grey */
+}
+
+.read {
+    background-color: hsl(162, 81%, 79%);
+    ;
+    /* Even darker grey */
+}
+
+ul.list-group {
+    margin-left: 0;
+    /* Remove left margin for mobile view */
+    padding: 0;
+    /* Optional: To ensure no padding */
+}
+
+@media (max-width: 768px) {
+    ul.list-group-flush {
+        margin-left: 0 !important;
+        /* Remove left margin for the <ul> */
+        padding: 0 !important;
+        /* Remove any padding from the <ul> */
+    }
+
+    ul.list-group-flush>li.list-group-item {
+        margin-left: 0 !important;
+        /* Remove individual <li> left margin */
+        padding: 10px !important;
+        /* Add padding for better readability */
+        background-color: #f8f9fa !important;
+        /* Slightly greyish background */
+        border-radius: 5px !important;
+        /* Optional: Rounded corners */
+        margin-bottom: 10px !important;
+        /* Add spacing between <li> elements */
+    }
+}
+
+model-viewer .nav-items {
+    font-size: 10px;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    cursor: pointer;
+}
+
+model-viewer .nav-link {
+    padding: 0px 5px !important;
+}
+
+.chart-container {
+    position: relative;
+    /* or just keep it as a block element */
+    width: 100%;
+    /* or auto */
+    height: 100%;
+    /* or any height you prefer */
+}
+
+.chart-col {border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  7px 7px 15px #d9d9d9,
+                 -7px -7px 15px #ffffff;
+}

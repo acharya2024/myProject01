@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Trigonometry and Angles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            margin: 0 auto; /* Center the graph horizontally */
+        }
+        /*centering the captions of charts*/
+        .chart-container > figcaption {
+          text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Chapter 3: Trigonometry and Angles</h1>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+
+                    <!-- Section 1: Angles and Their Measurement -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAnglesMeasurement">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAnglesMeasurement" aria-expanded="false"
+                                aria-controls="collapseAnglesMeasurement">
+                                <strong>3.1 Angles and Their Measurement</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseAnglesMeasurement" class="accordion-collapse collapse"
+                            aria-labelledby="headingAnglesMeasurement" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Understanding angles and their measurement is fundamental to trigonometry and its
+                                    applications in physics. Angles quantify rotations or turns and are used extensively
+                                    in analyzing circular motion, oscillations, and wave phenomena.</p>
+
+                                <p><strong>Degrees and Radians:</strong></p>
+                                <p>Two common units for measuring angles are <em>degrees</em> and <em>radians</em>. A
+                                    full circle is divided into 360 degrees (\(360^\circ\)).  Radians, on the other
+                                    hand, define an angle based on the arc length it subtends on a circle.</p>
+                                <p>One radian (rad) is the angle subtended at the center of a circle by an arc whose length is equal to the radius of the circle.</p>
+                                <figure style="width:400px; margin: 0 auto;"> <img src="images/angle.gif" class="figure-img mx-auto img-fluid" alt="Animation showing a unit circle, with the subtended arc length equal to radius. This representing 1 radian"> <figcaption class="figure-caption">One radian.</figcaption> </figure>
+
+
+                                <p><strong>Conversion between Degrees and Radians:</strong></p>
+                                <p>Since the circumference of a circle with radius  \(r\) is  \(2\pi r\), there are \(2\pi\) radians in a full circle. Therefore, we have the following conversion relationship:</p>
+                                <p>\( \qquad 360^\circ = 2\pi \, \text{rad} \)</p>
+                                <p>This relationship can be used to convert between degrees and radians. For instance, to convert an angle from degrees to radians, multiply by \(\frac{\pi}{180}\). To convert from radians to degrees, multiply by \(\frac{180}{\pi}\). Also \(1 \, \text{rad} = 57.3^{\circ} \).</p>
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Degrees to Radians</summary>
+                                            <p>Convert \(45^\circ\) to radians:</p>
+                                            <p>\(\qquad 45^\circ \times \frac{\pi}{180} = \frac{\pi}{4} \, \text{rad} \)
+                                            </p>
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Radians to Degrees</summary>
+                                            <p>Convert \(\frac{3\pi}{2} \, \text{rad}\) to degrees:</p>
+                                            <p>\(\qquad \frac{3\pi}{2} \times \frac{180}{\pi} = 270^\circ \)</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Trigonometric Functions -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTrigonometricFunctions">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTrigonometricFunctions" aria-expanded="false"
+                                aria-controls="collapseTrigonometricFunctions">
+                                <strong>3.2 Trigonometric Functions</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTrigonometricFunctions" class="accordion-collapse collapse"
+                            aria-labelledby="headingTrigonometricFunctions" data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <p>The core of trigonometry lies in the trigonometric functions, which relate angles to
+                                    the ratios of sides in right-angled triangles. These functions are sine (sin), cosine (cos), tangent (tan), cosecant (cosec), secant (sec), and cotangent (cot).</p>
+                                <p><strong>Definitions in Right-Angled Triangles:</strong></p>
+                                <p>For a given angle θ in a right-angled triangle:</p>
+                                <p>
+                                    \( \sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}} \)<br>
+                                    \( \cos(\theta) = \frac{\text{Adjacent}}{\text{Hypotenuse}} \)<br>
+                                    \( \tan(\theta) = \frac{\text{Opposite}}{\text{Adjacent}} \)<br>
+
+                                    \( \csc(\theta) = \frac{\text{Hypotenuse}}{\text{Opposite}} = \frac{1}{\sin(\theta)} \)<br>
+                                    \( \sec(\theta) = \frac{\text{Hypotenuse}}{\text{Adjacent}}  = \frac{1}{\cos(\theta)} \)<br>
+                                    \( \cot(\theta) = \frac{\text{Adjacent}}{\text{Opposite}} = \frac{1}{\tan(\theta)} \)<br>
+
+                                </p>
+                                <figure style="width:400px; margin: 0 auto;"> <img src="images/trig.png" class="figure-img mx-auto img-fluid" alt="A right triangle shown with angle theta. The opposite, adjacent sides and the hypotenuse are marked with respect to theta"> <figcaption class="figure-caption">Trigonometric ratios.</figcaption> </figure>
+
+
+                                <p><strong>The Unit Circle:</strong></p>
+                                <p>We extend the definitions of trigonometric functions to any angle, even those beyond \(90^\circ\), by using the <em>unit circle</em>, a circle with radius 1 centered at the origin of a coordinate plane.</p>
+                                <figure style="width:400px; margin: 0 auto;"> <img src="images/unitcircle.gif" class="figure-img mx-auto img-fluid" alt="Animation showing angle theta on unit circle and showing various trigonometric functions as ratios"> <figcaption class="figure-caption">Trigonometric functions in a unit circle.</figcaption> </figure>
+
+                                <ul class="list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 1: Trig Functions of 45°</summary>
+                                            <p>In a right triangle where \(\theta = 45^\circ\), if the opposite and adjacent sides are 1 and the hypotenuse is \(\sqrt{2}\), then</p>
+                                            \(\sin(45^\circ) = \frac{1}{\sqrt{2}} \), \(\cos(45^\circ) = \frac{1}{\sqrt{2}} \), and  \(\tan(45^\circ) = 1\).
+
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary>Example 2: Trig Functions of 30° and 60°</summary>
+                                            <p>In a \(30-60-90\) triangle, with sides \(1, \sqrt{3}\) and 2.</p>
+\(\sin(30^\circ) = \cos(60^\circ) = \frac{1}{2} \), \(\cos(30^\circ) = \sin(60^\circ) = \frac{\sqrt{3}}{2} \), and  \(\tan(30^\circ) = \frac{1}{\sqrt{3}}\) and \(\tan(60^\circ)=\sqrt{3}\).
+
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Section 3: Inverse Trig Functions and Section 4: Applications (Same structure, with illustrative examples and figures) -->
+
+                </div> <!-- End of Accordion -->
+            </div>
+        </div>
+    </div>
+    <!-- ... (Scripts and MathJax same as before) ... -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="js/graphInteraction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>

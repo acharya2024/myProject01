@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | CAP </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Capacitance</h1>
+                    <p class="lead" id="tagline">Conductor's capacity to hold charge</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <!-- Section 1: Isolated Capacitors -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-isolated-capacitors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-isolated-capacitors" aria-expanded="false"
+                                aria-controls="section-isolated-capacitors">
+                                <strong>Isolated Capacitors</strong>
+                            </button>
+                        </h2>
+                        <div id="section-isolated-capacitors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-isolated-capacitors" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Capacitance is a measure of a conductor's ability to store charge. So, when we refer
+                                    to capacitance of a conductors, we call it capacitor. An isolated capacitor is a
+                                    single conductor, or a system of conductors, in isolation from external influences.
+                                </p>
+                                <p>
+                                    A capacitor can store energy in the form of potential energy in an electric field.
+                                    In this chapter we'll discuss the capacity of conductors to hold charge and energy.
+                                </p>
+                                <p>
+                                    When a conductor is charged, its potential increases. It is found that for an
+                                    isolated conductor potential \(V\) of the conductor is proportional to
+                                    charge \(Q\) given to it.
+                                </p>
+                                <p>
+                                    \(\qquad V\propto Q\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad \dfrac{Q}{V}=\text{Constant}\)
+                                </p>
+                                <p>
+                                    The <strong>capacitance</strong> \(C\) of an isolated conductor is defined as the
+                                    ratio of the charge \( Q \) stored on the
+                                    conductor to the potential \( V \) of the conductor:
+                                </p>
+                                <p>
+                                    \(\qquad C = \dfrac{Q}{V} \)
+                                </p>
+                                <p>
+                                    In other words, capacitance of an isolated conductor can be defined as charge
+                                    required to increase
+                                    potential of the conductor by unit volt.
+                                </p>
+                                <p>
+                                    For an isolated conductor, the potential is determined relative to a reference
+                                    point, often taken as infinity where the potential is assumed to be zero. Conductor
+                                    should be of finite dimension, so that potential of
+                                    infinity can be assumed to be zero.
+                                </p>
+                                <p>
+                                    For
+                                    example, for an isolated spherical conductor of radius \( R \) containing some
+                                    charge \(Q\) at potential \(V\), the capacitance can be derived from the formula:
+                                </p>
+                                <p>
+                                    \(\qquad V = \dfrac{Q}{4\pi \epsilon_0 R }\)
+                                </p>
+                                <p>
+                                    \(\Rightarrow\quad C_\text{Spherical condcutor} = 4\pi \epsilon_0 R \)
+                                </p>
+                                <p>
+                                    This result shows that the capacitance of a spherical conductor is directly
+                                    proportional to its radius and is independent of the charge or potential.
+                                </p>
+                                <ul class="list list-group-flush">
+
+                                    Following are some general properties of capacitance of a conductor:
+                                    <li class="list-group-item">
+                                        <p>Capacitance is a scalar quantity and its unit is Farad. The value of 1 Farad
+                                            is:</p>
+                                        <p>
+                                            \(\qquad 1 \text{Farad} =
+                                            \frac{\text{1}\,\,\text{Coulomb}}{\text{1}\,\,\text{Volt}}\)</p>
+                                        <p>The dimensional formula of capacitance is
+                                            \(\text{M}^{-1}\text{L}^{-2}\text{A}^{2}\text{T}^{4}\).
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>
+                                            Capacitance of an isolated conductor <i>depends on</i>:
+                                        </p>
+                                        <ul>
+                                            <li>Shape and size of the conductor: On increasing the size, capacitance
+                                                increases.</li>
+                                            <li>On surrounding medium: With increase in dielectric constant K,
+                                                capacitance increases.</li>
+                                            <li>Presence of other conductors: When a neutral conductor is placed near a
+                                                charged conductor capacitance of conductors increases.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>Capacitance of a conductor <i>does not depend on:</i></p>
+                                        <ul>
+                                            <li>Charge on the conductor</li>
+                                            <li>Potential of the conductor</li>
+                                            <li>Potential energy of the conductor.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h3>Energy Stored in Isolated Conductors</h3>
+                                <h4>Work Done in Charging an Isolated Conductor</h4>
+                                <p>
+                                    Work is to be done by external agent in charging the conductor. This work by
+                                    external agent gets stored in form of potential energy. This total energy stored in
+                                    electric field of conductor is called self-energy of conductor.
+                                    To find total work done by external agent, we will consider the total charge Q on
+                                    the conductor is brought by external agent one by one in steps of dq and the process
+                                    occurs very slowly. This is shown in following diagram:
+
+                                </p>
+                                <p>
+                                    If a conductor has acquired a charge q, then work done by external agent in bringing
+                                    further charge $dq$ from infinity on the conductor is:
+                                    \[dW=\frac{q}{C}dq\]
+                                    And to find total work \[W\] in charging the conductor to charge \[Q\] is,
+                                    \[\int{dW=\int\limits_{0}^{Q}{\frac{q}{C}dq}}\,\]
+                                    \[\Rightarrow W=\frac{{{Q}^{2}}}{2C}\]
+                                    Thus energy stored in a conductor, having capacitance C and charge Q with final
+                                    potential V is:
+                                    \[U=\frac{{{Q}^{2}}}{2C}=\frac{1}{2}C{{V}^{2}}=\frac{QV}{2}\] [Using Q = CV]
+                                    This self-energy is stored in the region of electric field due to the conductor.
+
+                                </p>
+                                <p>
+                                    \(\qquad W = \int_0^Q V \, dQ = \int_0^Q \frac{Q}{C} \, dQ = \frac{Q^2}{2C} \)
+                                </p>
+                                <h4>Energy Stored in Terms of Capacitance</h4>
+                                <p>
+                                    The energy stored in a charged conductor is:
+                                </p>
+                                <p>
+                                    \(\qquad U = \frac{1}{2} C V^2 \)
+                                </p>
+                                <p>
+                                    This formula highlights that the energy depends on both the capacitance and the
+                                    square of the potential.
+                                </p>
+                                <h3>Connecting Isolated Conductors</h3>
+                                <p>
+                                    When two or more isolated conductors are connected by a conducting wire, they share
+                                    charge until they
+                                    reach the same potential. This redistribution depends on the initial charge and
+                                    capacitance of the
+                                    conductors.
+                                </p>
+                                <h4>Charge Redistribution Between Two Conductors</h4>
+                                <p>
+                                    Consider two isolated conductors with capacitances \( C_1 \) and \( C_2 \),
+                                    initially charged to
+                                    potentials \( V_1 \) and \( V_2 \), respectively. Upon connection, charges
+                                    redistribute, and the system
+                                    reaches a common potential \( V_f \). Conservation of charge and the principle of
+                                    equipotentiality lead
+                                    to:
+                                </p>
+                                <p>
+                                    \(\qquad Q_1 + Q_2 = C_1 V_f + C_2 V_f \)
+                                </p>
+                                <p>
+                                    \(\qquad V_f = \frac{C_1 V_1 + C_2 V_2}{C_1 + C_2} \)
+                                </p>
+                                <h4>Charge Redistribution Among Multiple Conductors</h4>
+                                <p>
+                                    For \( n \) conductors, the charge redistribution follows a similar principle. The
+                                    total charge in the
+                                    system remains constant, and the final potential \( V_f \) can be calculated using:
+                                </p>
+                                <p>
+                                    \(\qquad V_f = \frac{\sum_{i=1}^n C_i V_i}{\sum_{i=1}^n C_i} \)
+                                </p>
+
+                                <h4>Heat Generated During Redistribution</h4>
+                                <p>
+                                    When two conductors are connected, the redistribution of charge can result in the
+                                    generation of heat due
+                                    to resistive losses. The heat \( H \) generated is the difference between the
+                                    initial energy of the
+                                    system and the final energy:
+                                </p>
+                                <p>
+                                    \(\qquad H = \frac{1}{2} C_1 V_1^2 + \frac{1}{2} C_2 V_2^2 - \frac{1}{2} (C_1 + C_2)
+                                    V_f^2 \)
+                                </p>
+                                <p>
+                                    Substituting \( V_f \) from the earlier formula ensures conservation of energy in
+                                    the system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Section 2: Types of Capacitors -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-types-of-capacitors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-types-of-capacitors" aria-expanded="false"
+                                aria-controls="section-types-of-capacitors">
+                                <strong>Types of Capacitors</strong>
+                            </button>
+                        </h2>
+                        <div id="section-types-of-capacitors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-types-of-capacitors" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Capacitors come in various shapes and configurations, each designed for specific
+                                    applications.  Here are some common types:</p>
+                    
+                                <details>
+                                    <summary><strong>Ideal Design Considerations</strong></summary>
+                                    <p>An ideal capacitor should:</p>
+                                    <ul>
+                                        <li>Have infinite dielectric strength (to prevent breakdown)</li>
+                                        <li>Have zero resistance in the conducting plates</li>
+                                        <li>Store maximum energy for minimum size</li>
+                                        <li>Have minimal energy loss (leakage)</li>
+                                    </ul>
+                                </details>
+                    
+                                <details>
+                                    <summary><strong>Parallel Plate Capacitor</strong></summary>
+                                    <p>The most basic type consists of two parallel conducting plates separated by a distance
+                                        \(d\).</p>
+                                    <details>
+                                        <summary>Charge Distribution</summary>
+                                        <p>Charges \(+Q\) and \(-Q\) reside on the facing surfaces of the plates, creating a
+                                            uniform charge density \(\sigma = \frac{Q}{A}\), where \(A\) is the plate area.
+                                        </p>
+                                        DIAGRAM HERE: Parallel plate capacitor with charges and charge density indicated.
+                                    </details>
+                                    <details>
+                                        <summary>Electric Field</summary>
+                                        <p>A uniform electric field exists between the plates, directed from the positive to the
+                                            negative plate, with magnitude:</p>
+                                        <p class="text-center text-law">\(E = \frac{\sigma}{\epsilon_0} = \frac{Q}{\epsilon_0 A}\)</p>
+                                        DIAGRAM HERE:  E field lines between the plates.
+                                    </details>
+                                    <details>
+                                        <summary>Force Between Plates</summary>
+                                        <p>The plates attract each other due to the electric field. The force on each plate is:
+                                        </p>
+                                        <p>\(F = \frac{Q^2}{2\epsilon_0 A}\)</p>  
+                                        <!-- Explain origin of force.  Mention pressure if appropriate. -->
+                                    </details>
+                                    <details>
+                                        <summary>Potential Difference</summary>
+                                        <p>The potential difference \(V\) between the plates is:</p>
+                                        <p>\(V = Ed = \frac{Qd}{\epsilon_0 A}\)</p>
+                                    </details>
+                                    <details>
+                                        <summary>Capacitance</summary>
+                                        <p>The capacitance of a parallel plate capacitor is:</p>
+                                        <p class="text-center text-law">\(C = \frac{Q}{V} = \frac{\epsilon_0 A}{d}\)</p>
+                                    </details>
+                                    <details>
+                                        <summary>Energy Stored</summary>
+                                        <p>The energy stored in a charged parallel plate capacitor is:</p>
+                                        <p>\(U = \frac{1}{2}CV^2 = \frac{Q^2}{2C} = \frac{1}{2}QV\)</p>
+                                        <p>Work done to charge the capacitor equals the stored energy.</p>
+                                    </details>
+                                </details>
+                    
+                                <details>
+                                    <summary><strong>Electrostatic Potential Energy Density</strong></summary>
+                                    <p>Energy density \(u\) is the energy stored per unit volume.</p>
+                                    <details>
+                                        <summary>Parallel Plate Capacitor</summary>
+                                        <p class="text-center text-law">\(u = \frac{1}{2}\epsilon_0 E^2\)</p>
+                                        <p> (Justify/derive this—show that integrating over volume gives total energy.)</p>
+                                    </details>
+                                    <details>
+                                        <summary>General Case (Uniform and Non-uniform Fields)</summary>
+                                        <p>The formula \(u = \frac{1}{2}\epsilon_0 E^2\) applies even for non-uniform fields.
+                                            The total energy is found by integrating over the volume:</p>
+                                        <p>\(U = \int_V u \, dV = \frac{1}{2}\epsilon_0 \int_V E^2 \, dV\)</p>
+                                    </details>
+                                    <details>
+                                        <summary>Self-Energy of Charged Systems</summary>
+                                        <p><strong>Charged Spherical Conductor:</strong> (Derive and provide formula.  Relate to
+                                            work done.)</p>
+                                            DIAGRAM HERE.
+                                        <p><strong>Charged Spherical Insulator:</strong> (Explain how this differs from the
+                                            conductor case.  Derive and provide formula.)</p>
+                                            DIAGRAM HERE.
+                                    </details>
+                                    <details>
+                                        <summary>Self and Interaction Energy</summary>
+                                        <p>(Explain the relationship between self-energy and interaction energy.  Possibly
+                                            include an example.)</p>
+                                    </details>
+                    
+                    
+                                </details>
+                    
+                    
+                                <details>
+                                    <summary><strong>Spherical Capacitor</strong></summary>
+                                    <p>A spherical capacitor consists of two concentric conducting spheres with radii \(a\) and
+                                        \(b\) (\(b > a\)).</p>
+                                    <details>
+                                        <summary>Capacitance</summary>
+                                        <p class="text-center text-law">\(C = 4\pi\epsilon_0 \frac{ab}{b-a}\)</p>
+                                        DIAGRAM HERE.  Show radii a and b.
+                                    </details>
+                                    <details>
+                                        <summary>Energy Stored</summary>
+                                        <p><strong>Region:</strong> Energy is stored in the electric field between the spheres.
+                                        </p>
+                                        <p><strong>Calculation:</strong>  (Derive/show calculations using energy density and work
+                                            done.)</p>
+                                        <p><strong>Amount:</strong> (Provide the formula for energy stored.)</p>
+                                    </details>
+                                </details>
+                    
+                                <details>
+                                    <summary><strong>Cylindrical Capacitor</strong></summary>
+                                    <p>A cylindrical capacitor has two coaxial conducting cylinders of radii \(a\) and \(b\) and
+                                        length \(L\).</p>
+                                    <details>
+                                        <summary>Capacitance</summary>
+                                        <p class="text-center text-law">\(C = \frac{2\pi\epsilon_0 L}{\ln(b/a)}\)</p>
+                                        DIAGRAM HERE.
+                                    </details>
+                                </details>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 3: Simple Circuits -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-simple-circuits">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-simple-circuits" aria-expanded="false"
+                                aria-controls="section-simple-circuits">
+                                <strong>Simple Circuits</strong>
+                            </button>
+                        </h2>
+                        <div id="section-simple-circuits" class="accordion-collapse collapse"
+                            aria-labelledby="heading-simple-circuits" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><strong>Circuits with single capacitor and single battery:</strong>
+                                        <ul>
+                                            <li>Determination of charges</li>
+                                            <li>Work done by battery in charging</li>
+                                            <li>Energy stored in capacitors</li>
+                                            <li>Heat dissipated in circuit</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Series and parallel combination:</strong>
+                                        <ul>
+                                            <li>Formula for equivalent capacitance</li>
+                                            <li>Circuits extending to infinity</li>
+                                            <li>Charge determination on each capacitor</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Changing connections:</strong>
+                                        <ul>
+                                            <li>Circuits with only capacitors:
+                                                <ul>
+                                                    <li>Redistribution of charges and energy</li>
+                                                    <li>Heat dissipated and energy stored</li>
+                                                    <li>Connecting two charged capacitors with same or opposite polarity
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Circuits with capacitors and battery:
+                                                <ul>
+                                                    <li>Variation in charges</li>
+                                                    <li>Heat dissipated</li>
+                                                    <li>Work done by battery</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Changing capacitance:</strong>
+                                        <ul>
+                                            <li>By slowly increasing/decreasing separation between plates:
+                                                <ul>
+                                                    <li>Charge flown, heat, work done by external agent</li>
+                                                </ul>
+                                            </li>
+                                            <li>Short circuiting a capacitor</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Wheatstone Bridge Principle:</strong>
+                                        <ul>
+                                            <li>Finding equivalent capacitance</li>
+                                            <li>Finding charges</li>
+                                            <li>Changing connections</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4: Dielectrics -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-dielectrics">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-dielectrics" aria-expanded="false"
+                                aria-controls="section-dielectrics">
+                                <strong>Dielectrics</strong>
+                            </button>
+                        </h2>
+                        <div id="section-dielectrics" class="accordion-collapse collapse"
+                            aria-labelledby="heading-dielectrics" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><strong>Introduction:</strong>
+                                        <ul>
+                                            <li>Definition</li>
+                                            <li>Effect on placement between two charges</li>
+                                            <li>Amount of induced charge on dielectric surface</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Effects of dielectric in capacitors:</strong>
+                                        <ul>
+                                            <li>Formula modifications for:
+                                                <ul>
+                                                    <li>Capacitance</li>
+                                                    <li>Induced charge on capacitor</li>
+                                                    <li>Electric field inside/outside dielectric</li>
+                                                </ul>
+                                            </li>
+                                            <li>Isolated capacitors:
+                                                <ul>
+                                                    <li>Charge, potential, electric field, energy</li>
+                                                    <li>Work done by agent in placing dielectric</li>
+                                                    <li>Force on dielectric</li>
+                                                </ul>
+                                            </li>
+                                            <li>Battery connected capacitors:
+                                                <ul>
+                                                    <li>Charge, potential, electric field, energy</li>
+                                                    <li>Work done by battery</li>
+                                                    <li>Work done by agent in placing dielectric</li>
+                                                    <li>Force on dielectric</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Effects in circuits in removal/insertion of dielectric:</strong>
+                                        <ul>
+                                            <li>Capacitance, charge, potential difference variations</li>
+                                            <li>Work done by external agent and battery</li>
+                                            <li>Heat generated in the process</li>
+                                            <li>Force on dielectric</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

@@ -223,7 +223,6 @@ Keep the content more logical, easy to understand and one para connected logical
     - electric field just outside surface
     - concentration of charges depending on radius of curvature
     - electrostatic shielding
-    - electrostatic pressure on surface
 
 #### Section 2. Charge redistribution on conductors
 - conductors with cavity containing charges
@@ -232,7 +231,14 @@ Keep the content more logical, easy to understand and one para connected logical
 - concentric spherical shells
 - effects of electrostatic shielding
 
-#### Section 3. Energy stored in charged conductor
+#### Section 3. Force on conducting surface
+- Electric field just outside the conducting surface
+- Electric field due to small conducting surface ds
+- Force on small conducting surface
+- Pressure on conducting surface
+- Net electrostatic force on half of sphere due to other half
+
+#### Section 4. Energy stored in charged conductor
 - Energy stored calculations
     - work done in charging spherical conductor
     - energy stored in spherical conductor
@@ -241,10 +247,15 @@ Keep the content more logical, easy to understand and one para connected logical
     - energy content in charged conducting sphere
     - energy content in charged non-conducting sphere
     
-#### Section 3. Connecting two conductors
+#### Section 5. Connecting two conductors
 - Connecting two isolated conductors
-    - flow of charge and steady state
-    - energy dissipated
+    - Development of electric field in the connecting wires and the direction of charge flow
+    - Steady state situation (field and potential in connecting wires)
+- Energy dissipated
+    - Change in energy of system upon connection
+    - Amount of heat dissipation
+
+#### Section 6. Earthing of conductor
 - Grounding of conductors
     - effects of grounding
     - charge distribution due to grounding
@@ -253,9 +264,7 @@ Keep the content more logical, easy to understand and one para connected logical
     - uniqueness theorem
     - method of images
 
-
 ### Chapter 4: Gravitation
-
 #### Section 1. Newton’s Law and Superposition  
 - Scalar form of law
 - Vector form of law

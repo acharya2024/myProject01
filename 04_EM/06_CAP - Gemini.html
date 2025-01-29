@@ -1,0 +1,3452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Capacitance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Capacitance</h1>
+                    <p class="lead" id="tagline">Storing Electrical Energy</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-isolated-capacitors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#isolated-capacitors" aria-expanded="false"
+                                aria-controls="isolated-capacitors">
+                                <strong>Section 1: Isolated Capacitors</strong>
+                            </button>
+                        </h2>
+                        <div id="isolated-capacitors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-isolated-capacitors" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <h5 class="text-muted"><strong>Definition of capacitance of isolated conductors</strong>
+                                </h5>
+                                <p>
+                                    When a charge \(Q\) is given to a conductor, its potential increases.
+                                </p>
+                                <p>[Diagram of a charged conductor with increased potential]</p>
+
+                                <p>It has been experimentally observed that for an isolated conductor, there is
+                                    always a fixed ratio
+                                    between its
+                                    charge \(Q\) and potential \(V\) at its surface. </p>
+
+                                <p class="text-law text-center">
+                                    \( Q \propto V\)
+                                </p>
+
+                                <p>\( \Rightarrow \quad Q = C V\) </p>
+
+                                <p>
+                                    This proportionality constant is defined as the <strong>capacitance
+                                        \(C\)</strong>. It depends solely on
+                                    the
+                                    geometric structure of the conductor and is independent of the charge and potential.
+                                </p>
+
+
+                                <p>
+                                    In SI unit, capacitance is defined as \(\text{Farad} \quad (F)\). \(1 \text{
+                                    Farad}\) is capacitance of a conductor when
+                                    \(1 \text{ Coulomb}\)
+                                    charge raises its potential to \(1 \text{ Volt}\).</p>
+
+
+
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Yes, Capacitance relates the charge on an isolated conductor and its corresponding potential."
+                                        false-response="Not quite. Capacitance represents proportionality between charge and potential for an isolated conductor"
+                                        ansKey="true">
+                                        Does the ratio between charge and potential of an isolated conductor always
+                                        remain constant? What does this indicate?
+
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            No, it varies based on its physical size and material
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            It's a constant for spherical conductor only
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Yes, this ratio is known as the capacitance of the conductor
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
+
+                                    The concept of capacitance can be best explained
+                                    with an analogy: consider two rooms where
+                                    people enter one after another. Room 1 has less space; consequently, even
+                                    with a smaller number
+                                    of people inside, the room gets crowded and its discomfort level (analogous to
+                                    potential) increases rapidly. In contrast, room 2 offers more space, requiring a
+                                    larger number of
+                                    people
+                                    to achieve the same discomfort level as room 1. The space required or size of a
+                                    room here defines its capacitance in electrical systems, determining how much
+                                    charge the conductor can hold
+                                    at a specific potential level.</p>
+
+
+                                <p>[gif/glb for comparison: showing crowdedness and discomfort
+                                    level on
+                                    adding people
+                                    sequentially into two
+                                    different size of room/box]</p>
+
+
+                                <h5 class="text-muted mt-4"><strong>Factors affecting the capacitance</strong></h5>
+                                <p>The following factors influence the capacitance of an isolated conductor:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Size and shape of the
+                                            conductor:</strong> A larger conductor can hold more charge at a given
+                                        potential. This is analogous to how a larger container holds more water before
+                                        overflowing.</li>
+                                    <li class="list-group-item"><strong>Surrounding medium:</strong> Placing
+                                        conductors near each
+                                        other enhances their capacitance. In contrast, if an insulated conducting
+                                        spherical shell covers a
+                                        spherical charged conductor, the external shell lowers the central conductor's
+                                        potential. Thus
+                                        placing grounded/conducting cover near isolated charged conductors, reduces
+                                        their potential, hence increase capacitance</li>
+
+
+                                </ul>
+                                <h5 class="text-muted mt-4"><strong>Capacitance of spherical conductor</strong></h5>
+
+                                <p>Consider an isolated spherical conductor of radius \(R\), located in free space.
+                                    When a charge
+                                    \(Q\) is given to the spherical conductor, its potential is:</p>
+
+                                <p>
+                                    \(\qquad \displaystyle V=\dfrac{1}{4\pi \epsilon_0} \dfrac{Q}{R}\)</p>
+
+                                <p>Therefore capacitance,</p>
+
+
+                                <p>\(
+                                    C=\dfrac{Q}{V}
+                                    \)
+                                </p>
+
+
+
+                                <p>
+
+                                    \(\Rightarrow\quad \displaystyle C=\dfrac{Q}{Q/(4\pi \epsilon_0 R)}=4\pi \epsilon_0
+                                    R\)
+                                </p>
+
+
+                                <p>So, we find:</p>
+
+                                <p class="text-law text-center">
+                                    \( \displaystyle C=4\pi\epsilon_0R\)
+                                </p>
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Connecting isolated conductors</strong></h5>
+
+                                <p>If two conductors having capacitance \(C_1 \text{ and } C_2\), having initial charge
+                                    \(q_1
+                                    \text{ and }
+                                    q_2\) and
+                                    potential \(v_1 \text{ and }v_2 \) are connected by conducting wire as in following
+                                    circuit
+                                    diagram:
+                                    </p>
+
+
+                                <p>[diagram showing connected charged conductors. name
+                                    variables on them]</p>
+
+
+
+                                <p>There will be
+                                    redistribution of charge.</p>
+
+
+
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Correct! Since conductors must have zero electric field within their bulk material, their entire charge resides on the surface only."
+                                        false-response="Think again. An isolated conductor carries net charge. The surface is equipotential and zero field inside, so no charges will lie inside."
+                                        ansKey="false">
+                                        Does a charged isolated conductor store charges within its volume or at its
+                                        surface?
+
+
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            Volume of Conductor
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Surface of Conductor
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+
+                                <h5 class="text-muted mt-4"><strong>Charge redistribution for two
+                                        conductors</strong></h5>
+
+                                <p>If two conductors have initial charges \(Q_1 \text{ and }Q_2\), when they are
+                                    connected by
+                                    conducting wire they
+                                    redistribute charges till equilibrium. This equilibrium is attained when the
+                                    charges present on both are
+                                    constant with time.
+                                </p>
+
+
+
+                                <p>
+                                    Since a steady state has no time-varying charges or fields, the
+                                    electrostatic potential inside conductors must
+                                    be the same, resulting in identical potentials of connected
+                                    conductors at all their points after
+                                    charge redistribution. After connections, they obtain common
+                                    potential \(V\). So the circuit diagram will become like the one
+                                    below:</p>
+
+
+
+
+                                <p>[diagram showing two connected conductors after charge
+                                    redistribution with common
+                                    potential.]</p>
+
+                                <p>Charge \(q_1 \) flows from conductor \(1\) and \(q_2\) flows into conductor \(2\) to
+                                    get same potential \(V\). Also
+                                </p>
+
+
+
+                                <p>\(\qquad q_1 + (-q_2) = 0
+                                \)</p>
+
+
+                                <p>Hence charge is always conserved when redistributed, no matter the number
+                                    of
+                                    isolated
+                                    conductors.</p>
+
+
+                                <p>If initial total charge is \(q=Q_1+Q_2\) (when they were at their individual potential)
+                                    then after connecting
+                                    them with conducting wires:
+                                </p>
+                                <ul class="list-group list-group-flush">
+
+                                    <li class="list-group-item">\(\qquad Q'_1+Q'_2=Q_1+Q_2=q
+                                        \)<equationDetail>[conservation of charge.]</equationDetail></li>
+                                    <li class="list-group-item">\(\qquad \dfrac{Q_1'}{C_1}=\dfrac{Q_2'}{C_2}
+                                        \)<equationDetail>[same potential of
+                                            two conductors after connection.]</equationDetail></li>
+                                </ul>
+                                <p>
+                                    Solving for \(Q'_1 \text{ and }Q'_2\) in the two equations we
+                                    get:</p>
+
+
+
+                                <p>
+                                    \(\qquad Q'_1=q \left(\dfrac{C_1}{C_1+C_2}\right)\)</p>
+
+
+
+                                <p>
+                                    \(\qquad Q'_2=q \left(\dfrac{C_2}{C_1+C_2}\right)\)</p>
+
+                                <p class="mt-3">
+                                    <interaction
+                                        true-response="Yes, if initial charges have opposite sign, common potential may vanish."
+                                        false-response="The two conductors exchange charge till both acquire same potential which becomes the final common potential."
+                                        ansKey="true">
+                                        Suppose that initial charges are Q1=5C, Q2=–2C and capacitanes are 4F, 2F
+                                        respectively. The final potential after they are connected becomes 3/6 =0.5 V.
+                                        Can this potential after charge redistribution becomes zero for some cases?
+
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            Common potential after redistribution is always non zero
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            It is zero for cases if charges have same sign
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            It is zero for cases if charges have opposite sign
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Charge redistribution for multiple
+                                        conductors</strong></h5>
+
+
+
+                                <p>If isolated conductors \(C_1,\ C_2,...C_n \) are at \(V_1, \ V_2, ...V_n \) potential
+                                    having
+                                    charges
+                                    \(q_1, q_2,..., q_n \) are connected via
+                                    conducting wire simultaneously, charges start flowing within
+                                    them such that:
+                                    <ul class="list-group list-group-flush">
+
+
+                                        <li class="list-group-item">
+
+
+                                            Total
+                                            charge always remains the same at
+                                            any instant. Hence \( q_{Total}\) will
+                                            be a constant. If charges after the redistribution are:
+                                        <p>
+                                            \( q'_1,q'_2,\ldots q'_n \), then:
+                                        </p>
+
+                                        \(\qquad
+                                        \sum_1^n{q_i} =\sum_1^n {q'_i}=q_\text{Total}\) </li>
+
+
+                                        <li class="list-group-item">
+                                            Also the total system tries to come to a state where
+                                            electrostatic fields remain zero inside the
+                                            conducting material (this will correspond to constant time varying potential
+                                            on conductor
+                                            and thus electric fields vanish on its interior.)
+
+                                        </li>
+
+
+                                        <li class="list-group-item">
+                                            It can only occur when the potentials of
+                                            the isolated conducting
+                                            regions will equal to some fixed \(V\) when in steady state.
+
+                                            </li>
+
+                                    </ul>
+
+                                </p>
+                                <p>Now suppose total capacitance (after connecting
+                                    all capacitance through conducting wire): </p>
+
+
+
+                                <p>
+                                    \(\qquad\displaystyle
+                                    C_{\text{Total}}= \sum_{i=1}^n{C_i}
+                                    \)</p>
+
+                                <p>So \(Q_\text{total}\)
+                                    can be rewritten in the following two equivalent forms. The circuit diagram in both
+                                    cases remains the same
+                                    after equilibrium attained:
+
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item">\(\qquad Q_\text{Total}=q=\displaystyle \sum_{i=1}^n
+                                        q_i=\sum_{i=1}^n C_i v_i
+                                        \)<equationDetail>[when the conductors are at their initial charges]</equationDetail>
+                                    </li>
+
+
+                                    <li class="list-group-item">\(\qquad Q_\text{Total}=\displaystyle V C_\text{Total}=V
+                                        \sum_{i=1}^n C_i
+                                        \)<equationDetail>[when equilibrium reached on connecting with
+                                            conducting wire.]</equationDetail></li>
+                                </ul>
+
+                                <p>Therefore:</p>
+
+
+                                <p>
+                                    \(\qquad \displaystyle
+                                    V=\dfrac{q}{\sum_{i=1}^n C_i}=\frac{\sum_1^n C_iv_i}{\sum_1^n C_i}
+                                    \)</p>
+
+                                <p>[Diagram after charges redistributed between n conductors
+                                    in steady
+                                    state connected to conducting wire (name variables on them)]</p>
+
+
+
+
+                                <p>Hence charges on
+                                    them:</p>
+
+
+                                <p>
+                                    \(\qquad Q'_i=C_i V
+                                    \)</p>
+
+
+
+                                <p>
+                                    \(\qquad\displaystyle\Rightarrow\quad Q'_i= q \left(\frac{C_i}{\sum_{j=1}^n
+                                        C_j}\right)\)
+                                </p>
+
+
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Energy stored in isolated conductors</strong></h5>
+
+
+
+                                <p>
+                                    Charging isolated conductors, akin to accumulating electrons (hence energy)
+                                    onto the
+                                    surface. Each
+                                    infinitesimal charge
+                                    element \( dq \) incrementally builds
+                                    potential by
+                                    \( dV=\dfrac{dq}{C} \). Therefore, energy
+                                    required to
+                                    bring this small
+                                    charge from infinite to near isolated conductors at a certain potential is analogous
+                                    to
+                                    adding an element of energy which gets stored there.
+
+                                    \(\qquad
+                                    \int_0^Q \dfrac{q}{C} \,dq
+                                    \)
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Work done in charging an isolated
+                                        conductor</strong></h5>
+
+
+                                <p>In total energy calculation, when infinitesimally small charges brought to
+                                    a certain isolated
+                                    conductor sequentially. </p>
+
+
+
+                                <p>\(
+                                    \displaystyle\int_0^Q {V\,dq}=\int_0^Q{\frac{q}{C}\,dq}=\dfrac{Q^2}{2C}=\frac{1}{2}CV^2=
+                                    \frac{1}{2}QV
+                                    \)
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Energy stored in terms of
+                                        capacitance</strong></h5>
+
+                                <p class="text-center text-law">
+
+                                    This stored energy \(U\) on an isolated charged conductor
+                                    of
+                                    capacitance
+                                    \( C \) can be represented as:
+
+                                </p>
+                                <p>\(\qquad \displaystyle U=\dfrac{Q^2}{2C} = \frac{1}{2} CV^2 = \frac{1}{2}
+                                    QV\)</p>
+
+
+                                <h5 class="text-muted mt-4"><strong>Heat generated in redistribution of charge on
+                                        connecting two
+                                        conductors</strong></h5>
+
+                                <p>As discussed, redistribution
+                                    of charge
+                                    between the conductors is performed by using a wire. Here charge flow always happens
+                                    in the wire and energy stored
+                                    varies between two cases as in circuit:
+
+                                <p>[circuit of charging the capacitors.]</p>
+                                <p>[diagram of connected capacitors for charge redistribution.]</p>
+
+
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item">\(\qquad\displaystyle U_{\text{initial}}
+                                        =
+                                        \dfrac{q_1^2}{2C_1}
+                                        + \dfrac{q_2^2}{2C_2}=\frac{1}{2}\biggl(C_1
+                                        v_1^2+C_2
+                                        v_2^2\biggr)\)</li>
+
+
+                                    <li class="list-group-item">
+
+                                        \( \displaystyle
+                                        U_{\text{final}}=\frac{1}{2} C_{\text{eq}}
+                                        V^2=\dfrac{(C_1 V)^2}{2C_1}+\dfrac{(C_2
+                                        V)^2}{2C_2}\)</li>
+
+                                </ul>
+
+
+                                <p>
+
+                                    So if initially charged to \(V_1, V_2 \) and no external voltage source, the charge
+                                    conservation
+                                    applied:
+
+
+                                    \(\qquad
+                                    q = C_1
+                                    V_1+C_2 V_2\)</p>
+
+
+
+
+                                <p>
+
+
+
+                                    Here initial energy (\(\dfrac{Q_1^2}{2C_1}
+                                    +\dfrac{Q_2^2}{2C_2}\)) must be converted to \(
+
+                                    \frac{1}{2} C_\text{equivalent}
+                                    V_{\text{common}}^2\) as they re-distributed the charges. Here loss in
+                                    electrostatic
+                                    energy = \( H=U_\text{intial}-U_\text{final}\). Since we assume the
+                                    connection through conducting wires of negligibly
+                                    small resistances, here charges
+                                    travel inside it generating some heat energy if total potential change \(\Delta
+                                    v\).
+
+                                </p>
+                                <p>[GIF for charges travelling in a conductor and creating current flow]</p>
+
+                                <p>\(
+                                    H=U_\text{initial}-U_\text{final}=q \frac{\Delta V}{2}\)</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-Types-of-capacitors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#Types-of-capacitors" aria-expanded="false"
+                                aria-controls="Types-of-capacitors">
+                                <strong>Section 2: Types of capacitors</strong>
+                            </button>
+                        </h2>
+                        <div id="Types-of-capacitors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-Types-of-capacitors" data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <h5 class="text-muted mt-4"><strong>Ideal design of capacitors</strong></h5>
+                                <p>
+                                    Capacitors are electronic components designed specifically to
+                                    store electrical
+                                    charge. An ideal capacitor would retain a charge for an
+                                    infinite
+                                    amount
+                                    of
+                                    time without loss and also
+                                    be capable of charging and discharging extremely
+                                    quickly, much faster than other components in the circuit.
+
+                                </p>
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Parallel plate capacitor</strong></h5>
+
+                                <p>A standard
+                                    capacitor, consists of two large conducting plates closely spaced together with a
+                                    relatively
+                                    small separation, and they can come in either circular
+                                    or rectangular forms.</p>
+                                <p> [Diagram: of parallel plate capacitor (circular/rectangle) ]
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Charge Distribution</strong></h5>
+
+                                <p>When the capacitor is charged using a
+                                    voltage source,
+                                    two plates collect opposite charges rapidly and then attains equilibrium. Therefore
+                                    positive plate must have equal and opposite negative charges on another
+                                    plates.</p>
+
+
+                                <h5 class="text-muted mt-4"><strong>Electric Field between the plates</strong></h5>
+
+
+                                <p>To derive
+                                    a formula for the electric field in a parallel-plate
+                                    capacitor with plate charge densities of
+                                    \(+\sigma\) and \(-\sigma\), the concept of flux can be applied
+                                    to an infinitely
+                                    large charged sheet:</p>
+
+
+                                <p>\(\qquad \displaystyle E= \dfrac{\sigma}{2 \epsilon_0}\)</p>
+
+
+
+
+
+                                <p>In a
+                                    parallel-plate configuration, the
+                                    superposition
+                                    principle allows us to derive an expression for the field
+                                    between the
+                                    plates, recognizing
+                                    that one plate shields another
+                                    as
+                                    explained in diagram</p>
+
+                                <p>[Diagram showing a cylindrical Gaussian surface over one plate shielding the other and
+                                    show net
+                                    flux from different parts.]
+
+                                    Due to the infinitely large charged plates:</p>
+
+
+
+                                <ul class="list-group list-group-flush">
+
+
+                                    <li class="list-group-item"> \(\qquad E_1 = E_2 =\dfrac{1}{2}E=\dfrac{\sigma}{2
+                                            \epsilon_0}\)</li>
+
+
+                                    <li class="list-group-item">\(\qquad E =E_1+E_2 = 2E/2 =\dfrac{\sigma}{\epsilon_0}
+
+                                        \)<equationDetail>Here E points perpendicular from the higher potential plate towards lower one.</equationDetail></li>
+
+                                </ul>
+                                <p>This expression \( \frac{\sigma}{\epsilon_0} \) accurately calculates
+                                    the total field \( E \)
+                                    between
+                                    the
+                                    two parallel plates of opposite polarities.
+                                </p>
+
+                                <h5 class="text-muted mt-4"><strong>Force between the plates</strong></h5>
+                                <p>Since one plates effectively only produces \(E_{plate}=\frac{\sigma}{2\epsilon_0} \),
+                                    therefore considering on a second plate due to first, will produce a
+                                    force per unit
+                                    area which is equivalent
+                                    to charged sheets,:</p>
+
+
+                                <p>
+                                    \( \displaystyle F/A=\frac{1}{2}\epsilon_0
+                                    \biggl(\frac{\sigma}{2\epsilon_0}\biggr)^2
+                                    \)
+
+                                </p>
+
+
+                                <p>
+
+
+
+                                    \(\Rightarrow\quad
+                                    \frac{1}{2}\epsilon_0 E^2
+
+                                    \)<equationDetail>which points to minimise the separation if charges of opposite polarity.</equationDetail>
+
+
+                                    Hence each plate is subjected to equal and
+                                    opposite electric forces between plates. This results
+                                    in
+                                    them
+                                    attracting towards each
+                                    other, with a tendency
+                                    to decrease their separation if they are held fixed.
+                                </p>
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Potential Difference between the
+                                        Plates</strong></h5>
+
+
+
+
+                                <p>In a capacitor, we seek uniform distribution on both of its charged plate of certain
+                                    dimension, but on edges a fringing
+                                    electric field
+                                    also exists to diminish uniformity condition. If electric field produced by one of
+                                    such an infinitely
+                                    long uniformly
+                                    charged plates are present then
+                                </p>
+
+
+                                <p>\( \displaystyle E_{infinit}=\frac{\sigma}{\epsilon_0} \) </p>
+
+
+                                <p>but since in this scenario
+                                    of practical capacitor we need finite length conducting plates: at the
+                                    boundaries near edges the field deviates from its central electric
+                                    lines and these edge-bending phenomenon termed as fringing fields, are as
+                                    shown</p>
+
+
+
+                                <p>[diagram/animation showing field lines over a parallel plate
+                                    with edge fields.]
+
+                                </p>
+
+
+                                <p>Assuming that
+                                    edges/non uniform parts near edge is neglible we seek ideal cases
+                                    without fringes. Since it can be only true when conducting plate are too
+                                    large
+                                    compare to their separation.</p>
+
+
+
+                                <p>\( \qquad V=Ed
+                                \)
+
+
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Capacitance</strong></h5>
+
+
+
+
+                                <p>As already discussed in initial part, this value defined the ratio between
+                                    charge
+                                    on the conducting material of this configuration. </p>
+
+
+
+                                <p> \( C = \dfrac{Q}{V}
+
+                                \)</p>
+
+
+
+
+
+                                <p>\( C = \dfrac{Q}{Ed}= \dfrac{Q}{\dfrac{\sigma}{\epsilon_0} d}\)
+
+                                    (since for infinitely large charged sheet
+                                    \(\displaystyle E_{infinit}=\frac{\sigma}{\epsilon_0}
+                                    \))
+                                </p>
+
+
+
+
+                                <p>\(\qquad \sigma= \dfrac{Q}{A} \)</p>
+
+
+
+
+
+
+                                <p>therefore capacitance,
+
+
+
+                                <p>\( \displaystyle
+                                    C=\dfrac{\epsilon_0A}{d}
+                                    \)
+
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Work done in charging and the Energy Stored
+                                    </strong></h5>
+
+
+
+
+                                <p>For work done we must consider in initial conditions (uncharged condition to charged
+                                    condition). So
+                                    total work
+                                    done \(W\) here corresponds to charging a completely
+                                    uncharged capacitors by infinitesimal charges and bringing it closer. The following
+                                    circuit can be used for that.
+
+
+                                <p>[circuit diagram: parallel plate capacitor and external source \(V\) for charging.]
+
+                                    Once a potential \( V \) achieved across the plates for this configuration (in our
+                                    experiment we can vary
+                                    applied \(V\)). So
+
+
+                                <p>\(\qquad V= \dfrac{Q}{C}
+
+                                    \)<equationDetail>Here capacitor charge increases infinitesimal steps such that in all points it produces negligible electrostatic fields on itself. Consequently the electrostatic repulsion force \(F=\dfrac{dU}{dq} \rightarrow 0\) become so small.</equationDetail></p>
+
+
+
+
+                                <p>\(W=
+                                    \displaystyle\int_0^Q{V\,dq}\)
+
+
+
+                                <p>\(\qquad
+                                    =\dfrac{Q^2}{2C} = \frac{1}{2}CV^2=
+                                    \frac{1}{2}QV
+                                \)
+
+
+
+                                <p>Hence all general expression for stored
+                                    energy discussed
+                                    previously are consistent in the same setup, </p>
+                                <p class="text-law text-center">\(\qquad U= \dfrac{1}{2} CV^2\)
+
+                                </p>
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Electrostatic potential energy
+                                        density</strong></h5>
+
+
+
+
+                                <p>Let
+                                    \(u\) be electrostatic
+                                    energy per unit
+                                    volume, also called
+                                    <strong>electrostatic potential
+                                        energy
+                                        density</strong></p>
+                                <h5 class="text-muted mt-4"><strong>Formula and justification for parallel plate
+                                        capacitors</strong></h5>
+
+
+                                <p>\(u=\displaystyle \lim_{\Delta vol \to 0}
+                                    \dfrac{\Delta U}{\Delta
+                                    vol}\)</p>
+
+
+                                <p>Also, \(\displaystyle \Delta U=\frac{1}{2}\Delta C
+                                    \,
+                                    V^2\), \(V=Ed\)
+                                    and \(C=\frac{A \epsilon_0}{d}\).
+
+                                    Considering infinitesimal height volume across
+                                    conducting plate
+                                    \(\Delta vol=Ad\).
+
+
+
+
+                                <p> \(
+                                    \Delta
+                                    U=\frac{1}{2}\left(\dfrac{A \epsilon_0 }{d}\right)E^2 d^2=\frac{1}{2} \epsilon_0
+                                    E^2
+                                    (Ad)
+                                    \)
+
+
+                                    </p>
+
+                                <p>Therefore energy density between the plates is,
+
+
+
+                                <p> \(\qquad
+                                    u= \frac{\frac{1}{2}\epsilon_0 E^2
+                                    \Delta vol}{\Delta vol} =\frac{1}{2} \epsilon_0
+                                    E^2
+                                \)<equationDetail>[which becomes constant over time at each position.]</equationDetail></p>
+
+                                <h5 class="text-muted mt-4"><strong>Total energy in small volume</strong></h5>
+
+
+
+                                <p>\(\displaystyle
+                                    dU= u \,dV=
+                                    \frac{1}{2}
+                                    \epsilon_0
+                                    E^2\, dV
+                                \)<equationDetail>[For a sufficiently small region of space dV where
+                                        E can be regarded as approximately constant]</equationDetail>
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Total energy in any volume with uniform or
+                                        non-uniform electric
+                                        field</strong></h5>
+
+
+                                <p>\(\displaystyle U=\int
+                                    \frac{1}{2} \epsilon_0 E^2
+                                    dV
+                                \)
+
+
+                                    Here for non uniform regions \( dU = \frac{1}{2}\epsilon_0
+                                    E^2
+                                    dV
+                                \)<equationDetail>[Here integral must span all regions of electric field if continuous
+                                    over the charged regions.
+                                        If electric
+                                    fields vanishes abruptly like at conductors, consider
+                                    boundary with an additional volume of negligible dimensions.]
+                                </equationDetail>
+                                </p>
+                                <h5 class="text-muted mt-4"><strong>Self-energy of charged systems</strong></h5>
+
+
+                                <p>For the charges accumulating
+                                    in
+                                    such an isolated conductor there is always
+                                    electrostatic repulsions among themselves resulting in generating a repulsion force
+                                    \(f=dq \times E_\text{self}\). Here
+                                    we try to derive expression by taking sum of each infinitesimally charged components.
+
+
+                                <p>For example when \( n \) such point
+                                    charges exists then self
+                                    energy = the work done in assembling
+                                    those
+                                    charges starting initially each charge
+                                    elements infinitely separated. </p>
+
+
+
+                                <p>
+
+                                    \(
+                                    U_{self}=\displaystyle\frac{1}{2}\sum_{i=1}^{n} Q_i V_i(i)
+                                    \)</p>
+
+
+
+
+                                <p>This represents
+                                    work done in assembling
+                                    these charges where potential energy can be written for different type
+                                    of
+                                    charge
+                                    configurations.</p>
+
+
+                                <p>
+                                    Self energy of continous charged systems, where potential and energy elements are
+                                    infinitesimal:
+
+
+                                <p>\(\qquad \displaystyle
+                                    dU_{\text{self}} = V \,dq = V \lambda dl = V \sigma
+                                    \,
+                                    dA =
+                                    V \rho
+                                    \,
+                                    dV
+                                    \)
+                                </p>
+
+
+
+
+
+                                <p>and
+
+
+
+                                <p>\( \qquad \displaystyle
+                                    U_{\text{self}}
+                                    = \int dU_{self}=\frac{1}{2} \int { V \, dq } \)<equationDetail>[$dq=\lambda
+                                            dl$ for linear charge system, $dq = \sigma \, dA$ for planar charge,
+                                    $dq=\rho \, dV$ for объемно распределенного заряда
+                                ]</equationDetail>
+                                </p>
+
+
+                                <h5 class="text-muted mt-4"><strong>Charged spherical conductor</strong></h5>
+
+
+
+
+
+                                <p>\(U= \frac{1}{2}\dfrac{q^2}{4 \pi \epsilon_0R}\)<equationDetail>where charge density
+                                    \(q =4\pi \sigma \, r^2\)</equationDetail></p>
+
+                                <h5 class="text-muted mt-4"><strong>Charged spherical insulator</strong></h5>
+                                <p>\(\displaystyle U= \int_{\text{Volume}}
+                                    u\, dV=\frac{q^2}{8 \pi \epsilon_0
+                                    R}
+                                \)<equationDetail>Here, energy calculated taking contributions across the entire volume
+                                ]</equationDetail>
+                                </p>
+
+
+
+
+                                <h5 class="text-muted mt-4"><strong>Relation of self and interaction
+                                        energy </strong></h5>
+
+                                        <p>
+                                            For a system of charged particles, the total electrostatic potential energy can
+                                            be
+                                            decomposed
+                                            into two parts:
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><b>Self-energy:</b>
+                                                This
+                                                is
+                                                the
+                                                energy associated with
+                                                assembling
+                                                each individual
+                                                charge distribution, assuming other charges are absent.
+                                            </li>
+                                            <li class="list-group-item"><b>Interaction
+                                                    energy:</b>
+                                                This is the energy
+                                                due to the interactions between the charge distributions.
+                                            </li>
+        
+                                        </ul>
+        
+                                        <p>Mathematically, for a system with two
+                                            charge
+                                            distributions:</p>
+        
+        
+                                        <p class="text-center text-law">\(\qquad
+                                            U_{\text{total}} = U_{\text{self,1}}
+                                            +
+                                            U_{\text{self,2}} + U_{\text{interaction}}
+                                        \)</p>
+        
+        
+        
+        
+        
+                                        <p><b>For Example:</b> If a system consists
+                                            of
+                                            two charged
+                                            conductors with charges \( q_1\) and \(q_2\), the interaction
+                                            energy \(U_{int}\) between them is defined as:
+        
+                                        </p>
+                                        <p>\(\qquad U_{int}= \frac{1}{2}(q_1 V_{21}
+                                            + q_2 V_{12})\)</p>
+        
+                                        <p>where \(V_{21} \text{ and }
+                                            V_{12}\) is the potential on the charges present on the \(1^{st}\) conductor due to
+                                            charge present
+                                            on the second and potential at the charges present on the \(2^{nd}\)
+                                            conductor
+                                            due to first. Because
+                                            Newton's third law also works
+                                            in electrostatics too.
+        
+                                            \(V_{21} \propto \)
+                                            charge present
+                                            on second\(= q_2 \) and \( V_{12}
+                                            \propto
+                                            \) charge on
+                                            first \(= q_1
+                                            \)
+                                        </p>
+        
+        
+        
+        
+        
+                                        <p>Hence \(q_1 V_{21} = q_2
+                                            V_{12}\)</p>
+        
+        
+        
+                                        <p>So \(\qquad \displaystyle
+                                            U_\text{int} =
+                                            q_1 V_{21} =q_2 V_{12}\)</p>
+        
+        
+        
+                                        <h5 class="text-muted mt-4"><strong>Spherical capacitor</strong></h5>
+        
+                                        <p>
+                                            A spherical capacitor comprises
+                                            of two concentric spherical
+                                            conducting shells with radii
+                                            \( a\) (inner shell) and
+                                            \( b\)
+                                            (outer
+                                            shell)
+                                            respectively, separated by a dielectric. When
+                                            charged,
+                                            these
+                                            shells
+                                            develop
+                                            equal
+                                            and opposite charges (\(+Q \) on the
+                                            inner sphere, and
+                                            \(-Q\)
+                                            on the
+                                            outer sphere), similar
+                                            to parallel
+                                            plate capacitor design.
+                                        </p>
+        
+                                        <h5 class="text-muted mt-4"><strong>Capacitance</strong></h5>
+                                        <p>Electric field\( (E)\) due to central spherical conductor of charge \(Q\):</p>
+        
+        
+        
+                                        <p>\(\qquad\displaystyle
+                                            E= \dfrac{1}{4\pi \epsilon_0}
+                                            \dfrac{Q}{r^2}
+        
+                                        \)<equationDetail>Here \(r \in [a,b]\).</equationDetail></p>
+        
+        
+                                        <p>\( V =
+        
+                                            \displaystyle \int E\,dr=\int_{a}^b\dfrac{1}{4\pi \epsilon} \dfrac{q}{r^2}\, dr
+                                        \) </p>
+        
+        
+        
+        
+        
+        
+                                        <p>\(\displaystyle
+        
+                                            =\frac{q}{4\pi \epsilon}\left(\dfrac{1}{a}- \dfrac{1}{b}\right)\)
+                                        </p>
+        
+        
+        
+                                        <p>Hence \(
+        
+                                            \displaystyle C=\dfrac{q}{V}=\frac{4 \pi \epsilon ab}{b-a}
+        
+                                        \)</p>
+        
+                                        <p>[Diagram/gif for Electric fields and voltage calculation across the spherical
+                                            capacitor plates.]
+        
+        
+                                        </p>
+        
+                                        <h5 class="text-muted mt-4"><strong>Energy stored</strong></h5>
+        
+        
+        
+        
+                                        <p>
+                                            <b>Region where energy is stored:</b> As seen in case of parallel plates. For any
+                                            charged system
+                                            having stored
+                                            energy across the system due to its internal configuration termed
+                                            as its electrostatic
+                                            potential energy which represents all kinds of energies present across that regions
+                                            including repulsions/interactions with different
+                                            plates and work done etc., for its calculation considering charging a
+                                            fully
+                                            uncharged capacitor gradually so \(dW\propto dq\) (here we have
+                                            assumed electrostatic field due to \({dq} \rightarrow 0\) very less for each steps).
+        
+        
+        
+                                            All of it results into \(\dfrac{dq}{C}\). So stored
+                                            energy here can be reinterpreted as the
+                                            total
+                                            work required in its forming process from beginning with different charge elements.
+        
+                                        </p>
+        
+        
+        
+        
+                                        <p>Following example gives more insights into stored energy and work
+                                            done
+                                            calculations
+                                        </p>
+        
+                                        <h5 class="text-muted mt-4"><strong>Using energy density and work done in
+                                                charging</strong></h5>
+        
+                                        <p>Stored Energy =
+        
+        
+                                        <p>\(
+                                            \frac{q^2}{2C}=\frac{1}{2}QV=\frac{1}{2}CV^2 \)</p>
+        
+        
+        
+        
+                                        <p>Now to
+                                            obtain \(E\), using Gauss's
+                                            Law and assuming a
+                                            spherical
+                                            Gaussian
+                                            surface:
+        
+        
+                                            <p>\(\qquad
+                                                \displaystyle\Phi_{closed} = \oint
+                                                \vec{E}. \mathrm{d}s
+                                                =\dfrac{Q}{\epsilon}
+                                            \)
+        
+        
+                                        </p>
+                                        <p>So
+        
+        
+        
+        
+                                        <p>
+                                            \(\qquad \vec{E}\).(\(\displaystyle 4\pi r^2)=\frac{Q}{\epsilon_0}
+                                            \)<equationDetail>[E field lines normal and \(E=consant\).]</equationDetail>
+                                        </p>
+        
+        
+        
+        
+        
+        
+                                        <p>therefore,
+        
+        
+        
+        
+        
+                                        <p>\(
+                                            \qquad \vec{E}= \dfrac{1}{4\pi \epsilon_0} \frac{Q}{r^2} \hat{r}
+        
+        
+                                        \)
+        
+        
+                                            <p>[Diagram/animation showing solid angle, gaussian surface and electric fields for
+                                                different positions with respect to charge location]</p>
+        
+        
+        
+        
+                                            Also potential on
+                                            sphere:</p>
+                                        <p>\(
+                                            \displaystyle\int_{\text{conductor edge to charge}} E\,dr
+        
+                                        \)</p>
+        
+        
+                                        <p>Since E at \(< a = 0 \text{ or } \geq b
+                                            =
+                                            0\)
+                                        </p>
+        
+        
+        
+        
+                                        <p>\( \displaystyle
+                                            \int_a^b {E dr =} \frac{1}{4\pi
+                                            \epsilon_0}
+                                            q \frac{1}{r} \Bigr|_a^b\)<equationDetail>[\(a<= r <=b\) the required region for
+                                            electrostatic energy storage. Inside \(a \text{ and }  \geq b\), \(\vec{E}
+                                                =
+                                                0\) thus integration also
+                                            vanishes outside \(a<=r<= b\) because we seek field
+                                            lines starting at surface to near that vicinity as defined previously using integral
+                                        ]</equationDetail></p>
+        
+        
+        
+        
+        
+                                        <p>\(\displaystyle
+        
+                                            =\frac{1}{4 \pi \epsilon_0} q \left(\dfrac{1}{a}-
+                                            \frac{1}{b}\right)\)
+                                        </p>
+        
+        
+        
+                                        <p>Therefore \(\displaystyle
+                                            C=\frac{q}{V}=\frac{4 \pi \epsilon ab}{b-a}\)</p>
+        
+        
+                                        <p>Now
+                                            stored
+                                            energy:
+        
+        
+        
+                                            </p>
+        
+        
+        
+                                            <p>\(\qquad
+                                                \displaystyle
+                                                u
+                                                =\dfrac{U}{\Delta
+                                                vol}
+                                            \)
+                                        </p>
+        
+        
+                                        <p>\(\qquad
+        
+                                            \displaystyle =\frac{1}{2} \frac{\epsilon}{A}E^2 d
+                                        \)</p>
+        
+        
+        
+        
+        
+        
+                                        <p>\(
+        
+        
+                                            \displaystyle \frac{1}{2} \epsilon E^2
+        
+                                        \)
+        
+        
+        
+        
+                                        </p>
+        
+        
+        
+                                        <p class="mt-3">
+                                            <interaction
+                                                true-response="Yes, the energy is stored in the electric field between the conductors, not on conductors itself."
+                                                false-response="Think carefully! Energy storage in capacitors doesn’t come from charge on conductors, but rather the fields produced in between."
+                                                ansKey="false">
+                                                Does the stored energy depend on the type and configuration of capacitors or on
+                                                charges only?
+        
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    Depends only on charges stored
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    Charges always gets absorbed at surface
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    Depends on types and field produce in region
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </p>
+                                        <h5 class="text-muted mt-4"><strong>Amount of energy stored</strong></h5>
+        
+        
+        
+        
+                                        <p>
+        
+                                            Using Gauss's law
+                                            inside \( r
+                                            < a \) or \(r > b,\ E =
+                                            0 \)</p>
+        
+        
+        
+                                        <p>Total
+                                            energy =
+        
+        
+        
+        
+                                        <p>\(
+        
+        
+                                            \displaystyle U=\int u\,dV =
+                                            \int \frac{1}{2} \epsilon_0E^2
+                                            dV=
+                                            \int_a^b
+                                            {\frac{1}{2}} \epsilon_0 \left(\frac{1}{4\pi\epsilon_0}\frac{Q}{r^2}\right)^2 (4
+                                            \pi r^2
+                                            \, dr) = \frac{Q^2}{8\pi\epsilon_0}
+                                            \int_a^b{\frac{dr}{r^2}}=\frac{q^2(b-a)}{8\pi\epsilon_0ab}=
+                                            \frac{q^2}{2}\frac{1}{C}
+        
+        
+                                        \)</p>
+        
+        
+                                        <h5 class="text-muted mt-4"><strong>Cylindrical capacitor</strong></h5>
+                                        <p>Consider a charged long cylindrical
+                                            capacitor, composed of
+                                            two cylindrical shells with inner radius \( a \)
+                                            and outer radius \(b\). The geometry here, determines
+                                            the
+                                            energy storage
+                                            regions which gets confined between these two conducting region only.
+        
+                                            If uniform surface charge densities of inner conductor = \( +\lambda
+                                            \text{ and outer =}-\lambda \). Considering length is too
+                                            large \(\Rightarrow\ E_{fringing}=0 \). So inside
+                                            \(
+                                            a\),\(E = 0\) because no lines
+                                            cross inner cylinder if no external
+                                            field applied and on outside it must become zero.
+        
+                                        <h5 class="text-muted mt-4"><strong>Capacitance</strong></h5>
+        
+                                        <p>Using Gauss's law on the long infinitely
+                                            cylinders. Let inner radius is \(a\)
+                                            outer is \(b\). If electric
+                                            field \(E= \dfrac{\lambda}{2\pi
+                                            r\epsilon_0}\)
+        
+        
+                                        <p>\(
+                                            \displaystyle
+                                            V=
+                                            \int E\,dr
+                                        \)</p>
+        
+                                        <p>therefore capacitance \(\displaystyle C=
+        
+                                            \frac{q}{V}=\dfrac{2 \pi
+                                            \epsilon
+                                            L}{ \ln({b/a})}\)<equationDetail>[capacitance per unit length =
+        
+                                                \( \displaystyle
+                                                C'
+                                                = \dfrac{C}{L}=
+                                                \dfrac{2\pi
+                                                \epsilon}{ln(b/a)}
+        
+                                        \)]</equationDetail></p>
+        
+        
+                                        <p>where, </p>
+        
+        
+        
+                                        <ul class="list-group list-group-flush">
+        
+        
+                                            <li class="list-group-item">
+        
+                                                \( \displaystyle
+                                                V=
+        
+                                                \frac{Q}{2 \pi
+                                                \epsilon_0 L}
+        
+                                                \ln(\dfrac{b}{a})
+                                                \)</li>
+        
+        
+                                            <li class="list-group-item">\(\displaystyle
+        
+                                                \frac{U}{vol}=\frac{1}{2}\frac{QV}{\pi(b^2-a^2)}=\frac{1}{2}\frac{Q \times Q
+                                                \ln(b/a)}{2\pi\epsilon_0
+                                                L(b^2-a^2)}=\frac{1}{2} \epsilon E^2
+                                            \)<equationDetail>[\(a<r <b
+                                                    \)]</equationDetail></li>
+        
+        
+                                            <li class="list-group-item">
+        
+        
+        
+                                                <p>For two equal and oppositly
+                                                    charged, very
+                                                    long, and cylindrical sheets having equal surface
+                                                    charge densities (\(\sigma=
+                                                    \dfrac{\lambda}{2\pi R}\)). \(E_\text{near}=
+                                                    0\), and
+                                                    field confined between the region:</p>
+        
+        
+        
+        
+                                                <p>\(\displaystyle
+                                                    E =
+                                                    \frac{1}{2\epsilon_0}\times\left(\dfrac{\lambda}{L}\right)\times\frac{1}{r}
+                                                    \)</p>
+        
+        
+        
+        
+                                                <p>[diagram of cylindircal shell, name variables, assume inner has positive outer
+                                                    have negative and show fields between the plates ]
+        
+        
+                                                </p>
+        
+                                            </li>
+        
+        
+                                            <li class="list-group-item">
+                                                Hence \(\displaystyle \int_a^b E\,dr\)
+        
+        
+        
+        
+                                                <p>
+        
+        
+        
+                                                    = \(\dfrac{\lambda
+                                                    \ln(\frac{b}{a})}{2 \pi L}\)
+        
+        
+        
+        
+                                                </p>
+        
+                                            </li>
+        
+        
+                                            <li class="list-group-item">\(\displaystyle
+        
+                                                C=\frac{Q}{V}=
+        
+                                                \frac{q}{ \frac{\lambda ln(\frac{b}{a})}{2
+                                                \pi
+                                                \epsilon_0}}=
+                                                \frac{2\pi
+                                                L\epsilon_0}{\ln(\frac{b}{a})}\)</li>
+        
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-simple-circuits">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#simple-circuits" aria-expanded="false"
+                                        aria-controls="simple-circuits">
+                                        <strong>Section 3: Simple Circuits</strong>
+                                    </button>
+                                </h2>
+                                <div id="simple-circuits" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-simple-circuits" data-bs-parent="#content">
+                                    <div class="accordion-body">
+        
+        
+                                        <h5 class="text-muted mt-4"><strong>Circuits with single capacitor and single
+                                                battery</strong></h5>
+        
+        
+        
+                                        <p>When a
+                                            capacitor with capacitance C
+                                            is connected to a battery of EMF E and internal resistance r through a resistor of
+                                            resistance R with following circuit, charge starts flowing in this loop from +ve
+                                            terminal towards the capacitors and it stores
+                                            charges with
+                                            potential equivalent to E and total charges \( q_{cap}
+                                            \):
+        
+        
+                                            </p>
+        
+                                        <p>[circuit diagram naming variables R,C,r,E ]</p>
+        
+        
+        
+                                        <p>\(\qquad
+                                            C_{\text{eq}}
+                                            =\dfrac{Q}{V}\)
+        
+        
+        
+                                            And
+        
+        
+                                            \(\qquad q = E C
+        
+                                            \)<equationDetail>[in steady
+                                            state]</equationDetail></p>
+        
+        
+        
+        
+        
+                                        <p class="mt-3">
+                                            <interaction
+                                                true-response="Precisely! Charge is pumped until capacitor's potential matches the EMF of the battery in ideal conditions."
+                                                false-response="Consider steady states when both attain equal values and hence potential drop also becomes zero."
+                                                ansKey="true">
+                                                In a circuit containing capacitor connected with the voltage source having emf
+                                                "E" after connecting them charges flows until potential across capacitors "Vc"
+                                                becomes equal to E and in further times they become constan. Is it true or false
+                                                ?
+        
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    Vc = E
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    Vc!=E
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </p>
+        
+        
+        
+                                        <h5 class="text-muted mt-4"><b>Determination of charges</b></h5>
+        
+        
+        
+        
+        
+                                        <p>\(q_{\text{total}} =
+        
+                                            Q= EC
+        
+                                        \)
+        
+                                        </p>
+                                        <h5 class="text-muted mt-4"><b>Work done by battery in charging</b></h5>
+        
+                                        <p>When circuit in closed with switch, charges flow through wires due to voltage
+                                            source from \(0\) potential to \(E\) potential so:</p>
+        
+        
+        
+                                        <p>\(\qquad W_\text{battery}
+        
+                                            =\displaystyle \int_0^{CE}
+                                            dq\times
+                                            V_{\text{emf}}= CE^2= qE
+                                        \)</p>
+        
+        
+        
+                                        <h5 class="text-muted mt-4"><b>Energy stored in capacitors</b></h5>
+        
+        
+                                        <p class="text-center text-law"> \( U_{\text{capacitor}}= \frac{1}{2}C E^2
+        
+                                        \)</p>
+        
+        
+        
+        
+                                        <h5 class="text-muted mt-4"><b>Heat dissipated in circuit</b></h5>
+        
+        
+        
+                                        <p>After closing the
+                                            switch the heat will appear at resisters only since we assume conductors/wires have
+                                            no resistances.:
+        
+                                        <p>[GIF animation/diagram
+                                            showing current flow in closed circuit and hence heating at
+                                            resistor by collision of free electrons]</p>
+        
+        
+                                        </p>
+                                        <p>
+        
+        
+        
+        
+                                        <p> Total Energy Supplied =
+        
+        
+        
+        
+                                        <p> \(\qquad qE=\dfrac{q^2}{C}=CE^2
+        
+                                        \)
+        
+                                        </p>
+                                        <p>
+        
+        
+        
+        
+        
+                                        <p>\( U_\text{capacitor}
+        
+        
+        
+                                        <p>\(
+                                            \qquad
+                                            =
+                                            \frac{1}{2} CE^2
+                                        \)</p>
+        
+        
+        
+                                        <p>\( H_\text{dissipated}=
+        
+                                            Total\ energy
+                                            - U_\text{capacitor}\)
+        
+        
+        
+                                        <p>\(\qquad
+        
+        
+                                            =\frac{1}{2}CE^2
+                                            \)
+        
+        
+        
+        
+                                            </p>
+        
+        
+        
+                                            <h5 class="text-muted mt-4"><b>Series and Parallel
+                                                    Combination</b></h5>
+        
+        
+                                            <p>
+                                                When capacitors are connected either in series
+                                                or in parallel with an external circuit such as resistor or battery and after
+                                                charging
+                                                attained its maximum potential if \(R_{series}\) and \(R_{parallel}\) corresponds
+                                                to equivalent series/parallel resisters
+                                            <p>[\( R_\text{series}\) can be
+                                                determined by calculating all potential differences assuming the voltage drops
+                                                happens sequentially if current through both resistors must be equal.]
+        
+        
+        
+                                                [\( R_\text{parallel}\) can be calculated using principle of equal
+                                                potentials across all resister for its series part]. </p>
+        
+        
+        
+        
+        
+                                            </p>
+        
+        
+        
+        
+        
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Think again! Resistors in series do share a common current"
+                                                    false-response="Exactly right! A key idea for solving circuits with elements connected in series."
+                                                    ansKey="false">
+                                                    In any two resistors connected in series having resistance r1 and r2 if
+                                                    potential drop across it v1 and v2 they don't have common current, only v1 + v2
+                                                    becomes equal. Is this correct ?
+        
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Common Voltage not same
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        common voltage and common current flow same
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        Series Connection doesn't require any constraint of voltage drop on series
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+        
+        
+                                            <h5 class="text-muted mt-4"><b>Formula for equivalent capacitance</b></h5>
+        
+        
+        
+        
+                                            <p>So
+                                                charges, for equivalent parallel connection (in diagram), where voltages must be
+                                                same in steady
+                                                states across
+                                                each capacitor so for parallel capacitor system, \({Q_{\text{parallel, total}}}=Q=
+        
+                                                q_1+ q_2\), so we see
+                                                charge across this parallel connection increases but potential remain
+                                                constants.</p>
+        
+                                            <p>[circuit
+                                                diagram: showing single capacitor equivalent of series capacitors (charge and
+                                                voltage source also named), show similar diagram with parallel
+                                                equivalent] </p>
+        
+                                            <ul class="list-group list-group-flush">
+        
+                                                <li class="list-group-item">\(\qquad q=CV\)</li>
+        
+        
+        
+                                                <li class="list-group-item"> \(\Rightarrow q_1+ q_2 = C_1V+ C_2V =(C_1 +C_2) V
+        
+                                                    \)</li>
+        
+                                            </ul>
+        
+        
+        
+        
+        
+        
+                                            <p>\(\Rightarrow C_{\text{parallel}}V = q_{cap, \ total}
+        
+        
+                                            <p>\( C_\text{eqiv}
+                                                =
+                                                \sum_{i=1} C_i =C_\text{Total}
+        
+                                                \)<equationDetail>which become consistent with our resistance connection formula. If connected in parallel current increses thus current in circuit can become more easily so conductivity
+                                            increases thus conductance decreases leading to decreasing the potential and charge gets redistributed with equal ratio depending on their capacitance value.</equationDetail></p>
+        
+        
+        
+        
+        
+        
+                                            <p>When
+                                                same setup used
+                                                in
+                                                series charge remains constants but
+                                                potential add ups thus:</p>
+                                            <p>
+        
+        
+        
+        
+                                                <p> [gif animation/diagram: showing current charging
+                                                    all connected capacitor sequentially with the given time duration as well]
+        
+        
+                                                </p>
+        
+                                            <p>
+        
+        
+        
+        
+                                            <p>Now for
+                                                series total charge becomes
+                                                constant since no way to diverge, charge must comes with constant current
+                                                if
+                                                at some
+                                                constant time duration no discharging done.</p>
+                                            <p>
+        
+        
+                                            <p>\(
+        
+                                                V_1=q/C_1
+                                                \)
+        
+        
+        
+        
+                                            </p>
+        
+        
+                                            <p>
+        
+        
+        
+                                                \( V_2= q/C_2
+                                                \)<equationDetail>Hence less value means higher potentials at same charges for capacitors having lower capacitance connected
+                                            in series.]
+                                        </equationDetail>
+                                            </p>
+        
+        
+        
+                                            <p>So \(
+                                                V= V_1+
+                                                V_2
+        
+                                                \)<equationDetail>[conservation
+                                                    of potential] </equationDetail>
+        
+                                                Also \(\qquad q_{total}
+                                                = constant
+                                                \text{ (charges becomes common across it)}\)
+        
+        
+                                                So equivalent
+        
+        
+                                                <p> \( C_{\text{equivalent}}=
+                                                    q/\sum_i q/C_i =
+                                                    1/\sum_{i}{1/C_i}
+        
+        
+                                                    \) </p>
+        
+        
+        
+                                                <p class="mt-3">
+                                                    <interaction
+                                                        true-response="Exactly right. Less capacitance means more potential. Parallel means charges split by same ratios thus same potentials and series becomes inverse thus common charges gives sum of reciprocal for capacitance."
+                                                        false-response="Remember: when they add same then they give their ratios directly else reciprocals. For resisters its becomes different since their configuration means something else and they deal with voltage drops and equivalent current distribution."
+                                                        ansKey="true">
+                                                        Here you must observe the formula derivation which becomes completely
+                                                        consistent in the equivalent forms of equations in parallel plate capacitors
+                                                        (where both capacitors directly came by the ratios) and for resisters or
+                                                        conductances (here voltage or currents becomes relevant thus depends upon
+                                                        combination) or other cases where multiple variable comes together and also if
+                                                        one has similar formula with others in some basic circuits of series/parallel
+                                                        connections they have same behaviour as of capacitors ? What would happen with
+                                                        two inductors or impedences ?
+        
+                                                        <response class="badge bg-light text-dark" responseValue="false">
+                                                            They follow other properties of resistances
+                                                        </response>
+        
+                                                        <response class="badge bg-light text-dark" responseValue="false">
+                                                            resisters follow current, capacitors follows charges so
+                                                            they have exactly
+                                                            same equations only their combinations becomes equivalent when parallel or series means reverse
+                                                            in some of those cases only
+                                                        </response>
+                                                        <response class="badge bg-light text-dark" responseValue="true">
+                                                            They behave similarly
+                                                        </response><br>
+                                                        <result>
+                                                        </result>
+                                                    </interaction>
+                                                </p>
+        
+        
+                                                <h5 class="text-muted mt-4"><b>Circuits extending to infinity</b></h5>
+        
+        
+                                                <p>Series and
+                                                    parallel circuits can extend to infinity
+                                                    when all of them configured by making repetitions of a section again and
+                                                    again
+                                                    in an infinite pattern to
+                                                    derive formulas
+                                                    for their equivalent quantities. For example
+                                                    with capacitance, if total equivalent after the first repetitions is same as
+                                                    its first unit
+                                                    then using mathematical consistency their
+                                                    net
+                                                    values after this series/parallel infinite repetition become same as its initial.
+        
+                                                <h5 class="text-muted mt-4"><b>Charge determination on each capacitor</b></h5>
+        
+        
+                                                <p>The general
+                                                    case consists of series of parallel connections forming sections/block. Here
+                                                    by using the same argument charges get split at parallel
+                                                    with direct
+                                                    ratios, thus we conclude
+                                                    charges distributed between blocks as: if block containing charge q'
+                                                    and equivalent
+        
+                                                    \(c'\):
+        
+                                                <p>\(\qquad q=q'/c' \times C_{given}\)<equationDetail>which
+                                                        gets distributed based
+                                                        on charge ratios for each
+                                                        connection. If charge ratio \(\times c \times v=1/2 \epsilon E^2\). ]
+                                                    </equationDetail></p>
+        
+        
+        
+        
+        
+        
+                                                <p>After the charges redistributed as described in [diagram], let
+                                                    total
+                                                    potential =
+        
+                                                    \( V'\):
+        
+        
+        
+        
+                                                <p>\(\qquad
+                                                    Q'=\sum{
+                                                    C_iV}
+        
+                                                \)<equationDetail>[So it can be extended by replacing their circuit connections in
+                                                    multiple
+                                                    stages to obtain individual equivalent values at
+                                                    each regions separately as required.
+                                                    Here all other analysis, related to equivalent voltage/charge
+                                                    calculations performed earlier also valid for
+                                                    extending
+                                                    circuits to infinity provided in both case energy should converge, if not we
+                                                    cannot calculate
+                                                    their
+                                                    exact values.)]</equationDetail>
+                                                </p>
+                                                <p>For a particular value \(\infty\):
+        
+        
+        
+        
+        
+                                                <p>
+        
+        
+        
+        
+                                                    <p>\(\qquad C = c'/2
+        
+        
+                                                    \)<equationDetail>[so at any such block \(<= C_0=c'/2\). At equilibrium when
+                                                        no flow exist, they give equal voltages thus in one repetition no change in
+                                                        both the potential drops, means same q \(\Rightarrow c_n \rightarrow
+                                                        \text{ fixed
+                                                        limit} \) in infinity.]</equationDetail></p>
+        
+        
+        
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Changing connections</b></h5>
+        
+        
+        
+        
+                                                    <p>[Diagram showing various capacitance
+                                                        connected with each other either by capacitor connection only or battery.
+                                                        Numbering all the connections
+                                                        separately. ]
+        
+        
+                                                        So when capacitors in connected state and they have certain charges, here
+                                                        some energy may be
+                                                        stored if potential exists across it as seen previously. Now we can
+                                                        analysed their variations in several categories where their capacitance
+                                                        may change
+                                                        by rearranging its shape or any other external factors or we can analyse
+                                                        energy variation on connecting capacitors and external
+                                                        sources simultaneously
+                                                        through switch operation and see energy/power variations in short amount of
+                                                        time if required (instantaneous cases).
+        
+        
+        
+                                                    </p>
+        
+        
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Circuits with only capacitors</b></h5>
+        
+        
+        
+                                                    <p>[circuit
+                                                        diagram: showing initial isolated charges capacitors on first row with
+                                                        dotted switch shown initially not connected to other plates or other system of
+                                                        capacitors. And now by switching ON it joins/connect these
+                                                        unconnected
+                                                        circuits through wire so charge/current flows in between these dotted
+                                                        connected portions until an equivalent steady states is achieved (as
+                                                        required). For various
+                                                        different cases we analyse it here separately by applying charge conservation
+                                                        principle and finding equivalent resistance of combination if no
+                                                        resisters given.]
+                                                    </p>
+        
+        
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Redistribution of charges and energy</b></h5>
+        
+        
+        
+        
+                                                    <p>\( Q_{\text{initial},\ total}
+        
+                                                        =
+                                                        Q_{i,\
+                                                        sum}=\sum_{capacitors, C}Q_{iniital}\)</p>
+        
+        
+        
+        
+                                                    <p>\(\displaystyle
+                                                        E_\text{initial}=\sum{ \frac{1}{2}} CV^2 =
+        
+                                                        H=\sum_{\text{isolated}}{\dfrac{q_i^2}{2c_i}}
+                                                    \)<equationDetail>assuming charges distributed with certain ratio before connecting them so
+                                                    different isolated connected regions has their own charges thus same current leads to charge flowing inside their bulk conducting material as previously defined. So same material doesn't corresponds to equipotential regions therefore some energy gets lost through generating some heating in that non uniform potential wires if
+                                            connected]. Also now considering at boundaries \(\sigma\)--> surface charge which represents potential differences so in both boundaries \( V = \sigma/\epsilon\) and thus from
+                                        inside and outside \( \vec{E}_\text{conducting}=0\) always as discussed initially and we need
+                                        their surface for \( q_\text{total}= \sigma dA \).]
+                                        </equationDetail> </p>
+        
+        
+        
+        
+        
+        
+                                                    <p>Also, equivalent potential achieved in both of
+                                                        these plates depends on whether total net charges are balanced.</p>
+        
+        
+        
+                                                    <p>So
+                                                        total
+        
+        
+        
+        
+                                                        <p>\( Q =
+        
+                                                            \sum_{\text{individual charges on plates}}{q_i}=
+                                                            cons\tan t
+        
+                                                            \)
+        
+        
+        
+        
+                                                        <p>\(E_f=\sum {\dfrac{Q_f^2}{2c_f}}\)<equationDetail>Since after connecting they comes into
+                                            common potential thus net current through them
+                                        must be zero].
+        
+                                        Now final charge calculation is tedious using simple principles. Using kirchhoff's rules
+        
+                                        </p>
+        
+        
+                                                        <ul class="list-group list-group-flush">
+        
+        
+                                                            <li class="list-group-item">\(\sum_{loop}{\Delta V}
+        
+                                                                =
+                                                                0\)</li>
+        
+        
+                                                            <li class="list-group-item">also
+                                                                at node,\(\sum I_{in}=
+        
+                                                                \sum
+                                                                I_{out}
+                                                            \)<equationDetail>[thus can only
+                                                    works when circuit containing atleast
+                                                    two nodes] </equationDetail></li>
+        
+                                                        </ul>
+        
+        
+                                                        So \( C_{\text{equilvalent},\ parallel}=\sum{C_i}
+                                                        \text{ and
+                                                        series }=
+                                                        \sum {1/C_i}\)
+        
+        
+        
+        
+                                                        <p>After calculating \( C_\text{eq}\). It determines total energy as
+                                                            previously discussed which corresponds to sum of initial stored
+                                                            energy before changing the circuits if total net changes are zero since
+                                                            heat always appears across wire/nonconducting parts after completing circuit
+                                                            from one region to other only.</p>
+        
+        
+        
+        
+                                                        <h5 class="text-muted mt-4"><b>Heat dissipated and energy
+                                                                stored</b></h5>
+        
+        
+        
+        
+        
+                                                        <p>Total heat dissipated
+        
+        
+        
+        
+                                                            <p>\( \qquad
+        
+                                                                =
+        
+                                                                H_{\text{initial, isolated}}
+        
+        
+                                                                -\dfrac{ Q^2}{2
+                                                                C_{eq, Total}}
+        
+        
+                                                            \) </p>
+        
+        
+        
+                                                        <h5 class="text-muted mt-4"><b>Connecting two charged capacitors with
+                                                                same
+                                                                or opposite
+                                                                polarity</b></h5>
+        
+                                                        <p>Connecting a capacitor in
+                                                            series, charge across series element, using concept of charge flow
+        
+                                                            If polarity
+                                                            same in a given parallel or
+                                                            series combination, equivalent potential for both becomes \((
+        
+                                                            q_1+q_2)/(c_1+c_2)\) in
+                                                            parallel combination, because after connection it tries to redistribute
+                                                            the
+                                                            charge to equalize potentials hence for both equivalent charges/potentials.
+        
+                                                        <p>[circuit
+                                                            diagram of connecting with wires and switching for charge flow and
+                                                            capacitor charging or charge
+                                                            redistribution showing opposite charges flow across circuit till
+                                                            potentials become zero across wire.]
+        
+                                                        </p>
+        
+        
+        
+        
+        
+        
+                                                        <p class="mt-3">
+                                                            <interaction
+                                                                true-response="Correct! Total energy dissipation should reduce if connected using the opposite polarities. The reason is obvious. Try making analogy of capacitors using plates at high height for gravitational potential energy. "
+                                                                false-response="Heat or energy loss happens in both the conditions and same amount if charges initially doesn't neutralises some portion of other"
+                                                                ansKey="true">
+                                                                In our above examples and explanations do connecting with opposite
+                                                                polarities of capacitors, leads to less heat dissipation compare to connecting
+                                                                them with same
+                                                                polarity.
+        
+                                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                                    They dissipate same amount in both the cases
+                                                                </response>
+                                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                                    opposite polarities dissipates less heat
+                                                                </response><br>
+                                                                <result>
+                                                                </result>
+                                                            </interaction>
+                                                        </p>
+        
+        
+        
+        
+                                                        <p>So if polarity of
+                                                            two is opposite then for two capacitance total
+                                                            charge=\( (
+        
+                                                            q_1 -q_2)/
+        
+                                                            \sum {c}
+                                                            \)
+                                                        </p>
+        
+        
+        
+        
+        
+        
+                                                        <h5 class="text-muted mt-4"><b>Circuits with capacitors and
+                                                                battery</b></h5>
+        
+        
+        
+        
+                                                        <p>Circuit with capacitors and battery: charge determination
+        
+        
+        
+                                                            Now if battery also present we can
+                                                            modify potential
+                                                            drops
+                                                            according to Kirchoff’s Law: since initially uncharged thus charges increases
+                                                            so
+        
+        
+                                                            <ul class="list-group list-group-flush">
+        
+        
+                                                                <li class="list-group-item">\( \displaystyle V_{total}=\sum {
+                                                                    \frac{Q'}{C}}+Ir\)</li>
+        
+        
+                                                                <li class="list-group-item">
+        
+        
+        
+        
+        
+                                                                    <p>\( I_{\text{in steady state}}= 0
+                                                                    \)<equationDetail>[No charge flow happens]. Hence equivalent diagram</equationDetail></p>
+        
+                                                                </li>
+        
+        
+                                                                <li class="list-group-item">\(\qquad q'=EC
+        
+                                                                    \)<equationDetail>here current starts
+                                                                    flowing once circuit closed and
+                                                                    afterwards reaches
+                                                                    steady
+                                                                    state so it increases charge by taking total sum with equivalent
+        
+                                                                    \( \sum
+                                                                    {\frac{1}{C_i}}=E \frac{c_1c_2\ldots}{c_1+c_2...}\), thus at each stage we can replace block using Kirchhoff law as shown and determine effective resistance.]</equationDetail></li>
+        
+                                                            </ul>
+        
+        
+        
+                                                            <p>For circuit given,
+        
+        
+        
+                                                            <p>\(\qquad q=
+        
+                                                                q'=EC
+                                                                \)
+        
+        
+                                                            <p>[circuit diagram, of series
+                                                                /parallel equivalent connected capacitors where potential
+                                                                /resisters as given and now apply Kirchhoff’s and Ohm's Law at every parts ]</p>
+        
+                                                            <p>If battery also connected
+        
+        
+                                                                charges, we apply voltage
+                                                                drop law (for a given block containing resister, emf): \(\sum {\Delta
+                                                                V=0}\) so across a loop
+                                                                if \(\sum
+                                                                {\frac{q_i}{C_i}}+Ir=E \). And since heat comes into picture when
+                                                                current starts
+                                                                flowing with time at a resister/wire containing resistances (same as
+                                                                electric flux due
+                                                                to non uniform potential fields with given length.). Heat
+                                                                can be represented as :
+        
+        
+        
+                                                                <p>[circuit of both connected simultaneously and now separate equivalent with charges /voltage determination and
+                                                                hence heat analysis at any given position, showing current distribution at nodes for some
+                                                        selected circuit if required ]
+        
+                                                                <h5 class="text-muted mt-4"><b>Variation in charges</b></h5>
+        
+        
+                                                                <p>Since total \(E\):
+        
+                                                                <p> \(
+                                                                    Q'=\sum
+        
+                                                                    C_i V
+        
+                                                                    \) <equationDetail>[So this represents charge flow at every points for varying voltages or potential differences due to connecting conducting
+                                                    wire/battery simultaneously at each stage ] </equationDetail></p>
+        
+        
+        
+                                                                <h5 class="text-muted mt-4"><b>Heat dissipated</b></h5>
+        
+        
+                                                                <p>\(
+        
+        
+                                                                    H_\text{circuit}=\sum
+        
+        
+                                                                    R i^2
+        
+                                                                    t
+                                                                \)</p>
+        
+        
+        
+        
+        
+        
+                                                                <h5 class="text-muted mt-4"><b>Work done by battery</b></h5>
+        
+                                                                <p>Now for battery to get the potential after making
+                                                                    steady states from uncharged, </p>
+        
+        
+        
+                                                                <p>\(W=qE =
+        
+        
+                                                                    C_{equivalent, \ Total}
+                                                                    E^2
+                                                                \)
+        
+        
+                                                                    </p>
+        
+        
+        
+        
+        
+                                                                <h5 class="text-muted mt-4"><b>Changing capacitance</b></h5>
+        
+        
+        
+        
+                                                                <p>[Diagram showing parallel
+                                                                    plates now at different distances and same surface charges and
+                                                                    also apply external
+                                                                    factors by assuming an insulating material inside those connected capacitors to keep charge fixed when increasing the dimensions.]</p>
+        
+        
+        
+        
+        
+                                                                <h5 class="text-muted mt-4"><b>By slowly increasing/decreasing
+                                                                        separation
+                                                                        between
+                                                                        plates</b></h5>
+        
+        
+                                                                <p>By Slowly changing capacitance
+        
+        
+                                                                    here potential becomes relevant with distance of capacitor since now E is getting changed. E: \(
+        
+                                                                    E_\text{between,\ plates}\propto \frac{\text{surface
+                                                                    charge}}{\text{permittivity
+                                                                    and area}}=\sigma/\epsilon\)
+        
+        
+                                                                <p>So using formula:</p>
+                                                                <p>
+        
+        
+                                                                    <p> \(\qquad q_{cap}
+                                                                        =
+                                                                        \frac{Q_{Total}
+                                                                        C}{\sum
+                                                                        C} \)<equationDetail>[equivalent
+        
+                                                            \( E'= E_{\text{ext}}-E_\text{stored capacitor}\).
+        
+                                                         We calculate total changes \( (\Delta
+                                                           E_{\text{total}})
+                                                           \) in electrostatic
+                                                        energy in time
+                                                           t during this slow processes by finding energy in all positions:
+        
+                                                         So now for
+                                                           parallel:
+                                                          total \(E'_{\text{stored}} \in\)
+                                                          \((
+                                                          ( \frac{1}{2}\frac{q'^2}{C})+(dW)\).
+        
+        
+        
+        
+        
+                                                       And series total E \in
+        
+        
+                                                         ((
+        
+                                                          dW )+ ( \(
+                                                          \sum \frac{1}{2}\frac{q'^2}{C'}\))).
+        
+        
+        
+        
+        
+        
+                                                       If Q kept
+                                                           constant \(\Rightarrow
+                                                          \) W: done by
+        
+                                                           externals =
+        
+                                                           total changes in capacitor
+                                                           stored \(E'_{\text{energy}} + H_{\text{gen at r}}\).</p>
+        
+        
+        
+        
+                                                                   </p>
+                                                               <ul class="list-group list-group-flush">
+        
+        
+        
+                                                                <li class="list-group-item">charge flown:\(\qquad
+                                                                    dq=\sigma \, da = \sigma A \) for
+                                                                    conducting plate. Now increasing by an amount
+        
+        
+        
+        
+                                                                    \(\qquad d \) by force
+                                                                    applied \(\vec{F}\):
+        
+        
+        
+        
+                                                                    <p>[GIF of charges now accumulate on smaller regions/same with increasing the distance gradually]
+        
+        
+                                                                    </p>
+        
+                                                                    </li>
+        
+                                                               <ul class="list-group list-group-flush">
+        
+        
+        
+        
+                                                                <li class="list-group-item">
+        
+        
+                                                                    \(\vec{E}=\dfrac{q}{4 \pi
+                                                                    r^2}\hat{r} \text{ and }dV = Ed
+        
+        
+                                                                    \)
+        
+        
+        
+        
+                                                                    <p>\(dq=\sigma \times
+                                                                        \) Area which for
+        
+        
+        
+                                                                        slowly changes we seek \(\displaystyle \int dq =Q
+        
+                                                                        \) after it becomes stationary so heat =\( \int { dq
+                                                                        \frac{ \Delta v}{2}}
+                                                                    \) as before.]
+        
+        
+        
+                                                                    <p><b>heat:</b> generated will be
+                                                                        more if
+                                                                        the change is abrupt else heat becomes negligibly
+                                                                        small \(\propto dr\) or
+                                                                        \(da\) but can generate some \(q'\): some
+        
+                                                                        \( H_{\text{wire,\ small
+                                                                            r}}\) if connected
+        
+        
+        
+                                                                    </p>
+        
+        
+        
+        
+                                                                </li>
+        
+        
+                                                                <li class="list-group-item">Work done by
+                                                                    external agent:</p>
+        
+        
+                                                                <p> \( U =\displaystyle\frac{1}{2}CV^2=\dfrac{Q^2}{2C}\). Here if \(
+        
+                                                                    C_{\text{parallel plate}}=
+        
+                                                                    \frac{ \epsilon_0 A}{x}
+                                                                    \) is decreasing by slowly incresing their separation by
+        
+                                                                    \( dx \Rightarrow dW =
+        
+        
+        
+                                                                    \frac{dU}{dx}= +ve
+                                                                \)
+        
+        
+                                                                    </p>
+        
+        
+        
+        
+                                                                <p> \(\qquad dW \) by
+        
+                                                                    external agent= \(V\,dq=V q'\).
+        
+        
+        
+        
+        
+                                                                    Since battery needs to work against
+                                                                    charges and it
+                                                                    causes energy to appear into field between capacitor only. After
+                                                                    capacitor charges we apply
+                                                                    voltage analysis for steady states using
+        
+        
+                                                                    \(\sum{\Delta v=0}
+        
+                                                                    \)
+                                                                </p>
+        
+        
+                                                                </li>
+        
+                                                               </ul>
+        
+        
+        
+                                                            <p>\( V'= V_{\text{initial,\ Battery}}\) </p>
+        
+        
+                                                                </li>
+        
+                                                               </ul>
+        
+        
+        
+                                                            <h5 class="text-muted mt-4"><b>Short circuiting a
+                                                                    capacitor</b></h5>
+        
+        
+                                                            <p>when two charged capacitor plates becomes joined without any other
+        
+                                                                resistor thus at steady states or near instantaneous time
+        
+                                                                scale charges always comes at equilibrium
+                                                                because this configuration behaves same
+                                                                as wire having same material
+                                                                only when edges connected, they
+        
+                                                                creates current at small vicinity thus equivalent charges comes out with \( \Delta U/ \Delta q
+        
+                                                               \propto\) constant.</p>
+        
+                                                               <p>
+                                                                Here, it is crucial to understand the
+                                                                instantaneous versus the gradual perspective regarding charge and potential changes.
+                                                                In real
+                                                                scenarios, it is quite impractical
+                                                                to have a near ideal short circuit.
+                                                               </p>
+        
+        
+        
+        
+                                                                <p>[GIF/circuit diagram of capacitor charged using battery for different polarity cases
+                                                                    and now show a loop formed across capacitor
+                                                    without resistance which shorts capacitors
+                                                                    almost instantaneously thus now if external sources of charges gets attached at this capacitor terminal almost equal charges becomes stored here with equal potential since at their connection point they must give nearly
+                                                    similar instantaneous value and thus total system will come
+                                                                to equipotential instantaneously thus no field will pass after complete charging obtained ].</p>
+        
+        
+        
+                                                    <p class="mt-3">
+                                                        <interaction
+                                                            true-response="Think again. Heat is generated as some amount energy loss of charge."
+                                                            false-response="Exactly. Since a near ideal short doesn't exists therefore they also dissipates some amount energy even with smaller length for different circuit arrangement using shorting wire or small resistance connected using battery. If voltage remains large then more will be their instantaneous heat in any near perfect short circuit if it takes too much times
+                                                                    to make stable states "
+                                                            ansKey="false">
+                                                            We know that heat will be generate in wire or resistor (having some finite resistances and having potential drop). Does this mean, If current passing through it can be very small like for small change in lengths "dr", its will prevent heat loss completely during those charge flow from the conducting plates ? Can abrupt short leads to infinite
+                                                                    current and large dissipation of energy instantaneously, ?
+        
+                                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                                Heat generation must have negligibly less value when near short circuit happen. Also ideal short cannot create large current at this instant since near uniform
+                                                                charges starts comes instantly hence they prevent it abruptly
+                                                                using back emf if current suddenly increases as discussed previously so battery
+                                                                cannot cause such an effects
+                                                            </response>
+                                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                                Heat cannot reduce only voltage and current becomes more with battery or conducting
+                                                                path connected for even less small values of "dr". Thus heat remains
+                                                                finite value in near instantaneous current increase as described since in reality nothing ideal
+        
+                                                            </response><br>
+                                                            <result>
+                                                            </result>
+                                                        </interaction>
+                                                    </p>
+                                                            <p>[Diagram here, two capacitors of same charges initially at steady states using battery. Apply kirchhoff laws. Total Q remains
+                                                    constant for short circuit when only two plates having two charges only]
+        
+                                                            Also \(\qquad Q_\text{total} \in ( Q_i+
+                                                                    dq
+        
+                                                                    )\) at \(i^{th}\) instance during charge
+                                                    distribution or flow from any selected
+        
+                                                                source, we find charge on given capaciator by finding equivalent capacitance
+                                                                after doing possible combinations,
+                                                                \(\sum{C}=
+        
+                                                                    c/(\sum{1/c}) \Rightarrow\) current
+                                                                starts flowing from cap to capacitor if its at other
+                                                                potential \( V= \sigma/2 \epsilon \times x \times\) distance \( \Rightarrow I = C dv/dt
+                                                                \)</p>
+        
+        
+                                                    <p>Now
+                                                        if \(dq= 0\)
+        
+        
+        
+        
+                                                        <p> \( C =
+                                                            C_\text{eq}=
+                                                            \)
+        
+                                                            Constant </p>
+        
+        
+        
+        
+                                                        <p>so
+        
+        
+                                                        <p> \(
+                                                            dQ_{initial}-dQ_{final}= Q'_{net}
+        
+        
+                                                            =0
+                                                            \) </p>
+        
+        
+                                                            </p>
+        
+        
+        
+                                                        <h5 class="text-muted mt-4"><b>Wheatstone bridge principle</b></h5>
+        
+        
+        
+                                                        <p>We know, Wheatstone Bridge principle only applied for resisters at steady
+                                                            states if total charge across one node at any
+                                                            instance follows \(i_1=
+                                                            i_2\), where
+        
+        
+        
+                                                        <p>\( V_{r1,drop}
+        
+                                                            =
+        
+                                                            \dfrac{r1 \times
+                                                                i}{
+                                                                R_{net,\
+                                                                series}
+                                                                ( \text{or parallel})}
+        
+        
+                                                        \)<equationDetail>and it holds with capacitance as
+        
+                                                            well, but now for capacitance this formula not
+        
+                                                            used since it deals
+                                                            with steady states if some voltage remains
+        
+        
+                                                        constant.\(\sum {\Delta
+                                                            V=
+        
+                                                            V_{loop}\)}\) across that loop of Wheatstone</equationDetail>
+        
+        
+        
+                                                            [Here to obtain a loop at some branch in
+                                                            the loop which have net charge=0 when circuit in equilibrium(only in case
+                                                            of no external voltage sources).]. Hence voltage across such closed loop remains the
+                                                    same and also charges]. </p>
+        
+        
+        
+                                                        </p>
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Finding equivalent
+                                                            capacitance</b></h5>
+        
+        
+                                                    <p>Now for capacitors
+                                                        finding \( C_{\text{equi}}
+        
+                                                        \)<equationDetail>we determine common potentials using formula where charges at
+        
+                                                            junction add ups.
+                                                          Total q ( \(\Rightarrow I=q'/t' \) ).
+                                                         Current flowing through both resisters
+        
+        
+                                                         Since in Wheatstone configuration only currents across a wire is used
+                                                        . </equationDetail></p>
+        
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Finding charges</b></h5>
+        
+        
+        
+        
+                                                    <p>\(
+                                                        q=\sum{c \times \frac{V}{x}\frac{y}{z+y} }, \ \ Q_{\text{at one node},\ i}
+        
+        
+                                                        = q'_1+ q'_2+ q'_3= \sum_{loop} {\oint I}+ \sum
+                                                        I \delta(x-x')
+        
+        
+        
+                                                    \)<equationDetail> [Here again kirchhoff charge conservation
+                                                    applied].
+                                                    Also by breaking into small units or nodes \(I_n=\frac{dq_i}{dt} =cons\). If initially
+                                                    voltage also connected then \(\frac{dq}{dt}=V_c C\) after some finite interval when current=0 and
+        
+                                                    \( V_{\text{node}}=V_{initial \ source,\ capacitor plates potential, i}=
+                                                \) constant.]</equationDetail></p>
+        
+        
+        
+        
+        
+        
+                                                    <h5 class="text-muted mt-4"><b>Changing connections</b></h5>
+        
+        
+        
+        
+                                                    <p>Changing connection leads
+                                                        to abrupt changes,
+                                                        which we can
+                                                        modify
+        
+                                                        current through
+        
+                                                        \(\displaystyle I=
+                                                        \frac{dq}{dt}=C \frac{dV}{dt}= C d(\ sigma x / 2 \epsilon)/dt= c\sigma
+                                                        v'/ 2\epsilon
+        
+        
+                                                        \)<equationDetail>[ \(\vec{E}_{parallel \ plate, in}=
+        
+        
+                                                            \sigma/
+                                                            \epsilon\hat{k}
+                                                        \) which can also derived
+                                                        from
+        
+                                                        flux concept previously \(\frac{\sum{C}}{Q_{loop}}=\text{cons}\).
+        
+                                                    Since here net
+                                                           charges flow towards the Wheatstone
+                                                           section only, where heat generate in that regions due to charge
+        
+                                                           fluctuations \(\Delta
+                                                           U/\Delta q= H
+                                                        \)
+        
+                                                    if they doesn't dissipates any energy towards its nearby components/boundary since
+                                                           work
+        
+                                                            done by external for slowly process,
+        
+        
+                                                          dW =
+                                                           \(
+                                                          F \cdot dx =Q\Delta V, \ \ H
+        
+                                                            \in {R_\text{equi
+                                                        } I} \)]
+                                                    </equationDetail></p>
+                                        </div>
+                                     </div>
+        
+                                 </div>
+        
+        
+        
+                                 <div class="accordion-item">
+                                     <h2 class="accordion-header" id="heading-Dielectrics">
+                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                             data-bs-target="#Dielectrics" aria-expanded="false" aria-controls="Dielectrics">
+                                             <strong>Section 4: Dielectrics</strong>
+                                         </button>
+                                     </h2>
+                                     <div id="Dielectrics" class="accordion-collapse collapse"
+                                         aria-labelledby="heading-Dielectrics" data-bs-parent="#content">
+                                         <div class="accordion-body">
+                                             <h5 class="text-muted mt-4"><b>Introduction</b></h5>
+        
+        
+        
+                                             <p>
+                                                 <b>Definition:</b> A dielectric material acts
+                                                 as
+                                                 an insulator, ideally preventing the flow of charges
+                                                 . In an electric field,
+                                                 it can become
+                                                 polarized (meaning
+                                                 positive and negative
+                                                 charges align themselves to produce local fields thereby opposing initial applied
+                                                E), modifying its intensity significantly. They affect the energy storage in different ways by affecting stored energy through decreasing effective flux at that location and in capacitor it behaves same in between the
+                                            plates for
+                                                constant q/V thus increasing their Capacitance value.</p>
+        
+                                             <p>[GIF: effect on dielectric under E
+                                                 :
+                                                atoms allign as if becomes charge aligned bars thus their intensity becomes
+        
+                                                 \( \sum E\).]
+        
+                                             </p>
+        
+        
+        
+        
+                                             <h5 class="text-muted mt-4"><b>Effect on placement between two charges</b></h5>
+        
+        
+        
+                                             <p><b>Amount of induced charge on
+                                                     dielectric surface</b>
+                                                Placing dielectrics, reduces repulsion forces by factors called \(K\) as follows.
+                                                 Consider charges separated with distances initially. Put a insulator it increases
+                                                 charge by \(q'=\pm \sum {
+                                                \text{induced charges}}\).
+        
+        
+        
+        
+        
+                                             <p class="text-center text-law">\(\displaystyle
+        
+                                                F=\dfrac{q_1
+                                                    q_2}{4
+                                                    \pi
+                                                    \epsilon
+                                                    r^2}\)</p>
+        
+        
+        
+        
+                                            <p>\( \Rightarrow F'=
+        
+        
+                                                F/K
+                                             \)<equationDetail>[Where k termed
+                                                    as
+        
+                                                <b>relative
+                                                    permittivity of
+                                                medium</b>]</equationDetail></p>
+        
+        
+        
+                                            <p class="mt-3">
+                                                <interaction
+                                                    true-response="Precisely. Permittivity varies between mediums with higher values indicating less forces due to stored energy near charges"
+                                                    false-response="Not exactly.  Its shows effects through reducing effective \(E\) across charges if we calculate by summing over those regions occupied by insulator"
+                                                    ansKey="true">
+                                                    Dielectric doesn’t directly changes force, rather through replacing permittivity term. It simply alters repulsion force using factor \(<=1\). Do they follows that effective "E" always depends on its medium with high values corresponds to reducing effective applied E due to induction of electric fields on placed insulator as before? Can we calculate using Gauss law or through determining changes
+                                                    in potentials between charges ?
+        
+        
+        
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        E across a capacitor charges at constant q remains the same irrespective
+                                                        of medium in
+                                                        between those plates so relative permeability have different explanation here
+        
+        
+        
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Its not only reduces repulsion through replacing constant, instead due to formation
+                                                        of localised fields caused by these inducted charges leads to same effective fields of different
+                                                        types to justify why permeability behaves as seen when charges placed between insulated
+        
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
+        
+        
+        
+        
+                                            <h5 class="text-muted mt-4"><b>Effects of Dielectric in Capacitors</b></h5>
+                                            <p>Dielectrics change properties by creating fields on surface charge distribution
+                                                thus charge on the capacitors in different forms :</p>
+        
+        
+                                            <p class="text-center text-law"><b>charge (q): </b>
+        
+                                                q'=Q'=\( KC_{isolated} V'=
+                                                KC_{\text{isolated,\ Vacuum}}
+                                                V_{\text{source,\ vacuum}}\)</p>
+        
+                                            <p> [diagram showing effect of putting Dielectrics over its
+                                                edges]</p>
+        
+        
+        
+                                            <h5 class="text-muted mt-4"><b>Formula modifications for :</b></h5>
+        
+        
+                                            <p class="text-center text-law">
+                                                capacitance \(C'\) \(=\) \(\frac{\epsilon'}{\epsilon} \)
+                                                \(
+                                                C = KC\), if \(C=
+        
+        
+                                                C_\text{vacuum}=\epsilon_0 A/d
+                                                \)
+        
+        
+        
+                                            </p>
+        
+                                            <p class="text-center text-law">induced charge
+                                                on the
+                                                capacitor plates</p>
+        
+                                                
+                                            <p>\( q'_{induced}= \sum q_i=+ve, -ve=\int {\sigma(i) da(i)}\) where
+        
+        
+                                                charges produces fields
+        
+        
+        
+                                                <p>\(E_{q'(at\ i)}=
+        
+        
+        
+        
+                                                    q'(i)/(
+        
+        
+                                                    4\pi
+        
+        
+                                                    r(i)^2)
+                                                \)
+        
+        
+        
+        
+                                            <p>[diagram showing charge, potentials across such insulator with charges. Sum these infinitesimal elements assuming total contribution leads to Q]
+                                            </p>
+        
+                                                
+                                             </p>
+        
+        
+        
+        
+        
+                                                Electric field (E):
+        
+        
+                                                </p>
+        
+                                           <p class="text-center text-law">inside:\(\quad
+                                               E=\frac{
+                                                V}{d} \)  </p>
+                                             
+                                                <p class="text-center text-law">
+                                                outside=0: \(\ E_{\text{isolated plate}}=0,
+        
+                                                    \
+                                                    \sigma \text{ same}.
+                                            \)
+                                             
+                                            <p>[Diagram for charge densities and fields near insulator on different positions after placing it]</p>
+                                               
+                                                Isolated capacitors: if connected using external sources to capacitor having certain stored charges now if after completely charging done their stored q \(\propto Q'\times C \times \) material
+                                            property which remains same only their induced \(
+                                               \sigma_{\text{edge and medium,\ polarized,\ d}}\propto dV'\propto E_{additional},
+        
+        
+                                                dV\): depends on \(+/-
+        
+                                               \) charge density on its vicinity where insulator atoms present]. So heat generated
+                                                if \(\Delta E/
+        
+        
+                                               \) charge ratio exists or resistance present else all work done against those localised induced charges (
+        
+        
+                                               E_{polarize}) must become equal and stored energy
+                                             
+                                            <p>[circuit with switch on/off in isolated charged systems by putting or removing insulated region.] </p>
+                                            </p>
+        
+        
+                                           <p class="text-center text-law">charges remain
+                                            the
+                                                same=initial capacitor charge </p>
+                                          
+                                               <p class="text-center text-law">
+        
+                                                <b> potential (V) </b> reduces = \( V/K
+                                               \)</p>
+        
+        
+                                                <p class="text-center text-law">electric field = potential between plate per unit distance =\(
+        
+                                                \frac{V_{source,\ if \ given}}{Kd} \)</p>
+        
+                                              <p class="text-center text-law">energy stored:
+                                            <p> \(U'=U_{\text{source}, applied\ at \
+                                                    c,\ i}/k\)<equationDetail> If charged through any conducting wires using battery and now connected. 
+        
+        
+        
+                                                    After doing a loop for series or single capacitors system, total
+        
+        
+        
+                                                   \(\qquad\Delta V\)=E so charges distributed according to ratios
+                                                    if some small resistor part r present in its path, some heat will
+                                                    generate in it. If only capacitors then stored energy can be determine directly through
+        
+        
+        
+        
+                                                   \(\sum
+        
+        
+                                                       C'
+                                                       E_i \frac{Q}{x}
+                                                  \), here Q changes abruptly if potential increased thus here some
+                                                       current I= \(\Delta
+        
+        
+                                                    Q \)/dt ]</equationDetail> </p>
+                                                   
+        
+        
+                                              
+                                                 </p>
+        
+        
+        
+        
+                                                <h5 class="text-muted mt-4"><b>work done by agent in placing
+                                                        dielectric:</b></h5>
+        
+        
+        
+                                                <p>Since for a closed system in equilibrium total work =
+                                            0 always for different arrangements
+        
+                                                we found for
+        
+                                                   parallel plate connected system \(\Delta U/
+        
+        
+                                                    \Delta\)q proportional to fixed number which doesn't
+        
+                                                    changes. </p>
+        
+                                               <p>[Diagram
+                                                   showing initially plates have stored \(q\)/energy
+                                                   and now
+                                                    apply insulated components so charge, energy must reduce for steady states by dV/dx.]</p>
+        
+                                               <p>\(\Rightarrow
+                                                dW= dU'=d(\epsilon'/\epsilon V')=+ve
+        
+                                                \)
+        
+        
+                                                    
+                                              </p>
+        
+        
+        
+                                               <h5 class="text-muted mt-4"><b>Force on dielectric:</b></h5>
+                                              <p>The dielectric force may exist depending on whether net charges creates fields over it such that \(\vec{f}=dq(\sum{\vec{E}_\text{isolated}})\) only when force in direction of change and thus stored charges can generate effective F
+                                           </p>
+        
+        
+        
+        
+        
+                                                <h5 class="text-muted mt-4"><b>battery connected
+                                                        capacitors</b></h5>
+        
+        
+        
+        
+                                             <p class="text-center text-law">charges becomes = \(K\times\)charge, when isolated (initial charge without any dielectrics)</p>
+        
+        
+                                                <p class="text-center text-law">potentials remains the same =\(
+                                                    E_{battery}\)</p>
+        
+        
+                                                    <p class="text-center text-law">
+                                                    <b>electric field </b>=E/(permitivity)=reduced</p>
+        
+                                                    <p class="text-center text-law">Energy stored=increases = K times
+                                                        energy stored when isolated and also at some instant some energy will be appear in the electric field after they attained its value </p>
+        
+        
+        
+                                             <p class="text-center text-law">Work done by agent in placing
+                                                 dielectric
+                                                 [Similar analysis used when some parts changes due to dielectric now current=I starts flows across circuit to again attain equilibrium state after capacitor fully charged once, it increases further its equivalent by increasing K thus less potential
+                                                \( V'=E_\text{battery,\ fixed}/K=
+        
+                                                    E'\) as previously defined so here dU (+ve)
+                                                   thus +dW external].</p>
+                                               
+                                            <p>Also when some external agent placed these insulator in or between these conducting charged system here now if insulator polarized their charges creates electric fields therefore we need some amount of force \(dF'=dq(i) \times E'_{induced}(i)\), for that.</p>
+        
+                                             
+                                                    [Here
+                                                    external W required due to this abrupt charge variations once its connected, \(\Delta U=\sum{1/2
+        
+        
+                                                    C E^2+dq(dV)}, \ H_\text{gen}= W_\text{bat,\ initial} - (
+        
+        
+                                                   \sum U_\text{initial)+dq(dv})\).
+        
+        
+        
+                                                 <p>dW by External agents:</p>
+        
+        
+                                                 <p>\( dq' dv \propto\) dW' = change in U where
+        
+        
+        
+        
+                                                <p>\(\qquad q'_{ind} \) can vary</p>
+        
+        
+        
+        
+        
+        
+                                                <p>so
+        
+        
+        
+                                                <p>\(
+        
+        
+        
+        
+                                                    H'
+                                                    \)= energy change after attain equilibrium when potential difference gets fixed after rearranging.
+        
+        
+                                                   
+        
+                                                
+                                                
+        
+                                                    For an infinitely large conducting plane:</p>
+        
+        
+        
+                                                    <p>\(\qquad E'=\sigma/K
+        
+                                                    \) [where electric field is
+        
+                                                       determined from Gauss's Law, E: field perpendicular to gaussian surfaces. After connecting
+                                                      \( +q
+        
+        
+                                                       \) at \( \text{S1}\)
+        
+        
+        
+                                                       surface with other \( q
+        
+        
+                                                      \text{
+                                                       at s2}\) through dotted
+                                                      portion as before].
+                                                    </p>
+                                                </p>
+                                                </p>
+        
+        
+        
+        
+                                                
+                                              
+        
+                                                    [circuit: of placing slowly in an instant show dU across it when capacitor starts charging to full using external agency.]
+        
+        
+                                              
+        
+        
+                                                <p>\(
+                                                    dW_{\text{external agency placed it between
+                                                    conducting system)}= \text{d}(U_f -U_i )+H \propto dt + dx(i),da(i),...
+        
+                                                \)<equationDetail>[assuming work is only
+                                                        performed at each small position of changing variables \(
+        
+                                                         dV=\Delta \sigma/\Delta \epsilon\) for an insulated polarized material present near plate
+        
+                                                    conducting plates
+        
+                                                    If dW=0 \(\Rightarrow \) charge on the plates remains
+                                                    the same, potential energy stored becomes \(
+        
+                                                        E'\sum{ c_{insulated\ by\ insulator}} \)= constant.
+                                                    Also after putting
+                                                   capacitance energy becomes \(KC\) at steady
+                                                   state \(\Rightarrow
+        
+                                                    q/V'
+                                                  \).]
+        
+                                                 </equationDetail></p>
+        
+        
+        
+        
+        
+        
+                                                <h5 class="text-muted mt-4"><b>Effects in circuits in removal/insertion of
+                                                        dielectric</b></h5>
+        
+        
+        
+        
+                                              <p class="text-center text-law">capacitance (c):  \( KC_{\text{isolated,without}}\) if in between and
+                                              <p class="text-center text-law">charges also increases \(\Rightarrow q_{\text{net \ final}}= q_{\text{at \ one plate \ without}}\)</p>
+        
+        
+        
+        
+                                              <p class="text-center text-law">Potential Difference(V) and
+                                                    <b>heat (h):</b> </p>
+        
+        
+                                                <p>
+                                                    we found after placing or removing insulator \(E_\text{polarization, net across insulated components
+                                                present}
+        
+                                                \) also produces effective fields \(\sum_{
+        
+                                                    E}=cons\)
+                                                    when all such system are
+                                                isolated. </p>
+        
+        
+        
+                                              <p>\(
+        
+                                                dH=dq dv\) by
+                                                  ext
+                                                  =
+        
+        
+                                                  Total E transferred - change in capacitance value as seen</p>
+        
+                                               
+                                             
+        
+        
+                                                <p class="text-center text-law">Work Done by external agent (W)
+                                                    and by battery.</p>
+        
+        
+                                             <p>\( W = d(
+        
+        
+                                                1/2 C'
+                                                V'^2)
+        
+                                                \)
+        
+                                                (total final energy if slowly)
+        
+        
+                                                 So initially all battery work appears in heat and capacitor only, W=\(0\) across
+                                                        wires/conducting region unless \( r
+        
+        
+                                                     \in [ \text{wires,
+                                                      \ non \ zero}]\) when short
+        
+        
+                                                    or abrupt changes and we see \(\sum E=\sum
+                                                   {
+        
+        
+        
+        
+                                                    \frac{q_i^2}{c}+W_\text{external
+                                                      source for keeping them\ fixed} } \)] </equationDetail></p>
+        
+        
+        
+        
+        
+                                                
+        
+                                            
+                                               
+        
+                                                <p class="text-center text-law"> Force on dielectric= dq (dV)/dx or total dW(dW' dielectric as before) across material</p>
+        
+        
+        
+        
+                                            
+        
+        
+                                            
+        
+        
+                                        </div>
+                                     </div>
+                                </div>
+        
+        
+        
+                            </div>
+        
+        
+        
+                        </div>
+        
+                        <script src="../00_Assets/lib/progress.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                            crossorigin="anonymous"></script>
+                        <script id="MathJax-script" async
+                            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        </body>
+        
+        </html>

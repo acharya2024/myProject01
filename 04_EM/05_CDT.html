@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | CDT </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Electrostatics of Conductors</h1>
+                    <p class="lead" id="tagline">The special treatment to conductors</p>
+                    <hr class="my-4">
+                </div>
+                <div class="accordion" id="content">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-conductor-properties"> <button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-conductor-properties" aria-expanded="false"
+                                aria-controls="section-conductor-properties"> <strong>Conductor and Properties</strong>
+                            </button> </h2>
+                        <div id="section-conductor-properties" class="accordion-collapse collapse"
+                            aria-labelledby="heading-conductor-properties" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p> Conductors are materials containing mobile charge carriers, such as electrons in
+                                    metals or ions in electrolytes. These charges move in response to electric fields,
+                                    redistributing themselves until electrostatic equilibrium is achieved. Key
+                                    properties of conductors are as follows: </p>
+                                <ul class="list list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary> <strong>Electrostatic Field is Zero Inside a Conductor</strong>
+                                            </summary>
+                                            <p> Imagine a conductor initially placed in a region with no external
+                                                electric field. In this case, the free charges within the
+                                                conductor—typically electrons in metals—are uniformly distributed, and
+                                                there is no electric field inside the conductor. The first diagram
+                                                illustrates this state of equilibrium, where all charges are stationary,
+                                                and no forces act on them. </p> DIAGRAM HERE <p> Now, when an external
+                                                electric field is switched on, the free charges in the conductor respond
+                                                immediately. Electrons move opposite to the direction of the applied
+                                                field, while positive charges (if present, such as in electrolytes)
+                                                shift in the direction of the field. This movement creates a charge
+                                                separation within the conductor, resulting in negative charges
+                                                accumulating on one side and positive charges on the opposite side of
+                                                the conductor. The second diagram depicts this transient state, where
+                                                charges are actively redistributing in response to the applied field.
+                                            </p> DIAGRAM HERE <p> As this redistribution continues, the surface charges
+                                                on the conductor generate their own electric field. This induced field
+                                                opposes the external field within the conductor. The process of charge
+                                                movement and redistribution continues until the induced field completely
+                                                cancels the external field inside the conductor. At this point, the
+                                                electric field within the conductor becomes zero, reaching electrostatic
+                                                equilibrium. The final diagram shows the steady state where the field
+                                                inside the conductor is null, and no further charge movement occurs.
+                                            </p> DIAGRAM HERE <p> Thus we conclude that: </p>
+                                            <p class="text-center text-law"> In a stable electrostatic condition, there
+                                                can be no electric field inside the conductor. </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary> <strong>Constant potential inside the conductor</strong>
+                                            </summary>
+                                            <p> Since the electric field inside the conductor is zero, a test charge can
+                                                be moved from one point to another within the conductor without any work
+                                                being done on it. Thus potential energy of this test charge will remain
+                                                constant during the motion. In terms of potential (potential energy per
+                                                unit charge), this translates to there being no potential difference
+                                                between any two points inside the conductor. Hence, </p>
+                                            <p class="text-center text law"> Every point in the conductor (including its
+                                                surface) is at the same electric potential in electrostatic equilibrium.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary> <strong>No Net Charge Resides in the Interior (Bulk) of a
+                                                    Conductor</strong> </summary>
+                                            <p> The net or excess charge on a conductor always resides entirely on its
+                                                surface. This fundamental property of conductors can be understood
+                                                through both physical intuition and mathematical reasoning. </p>
+                                            <p> Initially, consider a conductor with no external electric field. In this
+                                                state, free charges within the conductor are uniformly distributed,
+                                                ensuring no net charge resides in its bulk. Now imagine introducing
+                                                additional charges to the conductor. These charges immediately
+                                                redistribute themselves. The first diagram illustrates this process,
+                                                showing charges moving within the conductor toward its surface. </p>
+                                            <ul>
+                                                <li> <strong>Physical Intuition:</strong>
+                                                    <p> The redistribution of charges occurs because like charges repel
+                                                        each other. In a conductor, where charges are free to move, they
+                                                        naturally spread out to maximize their distance from one
+                                                        another. The farthest distance they can achieve is by moving to
+                                                        the outer surface of the conductor. </p> DIAGRAM HERE
+                                                </li>
+                                                <li> <strong>Gauss's Law Argument:</strong>
+                                                    <p> To further understand, consider a hypothetical closed Gaussian
+                                                        surface drawn entirely within the conductor's interior. Since
+                                                        the electric field inside a conductor is zero, the electric flux
+                                                        through any elemental surface of this Gaussian surface must also
+                                                        be zero. This leads to total flux also to be zero. </p>
+                                                    <p>Now, according to Gauss's law:</p>
+                                                    <p class="ms-4"> \(\displaystyle \int \vec{E} \cdot \vec{dS} =
+                                                        \dfrac{Q_\text{enclosed}}{\epsilon_0}\) </p>
+                                                    <p> With \(\vec{E} = 0\), the flux is zero, implying the enclosed
+                                                        charge \(Q_\text{enclosed}\) is also zero. This mathematical
+                                                        reasoning confirms that no net charge resides inside the
+                                                        conductor's bulk. Instead, all excess charge lies on the
+                                                        surface. </p>
+                                                </li>
+                                            </ul>
+                                            <p> In summary, </p>
+                                            <p class="text-center text-law"> Excess charge in a conductor resides solely
+                                                on its surface. </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary> <strong>Electric field at the conductor surface is perpendicular
+                                                    (normal) to the surface</strong> </summary>
+                                            <p> In electrostatic equilibrium, the electric field just outside a
+                                                conductor's surface must be perpendicular (normal) to the surface.
+                                                Suppose, for contradiction, there was a component of the field tangent
+                                                to the surface. That tangential component would exert a force on free
+                                                charges along the surface, causing them to move. This would contradict
+                                                the assumption of equilibrium (no net motion of charges). </p> DIAGRAM
+                                            HERE <p> Another viewpoint involves the concept of equal potential: the
+                                                conductor is an equipotential surface. If there was a tangential field
+                                                component, moving a charge along the surface would involve a change in
+                                                potential (since work would be done). But the potential is constant over
+                                                the surface. Thus, the only way to ensure zero work along the surface is
+                                                for the field to point straight out, i.e., be normal to the surface.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary> <strong>Field Just Outside the Surface is \( E =
+                                                    \dfrac{\sigma}{\epsilon_0} \)</strong> </summary>
+                                            <p> The magnitude of the electric field immediately outside a charged
+                                                conductor is directly proportional to the surface charge density \(
+                                                \sigma \) at that point. This can be shown by constructing a small
+                                                "pillbox" Gaussian surface. The pillbox consists of two flat circular
+                                                faces, one just inside the conductor and the other just outside its
+                                                surface, connected by a curved cylindrical side. The radius of the
+                                                cylinder is assumed small to ensure electric field remains constant in
+                                                the region. The setup ensures a clear analysis of the flux
+                                                contributions. </p>
+                                            <p> <strong>Diagram Here:</strong> Assume a diagram showing a charged
+                                                conductor with the pillbox Gaussian surface cutting through its surface.
+                                                The inner face is in the region where the field is zero, and the outer
+                                                face is exposed to the field \( \vec{E} \). The curved surface of the
+                                                pillbox is aligned parallel to the conductor's surface. </p>
+                                            <p> The electric field just outside the surface is perpendicular to the
+                                                surface. The field inside the conductor is zero, as established earlier.
+                                                Consequently: </p>
+                                            <ul>
+                                                <li> <strong>Flux Through the Curved Surface:</strong> The curved side
+                                                    of the pillbox has negligible area, and the field is tangential to
+                                                    this surface. Hence, the flux contribution from the curved surface
+                                                    is zero. </li>
+                                                <li> <strong>Flux Through the Inner Flat Surface:</strong> Since the
+                                                    electric field inside the conductor is zero, the flux through the
+                                                    inner face of the pillbox is also zero. </li>
+                                                <li> <strong>Flux Through the Outer Flat Surface:</strong> The outer
+                                                    face of the pillbox, which is just outside the conductor,
+                                                    contributes the total flux. If the area is \(A\) and the electric
+                                                    field is \(E\), then this flux becomes \(\Phi = E A\). </li>
+                                            </ul>
+                                            <p> From Gauss's law: </p>
+                                            <p> \(\qquad \Phi = \int_S \vec{E} \cdot \vec{dS} =
+                                                \dfrac{q_\text{enclosed}}{\epsilon_0} \) </p>
+                                            <p> \(\Rightarrow\quad E A=\dfrac{\sigma A}{\epsilon_0} \) </p>
+                                            <p> Simplifying, we find:</p>
+                                            <p> \(\qquad E = \dfrac{\sigma}{\epsilon_0}. \) </p>
+                                            <p> Therefore, the electric field just outside a conductor is perpendicular
+                                                to its surface and has a magnitude proportional to the surface charge
+                                                density: </p>
+                                            <p class="text-center text-law"> \( E = \dfrac{\sigma}{\epsilon_0}. \) </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-charge-redistribution"> <button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-charge-redistribution" aria-expanded="false"
+                                aria-controls="section-charge-redistribution"> <strong>Charge Redistribution on
+                                    Conductors</strong> </button> </h2>
+                        <div id="section-charge-redistribution" class="accordion-collapse collapse"
+                            aria-labelledby="heading-charge-redistribution" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p> Conductors, when exposed to external charges or electric fields, exhibit fascinating
+                                    behavior due to the mobility of their free charges. These charges redistribute
+                                    themselves in response to external influences, creating unique patterns of electric
+                                    fields and potentials that are key to understanding electrostatics. To achieve
+                                    equilibrium, the system evolves in a way that minimizes internal energy and
+                                    nullifies electric fields within the conductor. As fundamental rule: </p>
+                                <p class="text-center text-law"> In the steady state, the resultant electric field
+                                    inside a conductor is zero, ensuring no further movement of charges. </p>
+                                <p> Let us explore this process step by step, understanding how conductors respond in
+                                    various scenarios. </p>
+                                <ul class="list list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Response of Conductors to External Electric Fields</strong>
+                                            </summary>
+                                            <p> When an external electric field is applied to a conductor, its free
+                                                charges—typically electrons—immediately respond by moving. Negative
+                                                charges shift in one direction, and positive charges (if present) shift
+                                                in the opposite direction, creating an internal electric field that
+                                                opposes the applied field. This redistribution continues until the
+                                                internal field completely cancels the external field, leaving the net
+                                                field inside the conductor at zero. </p>
+                                            <p> In this equilibrium state: </p>
+                                            <ul>
+                                                <li>The electric field inside the conductor is zero.</li>
+                                                <li>Electric field lines outside the conductor are perpendicular to its
+                                                    surface.</li>
+                                                <li>Charges accumulate on the surface in patterns determined by the
+                                                    conductor's shape.</li>
+                                            </ul>
+                                            <p> For instance, in a flat conducting plate, charges distribute uniformly
+                                                on the two opposite faces. In contrast, on a spherical conductor, the
+                                                charges spread symmetrically over the outer surface. These arrangements
+                                                ensure that the electric field inside is nullified while maintaining
+                                                continuity with external field lines. </p>
+                                            <p> DIAGRAMS: [Flat plate in electric field] [Sphere in electric field] </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Interaction of Conductors with Nearby Charges</strong>
+                                            </summary>
+                                            <p> When a charge is placed near a conductor, it induces a redistribution of
+                                                charges within the conductor. Opposite charges are attracted toward the
+                                                external charge, while like charges are repelled to the far side. This
+                                                induced charge separation ensures that the net electric field within the
+                                                conductor remains zero. </p>
+                                            <p> Examples include:
+                                            <ul>
+                                                <li>**Point charge near a spherical conductor:** Opposite charges
+                                                    accumulate on the side facing the charge, creating an induced
+                                                    dipole.</li>
+                                                <li>**Point charge near a flat conductor:** Similar redistribution
+                                                    occurs, aligning charges to neutralize the internal field.</li>
+                                            </ul>
+                                            </p>
+                                            <p> DIAGRAMS: [Point charge near sphere] [Point charge near flat plate] </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Behavior of Charges Inside Cavity of a Conductor</strong>
+                                            </summary>
+                                            <p> A fascinating scenario arises when a conductor contains a cavity. If a
+                                                charge \(q\) is placed inside the cavity, it induces an equal and
+                                                opposite charge \(-q\) on the inner surface of the cavity. This occurs
+                                                because the electric field inside the conductor's material must remain
+                                                zero. </p>
+                                            <p> To verify this using Gauss's law: </p>
+                                            <p class="ms-4"> A Gaussian surface is drawn within the conductor, enclosing
+                                                the cavity. Since the electric field inside the conductor is zero, the
+                                                flux through the Gaussian surface is also zero. Thus, the total charge
+                                                enclosed must be zero, requiring \(-q\) on the cavity's inner surface.
+                                            </p>
+                                            <p> To conserve charge, an equal \(+q\) charge must reside on the
+                                                conductor's outer surface, ensuring overall neutrality. </p>
+                                            <p> DIAGRAM: [Conductor with cavity containing charge] </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Charge Redistribution on Parallel Conducting
+                                                    Plates</strong></summary>
+                                            <p> When two parallel conducting plates are charged, the charges align
+                                                themselves to ensure: </p>
+                                            <ul>
+                                                <li>The surfaces of the plates facing each other have equal and opposite
+                                                    charges.</li>
+                                                <li>The electric field inside the material of the plates is zero.</li>
+                                            </ul>
+                                            <p> For example, consider two large parallel conducting plates. A Gaussian
+                                                surface can be drawn with its flat faces inside the material and its
+                                                axis perpendicular to the plates. The charges on the surfaces facing
+                                                each other create an internal electric field that cancels out within the
+                                                conductor, leaving only the external field between the plates. </p>
+                                            <p> DIAGRAM: [Parallel conducting plates with charge alignment] </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <p> The above cases illustrate the self-regulating behavior of conductors to maintain
+                                    electrostatic equilibrium. Whether responding to external fields, nearby charges, or
+                                    internal cavities, the guiding principle remains the same: the electric field within
+                                    the conductor becomes zero, and charges redistribute to satisfy this condition while
+                                    conserving charge. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-force-on-surface"> <button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-force-on-surface" aria-expanded="false"
+                                aria-controls="section-force-on-surface"> <strong>Force on Conducting Surface</strong>
+                            </button> </h2>
+                        <div id="section-force-on-surface" class="accordion-collapse collapse"
+                            aria-labelledby="heading-force-on-surface" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p> Conducting surfaces experience forces due to the repulsion of charges distributed
+                                    over them. These forces arise from the electric field created by surface charges and
+                                    are crucial for understanding electrostatic pressure and the mechanical stresses
+                                    acting on conductors. </p>
+                                <p> To better understand this phenomenon, let us analyze the situation by naming the
+                                    surfaces and charges involved. </p>
+                                <p> Consider a flat surface \( S \) with a uniform surface charge density \( \sigma \).
+                                    The electric field generated by this surface at a nearby point is given by: </p>
+                                <p> \(\qquad E = \dfrac{\sigma}{2\epsilon_0} \) </p>
+                                <p> This field is directed outward on either side of \( S \), but in opposite directions
+                                    due to symmetry. </p>
+                                <p> Now, let us examine a conducting surface \( S_C \) with surface charge density \(
+                                    \sigma \). For this conductor, the electric field just outside the surface is: </p>
+                                <p> \(\qquad E = \dfrac{\sigma}{\epsilon_0} \) </p>
+                                <p> directed perpendicular to the surface. </p>
+                                <p> <strong>Why is the electric field outside a conducting surface equal to \(
+                                        \dfrac{\sigma}{\epsilon_0} \) and not \( \dfrac{\sigma}{2\epsilon_0}
+                                        \)?</strong> </p>
+                                <p> To understand this, consider a small surface element \( \mathrm{d}S \) on the
+                                    conductor \( S_C \), carrying a local surface charge density \( \sigma \). The
+                                    electric field produced by \( \mathrm{d}S \) alone is: </p>
+                                <p> \(\qquad E_{\mathrm{d}S} = \dfrac{\sigma}{2\epsilon_0} \) </p>
+                                <p> This field is directed outward just outside the conductor and inward just inside.
+                                    However, the charges on the rest of the conductor (other than those on \(
+                                    \mathrm{d}S \)) also contribute to the total electric field. Their resulting effect
+                                    is as follows: </p>
+                                <ul>
+                                    <li>
+                                        <p> <strong>Inside the conductor:</strong> The additional electric field from
+                                            the rest of the charges cancels the inward field produced by \( \mathrm{d}S
+                                            \), ensuring that the net electric field inside \( S_C \) is zero. </p>
+                                    </li>
+                                    <li>
+                                        <p> <strong>Outside the conductor:</strong> The contributions from the rest of
+                                            the charges reinforce the outward field from \( \mathrm{d}S \), doubling it
+                                            to: </p>
+                                        <p> \(\qquad E = \dfrac{\sigma}{\epsilon_0} \) </p>
+                                    </li>
+                                </ul>
+                                <p> Thus, the electric field just outside the conductor is \( \dfrac{\sigma}{\epsilon_0}
+                                    \). This can be understood as: </p>
+                                <p class="text-center text-law"> Half of the resulting electric field outside the
+                                    conductor is generated by the charges on the immediate neighboring surface, while
+                                    the other half is contributed by the charges distributed over the rest of the
+                                    conducting surface. </p>
+                                <p> <strong>Force on a Small Surface Element:</strong> The force on \( \mathrm{d}S \)
+                                    arises from the interaction of the charges on \( \mathrm{d}S \) with the field
+                                    created by the rest of the conductor. If the local charge density at the location of
+                                    \( \mathrm{d}S \) is \( \sigma \), the electric field at \( \mathrm{d}S_C \) due to
+                                    the rest of the charges (other than charges on \( \mathrm{d}S \)) will be: </p>
+                                <p> \(\qquad E_{\text{rest}} = \dfrac{\sigma}{2\epsilon_0} \) </p>
+                                <p> Thus, the force is: </p>
+                                <p> \(\qquad \mathrm{d}F = \left(q_\mathrm{dS}\right) E_{\text{rest}} \) </p>
+                                <p> \(\Rightarrow\quad \mathrm{d}F = \sigma \left(\mathrm{d}S_C
+                                    \right)\dfrac{\sigma}{2\epsilon_0} \) </p>
+                                <p> \(\Rightarrow\quad \mathrm{d}F = \dfrac{\sigma^2}{2\epsilon_0} \left(\mathrm{d}S_C
+                                    \right)\) </p>
+                                <p> This force acts perpendicular to \( \mathrm{d}S_C \), as the electric field \(
+                                    E_{\text{rest}} \) was directed perpendicular to the surface \( \mathrm{d}S \). </p>
+                                <p> <strong>Electrostatic Pressure:</strong> The force per unit area, or pressure, is
+                                    given by: </p>
+                                <p> \(\qquad P = \dfrac{\mathrm{d}F}{\mathrm{d}S_C} = \dfrac{\sigma^2}{2\epsilon_0} \)
+                                </p>
+                                <p> This result shows that the pressure on the conducting surface increases with the
+                                    square of the local surface charge density \( \sigma \). It applies equally to
+                                    positive and negative charges since the pressure depends only on \( \sigma^2 \).
+                                    Thus, we conclude: </p>
+                                <p class="text-center text-law"> For any small part of a conducting surface with local
+                                    surface charge density \( \sigma \), it experiences a perpendicular outward force of
+                                    \( \dfrac{\sigma^2}{2\epsilon_0} \) per unit area. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-energy-stored"> <button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-energy-stored" aria-expanded="false"
+                                aria-controls="section-energy-stored"> <strong>Energy Stored in Charged
+                                    Conductor</strong> </button> </h2>
+                        <div id="section-energy-stored" class="accordion-collapse collapse"
+                            aria-labelledby="heading-energy-stored" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p> A charged conductor stores energy due to the work done in assembling its charge.
+                                    This stored energy is critical in understanding capacitive systems and energy
+                                    density distributions. </p>
+                                <h4>Energy Stored Calculations</h4>
+                                <ul>
+                                    <li> <strong>Work done in charging a spherical conductor:</strong> The work required
+                                        to bring charge \( Q \) onto a spherical conductor of radius \( R \) is: \( W =
+                                        \dfrac{1}{2} \dfrac{Q^2}{4\pi\epsilon_0 R} \) </li>
+                                    <li> <strong>Energy stored in a spherical conductor:</strong> The energy stored is
+                                        equivalent to the work done in charging it, given as: \( U = \dfrac{1}{2} QV \)
+                                        where \( V \) is the potential of the spherical conductor. </li>
+                                </ul>
+                                <h4>Electrostatic Potential Energy Density</h4>
+                                <ul>
+                                    <li> <strong>Energy content in a small volume:</strong> The energy density \( u \)
+                                        in a small volume \( \mathrm{d}V \) is: \( u = \dfrac{1}{2} \epsilon_0 E^2 \)
+                                    </li>
+                                    <li> <strong>Energy content in a charged conducting sphere:</strong> The total
+                                        energy can be calculated by integrating the energy density over the volume of
+                                        the sphere. </li>
+                                    <li> <strong>Energy content in a charged non-conducting sphere:</strong> For
+                                        non-conducting spheres, the charge distribution varies radially, affecting the
+                                        energy density calculation. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-connecting-conductors"> <button
+                                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-connecting-conductors" aria-expanded="false"
+                                aria-controls="section-connecting-conductors"> <strong>Connecting Two
+                                    Conductors</strong> </button> </h2>
+                        <div id="section-connecting-conductors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-connecting-conductors" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p> Conductors have boundaries up to which their free charges can move. When two
+                                    conductors are connected, their boundaries effectively merge, and they behave as a
+                                    single conductor. All the rules governing conductors now apply to the combined
+                                    system. </p>
+                                <p> For example, when two separate conductors, \( S_1 \) and \( S_2 \), are unconnected,
+                                    they may have constant but different potentials, say \( V_1 \) and \( V_2 \),
+                                    respectively. However, if they are connected, they act as a single conductor with a
+                                    common potential \( V_{\text{common}} \). Additionally, the total charge given to
+                                    the system redistributes and resides on the outer boundary of the combined system to
+                                    minimize repulsive forces. </p>
+                                <p> To analyze this more formally, consider two conductors \( C_1 \) and \( C_2 \) with
+                                    different charges and potentials \( V_1 \) and \( V_2 \) (\( V_1 < V_2 \), without
+                                        loss of generality). When these conductors are connected by a conducting wire:
+                                        </p>
+                                        <p> Just after the connection, the potential at one end of the wire is \( V_1 \)
+                                            and at the other end is \( V_2 \). This potential difference (and hence the
+                                            electric field) drives a flow of charge from the higher potential (\( V_2
+                                            \)) to the lower potential (\( V_1 \)) through the wire. This flow
+                                            continues, contineously reducing \( V_2 \) and increasing \( V_1 \), until
+                                            the potentials equalize. At this point:
+                                        </p>
+                                        <ul>
+                                            <li>No potential difference exists across the wire.</li>
+                                            <li>No electric field is present in the wire.</li>
+                                            <li>Charge flow stops, achieving electrostatic equilibrium.</li>
+                                        </ul>
+                                        <p> Thus, connecting two conductors through a wire leads to a redistribution of
+                                            charge until a common potential is achieved. </p>
+                                        <p> During this process, the flow of charge in the connecting wire generates
+                                            heat due to resistance, leading to energy dissipation. This dissipation
+                                            corresponds to a decrease in the potential energy of the system. After
+                                            redistribution, the charges are in a more stable, less repulsive state, and
+                                            the system's potential energy is reduced. </p>
+                                        <p> The details of energy storage in charged conductors and the analysis of
+                                            potential energy changes will be further discussed in the chapter on
+                                            Capacitance. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-earthing-conductors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-earthing-conductors" aria-expanded="false"
+                                aria-controls="section-earthing-conductors">
+                                <strong>Earthing of Conductors</strong>
+                            </button>
+                        </h2>
+                        <div id="section-earthing-conductors" class="accordion-collapse collapse"
+                            aria-labelledby="heading-earthing-conductors" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    The Earth itself behaves as a giant conductor, allowing charges to move
+                                    freely across its vast volume.
+                                    This property arises because:
+                                </p>
+                                <ul>
+                                    <li><strong>Presence of free charges:</strong> The deeper layers of the
+                                        Earth contain molten materials,
+                                        minerals, and ions that can freely move in response to electric
+                                        forces, ensuring conductivity.</li>
+                                    <li><strong>Moisture and dissolved salts in soil:</strong> The soil in
+                                        most regions contains water and
+                                        dissolved salts, which enhance its conductive properties, allowing
+                                        effective charge flow.</li>
+                                </ul>
+                                <p>
+                                    Additionally, the Earth's enormous size makes it capable of absorbing or
+                                    supplying large amounts of charge
+                                    without significantly altering its potential. Using the formula for the
+                                    potential of a sphere:
+                                </p>
+                                <p>
+                                    \(\qquad V = \frac{q}{4\pi\epsilon_0 R}\)
+                                </p>
+                                <p>
+                                    Here, \( R \) is the radius of the Earth, which is significantly larger
+                                    than any typical conducting object
+                                    around us. Even a significant charge on the Earth would result in a
+                                    negligible potential change, allowing us
+                                    to consider its potential as <strong>zero</strong>. This zero potential
+                                    serves as a universal reference point
+                                    in electrical systems.
+                                </p>
+                                <p>
+                                    Earthing, also known as grounding, is the process of connecting a
+                                    conductor to the Earth to achieve a
+                                    zero-potential state. This is a key concept in electrostatics and
+                                    electrical safety.
+                                </p>
+                                <p>
+                                    When we earth a conductor, we connect it not just to the surface layer
+                                    of the Earth but to its deeper
+                                    conductive layers through a rod or conductor driven into the ground.
+                                    This ensures effective charge transfer
+                                    between the conductor and the Earth.
+                                </p>
+                                <p>
+                                    <strong>How Earthing Works:</strong>
+                                    Suppose a charged conductor is connected to the Earth using a conducting
+                                    wire. For clarity, consider the
+                                    conductor to be isolated, so any positive charge on it would result in a
+                                    positive potential, and similarly,
+                                    a negative charge would result in a negative potential.
+                                    - If the conductor is positively charged, electrons from the Earth flow
+                                    into the conductor to neutralize
+                                    the excess positive charge.
+                                    - Conversely, if the conductor is negatively charged, excess electrons
+                                    from the conductor flow into the
+                                    Earth.
+                                    This movement of charges continues until the potential of the conductor
+                                    matches the Earth's potential,
+                                    i.e., zero.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-electrostatic-shielding">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#section-electrostatic-shielding" aria-expanded="false"
+                                aria-controls="section-electrostatic-shielding">
+                                <strong>Electrostatic Shielding</strong>
+                            </button>
+                        </h2>
+                        <div id="section-electrostatic-shielding" class="accordion-collapse collapse"
+                            aria-labelledby="heading-electrostatic-shielding" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>
+                                    Electrostatic shielding is the phenomenon where the interior of a conductor is
+                                    completely
+                                    protected from external electric fields. This unique property stems from the
+                                    behavior of charges
+                                    in a conductor under electrostatic equilibrium, where the electric field within the
+                                    conducting
+                                    material becomes zero.
+                                </p>
+                                <p>
+                                    The principle of electrostatic shielding can be best understood through the
+                                    following key
+                                    observations:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>Shielding in Hollow Conductors:</strong> Inside a hollow conductor, the
+                                        electric field
+                                        is zero irrespective of external charge distributions. This happens because free
+                                        charges on
+                                        the conductor’s surface rearrange themselves to exactly cancel the external
+                                        field within the
+                                        cavity.
+                                    </li>
+                                    <li>
+                                        <strong>Behavior in Presence of External Charges:</strong> When external charges
+                                        are placed
+                                        near a conductor, they induce a redistribution of surface charges on the
+                                        conductor. These
+                                        induced charges create their own electric field that neutralizes the external
+                                        field within the
+                                        conductor and its cavity.
+                                    </li>
+                                    <li>
+                                        <strong>Complete Isolation:</strong> Due to the zero electric field inside the
+                                        conductor, any
+                                        change in external charge distribution does not influence the cavity or its
+                                        contents, and vice
+                                        versa. This isolation is the essence of electrostatic shielding.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Applications of Electrostatic Shielding:</strong> This principle finds
+                                    extensive
+                                    applications in real-world scenarios, such as:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>Faraday Cages:</strong> Used to shield sensitive electronic equipment
+                                        from external
+                                        electric fields and electromagnetic interference. These are widely used in
+                                        laboratories and
+                                        industrial settings.
+                                    </li>
+                                    <li>
+                                        <strong>Communication Cables:</strong> Shielded cables, such as coaxial cables,
+                                        use conductive
+                                        layers to block external fields and prevent signal interference.
+                                    </li>
+                                    <li>
+                                        <strong>Safety Measures:</strong> Vehicles and airplanes often act as Faraday
+                                        cages,
+                                        protecting occupants from lightning strikes by redistributing the charges over
+                                        the surface.
+                                    </li>
+                                </ul>
+                                <p>
+                                    The effectiveness of electrostatic shielding depends on:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>Thickness of the Conductor:</strong> A thicker conductor provides better
+                                        shielding as it
+                                        can redistribute charges more effectively.
+                                    </li>
+                                    <li>
+                                        <strong>Material Conductivity:</strong> Highly conductive materials like copper
+                                        or aluminum
+                                        are preferred for efficient shielding.
+                                    </li>
+                                </ul>
+                                <p>
+                                    The diagram below illustrates how a hollow conductor shields its interior from an
+                                    external charge.
+                                    Surface charges rearrange themselves in response to the external charge to cancel
+                                    the field inside
+                                    the cavity.
+                                </p>
+                                <div class="row justify-content-center mb-4">
+                                    <div
+                                        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
+                                        <figure style="max-width: 300px;">
+                                            <img src="img/electrostatic_shielding.png"
+                                                class="figure-img img-fluid rounded"
+                                                alt="Diagram illustrating electrostatic shielding.">
+                                            <figcaption class="figure-caption text-center">
+                                                Electrostatic shielding inside a hollow conductor.
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p class="text-center text-law">
+                                    Electrostatic shielding ensures that the cavity of a hollow conductor is completely
+                                    isolated from
+                                    external electric fields, regardless of the external charge configuration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

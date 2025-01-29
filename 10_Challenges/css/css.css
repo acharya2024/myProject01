@@ -1,0 +1,23 @@
+.accordion {
+    font-family: "Bookman Old Style", Georgia, serif;
+}
+li details{
+    margin-left: 10px
+}
+details > summary {
+    list-style: none; /* Remove the default triangle marker */
+    cursor: pointer; /* Indicate it's clickable */
+    position: relative; /* Enable positioning for the plus sign */
+    padding-left: 20px; /* Add space for the custom icon */
+}
+
+details > summary::before {
+    content: "+"; /* Display the plus sign */
+    position: absolute; /* Position it on the left */
+    left: 0; /* Align it to the left of the summary */
+    font-weight: bold; /* Make it bold for better visibility */
+}
+
+details[open] > summary::before {
+    content: "-"; /* Change to minus sign when the details are open */
+}
