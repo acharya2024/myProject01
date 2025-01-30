@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const sectionCode = document.getElementById("sectionTitle").getAttribute("code");
     const jsonFileName = `${sectionCode}.json`;
 
@@ -11,97 +10,47 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingMessage.style.fontWeight = "bold";
     contentDiv.appendChild(loadingMessage);
 
-    // Modal HTML structure (added directly in the JS for easier management)
-    const modalHtml = `
-    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="userModalLabel">Select Student</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul id="userList"></ul>
-                    <div class="input-group mb-3">
-                     <input type="text" class="form-control" placeholder="New Student" aria-label="Recipient's username" aria-describedby="addNewUser">
-  <button class="btn btn-outline-secondary" type="button" id="addNewUser">Add</button>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    `;
-    document.body.insertAdjacentHTML("beforeend", modalHtml);
-
-    const userModal = new bootstrap.Modal(document.getElementById('userModal'));
-    const userList = document.getElementById('userList');
-    const newUserNameInput = document.getElementById('newUserName');
-    const addNewUserButton = document.getElementById('addNewUser');
-
-    let currentUserName = null;
-    let solvedQuestions = new Set();
-    let data = null;  // To store the JSON data
-
-    function loadUsers() { // Load existing users into the modal
-        const users = JSON.parse(localStorage.getItem("users")) || {};
-        userList.innerHTML = "";
-
-        for (const userName in users) {
-            const listItem = document.createElement("li");
-            listItem.textContent = userName;
-            listItem.style.cursor = "pointer";
-            listItem.addEventListener("click", () => selectUser(userName));
-            userList.appendChild(listItem);
-        }
-    }
-
-    function selectUser(userName) {
-        currentUserName = userName;
-        const storedData = localStorage.getItem(`userData_${userName}`);
-        if (storedData) {
-            const userData = JSON.parse(storedData);
-            solvedQuestions = new Set(userData[sectionCode] || []); // Get progress for this section
+    // Ask user for name and handle returning users
+    function getUserName() {
+        let userName = localStorage.getItem("userName");
+        if (!userName) {
+            userName = prompt("Please enter your name:");
+            if (userName) {
+                localStorage.setItem("userName", userName);
+            }
         } else {
-            solvedQuestions = new Set();
-        }
-        userModal.hide();
-        loadQuestions(data);
-    }
-
-    function addNewUser() { // Create a new user
-        const newUserName = newUserNameInput.value.trim();
-        if (newUserName) {
-            const users = JSON.parse(localStorage.getItem("users")) || {};
-            if (!users[newUserName]) {
-                users[newUserName] = true;
-                localStorage.setItem("users", JSON.stringify(users));
-                loadUsers();
-                selectUser(newUserName);
-                newUserNameInput.value = "";
-            } else {
-                alert("User name already exists.");
+            const continuePrevious = confirm(`Previous session detected for ${userName}. Do you want to continue?`);
+            if (!continuePrevious) {
+                localStorage.removeItem("userName");
+                localStorage.removeItem("solvedQuestions");
+                userName = prompt("Enter your name:");
+                if (userName) {
+                    localStorage.setItem("userName", userName);
+                }
             }
         }
     }
+    getUserName();
 
-    addNewUserButton.addEventListener("click", addNewUser); // Event listener for adding user
+    // Load previous solved questions
+    const solvedQuestions = new Set(JSON.parse(localStorage.getItem("solvedQuestions")) || []);
 
-
-    // Fetch JSON data and show the modal *AFTER* the DOM is loaded and parsed
-    window.addEventListener('load', () => {
-        fetch(jsonFileName)
-            .then(response => response.json())
-            .then(jsonData => {
-                data = jsonData; // Store the data
-                loadUsers(); // Load users after JSON data is fetched
-                userModal.show(); // Show the modal after the JSON data and users are loaded
-                loadingMessage.remove();
-            })
-            .catch(error => console.error("Error loading questions:", error));
-    });
+    // Load questions from JSON file
+    fetch(jsonFileName)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Failed to fetch questions.json");
+            }
+            return response.text();
+        })
+        .then((text) => {
+            const data = JSON.parse(text);
+            loadQuestions(data);
+            loadingMessage.remove(); // Remove loading text after questions are loaded
+        })
+        .catch((error) => {
+            console.error("Error loading questions: ", error);
+        });
 
     // Function to load questions into the HTML
     function loadQuestions(data) {
@@ -148,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Add "Got the answer!" button
                 const gotAnswerButton = document.createElement("button");
                 gotAnswerButton.textContent = "Mark as done!";
-                gotAnswerButton.classList.add("btn", "btn-success","btn-sm", "mt-2");
+                gotAnswerButton.classList.add("btn", "btn-success", "mt-2");
                 gotAnswerButton.onclick = function () {
                     // Hide the button
                     gotAnswerButton.style.display = "none";
@@ -156,14 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     questionSummary.style.fontWeight = "normal";
                     // Save solved status
                     solvedQuestions.add(question.id);
-                    const storedData = localStorage.getItem(`userData_${currentUserName}`);
-                    let userData = {};
-                    if (storedData) {
-                        userData = JSON.parse(storedData);
-                    }
-                    userData[sectionCode] = [...solvedQuestions]; // Save progress for this section
-                    localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
-
+                    localStorage.setItem("solvedQuestions", JSON.stringify([...solvedQuestions]));
                 };
                 answerDetails.appendChild(gotAnswerButton);
             }
@@ -299,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.dataset.initialWidth = img.offsetWidth;
             img.dataset.initialHeight = img.offsetHeight;
         });
-
+        
     });
     // Function to enforce offline mode
     function requireOfflineMode() {
