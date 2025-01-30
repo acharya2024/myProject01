@@ -15,7 +15,7 @@
       },
       "type": "Subjective",
       "questionText": "A rigid insulated wire frame in the form of a right-angled triangle ABC is set in a vertical plane as shown in the figure. \\nDIAGRAM[1,200]\\nTwo beads of equal masses \\(m\\) each and carrying the charges \\(q_1\\) and \\(q_2\\) are connected by a cord of length \\(l\\) and can slide without friction on the wires. Considering the case when the beads are stationary determine\\n(a) the angle \\(\\alpha\\)\\n(b) the tension in the cord and\\n (c)the normal reaction on the beads.",
-      "solution": "(a) The forces acting on bead at P having charge \\(q_1\\) are\\n(i) Weight \\(mg\\) acting vertically downward\\n(ii) Tension \\(T\\) in the string along the length PQ\\n(iii) The electric force \\(F = \\frac{1}{4\\pi\\epsilon_0}\\frac{q_1 q_2}{l^2}\\) between the beads along the length PQ\\n(iv) Normal reaction \\(N_1\\) of wire on bead.\\n\\nDIAGRAM[2,200]\\nFor bead P to be in equilibrium,\\n\\(mg\\cos60^{\\circ} = (T + F)\\sin\\alpha \\quad ...(1)\\)\\nand \\(N_1 = mg\\cos30^{\\circ} + (T + F)\\cos\\alpha \\quad ...(2)\\)\\nFor bead Q to be in equilibrium,\\n\\(mg\\sin60^{\\circ} = (T - F)\\cos\\alpha \\quad ...(3)\\)\\nand \\(N_2 = mg\\cos60^{\\circ} + (T - F)\\sin\\alpha \\quad ...(4)\\)\\nDividing (3) by (1)\\n\\(\\tan60^{\\circ} = \\tan\\alpha\\)\\nHence, \\(\\alpha = 60^{\\circ}\\)\\n(b) Hence, From (3),\\n\\(\\Rightarrow T - F = mg\\)\\n\\(\\Rightarrow T = mg + F = mg + \\frac{q_1 q_2}{4\\pi\\epsilon_0 l^2}\\)\\n (c) From (2) and (4), we have\\n\\(N_1 = mg\\cos30^{\\circ} + (T+F)\\cos60^{\\circ} = \\sqrt{3}mg\\)\\nand \\(N_2 = mg\\sin30^{\\circ} + mg\\cos60^{\\circ} = mg\\)",
+      "solution": "(a) The forces acting on bead at P having charge \\(q_1\\) are\\n(i) Weight \\(mg\\) acting vertically downward\\n(ii) Tension \\(T\\) in the string along the length PQ\\n(iii) The electric force \\(F = \\frac{1}{4\\pi\\epsilon_0}\\frac{q_1 q_2}{l^2}\\) between the beads along the length PQ\\n(iv) Normal reaction \\(N_1\\) of wire on bead.\\n\\nDIAGRAM[2,200]\\nFor bead P to be in equilibrium,\\n\\(mg\\cos60^{\\circ} = (T - F)\\cos\\alpha \\quad ...(1)\\)\\nand \\(N_1 = mg\\cos30^{\\circ} + (T - F)\\sin\\alpha \\quad ...(2)\\)\\nFor bead Q to be in equilibrium,\\n\\(mg\\sin60^{\\circ} = (T - F)\\sin\\alpha \\quad ...(3)\\)\\nand \\(N_2 = mg\\sin60^{\\circ} + (T - F)\\cos\\alpha \\quad ...(4)\\)\\nDividing (3) by (1)\\n\\(\\tan60^{\\circ} = \\tan\\alpha\\)\\nHence, \\(\\alpha = 60^{\\circ}\\)\\n(b) Hence, From (3),\\n\\(\\Rightarrow T - F = mg\\)\\n\\(\\Rightarrow T = mg + F = mg + \\frac{q_1 q_2}{4\\pi\\epsilon_0 l^2}\\)\\n (c) From (2) and (4), we have\\n\\(N_1 = mg\\cos30^{\\circ} + (T+F)\\cos60^{\\circ} = \\sqrt{3}mg\\)\\nand \\(N_2 = mg\\sin30^{\\circ} + mg\\cos60^{\\circ} = mg\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
       "hint": "(a) Analyze the forces acting on each bead and apply equilibrium conditions.\\n(b) Use the equilibrium equations to find the tension.\\n(c) Consider the forces when the string is cut and the condition for the beads to remain stationary.",
@@ -40,7 +40,7 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "Two balls of charge \\(q_1\\) and \\(q_2\\) initially have velocities of equal magnitude and same direction. After a uniform electric field has been applied for a certain time interval, the direction of the first ball changes by \\(60^\\circ\\), and the velocity magnitude is reduced by half.  The direction of velocity of the second ball changes thereby \\(90^\\circ\\).\\nDIAGRAM[1,200]\\n(a) Determine the magnitude of the charge to mass ratio of the second ball if it is equal to \\(\\alpha_1\\) for the first ball.\\n(b) In what ratio will the velocity of the second ball change? Ignore the electrostatic interaction between the balls.",
+      "questionText": "Two balls of charge \\(q_1\\) and \\(q_2\\) initially have velocities of equal magnitude and same direction. After a uniform electric field has been applied for a certain time interval, the direction of the first ball changes by \\(60^\\circ\\), and the velocity magnitude is reduced by half.  The direction of velocity of the second ball changes thereby \\(90^\\circ\\).\\nDIAGRAM[1,250]\\n(a) Determine the magnitude of the charge to mass ratio of the second ball if it is equal to \\(\\alpha_1\\) for the first ball.\\n(b) In what ratio will the velocity of the second ball change? Ignore the electrostatic interaction between the balls.",
       "solution": "(a) Let the electric field acting on each ball be given by \\(\\vec{E} = E_x\\hat{i} + E_y\\hat{j}\\).\\nDIAGRAM[2,200]\\nFrom Impulse Momentum equation, we have Impulse = Change in momentum.\\nLet the final velocities of the balls be \\(\\vec{v}_1\\) and \\(\\vec{v}_2\\). Noting that \\(v_1 = \\dfrac{v}{2}\\), we have\\n\\(\\dfrac{q_1}{m_1}(E_x\\hat{i} + E_y\\hat{j})\\Delta t = m_1\\left[\\dfrac{v}{2}(\\cos 60^\\circ \\hat{i} + \\sin 60^\\circ \\hat{j}) - v\\hat{i}\\right]\\) ...(1)\\n\\(\\dfrac{q_2}{m_2}(E_x\\hat{i} + E_y\\hat{j})\\Delta t = m_2[v_2(\\cos 90^\\circ\\hat{i} + \\sin 90^\\circ\\hat{j}) - v\\hat{i}]\\) ...(2)\\nOn comparing the x and y-components on both sides of equation (1), we get\\n\\(\\dfrac{q_1}{m_1} E_x \\Delta t = -\\dfrac{3}{4}v\\)  ...(3)\\n\\(\\dfrac{q_1}{m_1} E_y \\Delta t = \\dfrac{\\sqrt{3}}{4}v\\)  ...(4)\\nSimilarly, from equation (2), we get\\n\\(\\dfrac{q_2}{m_2} E_x \\Delta t = -v\\)  ...(5)\\n\\(\\dfrac{q_2}{m_2} E_y \\Delta t = v_2\\)  ...(6)\\nFrom equations (3) and (5), by dividing the equations expressing x-components, we get\\n\\(\\dfrac{\\dfrac{q_1}{m_1}}{\\dfrac{q_2}{m_2}} = \\dfrac{3}{4}\\Rightarrow \\dfrac{q_2}{m_2} = \\dfrac{4}{3}\\dfrac{q_1}{m_1} = \\dfrac{4}{3}\\alpha_1\\)\\n(b) Also \\(\\dfrac{q_1}{m_1} = \\dfrac{\\sqrt{3}v}{4v_2} = \\alpha_1\\)\\n\\(\\Rightarrow \\dfrac{\\sqrt{3}v}{4v_2} = \\dfrac{3}{4}\\dfrac{v}{v_2}\\Rightarrow v_2 = \\dfrac{v}{\\sqrt{3}}\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
@@ -94,7 +94,7 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "A cylinder of height \\(H\\) and radius \\(R\\) is placed in a uniform electric field (as shown) such that the axis of the cylinder makes an angle \\(\\theta\\) with the vertical. Calculate the flux through the cylinder.\\nDIAGRAM[1,200]",
+      "questionText": "A cylinder of height \\(H\\) and radius \\(R\\) is placed in a uniform electric field (as shown) such that the axis of the cylinder makes an angle \\(\\theta\\) with the vertical. Calculate the magnitude of flux through that part of the cylinder where electric field lines are entering the cylinder.\\nDIAGRAM[1,200]",
       "solution": "Looking at the cylinder from -x-axis, it appears as shown in the figure.\\nDIAGRAM[2,300]\\nPerpendicular component of area \\(A_1 = A_1+A_2+A_3\\).\\nNow \\(A_1 = A_2\\)\\n\\(A_1 = \\left(\\dfrac{\\pi R^2}{2}\\right)\\sin\\theta\\)\\nand \\(A_3 = 2HR\\cos\\theta\\)\\nTotal perpendicular component of area is\\n\\(A_\\perp = 2\\left(\\dfrac{\\pi R^2}{2}\\right)\\sin\\theta + 2HR\\cos\\theta\\)\\n\\(A_\\perp = 2RH\\cos\\theta + \\pi R^2 \\sin\\theta\\)\\nThus, flux passing through cylinder is\\n\\(\\phi = EA_\\perp = E(2RH\\cos\\theta + \\pi R^2\\sin\\theta)\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
@@ -124,7 +124,7 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "Two charges \\(+q_1\\) and \\(-q_2\\) are placed at A and B respectively. A line of force emanates from \\(q_1\\) at an angle \\(\\alpha\\) with the line AB. At what angle will it terminate at \\(-q_2\\)?\\nDIAGRAM[1,180]",
+      "questionText": "Two charges \\(+q_1\\) and \\(-q_2\\) are placed at A and B respectively. A line of force emanates from \\(q_1\\) at an angle \\(\\alpha\\) with the line AB. At what angle will it terminate at \\(-q_2\\)?\\nDIAGRAM[1,240]",
       "solution": "A line can leave \\(+q_1\\) in a cone of apex angle \\(\\alpha\\) and then enter \\(-q_2\\) in a cone of apex angle \\(\\beta\\).\\nSo, flux due to the charge \\(+q_1\\) is \\n\\(\\phi_1 = \\dfrac{q_1}{2\\epsilon_0}(1-\\cos\\alpha)\\), and that due to the charge \\(-q_2\\) is \\n\\(\\phi_2 = \\dfrac{q_2}{2\\epsilon_0}(1-\\cos\\beta)\\).\\nDIAGRAM[2,240]\\nSince, we know that only one line is leaving \\(q_1\\) to enter \\(-q_2\\). So, we can say\\n\\(\\dfrac{\\phi_1}{\\phi_2} = \\dfrac{N_1}{N_2} = \\dfrac{1}{1}\\)\\n\\(\\Rightarrow \\dfrac{q_1}{2\\epsilon_0}(1-\\cos\\alpha) = \\dfrac{q_2}{2\\epsilon_0}(1-\\cos\\beta)\\)\\n\\(\\Rightarrow q_1\\left(2\\sin^2\\dfrac{\\alpha}{2}\\right) = q_2\\left(2\\sin^2\\dfrac{\\beta}{2}\\right)\\)\\n\\(\\Rightarrow \\sin\\dfrac{\\beta}{2} = \\sqrt{\\dfrac{q_1}{q_2}}\\sin\\dfrac{\\alpha}{2}\\)\\n\\(\\Rightarrow \\beta = 2\\sin^{-1}\\left[\\sqrt{\\dfrac{q_1}{q_2}}\\sin\\dfrac{\\alpha}{2}\\right]\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
@@ -210,14 +210,14 @@
       },
       "type": "Subjective",
       "questionText": "Four balls, each with mass \\(m\\), are connected by four non-conducting strings to form a square with side \\(l\\), as shown in Figure. The assembly is placed on a horizontal nonconducting frictionless surface. Balls 3 and 4 each have charge \\(q\\), and balls 1 and 2 are uncharged. Find the maximum speed of balls 3 and 4 after the string connecting them is cut.\\nDIAGRAM[1,140]",
-      "solution": "Initially, since no external horizontal forces act on the set of four balls, the center of mass of the system stays fixed at the initial location of the center of the square. As the charged balls 4 and 3 swing out and away from each other, balls 1 and 2 move down with equal y-components of velocity.DIAGRAM[2,150]\\nThe maximum kinetic energy point is illustrated.\\nFor system energy to be conserved,\\n\\(\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{l} = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{3l} + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2\\)\\n\\(\\Rightarrow \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{2q^2}{3l} = 2mv^2\\)\\n\\(\\Rightarrow v = \\sqrt{\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{3ml}}\\)",
+      "solution": "Initially, since no external horizontal forces act on the set of four balls, the center of mass of the system stays fixed at the initial location of the center of the square. As the charged balls 4 and 3 swing out and away from each other, balls 1 and 2 move down with equal y-components of velocity.\\nDIAGRAM[2,150]\\nThe maximum kinetic energy point is illustrated.\\nFor system energy to be conserved,\\n\\(\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{l} = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{3l} + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2 + \\dfrac{1}{2}mv^2\\)\\n\\(\\Rightarrow \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{2q^2}{3l} = 2mv^2\\)\\n\\(\\Rightarrow v = \\sqrt{\\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{3ml}}\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
       "hint": "The initial electrostatic potential energy of the charged balls is converted into kinetic energy when the string is cut. Use conservation of energy and consider the motion or rest of the center of mass.",
       "methodOfSolving": [
         "The initial electrostatic potential energy is \\(U_i = \\dfrac{1}{4\\pi\\epsilon_0}\\dfrac{q^2}{l}\\).",
-        "When the string is cut, the charged balls repel each other, converting potential energy into kinetic energy.  The center of mass remains stationary. When the speed is maximum, the balls form an equilateral triangle.",
-        "The final potential energy is \\(U_f = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{\\sqrt{3}l}\\). Each of the four balls acquires kinetic energy \\(\\dfrac{1}{2}mv^2\\). When the velocity becomes maximum, balls 3 and 4 are equidistant from balls 1, 2 and center of mass, respectively.",
+        "When the string is cut, the charged balls repel each other, converting potential energy into kinetic energy.  The center of mass remains stationary. When the speed is maximum, the four balls form a straight line.",
+        "The final potential energy is \\(U_f = \\dfrac{1}{4\\pi \\epsilon_0}\\dfrac{q^2}{3l}\\). Each of the four balls acquires kinetic energy \\(\\dfrac{1}{2}mv^2\\). When the velocity becomes maximum, balls 3 and 4 are equidistant from balls 1, 2 and center of mass, respectively.",
         "Apply conservation of energy: \\(U_i = U_f + 4(\\dfrac{1}{2}mv^2)\\).",
         "Solve for \\(v\\)."
       ],
@@ -1436,6 +1436,62 @@
         "(b) Write the impedance equations at ω = 500 rad/s and ω = 1000 rad/s. Solve these equations simultaneously to find L and C."
       ],
       "answer": "(a) \\(S_1\\)\\n(b) \\(L = 10\\text{ mH, } C = 100\\mu F\\)"
+    },
+    {
+      "id": "EM-0053",
+      "title": "Polarization of a Conducting Sphere in an Electric Field",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 1000,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Electric Field",
+          "Conducting Sphere",
+          "Polarization",
+          "Dipole Moment",
+          "Gauss's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A neutral conducting solid sphere of radius R is placed in a uniform external electric field E₀. \n\n(a) Determine the electric field due to the induced charges inside the sphere.\n(b) Find the electric field just outside the surface of the sphere as a function of the angle θ (measured from the direction of the external field).\n(c) Calculate the dipole moment of the polarized sphere.",
+      "solution": "(a) Inside a conductor, the electric field due to induced charges is equal and opposite to the external electric field. Therefore, the net electric field inside the conductor is zero. Thus, the electric field due to induced charges inside the sphere is -E₀. \n\n(b)  The electric field just outside the surface of the conductor is twice the external field in the direction perpendicular to the surface.  The electric field just outside the surface of the sphere as a function of θ is given by E = 3E₀cosθ. \n\n(c) The dipole moment (P) of a polarized sphere is given by P = 4πε₀R³E₀.",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "(a) Recall that the electric field inside a conductor in electrostatic equilibrium is zero.\n(b) The electric field just outside the conductor is related to the surface charge density, which in turn is related to the external field.\n(c) The dipole moment is related to the induced dipole moment and external field. ",
+      "methodOfSolving": [
+        "(a) Apply the principle of electrostatic equilibrium inside a conductor.",
+        "(b) Use Gauss's law to relate the electric field just outside the sphere to the surface charge density and the external field.",
+        "(c) Use the formula for the dipole moment of a sphere in an external electric field."
+      ],
+      "answer": "(a) -E₀\n(b) 3E₀cosθ\n(c) 4πε₀R³E₀"
+    },
+    {
+      "id": "EM-0054",
+      "title": "Potential Difference in a Non-Uniform Ring",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Electromagnetism",
+        "tags": [
+          "Induced EMF",
+          "Non-Uniform Ring",
+          "Electric Field",
+          "Potential Difference",
+          "Ohm's Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Figure shows a conducting neutral ring of radius \\(a\\) made from two different wires of uniform cross-section as shown. A magnetic field exists inside the ring which varies with time as \\(B = kt\\) (k is a constant). Neglect any charge that appears on the surface of the ring. The upper half of the ring has resistance twice as compared to the lower half. \n\n(a) For a uniform ring (same resistivity throughout), determine the potential difference between points A and B.\n(b) For the given non-uniform ring (as in the diagram), find the conservative electric field along the tangent of the circular ring.\n(c) For the given non-uniform ring (as in the diagram), calculate the potential difference between points B and A, \\(V_{BA}\\).",
+      "solution": "(a) For a uniform ring, the induced electric field is given by:\n\\(E_{nc} \\cdot 2\\pi a = \\pi a^2 \\frac{d(kt)}{dt} \\implies E_{nc} = \\frac{ak}{2}\\)\nThe induced electric field is uniform and non-conservative. There is no potential difference across the ring; therefore, \\(V_{AB} = 0\\).\n\n(b) For the non-uniform ring, let the current density be J. Since the current is the same throughout, and the upper half has twice the resistivity of the lower half, the electric fields will differ. The induced electric field (E<sub>nc</sub>) is still given by \\(E_{nc} = \\frac{ak}{2}\\).\nLet R and 2R be the resistance of the lower and upper halves, respectively.  The current is the same throughout the ring, and the resistivity is \\(\\rho\\) in the lower half and \\(2\\rho\\) in the upper half. The current density is given by J = E/\\(\\rho\\). Since the current is constant, the electric field and resistivity are inversely related. Therefore the electric field in the lower half is twice the electric field in the upper half.  The electric field along the tangent is given by \\(E_c = \\frac{ak}{6}\\).\n\n(c) For the given case, the potential difference is given by: \n\\(V_{BA} = \\int_A^B \\vec{E} \\cdot d\\vec{l} = \\frac{ak}{6} \\times \\pi a = \\frac{\\pi a^2 k}{6}\\)\n\\nDIAGRAM[1,300]\n\\nDIAGRAM[2,300]",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) For a uniform ring, use Faraday's law to find the induced electric field and then the potential difference. Consider if it's conservative or not. \n(b) For a non-uniform ring, recognize that the current is uniform but the current density and electric field are not. \n(c) Integrate the electric field along the ring to determine the potential difference.",
+      "methodOfSolving": [
+        "(a) Apply Faraday's law to find the induced EMF in the ring. Since the ring is uniform, use this to find the potential difference.",
+        "(b) Use Ohm's law and the relationship between current density and electric field to find the electric field in each part of the non-uniform ring.",
+        "(c) Integrate the electric field along the path to find the potential difference between points A and B."
+      ],
+      "answer": "(a) 0\n(b)  \\(E_c = \\frac{ak}{6}\\)\n(c) \\(V_{BA} = \\frac{\\pi a^2 k}{6}\\)"
     }
   ]
 }

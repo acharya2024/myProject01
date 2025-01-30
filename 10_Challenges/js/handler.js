@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function getUserName() {
         let userName = localStorage.getItem("userName");
         if (!userName) {
-            userName = "user1"//prompt("Please enter your name:");
+            userName = prompt("Please enter your name:");
             if (userName) {
                 localStorage.setItem("userName", userName);
             }
