@@ -2290,8 +2290,6 @@
             "methodOfSolving": [
                 "The tension \\(T\\) in the string pulls the ring to the right.",
                 "Since there is no other horizontal force on the ring except tension and frictional force, the frictional force must act to the left to balance the tension. This requires a torque on the ring about the point of contact with the ground. Since the only forces are vertical normal force and \\(mg\\), tension \\(T\\) and friction \\(f\\), the tension passes through the center and cannot produce any torque."
-
-
             ],
             "answer": "zero"
         },
@@ -2392,7 +2390,6 @@
                     "Relative Motion",
                     "Velocity-Time Graph",
                     "Area Under Curve"
-
                 ]
             },
             "type": "Subjective",
@@ -2757,7 +2754,6 @@
             "type": "Subjective",
             "questionText": "A uniform square plate ABCD has mass \\(M\\) and side length \\(a\\). It is sliding on a horizontal smooth surface with a velocity of \\(\\vec{v} = v_0(4\\hat{i}+2\\hat{j})\\). There is no rotation. Vertex A of the plate is suddenly fixed by a nail. Calculate the velocity of the center of the plate immediately after this.\\nDIAGRAM[1,200]",
             "solution": "We can apply conservation of angular momentum about a point on the surface just below A.\\nDIAGRAM[2,400]\\nInitial angular momentum about point A:\\n\\(L_{iA} = M(4v_0)\\dfrac{a}{2} - M(2v_0)\\dfrac{a}{2} = Mv_0a\\) (Clockwise)\\nFinal angular momentum about point A:\\n\\(L_{fA} = I_A \\omega = \\dfrac{2}{3}Ma^2\\omega\\) (Clockwise)\\n\\(\\Rightarrow \\dfrac{2}{3}Ma^2 \\omega = Mv_0a \\Rightarrow \\omega = \\dfrac{3v_0}{2a}\\)\\nDIAGRAM[3,150]\\nVelocity of centre will be:\\n\\(v_c = \\dfrac{a}{\\sqrt{2}}\\omega = \\dfrac{a}{\\sqrt{2}}\\dfrac{3v_0}{2a} = \\dfrac{3v_0}{2\\sqrt{2}}\\), in the direction perpendicular to AC.\\n\\(\\Rightarrow \\vec{v}_c = \\dfrac{3v_0}{2\\sqrt{2}}\\left[\\dfrac{1}{\\sqrt{2}}\\hat{i} - \\dfrac{1}{\\sqrt{2}}\\hat{j}\\right] = \\dfrac{3v_0}{4}(\\hat{i}-\\hat{j})\\)",
-
             "solutionRechecked": true,
             "solutionManualRechecked": false,
             "hint": "Since the nail exerts an impulse at point A, the angular momentum about A is conserved. Calculate the angular momentum about A just before and just after the nail is fixed. The velocity of the center of mass is related to the angular velocity about A.",
@@ -2769,6 +2765,32 @@
                 "The velocity of the center of mass after A is fixed is \\(v_c = r\\omega\\), where \\(r = \\dfrac{a}{\\sqrt{2}}\\) is the distance from A to the center of mass. The direction is perpendicular to AC."
             ],
             "answer": "\\(\\dfrac{3v_0}{4}(\\hat{i}-\\hat{j})\\)"
+        },
+        {
+            "id": "ME-0101",
+            "title": "Work Done by Friction on a Rolling Disc",
+            "statistics": {
+                "numberOfDiagrams": 1,
+                "idealAverageTimeInS": 720,
+                "Unit": "Mechanics",
+                "tags": [
+                    "Rotational Motion",
+                    "Friction",
+                    "Work-Energy Theorem",
+                    "Rolling without Slipping"
+                ]
+            },
+            "type": "Subjective",
+            "questionText": "A uniform disc of mass \\(m\\) and radius \\(R\\) starts with velocity \\(v_0\\) on a rough horizontal floor with a purely sliding motion at time \\(t = 0\\). At time \\(t = t_0\\), the disc starts rolling without sliding. \n\n(a) Find the work done by the frictional force up to time \\(t \\le t_0\\). \n(b) Find the work done by the frictional force up to time \\(t = 2t_0\\).",
+            "solution": "(a) For \\(t < t_0\\), the linear retardation is \\(a = \\frac{f}{m} = \\mu g\\). The angular acceleration is \\(\\alpha = \\frac{\\tau}{I} = \\frac{fR}{\\frac{1}{2}mR^2} = \\frac{2\\mu g}{R}\\).\n\\nDIAGRAM[1,200]\nLet \\(v\\) and \\(\\omega\\) be the linear and angular velocities at \\(t = t_0\\). Then:\n\\(v = v_0 - at_0 = v_0 - \\mu gt_0\\), and \\(\\omega = \\alpha t_0 = \\frac{2\\mu gt_0}{R}\\)\nThe work done by friction up to time \\(t_0\\) is equal to the change in kinetic energy (linear and rotational) of the disc:\n\\(W = \\frac{1}{2}mv^2 + \\frac{1}{2}I\\omega^2 - \\frac{1}{2}mv_0^2 = \\frac{1}{2}m(v_0 - \\mu gt_0)^2 + \\frac{1}{2}\\left(\\frac{1}{2}mR^2\\right)\\left(\\frac{2\\mu gt_0}{R}\\right)^2 - \\frac{1}{2}mv_0^2\\)\nSimplifying, we get: \\(W = \\frac{m\\mu gt_0}{2}(3\\mu gt_0 - 2v_0)\\)\n(b) For \\(t > t_0\\), the frictional force is zero because pure rolling has begun. Therefore, the work done by friction up to time \\(t = 2t_0\\) remains the same as at \\(t = t_0\\).",
+            "solutionRechecked": true,
+            "solutionManualRechecked": false,
+            "hint": "(a) Use the work-energy theorem. The work done by friction is equal to the change in kinetic energy (linear and rotational) of the disc.\n(b) Once pure rolling starts, there is no more work done by friction.",
+            "methodOfSolving": [
+                "(a) Calculate the linear and angular accelerations. Determine the linear and angular velocities at \\(t = t_0\\). Use the work-energy theorem to find the work done by friction up to \\(t = t_0\\).",
+                "(b) Recognize that once pure rolling begins (at \\(t = t_0\\)), there is no further work done by friction."
+            ],
+            "answer": "(a) \\(\\frac{m\\mu gt_0}{2}(3\\mu gt_0 - 2v_0)\\)\n(b) \\(\\frac{m\\mu gt_0}{2}(3\\mu gt_0 - 2v_0)\\)"
         }
     ]
 }

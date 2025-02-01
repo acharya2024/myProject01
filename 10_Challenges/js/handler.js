@@ -68,8 +68,19 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 solvedQuestions = new Set();
             }
-            userModal.hide();
-            loadQuestions(data);
+            userModal._element.classList.add('fade-out-up');  // Add a custom CSS class for animation
+
+
+            // Listen for the 'hidden.bs.modal' event which fires *after* the animation completes
+            userModal._element.addEventListener('hidden.bs.modal', function onHidden() {
+                userModal._element.removeEventListener('hidden.bs.modal', onHidden);  // important - removes listener after fired once
+                userModal._element.classList.remove('fade-out-up');   // Remove animation class
+        
+                loadQuestions(data);
+        
+            });
+        
+            userModal.hide(); // Initiate the hiding of the modal
         }
 
         addNewUserButton.addEventListener("click", addNewUser);
@@ -109,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questionList.classList.add("list-group-flush");
 
         data.questions.forEach((question, index) => {
-            if (!question.solutionRechecked) {
+            if (!question.solutionRechecked) {//! to be set
                 return; // Skip questions where solutionRechecked is false
             }
 

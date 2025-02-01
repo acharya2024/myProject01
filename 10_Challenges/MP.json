@@ -1,5 +1,30 @@
 {
   "questions": [
-    
+    {
+      "id": "MP-0001",
+      "title": "Half-Life of Radioactive Sample",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 480,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radioactivity",
+          "Half-life",
+          "Decay Constant"
+        ]
+      },
+      "type": "Single Correct",
+      "questionText": "There are \\(n\\) number of radioactive nuclei in a sample at a time \\(t\\). If \\(n'\\) number of \\(\\beta\\) particles are emitted in the next two seconds from the sample, then the half-life of the sample is (\\(t_{half\\ life} \\gg 2\\text{ sec}\\)).\\n(A) \\(\\frac{n'}{2}\\)\\n(B) \\(0.693 \\times \\frac{2n}{n'}\\)\\n(C) \\(0.693 \\times \\ln\\left(\\frac{2n}{n'}\\right)\\)\\n(D) \\(0.693 \\times \\frac{n}{n'}\\)",
+      "solution": "The number of radioactive nuclei decayed in the next two seconds is \\(n'\\).\nThe rate of decay \\( = -\\frac{dN}{dt} \\approx \\frac{n'}{2} = \\lambda n\\)\nwhere \\(\\lambda\\) is the decay constant.\\n\\(\\implies \\lambda = \\frac{n'}{2n}\\)\nHalf-life is \\(t_{1/2} = \\frac{0.693}{\\lambda} = \\frac{0.693}{\\frac{n'}{2n}} = 0.693 \\times \\frac{2n}{n'}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the radioactive decay law: \\(-\\frac{dN}{dt} = \\lambda N\\), where \\(\\lambda\\) is the decay constant and \\(N\\) is the number of radioactive nuclei.  Also, remember the relationship between half-life and the decay constant.",
+      "methodOfSolving": [
+        "Determine the decay rate (dN/dt) from the given information.",
+        "Relate the decay rate to the number of radioactive nuclei n and the decay constant \\(\\lambda\\) using the decay law.",
+        "Use the relation \\(t_{1/2} = \\frac{0.693}{\\lambda}\\) to find the half-life."
+      ],
+      "answer": "(B)"
+    }
   ]
 }

@@ -1,5 +1,86 @@
 {
   "questions": [
-    
+    {
+      "id": "AM-0001",
+      "title": "Physical Pendulum with Two Pivot Points",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 600,
+        "Unit": "Application of Mechanics",
+        "tags": [
+          "Physical Pendulum",
+          "Period",
+          "Center of Mass",
+          "Moment of Inertia"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "You measure the period of a physical pendulum about one pivot point to be T. You then find another pivot point on the opposite side of the center of mass that gives the same period. The distance between these two points is L. Find an expression for g in terms of T and L. ",
+      "solution": "Let the distance of the center of mass from the first pivot point be x. The period of a physical pendulum is given by:\n\\(T = 2\\pi\\sqrt{\\frac{I_c + mx^2}{mgx}}\\)\nwhere \\(I_c\\) is the moment of inertia about the center of mass.\nLet the distance of the center of mass from the second pivot point be (L-x). The period about this point is given by:\n\\(T = 2\\pi\\sqrt{\\frac{I_c + m(L-x)^2}{mg(L-x)}}\\)\nSince both periods are equal, we have:\n\\(\\frac{I_c + mx^2}{x} = \\frac{I_c + m(L-x)^2}{L-x}\\)\n\\(I_c(L-x) + mx^2(L-x) = I_c x + mx(L-x)^2\\)\n\\(I_c (L - 2x) = mx(L-x)(L-x-x) = mx(L-x)(L-2x)\\)\n\\(I_c = mx(L-x)\\)\nSubstituting this into the period equation for the first pivot point:\n\\(T = 2\\pi\\sqrt{\\frac{mx(L-x) + mx^2}{mgx}} = 2\\pi\\sqrt{\\frac{mxL - mx^2 + mx^2}{mgx}} = 2\\pi\\sqrt{\\frac{Lx}{g}}\\)\n\\(\\implies T^2 = 4\\pi^2 \\frac{Lx}{g}\\)\nNow, we consider the case where the two pivot points are on opposite sides of the center of mass, and the period is the same for both points.  Let x be the distance of the center of mass from the first pivot point and L-x be the distance from the second pivot point.  The equation for the period is:\n\\(T = 2\\pi\\sqrt{\\frac{I_c+mx^2}{mgx}} = 2\\pi\\sqrt{\\frac{I_c+m(L-x)^2}{mg(L-x)}}\\)\nEquating these expressions and simplifying leads to the result:\n\\(I_c = mx(L-x)\\)\nSubstituting this back into the equation for the period and solving for g, we obtain:\n\\(g = \\frac{4\\pi^2 L}{T^2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Equate the expressions for the period of the physical pendulum about the two pivot points.  This will lead to an equation relating the moment of inertia about the center of mass, the distances to the pivot points, and the mass.  Solve for g.",
+      "methodOfSolving": [
+        "Write down the formula for the period of a physical pendulum.",
+        "Apply the formula to both pivot points, noting that the periods are equal.",
+        "Solve the resulting equations for g."
+      ],
+      "answer": "\\(g = \\frac{4\\pi^2 L}{T^2}\\)"
+    },
+    {
+      "id": "AM-0002",
+      "title": "Angular Speed to Prevent Water Leakage in a Rotating Tube",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 600,
+        "Unit": "Mechanics",
+        "tags": [
+          "Fluid Mechanics",
+          "Rotation",
+          "Centrifugal Force",
+          "Pressure"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A tube of uniform cross-section 'a' and length L is rotating with a constant angular speed ω in the vertical plane. End A is open to atmosphere. What is the angular speed required just to stop water coming out from a very small opening present at the closed end B when the hole is at the topmost position? Atmospheric pressure is P₀ (pascal). \n\\nDIAGRAM[1,300]",
+      "solution": "Centrifugal force = \\(\\int dm x \\omega^2 = \\int \\rho adx \\cdot x \\omega^2\\)\n\\(F = (\\rho a \\omega^2) \\int_{L-h}^L x dx = \\frac{\\rho a \\omega^2}{2} (2Lh - h^2) \\quad ...(1)\\)\ncentripetal force is provided by mg. \\(\\quad ...(2)\\)\n(1) and (2) \\(\\implies \\frac{\\rho a \\omega^2}{2}(2Lh - h^2) = \\rho a hg\\)\n\\(\\therefore \\omega = \\sqrt{\\frac{2g}{(2L - h)}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the pressure at the hole due to the centrifugal force and atmospheric pressure. The water will not come out if the pressure inside is equal to or greater than the atmospheric pressure.",
+      "methodOfSolving": [
+        "Calculate the centrifugal force acting on a small element of water in the tube.",
+        "Integrate the centrifugal force over the height of the water column.",
+        "Equate the pressure due to the centrifugal force to the atmospheric pressure to find the angular speed."
+      ],
+      "answer": "\\(\\omega = \\sqrt{\\frac{2g}{(2L - h)}}\\)"
+    },
+    {
+      "id": "AM-0003",
+      "title": "Ring on a Smooth Cone",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 720,
+        "Unit": "Mechanics",
+        "tags": [
+          "Statics",
+          "Tension",
+          "Elasticity",
+          "Young's Modulus",
+          "Potential Energy"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A ring of mass M, radius R, cross-section area \\(a\\), and Young’s modulus Y is kept on a smooth cone of base radius 2R and semi-vertex angle 45°, as shown in the figure. Assume that the extension in the ring is small. \n\n\\nDIAGRAM[1,300]\n\n(a) Find the tension in the ring.\n(b) Calculate the extension in the ring.\n(c) Determine the elastic potential energy stored in the ring.",
+      "solution": "(a) Consider a small segment of the ring. The forces acting on this segment are tension T, weight Mg/2πR, and normal reaction N.  Resolving forces along the direction of tension, we find that the tension is given by:\n\\(T = \\frac{Mg}{2\\pi}\\)\n\n(b) The extension in the ring is due to the tension. The circumference of the ring is 2πR. Let the extension be ΔL. The strain is ΔL/2πR. The stress is T/a. Using Young's modulus, we have: \n\\(Y = \\frac{Stress}{Strain} = \\frac{T/a}{\\Delta L / 2\\pi R}\\)\nSolving for ΔL:\n\\(\\Delta L = \\frac{MgR}{aY}\\)\n\n(c) The elastic potential energy (U) stored in the ring is given by:\n\\(U = \\frac{1}{2} \\times Stress \\times Strain \\times Volume = \\frac{1}{2} \\frac{T}{a} \\frac{\\Delta L}{2\\pi R} (2\\pi R a) = \\frac{T \\Delta L}{2} = \\frac{Mg}{4\\pi} \\frac{MgR}{aY} = \\frac{M^2 g^2 R}{4\\pi aY}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Consider the forces acting on a small segment of the ring and resolve them to find the tension.\n(b) Use the definition of Young's modulus to relate the tension, extension, and cross-sectional area.\n(c) Use the formula for elastic potential energy.",
+      "methodOfSolving": [
+        "(a) Resolve the forces acting on a small segment of the ring to find the tension.",
+        "(b) Use the definition of Young's modulus to relate stress, strain, and extension. Solve for extension.",
+        "(c) Use the formula for elastic potential energy: U = (1/2) * stress * strain * volume."
+      ],
+      "answer": "(a) \\(T = \\frac{Mg}{2\\pi}\\)\n(b) \\(\\Delta L = \\frac{MgR}{aY}\\)\n(c) \\(U = \\frac{M^2 g^2 R}{4\\pi aY}\\)"
+    }
   ]
 }

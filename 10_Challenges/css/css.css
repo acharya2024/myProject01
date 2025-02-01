@@ -41,3 +41,17 @@ details[open] > summary::before {
         /* Add spacing between <li> elements */
     }
 }
+.fade-out-up {
+    animation: fadeOutUp 0.5s forwards; // Adjust duration as needed
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-30px); // Adjust the translation distance as needed
+    }
+}
