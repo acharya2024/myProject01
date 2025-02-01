@@ -263,6 +263,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.MathJax) {
             MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
         }
+        const presentationModeToggle = document.querySelector(".presentation-mode-toggle"); 
+        presentationModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("presentation-mode");
+        });
     }
 
     // Function to check Bookman Old Style font support

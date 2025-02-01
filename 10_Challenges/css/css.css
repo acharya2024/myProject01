@@ -55,3 +55,11 @@ details[open] > summary::before {
         transform: translateY(-30px); // Adjust the translation distance as needed
     }
 }
+ /* Presentation Mode Styles */
+ body.presentation-mode {
+    font-size: 1.5em; /* Increase overall text size */
+}
+
+body.presentation-mode .card-body img {  /* Target images within the card body */
+    transform: scale(1.5); /* Increase image size */
+}
