@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingMessage.textContent = "Loading questions...";
     loadingMessage.style.textAlign = "center";
     loadingMessage.style.fontWeight = "bold";
-    contentDiv.appendChild(loadingMessage); // Append loading message immediately
+    contentDiv.appendChild(loadingMessage);
 
     const modalHtml = `
         <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
@@ -33,27 +33,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.insertAdjacentHTML("beforeend", modalHtml);
 
+
     let currentUserName = null;
     let solvedQuestions = new Set();
     let data = null;
-    let presentationMode = false;
-    let contentLoading = true;
 
+    //Put everything related to modal inside window.onload, for preventing errors related to it.
     window.addEventListener('load', () => {
         const userModal = new bootstrap.Modal(document.getElementById('userModal'));
         const userList = document.getElementById('userList');
         const newUserNameInput = document.getElementById('newUserName');
         const addNewUserButton = document.getElementById('addNewUser');
-        const presentationModeToggle = document.querySelector(".presentation-mode-toggle");
-
-        presentationModeToggle.addEventListener("click", () => {
-            presentationMode = !presentationMode;
-            document.body.classList.toggle("presentation-mode", presentationMode);
-            updateImageSizes();
-        });
-
-        loadUsers();
-        userModal.show(); // Show modal immediately
 
         function loadUsers() {
             const users = JSON.parse(localStorage.getItem("users")) || {};
@@ -78,17 +68,19 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 solvedQuestions = new Set();
             }
+            userModal._element.classList.add('fade-out-up');  // Add a custom CSS class for animation
 
-            userModal._element.classList.add('fade-out-up');
+
+            // Listen for the 'hidden.bs.modal' event which fires *after* the animation completes
             userModal._element.addEventListener('hidden.bs.modal', function onHidden() {
-                userModal._element.removeEventListener('hidden.bs.modal', onHidden);
-                userModal._element.classList.remove('fade-out-up');
+                userModal._element.removeEventListener('hidden.bs.modal', onHidden);  // important - removes listener after fired once
+                userModal._element.classList.remove('fade-out-up');   // Remove animation class
 
-                if (!contentLoading) {
-                    updateQuestionVisibility();
-                }
+                loadQuestions(data);
+
             });
-            userModal.hide();
+
+            userModal.hide(); // Initiate the hiding of the modal
         }
 
         addNewUserButton.addEventListener("click", addNewUser);
@@ -110,55 +102,48 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         fetch(jsonFileName)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(jsonData => {
                 data = jsonData;
-                loadQuestions(data);
+                loadUsers();
+                userModal.show();
+                loadingMessage.remove();
             })
-            .catch(error => {
-                console.error("Error loading questions:", error);
-                loadingMessage.textContent = "Failed to load questions."; // Update loading message on error
-            });
+            .catch(error => console.error("Error loading questions:", error));
+
     });
 
 
+    // Function to load questions into the HTML
     function loadQuestions(data) {
-        console.log("loadQuestions function called"); // Debugging log
-        if (!data || !data.questions) {
-            console.error("Invalid question data received:", data);
-            loadingMessage.textContent = "Error: Invalid question data.";
-            return;
-        }
-
         const questionList = document.createElement("ul");
         questionList.classList.add("list-group-flush");
 
         data.questions.forEach((question, index) => {
-            if (!question.solutionRechecked) {
-                return;
+            if (!question.solutionRechecked) {//! to be set
+                return; // Skip questions where solutionRechecked is false
             }
 
             const listItem = document.createElement("li");
             listItem.classList.add("list-group-item");
+
+            // Create details for the entire question
             const questionDetails = document.createElement("details");
             const questionSummary = document.createElement("summary");
 
+            // Use textContent instead of <strong> to allow toggling style.fontWeight
             questionSummary.textContent = `${index + 1}. ${question.title || "Question Title"}`;
-            questionSummary.dataset.questionId = question.id;
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
             questionDetails.appendChild(questionSummary);
 
-
+            // Add question text
             if (question.questionText) {
                 const questionText = document.createElement("div");
                 questionText.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id));
                 questionDetails.appendChild(questionText);
             }
+
+            // Create details for answer key if available
             if (question.answer) {
                 const answerDetails = document.createElement("details");
                 const answerSummary = document.createElement("summary");
@@ -168,45 +153,60 @@ document.addEventListener("DOMContentLoaded", function () {
                 const answerContent = document.createElement("div");
                 answerContent.innerHTML = wrapTextInParagraphs(question.answer);
                 answerDetails.appendChild(answerContent);
+
                 questionDetails.appendChild(answerDetails);
 
+                // Add "Got the answer!" button
                 const gotAnswerButton = document.createElement("button");
                 gotAnswerButton.textContent = "Mark as done!";
                 gotAnswerButton.classList.add("btn", "btn-success", "btn-sm", "mt-2");
                 gotAnswerButton.onclick = function () {
+                    // Hide the button
                     gotAnswerButton.style.display = "none";
+                    // Remove bold to mark as solved
                     questionSummary.style.fontWeight = "normal";
+                    // Save solved status
                     solvedQuestions.add(question.id);
                     const storedData = localStorage.getItem(`userData_${currentUserName}`);
                     let userData = {};
                     if (storedData) {
                         userData = JSON.parse(storedData);
                     }
-                    userData[sectionCode] = [...solvedQuestions];
+                    userData[sectionCode] = [...solvedQuestions]; // Save progress for this section
                     localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
+
                 };
                 answerDetails.appendChild(gotAnswerButton);
-            } else { // For questions without answer key
+            }
+            else {
                 const answerDetails = document.createElement("details");
                 const answerSummary = document.createElement("summary");
                 answerSummary.textContent = "Answer Key";
                 answerDetails.appendChild(answerSummary);
+
                 const answerContent = document.createElement("div");
                 answerContent.innerHTML = wrapTextInParagraphs("To prove");
                 answerDetails.appendChild(answerContent);
+
                 questionDetails.appendChild(answerDetails);
 
+                // Add "Got the answer!" button
                 const gotAnswerButton = document.createElement("button");
                 gotAnswerButton.textContent = "Mark as done!";
                 gotAnswerButton.classList.add("btn", "btn-success", "mt-2");
                 gotAnswerButton.onclick = function () {
+                    // Hide the button
                     gotAnswerButton.style.display = "none";
+                    // Remove bold to mark as solved
                     questionSummary.style.fontWeight = "normal";
+                    // Save solved status
                     solvedQuestions.add(question.id);
                     localStorage.setItem("solvedQuestions", JSON.stringify([...solvedQuestions]));
                 };
                 answerDetails.appendChild(gotAnswerButton);
             }
+
+            // Create details for hint if available
             if (question.hint) {
                 const hintDetails = document.createElement("details");
                 const hintSummary = document.createElement("summary");
@@ -216,30 +216,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 const hintContent = document.createElement("div");
                 hintContent.innerHTML = wrapTextInParagraphs(question.hint);
                 hintDetails.appendChild(hintContent);
+
                 questionDetails.appendChild(hintDetails);
             }
+
+            // Create details for method to solve if available
             if (question.methodOfSolving && question.methodOfSolving.length > 0) {
                 const methodDetails = document.createElement("details");
                 const methodSummary = document.createElement("summary");
                 methodSummary.textContent = "Method to Solve";
                 methodDetails.appendChild(methodSummary);
+
                 const methodList = document.createElement("ul");
                 question.methodOfSolving.forEach((step, stepIndex) => {
                     const stepItem = document.createElement("li");
-                    stepItem.innerHTML = `<strong>Step ${stepIndex + 1}:</strong> ${step}`;
+                    stepItem.innerHTML = `<strong>Step ${stepIndex + 1}:</strong> ${step}`; // Bold "Step"
                     methodList.appendChild(stepItem);
                 });
+
                 methodDetails.appendChild(methodList);
                 questionDetails.appendChild(methodDetails);
             }
+
+
+            // Create details for solution if available
             if (question.solution) {
                 const solutionDetails = document.createElement("details");
                 const solutionSummary = document.createElement("summary");
                 solutionSummary.textContent = "Detailed Solution";
                 solutionDetails.appendChild(solutionSummary);
+
                 const solutionContent = document.createElement("div");
                 solutionContent.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
                 solutionDetails.appendChild(solutionContent);
+
                 questionDetails.appendChild(solutionDetails);
             }
 
@@ -247,75 +257,119 @@ document.addEventListener("DOMContentLoaded", function () {
             questionList.appendChild(listItem);
         });
 
-
-        const images = contentDiv.querySelectorAll("img");
-        images.forEach(img => {
-            img.dataset.initialWidth = img.offsetWidth;
-        });
-        updateImageSizes();
         contentDiv.appendChild(questionList);
 
-        contentDiv.removeChild(loadingMessage); // Remove loading message after questions loaded
-        contentLoading = false; // Set contentLoading flag to false
-
-        if (currentUserName) {
-            updateQuestionVisibility(); // Update visibility if user is already selected
-        }
-
-
+        // Trigger MathJax to render math expressions
         if (window.MathJax) {
             MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
         }
-    }
 
+        // Set initial image sizes and attach event listeners *after* the images are in the DOM
+        updateImageSizes();  // Initial sizing for default view
+        let presentationMode = false; // Track presentation mode state
 
-    function updateImageSizes() {
-        const images = contentDiv.querySelectorAll("img");
-        images.forEach(img => {
-            if (presentationMode) {
-                img.style.width = (img.dataset.initialWidth * 1.5) + "px";
-            } else {
-                img.style.width = img.dataset.initialWidth + "px";
-            }
+        const presentationModeToggle = document.querySelector(".presentation-mode-toggle");
+        presentationModeToggle.addEventListener("click", () => {
+            presentationMode = !presentationMode; // Toggle the state
+            document.body.classList.toggle("presentation-mode", presentationMode); // Set class based on state
+            updateImageSizes(); // Call the new function to adjust images
         });
     }
 
+    function updateImageSizes() {
+        const images = contentDiv.querySelectorAll("img");  // Select only images within contentDiv
 
+        images.forEach(img => {
+            if (presentationMode) {
+                img.style.width = (img.offsetWidth * 1.5) + "px"; // Increase width by 50%
+
+            } else {
+                img.style.width = img.dataset.initialWidth + "px"; // Reset to original width
+            }
+        });
+    }
+    // Function to check Bookman Old Style font support
+    function checkFontSupport() {
+        const testElement = document.createElement("span");
+        testElement.style.fontFamily = "Bookman Old Style";
+        document.body.appendChild(testElement);
+        const computedFont = window.getComputedStyle(testElement).fontFamily;
+        document.body.removeChild(testElement);
+
+        if (!computedFont.includes("Bookman")) {
+            alert("Your device does not support Bookman Old Style font. Consider using a web-safe alternative like Georgia or Times New Roman.");
+        }
+    }
+    //checkFontSupport();
+
+    // Function to replace diagram placeholders with image paths
     function processDiagrams(text, questionId) {
         return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
             return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px; margin-left: 30px;">`;
         });
     }
-
+    // Function to wrap text in <p> tags for new lines
     function wrapTextInParagraphs(text) {
         return text
             .split("\\n")
             .map((line) => {
                 if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                    // Add margin for lines starting with \( but not containing \Rightarrow
                     return `<p style="margin-left: 20px;">${line}</p>`;
                 }
                 return `<p>${line}</p>`;
             })
             .join("");
     }
-
     function formatText(text) {
         return text
-            .replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+            .replace(/\*(.*?)\*/g, "<strong>$1</strong>") // Bold for *WORD*
     }
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("img");
 
-
-    function updateQuestionVisibility() {
-        const questionSummaries = contentDiv.querySelectorAll('.list-group-item summary');
-
-        questionSummaries.forEach(summary => {
-            const questionId = summary.dataset.questionId;
-            summary.style.fontWeight = solvedQuestions.has(questionId) ? "normal" : "bold";
-
-            const gotAnswerButton = summary.parentElement.querySelector(".btn-success");
-            if (gotAnswerButton) {
-                gotAnswerButton.style.display = solvedQuestions.has(questionId) ? "none" : "block";
-            }
+        // Store initial dimensions for each image
+        images.forEach(img => {
+            img.dataset.initialWidth = img.offsetWidth;
+            img.dataset.initialHeight = img.offsetHeight;
         });
+
+    });
+    // Function to enforce offline mode
+    function requireOfflineMode() {
+        const message = document.createElement("p");
+        message.textContent = "Turn off your device's internet to see questions.";
+        message.style.position = "absolute";
+        message.style.top = "50%";
+        message.style.left = "50%";
+        message.style.transform = "translate(-50%, -50%)";
+        message.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+        message.style.padding = "10px 20px";
+        message.style.border = "2px solid black";
+        message.style.borderRadius = "8px";
+        message.style.fontSize = "18px";
+        message.style.textAlign = "center";
+        message.style.fontWeight = "bold";
+        message.style.zIndex = "1000";
+
+        const updateVisibility = () => {
+            if (!navigator.onLine) {
+                contentDiv.style.visibility = "visible";
+                if (message.parentElement) {
+                    message.remove();
+                }
+            } else {
+                contentDiv.style.visibility = "hidden";
+                if (!message.parentElement) {
+                    document.body.appendChild(message);
+                }
+            }
+        };
+
+        updateVisibility();
+        window.addEventListener("online", updateVisibility);
+        window.addEventListener("offline", updateVisibility);
     }
+
+    //requireOfflineMode();
 });

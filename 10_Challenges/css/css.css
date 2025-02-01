@@ -42,7 +42,7 @@ details[open] > summary::before {
     }
 }
 .fade-out-up {
-    animation: fadeOutUp 0.5s forwards; // Adjust duration as needed
+    animation: fadeOutUp 0.5s forwards; 
 }
 
 @keyframes fadeOutUp {
@@ -52,7 +52,7 @@ details[open] > summary::before {
     }
     to {
         opacity: 0;
-        transform: translateY(-30px); // Adjust the translation distance as needed
+        transform: translateY(-30px); 
     }
 }
  /* Presentation Mode Styles */
