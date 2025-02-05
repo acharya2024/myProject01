@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("details").forEach((detail) => {
+        detail.addEventListener("click", function (event) {
+            // Prevent event from bubbling up and causing unexpected behavior
+            event.stopPropagation();
+
+            // Close all sibling <details> elements
+            this.parentElement.querySelectorAll("details").forEach((sibling) => {
+                if (sibling !== this) {
+                    sibling.removeAttribute("open");
+                }
+            });
+        });
+    });
     const sectionCode = document.getElementById("sectionTitle").getAttribute("code");
     const jsonFileName = `${sectionCode}.json`;
 
@@ -166,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 answerDetails.appendChild(answerSummary);
 
                 const answerContent = document.createElement("div");
-                answerContent.innerHTML = wrapTextInParagraphs(question.answer);
+                answerContent.innerHTML = wrapTextInParagraphs(formatText(question.answer));
                 answerDetails.appendChild(answerContent);
                 questionDetails.appendChild(answerDetails);
 
@@ -214,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 hintDetails.appendChild(hintSummary);
 
                 const hintContent = document.createElement("div");
-                hintContent.innerHTML = wrapTextInParagraphs(question.hint);
+                hintContent.innerHTML = wrapTextInParagraphs(formatText(question.hint));
                 hintDetails.appendChild(hintContent);
                 questionDetails.appendChild(hintDetails);
             }
@@ -226,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const methodList = document.createElement("ul");
                 question.methodOfSolving.forEach((step, stepIndex) => {
                     const stepItem = document.createElement("li");
-                    stepItem.innerHTML = `<strong>Step ${stepIndex + 1}:</strong> ${step}`;
+                    stepItem.innerHTML = `<strong>Step ${stepIndex + 1}:</strong> ${formatText(step)}`;
                     methodList.appendChild(stepItem);
                 });
                 methodDetails.appendChild(methodList);
@@ -318,4 +331,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    function enforceSingleDetailsExpansion() {
+        const detailsElements = document.querySelectorAll('details');
+
+        detailsElements.forEach(details => {
+            details.addEventListener('toggle', function (event) {
+                if (details.open) { // Only proceed if the clicked details is being opened
+                    const parentDetails = details.parentNode; // Get the parent node
+
+                    if (parentDetails) {
+                        const siblingDetails = parentDetails.querySelectorAll('details'); // Get all details in the same parent
+
+                        siblingDetails.forEach(sibling => {
+                            if (sibling !== details && sibling.open) { // Close other open siblings
+                                sibling.removeAttribute('open'); // Use removeAttribute for better compatibility
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    }
+
+    enforceSingleDetailsExpansion(); // Call the function to set up the behavior
 });

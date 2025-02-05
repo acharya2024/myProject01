@@ -1,5 +1,202 @@
 {
   "questions": [
-    
+    {
+      "id": "OP-0001",
+      "title": "Apparent Depth of a Stone in a Swimming Pool",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 720,
+        "Unit": "Optics",
+        "tags": [
+          "Refraction",
+          "Snell's Law",
+          "Apparent Depth",
+          "Geometry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A man standing on the edge of a swimming pool looks at a stone lying at the bottom of the pool. The depth of the swimming pool is \\(h\\). At what distance from the surface of water is the image of the stone formed if the line of sight makes an angle \\(\\theta\\) with the normal to the surface?",
+      "solution": "This problem is not a simple case of normal viewing where the apparent depth is given by \\(h' = \\frac{h}{\\mu}\\). Here, the observer is at the edge of the pool, and the angle of observation \\(\\theta\\) is significant.\\n\\nDIAGRAM[1,300]\\nLet us draw two rays OA and OA’. OA is passing through the edge of the pool. The rays incident on the interface in the region AA’ after refraction will reach the eye of the observer. Let us now produce the refracted rays backwards so that their point of intersection (I) is the place where the image of the object O is formed.  So OB = h is the real depth, and IB’ = h’ is the apparent depth. To calculate h’, let us consider triangles OAA’ and IAA’. From triangle OAA’, we calculate AA’ and also from triangle IAA’, we again calculate AA’ (common side to both triangles) and equate both.\\nFrom A, drop a perpendicular on OA at the point N so that AN is an arc of a circular portion of radius OA = h/cosφ as shown in figure.\\n\\nDIAGRAM[2,200]\\nSince \\(AN = (OA)d\\phi = \\left(\\frac{h}{\\cos\\phi}\\right)d\\phi\\)\\nIn triangle AAN’ we have \\(\\cos\\phi = \\frac{AN}{AA'}\\)\\n\\(\\implies AA' = \\frac{AN}{\\cos\\phi} = \\left(\\frac{h}{\\cos^2\\phi}\\right)d\\phi \\quad ...(1)\\)\\nSimilarly, from triangle IAA’, we get\\n\\(AA' = \\left(\\frac{h'}{\\cos^2\\theta}\\right)d\\theta \\quad ...(2)\\)\\nEquating equations (1) and (2), we get\\n\\(\\left(\\frac{h}{\\cos^2\\phi}\\right)d\\phi = \\left(\\frac{h'}{\\cos^2\\theta}\\right)d\\theta\\)\\n\\(\\implies h' = h\\left(\\frac{\\cos^2\\theta}{\\cos^2\\phi}\\right)\\frac{d\\phi}{d\\theta} \\quad ...(3)\\)\\nNow, applying Snell’s Law at A, we get\\n\\(\\mu = \\frac{\\sin\\theta}{\\sin\\phi} \\quad ...(4)\\)\\n\\(\\implies \\sin\\theta = \\mu \\sin\\phi\\)\\nDifferentiating both sides, we get\\n\\(\\cos\\theta d\\theta = \\mu \\cos\\phi d\\phi\\)\\n\\(\\implies \\frac{d\\phi}{d\\theta} = \\frac{\\cos\\theta}{\\mu\\cos\\phi} \\quad ...(5)\\)\\nPut equation (5) in (1), we get\\n\\(h' = \\frac{h}{\\mu}\\left(\\frac{\\cos^3\\theta}{\\cos^3\\phi}\\right) \\quad ...(6)\\)\\nFurther from equation (4), we get \\(\\sin\\phi = \\frac{\\sin\\theta}{\\mu}\\)\\n\\(\\implies \\cos\\phi = \\sqrt{1 - \\sin^2\\phi} = \\sqrt{1 - \\frac{\\sin^2\\theta}{\\mu^2}}\\)\\n\\(\\implies \\cos^3\\phi = \\left(1 - \\frac{\\sin^2\\theta}{\\mu^2}\\right)^{\\frac{3}{2}} = \\frac{(\\mu^2 - \\sin^2\\theta)^{\\frac{3}{2}}}{\\mu^3} \\quad ...(7)\\)\\nSubstituting equation (7) in (6), we get\\n\\(h' = \\frac{\\mu^2 h \\cos^3\\theta}{(\\mu^2 - \\sin^2\\theta)^{3/2}}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Snell's law and consider similar triangles formed by the refracted rays.  Relate the apparent depth to the real depth and the angles of incidence and refraction.",
+      "methodOfSolving": [
+        "Draw a diagram showing the path of light rays from the stone to the observer's eye.",
+        "Apply Snell's Law at the point of refraction.",
+        "Use similar triangles to relate the apparent depth, real depth, and the angles.",
+        "Differentiate Snell's Law to find a relationship between dθ and dφ.",
+        "Substitute and solve for the apparent depth h'."
+      ],
+      "answer": "\\(h' = \\frac{\\mu^2 h \\cos^3\\theta}{(\\mu^2 - \\sin^2\\theta)^{3/2}}\\)"
+    },
+    {
+      "id": "OP-0002",
+      "title": "Fraction of Light Escaping from Water",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 480,
+        "Unit": "Optics",
+        "tags": [
+          "Total Internal Reflection",
+          "Refraction",
+          "Critical Angle",
+          "Geometry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A point source of light is placed at a distance \\(h\\) below the surface of a large and deep lake. Show that the fraction \\(f\\) of light that escapes directly from the water surface is independent of \\(h\\) and is given by \\(f = \\frac{1}{2}\\left[1 - \\sqrt{1 - \\frac{1}{\\mu^2}}\\right]\\).",
+      "solution": "Due to Total Internal Reflection (TIR), light will be reflected back into the water for \\(i > C\\), where \\(C\\) is the critical angle. So, only that portion of incident light will escape which passes through the cone of angle \\(\\theta = 2C\\).  \\nDIAGRAM[1,300]\\nSo, the fraction of light escaping is given by\\n\\(f = \\frac{\\text{Area of Surface ACB}}{\\text{Total Area of Sphere}}\\)\\n\\(\\implies f = \\frac{2\\pi R^2 (1 - \\cos C)}{4\\pi R^2} = \\frac{1 - \\cos C}{2}\\)\\nNow, as \\(f\\) depends on \\(C\\), which depends only on \\(\\mu\\) (the refractive index of water), hence \\(f\\) is independent of \\(h\\). Since we know that\\n\\(\\sin C = \\frac{1}{\\mu}\\)\\n\\(\\implies \\cos C = \\frac{\\sqrt{\\mu^2 - 1}}{\\mu} = \\sqrt{1 - \\frac{1}{\\mu^2}}\\)\\n\\(\\implies f = \\frac{1}{2} \\left( 1 - \\sqrt{1 - \\frac{1}{\\mu^2}} \\right)\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the cone of light that escapes the water surface. The fraction of light escaping is the ratio of the area of the spherical cap (formed by the cone) to the total area of the sphere.",
+      "methodOfSolving": [
+        "Determine the critical angle for total internal reflection.",
+        "Calculate the solid angle of the cone of light that escapes the water.",
+        "Find the ratio of the area subtended by this solid angle on the surface to the total surface area of a sphere centered at the source."
+      ],
+      "answer": "\\(f = \\frac{1}{2}\\left[1 - \\sqrt{1 - \\frac{1}{\\mu^2}}\\right]\\)"
+    },{
+      "id": "OP-0003",
+      "title": "Cylindrical Glass Rod and Plane Mirror",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Optics",
+        "tags": [
+          "Refraction",
+          "Snell's Law",
+          "Reflection",
+          "Geometry",
+          "Reversibility of Light"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A cylindrical glass rod of radius 0.1 m and refractive index \\(\\sqrt{3}\\) lies on a horizontal plane mirror. A horizontal ray of light moving perpendicular to the axis of the rod is incident on it.\\nDIAGRAM[1,250]\\n(a) At what height from the mirror should the ray be incident so that it leaves the rod at a height of 0.1 m above the plane mirror?\\n(b) At what distance a second similar rod, parallel to the first, be placed on the mirror, such that the emergent ray from the second rod is in line with the incident ray on the first rod?",
+      "solution": "Let us first draw the ray diagram for the situation.\\n\\nDIAGRAM[2,250]\\n(a) Since, PO = OQ \\(\\implies \\angle OPQ = \\angle OQP = r\\) (say)\\nAlso, \\(i = r + r = 2r\\)\\nIn \\(\\triangle POS\\), we have\\n\\(h = OP \\sin i = 0.1 \\sin i\\)\\n\\(\\implies h = 0.1 \\sin 2r\\)\\n\\(\\implies h = 0.2 \\sin r \\cos r \\quad ...(1)\\)\\nApplying Snell’s Law at P, we get\\n\\(\\sqrt{3} = \\frac{\\sin i}{\\sin r} = \\frac{2\\sin r \\cos r}{\\sin r} = 2\\cos r\\)\\n\\(\\implies r = 30^\\circ\\)\\nSubstituting in equation (1), we get\\n\\(h = (0.2) \\left(\\frac{1}{2}\\right) \\left(\\frac{\\sqrt{3}}{2}\\right) = 0.086 \\text{ m}\\)\\nHence, height from the mirror is\\n\\(d = h + R = 0.1 + 0.086 = 0.186 \\text{ m}\\)\\n(b) Using the principle of reversibility of light, we get\\n\\(i = 2r = 60^\\circ\\)\\n\\nDIAGRAM[3,300]\\nNow, \\(\\frac{QU}{TU} = \\cot i = \\cot(60^\\circ) = \\frac{1}{\\sqrt{3}}\\)\\n\\(\\implies QU = \\frac{TU}{\\sqrt{3}} = \\frac{0.1}{\\sqrt{3}}\\)\\nSo, the desired distance is\\n\\(OC = 2(0.1) + 2\\left(\\frac{0.1}{\\sqrt{3}}\\right) = 0.315 \\text{ m}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "(a) Use Snell's Law at the point of incidence and relate the height h to the angle of incidence and the radius of the rod.\\n(b) Use the principle of reversibility of light and apply basic trigonometry.",
+      "methodOfSolving": [
+        "(a) Draw a ray diagram and apply Snell's law at the point of incidence. Use trigonometric relationships to find the height h.",
+        "(b) Use the principle of reversibility of light to determine the angle of incidence at the second rod. Use trigonometry to calculate the distance."
+      ],
+      "answer": "(a) 0.186 m\\n(b) 0.315 m"
+    },
+    {
+      "id": "OP-0004",
+      "title": "Maximum Ratio of Radii for Light Emergence",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Optics",
+        "tags": [
+          "Total Internal Reflection",
+          "Critical Angle",
+          "Refraction",
+          "Geometry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Find the maximum value of \\(\\frac{r}{R}\\), so that the beam of light incident normally at the face A of a U shaped glass tube emerges through B as shown in the figure. The refractive index of glass is \\(\\mu = \\frac{3}{2}\\). \\n\\nDIAGRAM[1,200]",
+      "solution": "Incident angle \\(i\\) is least for ray AP, and this angle should be greater than the critical angle C for the ray to emerge through B.\\n\\nDIAGRAM[2,200]\\n\\(i > C\\)\\n\\(\\implies \\sin i > \\sin C\\)\\nFrom the geometry of the U-shaped tube, we can see that \\n\\(\\sin i = \\frac{R+r}{3R+2r}\\) and \\(\\sin C = \\frac{1}{\\mu} = \\frac{2}{3}\\)\\n\\(\\frac{R+r}{3R+2r} > \\frac{2}{3}\\)\\n\\(3R + 3r > 6R+4r\\)\\n\\(\\implies R > 2r\\)\\n\\(\\implies \\frac{r}{R} < \\frac{1}{2}\\)\\nHence, \\(\\left(\\frac{r}{R}\\right)_{max} = \\frac{1}{2}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "For the light to emerge through B, the angle of incidence at the inner curved surface must be greater than the critical angle. Find the minimum angle of incidence and apply the condition for total internal reflection.",
+      "methodOfSolving": [
+        "Determine the angle of incidence for a ray entering face A and striking the inner curved surface.",
+        "Find the critical angle for the glass-air interface.",
+        "Set the condition that the angle of incidence must be greater than the critical angle to prevent total internal reflection.",
+        "Solve for the maximum value of r/R."
+      ],
+      "answer": "\\(\\frac{1}{2}\\)"
+    },
+    {
+      "id": "OP-0006",
+      "title": "Image Formation by Split Convex Lens and Plane Mirror",
+      "statistics": {
+        "numberOfDiagrams": 4,
+        "idealAverageTimeInS": 900,
+        "Unit": "Optics",
+        "tags": [
+          "Geometrical Optics",
+          "Convex Lens",
+          "Plane Mirror",
+          "Image Formation",
+          "Lens Formula",
+          "Magnification"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A convex lens of focal length 15 cm is split into two halves, and the two halves are placed at a separation of 120 cm. Between these two halves of the convex lens, a plane mirror is placed horizontally and at a distance of 4 mm below the principal axis of the lens halves. An object of length 2 mm is placed at a distance of 20 cm from one half lens as shown in the figure. \\nDIAGRAM[1,300] \\n(a) Find the position and size of the final image.\\n(b) Trace the path of rays forming the image.",
+      "solution": "(a) For refraction at first half lens, using lens formula, \\(\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}\\), we get\\n\\(\\frac{1}{v} - \\frac{1}{-20} = \\frac{1}{15}\\)\\n\\(\\implies v = 60 \\text{ cm}\\)\\nMagnification, \\(m = \\frac{v}{u} = \\frac{60}{-20} = -3\\)\\nThe image formed by first half lens is shown in Figure 1.\\n\\nDIAGRAM[2,250]\\nNow, the point \\(B_1\\) is 6 mm below the principal axis of the lenses. Plane mirror is 4 mm below it. Hence, 4 mm length of \\(A_1 B_1\\) (i.e., \\(A_1 C_1\\)) acts as real object for mirror. Mirror forms its virtual image \\(A_2 C_2\\). So, 2 mm length of \\(A_1 B_1\\) (i.e., \\(C_1 B_1\\)) acts as virtual object for mirror. Real image \\(C_2 B_2\\) is formed of this part. Image formed by plane mirror is shown in Figure 2.\\n\\nDIAGRAM[3,200]\\nFor the second half of the lens, using lens formula \\(\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}\\), we get\\n\\(\\frac{1}{v} - \\frac{1}{-60} = \\frac{1}{15}\\)\\n\\(\\implies v = +20\\)\\n\\(m = \\frac{v}{u} = \\frac{20}{-60} = \\frac{-1}{3}\\)\\nSo, length of final image \\(A_3 B_3 = \\frac{1}{3} A_2 B_2 = 2 \\text{ mm}\\). However, point \\(B_2\\) is 2 mm below the optic axis of second half lens. Hence, its image \\(B_3\\) is formed 3 mm above the principal axis.\\nSimilarly, point \\(A_2\\) is 8 mm below the principal axis. Hence, its image is 8/3 mm above it.\\nTherefore, image is at a distance of 20 cm behind the second half lens and at a distance of 2/3 mm above the principal axis.\\nThe size of image is 2 mm and is inverted as compared to the given object. Image formed by second half lens is shown in Figure 3.\\n\\nDIAGRAM[4,200]\\n(b) The complete ray diagram tracing the path of rays is shown in Figure 4 \\nDIAGRAM[5,200]\\n",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the lens formula and magnification formula for each half lens. Consider the effect of the plane mirror on the intermediate image.",
+      "methodOfSolving": [
+        "Find the image formed by the first half lens using the lens formula and magnification formula.",
+        "Determine the image formed by the plane mirror of the image from step 1.",
+        "Consider the image formed by the plane mirror as the object for the second half lens.",
+        "Find the final image formed by the second half lens using the lens formula and magnification formula."
+      ],
+      "answer": "(a) 20 cm behind the second half lens, 2/3 mm above principal axis, 2 mm size, inverted.\\n(b) Ray diagram shown in solution."
+    },
+    {
+      "id": "OP-0008",
+      "title": "Biconvex Lens and Plane Mirror with Liquid",
+      "statistics": {
+        "numberOfDiagrams": 3,
+        "idealAverageTimeInS": 720,
+        "Unit": "Optics",
+        "tags": [
+          "Geometrical Optics",
+          "Biconvex Lens",
+          "Plane Mirror",
+          "Refractive Index",
+          "Focal Length",
+          "Lens Maker's Formula"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A thin biconvex lens of refractive index \\(\\frac{3}{2}\\) is placed on a horizontal plane mirror as shown in the figure. The space between the lens and the mirror is then filled with water of refractive index \\(\\frac{4}{3}\\). It is found that when a point object is placed 15 cm above the lens on its principal axis, the object coincides with its own image. On repeating with another liquid, the object and the image again coincide at a distance of 25 cm from the lens. Calculate the refractive index of the liquid.",
+      "solution": "Let \\(R\\) be the radius of curvature of both the surfaces of the equi-convex lens, then in the first case, the situation is shown in figure. \\n\\nDIAGRAM[1, 200]\\nLet \\(f_1\\) be the focal length of equi-convex lens of refractive index \\(\\mu_1\\) and \\(f_2\\) be the focal length of plano-concave lens (made of water) of refractive index \\(\\mu_2\\). The focal length of the combined lens system is given by\n\\(\\frac{1}{F} = \\frac{1}{f_1} + \\frac{1}{f_2}\\)\n\\(\\implies \\frac{1}{F} = (\\mu_1 - 1)\\left(\\frac{1}{R} - \\frac{1}{-R}\\right) + (\\mu_2 - 1)\\left(\\frac{1}{-R} - \\frac{1}{\\infty}\\right)\\)\n\\(\\implies \\frac{1}{F} = \\left(\\frac{3}{2} - 1\\right)\\left(\\frac{1}{R} + \\frac{1}{R}\\right) + \\left(\\frac{4}{3} - 1\\right)\\left(-\\frac{1}{R}\\right) = \\frac{2}{3R}\\)\n\\(\\implies F = \\frac{3R}{2}\\)\nNow, image coincides with the object when ray of light retraces its path i.e., it falls normally on the plane mirror. This is possible only when object lies at centre of curvature of the lens system.\n\\nDIAGRAM[2,200]\n\\(\\implies F = u = 15 \\text{ cm} \\quad \\text{{Distance of object is 15 cm}}\\)\n\\(\\implies \\frac{3R}{2} = 15 \\text{ cm}\\)\n\\(\\implies R = 10 \\text{ cm}\\)\nIn the second case, let \\(\\mu\\) be the refractive index of the liquid filled between lens and mirror and let \\(F'\\) be the focal length of new lens system. Then,\n\\(\\frac{1}{F'} = (\\mu_1 - 1)\\left(\\frac{1}{R} - \\frac{1}{-R}\\right) + (\\mu - 1)\\left(\\frac{1}{-R} - \\frac{1}{\\infty}\\right)\\)\n\\(\\implies \\frac{1}{F'} = \\left(\\frac{3}{2} - 1\\right)\\left(\\frac{2}{R}\\right) + (\\mu-1)\\left(-\\frac{1}{R}\\right) = \\frac{1}{R} - \\frac{\\mu-1}{R} = \\frac{2-\\mu}{R}\\)\n\\(\\implies F' = \\frac{R}{2-\\mu} = \\frac{10}{2-\\mu} \\quad {\\because R=10 \\text{ cm}}\\)\nNow, the image coincides with the object when it is placed at 25 cm distance.\n\\nDIAGRAM[3,200]\n\\(\\implies F' = 25\\)\n\\(\\implies \\frac{10}{2-\\mu} = 25\\)\n\\(\\implies 50 - 25\\mu = 10\\)\n\\(\\implies 25\\mu = 40\\)\n\\(\\implies \\mu = \\frac{40}{25} = 1.6\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the lens maker's formula to find the focal length of the combined lens system (biconvex lens and plano-concave liquid lens). When the object and image coincide, the object is at the center of curvature of the equivalent mirror formed by the lens-mirror system.",
+      "methodOfSolving": [
+        "Apply the lens maker's formula to find the focal length of the biconvex lens and the plano-concave liquid lens.",
+        "Calculate the combined focal length of the system.",
+        "Use the condition that the object coincides with its image when placed at the center of curvature.",
+        "Repeat the process for the second liquid and solve for its refractive index."
+      ],
+      "answer": "1.6"
+    },
+    {
+      "id": "OP-0009",
+      "title": "Minimum Radius for Total Internal Reflection in Bent Glass Rod",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 480,
+        "Unit": "Optics",
+        "tags": [
+          "Total Internal Reflection",
+          "Critical Angle",
+          "Refraction",
+          "Geometry"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A portion of a straight glass rod of diameter 4 cm and refractive index 1.5 is bent into an arc of radius \\(R\\) cm, and a parallel beam of light is incident on it as shown in the figure. Find the smallest \\(R\\), in cm, which permits all the light to pass around the arc.\\n\\nDIAGRAM[1,200]",
+      "solution": "The necessary and sufficient condition for all the rays to pass around the arc is that the ray with the least angle of incidence should get internally reflected, i.e., should suffer TIR (Total Internal Reflection). From the figure, it becomes obvious that the ray with the least angle of incidence is the one which is incident almost grazingly with the inner wall.\\n\\nDIAGRAM[2,200]\nFor this ray, let \\(\\alpha\\) be the angle of incidence. Then we observe that\n\\(\\sin\\alpha = \\frac{R-d}{R}\\), where \\(d\\) is the diameter of the tube.\nFor TIR, \\(\\alpha \\ge C\\), where C is the critical angle.\n\\(\\implies \\sin\\alpha \\ge \\sin C\\)\n\\(\\implies \\frac{R-d}{R} \\ge \\frac{1}{\\mu d}\\)\n\\(\\implies R \\ge \\frac{\\mu d}{\\mu - 1}\\)\nSince, \\(\\mu = 1.5\\) and \\(d = 4 \\text{ cm}\\), we get\n\\(R = 12 \\text{ cm}\\)\nHence, the least radius required is 12 cm.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "For all light to pass around the arc, the ray with the smallest angle of incidence must undergo total internal reflection.  This ray will graze the inner wall of the bent rod.",
+      "methodOfSolving": [
+        "Determine the angle of incidence for the ray grazing the inner wall.",
+        "Calculate the critical angle for total internal reflection using the refractive index.",
+        "Set the condition that the angle of incidence must be greater than or equal to the critical angle.",
+        "Solve for the minimum radius R."
+      ],
+      "answer": "12"
+    }
   ]
 }
