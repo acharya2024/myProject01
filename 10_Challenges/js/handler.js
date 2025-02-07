@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // 1. Exclusive details expantion, from first code
     document.querySelectorAll("details").forEach((detail) => {
         detail.addEventListener("click", function (event) {
             // Prevent event from bubbling up and causing unexpected behavior
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadingMessage.textContent = "Loading questions...";
     loadingMessage.style.textAlign = "center";
     loadingMessage.style.fontWeight = "bold";
-    contentDiv.appendChild(loadingMessage); // Append loading message immediately
+    contentDiv.appendChild(loadingMessage);
 
     const modalHtml = `
         <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         loadUsers();
-        userModal.show(); // Show modal immediately
+        userModal.show();
 
         function loadUsers() {
             const users = JSON.parse(localStorage.getItem("users")) || {};
@@ -139,9 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 
-
     function loadQuestions(data) {
-        console.log("loadQuestions function called"); // Debugging log
+        console.log("loadQuestions function called");
         if (!data || !data.questions) {
             console.error("Invalid question data received:", data);
             loadingMessage.textContent = "Error: Invalid question data.";
@@ -166,30 +166,93 @@ document.addEventListener("DOMContentLoaded", function () {
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
             questionDetails.appendChild(questionSummary);
 
+            // Create tabs container
+            const tabsWrapper = document.createElement('div');
+            tabsWrapper.classList.add('d-flex', 'align-items-start'); // Flexbox for layout
+            questionDetails.appendChild(tabsWrapper);
 
-            if (question.questionText) {
-                const questionText = document.createElement("div");
-                questionText.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id));
-                questionDetails.appendChild(questionText);
-            }
-            if (question.answer) {
-                const answerDetails = document.createElement("details");
-                const answerSummary = document.createElement("summary");
-                answerSummary.textContent = "Answer Key";
-                answerDetails.appendChild(answerSummary);
+            const tabsCard = document.createElement('div');
+            tabsCard.classList.add('card', 'flex-grow-1'); // flex-grow-1 to push button to right
+            tabsWrapper.appendChild(tabsCard);
 
-                const answerContent = document.createElement("div");
-                answerContent.innerHTML = wrapTextInParagraphs(formatText(question.answer));
-                answerDetails.appendChild(answerContent);
-                questionDetails.appendChild(answerDetails);
+            const cardHeader = document.createElement('div');
+            cardHeader.classList.add('card-header');
+            const tabsNav = document.createElement('ul');
+            tabsNav.classList.add('nav', 'nav-tabs', 'card-header-tabs');
+            cardHeader.appendChild(tabsNav);
+            tabsCard.appendChild(cardHeader);
 
+            const cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+            const tabContent = document.createElement('div');
+            tabContent.classList.add('tab-content');
+            cardBody.appendChild(tabContent);
+            tabsCard.appendChild(cardBody);
+
+
+            let tabIndex = 0;
+            // Question Tab
+            const questionTabItem = document.createElement('li');
+            questionTabItem.classList.add('nav-item');
+            const questionNavLink = document.createElement('a');
+            questionNavLink.classList.add('nav-link');
+            questionNavLink.id = `question-tab-${question.id}`;
+            questionNavLink.href = `#question-pane-${question.id}`;
+            questionNavLink.role = 'tab';
+            questionNavLink.setAttribute('data-bs-toggle', 'tab');
+            questionNavLink.setAttribute('aria-controls', `question-pane-${question.id}`);
+            questionNavLink.setAttribute('aria-selected', tabIndex === 0 ? 'true' : 'false');
+            questionNavLink.textContent = 'Question';
+            if (tabIndex === 0) questionNavLink.classList.add('active');
+            questionTabItem.appendChild(questionNavLink);
+            tabsNav.appendChild(questionTabItem);
+
+            const questionPane = document.createElement('div');
+            questionPane.classList.add('tab-pane', 'fade');
+            questionPane.id = `question-pane-${question.id}`;
+            questionPane.role = 'tabpanel';
+            questionPane.setAttribute('aria-labelledby', `question-tab-${question.id}`);
+            if (tabIndex === 0) questionPane.classList.add('show', 'active');
+            questionPane.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id));
+            tabContent.appendChild(questionPane);
+            tabIndex++;
+
+            // Answer Key Tab
+            if (question.answer || (!question.answer && question.type !== 'Subjective')) {
+                console.log(`Creating Answer Key tab for question: ${question.id}`); // Debugging Log
+                const answerTabItem = document.createElement('li');
+                answerTabItem.classList.add('nav-item');
+                const answerNavLink = document.createElement('a');
+                answerNavLink.classList.add('nav-link');
+                answerNavLink.id = `answer-tab-${question.id}`;
+                answerNavLink.href = `#answer-pane-${question.id}`;
+                answerNavLink.role = 'tab';
+                answerNavLink.setAttribute('data-bs-toggle', 'tab');
+                answerNavLink.setAttribute('aria-controls', `answer-pane-${question.id}`);
+                answerNavLink.setAttribute('aria-selected', tabIndex === 0 ? 'true' : 'false');
+                answerNavLink.textContent = 'Key';
+                if (tabIndex === 0) answerNavLink.classList.add('active');
+                answerTabItem.appendChild(answerNavLink);
+                tabsNav.appendChild(answerTabItem);
+
+                const answerPane = document.createElement('div');
+                answerPane.classList.add('tab-pane', 'fade');
+                answerPane.id = `answer-pane-${question.id}`;
+                answerPane.role = 'tabpanel';
+                answerPane.setAttribute('aria-labelledby', `answer-tab-${question.id}`);
+                if (tabIndex === 0) answerPane.classList.add('show', 'active');
+                answerPane.innerHTML = wrapTextInParagraphs(formatText(question.answer || "To prove"));
+
+                // ***Create and Append Button After answerPane Content***
                 const gotAnswerButton = document.createElement("button");
-                gotAnswerButton.textContent = "Mark as done!";
-                gotAnswerButton.classList.add("btn", "btn-success", "btn-sm", "mt-2");
+                gotAnswerButton.textContent = "done!";
+                gotAnswerButton.classList.add("btn", "btn-outline-success", "btn-sm", "mt-2", "float-end");
                 gotAnswerButton.onclick = function () {
-                    gotAnswerButton.style.display = "none";
+                    questionDetails.open = false;
+                    this.style.display = 'none';
                     questionSummary.style.fontWeight = "normal";
                     solvedQuestions.add(question.id);
+
                     const storedData = localStorage.getItem(`userData_${currentUserName}`);
                     let userData = {};
                     if (storedData) {
@@ -197,84 +260,129 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     userData[sectionCode] = [...solvedQuestions];
                     localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
-                };
-                answerDetails.appendChild(gotAnswerButton);
-            } else { // For questions without answer key
-                const answerDetails = document.createElement("details");
-                const answerSummary = document.createElement("summary");
-                answerSummary.textContent = "Answer Key";
-                answerDetails.appendChild(answerSummary);
-                const answerContent = document.createElement("div");
-                answerContent.innerHTML = wrapTextInParagraphs("To prove");
-                answerDetails.appendChild(answerContent);
-                questionDetails.appendChild(answerDetails);
 
-                const gotAnswerButton = document.createElement("button");
-                gotAnswerButton.textContent = "Mark as done!";
-                gotAnswerButton.classList.add("btn", "btn-success", "mt-2");
-                gotAnswerButton.onclick = function () {
-                    gotAnswerButton.style.display = "none";
-                    questionSummary.style.fontWeight = "normal";
-                    solvedQuestions.add(question.id);
-                    localStorage.setItem("solvedQuestions", JSON.stringify([...solvedQuestions]));
                 };
-                answerDetails.appendChild(gotAnswerButton);
+                answerPane.appendChild(gotAnswerButton); // Button added inside the "Answer Key"
+
+
+                tabContent.appendChild(answerPane);
+                tabIndex++;
+            } else {
+                console.log(`Skipping Answer Key tab for question: ${question.id} (no answer or subjective)`); // Debugging Log
             }
+
+            // Hint Tab
             if (question.hint) {
-                const hintDetails = document.createElement("details");
-                const hintSummary = document.createElement("summary");
-                hintSummary.textContent = "Hint";
-                hintDetails.appendChild(hintSummary);
+                const hintTabItem = document.createElement('li');
+                hintTabItem.classList.add('nav-item');
+                const hintNavLink = document.createElement('a');
+                hintNavLink.classList.add('nav-link');
+                hintNavLink.id = `hint-tab-${question.id}`;
+                hintNavLink.href = `#hint-pane-${question.id}`;
+                hintNavLink.role = 'tab';
+                hintNavLink.setAttribute('data-bs-toggle', 'tab');
+                hintNavLink.setAttribute('aria-controls', `hint-pane-${question.id}`);
+                hintNavLink.setAttribute('aria-selected', tabIndex === 0 ? 'true' : 'false');
+                hintNavLink.textContent = 'Hint';
+                if (tabIndex === 0) hintNavLink.classList.add('active');
+                hintTabItem.appendChild(hintNavLink);
+                tabsNav.appendChild(hintTabItem);
 
-                const hintContent = document.createElement("div");
-                hintContent.innerHTML = wrapTextInParagraphs(formatText(question.hint));
-                hintDetails.appendChild(hintContent);
-                questionDetails.appendChild(hintDetails);
+                const hintPane = document.createElement('div');
+                hintPane.classList.add('tab-pane', 'fade');
+                hintPane.id = `hint-pane-${question.id}`;
+                hintPane.role = 'tabpanel';
+                hintPane.setAttribute('aria-labelledby', `hint-tab-${question.id}`);
+                if (tabIndex === 0) hintPane.classList.add('show', 'active');
+                hintPane.innerHTML = wrapTextInParagraphs(formatText(question.hint));
+                tabContent.appendChild(hintPane);
+                tabIndex++;
             }
+
+            // Method to Solve Tab
             if (question.methodOfSolving && question.methodOfSolving.length > 0) {
-                const methodDetails = document.createElement("details");
-                const methodSummary = document.createElement("summary");
-                methodSummary.textContent = "Method to Solve";
-                methodDetails.appendChild(methodSummary);
-                const methodList = document.createElement("ul");
+                const methodTabItem = document.createElement('li');
+                methodTabItem.classList.add('nav-item');
+                const methodNavLink = document.createElement('a');
+                methodNavLink.classList.add('nav-link');
+                methodNavLink.id = `method-tab-${question.id}`;
+                methodNavLink.href = `#method-pane-${question.id}`;
+                methodNavLink.role = 'tab';
+                methodNavLink.setAttribute('data-bs-toggle', 'tab');
+                methodNavLink.setAttribute('aria-controls', `method-pane-${question.id}`);
+                methodNavLink.setAttribute('aria-selected', tabIndex === 0 ? 'true' : 'false');
+                methodNavLink.textContent = 'Steps';
+                if (tabIndex === 0) methodNavLink.classList.add('active');
+                methodTabItem.appendChild(methodNavLink);
+                tabsNav.appendChild(methodTabItem);
+
+                const methodPane = document.createElement('div');
+                methodPane.classList.add('tab-pane', 'fade');
+                methodPane.id = `method-pane-${question.id}`;
+                methodPane.role = 'tabpanel';
+                methodPane.setAttribute('aria-labelledby', `method-tab-${question.id}`);
+                if (tabIndex === 0) methodPane.classList.add('show', 'active');
+                let methodListHTML = '<ul>';
                 question.methodOfSolving.forEach((step, stepIndex) => {
-                    const stepItem = document.createElement("li");
-                    stepItem.innerHTML = `<strong>Step ${stepIndex + 1}:</strong> ${formatText(step)}`;
-                    methodList.appendChild(stepItem);
+                    methodListHTML += `<li><strong>Step ${stepIndex + 1}:</strong> ${formatText(step)}</li>`;
                 });
-                methodDetails.appendChild(methodList);
-                questionDetails.appendChild(methodDetails);
+                methodListHTML += '</ul>';
+                methodPane.innerHTML = methodListHTML;
+                tabContent.appendChild(methodPane);
+                tabIndex++;
             }
+
+            // Detailed Solution Tab
             if (question.solution) {
-                const solutionDetails = document.createElement("details");
-                const solutionSummary = document.createElement("summary");
-                solutionSummary.textContent = "Detailed Solution";
-                solutionDetails.appendChild(solutionSummary);
-                const solutionContent = document.createElement("div");
-                solutionContent.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
-                solutionDetails.appendChild(solutionContent);
-                questionDetails.appendChild(solutionDetails);
+                const solutionTabItem = document.createElement('li');
+                solutionTabItem.classList.add('nav-item');
+                const solutionNavLink = document.createElement('a');
+                solutionNavLink.classList.add('nav-link');
+                solutionNavLink.id = `solution-tab-${question.id}`;
+                solutionNavLink.href = `#solution-pane-${question.id}`;
+                solutionNavLink.role = 'tab';
+                solutionNavLink.setAttribute('data-bs-toggle', 'tab');
+                solutionNavLink.setAttribute('aria-controls', `solution-pane-${question.id}`);
+                solutionNavLink.setAttribute('aria-selected', tabIndex === 0 ? 'true' : 'false');
+                solutionNavLink.textContent = 'Solution';
+                if (tabIndex === 0) solutionNavLink.classList.add('active');
+                solutionTabItem.appendChild(solutionNavLink);
+                tabsNav.appendChild(solutionTabItem);
+
+                const solutionPane = document.createElement('div');
+                solutionPane.classList.add('tab-pane', 'fade');
+                solutionPane.id = `solution-pane-${question.id}`;
+                solutionPane.role = 'tabpanel';
+                solutionPane.setAttribute('aria-labelledby', `solution-tab-${question.id}`);
+                if (tabIndex === 0) solutionPane.classList.add('show', 'active');
+                solutionPane.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
+                tabContent.appendChild(solutionPane);
+                tabIndex++;
             }
+            questionDetails.appendChild(tabsCard);
 
             listItem.appendChild(questionDetails);
             questionList.appendChild(listItem);
         });
 
-
         const images = contentDiv.querySelectorAll("img");
         images.forEach(img => {
             img.dataset.initialWidth = img.offsetWidth;
+            img.addEventListener('dblclick', function () {
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = this.src;
+                imageModal.show();
+            });
         });
         updateImageSizes();
         contentDiv.appendChild(questionList);
 
-        contentDiv.removeChild(loadingMessage); // Remove loading message after questions loaded
-        contentLoading = false; // Set contentLoading flag to false
+        contentDiv.removeChild(loadingMessage);
+        contentLoading = false;
 
         if (currentUserName) {
-            updateQuestionVisibility(); // Update visibility if user is already selected
+            updateQuestionVisibility();
         }
-
 
         if (window.MathJax) {
             MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
@@ -331,29 +439,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-});
-document.addEventListener("DOMContentLoaded", function () {
-    function enforceSingleDetailsExpansion() {
-        const detailsElements = document.querySelectorAll('details');
+    document.addEventListener("DOMContentLoaded", function () {
+        function enforceSingleDetailsExpansion() {
+            const detailsElements = document.querySelectorAll('details');
 
-        detailsElements.forEach(details => {
-            details.addEventListener('toggle', function (event) {
-                if (details.open) { // Only proceed if the clicked details is being opened
-                    const parentDetails = details.parentNode; // Get the parent node
+            detailsElements.forEach(details => {
+                details.addEventListener('toggle', function (event) {
+                    if (details.open) { // Only proceed if the clicked details is being opened
+                        const parentDetails = details.parentNode; // Get the parent node
 
-                    if (parentDetails) {
-                        const siblingDetails = parentDetails.querySelectorAll('details'); // Get all details in the same parent
+                        if (parentDetails) {
+                            const siblingDetails = parentDetails.querySelectorAll('details'); // Get all details in the same parent
 
-                        siblingDetails.forEach(sibling => {
-                            if (sibling !== details && sibling.open) { // Close other open siblings
-                                sibling.removeAttribute('open'); // Use removeAttribute for better compatibility
-                            }
-                        });
+                            siblingDetails.forEach(sibling => {
+                                if (sibling !== details && sibling.open) { // Close other open siblings
+                                    sibling.removeAttribute('open'); // Use removeAttribute for better compatibility
+                                }
+                            });
+                        }
                     }
-                }
+                });
             });
-        });
-    }
+        }
 
-    enforceSingleDetailsExpansion(); // Call the function to set up the behavior
+        enforceSingleDetailsExpansion(); // Call the function to set up the behavior
+    });
 });

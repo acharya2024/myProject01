@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemDoodle Molecule Viewer</title>
+
+    <!-- Include ChemDoodle Web Components -->
+    <link rel="stylesheet" href="chem/ChemDoodleWeb-10.0.0/install/ChemDoodleWeb.css">
+    <script src="chem/ChemDoodleWeb-10.0.0/install/ChemDoodleWeb.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #ethaneCanvas {
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ethane Molecule (C₂H₆)</h2>
+
+    <!-- Canvas for Ethane -->
+    <canvas id="ethaneCanvas" width="300" height="300"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize ChemDoodle Viewer
+            var viewer = new ChemDoodle.ViewerCanvas('ethaneCanvas', 300, 300);
+            
+            // Parse SMILES notation to create a molecule object
+            var ethaneMolecule = ChemDoodle.readSMILES('CC'); // Ethane (C₂H₆)
+            
+            // Load the molecule into the viewer
+            viewer.loadMolecule(ethaneMolecule);
+        });
+    </script>
+
+</body>
+</html>

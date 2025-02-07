@@ -63,3 +63,6 @@ details[open] > summary::before {
 body.presentation-mode .card-body img {  /* Target images within the card body */
     transform: scale(1.5); /* Increase image size */
 }
+.nav-link {
+    padding: 5px; /* Remove all padding */
+}
