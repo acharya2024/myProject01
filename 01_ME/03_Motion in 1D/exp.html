@@ -1,875 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Graphs</title>
-    <!-- Chart.js -->
+    <title>Curve Selection Velocity Graph</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Chart.js Annotation Plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.1.0/dist/chartjs-plugin-annotation.min.js"></script>
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <style>
-        .chart-container {
-            width: 100%;
-            max-width: 400px;
+        #velocityChartCanvas {
+            width: 500px;
             height: 300px;
-            margin: 1rem auto;
+            border: 1px solid black;
+            cursor: crosshair;
+            position: relative;
+            /* For positioning palette */
         }
 
-        .check-btn {
-            margin: 1rem;
+        #curvePalette {
+            position: absolute;
+            top: 20px;
+            /* Adjust as needed */
+            left: 20px;
+            /* Adjust as needed */
+            background-color: lightgray;
+            border: 1px solid #888;
+            padding: 10px;
+            display: none;
+            /* Initially hidden */
+            z-index: 10;
+            /* Ensure it's above the canvas */
+        }
+
+        .curve-option-button {
+            display: block;
+            /* Stack buttons vertically */
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .curve-option-button:hover {
+            background-color: #eee;
         }
     </style>
 </head>
 
 <body>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingInteractiveGraphsVtoA"> <button class="accordion-button collapsed"
-                type="button" data-bs-toggle="collapse" data-bs-target="#collapseInteractiveGraphsVtoA"
-                aria-expanded="false" aria-controls="collapseInteractiveGraphsVtoA"> <strong>Graph conversions: Velocity
-                    to Acceleration</strong>
-            </button> </h2>
-        <div id="collapseInteractiveGraphsVtoA" class="accordion-collapse collapse"
-            aria-labelledby="headingInteractiveGraphsVtoA" data-bs-parent="#content">
-            <div class="accordion-body">
-                <p>Here are a set of velocity time graphs to be converted into acceleration time
-                    graphs. Observe the given velocity time graph and correctly plot the
-                    acceleration time graph given next to it.</p>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[5, 15, 25, 20, 10, 0]" data-ymin="0"
-                            data-ymax="30" data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container me-3"
-                            data-key='[{"x":0,"y":10},{"x":1,"y":10},{"x":2,"y":-5},{"x":3,"y":-10},{"x":4,"y":-10}]'
-                            data-ymin="-20" data-ymax="20" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[0, 20, 20, 0, -20, -20]" data-ymin="-30"
-                            data-ymax="30" data-stepsize="10">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":20},{"x":1,"y":0},{"x":2,"y":-20},{"x":3,"y":-20},{"x":4,"y":0}]'
-                            data-ymin="-30" data-ymax="30" data-stepsize="10">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[0,5,10,15,20,25]" data-ymin="0" data-ymax="30"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":5},{"x":3,"y":5},{"x":4,"y":5}]'
-                            data-ymin="-5" data-ymax="10" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[25,20,15,10,5,0]" data-ymin="0" data-ymax="30"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":-5},{"x":1,"y":-5},{"x":2,"y":-5},{"x":3,"y":-5},{"x":4,"y":-5}]'
-                            data-ymin="-10" data-ymax="5" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[10,10,10,10,10,10]" data-ymin="0" data-ymax="20"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
-                            data-ymin="-5" data-ymax="5" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[0,0,0,0,0,0]" data-ymin="-5" data-ymax="5"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":0},{"x":1,"y":0},{"x":2,"y":0},{"x":3,"y":0},{"x":4,"y":0}]'
-                            data-ymin="-5" data-ymax="5" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[0, -10, -20, -20, -10, 0]" data-ymin="-25"
-                            data-ymax="5" data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":-10},{"x":1,"y":-10},{"x":2,"y":0},{"x":3,"y":10},{"x":4,"y":10}]'
-                            data-ymin="-20" data-ymax="20" data-stepsize="10">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[15,10,10,15,15,10]" data-ymin="0" data-ymax="20"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":-5},{"x":1,"y":0},{"x":2,"y":5},{"x":3,"y":0},{"x":4,"y":-5}]'
-                            data-ymin="-10" data-ymax="10" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[0,5,15,30,20,5]" data-ymin="0" data-ymax="35"
-                            data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":5},{"x":1,"y":10},{"x":2,"y":15},{"x":3,"y":-10},{"x":4,"y":-15}]'
-                            data-ymin="-20" data-ymax="20" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center mb-4 motion-graphs-set">
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="velocity-container" data-datasets="[10, 15, 20, 15, 10, 5]" data-ymin="0"
-                            data-ymax="25" data-stepsize="5">
-                            <canvas class="velocityChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acceleration-container"
-                            data-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":-5},{"x":3,"y":-5},{"x":4,"y":-5}]'
-                            data-ymin="-10" data-ymax="10" data-stepsize="5">
-                            <canvas class="accelerationChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn  btn-primary check-btn">Check</button>
-                    </div>
-                </div>
-                <hr>
-            </div>
+    <h1>Interactive Velocity Graph Builder</h1>
+    <p>Click on the chart to add points and build your velocity graph. Choose curve segments from the palette.</p>
+
+    <div id="velocityChartCanvas">
+        <canvas id="velocityChart"></canvas>
+        <div id="curvePalette">
+            <button class="curve-option-button" data-curve-type="increase-steep">Increase Steeply</button>
+            <button class="curve-option-button" data-curve-type="increase-medium">Increase Medium</button>
+            <button class="curve-option-button" data-curve-type="increase-gentle">Increase Gently</button>
+            <button class="curve-option-button" data-curve-type="constant">Constant Velocity</button>
+            <button class="curve-option-button" data-curve-type="decrease-gentle">Decrease Gently</button>
+            <button class="curve-option-button" data-curve-type="decrease-medium">Decrease Medium</button>
+            <button class="curve-option-button" data-curve-type="decrease-steep">Decrease Steeply</button>
         </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingInteractiveGraphsAtoV">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseInteractiveGraphsAtoV" aria-expanded="false"
-                aria-controls="collapseInteractiveGraphsAtoV">
-                <strong>Graph Conversions: Acceleration to Velocity</strong>
-            </button>
-        </h2>
-        <div id="collapseInteractiveGraphsAtoV" class="accordion-collapse collapse"
-            aria-labelledby="headingInteractiveGraphsAtoV" data-bs-parent="#content">
-            <div class="accordion-body">
-                <p>
-                    The following sets of Acceleration–Time graphs include the initial velocity as an annotation.
-                    Plot the corresponding Velocity–Time graph by clicking on the velocity canvas, then click
-                    "Check" to validate.
-                </p>
 
-                <!-- ====== Question Set 1 (A→V) ====== -->
-                <div class="row justify-content-center mb-4 motion-graphs-set-atoV">
-                    <!-- Acceleration Graph (Given) -->
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="acc-given-container"
-                            data-acc-key='[{"x":0,"y":5},{"x":1,"y":5},{"x":2,"y":0},{"x":3,"y":-5},{"x":4,"y":-5}]'
-                            data-ymin="-10" data-ymax="10" data-stepsize="5" data-annotation="Initial Velocity: 10 m/s">
-                            <canvas class="accGivenChart"></canvas>
-                        </div>
-                    </div>
+    <script>
+        $(document).ready(function () {
+            const velocityCanvas = document.getElementById('velocityChart'); // Correctly selects canvas with ID velocityChart
+            const velocityCtx = velocityCanvas.getContext('2d'); // Now getContext will work on the canvas element
+            const curvePalette = document.getElementById('curvePalette');
+            const curveButtons = document.querySelectorAll('.curve-option-button');
 
-                    <!-- Velocity Chart (User Plots) -->
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <div class="vel-plot-container"
-                            data-velocity-key='[{"x":0,"y":10},{"x":1,"y":15},{"x":2,"y":15},{"x":3,"y":10},{"x":4,"y":5}]'
-                            data-ymin="0" data-ymax="20" data-stepsize="5">
-                            <canvas class="velocityPlotChart"></canvas>
-                        </div>
-                    </div>
-                    <!-- Check Button -->
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-end">
-                        <button class="btn btn-primary check-btn-atoV">Check</button>
-                    </div>
-                </div>
-                </div>
 
-                
-                <hr>
+            let userPoints = []; // Array to store user-clicked points
+            let curveSegments = []; // Array to store selected curve segments
 
-                <!-- ====== Additional Question Sets (A→V) can go here, same structure ====== -->
-                <!-- Just duplicate the row with "motion-graphs-set-atoV" and update data- attributes -->
+            drawGraph();
+            velocityCanvas.addEventListener('click', handleCanvasClick); // Add click event listener
+            curveButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    const curveType = this.dataset.curveType; // Get curve type from data-curve-type attribute
+                    handleCurveSelection(curveType); // Call handleCurveSelection with curve type
+                    event.stopPropagation(); // Prevent click from triggering canvas click again
+                });
+            });
+            function drawGraph() {
+                const ctx = velocityCtx; // Use the canvas 2D context
+                ctx.clearRect(0, 0, velocityCanvas.width, velocityCanvas.height); // Clear canvas
 
-            </div>
-        </div>
-    </div>
-    <script>/**
-        * A reusable class to handle Velocity-to-Acceleration graphs.
-        */
-       class MotionGraphs {
-           constructor($set) {
-               // The parent container for this question set
-               this.$set = $set;
-       
-               // Velocity chart elements and data
-               this.$velocityContainer = $set.find('.velocity-container');
-               this.$velocityCanvas = $set.find('.velocityChart');
-               this.velocityData = JSON.parse(this.$velocityContainer.attr('data-datasets') || '[]');
-               this.velocityStepSize = parseFloat(this.$velocityContainer.attr('data-stepsize')) || 1;
-               this.velocityYMin = parseFloat(this.$velocityContainer.attr('data-ymin')) || 0;
-               this.velocityYMax = parseFloat(this.$velocityContainer.attr('data-ymax')) || Math.max(...this.velocityData) * 1.2;
-       
-               // Acceleration chart elements and data
-               this.$accContainer = $set.find('.acceleration-container');
-               this.$accCanvas = $set.find('.accelerationChart');
-               this.accKey = JSON.parse(this.$accContainer.attr('data-key') || '[]');
-               this.accStepSize = parseFloat(this.$accContainer.attr('data-stepsize')) || 1;
-               this.accYMin = parseFloat(this.$accContainer.attr('data-ymin')) || -10;
-               this.accYMax = parseFloat(this.$accContainer.attr('data-ymax')) || 10;
-       
-               // The "Check" button
-               this.$checkBtn = $set.find('.check-btn');
-       
-               // Will store user clicks as an array for acceleration chart
-               this.accChartPoints = Array(6).fill(null); // Assuming x=0 to x=5
-       
-               // Chart.js instances
-               this.velocityChart = null;
-               this.accChart = null;
-           }
-       
-           /**
-            * Initialize both charts and bind event handlers
-            */
-           init() {
-               this.initVelocityChart();
-               this.initAccelerationChart();
-               this.bindEvents();
-           }
-       
-           /**
-            * Initialize the Velocity-Time chart from the given "data-datasets".
-            */
-           initVelocityChart() {
-               const ctx = this.$velocityCanvas[0].getContext('2d');
-       
-               // Generate time labels based on data length
-               const labels = this.velocityData.map((_, idx) => idx);
-       
-               this.velocityChart = new Chart(ctx, {
-                   type: 'line',
-                   data: {
-                       labels: labels,
-                       datasets: [{
-                           label: 'Velocity',
-                           data: this.velocityData,
-                           borderColor: 'blue',
-                           borderWidth: 2,
-                           fill: false
-                       }]
-                   },
-                   options: {
-                       responsive: false,
-                       plugins: {
-                           legend: {
-                               display: false // Hide the legend if labels are not desired
-                           }
-                       },
-                       scales: {
-                           x: {
-                               title: {
-                                   display: true,
-                                   text: 'Time (s)'
-                               },
-                               ticks: {
-                                   stepSize: this.velocityStepSize
-                               },
-                               min: 0,
-                               max: labels.length
-                           },
-                           y: {
-                               title: {
-                                   display: true,
-                                   text: 'Velocity (m/s)'
-                               },
-                               min: this.velocityYMin,
-                               max: this.velocityYMax,
-                               ticks: {
-                                   stepSize: this.velocityStepSize
-                               }
-                           }
-                       }
-                   }
-               });
-           }
-       
-           /**
-            * Initialize the Acceleration-Time chart with stepped lines.
-            */
-           initAccelerationChart() {
-               const ctx = this.$accCanvas[0].getContext('2d');
-       
-               // Labels from x=0 to x=5
-               const labels = [0, 1, 2, 3, 4, 5];
-       
-               this.accChart = new Chart(ctx, {
-                   type: 'line',
-                   data: {
-                       labels: labels,
-                       datasets: [
-                           {
-                               label: 'Acceleration',
-                               data: [0, 0, 0, 0, 0, 0], // Initialize with zeros
-                               borderColor: 'green',
-                               borderWidth: 2,
-                               fill: false,
-                               stepped: true
-                           }
-                       ]
-                   },
-                   options: {
-                       responsive: false,
-                       plugins: {
-                           legend: {
-                               display: false // Hide the legend if labels are not desired
-                           }
-                       },
-                       scales: {
-                           x: {
-                               title: {
-                                   display: true,
-                                   text: 'Time (s)'
-                               },
-                               ticks: {
-                                   stepSize: this.accStepSize
-                               },
-                               min: 0,
-                               max: 5
-                           },
-                           y: {
-                               title: {
-                                   display: true,
-                                   text: 'Acceleration (m/s²)'
-                               },
-                               min: this.accYMin,
-                               max: this.accYMax,
-                               ticks: {
-                                   stepSize: this.accStepSize
-                               }
-                           }
-                       }
-                   }
-               });
-           }
-       
-           /**
-            * Bind all event handlers: click on acceleration chart + check button.
-            */
-           bindEvents() {
-               // Handle clicks on the acceleration chart
-               this.$accCanvas.on('click', (event) => {
-                   const chart = this.accChart;
-                   const canvasPosition = Chart.helpers.getRelativePosition(event, chart);
-                   const xScale = chart.scales.x;
-                   const yScale = chart.scales.y;
-       
-                   // Convert pixel to chart value
-                   const rawX = xScale.getValueForPixel(canvasPosition.x);
-                   const rawY = yScale.getValueForPixel(canvasPosition.y);
-       
-                   // Snap to nearest multiple of step size
-                   const xVal = this.snapToStep(rawX, this.accStepSize);
-                   const yVal = this.snapToStep(rawY, this.accStepSize);
-       
-                   // Ensure xVal is within the chart range
-                   if (xVal >= 0 && xVal <= 5) {
-                       const xIndex = Math.round(xVal);
-                       this.accChartPoints[xIndex] = yVal;
-                   }
-       
-                   // Update chart data
-                   this.updateAccelerationChartData();
-               });
-       
-               // Handle the "Check" button
-               this.$checkBtn.on('click', () => {
-                   this.checkAcceleration();
-               });
-           }
-       
-           /**
-            * Snaps a value to the nearest multiple of the step size
-            * @param {number} value - The value to snap
-            * @param {number} step - The step size
-            * @returns {number} - The snapped value
-            */
-           snapToStep(value, step) {
-               return Math.round(value / step) * step;
-           }
-       
-           /**
-            * Updates the acceleration chart data and dynamically adjusts Y-axis if needed
-            */
-           updateAccelerationChartData() {
-               // Create a copy to avoid mutating the original array
-               let updatedData = [...this.accChartPoints];
-       
-               // Replace nulls with zeros
-               updatedData = updatedData.map(val => val !== null ? val : 0);
-       
-               // Update the chart dataset
-               this.accChart.data.datasets[0].data = updatedData;
-               this.accChart.update();
-           }
-       
-           /**
-            * Compare the user-plotted acceleration data with the key.
-            * Provide feedback via alert.
-            */
-           checkAcceleration() {
-               // If no acceleration key is provided, cannot check
-               if (!this.accKey.length) {
-                   alert('No acceleration key provided; cannot check.');
-                   return;
-               }
-       
-               // Build an array of user values for the relevant x positions in the key
-               const userPoints = this.accKey.map(k => {
-                   const userY = this.accChartPoints[k.x] !== null ? this.accChartPoints[k.x] : 0;
-                   return { x: k.x, y: userY };
-               });
-       
-               // Compare userPoints with accKey
-               const isCorrect = userPoints.every((point, index) => {
-                   return point.y === this.accKey[index].y;
-               });
-       
-               // Provide feedback
-               if (isCorrect) {
-                   alert('Correct!');
-                   // Change 'Check' button to 'Correct' with green background and disable it
-                   this.$checkBtn.text('Correct').removeClass('btn-primary').addClass('btn-success').prop('disabled', true);
-       
-                   // Disable further input on the acceleration chart
-                   this.$accCanvas.off('click');
-               } else {
-                   alert('Incorrect, try again.');
-               }
-           }
-       }
-       
-       /**
- * A reusable class to handle Acceleration-to-Velocity graphs.
- */
-class MotionGraphsAtoV {
-    constructor($set) {
-        // The parent container for this question set
-        this.$set = $set;
+                // Chart parameters (adjust as needed)
+                const axisColor = 'black';
+                const gridColor = '#ccc';
+                const textColor = 'black';
+                const chartArea = { top: 20, left: 50, bottom: velocityCanvas.height - 30, right: velocityCanvas.width - 20 }; // Margins
+                const xScale = (chartArea.right - chartArea.left) / 10; // Scale for 10 time units
+                const yScale = (chartArea.bottom - chartArea.top) / 300; // Scale for 300 velocity units
 
-        // Acceleration graph elements and data
-        this.$accContainer = $set.find('.acc-given-container');
-        this.$accCanvas = $set.find('.accGivenChart');
-        this.accKey = JSON.parse(this.$accContainer.attr('data-acc-key') || '[]');
-        this.accYMin = parseFloat(this.$accContainer.attr('data-ymin')) || -10;
-        this.accYMax = parseFloat(this.$accContainer.attr('data-ymax')) || 10;
-        this.accStepSize = parseFloat(this.$accContainer.attr('data-stepsize')) || 5;
-        this.annotationText = this.$accContainer.attr('data-annotation') || '';
+                // Draw X and Y axes
+                ctx.strokeStyle = axisColor;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(chartArea.left, chartArea.bottom);
+                ctx.lineTo(chartArea.right, chartArea.bottom); // X axis
+                ctx.moveTo(chartArea.left, chartArea.bottom);
+                ctx.lineTo(chartArea.left, chartArea.top);    // Y axis
+                ctx.stroke();
 
-        // Velocity chart elements and data
-        this.$velContainer = $set.find('.vel-plot-container');
-        this.$velCanvas = $set.find('.velocityPlotChart');
-        this.velKey = JSON.parse(this.$velContainer.attr('data-velocity-key') || '[]');
-        this.velYMin = parseFloat(this.$velContainer.attr('data-ymin')) || 0;
-        this.velYMax = parseFloat(this.$velContainer.attr('data-ymax')) || 20;
-        this.velStepSize = parseFloat(this.$velContainer.attr('data-stepsize')) || 5;
-
-        // The "Check" button
-        this.$checkBtn = $set.find('.check-btn-atoV');
-
-        // Will store user clicks as an array for velocity chart
-        this.velChartPoints = Array(6).fill(null); // Assuming x=0 to x=5
-
-        // Chart.js instances
-        this.accChart = null;
-        this.velChart = null;
-    }
-
-    /**
-     * Initialize both charts and bind event handlers
-     */
-    init() {
-        this.initAccChart();
-        this.initVelChart();
-        this.bindEvents();
-    }
-
-    /**
-     * Initialize the Acceleration-Time chart with stepped data and an annotation.
-     */
-    initAccChart() {
-        const ctx = this.$accCanvas[0].getContext('2d');
-
-        // Extract (x,y) from this.accKey to build chart data
-        const labels = this.accKey.map(pt => pt.x);
-        const sortedData = [...this.accKey].sort((a, b) => a.x - b.x);
-
-        this.accChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: 'Acceleration',
-                        data: sortedData.map(pt => pt.y),
-                        borderColor: 'green',
-                        borderWidth: 2,
-                        fill: false,
-                        stepped: true
-                    }
-                ]
-            },
-            options: {
-                responsive: false,
-                plugins: {
-                    legend: {
-                        display: false // Hide the legend if labels are not desired
-                    },
-                    annotation: {
-                        // Show a label annotation with the text from data-annotation
-                        annotations: {
-                            note1: {
-                                type: 'label',
-                                content: this.annotationText,
-                                position: { x: 'end', y: 'center' },
-                                backgroundColor: 'rgba(255, 99, 132, 0.25)',
-                                font: {
-                                    size: 14,
-                                    weight: 'bold'
-                                },
-                                padding: 6
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Time (s)'
-                        },
-                        ticks: {
-                            stepSize: this.accStepSize
-                        },
-                        min: Math.min(...labels),
-                        max: Math.max(...labels)
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Acceleration (m/s²)'
-                        },
-                        min: this.accYMin,
-                        max: this.accYMax,
-                        ticks: {
-                            stepSize: this.accStepSize
-                        }
-                    }
+                // Draw vertical grid lines (Time)
+                ctx.strokeStyle = gridColor;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                for (let i = 1; i <= 10; i++) {
+                    const x = chartArea.left + i * xScale;
+                    ctx.moveTo(x, chartArea.bottom);
+                    ctx.lineTo(x, chartArea.top);
                 }
-            }
-        });
-    }
+                ctx.stroke();
 
-    /**
-     * Initialize the Velocity-Time chart where students will click to plot velocity.
-     */
-    initVelChart() {
-        const ctx = this.$velCanvas[0].getContext('2d');
-
-        const maxX = this.velKey.length ? Math.max(...this.velKey.map(pt => pt.x)) : 5;
-        const labels = [];
-        for (let i = 0; i <= maxX; i++) {
-            labels.push(i);
-        }
-
-        // Start with all zeros
-        const initialData = Array(labels.length).fill(0);
-
-        this.velChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: 'Velocity',
-                        data: initialData,
-                        borderColor: 'blue',
-                        borderWidth: 2,
-                        fill: false
-                    }
-                ]
-            },
-            options: {
-                responsive: false,
-                plugins: {
-                    legend: {
-                        display: false // Hide the legend if labels are not desired
-                    }
-                },
-                scales: {
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Time (s)'
-                        },
-                        ticks: {
-                            stepSize: this.velStepSize
-                        },
-                        min: 0,
-                        max: maxX
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Velocity (m/s)'
-                        },
-                        min: this.velYMin,
-                        max: this.velYMax,
-                        ticks: {
-                            stepSize: this.velStepSize
-                        }
-                    }
+                // Draw horizontal grid lines (Velocity)
+                ctx.beginPath();
+                for (let i = 50; i <= 300; i += 50) {
+                    const y = chartArea.bottom - i * yScale;
+                    ctx.moveTo(chartArea.left, y);
+                    ctx.lineTo(chartArea.right, y);
                 }
-            }
-        });
-    }
+                ctx.stroke();
 
-    /**
-     * Bind all event handlers: click on velocity chart + check button.
-     */
-    bindEvents() {
-        // Handle clicks on the velocity chart
-        this.$velCanvas.on('click', (event) => {
-            const chart = this.velChart;
-            const canvasPosition = Chart.helpers.getRelativePosition(event, chart);
-            const xScale = chart.scales.x;
-            const yScale = chart.scales.y;
-
-            // Convert pixel to chart value
-            const rawX = xScale.getValueForPixel(canvasPosition.x);
-            const rawY = yScale.getValueForPixel(canvasPosition.y);
-
-            // Snap to nearest multiple of step size
-            const xVal = this.snapToStep(rawX, this.velStepSize);
-            const yVal = this.snapToStep(rawY, this.velStepSize);
-
-            // Ensure xVal is within the chart range
-            if (xVal >= 0 && xVal <= 5) {
-                const xIndex = Math.round(xVal);
-                this.velChartPoints[xIndex] = yVal;
+                // Label axes
+                ctx.fillStyle = textColor;
+                ctx.font = '12px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'top';
+                ctx.fillText('Time (s)', chartArea.left + (chartArea.right - chartArea.left) / 2, chartArea.bottom + 10); // X-axis label
+                ctx.save(); // Save current context state
+                ctx.translate(chartArea.left - 30, chartArea.top + (chartArea.bottom - chartArea.top) / 2); // Translate to Y-axis label position
+                ctx.rotate(-Math.PI / 2); // Rotate text to be vertical
+                ctx.fillText('Velocity (m/s)', 0, 0); // Y-axis label (after translation and rotation)
+                ctx.restore(); // Restore to original context state (undo rotation and translation)
             }
 
-            // Update chart data
-            this.updateVelocityChartData();
-        });
+            function handleCanvasClick(event) {
+                const rect = velocityCanvas.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
 
-        // Handle the "Check" button
-        this.$checkBtn.on('click', () => {
-            this.checkVelocity();
-        });
-    }
+                userPoints.push({ x: x, y: y }); // Store click coordinates
 
-    /**
-     * Snaps a value to the nearest multiple of the step size
-     * @param {number} value - The value to snap
-     * @param {number} step - The step size
-     * @returns {number} - The snapped value
-     */
-    snapToStep(value, step) {
-        return Math.round(value / step) * step;
-    }
+                console.log("Canvas clicked at:", { x: x, y: y }); // For debugging
 
-    /**
-     * Updates the velocity chart data and dynamically adjusts Y-axis if needed
-     */
-    updateVelocityChartData() {
-        // Create a copy to avoid mutating the original array
-        let updatedData = [...this.velChartPoints];
+                showCurvePalette(x, y); // Show the curve palette near the click
+            }
 
-        // Replace nulls with zeros
-        updatedData = updatedData.map(val => val !== null ? val : 0);
+            function showCurvePalette(x, y) {
+                const palette = curvePalette; // Get the palette element (already defined globally)
 
-        // Update the chart dataset
-        this.velChart.data.datasets[0].data = updatedData;
-        this.velChart.update();
-    }
+                // Position the palette near the click point
+                palette.style.left = x + 'px'; // Position horizontally at click x-coord
+                palette.style.top = y + 'px';  // Position vertically at click y-coord
 
-    /**
-     * Compare the user-plotted velocity data with the key.
-     * Provide feedback via alert.
-     */
-    checkVelocity() {
-        // If no velocity key is provided, cannot check
-        if (!this.velKey.length) {
-            alert('No velocity key provided; cannot check.');
-            return;
+                palette.style.display = 'block'; // Make the palette visible
+            }
+            function drawCurveSegment(curveType, startPoint) {
+        const chartData = velocityChart.data.datasets[0].data; // Get current chart data
+
+        const startTime = userPoints.length === 1 ? 0 : timePoints[userPoints.length -2] ; // Determine start time for segment
+        const segmentTimePoints = [];
+        const segmentVelocityData = [];
+        const numPointsInSegment = 10; // Number of points to generate for each segment (adjust for smoothness)
+        const timeStep = 1; // Fixed time step for segments - corresponds to labels
+        const endPoint = { x: startPoint.x + numPointsInSegment * xScale, y: 0 }; // Calculate end x-pixel based on time step and scale
+
+        for (let i = 1; i <= numPointsInSegment; i++) {
+            const time = startTime + i*timeStep;
+            const xValue = startPoint.x + i * xScale; // x pixel position based on time and xScale
+            let yValue; // y pixel position (velocity) to be determined by curveType
+
+            switch (curveType) {
+                case 'constant':
+                    yValue = startPoint.y; // Keep velocity constant
+                    break;
+                case 'increase-gentle':
+                    yValue = startPoint.y - (i/numPointsInSegment) * 30; // Gentle linear increase over segment
+                    break;
+                case 'increase-medium':
+                    yValue = startPoint.y - (i/numPointsInSegment) * 50; // Medium linear increase
+                    break;
+                case 'increase-steep':
+                    yValue = startPoint.y - (i/numPointsInSegment) * 70; // Steep linear increase
+                    break;
+                case 'decrease-gentle':
+                    yValue = startPoint.y + (i/numPointsInSegment) * 30; // Gentle linear decrease
+                    break;
+                case 'decrease-medium':
+                    yValue = startPoint.y + (i/numPointsInSegment) * 50; // Medium linear decrease
+                    break;
+                case 'decrease-steep':
+                    yValue = startPoint.y + (i/numPointsInSegment) * 70; // Steep linear decrease
+                    break;
+                default:
+                    console.error('Unknown curve type:', curveType);
+                    return;
+            }
+
+            segmentTimePoints.push(time);
+            segmentVelocityData.push({ x: time, y: yValue }); // Store data point in {x, y} format
         }
 
-        // Build an array of user values for the relevant x positions in the key
-        const userPoints = this.velKey.map(k => {
-            const userY = this.velChartPoints[k.x] !== null ? this.velChartPoints[k.x] : 0;
-            return { x: k.x, y: userY };
-        });
-
-        // Compare userPoints with velKey for each index
-        const isCorrect = userPoints.every((point, index) => {
-            return point.y === this.velKey[index].y;
-        });
-
-        // Provide feedback
-        if (isCorrect) {
-            alert('Correct!');
-            // Change 'Check' button to 'Correct' with green background and disable it
-            this.$checkBtn.text('Correct').removeClass('btn-primary').addClass('btn-success').prop('disabled', true);
-
-            // Disable further input on the velocity chart
-            this.$velCanvas.off('click');
-        } else {
-            alert('Incorrect, try again.');
-        }
+        // Append new segment data points to the existing chart data
+        velocityChart.data.labels = timePoints.slice(0, userPoints.length) ; // Trim labels to match points length
+        velocityChart.data.datasets[0].data = [...chartData, ...segmentVelocityData]; // Append segment data
+        velocityChart.update();
     }
-}
+            function handleCurveSelection(curveType) {
+                const lastPoint = userPoints[userPoints.length - 1]; // Get the last clicked point as start point
+                if (!lastPoint) {
+                    console.error('No start point available to draw curve segment.');
+                    return;
+                }
 
-// On document ready, initialize both MotionGraphs and MotionGraphsAtoV instances
-$(document).ready(function () {
-    // Initialize Velocity-to-Acceleration sets
-    $('.motion-graphs-set').each(function () {
-        const mg = new MotionGraphs($(this));
-        mg.init();
-    });
+                const endPoint = { x: lastPoint.x + 100, y: lastPoint.y - 50 }; // Example end point (adjust as needed)
 
-    // Initialize Acceleration-to-Velocity sets
-    $('.motion-graphs-set-atoV').each(function () {
-        const mgAtoV = new MotionGraphsAtoV($(this));
-        mgAtoV.init();
-    });
-});
+                drawCurveSegment(curveType, lastPoint, endPoint); // Draw the curve segment
 
-       </script>
+                curveSegments.push({ type: curveType, start: lastPoint, end: endPoint }); // Store segment info
 
-
+                hideCurvePalette(); // Hide the palette after selection
+            }
+            function hideCurvePalette() {
+                curvePalette.style.display = 'none'; // Hide the palette
+            }
+        });
+    </script>
 </body>
 
 </html>
