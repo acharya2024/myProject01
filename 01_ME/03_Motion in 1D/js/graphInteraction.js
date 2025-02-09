@@ -46,13 +46,19 @@ $(".chart-container").each(function (index) {
             };
         });
     }
+    // Extract tension value, or set default if not present
+    let tension = parseFloat($(this).data("tension"));
+    if (isNaN(tension) || tension < 0 || tension > 1) {
+        tension = 0;  //Default tension
+    }
 
     // Generate the chart
     new Chart($canvas[0], {
         type: type,
         data: {
             labels: labels,
-            datasets: datasets
+            datasets: datasets.map(dataset => ({ ...dataset, tension: tension })) //Apply tension to each dataset
+
         },
         options: {
             responsive: false,
@@ -385,7 +391,7 @@ class MotionGraphs {
         } else {
             alert('Incorrect, try again.');
         }
-        
+
     }
 }
 class MotionGraphsAtoV {

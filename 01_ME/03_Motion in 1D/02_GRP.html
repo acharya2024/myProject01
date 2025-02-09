@@ -322,7 +322,8 @@
                                     </div>
                                     <p>Velocity-time graphs are particularly useful because they provide multiple pieces
                                         of information about an object's motion. The slope of the graph gives the
-                                        instantaneous acceleration (\(a = \frac{dv}{dt}\)), and the area under the curve
+                                        instantaneous acceleration (\(a = \dfrac{dv}{dt}\)), and the area under the
+                                        curve
                                         gives the displacement. Now, for different types of motion performed by an
                                         object the examples of graphs are enlisted as follows:</p>
                                     <ul class="list-group list-group-flush">
@@ -1092,59 +1093,555 @@
                                 aria-labelledby="headingContinuouslyChangingSlopes" data-bs-parent="#content">
                                 <div class="accordion-body">
                                     <p>
-                                        In the real world, motion is rarely limited to constant or stepwise slopes (like straight lines).
-                                        Most motions involve curves, where the slope changes continuously. Understanding these curves is
+                                        In the real world, motion is rarely limited to constant or stepwise slopes (like
+                                        straight lines).
+                                        Most motions involve curves, where the slope changes continuously. Understanding
+                                        these curves is
                                         critical for analyzing the dynamics of motion.
                                     </p>
                                     <p>
-                                        A continuously changing slope indicates a variable rate of change. In a position-time graph, this
-                                        means the velocity isn't constant—suggesting acceleration or deceleration. Similarly, in a
+                                        A continuously changing slope indicates a variable rate of change. In a
+                                        position-time graph, this
+                                        means the velocity isn't constant—suggesting acceleration or deceleration.
+                                        Similarly, in a
                                         velocity-time graph, a changing slope indicates non-uniform acceleration.
                                     </p>
-                        
+
                                     <p><strong>Understanding Linearly Changing Slopes</strong></p>
                                     <p>
-                                        One special case of continuously changing slopes is when the slope itself changes at a constant rate.
-                                        In a position-time graph, this would create a parabolic curve, such as \( s = t^2 \). The corresponding
-                                        slope (velocity) increases linearly, forming a straight line in the slope-time graph.
+                                        One special case of continuously changing slopes is when the slope itself
+                                        changes at a constant rate.
+                                        In a position-time graph, this would create a parabolic curve, such as \( s =
+                                        t^2 \). The corresponding
+                                        slope (velocity) increases linearly, forming a straight line in the slope-time
+                                        graph.
                                     </p>
-                        
+
                                     <div class="row justify-content-center mb-4">
                                         <div class="col-6 col-md-6 d-flex flex-column align-items-center ">
-                                            <div class="chart-container" data-type="line" data-labels="-5,-4,-3,-2,-1,0,1,2,3,4,5"
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="-5,-4,-3,-2,-1,0,1,2,3,4,5"
                                                 data-datasets='[{"label": "Position (m)", "data": [25,16,9,4,1,0,1,4,9,16,25], "borderColor": "blue"}]'
-                                                data-title="Position vs. Time (s = t²)" data-x-title="Time (s)" data-y-title="Position (m)"
-                                                data-x-step-size="1" data-y-step-size="1" data-x-min="-10" data-x-max="10" data-y-min="0" data-y-max="30"
+                                                data-title="Position vs. Time (s = t²)" data-x-title="Time (s)"
+                                                data-y-title="Position (m)" data-x-step-size="1" data-y-step-size="1"
+                                                data-x-min="-10" data-x-max="10" data-y-min="0" data-y-max="30"
+                                                data-tension="0.01" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        In the above graph, the slope (velocity) changes linearly over time. For
+                                        instance:
+                                    <ul>
+                                        <li>The slope is negative at \(t = -2\), indicating backward motion.</li>
+                                        <li>The slope becomes zero at \(t = 0\), indicating the object is momentarily at
+                                            rest.</li>
+                                        <li>The slope increases positively after \(t = 0\), reflecting forward motion
+                                            with increasing speed.</li>
+                                    </ul>
+                                    Above curve represents non-uniform motion.
+                                    </p>
+
+
+                                    <p><strong>Further Examples of Continuously Changing Slopes</strong></p>
+                                    <p> To convert an acceleration-time (\(a\)-\(t\)) graph into a velocity-time
+                                        (\(v\)-\(t\)) graph, we must
+                                        carefully analyze how acceleration changes over time and reflect those changes
+                                        in the velocity. The following examples illustrate this conversion process. Each
+                                        example presents an acceleration-time graph paired with its corresponding
+                                        velocity-time graph. Detailed explanations accompany each pair, highlighting how
+                                        the variations in acceleration translate to specific changes in velocity. For
+                                        simplicity, the initial velocity in all examples is assumed to be zero, unless
+                                        otherwise mentioned. Pay close attention to how the slope and shape of the
+                                        acceleration-time graph determine the shape and values of the velocity-time
+                                        graph. This analysis forms the foundation for understanding more complex motion
+                                        scenarios.
+                                    </p>
+                                    <!-- Example 1: Acceleration linearly increases only -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [0,2,4,6,8,10], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Linear Increase)" data-x-title="Time (s)"
+                                                data-y-title="Acceleration (m/s²)" data-x-step-size="1"
+                                                data-y-step-size="2" data-x-min="0" data-x-max="5" data-y-min="0"
+                                                data-y-max="10" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,1,4,9,16,25], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="5"
+                                                data-x-min="0" data-x-max="5" data-y-min="0" data-y-max="25"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.4">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(5\)s:</strong></summary>
+                                                        <p>The acceleration is linearly increasing. So, velocity should
+                                                            increase parabolically. </p>
+                                                        <p>
+                                                            \(\qquad a=2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+t^2 = t^2\)
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <!-- Example 2: Acceleration linearly decreases only -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [10,8,6,4,2,0], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Linear Decrease)" data-x-title="Time (s)"
+                                                data-y-title="Acceleration (m/s²)" data-x-step-size="1"
+                                                data-y-step-size="2" data-x-min="0" data-x-max="5" data-y-min="0"
+                                                data-y-max="10" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,9,16,21,24,25], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="5"
+                                                data-x-min="0" data-x-max="5" data-y-min="0" data-y-max="25"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.4">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(5\)s:</strong></summary>
+                                                        <p>The acceleration is linearly decreasing. So, velocity should
+                                                            increase but with decreasing slope.</p>
+                                                        <p>
+                                                            \(\qquad a=10-2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+10t-t^2 = 10t-t^2\)
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <!-- Example 3: Acceleration first increases, then becomes constant -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5,6"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [0,2,4,4,4,4,4], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Increases then Constant)" data-x-title="Time (s)"
+                                                data-y-title="Acceleration (m/s²)" data-x-step-size="1"
+                                                data-y-step-size="1" data-x-min="0" data-x-max="6" data-y-min="0"
+                                                data-y-max="6" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5,6"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,1,4,8,12,16,20], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="4"
+                                                data-x-min="0" data-x-max="6" data-y-min="0" data-y-max="20"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(2\)s:</strong></summary>
+                                                        <p>The acceleration is linearly increasing. So, velocity should
+                                                            increase parabolically. </p>
+                                                        <p>
+                                                            \(\qquad a=2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+t^2 = t^2\)
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(2\)s to \(6\)s:</strong></summary>
+                                                        <p>The acceleration remains constant at \(4 \, \text{m/s}^2\).
+                                                            So, velocity should increase linearly. </p>
+                                                        <p>
+                                                            \(\qquad a=4\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+4t \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=2\)s is \(4 \, \text{m/s}\), the
+                                                            velocity would be \(v=4+4t\). At \(t=6\)s, \(v\) would be
+                                                            28m/s, which is consistent with the graph shown.
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <!-- Example 4: Acceleration first remains constant then decreases -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5,6"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [4,4,4,4,2,0,-2], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Constant then Decreases)" data-x-title="Time (s)"
+                                                data-y-title="Acceleration (m/s²)" data-x-step-size="1"
+                                                data-y-step-size="1" data-x-min="0" data-x-max="6" data-y-min="-2"
+                                                data-y-max="6" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5,6"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,4,8,12,14,15,15], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="2"
+                                                data-x-min="0" data-x-max="6" data-y-min="0" data-y-max="16"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.01">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(3\)s:</strong></summary>
+                                                        <p>The acceleration remains constant at \(4 \, \text{m/s}^2\).
+                                                            So, velocity should increase linearly. </p>
+                                                        <p>
+                                                            \(\qquad a=4\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+4t = 4t\)
+                                                        </p>
+
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(3\)s to \(6\)s:</strong></summary>
+                                                        <p>The acceleration is linearly decreasing. So, velocity should
+                                                            increase but with decreasing slope.</p>
+                                                        <p>
+                                                            \(\qquad a=10-2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+10t-t^2 \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=3\)s is \(12 \, \text{m/s}\) (obtained
+                                                            in previous time interval) and we are getting \(v=10t-t^2\)
+                                                            here, thus to maintain contineuity we take
+                                                        </p>
+                                                        <p>\(\qquad v=12+10t-t^2-(30-9)\)</p>
+                                                        <p>\(\Rightarrow\quad v = 10t-t^2-9\)</p>
+
+                                                        <p>
+                                                            Thus, \(v=10t-t^2-9\). At \(t=6\)s, \(v\) would be 15m/s,
+                                                            which is consistent with the graph shown.
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <!-- Example 5: Acceleration first increases, then becomes constant, then decreases -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="0,1,2,3,4,5,6,7,8"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [0,2,4,4,4,4,2,0,-2], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Increases, Constant, then Decreases)"
+                                                data-x-title="Time (s)" data-y-title="Acceleration (m/s²)"
+                                                data-x-step-size="1" data-y-step-size="1" data-x-min="0" data-x-max="8"
+                                                data-y-min="-2" data-y-max="6" data-show-x-axis="true"
+                                                data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="0,1,2,3,4,5,6,7,8"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,1,4,8,12,16,18,19,19], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="2"
+                                                data-x-min="0" data-x-max="8" data-y-min="0" data-y-max="20"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.02">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(2\)s:</strong></summary>
+                                                        <p>The acceleration is linearly increasing. So, velocity should
+                                                            increase parabolically. </p>
+                                                        <p>
+                                                            \(\qquad a=2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+t^2 = t^2\)
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(2\)s to \(5\)s:</strong></summary>
+                                                        <p>The acceleration remains constant at \(4 \, \text{m/s}^2\).
+                                                            So, velocity should increase linearly. </p>
+                                                        <p>
+                                                            \(\qquad a=4\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+4t \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=2\)s is \(4 \, \text{m/s}\), the
+                                                            velocity would be \(v=4+4t\).
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(5\)s to \(8\)s:</strong></summary>
+                                                        <p>The acceleration is linearly decreasing. So, velocity should
+                                                            increase but with decreasing slope.</p>
+                                                        <p>
+                                                            \(\qquad a=14-2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+14t-t^2 \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=5\)s is \(24 \, \text{m/s}\) (obtained
+                                                            in previous time interval) and we are getting \(v=14t-t^2\)
+                                                            here, thus to maintain contineuity we take</p>
+                                                        <p>
+                                                            \(\qquad v=24+14t-t^2-(14(5)-5^2) \)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v= 14t-t^2-21\)
+                                                        </p>
+                                                        <p>
+                                                            Thus, \(v=14t-t^2-21\). At \(t=8\)s, \(v\) would be 19m/s,
+                                                            which is almost same as shown in graph.
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <!-- Example 6: Acceleration first decreases, then becomes constant, then increases -->
+                                    <div class="row justify-content-center mb-4 class-row">
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="0,1,2,3,4,5,6,7,8"
+                                                data-datasets='[{"label": "Acceleration (m/s²)", "data": [4,2,0,0,0,0,2,4,6], "borderColor": "blue"}]'
+                                                data-title="a vs. t (Decreases, Constant, then Increases)"
+                                                data-x-title="Time (s)" data-y-title="Acceleration (m/s²)"
+                                                data-x-step-size="1" data-y-step-size="1" data-x-min="0" data-x-max="8"
+                                                data-y-min="-2" data-y-max="6" data-show-x-axis="true"
+                                                data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line"
+                                                data-labels="0,1,2,3,4,5,6,7,8"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [0,3,4,4,4,4,5,7,10], "borderColor": "red"}]'
+                                                data-title="v vs. t" data-x-title="Time (s)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="1"
+                                                data-x-min="0" data-x-max="8" data-y-min="0" data-y-max="10"
+                                                data-show-x-axis="true" data-show-y-axis="true" data-tension="0.02">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <p><strong>Explanation</strong></p>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(0\)s to \(2\)s:</strong></summary>
+                                                        <p>The acceleration is linearly decreasing. So, velocity should
+                                                            increase with reducing slope. </p>
+                                                        <p>
+                                                            \(\qquad a=4-2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u+4t-t^2 = 4t-t^2\)
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(2\)s to \(5\)s:</strong></summary>
+                                                        <p>The acceleration remains constant at \(0 \, \text{m/s}^2\).
+                                                            So, velocity should also remain constant. </p>
+                                                        <p>
+                                                            \(\qquad a=0\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u = \text{constant} \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=2\)s is \(4 \, \text{m/s}\), the
+                                                            velocity would be \(v=4\).
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary><strong>From \(5\)s to \(8\)s:</strong></summary>
+                                                        <p>The acceleration is linearly increasing. So, velocity should
+                                                            also increase with increasing slope.</p>
+                                                        <p>
+                                                            \(\qquad a=-10+2t\)
+                                                        </p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v = u-10t+t^2 \)
+                                                        </p>
+                                                        <p>Since velocity at \(t=5\)s is \(4 \, \text{m/s}\) (obtained
+                                                            in previous time interval) and we are getting \(v=-10t+t^2\)
+                                                            here, thus to maintain contineuity we take</p>
+                                                        <p>
+                                                            \(\qquad v=4-10t+t^2-(-10(5)+5^2) \)</p>
+                                                        <p>
+                                                            \(\Rightarrow\quad v=-10t+t^2+29\)</p>
+                                                        <p>
+                                                            Thus, \(v=-10t+t^2+29\). At \(t=8\)s, \(v\) would be 10m/s,
+                                                            which is same as shown in graph.
+                                                        </p>
+
+                                                    </details>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMiscellaneousGraphs">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMiscellaneousGraphs" aria-expanded="false"
+                                    aria-controls="collapseMiscellaneousGraphs">
+                                    <strong>Miscellaneous Graphs</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseMiscellaneousGraphs" class="accordion-collapse collapse"
+                                aria-labelledby="headingMiscellaneousGraphs" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>In addition to the standard position-time, velocity-time, and acceleration-time
+                                        graphs, we encounter other
+                                        types of graphs in physics, such as velocity vs. position or acceleration vs.
+                                        velocity. These graphs
+                                        often require converting the graphical relationship into an equation, which we
+                                        can then solve to
+                                        obtain information about the motion or plot other relevant graphs.</p>
+
+
+
+                                    <p>Consider an example of following velocity-position graph where velocity decreases
+                                        linearly with
+                                        displacement:</p>
+
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-6 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,1,2,3,4,5"
+                                                data-datasets='[{"label": "Velocity (m/s)", "data": [10,8,6,4,2,0], "borderColor": "blue"}]'
+                                                data-title="Velocity vs Displacement" data-x-title="Displacement (m)"
+                                                data-y-title="Velocity (m/s)" data-x-step-size="1" data-y-step-size="2"
+                                                data-x-min="0" data-x-max="6" data-y-min="0" data-y-max="12"
                                                 data-show-x-axis="true" data-show-y-axis="true">
                                             </div>
                                         </div>
                                     </div>
-                        
-                                    <p>
-                                        In the above graph, the slope (velocity) changes linearly over time. For instance:
-                                        <ul>
-                                            <li>The slope is negative at \(t = -2\), indicating backward motion.</li>
-                                            <li>The slope becomes zero at \(t = 0\), indicating the object is momentarily at rest.</li>
-                                            <li>The slope increases positively after \(t = 0\), reflecting forward motion with increasing speed.</li>
-                                        </ul>
-                                        This curve represents non-uniform motion.
+                                    <p>Let's convert this to an equation. The graph shows \(v = (-2)x + 10\).
                                     </p>
-                        <hr><hr><hr>
-                                    <p><strong>Practical Examples of Continuously Changing Slopes</strong></p>
-                                   
-                                    <p><strong>Key Insights for Curved Graphs</strong></p>
-                                    <p>When interpreting curved graphs, keep these points in mind:</p>
-                                    <ul>
-                                        <li><strong>Positive Slope:</strong> Indicates increasing position or velocity.</li>
-                                        <li><strong>Negative Slope:</strong> Indicates decreasing position or velocity.</li>
-                                        <li><strong>Steeper Curve:</strong> Represents a faster rate of change (greater velocity or acceleration).</li>
-                                        <li><strong>Flatter Curve:</strong> Represents a slower rate of change (lower velocity or acceleration).</li>
-                                        <li><strong>Inflection Points:</strong> Points where the curvature changes, indicating a change in acceleration's direction.</li>
-                                    </ul>
+                                    <p>We also know that \(v = \dfrac{dx}{dt}\).</p>
+                                    <p>Thus \( \dfrac{dx}{dt} = 10-2x\).</p>
+                                    <p>This is a first order differential equation which can be solved easily
+                                        using
+                                        'separation of variables'
+                                        method. It should be noted that at this point, this method may appear
+                                        new for
+                                        some students. If needed
+                                        they may skip this for now.
+                                    </p>
+                                    <p> \( \Rightarrow \quad\dfrac{dx}{10-2x} = dt\).</p>
+                                    <p> \( \Rightarrow\quad \int \dfrac{dx}{10-2x} = \int dt\).</p>
+                                    <p>\( \Rightarrow\quad \dfrac{\ln(10-2x)}{-2} = t+c\).</p>
+                                    <p>Let's say at \(t=0\), \(x=0\) (particle is at origin initially). Then \(c
+                                        =
+                                        -\frac{\ln(10)}{2}\).</p>
+                                    <p>\( \Rightarrow\quad \ln(10-2x)=-2t+\ln(10) \).</p>
+                                    <p>\( \Rightarrow\quad 10-2x = 10e^{-2t}\).</p>
+                                    <p> \( \Rightarrow\quad x= 5(1-e^{-2t})\).</p>
+                                    <p>Now, we can easily make a position vs time graph by using this equation.
+                                        By
+                                        plugging in values of \(t\) we can determine value of \(x\).</p>
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-6 col-md-6 d-flex flex-column align-items-center ">
+                                            <div class="chart-container" data-type="line" data-labels="0,0.5,1,1.5,2"
+                                                data-datasets='[{"label": "Displacement (m)", "data": [0,3.16,4.32,4.75,4.9], "borderColor": "blue"}]'
+                                                data-title="Displacement vs time" data-x-title="Time (s)"
+                                                data-y-title="Displacement (m)" data-x-step-size="1"
+                                                data-y-step-size="1" data-x-min="0" data-x-max="5" data-y-min="0"
+                                                data-y-max="6" data-show-x-axis="true" data-show-y-axis="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        These steps of solving differential
+                                        equations and working with exponential functions, may appear unfamiliar at this
+                                        stage. However, these concepts will be explored in greater depth in the upcoming
+                                        calculus
+                                        chapters. The current objective is to establish a conceptual understanding of
+                                        the process: translating a graphical relationship into a mathematical equation,
+                                        manipulating that equation, and subsequently utilizing it to derive further
+                                        information or to construct alternative graphical representations. As students
+                                        progress through the text and acquire a stronger foundation in calculus, these
+                                        techniques will become increasingly clear and accessible. 
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
