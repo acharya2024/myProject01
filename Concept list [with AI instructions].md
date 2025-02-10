@@ -159,9 +159,22 @@ Use following stucture to draw a graph in html (js is already handled for such a
 #### Section 04: Practicing graphs
 #### Section 05: 
 ### Chapter 03: Straight line motion in free fall
-#### Section 01
-#### Section 02
-#### Section 03
+#### Section 01: Introduction
+- Define free fall: Motion under the sole influence of gravity. Explain that air resistance is neglected in the ideal case.
+- Emphasize that all objects in free fall, regardless of mass (in the ideal case), experience the same acceleration due to gravity.
+- Define 'g' as the acceleration due to gravity near the Earth's surface.
+- Explain its approximate value (9.81 m/s²) and direction (downwards).
+#### Section 02: Equations of Motion for Free Fall
+- Adapt the standard equations of motion (v = u + at, s = ut + ½at², v² = u² + 2as) for free fall, replacing 'a' with 'g' (or '-g' depending on the sign convention)
+- Clearly explain the sign convention: positive upwards, negative downwards (or vice-versa), and how it affects the equations.
+- Position-time graphs: Parabolic shape, slope represents velocity.
+- Velocity-time graphs: Linear shape, slope represents acceleration ('g'), area represents displacement.
+#### Section 03: Examples
+- Provide several solved examples involving various free fall scenarios:
+    - Dropping an object from rest.
+    - Throwing an object upwards.
+    - Throwing an object downwards.
+- Finding the time of flight, maximum height, and velocity at various points during free fall.
 #### Section 04
 #### Section 05
 ### Chapter 04: General motion in multiple dimensions
