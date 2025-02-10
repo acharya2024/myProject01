@@ -161,7 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const questionDetails = document.createElement("details");
             const questionSummary = document.createElement("summary");
 
-            questionSummary.textContent = `${index + 1}. ${question.title || "Question Title"}`;
+            const questionIndexFormatted = String(index + 1).padStart(2, '0');
+            questionSummary.textContent = `${questionIndexFormatted}. ${question.title || "Question Title"}`;
             questionSummary.dataset.questionId = question.id;
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
             questionDetails.appendChild(questionSummary);
@@ -409,22 +410,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function wrapTextInParagraphs(text) {
-        return text
-            .split("\\n")
+        let formattedText = text
+            .split(/\\n|\n/)
             .map((line) => {
                 if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                    // Add margin for lines starting with \( but not containing \Rightarrow
                     return `<p style="margin-left: 20px;">${line}</p>`;
                 }
                 return `<p>${line}</p>`;
             })
             .join("");
+
+        // Replace placeholder back with \\neq AFTER paragraph wrapping
+        formattedText = formattedText.replace(new RegExp("\\[NOT_EQUAL_TO\\]", 'g'), '\\neq'); // Correct regex for placeholder
+
+        return formattedText;
     }
 
     function formatText(text) {
-        return text
-            .replace(/\*(.*?)\*/g, "<strong>$1</strong>");
-    }
 
+        let formattedText = text.replace(/\\neq/g, "[NOT_EQUAL_TO]");
+        // Bold formatting (existing)
+        formattedText = formattedText.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+
+        // Table rendering (existing)
+        formattedText = formattedText.replace(/\[TABLE_START\]/g, '<table border="1" style="width:100%; border-collapse: collapse;">');
+        formattedText = formattedText.replace(/\[TABLE_END\]/g, '</table>');
+        formattedText = formattedText.replace(/\[ROW_START\]/g, '<tr>');
+        formattedText = formattedText.replace(/\[ROW_END\]/g, '</tr>');
+        formattedText = formattedText.replace(/\[CELL_START\]/g, '<td style="padding: 8px; border: 1px solid #ddd; text-align: left;">');
+        formattedText = formattedText.replace(/\[CELL_END\]/g, '</td>');
+
+        return formattedText;
+    }
 
     function updateQuestionVisibility() {
         const questionSummaries = contentDiv.querySelectorAll('.list-group-item summary');

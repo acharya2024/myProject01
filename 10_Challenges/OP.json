@@ -99,7 +99,7 @@
       },
       "type": "Subjective",
       "questionText": "Find the maximum value of \\(\\dfrac{r}{R}\\), so that the beam of light incident normally at the face A of a U shaped glass tube emerges through B as shown in the figure. The refractive index of glass is \\(\\mu = \\dfrac{3}{2}\\). \\nDIAGRAM[1,150]",
-      "solution": "Incident angle \\(i\\) is least for ray AP, and this angle should be greater than the critical angle C for the ray to emerge through B.\\nDIAGRAM[2,200]\\n\\(i > C\\)\\n\\(\\Rightarrow \\sin i > \\sin C\\)\\nFrom the geometry of the U-shaped tube, we can see that \\n\\(\\sin i = \\dfrac{R+r}{3R+2r}\\) and \\(\\sin C = \\dfrac{1}{\\mu} = \\dfrac{2}{3}\\)\\n\\(\\dfrac{R+r}{3R+2r} > \\dfrac{2}{3}\\)\\n\\(3R + 3r > 6R+4r\\)\\n\\(\\Rightarrow R > 2r\\)\\n\\(\\Rightarrow \\dfrac{r}{R} < \\dfrac{1}{2}\\)\\nHence, \\(\\left(\\dfrac{r}{R}\\right)_{max} = \\dfrac{1}{2}\\)",
+      "solution": "Incident angle \\(i\\) is least for ray AP, and this angle should be greater than the critical angle C for the ray to emerge through B.\\nDIAGRAM[2,200]\\n\\(i > C\\)\\n\\(\\Rightarrow \\sin i > \\sin C\\)\\nFrom the geometry of the U-shaped tube, we can see that \\n\\(\\sin i = \\dfrac{R}{R+r}\\) and \\(\\sin C = \\dfrac{1}{\\mu} = \\dfrac{2}{3}\\)\\n\\(\\dfrac{R}{R+r} > \\dfrac{2}{3}\\)\\nHence, \\(\\left(\\dfrac{r}{R}\\right)_{max} = \\dfrac{1}{2}\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
       "hint": "For the light to emerge through B, the angle of incidence at the inner curved surface must be greater than the critical angle. Find the minimum angle of incidence and apply the condition for total internal reflection.",
@@ -260,7 +260,7 @@
     },
     {
       "id": "OP-0010",
-      "title": "Focal Length and Convergence of Non-Paraxial Rays for a Concave Mirror**",
+      "title": "Focal Length and Convergence of Non-Paraxial Rays for a Concave Mirror",
       "statistics": {
         "numberOfDiagrams": 2,
         "idealAverageTimeInS": 900,
@@ -276,17 +276,17 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "Consider a concave spherical mirror. \\n(a) Define the focal length of a concave mirror. Explain your definition in terms of paraxial rays and their behavior upon reflection. \\n(b) A light ray, parallel to the principal axis, is incident on the concave mirror at a point A such that the angle of incidence is \\(\\theta\\) (which is *not* necessarily small). Point A is such that a line drawn from A to the center of curvature C makes an angle \\(\\theta\\) with the normal to the mirror at A (dotted line AC).  The reflected ray passes through a point B on the principal axis. Prove that the distance PB, where P is the pole of the mirror, is given by \\(PB = R - \\dfrac{R}{2 \\cos \\theta}\\), where \\(R\\) is the radius of curvature of the mirror.\\nDIAGRAM[1,300]\\n(c) Show that for paraxial rays (i.e., when \\(\\theta\\) is very small), the expression for PB derived in part (b) reduces to the standard expression for the focal length, \\(f = \\dfrac{R}{2}\\). State the approximation used.",
-      "solution": "(a) The focal length of a concave mirror is defined as the distance from the pole of the mirror to the point on the principal axis where paraxial rays, incident parallel to the principal axis, converge after reflection. For paraxial rays, the focal point lies approximately at half the radius of curvature from the pole.\\n(b) From \\(\\Delta ABC\\) in Figure 5.77, we can write:\\n\\(AC = R = 2BC \\cos \\theta\\)\\n\\(\\Rightarrow BC = \\dfrac{R}{2 \\cos \\theta}\\)\\nThe distance \\(PB\\) is given by:\\n\\(PB = PC - BC\\)\\nSince PC is the radius of curvature \\(R\\), we have:\\n\\(PB = R - BC = R - \\dfrac{R}{2 \\cos \\theta} \\quad ...(5.9)\\)\\nDIAGRAM[2, 200]\\n(c) For paraxial rays, the angle \\(\\theta\\) is very small. For small angles, we can use the approximation \\(\\cos \\theta \\approx 1\\).\\nSubstituting \\(\\cos \\theta \\approx 1\\) in equation (5.9), we get:\\n\\(PB = R - \\dfrac{R}{2 \\times 1} = R - \\dfrac{R}{2} = \\dfrac{R}{2}\\)\\nThus, for paraxial rays, \\(PB \\approx \\dfrac{R}{2}\\).  In the paraxial approximation, the distance \\(PB\\), which represents the convergence point of parallel marginal rays, becomes equal to the focal length \\(f\\). Therefore, \\(f = \\dfrac{R}{2}\\) for paraxial rays. The approximation used is \\(\\cos \\theta \\approx 1\\) for small \\(\\theta\\).",
+      "questionText": "Consider a concave spherical mirror. A light ray, parallel to the principal axis, is incident on the concave mirror at a point A such that the angle of incidence is \\(\\theta\\) The reflected ray passes through a point B on the principal axis. \\n DIAGRAM[1,300] \\n*(a)* Prove that the distance PB, where P is the pole of the mirror, is given by \\(PB = R - \\dfrac{R}{2 \\cos \\theta}\\), where \\(R\\) is the radius of curvature of the mirror.\\n *(b)* Show that for paraxial rays (i.e., when \\(\\theta\\) is very small), the expression for PB derived in part (b) reduces to the standard expression for the focal length, \\(f = \\dfrac{R}{2}\\).",
+      "solution": "*(a)* From \\(\\Delta ABC\\) in figure, \\nDIAGRAM[1,200]\\nwe can write:\\n\\(AC = R = 2BC \\cos \\theta\\)\\n\\(\\Rightarrow BC = \\dfrac{R}{2 \\cos \\theta}\\)\\nThe distance \\(PB\\) is given by:\\n\\(PB = PC - BC\\)\\nSince PC is the radius of curvature \\(R\\), we have:\\n\\(PB = R - BC = R - \\dfrac{R}{2 \\cos \\theta}\\)\\n*(b)* For paraxial rays, the angle \\(\\theta\\) is very small. For small angles, we can use the approximation \\(\\cos \\theta \\approx 1\\).\\nSubstituting \\(\\cos \\theta \\approx 1\\) in equation above, we get:\\n\\(PB = R - \\dfrac{R}{2 \\times 1} = R - \\dfrac{R}{2} = \\dfrac{R}{2}\\)\\nThus, for paraxial rays, \\(PB \\approx \\dfrac{R}{2}\\).  In the paraxial approximation, the distance \\(PB\\), which represents the convergence point of parallel marginal rays, becomes equal to the focal length \\(f\\). Therefore, \\(f = \\dfrac{R}{2}\\) for paraxial rays.",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
-      "hint": "(a) Define focal length based on the convergence of paraxial rays.\\n(b) Use geometry and trigonometric relations in \\(\\Delta ABC\\) to relate the distances PB, BC, and R.\\n(c) Apply the paraxial approximation \\(\\cos \\theta \\approx 1\\) for small \\(\\theta\\) to the expression derived in part (b) and compare with the standard focal length formula.",
+      "hint": "*(a)* Use geometry and trigonometric relations in \\(\\Delta ABC\\) to relate the distances PB, BC, and R.\\n*(b)* Apply the paraxial approximation \\(\\cos \\theta \\approx 1\\) for small \\(\\theta\\) to the expression derived in part (a)",
       "methodOfSolving": [
         "(a) Provide the standard definition of focal length for a concave mirror, emphasizing paraxial rays.",
         "(b) Use the provided diagram and triangle \\(\\Delta ABC\\) to express BC in terms of R and \\(\\theta\\) using cosine relation. Then, use the geometric relation \\(PB = PC - BC\\) to find PB.",
         "(c) Apply the paraxial approximation \\(\\cos \\theta \\approx 1\\) to the expression for PB derived in part (b) and simplify to obtain \\(f = \\dfrac{R}{2}\\)."
       ],
-      "answer": "(a) Definition provided in solution.\\n(b) \\(PB = R - \\dfrac{R}{2 \\cos \\theta}\\) (Proved in solution).\\n(c) \\(f = \\dfrac{R}{2}\\) (Proved in solution using \\(\\cos \\theta \\approx 1\\))"
+      "answer": "To prove"
     },
     {
       "id": "OP-0011",
@@ -303,7 +303,7 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "Figure shows a small object M of length 1 mm which lies along a diametrical line of a glass sphere of radius 10 cm and \\(\\mu = \\dfrac{3}{2}\\) which is viewed by an observer as shown. Find the size of object as seen by the observer.\\nDIAGRAM[1,200]",
+      "questionText": "Figure shows a small object M of length 1 mm which lies along a diametrical line of a glass sphere of radius 10 cm and \\(\\mu = \\dfrac{3}{2}\\) which is viewed by an observer as shown. Find the size of object as seen by the observer.\\nDIAGRAM[1,250]",
       "solution": "For refraction at the glass-air interface, we use the refraction formula for a spherical surface:\\n\\(\\dfrac{\\mu_2}{v} - \\dfrac{\\mu_1}{u} = \\dfrac{\\mu_2 - \\mu_1}{R}\\)\\nHere,\\nObject distance, \\(u = +15 \\text{ cm}\\) (measured from the refracting surface, and taken as positive in the solution's sign convention)\\nRadius of curvature, \\(R = +10 \\text{ cm}\\) (positive as it is convex surface for light going from glass to air)\\nRefractive index of glass, \\(\\mu_1 = \\dfrac{3}{2}\\)\\nRefractive index of air, \\(\\mu_2 = 1\\)\\nSubstituting these values:\\n\\(\\dfrac{1}{v} - \\dfrac{3/2}{15} = \\dfrac{1 - 3/2}{10}\\)\\n\\(\\dfrac{1}{v} - \\dfrac{3}{30} = \\dfrac{-1/2}{10}\\)\\n\\(\\dfrac{1}{v} - \\dfrac{1}{10} = -\\dfrac{1}{20}\\)\\n\\(\\dfrac{1}{v} = \\dfrac{1}{10} - \\dfrac{1}{20} = \\dfrac{2-1}{20} = \\dfrac{1}{20}\\)\\n\\(\\Rightarrow v = +20 \\text{ cm}\\)\\nThe longitudinal magnification for refraction is given by:\\n\\(m = \\dfrac{\\mu_1 v^2}{\\mu_2 u^2}\\)\\nSubstituting the values:\\n\\(m = \\dfrac{(3/2) \\times (20)^2}{1 \\times (15)^2} = \\dfrac{(1.5) \\times 400}{225} = \\dfrac{600}{225} = \\dfrac{8}{3}\\)\\nImage size = Magnification \\(\\times\\) Object size\\nImage size = \\(\\dfrac{8}{3} \\times 1 \\text{ mm} = \\dfrac{8}{3} \\text{ mm} \\approx 2.67 \\text{ mm}\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
@@ -318,7 +318,7 @@
     },
     {
       "id": "OP-0012",
-      "title": "Deviation of Light Ray Refracted Through a Sphere - Proof",
+      "title": "Deviation of Light Ray Refracted Through a Sphere",
       "statistics": {
         "numberOfDiagrams": 2,
         "idealAverageTimeInS": 720,
