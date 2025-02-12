@@ -50,6 +50,8 @@
 
 **Additional Instructions:**
 
+*   Understand the question solution well enough to mention the answer key, hint, steps to solve etc. Also, you have to make solution more elaborate if it is not elaborate.
+*   Avoid deep understanding of the question. Just superficial understanding is sufficient.
 *   For subjective questions asking for specific values, phrase the question directly (e.g., "Find the force...") instead of asking to prove something (e.g., "Show that the force is...").
 *   If question has multiple options, after understanding the question you make it a subjective question. Asking whatever was overall required in the question.
 *   Clarify the frame of reference, coordinate system, origin, and other relevant context in the question text, if not given in the question text.
