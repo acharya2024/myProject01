@@ -1,158 +1,17 @@
 
-**Objective:**  
-Develop a comprehensive question bank for students preparing for JEE Advanced, focusing on those who have qualified JEE Mains with a percentile of 98 and above.
 
----
-
-### **Workflow:**
-
-1. **Input Data:**
-   - You will upload a set of images containing questions and their respective solutions.
-   - Each image must be translated into a structured JSON format as outlined below.
-
-2. **JSON Format Details:**  
-   For every question, the JSON format must include the following fields:
-
-   ```json
-   {
-       "questions": [
-           {
-               "id": "Unique identifier for the question (e.g., 001, 002, etc.)",
-               "title":"title of the question",
-               "statistics": {
-                   "numberOfDiagrams": "The number of diagrams used in the question (if any)",
-                   "idealAverageTimeInS": "Ideal time for solving the question in seconds",
-                   "Unit": "The physics unit or topic (e.g., Modern Physics, Mechanics, etc.)",
-                   "tags": [
-                       "Tag 1: Category or key concept (e.g., Photoelectric effect, Mean free path, etc.)",
-                       "Tag 2: Another category or relevant concept",
-                       "Tag 3: Another relevant category or sub-concept"
-                   ]
-               },
-               "type": "Type of question (e.g., Subjective, Single Correct, Multiple Correct, etc.)",
-               "questionText": "Complete text of the question as written in the image.",
-               "solution": "Detailed explanation and solution of the question (step-by-step).",
-               "solutionRechecked": true, 
-               "solutionManualRechecked": false, 
-               "hint": "Provide clear hints to guide the student towards solving the question.",
-               "methodOfSolving": [
-                   "Step 1: Break the problem into subparts or identify the key principle.",
-                   "Step 2: Show how to apply the relevant formulas or concepts.",
-                   "Step 3: Final calculation steps and arriving at the answer."
-               ],
-               "answer": "The final answer or result of the question."
-           }
-       ]
-   }
-   ```
-
----
-
-### **Steps for Creating Each Question:**
-
-1. **Identification:**
-   - Assign a **unique ID** to each question (e.g., "ME-0001", "HT-0002").
-   - Specify the **number of diagrams** used in the question.
-
-2. **Statistics:**
-   - Determine the **ideal average time** to solve the question (in seconds). In default, its 600s. Or as you think, based on difficulty.
-   - Identify the **unit** of physics the question belongs to (e.g., Mechanics, Electrodynamics, etc.). Units must be one of the following:
-        - **Mechanics** (CODE: ME)(For questions related to units dimentions, errors, kinematics, dynamics, work, energy, moementum, center of mass, collisions, rotational mechanics)
-        - **Application of Mechanics** (CODE: AM) (For questions related to Fluids, gravitation, Elasticity, SHM, Waves)
-        - **Heat and Thermodynamics** (CODE: HT) (For questions related to Thermal properties, thermal expansion, Kinetic theory of gases, thermodynamics, heat transfer)
-        - **Electromagnetism** (CODE: EM) (For questions related to electrostatics, Gauss law, Capacitance, electricity, Magnetism, EMI, AC)
-        - **Optics** (CODE: OP) (For questions related to Electromagnetic waves, Ray optics and wave optics)
-        - **Modern Physics** (CODE: MP) (For questions related to photoelectric effect, dual nature of matter/radiation, Atomic structure, X-Rays, Nuclear Physics)
-   - Tag the question with **key concepts** (CODE: ME) (as many concepts as you can) or categories for easy categorization (e.g., “Newton’s Laws,” “Work-Energy Theorem,” “Projectile Motion”).
-
-3. **Type:**
-   - Define the question type (e.g., Subjective, Single Correct, Multiple Correct).
-   - In default it has to be "Subjective"
-
-4. **Question Details:**
-   - Write the **question text** exactly as it appears in the uploaded image.
-   - For using math: "\(MATH_HERE\)" or "\[MATH_HERE\]". Mention "\n" for new lines everywhere. Follow other standard JSON string rules.
-   - Provide a **hint** to solve the question to guide the student.
-
-5. **Solution and Methodology:**
-   - Break down the solution into **steps** (methodOfSolving).
-   - Provide a **detailed solution** for every step, ensuring clarity and completeness.
-
-6. **Final Answer:**
-   - Provide the **answer key** for the question.
-
-7. **Solution Verification:**
-   - Mark `solutionRechecked` as **true** after verification. You have to verify it, once you have written it.
-   - Mark `solutionManualRechecked` as **false** until it is manually reviewed.
-
----
-
-### **Key Points to Remember:**
-
-- All questions should follow the **exact JSON structure** provided above.
-- Ensure every question is tagged appropriately to allow easy categorization and retrieval.
-- The **hint** section must help students think through the question without giving away the solution.
-- The **method of solving** must include clear and logical steps that mirror how students should approach the problem.
-
----
-
-### **Example JSON for Reference:**
-
-```json
-{
-    "questions": [
-        {
-            "id": "MP-0001",
-            "title":"Finding maximum KE of photoelectrons",
-            "statistics": {
-                "numberOfDiagrams": 2,
-                "idealAverageTimeInS": 180,
-                "Unit": "Modern Physics",
-                "tags": [
-                    "Quantum Mechanics",
-                    "Photoelectric Effect",
-                    "Wave-Particle Duality"
-                ]
-            },
-            "type": "Subjective",
-            "questionText": "Calculate the maximum kinetic energy of photoelectrons emitted when light of wavelength 400 nm falls on a metal surface with a work function of 2 eV.",
-            "solution": "The energy of the incident photon is calculated using E = hc/λ. Subtract the work function to find the maximum kinetic energy of the photoelectrons. Solution: E = 1240/400 = 3.1 eV. K.E. max = 3.1 - 2 = 1.1 eV.",
-            "solutionRechecked": true,
-            "solutionManualRechecked": false,
-            "hint": "Use the photoelectric equation: Energy of photon = Work function + Kinetic energy.",
-            "methodOfSolving": [
-                "Step 1: Calculate the energy of the incident photon using the formula E = hc/λ.",
-                "Step 2: Subtract the work function from the photon energy to find the kinetic energy.",
-                "Step 3: State the final answer with proper units."
-            ],
-            "answer": "1.1 eV"
-        }
-    ]
-}
-```
-### **Final expected output:**
-- You have to mention one of the element of "questions" array enclosed in "{}".
-
----
-
-If you have any further questions to ask about this process, you ask me now. Else you mention, "I am ready"
-
-
----
-GENERATED BY GEMINI:
 ## Prompt to Generate JEE Advanced Physics Question JSON
 
-**Task:** Generate JSON data representing challenging physics questions suitable for JEE Advanced preparation, along with their detailed solutions, hints, and relevant metadata.  Adhere strictly to the specified JSON structure and formatting rules.  Only process questions and solutions provided as images; do *not* generate your own questions.
+**Task:** Generate JSON data (from the images uploaded) representing challenging physics questions suitable for JEE Advanced preparation, along with their detailed solutions, hints, and relevant metadata.  Adhere strictly to the specified JSON structure and formatting rules.  Only process questions and solutions provided as images; do *not* generate your own questions.
 
 **Input:** An image containing a physics question, its solution, and potentially multiple-choice options. The questions can cover various topics in Mechanics, Electromagnetism, etc. Images may contain diagrams crucial for understanding the problem and solution.
 
-**Output:** A JSON object representing the question, conforming to the structure below. The JSON should be formatted for readability, with proper indentation and newlines (`\\n`) within text strings.  Diagrams within the question text or solution should be replaced with placeholders, and their details should be recorded in the `statistics` object.
+**Output:** A JSON object representing the question, conforming to the structure below. The JSON should be formatted for readability, with proper indentation and newlines (`\\n`) within text strings.  Diagrams within the question text or solution should be replaced with placeholders, and their details should be recorded in the `statistics` object. In the solution part of the questions, it might not be written perfectly. May be only some equations are given, or just instructions are written to solve the question. You have to read and understand the solution and based on that, you have to provide the detailed solution.
 
 **JSON Structure:**
 
 ```json
-{
-  "questions": [
+
     {
       "id": "Unit-Number (e.g., ME-0001, EM-0001)", // Start from 0001 for each unit.  ME for Mechanics, EM for Electromagnetism, etc.
       "title": "Concise title of the question",
@@ -177,29 +36,27 @@ GENERATED BY GEMINI:
       ],
       "answer": "Final answer (string) with \\( ... \\) for MathJax" //For MCQ, mention the option, and for others mention the exact answer
     }
-  ]
-}
+  
 ```
 
 **Formatting Rules:**
 
-*   Always use `\\n` for newlines within strings, *never* `\n`.
+*   Always use `\\n` for newlines within strings, *never* use `\n`.
 *   Enclose all mathematical expressions within MathJax delimiters: `\\( ... \\)`.  This applies to the `questionText`, `solution`, `hint`, `methodOfSolving`, and `answer` fields.
 *   Represent diagrams with placeholders: `\\nDIAGRAM[number, width]\\n` on a separate line.  `number` corresponds to the diagram index (starting from 1), and `width` specifies the intended display width in pixels.
 *   Ensure the `numberOfDiagrams` value in the `statistics` object matches the number of `DIAGRAM` placeholders used in the `questionText` and `solution`.
-*   Break long mathematical equations into multiple lines for better readability.
+*   Break long mathematical equations into multiple lines for better readability in mobile view. The width of the equation should not be large.
 
 
 **Additional Instructions:**
 
-*   Do not generate question titles; extract them from the provided image or provide a concise, descriptive title.
-*  For subjective questions asking for specific values, phrase the question directly (e.g., "Find the force...") instead of asking to prove something (e.g., "Show that the force is...").
-*   Clearly label multi-part questions with (a), (b), etc., and provide corresponding answers in the same format.
-*   Clarify the frame of reference, coordinate system, origin, and other relevant context in the question text.
+*   For subjective questions asking for specific values, phrase the question directly (e.g., "Find the force...") instead of asking to prove something (e.g., "Show that the force is...").
+*   If question has multiple options, after understanding the question you make it a subjective question. Asking whatever was overall required in the question.
+*   Clarify the frame of reference, coordinate system, origin, and other relevant context in the question text, if not given in the question text.
 *   Ensure solutions are detailed, step-by-step, and easy to understand.
 *   Provide hints that guide students without revealing the complete solution.  Use MathJax for any equations in hints.
 *   Double-check the solution's accuracy before marking `solutionRechecked` as `true`.
 
 
 
-By following these instructions precisely, you should be able to generate high-quality JSON data representing JEE Advanced physics questions and their detailed solutions.
+By following these instructions precisely, you should be able to generate high-quality JSON data representing JEE Advanced physics questions and their detailed solutions. If any doubts, confusion or any question, you ask me. Else write "I am ready".

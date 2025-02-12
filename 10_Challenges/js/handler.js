@@ -150,18 +150,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const questionList = document.createElement("ul");
         questionList.classList.add("list-group-flush");
-
+        let qSerial=0
         data.questions.forEach((question, index) => {
             if (!question.solutionRechecked) {
                 return;
             }
-
+            qSerial++
             const listItem = document.createElement("li");
             listItem.classList.add("list-group-item");
             const questionDetails = document.createElement("details");
             const questionSummary = document.createElement("summary");
 
-            const questionIndexFormatted = String(index + 1).padStart(2, '0');
+            const questionIndexFormatted = String(qSerial).padStart(2, '0');
             questionSummary.textContent = `${questionIndexFormatted}. ${question.title || "Question Title"}`;
             questionSummary.dataset.questionId = question.id;
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function processDiagrams(text, questionId) {
-        return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
+        return text.replace(/DIAGRAM\[(\d+),\s*(\d+)\]/g, (_, diagramNumber, width) => {
             return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px; margin-left: 30px;">`;
         });
     }
