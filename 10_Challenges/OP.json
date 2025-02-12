@@ -1186,7 +1186,7 @@
     },
     {
       "id": "OP-0041",
-      "title": "YDS with Glass Plates",
+      "title": "YDSE with Glass Plates",
       "statistics": {
         "numberOfDiagrams": "1",
         "idealAverageTimeInS": "720",
