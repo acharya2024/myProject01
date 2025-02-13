@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>View All Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        h4 {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .indented-paragraph {
+            margin-left: 20px;
+        }
+    </style>
+    <!-- Include MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JEE Advanced Question Bank - Full View</h1>
+        <h2 id="chapterTitle"></h2>
+        <div id="allContent">
+            <!-- Questions and all details will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chapterCode = "OP";//prompt("Enter Chapter Code (e.g., OP, EM):");
+            if (!chapterCode) {
+                alert("Chapter code is required.");
+                return;
+            }
+
+            const jsonFileName = `${chapterCode}.json`;
+            const chapterTitleElement = document.getElementById("chapterTitle");
+            const allContentDiv = document.getElementById("allContent");
+
+            chapterTitleElement.textContent = `Chapter: ${chapterCode.toUpperCase()} - Full Content View`;
+
+            function formatText(text) {
+                let formattedText = text.replace(/\\neq/g, "[NOT_EQUAL_TO]");
+                formattedText = formattedText.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+                formattedText = formattedText.replace(/\[TABLE_START\]/g, '<table border="1" style="width:100%; border-collapse: collapse;">');
+                formattedText = formattedText.replace(/\[TABLE_END\]/g, '</table>');
+                formattedText = formattedText.replace(/\[ROW_START\]/g, '<tr>');
+                formattedText = formattedText.replace(/\[ROW_END\]/g, '</tr>');
+                formattedText = formattedText.replace(/\[CELL_START\]/g, '<td style="padding: 8px; border: 1px solid #ddd; text-align: left;">');
+                formattedText = formattedText.replace(/\[CELL_END\]/g, '</td>');
+                return formattedText;
+            }
+
+            function wrapTextInParagraphs(text) {
+                return text
+                    .split("\\n")
+                    .map((line) => {
+                        if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                            return `<p class="indented-paragraph">${line}</p>`;
+                        }
+                        return `<p>${line}</p>`;
+                    })
+                    .join("");
+            }
+            function processDiagrams(text, questionId) {
+                return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
+                    return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px;">`;
+                });
+            }
+
+            fetch(jsonFileName)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.questions) {
+                        allContentDiv.innerHTML = "<p>No questions found in JSON data.</p>";
+                        return;
+                    }
+
+                    data.questions.forEach((question, index) => {
+                        if (question.solutionRechecked !== true) {
+                            return; // Skip unchecked solutions
+                        }
+
+                        const questionSection = document.createElement("div");
+                        questionSection.classList.add("question-section"); // Optional: for styling each question section
+
+                        const questionTitleHeader = document.createElement("h2");
+                        questionTitleHeader.textContent = `${index + 1}. ${question.title || "Question Title"}`;
+                        questionSection.appendChild(questionTitleHeader);
+
+                        if (question.questionText) {
+                            const questionTextDiv = document.createElement("div");
+                            questionTextDiv.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id));
+                            questionSection.appendChild(questionTextDiv);
+                        }
+
+                        if (question.answer || (!question.answer && question.type === 'Subjective')) {
+                            const answerKeyHeader = document.createElement("h3");
+                            answerKeyHeader.textContent = "Answer Key";
+                            questionSection.appendChild(answerKeyHeader);
+                            const answerKeyDiv = document.createElement("div");
+                            answerKeyDiv.innerHTML = wrapTextInParagraphs(formatText(question.answer || "To prove"));
+                            questionSection.appendChild(answerKeyDiv);
+                        }
+
+                        if (question.hint) {
+                            const hintHeader = document.createElement("h3");
+                            hintHeader.textContent = "Hint";
+                            questionSection.appendChild(hintHeader);
+                            const hintDiv = document.createElement("div");
+                            hintDiv.innerHTML = wrapTextInParagraphs(formatText(question.hint));
+                            questionSection.appendChild(hintDiv);
+                        }
+
+                        if (question.methodOfSolving && question.methodOfSolving.length > 0) {
+                            const methodHeader = document.createElement("h3");
+                            methodHeader.textContent = "Method to Solve";
+                            questionSection.appendChild(methodHeader);
+                            const methodList = document.createElement("ol");
+                            question.methodOfSolving.forEach(step => {
+                                const stepItem = document.createElement("li");
+                                stepItem.innerHTML = formatText(step);
+                                methodList.appendChild(stepItem);
+                            });
+                            questionSection.appendChild(methodList);
+                        }
+
+                        if (question.solution) {
+                            const solutionHeader = document.createElement("h3");
+                            solutionHeader.textContent = "Detailed Solution";
+                            questionSection.appendChild(solutionHeader);
+                            const solutionDiv = document.createElement("div");
+                            solutionDiv.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
+                            questionSection.appendChild(solutionDiv);
+                        }
+
+                        allContentDiv.appendChild(questionSection); // Append each question section to the main content div
+                    });
+
+                    // Trigger MathJax to render math expressions after questions are loaded
+                    if (window.MathJax) {
+                        MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
+                    }
+
+                })
+                .catch(error => {
+                    console.error("Error loading questions:", error);
+                    allContentDiv.innerHTML = `<p>Failed to load questions from ${jsonFileName}.</p>`;
+                });
+        });
+    </script>
+</body>
+
+</html>
