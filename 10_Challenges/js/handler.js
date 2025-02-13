@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             updateImageSizes();
         });
 
-        //loadUsers();
-        //userModal.show();
+        loadUsers();
+        userModal.show();
 
         function loadUsers() {
             const users = JSON.parse(localStorage.getItem("users")) || {};
