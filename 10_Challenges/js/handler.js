@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             updateImageSizes();
         });
 
-        loadUsers();
-        userModal.show();
+        //loadUsers();
+        //userModal.show();
 
         function loadUsers() {
             const users = JSON.parse(localStorage.getItem("users")) || {};
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function loadQuestions(data) {
-        console.log("loadQuestions function called");
+        //console.log("loadQuestions function called");
         if (!data || !data.questions) {
             console.error("Invalid question data received:", data);
             loadingMessage.textContent = "Error: Invalid question data.";
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const questionList = document.createElement("ul");
         questionList.classList.add("list-group-flush");
-        let qSerial=0
+        let qSerial = 0
         data.questions.forEach((question, index) => {
             if (!question.solutionRechecked) {
                 return;
@@ -166,22 +166,24 @@ document.addEventListener("DOMContentLoaded", function () {
             questionSummary.dataset.questionId = question.id;
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
             questionDetails.appendChild(questionSummary);
-
+            
             // Create tabs container
             const tabsWrapper = document.createElement('div');
-            tabsWrapper.classList.add('d-flex', 'align-items-start'); // Flexbox for layout
+            tabsWrapper.classList.add('d-flex', 'align-items-start');
             questionDetails.appendChild(tabsWrapper);
 
             const tabsCard = document.createElement('div');
-            tabsCard.classList.add('card', 'flex-grow-1'); // flex-grow-1 to push button to right
+            tabsCard.classList.add('card', 'flex-grow-1');
             tabsWrapper.appendChild(tabsCard);
 
             const cardHeader = document.createElement('div');
-            cardHeader.classList.add('card-header');
+            cardHeader.classList.add('card-header', 'd-flex', 'justify-content-between', 'align-items-center'); // Flexbox on card-header
+            tabsCard.appendChild(cardHeader);
+
             const tabsNav = document.createElement('ul');
             tabsNav.classList.add('nav', 'nav-tabs', 'card-header-tabs');
             cardHeader.appendChild(tabsNav);
-            tabsCard.appendChild(cardHeader);
+
 
             const cardBody = document.createElement('div');
             cardBody.classList.add('card-body');
@@ -189,6 +191,36 @@ document.addEventListener("DOMContentLoaded", function () {
             tabContent.classList.add('tab-content');
             cardBody.appendChild(tabContent);
             tabsCard.appendChild(cardBody);
+
+
+            // *** "Mark as done!" button wrapper in cardHeader, aligned right ***
+            const gotAnswerButtonWrapper = document.createElement('div');
+            cardHeader.appendChild(gotAnswerButtonWrapper); // Append to cardHeader, not tabsWrapper
+
+            const gotAnswerButton = document.createElement("button");
+            gotAnswerButton.textContent = "Done!";
+            gotAnswerButton.classList.add("btn", "btn-outline-success", "btn-sm", "mt-2");
+            gotAnswerButton.onclick = function (event) {
+                event.preventDefault();
+                questionDetails.open = false;
+                this.style.display = 'none'; // Hide button itself
+                cardHeader.style.display = 'none'; // Hide card header to remove tabs and button
+                //cardBody.style.display = 'none'; // Hide card body to remove extra space
+                questionSummary.style.fontWeight = "normal";
+                solvedQuestions.add(question.id);
+
+                const storedData = localStorage.getItem(`userData_${currentUserName}`);
+                let userData = {};
+                if (storedData) {
+                    userData = JSON.parse(storedData);
+                }
+                userData[sectionCode] = [...solvedQuestions];
+                localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
+
+            };
+            gotAnswerButtonWrapper.appendChild(gotAnswerButton);
+
+
 
 
             let tabIndex = 0;
@@ -220,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Answer Key Tab
             if (question.answer || (!question.answer && question.type !== 'Subjective')) {
-                console.log(`Creating Answer Key tab for question: ${question.id}`); // Debugging Log
+                //console.log(`Creating Answer Key tab for question: ${question.id}`); // Debugging Log
                 const answerTabItem = document.createElement('li');
                 answerTabItem.classList.add('nav-item');
                 const answerNavLink = document.createElement('a');
@@ -244,32 +276,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (tabIndex === 0) answerPane.classList.add('show', 'active');
                 answerPane.innerHTML = wrapTextInParagraphs(formatText(question.answer || "To prove"));
 
-                // ***Create and Append Button After answerPane Content***
-                const gotAnswerButton = document.createElement("button");
-                gotAnswerButton.textContent = "done!";
-                gotAnswerButton.classList.add("btn", "btn-outline-success", "btn-sm", "mt-2", "float-end");
-                gotAnswerButton.onclick = function () {
-                    questionDetails.open = false;
-                    this.style.display = 'none';
-                    questionSummary.style.fontWeight = "normal";
-                    solvedQuestions.add(question.id);
+                // // ***Create and Append Button After answerPane Content***
+                // const gotAnswerButton = document.createElement("button");
+                // gotAnswerButton.textContent = "done!";
+                // gotAnswerButton.classList.add("btn", "btn-outline-success", "btn-sm", "mt-2", "float-end");
+                // gotAnswerButton.onclick = function () {
+                //     questionDetails.open = false;
+                //     this.style.display = 'none';
+                //     questionSummary.style.fontWeight = "normal";
+                //     solvedQuestions.add(question.id);
 
-                    const storedData = localStorage.getItem(`userData_${currentUserName}`);
-                    let userData = {};
-                    if (storedData) {
-                        userData = JSON.parse(storedData);
-                    }
-                    userData[sectionCode] = [...solvedQuestions];
-                    localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
+                //     const storedData = localStorage.getItem(`userData_${currentUserName}`);
+                //     let userData = {};
+                //     if (storedData) {
+                //         userData = JSON.parse(storedData);
+                //     }
+                //     userData[sectionCode] = [...solvedQuestions];
+                //     localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
 
-                };
-                answerPane.appendChild(gotAnswerButton); // Button added inside the "Answer Key"
+                // };
+                // answerPane.appendChild(gotAnswerButton); // Button added inside the "Answer Key"
 
 
                 tabContent.appendChild(answerPane);
                 tabIndex++;
             } else {
-                console.log(`Skipping Answer Key tab for question: ${question.id} (no answer or subjective)`); // Debugging Log
+                //console.log(`Skipping Answer Key tab for question: ${question.id} (no answer or subjective)`); // Debugging Log
             }
 
             // Hint Tab
