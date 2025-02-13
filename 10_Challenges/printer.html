@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Printable Questions and Answers</title>
+    <style>
+        body {
+            font-family: "Bookman Old Style", "Times New Roman", Times, serif;
+            font-size: medium;
+        }
+
+        h2,
+        h5 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            margin-top: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        li strong {
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            /* Prevent inline alignment issues */
+            margin: 10px 0;
+            /* Add some margin around images */
+        }
+
+        .indented-paragraph {
+            margin-left: 20px;
+        }
+    </style>
+    <!-- Include MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="chapterTitle">OPTICS</h2>
+
+        <h5>Questions</h5>
+        <ul id="questionList"></ul>
+
+        <h5 id="answerKeysTitle" style="display:none;">Answer Keys</h5>
+        <ul id="answerKeyList"></ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chapterCode = prompt("Enter Chapter Code (e.g., OP, EM):");
+            if (!chapterCode) {
+                alert("Chapter code is required.");
+                return;
+            }
+
+            const jsonFileName = `${chapterCode}.json`;
+            const chapterTitleElement = document.getElementById("chapterTitle");
+            const questionList = document.getElementById("questionList");
+            const answerKeyList = document.getElementById("answerKeyList");
+            const answerKeysTitleElement = document.getElementById("answerKeysTitle");
+
+
+            //chapterTitleElement.textContent = `Chapter: ${chapterCode.toUpperCase()}`;
+
+            function formatText(text) {
+                let formattedText = text.replace(/\\neq/g, "[NOT_EQUAL_TO]");
+                formattedText = formattedText.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+                formattedText = formattedText.replace(/\[TABLE_START\]/g, '<table border="1" style="width:100%; border-collapse: collapse;">');
+                formattedText = formattedText.replace(/\[TABLE_END\]/g, '</table>');
+                formattedText = formattedText.replace(/\[ROW_START\]/g, '<tr>');
+                formattedText = formattedText.replace(/\[ROW_END\]/g, '</tr>');
+                formattedText = formattedText.replace(/\[CELL_START\]/g, '<td style="padding: 8px; border: 1px solid #ddd; text-align: left;">');
+                formattedText = formattedText.replace(/\[CELL_END\]/g, '</td>');
+                return formattedText;
+            }
+
+            function wrapTextInParagraphs(text) {
+                return text
+                    .split("\\n")
+                    .map((line) => {
+                        if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                            return `<p class="indented-paragraph">${line}</p>`;
+                        }
+                        return `<p>${line}</p>`;
+                    })
+                    .join("");
+            }
+            function processDiagrams(text, questionId) {
+                return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
+                    return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px;">`;
+                });
+            }
+
+
+            fetch(jsonFileName)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.questions) {
+                        questionList.innerHTML = "<p>No questions found in JSON data.</p>";
+                        return;
+                    }
+                    let qSerial = 0
+                    data.questions.forEach((question, index) => {
+                        if (question.solutionRechecked !== true) { // Only include rechecked questions
+                            return;
+                        }
+                        qSerial++
+                        const questionItem = document.createElement("li");
+                        let questionHTML = `<strong>${qSerial}. ${question.title || "Question Title"}</strong>`;
+                        if (question.questionText) {
+                            questionHTML += `<div>${wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id))}</div>`;
+                        }
+                        questionItem.innerHTML = questionHTML;
+                        questionList.appendChild(questionItem);
+                    });
+                    let hasAnswerKeys = false;
+                    qSerial = 0
+                    data.questions.forEach((question, index) => {
+                        if (question.solutionRechecked !== true) { // Only include rechecked questions
+                            console.log(index + "lost");
+                            
+                            return;
+                        }
+                        qSerial++
+                        if (question.answer || (!question.answer && question.type !== 'Subjective')) {
+                            hasAnswerKeys = true;
+                            const answerKeyItem = document.createElement("li");
+                            let answerKeyHTML = `<strong>${qSerial}</strong>`;
+                            answerKeyHTML += `<div>${wrapTextInParagraphs(formatText(question.answer || "To prove"))}</div>`;
+                            answerKeyItem.innerHTML = answerKeyHTML;
+                            answerKeyList.appendChild(answerKeyItem);
+                        }
+                    });
+                    if (hasAnswerKeys) {
+                        answerKeysTitleElement.style.display = "block"; // Show Answer Keys heading
+                    }
+
+                    // Trigger MathJax to render math expressions after questions are loaded
+                    if (window.MathJax) {
+                        MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
+                    }
+
+
+                })
+                .catch(error => {
+                    console.error("Error loading questions:", error);
+                    questionList.innerHTML = `<p>Failed to load questions from ${jsonFileName}.</p>`;
+                });
+        });
+    </script>
+</body>
+
+</html>
