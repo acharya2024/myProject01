@@ -4,7 +4,12 @@
 details[open] summary~* {
     animation: sweep .5s ease-in-out;
 }
-
+.list-group-item.magnified {
+    font-size: 25px;
+    transform-origin: top left; /* Scale from top-left corner */
+    z-index: 10; /* Ensure it's above other items */
+    position: relative; /*For Z index to work*/
+}
 @keyframes sweep {
     0% {
         opacity: 0;
@@ -75,9 +80,6 @@ details[open] > summary::before {
     font-size: 1.5em; /* Increase overall text size */
 }
 
-body.presentation-mode .card-body img {  /* Target images within the card body */
-    transform: scale(1.5); /* Increase image size */
-}
 .nav-link {
     padding: 5px; /* Remove all padding */
 }

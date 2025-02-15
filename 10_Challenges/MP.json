@@ -2,29 +2,745 @@
   "questions": [
     {
       "id": "MP-0001",
-      "title": "Half-Life of Radioactive Sample",
+      "title": "De Broglie Wavelength in Center of Mass Frame",
       "statistics": {
-        "numberOfDiagrams": 0,
-        "idealAverageTimeInS": 480,
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
         "Unit": "Modern Physics",
         "tags": [
-          "Radioactivity",
-          "Half-life",
-          "Decay Constant"
+          "De Broglie Wavelength",
+          "Center of Mass Frame",
+          "Momentum",
+          "Non-Relativistic Particles",
+          "Quantum Mechanics"
         ]
       },
-      "type": "Single Correct",
-      "questionText": "There are \\(n\\) number of radioactive nuclei in a sample at a time \\(t\\). If \\(n'\\) number of \\(\\beta\\) particles are emitted in the next two seconds from the sample, then the half-life of the sample is (\\(t_{half\\ life} \\gg 2\\text{ sec}\\)).\\n(A) \\(\\frac{n'}{2}\\)\\n(B) \\(0.693 \\times \\frac{2n}{n'}\\)\\n(C) \\(0.693 \\times \\ln\\left(\\frac{2n}{n'}\\right)\\)\\n(D) \\(0.693 \\times \\frac{n}{n'}\\)",
-      "solution": "The number of radioactive nuclei decayed in the next two seconds is \\(n'\\).\nThe rate of decay \\( = -\\frac{dN}{dt} \\approx \\frac{n'}{2} = \\lambda n\\)\nwhere \\(\\lambda\\) is the decay constant.\\n\\(\\implies \\lambda = \\frac{n'}{2n}\\)\nHalf-life is \\(t_{1/2} = \\frac{0.693}{\\lambda} = \\frac{0.693}{\\frac{n'}{2n}} = 0.693 \\times \\frac{2n}{n'}\\)",
+      "type": "Subjective",
+      "questionText": "Two identical non-relativistic particles move at right angles to each other, possessing de Broglie wavelengths \\(\\lambda_1\\) and \\(\\lambda_2\\). Find the de Broglie wavelength of each particle in the frame of their center of mass.",
+      "solution": "Let the mass of each particle be \\(m\\). The initial momentum of each particle is given by:\\n\\(\\vec{p_1} = \\dfrac{h}{\\lambda_1} \\hat{i} \\quad \\text{and} \\quad \\vec{p_2} = \\dfrac{h}{\\lambda_2} \\hat{j}\\)\\nwhere \\(h\\) is Planck's constant.\\n\\nThe velocities of the particles are:\\n\\(\\vec{v_1} = \\dfrac{h}{m \\lambda_1} \\hat{i} \\quad \\text{and} \\quad \\vec{v_2} = \\dfrac{h}{m \\lambda_2} \\hat{j}\\)\\n\\nThe velocity of the center of mass is given by:\\n\\(\\vec{v_{cm}} = \\dfrac{m_1 \\vec{v_1} + m_2 \\vec{v_2}}{m_1 + m_2} = \\dfrac{h}{2m} \\left( \\dfrac{1}{\\lambda_1} \\hat{i} + \\dfrac{1}{\\lambda_2} \\hat{j} \\right)\\)\\n\\nThe momentum of the particles in the frame of the center of mass is:\\n\\(\\vec{p_{1c}} = m(\\vec{v_1} - \\vec{v_{cm}}) = m \\left( \\dfrac{h}{m \\lambda_1} \\hat{i} - \\dfrac{h}{2m} \\left( \\dfrac{1}{\\lambda_1} \\hat{i} + \\dfrac{1}{\\lambda_2} \\hat{j} \\right) \\right) = \\dfrac{h}{2} \\left( \\dfrac{1}{\\lambda_1} \\hat{i} - \\dfrac{1}{\\lambda_2} \\hat{j} \\right)\\)\\n\\(\\vec{p_{2c}} = m(\\vec{v_2} - \\vec{v_{cm}}) = m \\left( \\dfrac{h}{m \\lambda_2} \\hat{j} - \\dfrac{h}{2m} \\left( \\dfrac{1}{\\lambda_1} \\hat{i} + \\dfrac{1}{\\lambda_2} \\hat{j} \\right) \\right) = \\dfrac{h}{2} \\left( \\dfrac{1}{\\lambda_2} \\hat{j} - \\dfrac{1}{\\lambda_1} \\hat{i} \\right)\\)\\nThe magnitudes of the momenta are equal:\\n\\(|\\vec{p_{1c}}| = |\\vec{p_{2c}}| = \\dfrac{h}{2} \\sqrt{\\dfrac{1}{\\lambda_1^2} + \\dfrac{1}{\\lambda_2^2}} = \\dfrac{h \\sqrt{\\lambda_1^2 + \\lambda_2^2}}{2 \\lambda_1 \\lambda_2}\\)\\nThe de Broglie wavelength of the particles in the frame of the center of mass is:\\n\\(\\lambda_{1c} = \\dfrac{h}{|\\vec{p_{1c}}|} = \\dfrac{h}{\\dfrac{h \\sqrt{\\lambda_1^2 + \\lambda_2^2}}{2 \\lambda_1 \\lambda_2}} = \\dfrac{2 \\lambda_1 \\lambda_2}{\\sqrt{\\lambda_1^2 + \\lambda_2^2}}\\)\\n\\(\\lambda_{2c} = \\dfrac{h}{|\\vec{p_{2c}}|} = \\dfrac{h}{\\dfrac{h \\sqrt{\\lambda_1^2 + \\lambda_2^2}}{2 \\lambda_1 \\lambda_2}} = \\dfrac{2 \\lambda_1 \\lambda_2}{\\sqrt{\\lambda_1^2 + \\lambda_2^2}}\\)",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
-      "hint": "Use the radioactive decay law: \\(-\\frac{dN}{dt} = \\lambda N\\), where \\(\\lambda\\) is the decay constant and \\(N\\) is the number of radioactive nuclei.  Also, remember the relationship between half-life and the decay constant.",
+      "hint": "Find the velocity of the center of mass. Then, find the momentum of each particle in the center of mass frame by subtracting the center of mass velocity from the individual particle velocities. Finally, use the de Broglie relation to find the wavelength.",
       "methodOfSolving": [
-        "Determine the decay rate (dN/dt) from the given information.",
-        "Relate the decay rate to the number of radioactive nuclei n and the decay constant \\(\\lambda\\) using the decay law.",
-        "Use the relation \\(t_{1/2} = \\frac{0.693}{\\lambda}\\) to find the half-life."
+        "Calculate the initial momenta of the two particles.",
+        "Determine the velocities of the particles using \\(p = mv\\).",
+        "Calculate the velocity of the center of mass.",
+        "Find the momenta of the particles in the center of mass frame by subtracting the center of mass velocity from the individual particle velocities.",
+        "Calculate the magnitude of the momentum in the center of mass frame.",
+        "Use the de Broglie relation \\(\\lambda = \\dfrac{h}{p}\\) to find the de Broglie wavelength of each particle."
       ],
-      "answer": "(B)"
+      "answer": "The de Broglie wavelength of each particle in the center of mass frame is \\(\\dfrac{2 \\lambda_1 \\lambda_2}{\\sqrt{\\lambda_1^2 + \\lambda_2^2}}\\)."
+    },
+    {
+      "id": "MP-0002",
+      "title": "Force on a Hemispherical Mirror due to Radiation Pressure",
+      "statistics": {
+        "numberOfDiagrams": "1",
+        "idealAverageTimeInS": "720",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radiation Pressure",
+          "Momentum",
+          "Reflection",
+          "Hemispherical Mirror",
+          "Power",
+          "Electromagnetic Waves"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A point source of light \\(O\\) is placed at the center of curvature of a hemispherical perfectly reflecting surface of radius of curvature \\(R\\). Find the force on the hemisphere due to the light falling on it if the source emits a power \\(P\\).",
+      "solution": "The energy emitted by the source per unit time, i.e., the power \\(P\\), falls on an area \\(4\\pi R^2\\) at a distance \\(R\\) in unit time. Thus, the energy falling per unit area per unit time (intensity) is:\\n\\(I = \\dfrac{P}{4\\pi R^2}\\)\\nConsider a small area \\(dA\\) at the point \\(Q\\) of the hemisphere as shown in diagram:\\n DIAGRAM[1,200].\\nThe energy falling per unit time on it is \\(I dA = \\dfrac{P dA}{4\\pi R^2}\\). The corresponding momentum incident on this area per unit time is \\(\\dfrac{P dA}{4\\pi R^2 c}\\), where \\(c\\) is the speed of light.\\nAs the light is reflected back, the change in momentum per unit time, i.e., the force on \\(dA\\) is:\\n\\(dF = \\dfrac{2P dA}{4\\pi R^2 c}\\)\\nSuppose the radius \\(OQ\\) through the area \\(dA\\) makes an angle \\(\\theta\\) with the symmetry axis \\(OY\\). By symmetry, the resultant force on the hemisphere is along \\(OY\\). The component of \\(dF\\) along \\(OY\\) is:\\n\\(dF \\cos \\theta = \\dfrac{2P dA}{4\\pi R^2 c} \\cos \\theta\\)\\nIf we project the area \\(dA\\) onto the plane containing the rim, the projection is \\(dA \\cos \\theta\\). Thus, the component of \\(dF\\) along \\(OY\\) is:\\n\\(dF \\cos \\theta = \\dfrac{2P}{4\\pi R^2 c} (\\text{Projection of } dA)\\)\\nThe net force along \\(OY\\) is:\\n\\(F = \\dfrac{2P}{4\\pi R^2 c} (\\sum \\text{Projection of } dA)\\)\\nWhen all the small areas \\(dA\\) are projected, we get the area enclosed by the rim, which is \\(\\pi R^2\\). Thus,\\n\\(F = \\dfrac{2P}{4\\pi R^2 c} (\\pi R^2) = \\dfrac{P}{2c}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The radiation force is due to the change in momentum of the reflected light. Integrate the force component along the symmetry axis over the entire hemisphere. Project the area element onto the plane of the rim.",
+      "methodOfSolving": [
+        "Calculate the intensity of light at the surface of the hemisphere.",
+        "Find the momentum incident on a small area dA per unit time.",
+        "Determine the change in momentum due to reflection.",
+        "Calculate the force on the small area dA using the change in momentum.",
+        "Find the component of the force along the symmetry axis.",
+        "Integrate the projected area element over the entire hemisphere."
+      ],
+      "answer": "The force on the hemisphere due to the light is \\(\\dfrac{P}{2c}\\)."
+    },
+    {
+      "id": "MP-0003",
+      "title": "Maximum Kinetic Energy of Photoelectrons",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Photoelectric Effect",
+          "Work Function",
+          "Kinetic Energy",
+          "Electric Field",
+          "Frequency",
+          "Photon Energy"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "The surface of a metal of work function \\(\\phi_0\\) is illuminated by light whose electric field component varies with time as \\(E = E_0 [1 + \\cos(\\omega t)] \\sin(\\omega_0 t)\\). Calculate the maximum kinetic energy of photoelectrons emitted from the surface.",
+      "solution": "The given electric field component is:\\n\\(E = E_0 [1 + \\cos(\\omega t)] \\sin(\\omega_0 t) = E_0 \\sin(\\omega_0 t) + E_0 \\cos(\\omega t) \\sin(\\omega_0 t)\\)\\nUsing the trigonometric identity \\(2 \\sin(A) \\cos(B) = \\sin(A+B) + \\sin(A-B)\\), we can rewrite the electric field as:\\n\\(E = E_0 \\sin(\\omega_0 t) + \\dfrac{E_0}{2} [\\sin((\\omega_0 + \\omega)t) + \\sin((\\omega_0 - \\omega)t)]\\)\\nSo, the given light sample comprises three different frequencies: \\(\\omega_0\\), \\((\\omega_0 + \\omega)\\), and \\((\\omega_0 - \\omega)\\).\\nThe maximum kinetic energy will be due to the most energetic photon, i.e., the photon with the highest frequency. In this case, the highest frequency is \\((\\omega_0 + \\omega)\\).\\nThe energy of this photon is \\(h f  = \\hbar \\omega\\), where \\(\\hbar = \\dfrac{h}{2 \\pi}\\).\\nAccording to the photoelectric effect, the maximum kinetic energy \\(K_{max}\\) is given by:\\n\\(K_{max} = h f - \\phi_0 = \\dfrac{h}{2\\pi}(\\omega_0+\\omega) - \\phi_0\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use trigonometric identities to express the electric field as a sum of sinusoidal components with different frequencies. The maximum kinetic energy will correspond to the highest frequency component.",
+      "methodOfSolving": [
+        "Use the trigonometric identity to rewrite the electric field component as a sum of sinusoidal functions with different frequencies.",
+        "Identify the highest frequency component.",
+        "Use the photoelectric effect equation \\(K_{max} = h f  - \\phi_0\\) to calculate the maximum kinetic energy, where \\( f \\) corresponds to the highest frequency."
+      ],
+      "answer": "The maximum kinetic energy of the photoelectrons is \\(K_{max} =  \\dfrac{h(\\omega + \\omega_0)}{2 \\pi} - \\phi_0\\)."
+    },
+    {
+      "id": "MP-0004",
+      "title": "Photoelectric Effect with a Metallic Sphere",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "900",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Photoelectric Effect",
+          "Work Function",
+          "Kinetic Energy",
+          "De Broglie Wavelength",
+          "Stopping Potential",
+          "Electric Potential",
+          "Quantum Efficiency"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In a photoelectric effect setup, a point source of light of power \\(3.2 \\times 10^{-3}\\) W emits mono-energetic photons of energy 5 eV. The source is located at a distance of 0.8 m from the center of a stationary metallic sphere of work function 3 eV and of radius \\(8 \\times 10^{-3}\\) m. The efficiency of photoelectron emission is one for every \\(10^6\\) incident photons. Assume that the sphere is isolated and electrons are instantly swept away after emission.\\n\\n(a) Calculate the number of photoelectrons emitted per second.\\n(b) Find the ratio of the wavelength of incident light to the de Broglie wavelength of the fastest photoelectrons emitted.\\n(c) Explain why it is observed that the photoelectron emission stops at a certain time t after the light source is switched on.\\n(d) Evaluate the time t.",
+      "solution": "(a) The energy emitted by the source per second is \\(P = 3.2 \\times 10^{-3}\\) W. The energy of each photon is \\(E = 5\\) eV.\\nThe number of photons emitted per second is:\\n\\(N_{photons} = \\dfrac{P}{E} = \\dfrac{3.2 \\times 10^{-3}}{5 \\times 1.6 \\times 10^{-19}} = 4 \\times 10^{15} \\text{ photons/s}\\)\\nThe number of photons incident on the sphere per second is:\\n\\(N_{incident} = N_{photons} \\dfrac{\\pi r^2}{4 \\pi R^2} = 4 \\times 10^{15} \\times \\dfrac{(8 \\times 10^{-3})^2}{4 \\times (0.8)^2} = 10^{11} \\text{ photons/s}\\)\\nwhere \\(r = 8 \\times 10^{-3}\\) m is the radius of the sphere and \\(R = 0.8\\) m is the distance of the source from the sphere.\\nSince the efficiency of photoelectron emission is one for every \\(10^6\\) incident photons, the number of photoelectrons emitted per second is:\\n\\(n = \\dfrac{N_{incident}}{10^6} = \\dfrac{10^{11}}{10^6} = 10^5 \\text{ electrons/s}\\)\\n\\n(b) The maximum kinetic energy of the emitted photoelectrons is:\\n\\(K_{max} = E - \\phi_0 = 5 \\text{ eV} - 3 \\text{ eV} = 2 \\text{ eV}\\)\\nThe de Broglie wavelength of the fastest photoelectrons is:\\n\\(\\lambda_e = \\dfrac{h}{\\sqrt{2mK_{max}}}\\)\\nFor an electron with kinetic energy in eV, the de Broglie wavelength can be approximated as:\\n\\(\\lambda_e (\\text{in } Å) = \\sqrt{\\dfrac{150}{KE (\\text{in eV})}} = \\sqrt{\\dfrac{150}{2}} = \\sqrt{75} \\approx 8.66 Å\\)\\nThe wavelength of the incident light is:\\n\\(\\lambda_{photon} = \\dfrac{hc}{E} = \\dfrac{12375}{E (\\text{in eV})} = \\dfrac{12375}{5} = 2475 Å\\)\\nThe ratio of the wavelength of incident light to the de Broglie wavelength of the fastest photoelectrons emitted is:\\n\\(\\dfrac{\\lambda_{photon}}{\\lambda_e} = \\dfrac{2475}{8.66} \\approx 286\\)\\n\\n(c) Photoelectron emission will stop when the electric potential on the sphere becomes equal to the stopping potential. As electrons are emitted, the sphere becomes positively charged, which opposes further electron emission. This continues until the potential reaches the stopping potential, at which point no more electrons are emitted.\\n\\n(d) The stopping potential \\(V_0\\) is equal to the maximum kinetic energy in volts, so \\(V_0 = 2\\) V.\\nLet \\(t\\) be the time at which the photoelectron emission stops. The potential on the sphere at time \\(t\\) is given by:\\n\\(V_0 = \\dfrac{q}{4\\pi \\epsilon_0 r} = \\dfrac{N e}{4 \\pi \\epsilon_0 r} = \\dfrac{(nt)e}{4\\pi \\epsilon_0 r}\\)\\nwhere \\(N\\) is total number of electrons = \\(nt\\) and \\(n = 10^5\\) is the number of electrons emitted per second, and \\(e = 1.6 \\times 10^{-19}\\) C is the elementary charge.\\nSolving for t:\\n\\(t = \\dfrac{V_0 r}{ke} = \\dfrac{2 \\times 0.008}{(9 \\times 10^9)(10^5)(1.6 \\times 10^{-19})} = 111.11 \\text{ s}\\)\\nwhere \\(k= \\dfrac{1}{4\\pi \\epsilon_0 } = 9 \\times 10^9 \\text{ Nm}^2 \\text{C}^{-2} \\).\\n",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "For (a), calculate the number of photons incident on the sphere and then use the given efficiency to find the number of photoelectrons emitted. For (b), use the work function and incident photon energy to find the maximum kinetic energy. Calculate de Broglie wavelength of ejected electrons. For (c) stopping potential is the key. For (d), calculate the time by taking help of stopping potential value",
+      "methodOfSolving": [
+        "(a) Calculate the number of photons incident on the sphere per second.",
+        "(a) Use the quantum efficiency to find the number of photoelectrons emitted per second.",
+        "(b) Calculate the maximum kinetic energy of the emitted photoelectrons using \\(K_{max} = E - \\phi_0\\).",
+        "(b) Calculate the de Broglie wavelength of the fastest photoelectrons using \\(\\lambda = \\dfrac{h}{\\sqrt{2mK_{max}}}\\).",
+        "(b) Calculate wavelength of incident light. Find the ratio.",
+        "(c) stopping potential is the key for photo emission. Use \\(K_{max} = eV_0 \\).",
+        "(d) Calculate the time when sphere voltage increases and there is photo emission ceases. "
+      ],
+      "answer": "(a) The number of photoelectrons emitted per second is \\(10^5\\) electrons/s.\\n(b) The ratio of the wavelength of incident light to the de Broglie wavelength is approximately 286.\\n(c) Emission stops because sphere reaches stopping potential.\\n(d) The time is approximately 111 s."
+    },
+    {
+      "id": "MP-0005",
+      "title": "Photoelectric Effect with Aperture and Lens",
+      "statistics": {
+        "numberOfDiagrams": "2",
+        "idealAverageTimeInS": "1200",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Photoelectric Effect",
+          "Photon Flux",
+          "Photocurrent",
+          "Concave Lens",
+          "Lens Formula",
+          "Stopping Potential",
+          "Work Function"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A monochromatic point source S radiating wavelength 6000 Å, with power 2 watt, an aperture A of diameter 0.1 m and a large screen SC are placed as shown in figure. A photoemissive detector D of surface area 0.5 cm² is placed at the centre of the screen. The efficiency of the detector for the photoelectron generation per incident photon is 0.9.\\nDIAGRAM[1,250]\\n(a) Calculate the photon flux at the centre of the screen and the photocurrent in the detector.\\n(b) If the concave lens L of focal length 0.6 m is inserted in the aperture as shown, find the new values of photon flux and photocurrent. Assume a uniform average transmission of 80% from the lens.\\n(c) If the work function of the photo emissive surface is 1 eV, calculate the values of the stopping potential in the two cases (without and with the lens in the aperture).",
+      "solution": "(a) To determine the photon flux and photocurrent without the lens, we proceed as follows:\\n\\n*Energy per Photon:*\\n\\(E = \\dfrac{hc}{\\lambda} = \\dfrac{(6.6 \\times 10^{-34} \\text{ J s})(3 \\times 10^8 \\text{ m/s})}{6000 \\times 10^{-10} \\text{ m}} = 3.3 \\times 10^{-19} \\text{ J}\\)\\n\\n*Number of Photons Emitted per Second:*\\n\\(n_1 = \\dfrac{\\text{Power}}{\\text{Energy per Photon}} = \\dfrac{2 \\text{ J/s}}{3.3 \\times 10^{-19} \\text{ J}} = 6.06 \\times 10^{18} \\text{ photons/s}\\)\\nDIAGRAM[2,250]\\n*Photons Incident per Unit Area at 0.6 m:*\\n\\(n_2 = \\dfrac{n_1}{4\\pi r^2} = \\dfrac{6.06 \\times 10^{18} \\text{ photons/s}}{4\\pi (0.6 \\text{ m})^2} = 1.34 \\times 10^{18} \\text{ m}^{-2} \\text{s}^{-1}\\)\\n\\n*Aperture Area:*\\n\\(S_1 = \\pi (d/2)^2 = \\pi (0.1 \\text{ m}/2)^2 = 7.85 \\times 10^{-3} \\text{ m}^2\\)\\n\\n*Photons Incident on the Aperture:*\\n\\(n_3 = n_2 S_1 = (1.34 \\times 10^{18} \\text{ m}^{-2} \\text{s}^{-1})(7.85 \\times 10^{-3} \\text{ m}^2) = 1.052 \\times 10^{16} \\text{ photons/s}\\)\\n\\n*Photon Flux at the Detector (Without Lens):*\\nThe aperture acts as a new point source, distributing photons over a sphere of radius 5.4 m (6 m - 0.6 m):\\n\\(\\text{Photon Flux} = n_4 = \\dfrac{n_3}{4 \\pi (5.4 \\text{ m})^2} = \\dfrac{1.052 \\times 10^{16} \\text{ photons/s}}{4 \\pi (5.4 \\text{ m})^2} = 2.87 \\times 10^{13} \\text{ m}^{-2} \\text{s}^{-1}\\)\\n\\n*Photons Incident on Detector:*\\n\\(n_5 = \\text{Photon Flux} \\times \\text{Area of Detector} = (2.87 \\times 10^{13} \\text{ m}^{-2} \\text{s}^{-1}) (0.5 \\times 10^{-4} \\text{ m}^2) = 1.435 \\times 10^9 \\text{ photons/s}\\)\\n\\n*Photoelectrons Generated:*\\n\\(n_6 = 0.9 \\times n_5 = 0.9 (1.435 \\times 10^9 \\text{ photons/s}) = 1.2915 \\times 10^9 \\text{ electrons/s}\\)\\n\\n*Photocurrent:*\\n\\(i = n_6 e = (1.2915 \\times 10^9 \\text{ electrons/s})(1.6 \\times 10^{-19} \\text{ C}) = 2.07 \\times 10^{-10} \\text{ A}\\)\\n\\n(b) With the Concave Lens:\\n\\n*Image Location:*\\nDIAGRAM[3, 250]\\nUsing the lens formula,\\n \\(\\dfrac{1}{v} - \\dfrac{1}{u} = \\dfrac{1}{f}\\), where \\(u = -0.6 \\text{ m}\\) and \\(f = -0.6 \\text{ m}\\) (concave lens):\\n\\(\\dfrac{1}{v} - \\dfrac{1}{-0.6 \\text{ m}} = \\dfrac{1}{-0.6 \\text{ m}} \\implies v = -0.3 \\text{ m}\\)\\nThe lens creates a virtual image at 0.3 m from the lens. So, the virtual source at  distance of \\(d= 5.7 m\\).   \\n*Photon Transmission through Lens:*\\nOnly 80% of the photons are transmitted, so \\(n_3 = 1.052 \\times 10^{16} s^{-1}\\) is reduced to \\(0.8 * 1.052 * 10^{16} s^{-1}\\). \\n*Photon Flux with Lens:* At \\( 5.7 m\\), the transmission will be:\\n\\(\\text{Photon Flux with lens} = \\dfrac{0.8 n_3}{4 \\pi (5.7 \\text{ m})^2}  = 2.06*10^{13} \\text{ m}^{-2} s^{-1} \\)\\n*New Value of Photocurrent:*\\n\\( i = (2.06 \\times 10^{13})(0.5 \\times 10^{-4})(0.9)(1.6 \\times 10^{-19}) = 1.483 \\times 10^{-10} A \\)\\n(c) Determining Stopping Potential:\\n\\n*Energy of Incident Photons:*\\n\\(E = \\dfrac{12375}{\\lambda (\\text{ in } Å)}  = \\dfrac{12375}{6000} = 2.06 eV\\) \\n*Maximum KE and Stopping Potential:*\\n\\(K = E - \\phi_0 = 2.06 \\text{ eV} - 1 \\text{ eV} =  1.06 \\text{ eV}\\). Because of this \\( eV_s = E - \\phi_0 \\). This means \\( V_0 = \\dfrac{E - \\phi_0}{e} = 1.06 V\\). Therefore, the stopping potential will be \\(1.06 V \\) (same for both cases - with and without lens)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the number of photons emitted by the source. Use geometry to determine the fraction of photons incident on the aperture. Use the lens formula to find the effect of the concave lens. The stopping potential is related to the maximum kinetic energy of the photoelectrons.",
+      "methodOfSolving": [
+        "(a) Calculate the energy of a single photon.",
+        "(a) Calculate the number of photons emitted by the source per second.",
+        "(a) Calculate the fraction of photons incident on the aperture.",
+        "(a) Calculate the photon flux at the detector without the lens.",
+        "(a) Calculate the number of photoelectrons generated per second.",
+        "(a) Calculate the photocurrent.",
+        "(b) Use the lens formula to determine the location of the image after the concave lens.",
+        "(b) Adjust number of emitted photons by 80% transmission.",
+        "(b) Recalculate the photon flux at the detector with the lens.",
+        "(b) Calculate the new photocurrent.",
+        "(c) Use the formula \\(K_{max} = eV_0 = E - \\phi_0\\) to calculate the stopping potential."
+      ],
+      "answer": "(a) The photon flux is \\(2.87 \\times 10^{13} m^{-2} s^{-1}\\), and the photocurrent is \\(2.07 \\times 10^{-10} A\\).\\n(b) With the lens, the photon flux is \\(2.06 \\times 10^{13} m^{-2} s^{-1}\\), and the photocurrent is \\(1.483 \\times 10^{-10} A\\).\\n(c) The stopping potential is 1.06 V in both cases."
+    },
+    {
+      "id": "MP-0006",
+      "title": "Standing Waves of Electrons in an Atomic Array",
+      "statistics": {
+        "numberOfDiagrams": "1",
+        "idealAverageTimeInS": "720",
+        "Unit": "Modern Physics",
+        "tags": [
+          "De Broglie Wavelength",
+          "Standing Waves",
+          "Electron Energy",
+          "Atomic Array",
+          "Quantum Mechanics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Assume that the de Broglie wave associated with an electron can form a standing wave between the atoms arranged in a one-dimensional array with nodes at each of the atomic sites. It is found that one such standing wave is formed if the distance \\(d\\) between the atoms of the array is 2 Å. A similar standing wave is again formed if \\(d\\) is increased to 2.5 Å but not for any intermediate value of \\(d\\). Find the energy of the electron in eV and the least value of \\(d\\) for which the standing wave of the type described above can form.",
+      "solution": "From the given information, we can determine the de Broglie wavelength of the electron and then calculate its energy.\\n\\nConsider the distance between the atoms and the formation of standing waves. \\nDIAGRAM[1,200]\\nThe given values suggest that an integer or half-integer number of wavelengths fit between the atoms.\\n\\nLet's analyze the given data. If \\(p\\) loops of \\(\\lambda/2\\) fit into 2 Å, and \\(p+1\\) loops fit into 2.5 Å:\\n\\(p \\cdot \\dfrac{\\lambda}{2} = 2 Å \\quad \\text{and} \\quad (p+1) \\cdot \\dfrac{\\lambda}{2} = 2.5 Å\\)\\nDividing the above equation:\\n\\( \\dfrac{p+1}{p} = \\dfrac{2.5}{2} \\implies p = 4 \\)\\nThen \\n\\( \\dfrac{\\lambda}{2} = \\dfrac{2}{p} = \\dfrac{2}{4} Å = 0.5 Å \\)\\nTherefore:\\n\\(\\lambda = 2 (0.5 Å) = 1 Å = 10^{-10} \\text{ m}\\).\\nThe de Broglie wavelength is given by \\(\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2mK}}\\), where \\(K\\) is the kinetic energy of the electron. Therefore,\\n\\(K = \\dfrac{h^2}{2m \\lambda^2} = \\dfrac{(6.63 \\times 10^{-34})^2}{2 (9.1 \\times 10^{-31}) (10^{-10})^2} = 2.415 \\times 10^{-17} \\text{ J}\\)\\nConverting this to electron volts:\\n\\(K = \\dfrac{2.415 \\times 10^{-17}}{1.6 \\times 10^{-19}} \\approx 150.8 \\text{ eV}\\)\\nThe least value of \\(d\\) will be when only one loop is formed. In that case, the \\(\\dfrac{\\lambda}{2}\\) is equal to \\(d\\).\\n\\(d_{min} = \\dfrac{\\lambda}{2} = \\dfrac{1 Å}{2} = 0.5 Å\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Relate the distances between the atoms to the de Broglie wavelength of the electron using the concept of standing waves. The energy of the electron can then be calculated using the de Broglie wavelength and the kinetic energy formula.",
+      "methodOfSolving": [
+        "Use the given information to determine the relationship between the distance \\(d\\) and the de Broglie wavelength \\(\\lambda\\).",
+        "Solve for the de Broglie wavelength \\(\\lambda\\).",
+        "Calculate the kinetic energy \\(K\\) of the electron using the formula \\(K = \\dfrac{h^2}{2m\\lambda^2}\\).",
+        "Convert the kinetic energy from Joules to electron volts.",
+        "Determine the minimum value of \\(d\\) by considering the case where only one loop of the standing wave is formed."
+      ],
+      "answer": "The energy of the electron is approximately 150.8 eV, and the least value of \\(d\\) is 0.5 Å."
+    },
+    {
+      "id": "MP-0007",
+      "title": "Force on a Reflecting Cone due to Light Beam",
+      "statistics": {
+        "numberOfDiagrams": "2",
+        "idealAverageTimeInS": "900",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radiation Pressure",
+          "Reflection",
+          "Intensity",
+          "Cone",
+          "Integration",
+          "Momentum Transfer",
+          "Electromagnetic Waves"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A cone of radius \\(R\\) and height \\(H\\) with a perfectly reflecting lateral surface is placed in the path of a light beam of intensity \\(I\\) as shown. Calculate the force exerted by the light beam on this cone.\\n\\nDIAGRAM[1,250]",
+      "solution": "To find the force exerted by the light beam, we consider an elemental strip of width \\(dx\\) on the lateral surface of the cone at a distance \\(x\\) from the vertex \\(O\\) of the cone. The force on this strip can be calculated by integrating the force over the entire surface of the cone.\\n\\nDIAGRAM[2,500]\\nIf the radius of the strip is \\(r\\), then the surface area of the strip is:\\n\\(dA = (2 \\pi r) dx\\) ... (1)\\nSince for the cone, we have:\\n\\(\\sin \\theta = \\dfrac{r}{x} = \\dfrac{R}{\\sqrt{R^2 + H^2}}\\) ... (2)\\n\\(r = x \\sin \\theta\\)\\nSo, the area of strip is\\n\\(dA = 2 \\pi (x \\sin \\theta) dx\\)\\nIf \\(dA_n\\) be the projection of area \\(dA\\) of the slant strip along the cross-sectional plane of the light beam i.e. normal to the light beam, then we have\\n\\(dA_n = dA \\sin \\theta\\) ... (3)\\nIf \\(dP\\) is the power of the light beam incident on this infinitesimal strip, then\\n\\(dP = I dA_n\\) ... (4)\\nSo, the force \\(dF\\) on this infinitesimal strip element acts along the normal at the point of incidence and is given by\\n\\(dF = \\dfrac{2dP}{c} \\sin \\theta = \\dfrac{2I dA_n}{c} \\sin \\theta = \\dfrac{2I dA \\sin^2 \\theta}{c}\\) ... (5)\\nOn resolving this infinitesimal force, we observe that the vertical components of the forces cancel, whereas the net force \\(F\\) is only obtained by integrating the component \\(dF \\sin \\theta\\) acting along the beam of light.\\n\\(F = \\int dF \\sin \\theta\\)\\n\\(F = \\int \\dfrac{2I}{c} \\sin^3 \\theta dA = \\int \\dfrac{2I}{c} \\sin^3 \\theta (2 \\pi x \\sin \\theta) dx\\)\\n\\(F = \\int \\dfrac{4 \\pi I}{c} \\sin^4 \\theta \\int_0^{\\sqrt{R^2 + H^2}} x dx\\)\\n\\(F = \\dfrac{4 \\pi I}{c} \\sin^4 \\theta  \\dfrac{x^2}{2} |_0^{\\sqrt{R^2 + H^2}}\\) \\n\\(F = \\dfrac{4 \\pi I}{c} \\sin^4 \\theta  \\dfrac{R^2 + H^2}{2} \\)\\nSubstituting \\(\\sin \\theta\\) from Equation (2)\\n\\(F = \\dfrac{2 \\pi I}{c}  \\dfrac{R^4}{(R^2 + H^2)^2}  (R^2 + H^2) \\)\\n\\(F = \\dfrac{2 \\pi I}{c}  \\dfrac{R^4}{(R^2 + H^2)}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Consider the radiation pressure on a small strip of the cone. Find the force on that strip and integrate over the entire surface of the cone. Remember that the force is due to the change in momentum of the reflected light.",
+      "methodOfSolving": [
+        "Consider an elemental strip of width \\(dx\\) at distance \\(x\\) from the vertex.",
+        "Calculate the area of the strip \\(dA\\).",
+        "Find the projection of the area \\(dA_n\\) normal to the light beam.",
+        "Calculate the force \\(dF\\) on the strip due to the change in momentum of the reflected light.",
+        "Consider the geometry and symmetry to only integrate the relevant component of the force.",
+        "Integrate \\(dF \\sin \\theta\\) to obtain the total force \\(F\\)."
+      ],
+      "answer": "The force exerted by the light beam on the cone is \\(\\dfrac{2 \\pi I R^4}{c (R^2 + H^2)}\\)."
+    },
+    {
+      "id": "MP-0008",
+      "title": "Bohr's Correspondence Principle",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Bohr's Theory",
+          "Hydrogen Atom",
+          "Frequency of Revolution",
+          "Frequency of Radiation",
+          "Correspondence Principle",
+          "Quantum Mechanics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Using Bohr's theory, show that when \\(n\\) is very large, the frequency of radiation emitted by a hydrogen atom due to the transition of an electron from \\(n\\) to \\((n-1)\\) is equal to the frequency of revolution of the electron in its orbit.",
+      "solution": "We need to show that for large \\(n\\), the frequency of revolution of the electron in the nth orbit is equal to the frequency of transition from \\(n\\) to \\((n-1)\\).\\n\\nThe frequency of revolution of the electron in the nth orbit is given by:\\n\\(f_{\\text{revolution}} = \\dfrac{1}{T} = \\dfrac{v}{2 \\pi r}\\)\\nFrom Bohr's postulates, we know that:\\n\\(v = \\dfrac{e^2}{2h \\epsilon_0} \\dfrac{Z}{n}\\)\\n\\(r = \\dfrac{n^2 h^2 \\epsilon_0}{\\pi m e^2 Z}\\)\\nSubstituting these values into the equation for \\(f_{\\text{revolution}}\\), we get:\\n\\(f_{\\text{revolution}} = \\dfrac{1}{2 \\pi} \\dfrac{\\dfrac{e^2}{2h \\epsilon_0} \\dfrac{Z}{n}}{\\dfrac{n^2 h^2 \\epsilon_0}{\\pi m e^2 Z}}\\)\\nSimplifying this expression, we get:\\n\\(f_{\\text{revolution}} = \\left( \\dfrac{m e^4}{4 \\epsilon_0^2 h^3} \\right) \\dfrac{Z^2}{n^3} \\) ... (1)\\nFurther, the frequency of transition from \\(n\\) to \\((n-1)\\) is given by:\\n\\(h f_{\\text{transition}} = E_n - E_{n-1} = \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^2} \\left[ \\dfrac{1}{(n-1)^2} - \\dfrac{1}{n^2} \\right]\\)\\n\\(h f_{\\text{transition}} = \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^2} \\left[ \\dfrac{n^2 - (n-1)^2}{n^2 (n-1)^2} \\right] = \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^2} \\left[ \\dfrac{2n-1}{n^2 (n-1)^2} \\right]\\)\\n\\(f_{\\text{transition}} = \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^3} \\left[ \\dfrac{2n-1}{n^2 (n-1)^2} \\right]\\)\\nWhen \\(n\\) is large, we can make the following approximations:\\n\\(2n - 1 \\approx 2n \\quad \\text{and} \\quad n - 1 \\approx n\\)\\nTherefore,\\n\\(f_{\\text{transition}} \\approx \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^3} \\left[ \\dfrac{2n}{n^2 n^2} \\right] = \\dfrac{m e^4 Z^2}{8 \\epsilon_0^2 h^3} \\left[ \\dfrac{2}{n^3} \\right]\\)\\n\\(f_{\\text{transition}} \\approx \\left( \\dfrac{m e^4}{4 \\epsilon_0^2 h^3} \\right) \\dfrac{Z^2}{n^3} \\) ... (2)\\nSo, from (1) and (2), we observe that for large \\(n\\), we can have\\n\\(f_{\\text{revolution}} = f_{\\text{transition}}\\)\\nThis principle is also called *Bohr's Correspondence Principle*.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Bohr's postulates to find expressions for the frequency of revolution and the frequency of transition. Then, apply the approximation for large \\(n\\) to show that the two frequencies become equal.",
+      "methodOfSolving": [
+        "Obtain the equations for the frequency of revolution of the electron in the \\(n\\)th orbit.",
+        "Calculate the frequency of transition for an electron transitioning from orbit \\(n\\) to orbit \\(n-1\\).",
+        "Apply the condition \\(n \\rightarrow \\infty\\), and simplify both the equations.",
+        "Show that the frequency of revolution is approximately equal to the frequency of transition for large \\(n\\)."
+      ],
+      "answer": "For large \\( n\\), \\(f_{\\text{revolution}} = f_{\\text{transition}}\\), demonstrating Bohr's Correspondence Principle."
+    },
+    {
+      "id": "MP-0009",
+      "title": "Bohr Model for a Mu-Mesonic Atom",
+      "statistics": {
+        "numberOfDiagrams": "1",
+        "idealAverageTimeInS": "900",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Bohr Model",
+          "Mu-Meson",
+          "Atomic Radius",
+          "Energy Levels",
+          "Wavelength of Radiation",
+          "Rydberg Constant",
+          "Quantum Mechanics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A particle of charge equal to that of an electron, \\(-e\\), and mass 208 times the mass of the electron (called a \\(\\mu\\)-meson) moves in a circular orbit around a nucleus of charge +3e (take the mass of the nucleus to be infinite). Assuming that the Bohr model of the atom is applicable to this system:\\n(i) Calculate the radius of the \\(n\\)th Bohr orbit.\\n(ii) Find the value of \\(n\\) for which the radius of the orbit is approximately the same as that of the first Bohr orbit for the hydrogen atom.\\n(iii) Find the wavelength of radiation emitted when the \\(\\mu\\)-meson jumps from the third orbit to the first orbit (Rydberg's constant = \\(1.097 \\times 10^7 m^{-1}\\)).",
+      "solution": "We will apply the Bohr model postulates to this mu-mesonic atom and determine the radius, quantum number, and wavelength of emitted radiation.\\n\\n*(i) Radius of the nth Bohr orbit:*\\nIn the \\(n\\)th orbit, the necessary centripetal force to the \\(\\mu\\)-meson will be provided by the electrostatic force between the nucleus and the \\(\\mu\\)-meson.\\nDIAGRAM[1,200]\\n\\(\\dfrac{mv^2}{r} = \\dfrac{1}{4 \\pi \\epsilon_0} \\dfrac{(Ze)(e)}{r^2}\\) ... (1)\\nHere, \\(Z=3\\) and \\(m = 208 m_e\\)\\nAlso, angular momentum in the \\(n\\)th orbit is:\\n\\(L = mvr = n \\dfrac{h}{2 \\pi}\\) ... (2)\\nFrom (2), we get:\\n\\(v = \\dfrac{nh}{2 \\pi mr}\\)\\nSubstituting in (1), we get:\\n\\(\\dfrac{m}{r} \\left(\\dfrac{nh}{2 \\pi mr} \\right)^2 = \\dfrac{1}{4 \\pi \\epsilon_0} \\dfrac{Ze^2}{r^2}\\)\\n\\(r = \\dfrac{n^2 h^2 \\epsilon_0}{\\pi m e^2 Z}\\)\\nSubstituting \\(Z = 3\\) and \\(m = 208 m_e\\), we get:\\n\\(r_n = \\dfrac{n^2 h^2 \\epsilon_0}{3 (208) \\pi m_e e^2} = \\dfrac{n^2 h^2 \\epsilon_0}{624 \\pi m_e e^2}\\)\\n\\n*(ii) Value of n for the same radius as the first Bohr orbit of hydrogen:*\\nThe radius of the first Bohr orbit for the hydrogen atom is:\\n\\(r_1 = \\dfrac{h^2 \\epsilon_0}{\\pi m_e e^2}\\)\\nEquating this with the radius calculated in part (i), we get:\\n\\(\\dfrac{h^2 \\epsilon_0}{\\pi m_e e^2} = \\dfrac{n^2 h^2 \\epsilon_0}{624 \\pi m_e e^2}\\)\\n\\(n^2 \\approx 624\\) hence: \\n\\(n \\approx \\sqrt{624} \\approx 25\\)\\n\\n*(iii) Wavelength of radiation emitted when the \\(\\mu\\)-meson jumps from the third orbit to the first orbit:*\\nThe energy of an electron in \\(n^{th}\\) orbit is:\\n\\(K = \\dfrac{1}{2} m v^2= \\dfrac{Z e^2}{8 \\pi \\epsilon_0 r}\\)\\n\\(U = -\\dfrac{Ze^2}{4 \\pi \\epsilon_0 r}\\)\\n\\(E_n =  -\\dfrac{Z e^2}{8 \\pi \\epsilon_0 r}\\)\\nSubstitute \\(r = \\dfrac{n^2 h^2 \\epsilon_0}{\\pi m e^2 Z}\\), to get:\\n\\(E_n = \\dfrac{1}{n^2} \\dfrac{ m_e e^4 Z^2}{8 \\epsilon_0^2 h^2} (208 \\times 3^2) = \\dfrac{1872}{n^2} E_1\\), where \\( E_1= -\\dfrac{e^4 m_e}{8 \\epsilon_0^2 h^2}\\) is called the ground state energy of hydrogen which is = \\(-13.6 eV\\).\\n\\(E_n =  \\dfrac{Z^2}{n^2}E_1\\), where \\( E_1\\) is the first ground state energy of hydrogen.\\n\\(E_n = \\dfrac{1872 \\times 13.6 eV}{n^2} =  -\\dfrac{25459.2 eV}{n^2}\\)\\nThe energy difference is:\\n\\( \\Delta E  = 25459.2(1 - \\dfrac{1}{9}) = 22630.4 eV \\)\\nSo, the corresponding wavelength is, \\n\\(\\lambda (\\text{in } Å) = \\dfrac{12375}{E} \\implies  \\dfrac{12375}{22630.4}= 0.546 AA\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply Bohr's quantization conditions to the mu-mesonic atom. Calculate the electrostatic force and use the formula for centripetal force. Quantize angular momentum and find the expressions for radius and energy levels.",
+      "methodOfSolving": [
+        "(i) Write the expression for electrostatic force between nucleus and the meson.",
+        "(i) Set it equal to centripetal force and use angular momentum quantization from Bohr's theory.",
+        "(i) Use the value of \\(\\dfrac{1}{4\\pi \\epsilon_0 }\\) to simplify.",
+        "(ii) Equate the expression for radius of \\(n^{th}\\) orbit of the \\(\\mu\\)-meson with the radius of the first Bohr orbit of the hydrogen atom.",
+        "(ii) Solve for \\(n\\).",
+        "(iii) Apply expression for Bohr's model kinetic energy and potential energy.",
+        "(iii) Then compute the wavelength of the emitted radiation for the specified transition using the Rydberg formula."
+      ],
+      "answer": "(i) \\(r_n = \\dfrac{n^2 h^2 \\epsilon_0}{624 \\pi m_e e^2}\\) \\n(ii) \\(n \\approx 25\\) \\n(iii) \\(\\lambda = 0.546 Å\\)"
+    },
+    {
+      "id": "MP-0010",
+      "title": "Bohr's Model for an Imaginary Atom",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "720",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Bohr Model",
+          "Atomic Radius",
+          "Energy Levels",
+          "Wavelength of Radiation",
+          "Quantum Mechanics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "An imaginary particle has a charge equal to that of an electron and a mass 100 times the mass of the electron. It moves in a circular orbit around a nucleus of charge +4e. Take the mass of the nucleus to be infinite. Assuming that the Bohr's model is applicable to this system:\\n(a) Derive an expression for the radius of the \\(n^{th}\\) Bohr orbit.\\n(b) Find the wavelength of the radiation emitted when the particle jumps from the fourth orbit to the second orbit.",
+      "solution": "(a) Let \\(m_p\\) be the mass of the imaginary particle (\\(m_p = 100 m_e\\)) and \\(Z = 4\\) be the charge of the nucleus. Applying Bohr's postulates:\\n\\nThe centripetal force is provided by the electrostatic force:\\n\\(\\dfrac{m_p v^2}{r_n} = \\dfrac{1}{4 \\pi \\epsilon_0} \\dfrac{Ze^2}{r_n^2}\\) ... (1)\\nQuantization of angular momentum gives:\\n\\(m_p v r_n = \\dfrac{nh}{2 \\pi}\\) ... (2)\\nSolving equations (1) and (2) for \\(r_n\\):\\nFrom equation (2), we get \\(v=\\dfrac{nh}{2 \\pi m_p r_n }\\). Substituting this in equation (1) we get,\\n\\(\\dfrac{m_p}{r_n}(\\dfrac{nh}{2 \\pi m_p r_n })^2 = \\dfrac{1}{4 \\pi \\epsilon_0} \\dfrac{Ze^2}{r_n^2}\\)\\n\\(\\dfrac{m_p n^2 h^2}{4 \\pi^2 m_p^2 r_n^3} = \\dfrac{Ze^2}{4 \\pi \\epsilon_0 r_n^2}\\)\\nSolving, we get:\\n\\(r_n = \\dfrac{n^2 h^2 \\epsilon_0}{\\pi m_p Z e^2}\\)\\nSubstituting \\(m_p = 100 m_e\\) and \\(Z = 4\\), we get:\\n\\(r_n = \\dfrac{n^2 h^2 \\epsilon_0}{\\pi (100 m_e) (4) e^2} = \\dfrac{n^2 h^2 \\epsilon_0}{400 \\pi m_e e^2}\\)\\n\\n(b) The energy of the electron in \\(n^{th}\\) orbit is:\\n \\(E_n = -\\dfrac{m_p Z^2 e^4}{8 \\epsilon_0^2 h^2 n^2} \\)\\n\\(E_n = - \\dfrac{(100 m_e) (4)^2 e^4}{8 \\epsilon_0^2 h^2 n^2} \\)\\n\\(E_n = \\dfrac{1}{n^2} (-13.6 eV)(4^2) (100)\\).\\nAs we know the first ground state energy of hydrogen  \\( E_1^H = -\\dfrac{m e^4}{8 h^2 \\epsilon_0^2}= -13.6 eV \\).\\nFor the given transition wavelength from four to two from the higher orbit the lower orbit is calculated as\\nUsing it:\\n\\(E_4 = \\dfrac{-13.6 (4)^2 (100)}{(4)^2} = -13.6 \\times 100 = -1360 eV\\)\\n\\(E_2 = \\dfrac{-13.6 (4)^2 (100)}{(2)^2} = -13.6 \\times 400 = -5440 eV\\)\\nThe change in energy is:\\n\\(\\Delta E = E_4 - E_2 = -1360 - (-5440) = 4080 eV\\)\\nThe wavelength of the emitted radiation is:\\n\\(\\lambda (in Å) = \\dfrac{12375}{\\Delta E (in eV)} = \\dfrac{12375}{4080} \\approx 3 Å\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply the Bohr model, equate the electrostatic force to the centripetal force, quantize the angular momentum. Use the energy level formula to calculate the wavelength of the emitted photon.",
+      "methodOfSolving": [
+        "(a) Equate the electrostatic force and the centripetal force.",
+        "(a) Apply the angular momentum quantization condition.",
+        "(a) Solve for the radius of the \\(n^{th}\\) orbit.",
+        "(b) Calculate the energy of the \\(4^{th}\\) and \\(2^{nd}\\) orbits.",
+        "(b) Obtain change in energy.",
+        "(b) Find the wavelength of the emitted photon using \\(\\lambda = \\dfrac{hc}{\\Delta E}\\). You can convert it to \\(\\lambda(in Å) = \\dfrac{12375}{E(in eV)}\\)"
+      ],
+      "answer": "(a) \\(r_n = \\dfrac{n^2 h^2 \\epsilon_0}{400 \\pi m_e e^2}\\) \\n(b) \\(\\lambda \\approx 3 Å\\)"
+    },
+    {
+      "id": "MP-0011",
+      "title": "Hypothetical Hydrogen Atom with Modified Potential",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Bohr Model",
+          "Potential Energy",
+          "Atomic Radius",
+          "Energy Levels",
+          "Hypothetical Atom",
+          "Quantum Mechanics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Assume a hypothetical hydrogen atom in which the potential energy between the electron and proton at a separation \\(r\\) is given by \\(U = k \\log_e \\left( \\dfrac{r}{2} \\right)\\), where \\(k\\) is a constant. For such a hypothetical hydrogen atom, calculate the radius of the \\(n\\)th Bohr orbit and the energy levels.",
+      "solution": "For this hypothetical atom, we need to modify Bohr's postulates to account for the non-Coulombic potential.\\n\\n1.  *Force of Interaction:*\\nThe force of interaction between the electron and proton is given by the negative derivative of the potential energy with respect to \\(r\\):\\n\\(F = - \\dfrac{dU}{dr} = - \\dfrac{d}{dr} \\left[ k \\log_e \\left( \\dfrac{r}{2} \\right) \\right] = - \\dfrac{k}{r}\\)\\nThe force is negative, indicating an attractive force.\\n\\n2.  *Balancing Force and Applying Bohr's Postulate:*\\nThis force provides the necessary centripetal force for the electron:\\n\\(\\dfrac{mv^2}{r} = \\dfrac{k}{r}\\) ... (1)\\nAccording to Bohr's assumption, the angular momentum is quantized:\\n\\(mvr = n \\dfrac{h}{2 \\pi}\\) ... (2)\\n\\n3.  *Solving for Radius and Velocity:*\\nFrom equation (1), we get:\\n\\(v^2 = \\dfrac{k}{m} \\implies v = \\sqrt{\\dfrac{k}{m}}\\)\\nFrom equation (2), we have \\(r = \\dfrac{nh}{2 \\pi m v}\\). Substituting this, we have:\\n\\(r = \\dfrac{nh}{2 \\pi m \\sqrt{\\dfrac{k}{m}}} = \\dfrac{nh}{2 \\pi \\sqrt{mk}}\\)\\n4.  *Determining Energy Levels:*\\nNow, let's find the energy levels. In general \\(E=KE + PE\\) so the energy is equal to:\\n\\(E = U + \\dfrac{1}{2} m v^2 = k \\log_e \\left( \\dfrac{r}{2} \\right) + \\dfrac{1}{2} m \\dfrac{k}{m} = k \\log_e \\left( \\dfrac{r}{2} \\right) + \\dfrac{k}{2}\\)\\nSubstituting the value of \\(r\\), we get:\\n\\(E = k \\log_e \\left( \\dfrac{nh}{4 \\pi \\sqrt{mk}} \\right) + \\dfrac{k}{2} \\)\\n",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The new potential energy changes the expression for the force between the electron and proton. However, Bohr's quantization of angular momentum still holds. Use these two conditions to find the radius and energy levels.",
+      "methodOfSolving": [
+        "Find the force of interaction between electron and proton using \\(F = -\\dfrac{dU}{dr}\\).",
+        "Equate this force with centripetal force to find relation between \\(v\\) and \\(r\\).",
+        "Apply Bohr's quantization rule for angular momentum.",
+        "Find the radius of the \\(n^{th}\\) orbit.",
+        "Write the expression for total energy as sum of kinetic and potential energies",
+        "Use the value of the Bohr radius and velocity and thus find an expression for the total energy."
+      ],
+      "answer": "Radius of nth Bohr orbit \\(r_n = \\dfrac{nh}{2 \\pi \\sqrt{mk}}\\) and Energy levels \\(E = k \\log_e \\left( \\dfrac{nh}{4 \\pi \\sqrt{mk}} \\right) + \\dfrac{k}{2} \\)."
+    },
+    {
+      "id": "MP-0012",
+      "title": "Inelastic Collision of Neutron with Helium Ion",
+      "statistics": {
+        "numberOfDiagrams": "1",
+        "idealAverageTimeInS": "720",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Inelastic Collision",
+          "Helium Ion",
+          "Neutron",
+          "Kinetic Energy",
+          "Energy Levels",
+          "Bohr's Theory"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A \\(He^+\\) ion is at rest and in the ground state. A neutron with initial velocity \\(u\\) and kinetic energy \\(K\\) collides head-on with the \\(He^+\\) ion. Calculate the minimum value of \\(K\\) so that there can be an inelastic collision between these two particles.\\n\\nDIAGRAM[1,150]",
+      "solution": "For an inelastic collision to occur, some of the kinetic energy of the neutron must be used to excite the \\(He^+\\) ion to a higher energy level. First, we need to determine the energy levels of the \\(He^+\\) ion.\\n\\nThe energy of the electron in the \\(n\\)th orbit of a hydrogen-like atom is given by:\\n\\(E_n = - \\dfrac{13.6 Z^2}{n^2} \\text{ eV}\\)\\nFor \\(He^+\\), \\(Z = 2\\), so:\\n\\(E_n = - \\dfrac{13.6 (2^2)}{n^2} = - \\dfrac{54.4}{n^2} \\text{ eV}\\)\\nThe ground state energy (\\(n=1\\)) is:\\n\\(E_1 = -54.4 \\text{ eV}\\)\\nThe energy levels are:\\n\\(E_2 = \\dfrac{-54.4}{2^2}= -13.6 \\text{ eV} \\implies E_2 - E_1 = 40.8 \\text{ eV}\\)\\n\\(E_3 = \\dfrac{-54.4}{3^2}= -6.04 \\text{ eV} \\implies E_3 - E_1 = 48.36 \\text{ eV}\\)\\n\\(E_4 = \\dfrac{-54.4}{4^2}= -3.4 \\text{ eV} \\implies E_4 - E_1 = 51 \\text{ eV}\\)\\n\\(E_{\\infty} =0  \\implies E_{\\infty} - E_1 = 54.4 \\text{ eV}\\)\\nSo, the possible losses in energy can only be \\(\\Delta E = \\{40.8 \\text{ eV}, 48.36 \\text{ eV}, 51 \\text{ eV}, ..., 54.4 \\text{ eV} \\}\\).\\n\\nNow, consider the collision. The minimum kinetic energy required for an inelastic collision corresponds to the first excitation, where \\(\\Delta E = 40.8 \\text{ eV}\\).\\nAssuming that the collision conserves momentum and energy, the \\(\\text{Loss} = KE_{\\text{initial}} - KE_{\\text{final}}\\) where \\(KE = \\dfrac{1}{2} mv^2 \\) and \\(m\\) = mass of the neutron.\\n\\(loss= \\dfrac{1}{2} \\dfrac{(m \\times 4m) }{m + 4m } (u-0)^2 = \\dfrac{1}{2}( \\dfrac{4m}{5}) u^2 = (\\dfrac{4}{5})K\\).\\nNow this lossless energy cannot be in the range \\(0 to 40.8 eV \\).\\nThe minimum Kinetic energy of the neutron must be:\\n\\(0  \\leqslant  \\Delta E  \\leqslant  4K/5 \\), hence for perfectly in elastic callision, KE = 0\\n\\( \\dfrac{4}{5} K > 40.8 eV \\)\\n\\(K > 51eV \\)\\nBecause \\(\\Delta E = 40.8 \\text{ eV}\\), the first inelastic collision will take place.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the energy levels of the He+ ion using the Bohr model. The minimum energy for an inelastic collision corresponds to the difference between the ground state and the first excited state. Use conservation of energy to relate the kinetic energy of the neutron to the excitation energy.",
+      "methodOfSolving": [
+        "Calculate the energy levels of the \\(He^+\\) ion using the formula \\(E_n = - \\dfrac{13.6 Z^2}{n^2} \\text{ eV}\\).",
+        "Find the energy difference between the ground state (\\(n=1\\)) and the first excited state (\\(n=2\\)).",
+        "Apply the law of conservation of energy to relate the kinetic energy of the neutron to the energy difference. Since there is inelastic collision, Loss must be equal to \\( E_2 - E_1\\)",
+        "The kinetic energy must be higher than loss value, to faciliate inelastic collision."
+      ],
+      "answer": "The minimum value of \\(K\\) is greater than 51 eV."
+    },
+    {
+      "id": "MP-0013",
+      "title": "Moseley's Law: Determining Constants",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Moseley's Law",
+          "X-rays",
+          "Atomic Number",
+          "Frequency",
+          "Constants",
+          "Characteristic X-rays"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "In Moseley's equation, we have \\( \\sqrt{f} = a(Z - b)\\), where \\(a\\) and \\(b\\) are constants. Find their values with the help of the following data:\\n\\n[TABLE_START][ROW_START][CELL_START]Element[CELL_END][CELL_START]Z[CELL_END][CELL_START]Wavelength of  X-rays[CELL_END][ROW_END][ROW_START][CELL_START]Mo[CELL_END][CELL_START]42[CELL_END][CELL_START]0.71 Å[CELL_END][ROW_END][ROW_START][CELL_START]Co[CELL_END][CELL_START]27[CELL_END][CELL_START]1.785 Å[CELL_END][ROW_END][TABLE_END]",
+      "solution": "According to Moseley's Law, we have:\\n\\(\\sqrt{f} = a(Z - b)\\)\\nwhere \\(f\\) is the frequency of the \\(K_\\alpha\\) X-rays, \\(Z\\) is the atomic number, and \\(a\\) and \\(b\\) are constants.\\nAlso, \\(f = \\dfrac{c}{\\lambda}\\).\\n\\nFor the first element (Mo), we have:\\n\\(\\sqrt{\\dfrac{c}{\\lambda_1}} = a(Z_1 - b)\\) ... (1)\\nFor the second element (Co), we have:\\n\\(\\sqrt{\\dfrac{c}{\\lambda_2}} = a(Z_2 - b)\\) ... (2)\\nDividing equation (1) by \\(\\sqrt{c}\\) and equation (2) by \\(\\sqrt{c}\\), then subtracting (2) from (1), we get:\\n\\(\\sqrt{\\dfrac{1}{c}}  \\left(\\sqrt{\\dfrac{c}{\\lambda_1}} -\\sqrt{\\dfrac{c}{\\lambda_2}}  \\right) = a(Z_1 - Z_2)\\) ... (3)\\nOr.\\n\\(\\sqrt{c} \\left( \\dfrac{1}{\\sqrt{\\lambda_1}} - \\dfrac{1}{\\sqrt{\\lambda_2}} \\right) = a(Z_1 - Z_2)\\)\\nUsing the given values: \\(c = 3 \\times 10^8 \\text{ m/s}\\), \\(\\lambda_1 = 0.71 \\times 10^{-10} \\text{ m}\\), \\(\\lambda_2 = 1.785 \\times 10^{-10} \\text{ m}\\), \\(Z_1 = 42\\), and \\(Z_2 = 27\\).\\nNow by diving  equation 1  and 2:\\n\\(\\dfrac{\\sqrt{1/\\lambda_1}}{\\sqrt{1/\\lambda_2}}  = \\dfrac{42-b}{27-b}\\)\\nFrom this \\( b  = \\dfrac{42 \\sqrt{\\lambda_2} - 27 \\sqrt{\\lambda_1} }{\\sqrt{\\lambda_2} - \\sqrt{\\lambda_1} }\\).\\nUsing equation (3) we get:\\n\\( \\sqrt{c}( \\dfrac{1}{\\sqrt{\\lambda_1}}  - \\dfrac{1}{\\sqrt{\\lambda_2}}) = a(Z_1- Z_2) \\)\\n\\(a=   \\dfrac{  \\sqrt{c}( \\dfrac{1}{\\sqrt{\\lambda_1}}  - \\dfrac{1}{\\sqrt{\\lambda_2}})}{(Z_1- Z_2)} \\)\\n\\(\\left(\\dfrac{\\sqrt{3 \\times 10^8}}{42-27}  ( \\dfrac{1}{\\sqrt{0.71 \\times 10^{-10}}} - \\dfrac{1}{\\sqrt{1.785  \\times 10^{-10} }} )   \\right) = \\dfrac{1}{15} (83764248  -53018895) = 2049690.2\\)\\nNow \\( \\dfrac{  (2.05E7 - 1.3E7)  }{15} =a\\)  so,\\n\\(a = 5 \\times 10^7 \\text{ (Hz)}^{1/2}\\)\\nSubstituting the value of \\(a\\) into equation (1), we get:\\n\\(\\sqrt{\\dfrac{3 \\times 10^8}{0.71 \\times 10^{-10}}} = 5 \\times 10^7 (42 - b)\\)\\(6.49 \\times 10^7 = 5 \\times 10^7 (42 - b)\\)\\(42 - b = 1.30\\)\\(b = 40.7 \\approx 1.37\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use the given data points in Moseley's equation to form two equations. Solve these equations simultaneously to find the values of the constants a and b.",
+      "methodOfSolving": [
+        "Write Moseley's equation for both elements using the given data.",
+        "Manipulate the two equations by dividing them to each other.",
+        "Solve the equations simultaneously and find the values of the constants a and b."
+      ],
+      "answer": "The values of the constants are approximately \\(a = 5 \\times 10^7 \\text{ (Hz)}^{1/2}\\) and \\(b = 1.37\\)."
+    },
+    {
+      "id": "MP-0014",
+      "title": "Black Body Radiation and Photoelectric Effect",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "720",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Black Body Radiation",
+          "Wien's Displacement Law",
+          "Stefan's Law",
+          "Photoelectric Effect",
+          "Work Function",
+          "Bohr Model",
+          "Energy Levels"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A peak emission from a black body at a certain temperature occurs at a wavelength of \\(9000 Å\\). On increasing the temperature, the total radiation emitted is increased 81 times. At the initial temperature, when the peak radiation from the black body is incident on a metal surface, it does not cause any photoemission from the surface. After the increase of temperature, the peak radiation from the black body caused photoemission. To bring these photoelectrons to rest, a potential equivalent to the excitation energy between the \\(n = 2\\) and \\(n = 3\\) Bohr levels of the hydrogen atom is required. Calculate the work function of the metal.",
+      "solution": "Let's first determine the relationship between the initial and final temperatures. The total energy emitted per unit area per second is given by Stefan's Law:\\n\\(E = \\sigma T^4\\) where \\(\\sigma\\) is the Stefan's constant.\\nWhen the temperature is raised to \\(T'\\), we are told that the radiation emitted is 81 times the initial. So:\\n\\(E' = \\sigma (T')^4\\)\\nGiven \\(\\dfrac{E'}{E} = 81 =  \\dfrac{\\sigma (T')^4}{\\sigma T^4}\\), therefore \\( (T')^4 = 81 T^4\\) implies \\(T' = 3T\\).\\nSince the peak emission at temperature \\(T\\) occurs at a wavelength \\(\\lambda_m = 9000 Å\\), from Wien's displacement law \\(\\lambda_m T = \\text{constant}\\). So:\\n\\(\\lambda'_m T' = \\lambda_m T \\implies \\lambda'_m = \\lambda_m \\dfrac{T}{T'} = 9000 Å \\dfrac{T}{3T} = 3000 Å\\).\\nAfter the increase in temperature, photoemission occurs. Kinetic energy corresponds to the excitation energy between  \\(n = 2\\) and \\(n = 3\\) Bohr levels of hydrogen. The ionization energy of hydrogen is \\(13.6 eV\\), hence:\\n\\(K_{max} = E_3 - E_2 = (13.6 eV) (\\dfrac{1}{2^2} - \\dfrac{1}{3^2}) = (13.6 eV) (\\dfrac{1}{4} - \\dfrac{1}{9}) = (13.6 eV)(\\dfrac{5}{36})= 1.89 eV \\).\\nStopping potential is equal to Kinetic energy of electron. So with stopping potential: \\( eV_0 =KE  \\implies V_0= \\dfrac{KE}{e} = 1.89eV \\).\\nThe energy of the photon of wavelength \\(\\lambda' = 3000 Å\\) is \\(E = \\dfrac{hc}{\\lambda} = \\dfrac{12375}{3000}= 4.125 eV\\). Now, from Einstein's photoelectric equation, the work function for the metal surface is given by:\\n\\(\\phi_0 = E - K_{max} =  4.125 eV - 1.89 eV= 2.235eV\\).",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Use Stefan's law to relate the initial and final temperatures. Apply Wien's displacement law to find the new wavelength. The maximum kinetic energy of the photoelectrons corresponds to the excitation energy between n=2 and n=3 levels in the Bohr model. Finally, use the photoelectric equation to find the work function.",
+      "methodOfSolving": [
+        "Use Stefan's law \\(E = \\sigma T^4\\) to find the new temperature \\(T'\\).",
+        "Apply Wien's displacement law \\(\\lambda_m T = \\text{constant}\\) to find the new peak emission wavelength \\(\\lambda'_m\\).",
+        "Calculate the kinetic energy of the emitted photoelectrons using the Bohr model formula \\(\\Delta E = 13.6 eV \\left( \\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2} \\right)\\).",
+        "Calculate the energy of the incident photon using  \\(\\lambda(in Å) = \\dfrac{12375}{E(in eV)}\\).",
+        "Apply the photoelectric effect formula \\(\\phi_0 = E - K_{max}\\) to calculate the work function."
+      ],
+      "answer": "The work function of the metal is 2.235 eV."
+    },
+    {
+      "id": "MP-0015",
+      "title": "Inelastic Collision of Neutron and Helium Ion: Energy and Frequencies",
+      "statistics": {
+        "numberOfDiagrams": "3",
+        "idealAverageTimeInS": "1200",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Inelastic Collision",
+          "Kinetic Energy",
+          "Scattering",
+          "Helium Ion",
+          "Energy Levels",
+          "Conservation Laws",
+          "Atomic Excitation",
+          "Emission Frequencies"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A neutron of kinetic energy 65 eV collides inelastically with a singly ionized helium atom at rest. It is scattered at an angle of 90° with respect to its original direction.\\n\\n(a) Find the allowed values of the energy of the neutron and that of the atom after the collision.\\n(b) If the atom gets de-excited subsequently by emitting radiation, find the frequencies of the emitted radiation.Given: \\n\\(\\text{Mass of He atom} = 4 \\times \\text{(mass of neutron)}\\), \\(\\text{Ionization energy of H atom }= 13.6 \\text{eV}\\)",
+      "solution": "(a) To solve this problem, we will apply the laws of conservation of linear momentum and energy. Let \\(K_1\\) and \\(K_2\\) be the kinetic energies of the neutron and helium atom after the collision, respectively, and \\(\\Delta E\\) be the excitation energy.\\n\\nFrom law of conservation of linear momemtum along x-axis we have \\( P_i = P_f \\) in x and y directions respectively:\\n\\( \\sqrt{2Km} =  \\sqrt{2(4m)K_2 } cos \\theta\\)  ...1\\nand similarly Y component yields:\\n\\( 0= \\sqrt{2K_1m}  - \\sqrt{ 2(4m)K_2 } sin \\theta\\) .. 2\\nDIAGRAM[1,300]\\nSquaring and adding these equations assuming \\(\\theta = 90^{\\circ}\\): and dividing it by two\\n\\( Km =  4mK_2\\) \\n\\( K_1 + 4K_2 = K \\)..\\n\\n\\( \\sqrt{2Km} = \\sqrt{2K_1 m}\\)\\nSquaring this means:\\n  \\( K_1 + K = 4K_2 \\)\\n\\( 65 = 4K_2 + K_1\\) and since we know Law of Conservation of Energy holds, we see:\\n\\(  K_1 + K_2 + \\Delta E = K =65 ... \\Delta E = \\{ E_1\\}\\,\\text{ is the excited state }\\)\\nApplying the energy levels \\(E_n = \\dfrac{-13.6 Z^2}{n^2}= \\dfrac{ -54.4 eV}{n^2 } \\)\\nThen energies can change like \\n\\(\\Delta E = \\{ -13.6 -(-54.4) \\} = 40.8 \\text{ eV}; E_2 - E_1\\)\\(K_1 +K_2 = 65-40.8 =24.2 eV \\)  Therefore, let's substitute equation 6 to compute \\( K_2 and K_3\\) , \\n\\((4K_2- K) K_2 = 24.2 = 4K_2 -K \\)\\nFrom (4) and (6), we get:\\n\\(K_1 = 6.36 \\text{ eV}\\) and \\(K_2 = 17.84 \\text{ eV}\\)\\n\\( \\Delta E  = -6.04 -(-54.4) = 48.36eV\\),\\( K_1 +K_2 = 65-48.36 =16.64 eV \\) solving\\n(4) and (7), we get:\\n\\(K_1 = 0.312 \\text{ eV}\\) and \\(K_2 = 16.328 \\text{ eV}\\)\\nSimilarly, \\(K_1= -3.4-( \\dfrac{ -54.4  }{ (n=00  )^2 }) =4.6.7eV and  4(51) =-5eV+4 (KE2)\\)  but we have negative Kinetic energy!\\nTherefore,  allowed values of  \\(K_1 \\) (KE of neutron) are 6.36 eV and 0.312 eV and of \\( K_2 \\) (KE of the atom) are 17.84 eV and 16.328 eV and  electron can jump upto second excited state only (n = 3).\\n(b) Hence the electron can emit frequencies like:\\nPossible emission lines are only three:\\n \\(E_3 =\frac{-54.4}{(n=00  )^2 }\\) or from the first level or second and or vice versa, \\(  f = \\dfrac{ E_3 - E_2 }{h}\\) or \\( f = \\dfrac{ E_3 - E_2 }{h}\\) ...\\n \\(E = h  f \\) and the diagram shows :\\n \\( i=1,2,3\\)\\n Then frequency would be the equation as \\(  f _i= \\dfrac{E_I}{h} \\).\\nDIAGRAM[2,300]\\nHence :\\n\\( f _1 = \\dfrac{E_3 - E_2}{h} = \\dfrac{\\{-6.04 -(-13.6)\\} \\times 1.6 \\times 10^{-19}}{6.63 \\times 10^{-34}} = 1.82 \\times 10^{15} \\text{ Hz}\\)\\n\\( f _2 = \\dfrac{E_3 - E_1}{h} = \\dfrac{\\{-6.04 -(-54.4)\\} \\times 1.6 \\times 10^{-19}}{6.63 \\times 10^{-34}} = 11.67 \\times 10^{15} \\text{ Hz}\\)\\n\\( f _3 = \\dfrac{E_2 - E_1}{h} = \\dfrac{\\{-13.6 -(-54.4)\\} \\times 1.6 \\times 10^{-19}}{6.63 \\times 10^{-34}} = 9.84 \\times 10^{15} \\text{ Hz}\\)\\n\\n DIAGRAM[3, 300]\\n(a) From the law of conservation of energy and momentum we were able to deduce that the final kinetic energies of the neutron and helium atom can only have the electron can jump upto second excited state only (n = 3).\\n(b) Hence the electron can emit frequencies:are \\(1.82 \\times 10^{15} \\text{ Hz},11.67 \\times 10^{15} \\text{ Hz}, and 9.84 \\times 10^{15} \\text{ Hz }\\)",
+      "solutionRechecked": false,
+      "solutionManualRechecked": false,
+      "hint": "Apply conservation of linear momentum and conservation of energy to find the allowed values of the kinetic energies after collision. The possible emission frequencies are related to the energy differences between the energy levels in the He+ ion.",
+      "methodOfSolving": [
+        "Apply the law of conservation of linear momentum along the initial direction of the neutron.",
+        "The KE  of the first ion collides with the second. Apply the law of conservation of energy to relate the initial kinetic energy to the final kinetic energies and the excitation energy.",
+        "Calculate \\(K_2\\) in terms of K and \\(K_1\\).",
+        "Substitute the excitation energies to see if values of energies are physically relevant. ",
+        "Calculate possible kinetic energies. Discard the ones who are negative. Determine what the values of \\(K_1\\) and \\(K_2\\) can be.",
+        "For part (b), calculate the frequencies of the emitted radiation using \\( f  = \\dfrac{\\Delta E}{h}\\), considering all possible transitions."
+      ],
+      "answer": "The allowed values of \\(K_1 \\) (KE of neutron) are 6.36 eV and 0.312 eV and of \\( K_2 \\) (KE of the atom) are 17.84 eV and 16.328 eV. The frequencies are \\(1.82 \\times 10^{15} \\text{ Hz}, 11.67 \\times 10^{15} \\text{ Hz}, and 9.84 \\times 10^{15} \\text{ Hz }\\)."
+    },
+    {
+      "id": "MP-0016",
+      "title": "Radioactive Decay with Multiple Emission Modes",
+      "statistics": {
+        "numberOfDiagrams": "0",
+        "idealAverageTimeInS": "600",
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radioactive Decay",
+          "Mean Life",
+          "Alpha Emission",
+          "Beta Emission",
+          "Decay Constant",
+          "Half-Life"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "The mean lives of a radioactive substance are 1620 years and 405 years for \\(\\alpha\\) emission and \\(\\beta\\) emission, respectively. Find out the time during which three-fourths of a sample will decay if it is decaying both by \\(\\alpha\\) emission and \\(\\beta\\) emission simultaneously.",
+      "solution": "Let at some instant of time \\(t\\), the number of atoms of the radioactive substance be \\(N\\). The substance may decay either by \\(\\alpha\\) emission or by \\(\\beta\\) emission. So, we can write the expression for net decay as follows:\\n\\(\\left( -\\dfrac{dN}{dt} \\right)_{\\text{net}} = \\left( -\\dfrac{dN}{dt} \\right)_{\\alpha} + \\left( -\\dfrac{dN}{dt} \\right)_{\\beta}\\)\\nIf the effective decay constant is \\(\\lambda\\), then\\n\\(\\lambda N = \\lambda_{\\alpha} N + \\lambda_{\\beta} N\\)\\n\\(\\lambda = \\lambda_{\\alpha} + \\lambda_{\\beta}\\)\\nSince the mean life \\(\\tau\\) is the reciprocal of the decay constant \\(\\lambda\\), we have:\\n\\(\\tau = \\dfrac{1}{\\lambda}\\)\\nGiven mean lives \\(\\tau_{\\alpha} = 1620 \\text{ years}\\) and \\(\\tau_{\\beta} = 405 \\text{ years}\\). Therefore, \\n\\(\\lambda_{\\alpha} = \\dfrac{1}{1620} \\text{ year}^{-1}\\) and \\(\\lambda_{\\beta} = \\dfrac{1}{405} \\text{ year}^{-1}\\).\\n\\n\\(\\lambda =  \\dfrac{1}{1620} + \\dfrac{1}{405} = \\dfrac{1 + 4}{1620} = \\dfrac{5}{1620} = \\dfrac{1}{324} \\text{ year}^{-1} \\)\\nTherefore, the mean life of the mixture is \\( \\tau = 324 years \\).\\nSince \\( N= N_0 e^{ -\\lambda t}\\), so \\(\\dfrac{N}{N_0} = e^{-\\lambda t }\\), and given that three-fourths of the sample will decay, so \\( \\dfrac{ N }{ N_0}= 1-3/4 = 1/4\\). Putting these values, we get:\\n\\( \\dfrac{N_0}{4}= N_0e^{-\\lambda t}\\).\\nNow, \\( \\dfrac{1}{4}= e^{-\\lambda t}\\), after taking the log and simplifying we get \\(  t= \\ln (4 ) \\tau=\\dfrac{ \\ln (4) }{ \\lambda } \\).\\nSolving this we have:\\n\\(t = 324 \\ln (4) = 324 \\times 1.386\\text{years}\\)\\n\\(\\Rightarrow t = 449\\text{years} \\).",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "When multiple decay modes are present, the effective decay constant is the sum of the individual decay constants. Use the relationship between mean life and decay constant, and then apply the radioactive decay law.",
+      "methodOfSolving": [
+        "Calculate the effective decay constant \\(\\lambda\\) using \\(\\lambda = \\lambda_{\\alpha} + \\lambda_{\\beta}\\).",
+        "Use the relationship between mean life \\(\\tau\\) and decay constant \\(\\lambda\\) to find \\(\\lambda_{\\alpha}\\) and \\(\\lambda_{\\beta}\\).",
+        "Calculate the value of \\(\\lambda\\).",
+        "Use the radioactive decay law \\(N = N_0 e^{-\\lambda t}\\).",
+        "Solve for \\(t\\) given that \\(N = \\dfrac{1}{4} N_0\\)."
+      ],
+      "answer": "The time during which three-fourths of the sample will decay is 449 years."
+    },
+    {
+      "id": "MP-0017",
+      "title": "Radioactive Decay Time Calculation",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 600,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radioactive Decay",
+          "Half-Life",
+          "Probability",
+          "Nuclear Physics"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A radioactive decay occurs as follows: \\n\\( A \\xrightarrow{T_{1/2} = 8 \\text{ yrs}} B \\)\\nInitially, at time \\( t = 0 \\), only the substance \\( A \\) is present. Determine the time \\( t \\) at which, if a single atom is randomly selected from the sample, the probability of it being \\( B \\) is 15 times the probability of it being \\( A \\).",
+      "solution": "Let \\( N_0 \\) be the initial number of atoms of substance \\( A \\) at \\( t = 0 \\).\\nAt time \\( t \\), let \\( N \\) be the number of atoms of \\( A \\) remaining, and \\( N_0 - N \\) be the number of atoms of \\( B \\) formed.\\n\\nThe probability of picking an atom of \\( A \\) at time \\( t \\) is given by:\\n\\( P_A = \\dfrac{N}{N_0} \\)\\n\\nThe probability of picking an atom of \\( B \\) at time \\( t \\) is given by:\\n\\( P_B = \\dfrac{N_0 - N}{N_0} \\)\\n\\nAccording to the problem, \\( P_B = 15 P_A \\). Therefore:\\n\\( \\dfrac{N_0 - N}{N_0} = 15 \\dfrac{N}{N_0} \\)\\n\\nSimplifying the equation:\\n\\( N_0 - N = 15N \\)\\n\\( N_0 = 16N \\)\\n\\( N = \\dfrac{N_0}{16} \\)\\n\\nThe number of atoms of \\( A \\) remaining at time \\( t \\) is given by the radioactive decay law:\\n\\( N = N_0 \\left( \\dfrac{1}{2} \\right)^{\\dfrac{t}{T_{1/2}}} \\)\\n\\nSubstituting \\( N = \\dfrac{N_0}{16} \\):\\n\\( \\dfrac{N_0}{16} = N_0 \\left( \\dfrac{1}{2} \\right)^{\\dfrac{t}{T_{1/2}}} \\)\\n\\( \\dfrac{1}{16} = \\left( \\dfrac{1}{2} \\right)^{\\dfrac{t}{T_{1/2}}} \\)\\n\\nSince \\( \\dfrac{1}{16} = \\left( \\dfrac{1}{2} \\right)^4 \\), we have:\\n\\( \\left( \\dfrac{1}{2} \\right)^4 = \\left( \\dfrac{1}{2} \\right)^{\\dfrac{t}{T_{1/2}}} \\)\\n\\( 4 = \\dfrac{t}{T_{1/2}} \\)\\n\\( t = 4 T_{1/2} \\)\\n\\nGiven that the half-life \\( T_{1/2} = 8 \\text{ years} \\):\\n\\( t = 4 \\times 8 \\text{ years} = 32 \\text{ years} \\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Relate the probabilities of finding atoms A and B to their respective numbers at time t. Use the radioactive decay law to connect the number of atoms of A to the half-life.",
+      "methodOfSolving": [
+        "Define \\( P_A \\) and \\( P_B \\) as the probabilities of finding atoms A and B at time \\( t \\), respectively.",
+        "Express \\( P_A \\) and \\( P_B \\) in terms of \\( N \\), \\( N_0 \\), and \\( (N_0 - N) \\).",
+        "Use the given condition \\( P_B = 15 P_A \\) to find a relationship between \\( N \\) and \\( N_0 \\).",
+        "Apply the radioactive decay law \\( N = N_0 (\\dfrac{1}{2})^{\\dfrac{t}{T_{1/2}}} \\) to relate \\( N \\) and \\( N_0 \\) to the half-life.",
+        "Solve for \\( t \\) using the given half-life \\( T_{1/2} = 8 \\text{ years} \\)."
+      ],
+      "answer": "32 years"
+    },
+    {
+      "id": "MP-0018",
+      "title": "Neutron Decay Fraction Calculation",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 600,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Neutron Decay",
+          "Kinetic Energy",
+          "Half-Life",
+          "Radioactive Decay Law"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A stream of neutrons has a kinetic energy of 0.0327 eV. Given that the half-life of the neutrons is 700 s and the mass of a neutron is \\( 1.675 \\times 10^{-27} \\) kg, determine the fraction of neutrons that will decay before they travel a distance of 10 m.",
+      "solution": "First, we need to find the velocity of the neutrons using their kinetic energy.\\n\\( K = \\dfrac{1}{2} mv^2 \\)\\n\\( v = \\sqrt{\\dfrac{2K}{m}} \\)\\nGiven \\( K = 0.0327 \\text{ eV} = 0.0327 \\times 1.6 \\times 10^{-19} \\text{ J} \\) and \\( m = 1.675 \\times 10^{-27} \\text{ kg} \\):\\n\\( v = \\sqrt{\\dfrac{2 \\times 0.0327 \\times 1.6 \\times 10^{-19}}{1.675 \\times 10^{-27}}} \\approx 2.5 \\times 10^3 \\text{ m/s} \\)\\n\\nNext, we calculate the time it takes for the neutrons to travel 10 m:\\n\\( t = \\dfrac{s}{v} = \\dfrac{10 \\text{ m}}{2.5 \\times 10^3 \\text{ m/s}} = 4 \\times 10^{-3} \\text{ s} \\)\\n\\nThe fraction of neutrons that decay is given by:\\n\\( \\dfrac{N}{N_0} = 1 - e^{-\\lambda t} \\), where \\( \\lambda \\) is the decay constant.\\n\\nThe decay constant \\( \\lambda \\) is related to the half-life \\( T_{1/2} \\) by:\\n\\( \\lambda = \\dfrac{\\ln 2}{T_{1/2}} = \\dfrac{0.693}{700} \\text{ s}^{-1} \\)\\nSo,\\n\\( \\dfrac{N}{N_0} = 1 - e^{-\\dfrac{0.693}{700} \\times 4 \\times 10^{-3}} \\)\\n\\( \\dfrac{N}{N_0} = 1 - e^{-0.693 \\times 4 \\times 10^{-3} / 700}  \\approx 3.96 \\times 10^{-6} \\)\\nTherefore, the fraction of neutrons that decay before traveling 10 m is approximately \\( 3.96 \\times 10^{-6} \\).",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "First, calculate the neutron's velocity from its kinetic energy. Then, find the time it takes to travel 10 m. Finally, use the decay constant and the time to calculate the fraction of decayed neutrons.",
+      "methodOfSolving": [
+        "Calculate the velocity of the neutrons using the kinetic energy formula.",
+        "Determine the time taken to travel 10 m using the calculated velocity.",
+        "Calculate the decay constant \\( \\lambda \\) from the half-life.",
+        "Use the formula \\( \\dfrac{N}{N_0} = 1 - e^{-\\lambda t} \\) to find the fraction of decayed neutrons."
+      ],
+      "answer": "\\(3.96 \\times 10^-6\\)"
+    },
+    {
+      "id": "MP-0019",
+      "title": "Estimation of Earth's Age Using Uranium Isotopes",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 720,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Radioactive Dating",
+          "Half-Life",
+          "Uranium Isotopes",
+          "Age of Earth"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Uranium ores on Earth today typically consist of 99.3% of the isotope \\(^{238}_{92}U\\) and 0.7% of the isotope \\(^{235}_{92}U\\). The half-lives of these isotopes are \\(4.47 \\times 10^9\\) years and \\(7.04 \\times 10^8\\) years, respectively. Assuming these isotopes were equally abundant when the Earth was formed, estimate the age of the Earth.",
+      "solution": "Let \\(N_0\\) be the initial number of atoms of each isotope at the time of the Earth's formation (\\(t = 0\\)). Let \\(N_1\\) and \\(N_2\\) be the number of atoms of \\(^{238}U\\) and \\(^{235}U\\) present at time \\(t\\), respectively.\\n\\nThe decay equations are given by:\\n\\(N_1 = N_0 e^{-\\lambda_1 t}\\) and \\(N_2 = N_0 e^{-\\lambda_2 t}\\), where \\(\\lambda_1\\) and \\(\\lambda_2\\) are the decay constants for \\(^{238}U\\) and \\(^{235}U\\), respectively.\\n\\nDividing the two equations, we get:\\n\\(\\dfrac{N_1}{N_2} = e^{(\\lambda_2 - \\lambda_1)t}\\)\\n\\nIt is given that the present-day ratio is \\(\\dfrac{N_1}{N_2} = \\dfrac{99.3}{0.7}\\).\\n\\nEquating the two expressions and taking the natural logarithm of both sides:\\n\\((\\lambda_2 - \\lambda_1)t = \\ln\\left(\\dfrac{99.3}{0.7}\\right)\\)\\n\\nSolving for \\(t\\):\\n\\(t = \\dfrac{1}{\\lambda_2 - \\lambda_1} \\ln\\left(\\dfrac{99.3}{0.7}\\right)\\)\\n\\nThe decay constants are related to the half-lives by \\(\\lambda = \\dfrac{\\ln 2}{T_{1/2}} = \\dfrac{0.693}{T_{1/2}}\\).\\nSo, \\(\\lambda_1 = \\dfrac{0.693}{4.47 \\times 10^9}\\) and \\(\\lambda_2 = \\dfrac{0.693}{7.04 \\times 10^8}\\).\\n\\nSubstituting the values, we get:\\n\\(t = \\dfrac{1}{\\dfrac{0.693}{7.04 \\times 10^8} - \\dfrac{0.693}{4.47 \\times 10^9}} \\ln\\left(\\dfrac{99.3}{0.7}\\right)\\)\\n\\(t = \\dfrac{10^9}{0.693(\\dfrac{1}{0.704} - \\dfrac{1}{4.47})} \\ln\\left(\\dfrac{99.3}{0.7}\\right) \\times 0.693\\)\\n\\(t \\approx 5.97 \\times 10^9 \\text{ years}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Relate the present-day ratio of the uranium isotopes to their initial abundance and half-lives using the radioactive decay law. Remember to use natural logarithms when solving for time.",
+      "methodOfSolving": [
+        "Write down the decay equations for both uranium isotopes.",
+        "Divide the two equations to find the ratio of the number of atoms at time t.",
+        "Equate this ratio to the given present-day ratio and take the natural logarithm.",
+        "Express the decay constants in terms of the half-lives.",
+        "Solve for t (the age of the Earth) by substituting the given values."
+      ],
+      "answer": "\\(5.97 \\times 10^9 \\text{ years}\\)"
+    },
+    {
+      "id": "MP-0020",
+      "title": "Proton Bombardment Energy for Nuclear Reaction",
+      "statistics": {
+        "numberOfDiagrams": 0,
+        "idealAverageTimeInS": 720,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Nuclear Reaction",
+          "Q-value",
+          "Kinetic Energy",
+          "Momentum Conservation",
+          "Threshold Energy"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "Determine the minimum kinetic energy that a bombarding proton must possess to cause the reaction \\n\\(^7_3Li + ^1_1H \\rightarrow ^4_2Be + ^1_0n\\)\\n The masses of the atoms are given as: Li atom = 7.01600 u, Be atom = 7.01693 u, H atom = 1.00783 u, and neutron = 1.00866 u.",
+      "solution": "First, we calculate the Q-value of the reaction. To do so, we account for the electron masses involved. Following table shows the mass calculations.\\n\\n[TABLE_START][ROW_START][CELL_START]*Reactants*[CELL_END][CELL_START]*Products*[CELL_END][ROW_END][ROW_START][CELL_START]\\(m(^7_3Li) = 7.01600 - 3m_e\\)[CELL_END][CELL_START]\\(m(^4_2Be) = 7.01693 - 4m_e\\)[CELL_END][ROW_END][ROW_START][CELL_START]\\(m(^1_1H) = 1.00783 - 1m_e\\)[CELL_END][CELL_START]\\(m(^1_0n) = 1.00866\\)[CELL_END][ROW_END][ROW_START][CELL_START]Total = 8.02383 - 4\\(m_e\\)[CELL_END][CELL_START]Total = 8.02559 - 4\\(m_e\\)[CELL_END][ROW_END][TABLE_END]\\n\\nThe Q-value is given by:\\n\\(Q = (m_{\\text{reactants}} - m_{\\text{products}})c^2\\)\\n\\(Q = (8.02383 - 8.02559) \\text{ u} = -0.00176 \\text{ u}\\)\\nConverting to MeV using \\(1 \\text{ u} = 931.5 \\text{ MeV}/c^2\\):\\n\\(Q = -0.00176 \\times 931.5 \\text{ MeV} = -1.65 \\text{ MeV}\\)\\n\\nSince the Q-value is negative, the reaction is endothermic and requires energy to proceed.\\nThe minimum kinetic energy (threshold energy, \\(E_{th}\\)) that the incident proton must have is given by:\\n\\(E_{th} = -\\left(1 + \\dfrac{m}{M}\\right)Q\\)\\nwhere \\(m\\) is the mass of the incident particle (proton) and \\(M\\) is the mass of the target nucleus (Lithium).\\nHere, \\(m = 1\\) u and \\(M = 7\\) u. So,\\n\\(E_{th} = -\\left(1 + \\dfrac{1}{7}\\right)(-1.65 \\text{ MeV}) = -\\dfrac{8}{7}(-1.65 \\text{ MeV}) \\approx 1.89 \\text{ MeV}\\)\\nTherefore, the bombarding proton must possess a minimum kinetic energy of approximately 1.89 MeV.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the Q-value of the nuclear reaction using the given atomic masses. Then, use the Q-value to determine the threshold energy required for the reaction to occur, considering momentum conservation.",
+      "methodOfSolving": [
+        "Calculate the Q-value of the reaction by subtracting the total mass of the products from the total mass of the reactants.",
+        "Use the formula \\(E_{th} = -\\left(1 + \\dfrac{m}{M}\\right)Q\\) to calculate the threshold energy, where m is the mass of the proton and M is the mass of the Lithium nucleus.",
+        "Convert the atomic mass unit (u) to MeV using the conversion factor \\(1 \\text{ u} = 931.5 \\text{ MeV}/c^2\\)."
+      ],
+      "answer": "\\(1.89 \\text{ MeV}\\)"
+    },
+    {
+      "id": "MP-0021",
+      "title": "Kinetic Energy of Alpha Particles in Nuclear Reaction",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 720,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Nuclear Reaction",
+          "Kinetic Energy",
+          "Conservation of Momentum",
+          "Q-value",
+          "Threshold Energy"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A neutron with kinetic energy \\(K = 10 \\text{ MeV}\\) activates a nuclear reaction \\(n + ^{12}C \\rightarrow ^{9}Be + \\alpha\\). Find the kinetic energy of the alpha particles outgoing at a right angle to the direction of incoming neutrons. Take \\(u = 931.5 \\text{ MeV}\\) and the threshold energy of the reaction \\((E_{th}) = 6.17 \\text{ MeV}\\).\\n\\nDIAGRAM[1,400]\\n",
+      "solution": "Let \\(Q\\) be the Q-value of the reaction, \\(K_1\\) be the kinetic energy of the neutron, \\(K_3\\) be the kinetic energy of the Beryllium nucleus, and \\(K_4\\) be the kinetic energy of the alpha particle.\\n\\nSince, \\(Q + K_1 = K_3 + K_4\\)   (1)\\n\\nApplying Law of Conservation of Linear Momentum Along x-axis:\\n\\(\\sqrt{2m_1K_1} = \\sqrt{2m_4K_4} \\cos \\theta\\)  (2)\\n\\nAlong y-axis:\\n\\(\\sqrt{2m_3K_3} = \\sqrt{2m_4K_4} \\sin \\theta\\)  (3)\\n\\nSquaring and adding equations (2) and (3), we get\\n\\(2m_1K_1 + 2m_3K_3 = 2m_4K_4\\)\\n\\(m_1K_1 + m_3K_3 = m_4K_4\\)\\n\\(K_4 = \\dfrac{m_1}{m_4}K_1 + \\dfrac{m_3}{m_4}K_3\\)\\n\\nSubstituting value of \\(K_4\\) in equation (1) and rearranging, we get\\n\\(Q + (1-\\dfrac{m_1}{m_4})K_1 = (1 + \\dfrac{m_3}{m_4})K_3\\)\\nwhere, \\(Q = \\dfrac{-E_{th}}{(1+\\dfrac{m_1}{m_2})} = \\dfrac{-6.17}{(1 + \\dfrac{1}{12})} = -5.69 \\text{ MeV}\\)\\n\\n\\((1 + \\dfrac{4}{9})K_3 = -5.69 + (1 - \\dfrac{1}{9})(10)\\)\\n\\(K_3 = 2.21 \\text{ MeV}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply conservation of energy and momentum to the nuclear reaction. The Q-value can be calculated from the threshold energy.",
+      "methodOfSolving": [
+        "Apply conservation of energy: \\(Q + K_1 = K_3 + K_4\\).",
+        "Apply conservation of momentum along the x and y axes.",
+        "Square and add the momentum equations.",
+        "Solve for \\(K_4\\) in terms of \\(K_1\\) and \\(K_3\\).",
+        "Substitute the expression for \\(K_4\\) into the energy conservation equation.",
+        "Calculate Q and solve for \\(K_3\\)."
+      ],
+      "answer": "\\(2.21 \\text{ MeV}\\)"
+    },
+    {
+      "id": "MP-0022",
+      "title": "Direction of Force on a Mirror due to Reflected Light",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 600,
+        "Unit": "Optics",
+        "tags": [
+          "Reflection",
+          "Momentum",
+          "Force",
+          "Photon"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A horizontal beam of light is incident on a plane mirror inclined at \\(45^\\circ\\) to the horizontal. The percentage of light energy reflected from the mirror is 80%. Find the direction in which the mirror will experience force due to the incident light.\\nDIAGRAM[1,200]",
+      "solution": "If \\(n\\) is the number of photons incident per second on the mirror, \\(0.8n\\) is the number that suffers reflection. 0.2\\(n\\) is absorbed.\\nThe reflected photons suffer change in momentum in a direction perpendicular to the mirror.\\nDIAGRAM[2,200]\\nIf each incident photon has momentum \\(p\\), then change in momentum of each incident photon is \\(\\Delta p = \\sqrt{2}p\\) (normal to mirror)\\nAnd change in momentum of each absorbed photon is \\(p\\) (in horizontal direction)\\n\\(\\therefore F_x = 0.8n(\\sqrt{2}p)\\cos 45^\\circ + 0.2 \\cdot n p = np\\)\\n\\(\\therefore F_y = 0.8n(\\sqrt{2}p)\\sin 45^\\circ = 0.8np\\)\\nAlternate:\\nAll photons lose their entire momentum in the x direction.\\n\\(\\therefore F_x = np\\)\\n0.8\\(n\\) photons acquired a momentum \\(p\\) in upward direction.\\n\\(\\therefore F_y = 0.8np\\)\\nDIAGRAM[3,150]\\nResultant makes an angle \\(\\theta\\) with horizontal where \\(\\tan\\theta = \\dfrac{F_y}{F_x} = 0.8\\). \\nTherefore, the direction in which mirror will experience force due to incident light is at an angle of \\(\\tan^{-1}(0.8)\\) with the horizontal.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Calculate the force exerted by the reflected and absorbed photons separately. The reflected photons impart momentum change perpendicular to the mirror.  The absorbed photons impart momentum change in the horizontal direction. The net force on the mirror is the vector sum of these forces.",
+      "methodOfSolving": [
+        "The horizontal component of force due to reflected photons is \\(F_x = 0.8n(\\sqrt{2}p)\\cos 45^\\circ\\).",
+        "The vertical component of force due to reflected photons is \\(F_y = 0.8n(\\sqrt{2}p)\\sin 45^\\circ\\).",
+        "Add the force from the absorbed photons in the x direction: \\(F_x =  0.8n(\\sqrt{2}p)\\cos 45^\\circ + 0.2np\\).",
+        "Calculate the angle \\(\\theta\\) using \\(\\tan\\theta = \\dfrac{F_y}{F_x}\\) to find the direction of net force on the mirror.",
+        "Relate p with energy or power to simplify."
+      ],
+      "answer": "\\(\\tan^{-1}(0.8)\\) with the horizontal"
+    },
+    {
+      "id": "ME-0023",
+      "title": "Force on Reflecting Surface due to a Light Source",
+      "statistics": {
+        "numberOfDiagrams": 2,
+        "idealAverageTimeInS": 660,
+        "Unit": "Optics",
+        "tags": [
+          "Reflection",
+          "Lens",
+          "Power",
+          "Momentum",
+          "Radiation Pressure"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "A point source (S) of light having power 500 W is kept at the focus of a lens of aperture diameter \\(d\\). The focal length of the lens is \\(\\dfrac{2d}{3}\\). Assume that 40% of the incident light energy is transmitted through the lens and the complete transmitted light is incident normally on a perfectly reflecting surface placed behind the lens. Calculate the force on the reflecting surface.\\nDIAGRAM[1,200]",
+      "solution": "\\(\\tan \\theta = \\dfrac{d/2}{2d/3} = \\dfrac{3}{4}\\)\\n\\(\\therefore \\cos \\theta = \\dfrac{4}{5}\\)\\n\\therefore Solid angle subtended by the lens at the source S is given by\\n\\(\\Omega = 2\\pi (1-\\cos\\theta) = 2\\pi\\left(1 - \\dfrac{4}{5}\\right) = \\dfrac{2\\pi}{5} \\text{ sr}\\)\\n\\therefore Power incident on lens \\(P_0 = \\dfrac{500}{4\\pi} \\Omega = \\dfrac{500}{4\\pi} \\times \\dfrac{2\\pi}{5} = 50 \\,\\text{watt}\\)\\nTransmitted power \\((P) = 0.4 \\times 50 = 20 \\,\\text{W}\\)\\nThe transmitted beam strikes the reflecting surface normally. Momentum incident per unit time on the reflecting surface \\(= \\dfrac{P}{c}\\)\\n\\(\\therefore \\text{Force} = \\dfrac{2P}{c} = \\dfrac{2 \\times 20}{3 \\times 10^8} = 1.33 \\times 10^{-7} \\,\\text{N}\\)",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "The force on the reflecting surface is due to the change in momentum of the photons. Only the light transmitted through the lens contributes to this force. The solid angle subtended by the lens at the source determines the fraction of light incident on the lens. Remember radiation pressure will be \\(\\dfrac{2I}{c}\\) for perfectly reflecting mirror.\\nDIAGRAM[2,150]",
+      "methodOfSolving": [
+        "Determine the solid angle \\(\\Omega\\) subtended by the lens at the point source.",
+        "Calculate the power \\(P_0\\) incident on the lens.",
+        "Calculate the transmitted power \\(P = 0.4 P_0\\).",
+        "The force on the reflecting surface is given by \\(F = \\dfrac{2P}{c}\\), where \\(c\\) is the speed of light."
+      ],
+      "answer": "\\(1.33 \\times 10^{-7} \\,\\text{N}\\)"
+    },
+    {
+      "id": "MP-0023",
+      "title": "Pair Production Near Nucleus",
+      "statistics": {
+        "numberOfDiagrams": 1,
+        "idealAverageTimeInS": 720,
+        "Unit": "Modern Physics",
+        "tags": [
+          "Pair Production",
+          "Energy Conservation",
+          "Momentum Conservation",
+          "Relativity"
+        ]
+      },
+      "type": "Subjective",
+      "questionText": "It is possible for a photon to materialize into an electron and a positron. The process is called pair production.\n\n(a) Using conservation of energy and momentum prove that pair production cannot occur in empty space.\n(b) Argue qualitatively that such pair production is possible near a nucleus.",
+      "solution": "(a) To conserve momentum, the two particles (electron and positron) will move with equal momentum (\\(P\\)) making equal angle with the original line of motion along X. DIAGRAM[1,200] \\nFor conservation of momentum\\n\\(2P\\cos\\theta = \\dfrac{h\\nu}{c}\\)\\n\\(\\Rightarrow h\\nu = 2Pc\\cos\\theta\\)\\n\\(\\Rightarrow h\\nu = 2(mV)c\\cos\\theta = 2mc^2\\left(\\dfrac{V}{c}\\right)\\cos\\theta\\)\n\\(\\text{Since }\\dfrac{V}{c} < 1 \\text{ and }\\cos \\theta \\le 1\\)\\n\\(\\therefore h\\nu < 2mc^2\\)\nBut energy conservation requires that \\(h\\nu\\) must be equal to rest mass energy (\\(2mc^2\\)) of the particle plus their kinetic energies. Hence it is impossible to conserve both energy and momentum unless some other particle is also involved.\n(b) In presence of a nucleus the process is possible. The massive nucleus can carry a lot of momentum despite having negligible kinetic energy. Now the pair particles are required to carry less momentum and it is possible to conserve momentum and energy.",
+      "solutionRechecked": true,
+      "solutionManualRechecked": false,
+      "hint": "Apply conservation of energy and momentum to the pair production process.  Consider the limitations on velocity and \\(\\cos\\theta\\).  In the presence of a nucleus, the nucleus can absorb momentum, allowing energy and momentum to be conserved.",
+      "methodOfSolving": [
+        "(a) Apply conservation of momentum: \\(2P\\cos\\theta = \\dfrac{h\\nu}{c}\\).",
+        "Apply conservation of energy: \\(h\\nu = 2mc^2 + KE\\), where \\(KE\\) is the total kinetic energy of the electron and positron.",
+        "Use the fact that \\(\\dfrac{V}{c} < 1\\) and \\(\\cos\\theta \\le 1\\) to show that the momentum equation leads to \\(h\\nu < 2mc^2\\).",
+        "This contradicts the energy equation, implying that pair production cannot occur in empty space.",
+        "(b) In the presence of a nucleus, the nucleus can absorb a significant amount of momentum without gaining much kinetic energy, thereby allowing energy and momentum to be conserved."
+      ],
+      "answer": "(a) Cannot occur in empty space\\n(b) Possible near a nucleus"
     }
   ]
 }

@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentUserName = null;
     let solvedQuestions = new Set();
     let data = null;
-    let presentationMode = false;
     let contentLoading = true;
 
     window.addEventListener('load', () => {
@@ -58,13 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const userList = document.getElementById('userList');
         const newUserNameInput = document.getElementById('newUserName');
         const addNewUserButton = document.getElementById('addNewUser');
-        const presentationModeToggle = document.querySelector(".presentation-mode-toggle");
 
-        presentationModeToggle.addEventListener("click", () => {
-            presentationMode = !presentationMode;
-            document.body.classList.toggle("presentation-mode", presentationMode);
-            updateImageSizes();
-        });
 
         loadUsers();
         userModal.show();
@@ -166,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
             questionSummary.dataset.questionId = question.id;
             questionSummary.style.fontWeight = solvedQuestions.has(question.id) ? "normal" : "bold";
             questionDetails.appendChild(questionSummary);
-            
+
             // Create tabs container
             const tabsWrapper = document.createElement('div');
             tabsWrapper.classList.add('d-flex', 'align-items-start');
@@ -192,14 +185,24 @@ document.addEventListener("DOMContentLoaded", function () {
             cardBody.appendChild(tabContent);
             tabsCard.appendChild(cardBody);
 
-
             // *** "Mark as done!" button wrapper in cardHeader, aligned right ***
             const gotAnswerButtonWrapper = document.createElement('div');
             cardHeader.appendChild(gotAnswerButtonWrapper); // Append to cardHeader, not tabsWrapper
+            const magnifierButton = document.createElement("button");
+            magnifierButton.innerHTML = "&#128269;";
+            magnifierButton.classList.add("btn", "btn-outline-info", "btn-sm", "mt-2", "me-2");
+
+
+
+
 
             const gotAnswerButton = document.createElement("button");
-            gotAnswerButton.textContent = "Done!";
+            gotAnswerButton.innerHTML = "&#10003;";
             gotAnswerButton.classList.add("btn", "btn-outline-success", "btn-sm", "mt-2");
+            magnifierButton.onclick = function (event) {
+                const listItem = this.closest('.list-group-item');
+                listItem.classList.toggle('magnified');
+            };
             gotAnswerButton.onclick = function (event) {
                 event.preventDefault();
                 questionDetails.open = false;
@@ -218,9 +221,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem(`userData_${currentUserName}`, JSON.stringify(userData));
 
             };
+            gotAnswerButtonWrapper.appendChild(magnifierButton); // Append the "Magnify" button
             gotAnswerButtonWrapper.appendChild(gotAnswerButton);
-
-
 
 
             let tabIndex = 0;
@@ -407,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageModal.show();
             });
         });
-        updateImageSizes();
+        //updateImageSizes();
         contentDiv.appendChild(questionList);
 
         contentDiv.removeChild(loadingMessage);
@@ -423,16 +425,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    function updateImageSizes() {
-        const images = contentDiv.querySelectorAll("img");
-        images.forEach(img => {
-            if (presentationMode) {
-                img.style.width = (img.dataset.initialWidth * 1.5) + "px";
-            } else {
-                img.style.width = img.dataset.initialWidth + "px";
-            }
-        });
-    }
 
 
     function processDiagrams(text, questionId) {
@@ -455,6 +447,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Replace placeholder back with \\neq AFTER paragraph wrapping
         formattedText = formattedText.replace(new RegExp("\\[NOT_EQUAL_TO\\]", 'g'), '\\neq'); // Correct regex for placeholder
+        formattedText = formattedText.replace(new RegExp("\\[SYMBOL_NU\\]", 'g'), '\\nu'); // Correct regex for placeholder
+
 
         return formattedText;
     }
@@ -462,6 +456,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function formatText(text) {
 
         let formattedText = text.replace(/\\neq/g, "[NOT_EQUAL_TO]");
+        formattedText = formattedText.replace(/\\nu/g, "[SYMBOL_NU]");
+
         // Bold formatting (existing)
         formattedText = formattedText.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
 

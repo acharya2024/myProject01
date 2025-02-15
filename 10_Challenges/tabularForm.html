@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Revised Combined Question Tables</title>
+<style>
+body {
+    font-family: "Bookman Old Style", "Times New Roman", Times, serif;
+line-height: 1.6;
+margin: 20px;
+}
+h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+         /* Added to avoid text overflow */
+    }
+
+    th {
+        background-color: #f0f0f0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+    }
+     .indented-paragraph {
+        margin-left: 20px;
+    }
+    .question-number {
+        text-align: right;
+        font-weight: bold;
+         vertical-align: top; /* Align numbers to top */
+    }
+    p{
+        margin:0;
+        font-family: "Bookman Old Style", "Times New Roman", Times, serif;
+    }
+</style>
+<!-- Include MathJax for rendering mathematical equations -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>JEE Advanced - Electromagnetism</h1>
+<h2 id="chapterTitle"></h2>
+<h2>Questions List</h2>
+    <table id="questionsTable">
+        <thead>
+            
+        </thead>
+        <tbody>
+            <!-- Questions will be loaded here -->
+        </tbody>
+    </table>
+
+     <h2>Answer Keys</h2>
+    <table id="answerKeysTable">
+        <thead>
+            
+        </thead>
+        <tbody>
+            <!-- Answer Keys will be loaded here -->
+        </tbody>
+    </table>
+
+    <h2>Question Solving Steps</h2>
+    <table id="questionsStepsTable">
+        <thead>
+            
+        </thead>
+        <tbody>
+            <!-- Questions and Steps will be loaded here -->
+        </tbody>
+    </table>
+
+    <h2>Detailed Solutions</h2>
+    <table id="solutionsTable">
+        <thead>
+            
+        </thead>
+        <tbody>
+            <!-- Questions and Solutions will be loaded here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const chapterCode = prompt("Enter Chapter Code (e.g., OP, EM):");
+        if (!chapterCode) {
+            alert("Chapter code is required.");
+            return;
+        }
+
+        const jsonFileName = `${chapterCode}.json`;
+        const chapterTitleElement = document.getElementById("chapterTitle");
+        const questionsTableBody = document.getElementById("questionsTable").querySelector("tbody");
+        const questionsStepsTableBody = document.getElementById("questionsStepsTable").querySelector("tbody");
+        const solutionsTableBody = document.getElementById("solutionsTable").querySelector("tbody");
+         const answerKeysTableBody = document.getElementById("answerKeysTable").querySelector("tbody");
+
+        chapterTitleElement.textContent = `Chapter: Electromagnetism`;
+
+        function formatText(text) {
+            let formattedText = text.replace(/\\neq/g, "[NOT_EQUAL_TO]");
+            formattedText = formattedText.replace(/\*(.*?)\*/g, "<strong>$1</strong>");
+            formattedText = formattedText.replace(/\[TABLE_START\]/g, '<table border="1" style="width:100%; border-collapse: collapse;">');
+            formattedText = formattedText.replace(/\[TABLE_END\]/g, '</table>');
+            formattedText = formattedText.replace(/\[ROW_START\]/g, '<tr>');
+            formattedText = formattedText.replace(/\[ROW_END\]/g, '</tr>');
+            formattedText = formattedText.replace(/\[CELL_START\]/g, '<td style="padding: 8px; border: 1px solid #ddd; text-align: left;">');
+            formattedText = formattedText.replace(/\[CELL_END\]/g, '</td>');
+            return formattedText;
+        }
+
+        function wrapTextInParagraphs(text) {
+            return text
+                .split("\\n")
+                .map((line) => {
+                    if (line.trim().startsWith("\\(") && !line.includes("\\Rightarrow")) {
+                        return `<p class="indented-paragraph">${line}</p>`;
+                    }
+                    return `<p>${line}</p>`;
+                })
+                .join("");
+        }
+        function processDiagrams(text, questionId) {
+            return text.replace(/DIAGRAM\[(\d+),(\d+)\]/g, (_, diagramNumber, width) => {
+                return `<img src="dia/${questionId}_${diagramNumber}.png" alt="Diagram ${diagramNumber}" style="max-width:${width}px;">`;
+            });
+        }
+
+        fetch(jsonFileName)
+            .then(response => response.json())
+            .then(data => {
+                if (!data.questions) {
+                    questionsTableBody.innerHTML = "<tr><td colspan='2'>No questions found in JSON data.</td></tr>";
+                    questionsStepsTableBody.innerHTML = "<tr><td colspan='2'>No questions found in JSON data.</td></tr>";
+                    solutionsTableBody.innerHTML = "<tr><td colspan='2'>No questions found in JSON data.</td></tr>";
+                    answerKeysTableBody.innerHTML = "<tr><td colspan='2'>No questions found in JSON data.</td></tr>";
+                    return;
+                }
+
+                let questionIndex = 1; // Counter for question numbers
+
+                data.questions.forEach((question, index) => {
+                    if (question.solutionRechecked !== true) {
+                        return; // Skip unchecked solutions
+                    }
+
+                    const srNumber = questionIndex++;
+
+                    // *** Fill Questions Table ***
+                    const questionRow = questionsTableBody.insertRow();
+                    const srQuestionCell = questionRow.insertCell(0); // First cell is Sr No
+                    srQuestionCell.classList.add('question-number'); // CSS for right alignment and bold
+                    srQuestionCell.textContent = srNumber; // Display the serial number in Sr No
+                    const questionCell = questionRow.insertCell(1); // Second cell is question
+                    if (question.questionText) {
+                        questionCell.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.questionText), question.id));
+                    } else {
+                        questionCell.textContent = "Question text not available";
+                    }
+                       
+                     // *** Fill Answer Keys Table ***
+                    if (question.answer || (!question.answer && question.type === 'Subjective')) {
+                        const answerRow = answerKeysTableBody.insertRow();
+                        const srAnswerCell = answerRow.insertCell(0); // First cell is Sr No
+                        srAnswerCell.classList.add('question-number'); // CSS for right alignment and bold
+                        srAnswerCell.textContent = srNumber; // Display the serial number in Sr No
+
+                        const answerCell = answerRow.insertCell(1); // Second cell is the answer key
+                        answerCell.innerHTML = wrapTextInParagraphs(formatText(question.answer || "To prove"));
+                    }
+
+                    // *** Fill Questions with Steps Table ***
+                    if (question.methodOfSolving && question.methodOfSolving.length > 0) {
+                        const stepsRow = questionsStepsTableBody.insertRow();
+                        const srStepsCell = stepsRow.insertCell(0); // First cell is Sr No
+                        srStepsCell.classList.add('question-number'); // CSS for right alignment and bold
+                        srStepsCell.textContent = srNumber; // Display the serial number in Sr No
+                        const stepsListCell = stepsRow.insertCell(1); // Second cell is the steps
+                        let stepsHTML = "<ol>";
+                        question.methodOfSolving.forEach(step => {
+                            stepsHTML += `<li>${formatText(step)}</li>`;
+                        });
+                        stepsHTML += "</ol>";
+                        stepsListCell.innerHTML = stepsHTML;
+                    }
+
+                    // *** Fill Detailed Solutions Table ***
+                    if (question.solution) {
+                        const solutionRow = solutionsTableBody.insertRow();
+                        const srSolutionCell = solutionRow.insertCell(0); // First cell is Sr No
+                        srSolutionCell.classList.add('question-number'); // CSS for right alignment and bold
+                        srSolutionCell.textContent = srNumber; // Display the serial number in Sr No
+
+                        const solutionDetailCell = solutionRow.insertCell(1); // Second cell is the solution
+                        solutionDetailCell.innerHTML = wrapTextInParagraphs(processDiagrams(formatText(question.solution), question.id));
+                    }
+
+                });
+
+                // Trigger MathJax to render math expressions after questions are loaded
+                if (window.MathJax) {
+                    MathJax.typesetPromise().catch((err) => console.error("MathJax rendering error: ", err));
+                }
+
+            })
+            .catch(error => {
+                console.error("Error loading questions:", error);
+                questionsTableBody.innerHTML = `<tr><td colspan='2'>Failed to load questions from ${jsonFileName}.</td></tr>`;
+                questionsStepsTableBody.innerHTML = `<tr><td colspan='2'>Failed to load questions from ${jsonFileName}.</td></tr>`;
+                solutionsTableBody.innerHTML = `<tr><td colspan='2'>Failed to load questions from ${jsonFileName}.</td></tr>`;
+                 answerKeysTableBody.innerHTML = `<tr><td colspan='2'>Failed to load questions from ${jsonFileName}.</td></tr>`;
+            });
+    });
+</script>
+</body>
+</html>
