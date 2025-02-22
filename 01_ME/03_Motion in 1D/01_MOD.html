@@ -52,6 +52,22 @@
                                     \( \qquad \text{Average Speed} = \dfrac{100 \, \text{km}}{2 \, \text{h}} = 50 \,
                                     \text{km/h} \)
                                 </p>
+                                <p>
+                                    <interaction
+                                        true-response="Correct! Distance depends on the path taken, not just the endpoints."
+                                        false-response="Think about it: if you take a detour, do you cover the same distance? Absolutely not!"
+                                        ansKey="false">
+                                        True or False: The distance you travel is independent of the path you take. <br>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -69,7 +85,7 @@
                             <div class="accordion-body">
                                 <p>This section focuses on problem-solving techniques related to average speed when the
                                     speed of an object is not constant.</p>
-                                    
+
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <details>
@@ -84,7 +100,24 @@
                                             <p><em>Example:</em> A cyclist travels a total distance of 50 km in 2.5
                                                 hours. The average speed is \(50 \, \text{km} / 2.5 \, \text{h} = 20 \,
                                                 \text{km/h}\).</p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Correct! Average speed is total distance over total time."
+                                                    false-response="Double check your calculation. What is total distance divided by total time?"
+                                                    ansKey="true">
+                                                    A car travels 300 km in 5 hours. Is its average speed 60 km/h? <br>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
                                         </details>
+
                                     </li>
                                     <li class="list-group-item">
                                         <details>
@@ -100,7 +133,24 @@
                                             <p><em>Example:</em> A car travels at 40 km/h for 1 hour and then at 60 km/h
                                                 for another hour. The average speed is \((40 + 60)/2 = 50 \,
                                                 \text{km/h}\).</p>
+                                            <p>
+                                                <interaction true-response="Correct!  (80 + 100)/2 = 90 km/h"
+                                                    false-response="Remember to add the speeds and divide by two for equal time intervals."
+                                                    ansKey="false">
+                                                    A train travels at 80 km/h for 1 hour and then at 100 km/h for 1
+                                                    hour. Is its average speed 85 km/h? <br>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
                                         </details>
+
                                     </li>
                                     <li class="list-group-item">
                                         <details>
@@ -127,7 +177,24 @@
                                             <p><em>Example:</em> A person walks 10 km at 4 km/h and then another 10 km
                                                 at 6 km/h. The average speed is \((2 \cdot 4 \cdot 6) / (4 + 6) = 4.8 \,
                                                 \text{km/h}\).</p>
+                                            <p>
+                                                <interaction true-response="Correct! The Harmonic Mean is appropriate."
+                                                    false-response="Consider which method correctly accounts for time spent at each speed."
+                                                    ansKey="true">
+                                                    True or False: When covering equal distances at different speeds,
+                                                    the arithmetic mean gives the correct average speed. <br>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        True
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        False
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
                                         </details>
+
                                     </li>
                                     <li class="list-group-item">
                                         <details>
@@ -141,6 +208,23 @@
                                             <p><em>Example:</em> A plane flies 3000 km at 600 km/h and then 2000 km at
                                                 500 km/h. The average speed is \((3000 + 2000) / (3000/600 + 2000/500) =
                                                 545.45 \, \text{km/h}\).</p>
+                                            <p>
+                                                <interaction
+                                                    true-response="That's right.  The plane spends a longer time at 500 km/h, so the average speed is closer to that."
+                                                    false-response="Think about whether the average speed will be closer to 600 km/h or 500 km/h, given the distances covered."
+                                                    ansKey="false">
+                                                    A simple question, just to emphasize on something. Will the average
+                                                    speed of the plane be more closer to 600 km/h or 500 km/h? <br>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        600 km/h
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        500 km/h
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
                                         </details>
                                     </li>
                                 </ul>
@@ -225,7 +309,22 @@
                                             \(\text{Average Speed} = \dfrac{25 - 4}{5 - 2} = 7 \, \text{m/s}\)
                                         </p>
                                     </li>
-
+                                    <p>
+                                        <interaction true-response="Absolutely. The instantaneous speed is increasing."
+                                            false-response="Compare the earlier and later speeds; is the particle speeding up or slowing down?"
+                                            ansKey="true">
+                                            Is the average speed from t=2 to t=5 greater than the average speed from t=0
+                                            to t=4? <br>
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                Yes
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                No
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p>
                                     <li class="list-group-item">
                                         <p> The speed at \(t = 2 \, \text{s}\) represents how fast the particle is
                                             moving at that instant. Imagine an observer opening their eyes for a very
@@ -281,6 +380,23 @@
                                                     undefined. </p>
                                             </li>
                                         </ul>
+                                        <p>
+                                            <interaction
+                                                true-response="You got it! It's a way to conceptualize an infinitely small time interval without it being zero."
+                                                false-response="Think about why we can't just set h = 0." ansKey="true">
+                                                True or False: Letting h approach zero is a mathematical trick with no
+                                                physical meaning. <br>
+                                                <response class="badge bg-light text-dark" responseValue="false">
+                                                    True
+                                                </response>
+                                                <response class="badge bg-light text-dark" responseValue="true">
+                                                    False
+                                                </response><br>
+                                                <result>
+                                                </result>
+                                            </interaction>
+                                        </p>
+
                                         <p> To resolve this, we let \(h\) approach zero, denoted as \(h \to 0\). This
                                             means \(h\) becomes infinitesimally close to zero but never exactly zero. By
                                             doing so, we ensure a non-zero observation interval while also allowing us
@@ -336,6 +452,23 @@
                                     \(\qquad v = \lim_{\Delta t \to 0} \dfrac{\Delta x}{\Delta t} = \dfrac{dx}{dt} \)
                                 </p>
                                 <p>
+                                    <interaction
+                                        true-response="Correct! Instantaneous speed is the rate of change of position *at* a specific moment."
+                                        false-response="Think about what we're trying to measure with instantaneous speed."
+                                        ansKey="true">
+                                        True or False: Instantaneous speed is an average over a very, very short time.
+                                        <br>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
+                                <p>
                                     This formula introduces the concept of <strong>differentiation</strong>, represented
                                     by \(\dfrac{dx}{dt}\),
                                     which means "the rate of change of position (\(x\)) with respect to time (\(t\))."
@@ -388,7 +521,21 @@
                                         </tr>
                                     </tbody>
                                 </table>
-
+                                <p>
+                                    <interaction true-response="Correct! The power is reduced by 1."
+                                        false-response="Review the power rule of differentiation." ansKey="true">
+                                        True or False: When differentiating a term \(t^n\), the exponent in the result
+                                        is \(n+1\). <br>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
                                 <h6><strong>Let's Apply These Formulas</strong></h6>
                                 <p>
                                     Understanding differentiation is easiest when we apply it to specific examples.
@@ -418,6 +565,22 @@
                                                 <li>At \(t = 2 \, \text{s}\), \(v = 15 \cdot 2^2 = 60 \, \text{m/s}\)
                                                 </li>
                                             </ul>
+                                            <p>
+                                                <interaction true-response="That's right! The speed depends on time."
+                                                    false-response="Consider how the velocity changes with time in the expression \(v = 15t^2\)."
+                                                    ansKey="false">
+                                                    Is the instantaneous speed constant in Example 1, where \(x=5t^3\)?
+                                                    <br>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
+                                            </p>
                                         </details>
                                     </li>
                                     <li class="list-group-item">
@@ -432,6 +595,23 @@
                                             <p>
                                                 Here, the instantaneous speed is constant and equals \(7 \,
                                                 \text{m/s}\), regardless of the time \(t\).
+                                            </p>
+                                            <p>
+                                                <interaction
+                                                    true-response="Correct! The velocity is constant when the position changes linearly with time."
+                                                    false-response="Consider the form of the equation x = 7t + 3. Is the speed changing?"
+                                                    ansKey="true">
+                                                    Does the object in Example 2 (x = 7t + 3) move with constant
+                                                    velocity? <br>
+                                                    <response class="badge bg-light text-dark" responseValue="true">
+                                                        Yes
+                                                    </response>
+                                                    <response class="badge bg-light text-dark" responseValue="false">
+                                                        No
+                                                    </response><br>
+                                                    <result>
+                                                    </result>
+                                                </interaction>
                                             </p>
                                         </details>
                                     </li>
@@ -483,10 +663,25 @@
                                     east), and a negative displacement indicates movement in the negative x-direction
                                     (e.g., west).</p>
 
-                                <p>For example, if a person walks 10 m east and then 3 m west, the total distance
+                                <p>For example, let a person walks 10 m east and then 3 m west. The total distance
                                     traveled is 10 m + 3 m
                                     = 13 m. However, the displacement is +10 m - 3 m = +7 m (or 7 m east).</p>
-
+                                <p>
+                                    <interaction
+                                        true-response="Correct! Displacement is the net change, accounting for direction."
+                                        false-response="Think about running around a track. What's your displacement after one lap?"
+                                        ansKey="true">
+                                        True or False: Displacement can be zero even if distance is non-zero. <br>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
                                 <p><strong>Average Velocity</strong></p>
                                 <p>Average velocity is defined as the displacement covered by a particle in a given time
                                     interval divided by the time interval:</p>
@@ -504,7 +699,38 @@
                                 <p>\(\qquad\)Now, average velocity (0 to 5s) = \(\dfrac{+2 \, \text{m}}{5 \,
                                     \text{s}} = +0.4\) m/s.</p>
 
-
+<p></p>
+<interaction
+    true-response="Spot on.  Remember, average velocity considers displacement, not total distance."
+    false-response="Think about how velocity and speed relate to displacement and distance, respectively."
+    ansKey="true">
+    Is it possible to have zero average velocity when an object has moved a non-zero distance?  <br>
+    <response class="badge bg-light text-dark" responseValue="true">
+        Yes
+    </response>
+    <response class="badge bg-light text-dark" responseValue="false">
+        No
+    </response><br>
+    <result>
+    </result>
+</interaction>
+                                <p>
+                                    <interaction
+                                        true-response="Correct! Average speed considers total distance, not just straight-line displacement."
+                                        false-response="Think about what average speed is actually calculating."
+                                        ansKey="true">
+                                        True or False: Average speed is always equal to the magnitude of average
+                                        velocity. <br>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
                                 <p><strong>Instantaneous Velocity</strong></p>
                                 <p>Instantaneous velocity, similar to instantaneous speed, is the velocity at a specific
                                     moment. Instantaneous velocity at a time \(t\) is the average velocity from time
@@ -535,6 +761,21 @@
                                         <li> At \(t=3\)s, \(v(3) = 4(3) - 3 = +9\) m/s (moving in positive direction).
                                         </li>
                                     </ul>
+                                    <p>
+                                        <interaction true-response="Correct! Setting 4t-3 = 0 gives t = 0.75s"
+                                            false-response="Remember, velocity is zero when the object is at rest. Simply set obtained velocity as zero."
+                                            ansKey="true">
+                                            Is the particle at rest at t=0.75s in Example 1? <br>
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                Yes
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                No
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p>
                                 </details>
 
                                 <details>
@@ -617,6 +858,22 @@
                                 <p>\(\qquad a_{\text{avg}} = \dfrac{-5 - 10}{2} = -7.5 \, \text{m/s}^2\)</p>
                                 <p>The negative sign signifies that the acceleration is in the opposite direction to
                                     the initial velocity (deceleration).</p>
+                                <p>
+                                    <interaction
+                                        true-response="Great job! Acceleration is the rate of change of velocity."
+                                        false-response="Revisit the definition of acceleration. What does it measure the rate of change of?"
+                                        ansKey="false">
+                                        True or False: Acceleration measures the rate of change of position. <br>
+                                        <response class="badge bg-light text-dark" responseValue="true">
+                                            True
+                                        </response>
+                                        <response class="badge bg-light text-dark" responseValue="false">
+                                            False
+                                        </response><br>
+                                        <result>
+                                        </result>
+                                    </interaction>
+                                </p>
                                 <p><strong>Instantaneous Acceleration</strong></p>
                                 <p>Instantaneous acceleration is the acceleration at a specific instant in time. It's
                                     the limit of the
@@ -681,7 +938,21 @@
                                         \text{s}\).
                                         Its final velocity is:</p>
                                     <p>\(\qquad v = 20 + (-1)(10) = 10 \, \text{m/s}\)</p>
-
+                                    <p>
+                                        <interaction true-response="Excellent! The velocity is decreasing over time."
+                                            false-response="Think about whether the train is speeding up or slowing down."
+                                            ansKey="true">
+                                            Does the train accelerate here? <br>
+                                            <response class="badge bg-light text-dark" responseValue="false">
+                                                Yes
+                                            </response>
+                                            <response class="badge bg-light text-dark" responseValue="true">
+                                                No
+                                            </response><br>
+                                            <result>
+                                            </result>
+                                        </interaction>
+                                    </p>
                                 </details>
 
 

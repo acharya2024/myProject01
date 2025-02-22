@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Calculus Applications to Kinematics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Calculus Applications to Kinematics</h1>
+                    <p class="lead" id="tagline">Using Derivatives and Integrals in Motion Analysis.</p>
+                    <hr class="my-4">
+                </div>
+
+                <div class="accordion" id="content">
+
+                    <!-- Section 1: Differentiation in Kinematics -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDifferentiation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDifferentiation" aria-expanded="false"
+                                aria-controls="collapseDifferentiation">
+                                <strong>Differentiation in Kinematics</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseDifferentiation" class="accordion-collapse collapse"
+                            aria-labelledby="headingDifferentiation" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Kinematics is the study of motion. Calculus provides powerful tools to analyze and
+                                    understand motion, especially when dealing with quantities that are constantly
+                                    changing, like velocity and acceleration. Differentiation, in particular, helps us
+                                    determine these instantaneous rates of change.</p>
+
+                                <p><strong>Instantaneous Velocity:</strong></p>
+                                <p>Imagine an object moving along a straight line. Its position is constantly changing
+                                    with time. The *average* velocity tells us how much the position changed over a
+                                    certain time *interval*. But what if we want to know how fast the object is moving
+                                    at
+                                    a *specific instant*? That's where instantaneous velocity comes in.</p>
+                                <p>Mathematically, instantaneous velocity (\(v\)) is defined as the derivative of the
+                                    object's position (\(x\)) with respect to time (\(t\)). This means we're looking at
+                                    the rate of change of position as the time interval becomes infinitesimally small:
+                                </p>
+                                <p>\( \qquad v = \dfrac{dx}{dt} \)</p>
+                                <p>Here, \(dx/dt\) represents the derivative of the position function \(x(t)\) with
+                                    respect to time \(t\). It tells us exactly how fast the position is changing at any
+                                    given moment.</p>
+
+                                <p><strong>Beyond Motion: Other Applications of Differentiation:</strong></p>
+                                <p>Differentiation isn't just limited to kinematics. It's a fundamental concept
+                                    applicable
+                                    to any situation where you want to understand how one quantity changes in relation
+                                    to another. Here are a few examples:</p>
+
+                                <ul>
+                                    <li><strong>Rate of Increase of Temperature:</strong> If you have a function that
+                                        describes how the temperature of an object changes over time, you can use
+                                        differentiation to find the rate at which the temperature is increasing or
+                                        decreasing
+                                        at a particular moment. This is useful in many areas, such as engineering,
+                                        chemistry, and meteorology.</li>
+                                    <li><strong>Rate of Change of Chemical Reaction:</strong> In chemistry,
+                                        differentiation can be used to determine how quickly the concentration of a
+                                        reactant
+                                        or product is changing during a chemical reaction.</li>
+                                    <li><strong>Population Growth:</strong> If you have a mathematical model that
+                                        describes
+                                        how a population is growing, you can use differentiation to find the rate at
+                                        which
+                                        the population is increasing or decreasing at any given time.</li>
+                                    <li><strong>In Economics:</strong> Marginal cost, marginal revenue, and other
+                                        marginal
+                                        concepts are all based on differentiation, helping businesses understand how
+                                        costs, revenue, and profit change with respect to production levels.</li>
+                                </ul>
+
+                                <p><strong>Graphical Interpretation: Unveiling Function Behavior</strong></p>
+                                <p>The derivative has a powerful visual interpretation. When you plot a function on a
+                                    graph, the derivative at any point represents the slope of the line that is tangent
+                                    to
+                                    the curve at that point. This slope provides crucial information about the
+                                    function's
+                                    behavior:</p>
+
+                                <ul>
+                                    <li><strong>Zero Derivative: Flatlining Moments</strong> If the derivative at a
+                                        point is
+                                        zero, it means the tangent line is horizontal. This indicates a *stationary
+                                        point*
+                                        on the curve. Stationary points can be:
+                                        <ul>
+                                            <li><strong>Maximum:</strong> The function reaches a peak.</li>
+                                            <li><strong>Minimum:</strong> The function reaches a valley.</li>
+                                            <li><strong>Point of Inflection:</strong> The function changes its
+                                                curvature.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Positive Derivative: The Ascent</strong> A positive derivative signifies
+                                        that
+                                        the function is *increasing* at that point. As you move along the curve in the
+                                        positive x-direction, the y-values are getting larger. The steeper the slope
+                                        (larger derivative), the faster the function is increasing.</li>
+                                    <li><strong>Negative Derivative: The Descent</strong> Conversely, a negative
+                                        derivative means the function is *decreasing*. Moving along the curve in the
+                                        positive x-direction results in smaller y-values. Again, the magnitude of the
+                                        slope
+                                        (derivative) indicates the rate of decrease.</li>
+                                </ul>
+
+                                <p><strong>Differentiation Formula Table: Essential Tools</strong></p>
+                                <p>To effectively use differentiation, it's important to have a solid grasp of basic
+                                    differentiation formulas. These formulas provide a shortcut for finding the
+                                    derivatives
+                                    of common functions:</p>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Function \(f(t)\)</th>
+                                            <th>Derivative \(\dfrac{df}{dt}\)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(t^n\) (where n is any constant)</td>
+                                            <td>\(nt^{n-1}\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(sin(t)\)</td>
+                                            <td>\(cos(t)\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(cos(t)\)</td>
+                                            <td>\(-sin(t)\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^t\)</td>
+                                            <td>\(e^t\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(ln(t)\) (for t > 0)</td>
+                                            <td>\(\dfrac{1}{t}\)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>These formulas are your essential toolbox for tackling differentiation problems.
+                                </p>
+                                <hr class="my-4">
+
+                                <h5>Illustrative Examples: Finding Velocity from Position</h5>
+                                <p>Let's apply our knowledge of differentiation to find the velocity of an object given
+                                    its
+                                    position as a function of time.</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x(t) = At^3 - \dfrac{B}{t}\)</strong>
+                                            </summary>
+                                            <p>Here, the position \(x\) is given by the function \(x(t) = At^3 -
+                                                \dfrac{B}{t}\),
+                                                where A and B are constants. To find the velocity, we need to
+                                                differentiate \(x(t)\) with respect to time \(t\):</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} \left( At^3 -
+                                                \dfrac{B}{t}
+                                                \right) \)</p>
+                                            <p>Applying the power rule of differentiation:</p>
+                                            <p>\( \qquad v(t) = 3At^2 + \dfrac{B}{t^2} \)</p>
+                                            <p>So, the velocity of the object at any time \(t\) is given by \(3At^2 +
+                                                \dfrac{B}{t^2}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(x(t) = A \cos(\omega t)\)</strong></summary>
+                                            <p>In this case, the position is given by \(x(t) = A \cos(\omega t)\), where
+                                                A is the
+                                                amplitude and \(\omega\) is the angular frequency. Differentiating with
+                                                respect to
+                                                time:</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} \left( A \cos(\omega t)
+                                                \right)
+                                                \)</p>
+                                            <p>Using the chain rule:</p>
+                                            <p>\( \qquad v(t) = -A\omega \sin(\omega t) \)</p>
+                                            <p>Thus, the velocity of the object at any time \(t\) is \(-A\omega
+                                                \sin(\omega
+                                                t)\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(x(t) = Dt^2 + Et + F\)</strong></summary>
+                                            <p>Here, the position is given by the quadratic function \(x(t) = Dt^2 + Et
+                                                + F\),
+                                                where D, E, and F are constants. Differentiating with respect to time:
+                                            </p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} \left( Dt^2 + Et + F
+                                                \right) \)</p>
+                                            <p>Applying the power rule:</p>
+                                            <p>\( \qquad v(t) = 2Dt + E \)</p>
+                                            <p>Therefore, the velocity of the object at any time \(t\) is \(2Dt + E\).
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(v(t) = Gt^2 + Ht\)</strong></summary>
+                                            <p>Suppose the velocity \(v\) of an object is given by the function \(v(t) =
+                                                Gt^2 +
+                                                Ht\), where G and H are constants. To find the acceleration, we
+                                                differentiate \(v(t)\) with respect to time \(t\):</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} \left( Gt^2 + Ht \right)
+                                                \)</p>
+                                            <p>Applying the power rule of differentiation:</p>
+                                            <p>\( \qquad a(t) = 2Gt + H \)</p>
+                                            <p>Thus, the acceleration of the object at any time \(t\) is given by \(2Gt
+                                                + H\).
+                                                This means the acceleration changes linearly with time.</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(v(t) = Ie^{-kt}\)</strong></summary>
+                                            <p>In this example, the velocity is given by \(v(t) = Ie^{-kt}\), where I
+                                                and k are
+                                                constants. Differentiating with respect to time:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} \left( Ie^{-kt} \right)
+                                                \)</p>
+                                            <p>Using the chain rule:</p>
+                                            <p>\( \qquad a(t) = -kIe^{-kt} \)</p>
+                                            <p>So, the acceleration of the object at any time \(t\) is \(-kIe^{-kt}\).
+                                                The
+                                                acceleration is also an exponential function and decreases with time.
+                                            </p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(v(t) = J \cos(\alpha t)\)</strong></summary>
+                                            <p>Here, the velocity is given by \(v(t) = J \cos(\alpha t)\), where J is
+                                                the amplitude
+                                                and \(\alpha\) is the angular frequency. Differentiating with respect to
+                                                time:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} \left( J \cos(\alpha t)
+                                                \right)
+                                                \)</p>
+                                            <p>Using the chain rule:</p>
+                                            <p>\( \qquad a(t) = -J\alpha \sin(\alpha t) \)</p>
+                                            <p>Therefore, the acceleration of the object at any time \(t\) is \(-J\alpha
+                                                \sin(\alpha t)\). The acceleration oscillates sinusoidally with time.
+                                            </p>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 2: Mathematical Rules of Differentiation & Kinematic Applications -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingRulesDifferentiation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseRulesDifferentiation" aria-expanded="false"
+                                aria-controls="collapseRulesDifferentiation">
+                                <strong>Mathematical Rules of Differentiation & Kinematic Applications</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseRulesDifferentiation" class="accordion-collapse collapse"
+                            aria-labelledby="headingRulesDifferentiation" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>To differentiate more complex functions that often arise in kinematics, we need to
+                                    understand and apply the fundamental rules of differentiation.</p>
+
+                                <!-- Section 2.A: Rule of Addition/Subtraction -->
+                                <h5 class="mt-3">A. Rule of Addition/Subtraction</h5>
+                                <p>The derivative of a sum or difference of functions is the sum or difference of their
+                                    derivatives:</p>
+                                <p>\( \qquad \dfrac{d}{dt} [f(t) \pm g(t)] = \dfrac{df}{dt} \pm \dfrac{dg}{dt} \)</p>
+                                <p><strong>Explanation:</strong> This rule states that if you have a function that is
+                                    the sum
+                                    or difference of two other functions, you can find its derivative by simply taking
+                                    the
+                                    derivatives of each of those functions separately and then adding or subtracting
+                                    them.
+                                    This simplifies the differentiation process for complex expressions.</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x(t) = t^3 + \sin(t)\)</strong></summary>
+                                            <p>Let's say the position of an object is given by \(x(t) = t^3 + \sin(t)\).
+                                                To find
+                                                the velocity, we differentiate:</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} (t^3 + \sin(t)) \)</p>
+                                            <p>Applying the rule of addition:</p>
+                                            <p>\( \qquad v(t) = \dfrac{d}{dt} (t^3) + \dfrac{d}{dt} (\sin(t)) = 3t^2 +
+                                                \cos(t) \)</p>
+                                            <p>So, the velocity is \(v(t) = 3t^2 + \cos(t)\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(v(t) = e^t - t^2\)</strong></summary>
+                                            <p>Now, suppose the velocity is given by \(v(t) = e^t - t^2\). To find the
+                                                acceleration, we differentiate:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} (e^t - t^2) \)</p>
+                                            <p>Applying the rule of subtraction:</p>
+                                            <p>\( \qquad a(t) = \dfrac{d}{dt} (e^t) - \dfrac{d}{dt} (t^2) = e^t - 2t \)
+                                            </p>
+                                            <p>Thus, the acceleration is \(a(t) = e^t - 2t\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(a(t) = \cos(t) + t\)</strong></summary>
+                                            <p>Let's consider a scenario where acceleration is described by \(a(t) =
+                                                \cos(t) +
+                                                t\). To find the rate of change of acceleration (which isn't typically a
+                                                named kinematic variable, but demonstrates the rule), we differentiate:
+                                            </p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{d}{dt} (\cos(t) + t) \)</p>
+                                            <p>Applying the rule of addition:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{d}{dt} (\cos(t)) + \dfrac{d}{dt} (t) =
+                                                -\sin(t) + 1 \)</p>
+                                            <p>Therefore, the rate of change of acceleration is \(-\sin(t) + 1\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <!-- Section 2.B: Product Rule -->
+                                <h5 class="mt-3">B. Product Rule</h5>
+                                <p>The derivative of a product of two functions is given by:</p>
+                                <p>\( \qquad \dfrac{d}{dt} [f(t)g(t)] = f'(t)g(t) + f(t)g'(t) \)</p>
+                                <p><strong>Explanation:</strong> This rule tells us that the derivative of two functions
+                                    multiplied together is the derivative of the first function times the second
+                                    function,
+                                    *plus* the first function times the derivative of the second function. It's crucial
+                                    when differentiating expressions where two functions are multiplied.</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x(t) = t \cos(t)\)</strong></summary>
+                                            <p>If the position is \(x(t) = t \cos(t)\), then the velocity is:</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} (t \cos(t)) \)</p>
+                                            <p>Applying the product rule:</p>
+                                            <p>\( \qquad v(t) = (1) \cos(t) + t (-\sin(t)) = \cos(t) - t \sin(t) \)</p>
+                                            <p>So, \(v(t) = \cos(t) - t \sin(t)\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(v(t) = t^2 e^{-t}\)</strong></summary>
+                                            <p>If the velocity is \(v(t) = t^2 e^{-t}\), then the acceleration is:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} (t^2 e^{-t}) \)</p>
+                                            <p>Applying the product rule:</p>
+                                            <p>\( \qquad a(t) = (2t) e^{-t} + t^2 (-e^{-t}) = 2te^{-t} - t^2 e^{-t} \)
+                                            </p>
+                                            <p>Thus, \(a(t) = 2te^{-t} - t^2 e^{-t}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(a(t) = \sin(t) \cdot t\)</strong></summary>
+                                            <p>If acceleration is given by \(a(t) = \sin(t) \cdot t \), then the rate of
+                                                change of
+                                                acceleration is:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{d}{dt} (\sin(t) \cdot t) \)</p>
+                                            <p>Applying the product rule:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = (\cos(t)) \cdot t + \sin(t) \cdot (1) =
+                                                t\cos(t) +
+                                                \sin(t) \)</p>
+                                            <p>Therefore, \(\dfrac{da}{dt} = t\cos(t) + \sin(t)\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <!-- Section 2.C: Quotient Rule -->
+                                <h5 class="mt-3">C. Quotient Rule</h5>
+                                <p>The derivative of a quotient of two functions is given by:</p>
+                                <p>\( \qquad \dfrac{d}{dt} \left[ \dfrac{f(t)}{g(t)} \right] = \dfrac{f'(t)g(t) -
+                                    f(t)g'(t)}{[g(t)]^2} \)</p>
+                                <p><strong>Explanation:</strong> This rule provides a way to differentiate a function
+                                    that
+                                    is expressed as one function divided by another. The derivative involves the
+                                    derivatives of both the numerator and the denominator, as well as the square of the
+                                    original denominator.</p>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x(t) = \dfrac{\sin(t)}{t}\)</strong></summary>
+                                            <p>If the position is \(x(t) = \dfrac{\sin(t)}{t}\), then the velocity is:
+                                            </p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} \left( \dfrac{\sin(t)}{t}
+                                                \right) \)</p>
+                                            <p>Applying the quotient rule:</p>
+                                            <p>\( \qquad v(t) = \dfrac{\cos(t) \cdot t - \sin(t) \cdot 1}{t^2} =
+                                                \dfrac{t
+                                                \cos(t) - \sin(t)}{t^2} \)</p>
+                                            <p>So, \(v(t) = \dfrac{t \cos(t) - \sin(t)}{t^2}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(v(t) = \dfrac{t}{t^2 + 1}\)</strong></summary>
+                                            <p>If the velocity is \(v(t) = \dfrac{t}{t^2 + 1}\), then the acceleration
+                                                is:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} \left( \dfrac{t}{t^2 + 1}
+                                                \right) \)</p>
+                                            <p>Applying the quotient rule:</p>
+                                            <p>\( \qquad a(t) = \dfrac{(1)(t^2 + 1) - t(2t)}{(t^2 + 1)^2} = \dfrac{1 -
+                                                t^2}{(t^2
+                                                + 1)^2} \)</p>
+                                            <p>Thus, \(a(t) = \dfrac{1 - t^2}{(t^2 + 1)^2}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(a(t) = \dfrac{e^t}{t}\)</strong></summary>
+                                            <p>If the acceleration is given by \(a(t) = \dfrac{e^t}{t}\), then the rate
+                                                of change of
+                                                acceleration is:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{d}{dt} \left( \dfrac{e^t}{t} \right) \)
+                                            </p>
+                                            <p>Applying the quotient rule:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{e^t \cdot t - e^t \cdot 1}{t^2} =
+                                                \dfrac{e^t(t -
+                                                1)}{t^2} \)</p>
+                                            <p>Therefore, \(\dfrac{da}{dt} = \dfrac{e^t(t - 1)}{t^2}\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                                <!-- Section 2.D: Chain Rule -->
+                                <h5 class="mt-3">D. Chain Rule</h5>
+                                <p>The derivative of a composite function is given by:</p>
+                                <p>\( \qquad \dfrac{d}{dt} [f(g(t))] = f'(g(t)) \cdot g'(t) \)</p>
+                                <p><strong>Explanation:</strong> This rule is used when differentiating a function
+                                    within
+                                    another function (a composite function). It states that you take the derivative of
+                                    the
+                                    outer function, evaluated at the inner function, and then multiply by the derivative
+                                    of the inner function.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(x(t) = \sin(t^2)\)</strong></summary>
+                                            <p>If the position is \(x(t) = \sin(t^2)\), then the velocity is:</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} (\sin(t^2)) \)</p>
+                                            <p>Applying the chain rule:</p>
+                                            <p>\( \qquad v(t) = \cos(t^2) \cdot (2t) = 2t \cos(t^2) \)</p>
+                                            <p>So, \(v(t) = 2t \cos(t^2)\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(v(t) = \cos(e^t)\)</strong></summary>
+                                            <p>If the velocity is \(v(t) = \cos(e^t)\), then the acceleration is:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} (\cos(e^t)) \)</p>
+                                            <p>Applying the chain rule:</p>
+                                            <p>\( \qquad a(t) = -\sin(e^t) \cdot (e^t) = -e^t \sin(e^t) \)</p>
+                                            <p>Thus, \(a(t) = -e^t \sin(e^t)\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(a(t) = (t^3 + 1)^5\)</strong></summary>
+                                            <p>If the acceleration is given by \(a(t) = (t^3 + 1)^5\), then the rate of
+                                                change of
+                                                acceleration is:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = \dfrac{d}{dt} ((t^3 + 1)^5) \)</p>
+                                            <p>Applying the chain rule:</p>
+                                            <p>\( \qquad \dfrac{da}{dt} = 5(t^3 + 1)^4 \cdot (3t^2) = 15t^2(t^3 + 1)^4
+                                                \)</p>
+                                            <p>Therefore, \(\dfrac{da}{dt} = 15t^2(t^3 + 1)^4\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 4: \(x(t) = e^{\sin(t)}\)</strong></summary>
+                                            <p>If the position is \(x(t) = e^{\sin(t)}\), then the velocity is:</p>
+                                            <p>\( \qquad v(t) = \dfrac{dx}{dt} = \dfrac{d}{dt} (e^{\sin(t)}) \)</p>
+                                            <p>Applying the chain rule:</p>
+                                            <p>\( \qquad v(t) = e^{\sin(t)} \cdot (\cos(t)) = \cos(t) e^{\sin(t)} \)</p>
+                                            <p>So, \(v(t) = \cos(t) e^{\sin(t)}\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 5: \(v(t) = \ln(t^2 + 1)\)</strong></summary>
+                                            <p>If the velocity is \(v(t) = \ln(t^2 + 1)\), then the acceleration is:</p>
+                                            <p>\( \qquad a(t) = \dfrac{dv}{dt} = \dfrac{d}{dt} (\ln(t^2 + 1)) \)</p>
+                                            <p>Applying the chain rule:</p>
+                                            <p>\( \qquad a(t) = \dfrac{1}{t^2 + 1} \cdot (2t) = \dfrac{2t}{t^2 + 1} \)
+                                            </p>
+                                            <p>Thus, \(a(t) = \dfrac{2t}{t^2 + 1}\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 2 -->
+                    <!-- Section 3: Practice Differentiation Problems-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPracticeDifferentiation">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePracticeDifferentiation" aria-expanded="false"
+                                aria-controls="collapsePracticeDifferentiation">
+                                <strong>Practice Problems: Differentiation</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePracticeDifferentiation" class="accordion-collapse collapse"
+                            aria-labelledby="headingPracticeDifferentiation" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Solve the following differentiation problems in your notebook, and
+                                    then click the "Check" button to reveal the answer.</p>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Function \(f(t)\)</th>
+                                            <th>Derivative \(\dfrac{df}{dt}\)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(t^4 + 3t^2 - 2t + 1\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(4t^3 + 6t - 2\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sin(2t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(2\cos(2t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^{-3t}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-3e^{-3t}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\ln(5t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{t}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^5 - 4t^3 + t\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(5t^4 - 12t^2 + 1\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\cos(4t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-4\sin(4t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(2e^{t/2}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(e^{t/2}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\ln(t^2 + 1)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{2t}{t^2 +
+                                                    1}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sqrt{t}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer"
+                                                    style="display:none;">\(\dfrac{1}{2\sqrt{t}}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\tan(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\sec^2(t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t \sin(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\sin(t) + t\cos(t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{t}{t+1}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{(t+1)^2}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^2 e^t\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(2te^t + t^2e^t\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\cos^2(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-2\cos(t)\sin(t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sqrt{t^2 + 1}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{t}{\sqrt{t^2 +
+                                                    1}}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^6\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(6t^5\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(sin(t^2)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(2t cos(t^2)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(cos(e^t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-e^t sin(e^t)\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{1}{t^3}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{-3}{t^4}\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^{t^2}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(2te^{t^2}\)</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 3 -->
+                    <!-- Section 4: Integration in Kinematics -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingIntegration">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntegration" aria-expanded="false"
+                                aria-controls="collapseIntegration">
+                                <strong>Integration in Kinematics</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseIntegration" class="accordion-collapse collapse"
+                            aria-labelledby="headingIntegration" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Integration is the reverse process of differentiation. In kinematics, it allows us to
+                                    determine displacement from velocity and velocity from acceleration, providing a
+                                    complete picture of an object's motion.</p>
+
+                                <p><strong>Introduction to Integration</strong></p>
+                                <p>Integration, often called "anti-differentiation," is a core concept in calculus.
+                                    While
+                                    differentiation tells us the *rate of change* of a function, integration allows us
+                                    to
+                                    find the *original function* when we know its rate of change. This is incredibly
+                                    useful in physics, especially in kinematics.</p>
+
+                                <p><strong>Displacement as Integral of Velocity:</strong></p>
+                                <p>If we know the velocity of an object as a function of time, we can find its
+                                    displacement (change in position) by integrating the velocity function:</p>
+                                <p>\( \qquad x(t) = \int v(t) \, dt \)</p>
+                                <p>This integral represents the area under the velocity-time curve, which gives us the
+                                    total displacement of the object over a given time interval.</p>
+
+                                <p><strong>Velocity as Integral of Acceleration:</strong></p>
+                                <p>Similarly, if we know the acceleration of an object as a function of time, we can
+                                    find its velocity by integrating the acceleration function:</p>
+                                <p>\( \qquad v(t) = \int a(t) \, dt \)</p>
+                                <p>This integral represents the area under the acceleration-time curve, which gives us
+                                    the total change in velocity of the object over a given time interval.</p>
+
+                                <p><strong>Understanding the Constant of Integration: The Missing Piece</strong></p>
+                                <p>When we perform an indefinite integral (one without specific limits), we always get a
+                                    "constant of integration," often denoted as \(C\). This constant represents the
+                                    unknown initial value of the function we're trying to find.</p>
+                                <p>In kinematics:</p>
+                                <ul>
+                                    <li>When finding velocity from acceleration, \(C\) represents the *initial velocity*
+                                        \(v(0)\).</li>
+                                    <li>When finding position from velocity, \(C\) represents the *initial position*
+                                        \(x(0)\).</li>
+                                </ul>
+                                <p>Therefore, the complete equations are:</p>
+                                <p>\( \qquad v(t) = \int a(t) \, dt + v(0) \)</p>
+                                <p>\( \qquad x(t) = \int v(t) \, dt + x(0) \)</p>
+                                <p>It's crucial to use the given initial conditions to determine the value of \(C\) to
+                                    get
+                                    the correct velocity or position function.</p>
+
+                                <p><strong>Integration Formula Table: Essential Tools</strong></p>
+                                <p>Just like with differentiation, having a table of common integration formulas is
+                                    essential. Here are some that are particularly useful in kinematics:</p>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Function \(f(t)\)</th>
+                                            <th>Integral \(\int f(t) \, dt\)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(t^n\) (where \(n \neq -1\))</td>
+                                            <td>\(\dfrac{t^{n+1}}{n+1} + C\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sin(t)\)</td>
+                                            <td>\(-\cos(t) + C\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\cos(t)\)</td>
+                                            <td>\(\sin(t) + C\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^t\)</td>
+                                            <td>\(e^t + C\)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(1\)</td>
+                                            <td>\(t + C\)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr class="my-4">
+
+                                <h5>Illustrative Examples:</h5>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>A. Finding Velocity from Acceleration: \(a(t) = At\),
+                                                    \(v(0) =
+                                                    v_0\)</strong></summary>
+                                            <p>Suppose the acceleration of an object is given by \(a(t) = At\), where
+                                                \(A\) is a
+                                                constant, and its initial velocity at \(t = 0\) is \(v_0\). To find the
+                                                velocity \(v(t)\), we integrate the acceleration function:</p>
+                                            <p>\( \qquad v(t) = \int a(t) \, dt = \int At \, dt \)</p>
+                                            <p>Applying the power rule of integration:</p>
+                                            <p>\( \qquad v(t) = \dfrac{1}{2}At^2 + C \)</p>
+                                            <p>To find the constant of integration \(C\), we use the initial condition
+                                                \(v(0) =
+                                                v_0\):</p>
+                                            <p>\( \qquad v_0 = \dfrac{1}{2}A(0)^2 + C \Rightarrow C = v_0 \)</p>
+                                            <p>Therefore, the velocity function is:</p>
+                                            <p>\( \qquad v(t) = \dfrac{1}{2}At^2 + v_0 \)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>B. Finding Velocity from Acceleration: \(a(t) = B
+                                                    \sin(\omega
+                                                    t)\), \(v(0) = 0\)</strong></summary>
+                                            <p>Consider an object with acceleration \(a(t) = B \sin(\omega t)\), where
+                                                \(B\) and
+                                                \(\omega\) are constants, and initial velocity \(v(0) = 0\). Integrating
+                                                to find
+                                                velocity:</p>
+                                            <p>\( \qquad v(t) = \int a(t) \, dt = \int B \sin(\omega t) \, dt \)</p>
+                                            <p>Using the integral of \(\sin(t)\):</p>
+                                            <p>\( \qquad v(t) = -\dfrac{B}{\omega} \cos(\omega t) + C \)</p>
+                                            <p>Applying the initial condition \(v(0) = 0\):</p>
+                                            <p>\( \qquad 0 = -\dfrac{B}{\omega} \cos(0) + C \Rightarrow C =
+                                                \dfrac{B}{\omega}
+                                                \)</p>
+                                            <p>Thus, the velocity function is:</p>
+                                            <p>\( \qquad v(t) = -\dfrac{B}{\omega} \cos(\omega t) + \dfrac{B}{\omega} =
+                                                \dfrac{B}{\omega} (1 - \cos(\omega t)) \)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>C. Finding Velocity from Acceleration: \(a(t) = C\), \(v(0)
+                                                    =
+                                                    u\)</strong></summary>
+                                            <p>An object moves with constant acceleration \(a(t) = C\) and has an
+                                                initial
+                                                velocity \(v(0) = u\). Integrating to find velocity:</p>
+                                            <p>\( \qquad v(t) = \int a(t) \, dt = \int C \, dt \)</p>
+                                            <p>The integral of a constant is:</p>
+                                            <p>\( \qquad v(t) = Ct + C' \)</p>
+                                            <p>Applying the initial condition \(v(0) = u\):</p>
+                                            <p>\( \qquad u = C(0) + C' \Rightarrow C' = u \)</p>
+                                            <p>Therefore, the velocity function is:</p>
+                                            <p>\( \qquad v(t) = Ct + u \)</p>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <hr class="my-4">
+                                <h5>Illustrative Examples:</h5>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>A. Finding Position from Velocity: \(v(t) = Dt^2\), \(x(0)
+                                                    =
+                                                    x_0\)</strong></summary>
+                                            <p>Suppose the Velocity of an object is given by \(v(t) = Dt^2\), where
+                                                \(D\) is a
+                                                constant, and its initial position at \(t = 0\) is \(x_0\). To find the
+                                                position \(x(t)\), we integrate the Velocity function:</p>
+                                            <p>\( \qquad x(t) = \int v(t) \, dt = \int Dt^2 \, dt \)</p>
+                                            <p>Applying the power rule of integration:</p>
+                                            <p>\( \qquad x(t) = \dfrac{1}{3}Dt^3 + C \)</p>
+                                            <p>To find the constant of integration \(C\), we use the initial condition
+                                                \(x(0) =
+                                                x_0\):</p>
+                                            <p>\( \qquad x_0 = \dfrac{1}{3}D(0)^3 + C \Rightarrow C = x_0 \)</p>
+                                            <p>Therefore, the position function is:</p>
+                                            <p>\( \qquad x(t) = \dfrac{1}{3}Dt^3 + x_0 \)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>B. Finding Position from Velocity: \(v(t) = E e^{-kt}\),
+                                                    \(x(0) =
+                                                    0\)</strong></summary>
+                                            <p>Consider an object with Velocity \(v(t) = E e^{-kt}\), where \(E\) and
+                                                \(k\) are constants, and initial position \(x(0) = 0\). Integrating to
+                                                find
+                                                position:</p>
+                                            <p>\( \qquad x(t) = \int v(t) \, dt = \int E e^{-kt} \, dt \)</p>
+                                            <p>Using the integral of \(e^t\):</p>
+                                            <p>\( \qquad x(t) = -\dfrac{E}{k} e^{-kt} + C \)</p>
+                                            <p>Applying the initial condition \(x(0) = 0\):</p>
+                                            <p>\( \qquad 0 = -\dfrac{E}{k} e^{-k(0)} + C \Rightarrow C = \dfrac{E}{k}
+                                                \)</p>
+                                            <p>Thus, the Velocity function is:</p>
+                                            <p>\( \qquad x(t) = -\dfrac{E}{k} e^{-kt} + \dfrac{E}{k} \)</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>C. Finding Velocity from Acceleration: \(v(t) = F
+                                                    cos(\alpha t)\), \(x(0) =
+                                                    s_0\)</strong></summary>
+                                            <p>An object moves with cosinusoidial Velocity \(v(t) = F cos(\alpha t)\)
+                                                and has an initial
+                                                position \(x(0) = s_0\). Integrating to find position:</p>
+                                            <p>\( \qquad x(t) = \int v(t) \, dt = \int F cos(\alpha t) \, dt \)</p>
+                                            <p>The integral of cosine is:</p>
+                                            <p>\( \qquad x(t) = \dfrac{F}{\alpha}sin(\alpha t) + C' \)</p>
+                                            <p>Applying the initial condition \(x(0) = s_0\):</p>
+                                            <p>\( \qquad s_0 = \dfrac{F}{\alpha}sin(\alpha(0)) + C' \Rightarrow C' = s_0
+                                                \)</p>
+                                            <p>Therefore, the position function is:</p>
+                                            <p>\( \qquad x(t) = \dfrac{F}{\alpha}sin(\alpha t) + s_0 \)</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 3 -->
+                    <!-- Section 4 Integration by Substitution -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSubstitution">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSubstitution" aria-expanded="false"
+                                aria-controls="collapseSubstitution">
+                                <strong>Integration by Substitution</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseSubstitution" class="accordion-collapse collapse"
+                            aria-labelledby="headingSubstitution" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Integration by substitution, also known as u-substitution, is a powerful technique
+                                    for simplifying integrals by changing the variable of integration. It's essentially
+                                    the reverse of the chain rule in differentiation.</p>
+
+                                <p><strong>General Explanation:</strong></p>
+                                <p>The goal of u-substitution is to transform a complicated integral into a simpler one
+                                    that we can directly evaluate using standard formulas. The process involves the
+                                    following steps:</p>
+
+                                <ol>
+                                    <li><strong>Choose a substitution:</strong> Identify a part of the integrand (the
+                                        function being integrated) that can be replaced with a new variable, \(u\).
+                                        This is often a function whose derivative also appears in the integrand (or can
+                                        be made to appear with some algebraic manipulation).</li>
+                                    <li><strong>Find \(du\):</strong> Calculate the derivative of \(u\) with respect to
+                                        \(t\) (or whatever the original variable is), and express it as \(du =
+                                        \dfrac{du}{dt} \, dt\).</li>
+                                    <li><strong>Substitute:</strong> Replace the original expression in the integral
+                                        with
+                                        expressions involving \(u\) and \(du\). The goal is to get an integral that is
+                                        entirely in terms of \(u\).</li>
+                                    <li><strong>Integrate:</strong> Evaluate the new integral with respect to \(u\).
+                                    </li>
+                                    <li><strong>Substitute back:</strong> Replace \(u\) with its original expression in
+                                        terms of \(t\) to get the final answer.</li>
+                                </ol>
+
+                                <p>Mathematically, if we can write the integral in the form \(\int f(g(t)) \cdot g'(t)
+                                    \,
+                                    dt\), then we can use the substitution \(u = g(t)\) and \(du = g'(t) \, dt\) to
+                                    transform the integral into \(\int f(u) \, du\), which is hopefully easier to
+                                    evaluate.</p>
+
+                                <hr class="my-4">
+
+                                <h5>Illustrative Examples:</h5>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 1: \(\int 2t \cos(t^2) \, dt\)</strong></summary>
+                                            <p>Let's evaluate the integral \(\int 2t \cos(t^2) \, dt\) using
+                                                substitution.</p>
+
+                                            <ol>
+                                                <li><strong>Choose a substitution:</strong> Let \(u = t^2\).</li>
+                                                <li><strong>Find \(du\):</strong> Then \(\dfrac{du}{dt} = 2t\), so \(du
+                                                    = 2t \,
+                                                    dt\).</li>
+                                                <li><strong>Substitute:</strong> The integral becomes \(\int \cos(u) \,
+                                                    du\).</li>
+                                                <li><strong>Integrate:</strong> \(\int \cos(u) \, du = \sin(u) + C\).
+                                                </li>
+                                                <li><strong>Substitute back:</strong> Replace \(u\) with \(t^2\) to get
+                                                    \(\sin(t^2)
+                                                    + C\).</li>
+                                            </ol>
+
+                                            <p>Therefore, \(\int 2t \cos(t^2) \, dt = \sin(t^2) + C\).</p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 2: \(\int e^{\sin(t)} \cos(t) \, dt\)</strong>
+                                            </summary>
+                                            <p>Let's evaluate the integral \(\int e^{\sin(t)} \cos(t) \, dt\) using
+                                                substitution.</p>
+
+                                            <ol>
+                                                <li><strong>Choose a substitution:</strong> Let \(u = \sin(t)\).</li>
+                                                <li><strong>Find \(du\):</strong> Then \(\dfrac{du}{dt} = \cos(t)\), so
+                                                    \(du =
+                                                    \cos(t) \, dt\).</li>
+                                                <li><strong>Substitute:</strong> The integral becomes \(\int e^u \,
+                                                    du\).</li>
+                                                <li><strong>Integrate:</strong> \(\int e^u \, du = e^u + C\).</li>
+                                                <li><strong>Substitute back:</strong> Replace \(u\) with \(\sin(t)\) to
+                                                    get
+                                                    \(e^{\sin(t)} + C\).</li>
+                                            </ol>
+
+                                            <p>Therefore, \(\int e^{\sin(t)} \cos(t) \, dt = e^{\sin(t)} + C\).</p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 3: \(\int \dfrac{t}{t^2 + 1} \, dt\)</strong>
+                                            </summary>
+                                            <p>Let's evaluate the integral \(\int \dfrac{t}{t^2 + 1} \, dt\) using
+                                                substitution.</p>
+
+                                            <ol>
+                                                <li><strong>Choose a substitution:</strong> Let \(u = t^2 + 1\).</li>
+                                                <li><strong>Find \(du\):</strong> Then \(\dfrac{du}{dt} = 2t\), so \(du
+                                                    = 2t \,
+                                                    dt\). This means \(t \, dt = \dfrac{1}{2} \, du\).</li>
+                                                <li><strong>Substitute:</strong> The integral becomes \(\int
+                                                    \dfrac{1}{2u} \, du =
+                                                    \dfrac{1}{2} \int \dfrac{1}{u} \, du\).</li>
+                                                <li><strong>Integrate:</strong> \(\dfrac{1}{2} \int \dfrac{1}{u} \, du =
+                                                    dfrac{1}{2} \ln|u| + C\).</li>
+                                                <li><strong>Substitute back:</strong> Replace \(u\) with \(t^2 + 1\) to
+                                                    get
+                                                    \(\dfrac{1}{2} \ln(t^2 + 1) + C\).</li>
+                                            </ol>
+
+                                            <p>Therefore, \(\int \dfrac{t}{t^2 + 1} \, dt = \dfrac{1}{2} \ln(t^2 + 1) +
+                                                C\).</p>
+                                        </details>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 4: \(\int (4t+3)^5 dt\)</strong></summary>
+                                            <p>Let's evaluate the integral \(\int (4t+3)^5 dt\) using substitution.</p>
+
+                                            <ol>
+                                                <li><strong>Choose a substitution:</strong> Let \(u = 4t+3\).</li>
+                                                <li><strong>Find \(du\):</strong> Then \(\dfrac{du}{dt} = 4\), so \(du =
+                                                    4 dt\).
+                                                    This means \(dt = \dfrac{1}{4} \, du\).</li>
+                                                <li><strong>Substitute:</strong> The integral becomes \(\int u^5
+                                                    \dfrac{1}{4} \, du =
+                                                    \dfrac{1}{4} \int u^5 \, du\).</li>
+                                                <li><strong>Integrate:</strong> \(\dfrac{1}{4} \int u^5 \, du =
+                                                    dfrac{1}{4}\dfrac{u^6}{6} + C\).</li>
+                                                <li><strong>Substitute back:</strong> Replace \(u\) with \(4t+3\) to get
+                                                    \(\dfrac{(4t+3)^6}{24} + C\).</li>
+                                            </ol>
+
+                                            <p>Therefore, \(\int (4t+3)^5 dt = \dfrac{(4t+3)^6}{24} +
+                                                C\).</p>
+                                        </details>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <details>
+                                            <summary><strong>Example 5: \(\int \dfrac{1}{\sqrt{1-4t^2}} dt\)</strong>
+                                            </summary>
+                                            <p>Let's evaluate the integral \(\int \dfrac{1}{\sqrt{1-4t^2}} dt\) using
+                                                substitution.</p>
+
+                                            <ol>
+                                                <li><strong>Choose a substitution:</strong> Let \(u = 2t\).</li>
+                                                <li><strong>Find \(du\):</strong> Then \(\dfrac{du}{dt} = 2\), so \(du =
+                                                    2 dt\).
+                                                    This means \(dt = \dfrac{1}{2} \, du\).</li>
+                                                <li><strong>Substitute:</strong> The integral becomes \(\int
+                                                    \dfrac{1}{\sqrt{1-u^2}}
+                                                    \dfrac{1}{2} \, du =
+                                                    \dfrac{1}{2}\int \dfrac{1}{\sqrt{1-u^2}} \, du\).</li>
+                                                <li><strong>Integrate:</strong> \(\dfrac{1}{2}\int
+                                                    \dfrac{1}{\sqrt{1-u^2}} \, du =
+                                                    dfrac{1}{2}arcsin(u) + C\).</li>
+                                                <li><strong>Substitute back:</strong> Replace \(u\) with \(2t\) to get
+                                                    \(\dfrac{1}{2}arcsin(2t) + C\).</li>
+                                            </ol>
+
+                                            <p>Therefore, \(\int \dfrac{1}{\sqrt{1-4t^2}} dt = \dfrac{1}{2}arcsin(2t) +
+                                                C\).</p>
+                                        </details>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 4 -->
+                    <!-- Section 5: Practice Problems: Integration Rules -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPractice">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePractice" aria-expanded="false"
+                                aria-controls="collapsePractice">
+                                <strong>Practice Problems: Integration</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePractice" class="accordion-collapse collapse" aria-labelledby="headingPractice"
+                            data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>While we've covered the basic rules and formulas for differentiation and integration,
+                                    true mastery comes with practice. It's important to remember that a deep
+                                    understanding of these concepts will develop as you apply them throughout your
+                                    study of physics. For now, focus on honing your skills in applying the formulas
+                                    directly. This section provides practice problems to help you build that foundation.
+                                </p>
+                                <p>Solve the following differentiation and integration problems in your notebook, and
+                                    then click the "Check" button to reveal the answer.</p>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Function \(f(t)\)</th>
+                                            <th>Integral \(\int f(t) \, dt\)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>\(t^2 + 1\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{t^3}{3} + t +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\cos(3t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{3}\sin(3t) +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^{2t}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{2}e^{2t} +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{1}{t}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\ln|t| + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t^3 + 2t - 5\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{t^4}{4} + t^2 - 5t +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sin(4t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-\dfrac{1}{4}\cos(4t) +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(e^{-t/3}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-3e^{-t/3} + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{1}{t+1}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\ln|t+1| + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sqrt{t+2}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{2}{3}(t+2)^{3/2} +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sec^2(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\tan(t) + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t \cos(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(t \sin(t) + \cos(t) +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{1}{(t+1)^2}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{-1}{t+1} +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t e^{-t}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-e^{-t}(t+1) + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\sin^2(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{t}{2} -
+                                                    \dfrac{\sin(2t)}{4} + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(2t sin(t^2)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(-cos(t^2) + C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(t\sqrt{t^2+1}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{3}(t^2+1)^{3/2} +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(sin^5(t) cos(t)\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{6}sin^6(t) +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{t}{t^2+1}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{2}ln(t^2+1) +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(x^2 e^{x^3}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\dfrac{1}{3}e^{x^3} +
+                                                    C\)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>\(\dfrac{1}{x \ln x}\)</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary check-answer-btn"
+                                                    onclick="revealAnswer(this)">Check</button>
+                                                <span class="answer" style="display:none;">\(\ln|\ln x| + C\)</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 5 -->
+
+                    <script>
+                        function revealAnswer(button) {
+                            button.style.display = "none";
+                            button.nextElementSibling.style.display = "inline";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

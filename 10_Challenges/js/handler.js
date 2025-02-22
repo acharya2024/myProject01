@@ -204,6 +204,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 listItem.classList.toggle('magnified');
             };
             gotAnswerButton.onclick = function (event) {
+                const listItem = this.closest('.list-group-item');
+                listItem.classList.remove('magnified');
                 event.preventDefault();
                 questionDetails.open = false;
                 this.style.display = 'none'; // Hide button itself

@@ -1146,7 +1146,7 @@
         ]
       },
       "type": "Subjective",
-      "questionText": "The interference pattern of a Young's double slit experiment is observed in two ways by placing the screen in two possible ways as shown in figure (a) and (b). The distance between two consecutive right most minima on the screen of figure (a) using light of wavelength \\(\\lambda_1 = 4000 Å\\) is observed to be 600 times the fringe width in the screen of figure (b) using the wavelength \\(\\lambda_2 = 6000 Å\\). If \\(D\\) (as shown in figure) is 1 m then find the separation between the coherent sources \\(S_1\\) and \\(S_2\\). Given that \\(d > \\dfrac{3\\lambda_1}{2}\\).\\nDIAGRAM[1,150]\\nDIAGRAM[2,150]",
+      "questionText": "The interference pattern of a Young's double slit experiment is observed in two ways by placing the screen in two possible ways as shown in figure (a) and (b). The distance between two consecutive right most minima on the screen of figure (a) using light of wavelength \\(\\lambda_1 = 4000 Å\\) is observed to be 600 times the fringe width in the screen of figure (b) using the wavelength \\(\\lambda_2 = 6000 Å\\). If \\(D\\) (as shown in figure) is 1 m then find the separation between the coherent sources \\(S_1\\) and \\(S_2\\). Given that \\(d \\gg \\dfrac{3\\lambda_1}{2}\\).\\nDIAGRAM[1,150]\\nDIAGRAM[2,150]",
       "solution": "Consider the screen arrangement in figure (a).\\nLet \\(P\\) and \\(Q'\\) be the positions of the first and second rightmost minima respectively.\\nSince, the angular positions of minima do not depend on the position of the screen, so the second minima is formed at \\(Q\\) on the screen.\\n\\nFor right most minima at \\(P\\), we have\\n\\(d \\sin \\theta_1 = \\dfrac{\\lambda_1}{2}\\) ... (1)\\n\\nFor small angles, we have\\n\\( \\sin \\theta_1 \\approx \\tan \\theta_2 = \\dfrac{d/2}{x_2} \\)\\nSubstituting in equation (1), we get\\n\\(x_2 = \\dfrac{d^2}{\\lambda_1}\\) ... (2)\\n\\nFor the next minima at \\(Q\\), we have\\n\\( d \\sin \\theta_2 = \\dfrac{3\\lambda_1}{2} \\) ... (3)\\nFor small angles, we have\\n\\( \\sin \\theta_2 \\approx \\tan \\theta_2 = \\dfrac{d/2}{x_2} \\)\\nSubstituting in equation (3), we get\\n\\( x_2 = \\dfrac{d^2}{3\\lambda_1} \\) ... (4)\\n\\(PQ = x_1 - x_2 = \\dfrac{2d^2}{3\\lambda_1} \\) ... (5)\\n\\nIn the second case, fringe width is given by\\n\\( \\beta = \\dfrac{\\lambda_2 D}{d} \\) ... (6)\\n\\nSince it is given that \\(PQ = 600\\beta\\), we get\\n\\( \\dfrac{2d^2}{3\\lambda_1} = 600 \\cdot \\dfrac{\\lambda_2 D}{d} \\)\\n\\( 2d^3 = 1800\\lambda_1 \\lambda_2 D \\)\\n\\( d^3 = 900\\lambda_1 \\lambda_2 D \\)\\n\\( d^3 = 900 \\times 4000 \\times 6000 \\times 10^{-20} \\times 1 \\)\\n\\( d^3 = 216 \\times 10^{-12} \\)\\n\\( d = 6 \\times 10^{-4} \\) m = 0.6 mm",
       "solutionRechecked": true,
       "solutionManualRechecked": false,
@@ -1282,7 +1282,7 @@
         "4. Expand the square root using the binomial approximation, noting that \\(f >> y\\).",
         "5. Simplify the equation and solve for f."
       ],
-      "answer": "The focal length is given by \\(f = \\dfrac{y_0^2 \\mu_0}{2t}\\)."
+      "answer": "The focal length is given by \\(f = \\dfrac{y_0^2 }{2\\mu_0t}\\)."
     },
     {
       "id": "OP-0044",

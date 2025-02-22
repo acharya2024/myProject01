@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>doPhysics | Vectors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../controllers/controller.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="jumbotron">
+                    <h1 class="display-4">Vectors</h1>
+                    <p class="lead" id="tagline">Mathematical Toolkit for Physics</p>
+                    <hr class="my-4">
+                    <div class="accordion" id="content">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingIntroduction">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseIntroduction" aria-expanded="false"
+                                    aria-controls="collapseIntroduction">
+                                    <strong>I. Introduction to Vectors</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseIntroduction" class="accordion-collapse collapse"
+                                aria-labelledby="headingIntroduction" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>In physics, we often deal with quantities that have both magnitude and direction.
+                                        These quantities are called <strong>vectors</strong>. Understanding vectors is
+                                        crucial for
+                                        describing motion, forces, and many other physical phenomena.</p>
+
+                                    <p><strong>Vectors vs. Scalars:</strong></p>
+                                    <ul>
+                                        <li><strong>Vectors:</strong> Quantities with both magnitude and direction.
+                                            Examples
+                                            include:
+                                            <ul>
+                                                <li>Displacement: A change in position (e.g., 5 meters east).</li>
+                                                <li>Velocity: The rate of change of position (e.g., 10 m/s north).</li>
+                                                <li>Force: A push or pull (e.g., 20 Newtons downward).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Scalars:</strong> Quantities with only magnitude. Examples include:
+                                            <ul>
+                                                <li>Distance: The total length traveled (e.g., 5 meters).</li>
+                                                <li>Speed: The rate of travel (e.g., 10 m/s).</li>
+                                                <li>Mass: The amount of matter in an object (e.g., 2 kg).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p><strong>Geometric Representation:</strong></p>
+                                    <p>We can represent a vector graphically as an arrow. The length of the arrow
+                                        represents
+                                        the <strong>magnitude</strong> of the vector, and the direction the arrow points
+                                        represents the <strong>direction</strong> of the vector.</p>
+                                    <p>[Diagram_Here: A labeled arrow representing a vector, showing magnitude and
+                                        direction.]</p>
+
+                                    <p><strong>Notation:</strong></p>
+                                    <p>There are several ways to represent vectors in writing:</p>
+                                    <ul>
+                                        <li><strong>Boldface:</strong> Using boldface letters (e.g.,
+                                            \(\vec{A}\)).
+                                        </li>
+                                        <li><strong>Arrow over letter:</strong> Drawing an arrow above the letter (e.g.,
+                                            \(\overrightarrow{A}\)).</li>
+                                    </ul>
+                                    <p><strong>Unit Vectors</strong></p>
+                                    <p>A unit vector is a vector with a magnitude of exactly 1. Unit vectors are used to
+                                        specify a direction. We will use the "hat" notation, such as \(\hat{A}\) to
+                                        indicate a unit vector.</p>
+                                    <p>[Diagram_Here: A unit vector with the formula \(\hat{A}\) = \(\dfrac{A}{|A|}\)
+                                        ]</p>
+                                    <p>We define \( \hat{i} \) to be a unit vector pointing in the
+                                        positive x direction, \( \hat{j} \) to be a unit vector pointing in the positive
+                                        y
+                                        direction, and \( \hat{k} \) to be a unit vector pointing in the positive z
+                                        direction.
+                                    </p>
+                                    <p>[Diagram_Here: i,j and k unit vector pointing to their axes. ]</p>
+                                    <p>These unit vectors are crucial for expressing vectors in component form, which
+                                        we'll
+                                        discuss later.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Section 1 -->
+
+                        <!-- Section 2: Vector Algebra -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingAlgebra">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseAlgebra" aria-expanded="false"
+                                    aria-controls="collapseAlgebra">
+                                    <strong>II. Vector Algebra</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseAlgebra" class="accordion-collapse collapse"
+                                aria-labelledby="headingAlgebra" data-bs-parent="#content">
+                                <div class="accordion-body">
+
+                                    <!-- Section 2.A: Equality of Vectors -->
+                                    <h5 class="mt-3">A. Equality of Vectors</h5>
+                                    <p>Two vectors, \(\vec{A}\) and \(\vec{B}\), are equal if and only if
+                                        they have
+                                        the same magnitude and the same direction.</p>
+                                    <p>[Diagram_Here: Two vectors, A and B, of equal length and pointing in the same
+                                        direction.]</p>
+
+                                    <!-- Section 2.B: Vector Addition -->
+                                    <h5 class="mt-3">B. Vector Addition</h5>
+                                    <p>Vector addition combines two or more vectors into a single resultant vector.</p>
+
+                                    <ul>
+                                        <li><strong>Geometric Methods:</strong>
+                                            <ul>
+                                                <li><strong>Triangle Law:</strong> Place the tail of vector
+                                                    \(\vec{B}\) at the
+                                                    head of vector \(\vec{A}\). The resultant vector
+                                                    <strong>R</strong> is the vector from the tail of \(\vec{A}\)
+                                                    to the head
+                                                    of \(\vec{B}\).
+                                                </li>
+                                                <p>[Diagram_Here: Triangle law of vector addition with vectors A, B, and
+                                                    R
+                                                    labeled.]</p>
+                                                <li><strong>Parallelogram Law:</strong> Place the tails of vectors
+                                                    \(\vec{A}\)
+                                                    and \(\vec{B}\) at the same point. Complete the parallelogram
+                                                    formed
+                                                    by \(\vec{A}\) and \(\vec{B}\). The resultant vector
+                                                    <strong>R</strong> is the diagonal of the parallelogram starting
+                                                    from the tails
+                                                    of \(\vec{A}\) and \(\vec{B}\).
+                                                </li>
+                                                <p>[Diagram_Here: Parallelogram law of vector addition with vectors A,
+                                                    B, and R
+                                                    labeled.]</p>
+                                                <li><strong>Polygon Law:</strong> For adding multiple vectors, place the
+                                                    vectors
+                                                    head-to-tail. The resultant vector is from the tail of the first
+                                                    vector to
+                                                    the head of the last vector.</li>
+                                                <p>[Diagram_Here: Polygon law of vector addition with multiple vectors
+                                                    and the
+                                                    resultant vector labeled.]</p>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Component Method:</strong>
+                                            <p>We will discuss how to add vectors using components in a later section,
+                                                after
+                                                we've covered vector decomposition.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Section 2 -->
+                        <!-- Section 3: Vector Decomposition and Components -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDecomposition">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseDecomposition" aria-expanded="false"
+                                    aria-controls="collapseDecomposition">
+                                    <strong>III. Vector Decomposition and Components</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseDecomposition" class="accordion-collapse collapse"
+                                aria-labelledby="headingDecomposition" data-bs-parent="#content">
+                                <div class="accordion-body">
+                                    <p>Resolving a vector into its components is a fundamental technique that simplifies
+                                        many vector calculations. It involves breaking down a vector into two or more
+                                        vectors that are perpendicular to each other (usually along the x and y axes).
+                                    </p>
+
+                                    <p><strong>Finding Components Given Magnitude and Direction:</strong></p>
+                                    <p>If we know the magnitude (A) of a vector \(\vec{A}\) and the angle (θ) it
+                                        makes
+                                        with the positive x-axis, we can find its x and y components using the following
+                                        equations:</p>
+                                    <p>\( \qquad A_x = A \cos \theta \)</p>
+                                    <p>\( \qquad A_y = A \sin \theta \)</p>
+                                    <p>[Diagram_Here: A vector A, its x-component Ax, its y component Ay, and the angle
+                                        θ with respect to x-axis. ]</p>
+
+                                    <p><strong>Finding Magnitude and Direction Given Components:</strong></p>
+                                    <p>Conversely, if we know the x and y components of a vector, we can find its
+                                        magnitude and direction using the following equations:</p>
+                                    <p>\( \qquad A = \sqrt{A_x^2 + A_y^2} \)</p>
+                                    <p>\( \qquad \theta = \arctan\left(\dfrac{A_y}{A_x}\right) \)</p>
+                                    <p><strong>Important Note:</strong> The arctangent function (tan<sup>-1</sup>) only
+                                        gives
+                                        angles in the range of -90° to +90°. You need to consider the signs of \(A_x\)
+                                        and
+                                        \(A_y\) to determine the correct quadrant for the angle \(\theta\).</p>
+
+                                    <p><strong>Decomposition of vectors into their x, y and z-components:</strong></p>
+                                    <p>In three dimensions, a vector A can be expressed as:
+                                    </p>
+                                    <p>\( \qquad \hat{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k} \) </p>
+                                    <p>where \(A_x\), \( A_y \) and \( A_z \) are the x-, y-, and z-components of vector
+                                        A, respectively, and \( \hat{i} \), \( \hat{j} \), and \( \hat{k} \) are the
+                                        unit
+                                        vectors along the x-, y-, and z-axes, respectively.</p>
+                                    <p>[Diagram_Here: Decomposition of vectors in 3d world with all components labelled]
+                                    </p>
+                                    <p>This decomposition allows us to analyze and manipulate vectors in three
+                                        dimensions
+                                        more easily.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Section 3 -->
+                            <!-- Section 4: Problem practice: Decomposition of vectors -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDecompositionPractice">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDecompositionPractice" aria-expanded="false"
+                                aria-controls="collapseDecompositionPractice">
+                                <strong>IV. Problem practice: Decomposition of vectors</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseDecompositionPractice" class="accordion-collapse collapse"
+                            aria-labelledby="headingDecompositionPractice" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Practice your skills in decomposing vectors into their components with this
+                                    interactive exercise. A vector will be displayed on a graph, and your task is to
+                                    determine its \( \hat{i} \) , \( \hat{j} \) components.</p>
+
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    <li>A vector \(\vec{A}\) will be shown on the graph along with its magnitude and
+                                        direction.</li>
+                                    <li>Determine the x and y components of the vector.</li>
+                                    <li>Enter the x-component (Ax) and y-component (Ay) in the input boxes below.</li>
+                                    <li>Click the "Check Answer" button to see if you are correct.</li>
+                                </ol>
+
+                                <p>[Diagram_Here: A dynamic graph displaying a vector \(\vec{A}\) with adjustable
+                                    magnitude and direction.]</p>
+
+                                <div class="mb-3">
+                                    <label for="xComponent" class="form-label">Enter x-component (Ax):</label>
+                                    <input type="number" class="form-control" id="xComponent"
+                                        placeholder="Enter x-component">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="yComponent" class="form-label">Enter y-component (Ay):</label>
+                                    <input type="number" class="form-control" id="yComponent"
+                                        placeholder="Enter y-component">
+                                </div>
+
+                                <button class="btn btn-primary" onclick="checkDecomposition()">Check Answer</button>
+
+                                <p id="decompositionResult" class="mt-3"></p>
+
+                                <script>
+                                    function checkDecomposition() {
+                                        // This is just a placeholder, you would implement actual calculations and checks here
+                                        var xComponent = document.getElementById("xComponent").value;
+                                        var yComponent = document.getElementById("yComponent").value;
+                                        var resultElement = document.getElementById("decompositionResult");
+
+                                        //For demonstrative purpose right now
+                                        resultElement.textContent = "You entered Ax: " + xComponent + " and Ay: " + yComponent;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 4 -->
+                        <!-- Section 5: Vector Multiplication -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingMultiplication">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseMultiplication" aria-expanded="false"
+                                aria-controls="collapseMultiplication">
+                                <strong>V. Vector Multiplication</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseMultiplication" class="accordion-collapse collapse"
+                            aria-labelledby="headingMultiplication" data-bs-parent="#content">
+                            <div class="accordion-body">
+
+                                <!-- Section 5.A: Scalar Product (Dot Product) -->
+                                <h5 class="mt-3">A. Scalar Product (Dot Product)</h5>
+                                <p>The scalar product (or dot product) of two vectors \(\vec{A}\) and \(\vec{B}\) is a
+                                    scalar quantity defined as:</p>
+                                <p>\( \qquad \vec{A} \cdot \vec{B} = A B \cos \theta \)</p>
+                                <p>where \(A\) and \(B\) are the magnitudes of the vectors, and \(\theta\) is the angle
+                                    between them.</p>
+
+                                <p><strong>Geometric Interpretation:</strong></p>
+                                <p>The dot product can be interpreted as the product of the magnitude of one vector and
+                                    the projection of the other vector onto it. <p>
+                                    <p>[Diagram_Here: Geometric interpretation of dot product as projection]</p>
+
+                                    <p><strong>Component Form:</strong></p>
+                                    <p>In terms of components, the dot product is given by:</p>
+                                    <p>\( \qquad \vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z \)</p>
+
+                                    <p><strong>Properties:</strong></p>
+                                    <ul>
+                                        <li>Commutative: \(\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}\)</li>
+                                        <li>Distributive: \(\vec{A} \cdot (\vec{B} + \vec{C}) = \vec{A} \cdot \vec{B} +
+                                            \vec{A} \cdot \vec{C}\)</li>
+                                    </ul>
+
+                                    <p><strong>Applications:</strong></p>
+                                    <ul>
+                                        <li>Finding the angle between two vectors:
+                                            \(\qquad \cos \theta = \dfrac{\vec{A} \cdot \vec{B}}{A B}\)</li>
+                                        <li>Calculating work done by a force: \(W = \vec{F} \cdot \vec{d}\)</li>
+                                    </ul>
+
+                                    <hr class="my-4">
+                                    <h5>Illustrative Examples: Dot Product</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 1:</strong> Find the dot product of \(\vec{A} =
+                                                        2\hat{i} + 3\hat{j}\) and \(\vec{B} = -\hat{i} + 2\hat{j}\)</summary>
+                                                <p>\(\vec{A} \cdot \vec{B} = (2)(-1) + (3)(2) = -2 + 6 = 4\)</p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 2:</strong> Find the angle between vectors \(\vec{A}
+                                                        = \hat{i} + \hat{j}\) and \(\vec{B} = \hat{i} - \hat{j}\)</summary>
+                                                <p>\(\vec{A} \cdot \vec{B} = (1)(1) + (1)(-1) = 0\). Since the dot product is
+                                                    0, the vectors are orthogonal (perpendicular), so \(\theta = 90^\circ\).</p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 3:</strong> Calculate the work done by a force \(\vec{F}
+                                                        = 5\hat{i}\) N acting on an object that moves a displacement \(\vec{d} =
+                                                        2\hat{i} + \hat{j}\) m</summary>
+                                                <p>\(W = \vec{F} \cdot \vec{d} = (5)(2) + (0)(1) = 10\) J</p>
+                                            </details>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Section 5.B: Vector Product (Cross Product) -->
+                                    <h5 class="mt-3">B. Vector Product (Cross Product)</h5>
+                                    <p>The vector product (or cross product) of two vectors \(\vec{A}\) and \(\vec{B}\)
+                                        is a vector quantity whose magnitude is defined as:</p>
+                                    <p>\( \qquad |\vec{A} \times \vec{B}| = A B \sin \theta \)</p>
+                                    <p>where \(A\) and \(B\) are the magnitudes of the vectors, and \(\theta\) is the
+                                        angle between them.</p>
+
+                                    <p><strong>Direction:</strong></p>
+                                    <p>The direction of \(\vec{A} \times \vec{B}\) is perpendicular to both \(\vec{A}\)
+                                        and \(\vec{B}\), and is determined by the right-hand rule. If you point the
+                                        fingers of your right hand in the direction of \(\vec{A}\) and curl them towards
+                                        \(\vec{B}\), your thumb will point in the direction of \(\vec{A} \times
+                                        \vec{B}\).
+                                    </p>
+                                       <p>[Diagram_Here: Right-hand rule diagram for cross product]</p>
+
+                                    <p><strong>Component Form (in 3D):</strong></p>
+                                    <p>If \(\vec{A} = A_x \hat{i} + A_y \hat{j} + A_z \hat{k}\) and \(\vec{B} = B_x
+                                        \hat{i} + B_y \hat{j} + B_z \hat{k}\), then the cross product is given by the
+                                        determinant:</p>
+                                    <p>\( \qquad \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k}
+                                        \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} \)</p>
+                                    <p>Expanding the determinant:</p>
+                                    <p>\( \qquad \vec{A} \times \vec{B} = (A_y B_z - A_z B_y) \hat{i} - (A_x B_z - A_z
+                                        B_x) \hat{j} + (A_x B_y - A_y B_x) \hat{k} \)</p>
+
+                                    <p><strong>Properties:</strong></p>
+                                    <ul>
+                                        <li>Anti-commutative: \(\vec{A} \times \vec{B} = -\vec{B} \times \vec{A}\)</li>
+                                        <li>Distributive: \(\vec{A} \times (\vec{B} + \vec{C}) = \vec{A} \times \vec{B} +
+                                            \vec{A} \times \vec{C}\)</li>
+                                    </ul>
+
+                                    <p><strong>Applications:</strong></p>
+                                    <ul>
+                                        <li>Calculating torque: \(\vec{\tau} = \vec{r} \times \vec{F}\)</li>
+                                        <li>Calculating angular momentum: \(\vec{L} = \vec{r} \times \vec{p}\)</li>
+                                        <li>Finding the area of a parallelogram formed by two vectors: \(Area = |\vec{A}
+                                            \times \vec{B}|\)</li>
+                                    </ul>
+                                    <hr class="my-4">
+                                    <h5>Illustrative Examples: Dot Product</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 1:</strong> Find the cross product of \(\vec{A} =
+                                                        2\hat{i} + 3\hat{j}\) and \(\vec{B} = -\hat{i} + 2\hat{j}\)</summary>
+                                                <p>\( \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k}
+                                                    \\ 2 & 3 & 0 \\ -1 & 2 & 0 \end{vmatrix} = (0-0)\hat{i} + (0-0)\hat{j} +
+                                                    (4+3)\hat{k} = 7\hat{k}\)</p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 2:</strong> Find the Torque when force of
+                                                    \(\vec{F} = \hat{i} + \hat{j}\) is applied on position vector
+                                                    \(\vec{r} = \hat{i} - \hat{j}\)</summary>
+                                                <p>\( \vec{A} \times \vec{B} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k}
+                                                    \\ 1 & 1 & 0 \\ 1 & -1 & 0 \end{vmatrix} = (0-0)\hat{i} + (0-0)\hat{j} +
+                                                    (-1-1)\hat{k} = -2\hat{k}\)</p>
+                                            </details>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <details>
+                                                <summary><strong>Example 3:</strong> Find the area of a parallelogram
+                                                    created through vectors \(\vec{A} = \hat{i} + \hat{j}\) and \(\vec{B} =
+                                                    \hat{i} - \hat{j}\)</summary>
+                                                <p>Since the magnitude of the cross product gives area then = 2</p>
+                                            </details>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 5 -->
+
+                    <!-- Section 6: Practice Problems -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPracticeProblems">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePracticeProblems" aria-expanded="false"
+                                aria-controls="collapsePracticeProblems">
+                                <strong>VI. Practice Problems</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePracticeProblems" class="accordion-collapse collapse"
+                            aria-labelledby="headingPracticeProblems" data-bs-parent="#content">
+                            <div class="accordion-body">
+                                <p>Test your understanding of vectors with these practice problems. They cover vector
+                                    addition, subtraction, scalar multiplication, dot product, cross product, and vector
+                                    decomposition.</p>
+
+                                <ol>
+                                    <li>Find the resultant of two displacements: 5 km north and 3 km northeast.</li>
+                                    <li>Given vectors \(\vec{A} = 2\hat{i} - \hat{j} + 3\hat{k}\) and \(\vec{B} = -\hat{i}
+                                        + 5\hat{j} - 2\hat{k}\), find \(\vec{A} + \vec{B}\) and \(\vec{A} - \vec{B}\).</li>
+                                    <li>A force of 10 N is applied at an angle of 30 degrees to the horizontal. Find
+                                        the horizontal and vertical components of the force.</li>
+                                    <li>Calculate the dot product of \(\vec{A} = 4\hat{i} - 2\hat{j}\) and \(\vec{B} =
+                                        \hat{i} + 3\hat{j}\).</li>
+                                    <li>Find the cross product of \(\vec{A} = \hat{i} + \hat{j} + \hat{k}\) and
+                                        \(\vec{B} = 2\hat{i} - \hat{j} + \hat{k}\).</li>
+                                </ol>
+
+                                <hr class="my-4">
+                                <h5>Answers:</h5>
+                                <ol>
+                                    <li>Resultant: Magnitude ≈ 7.3 km, Direction ≈ 21.8 degrees east of north</li>
+                                    <li>\(\vec{A} + \vec{B} = \hat{i} + 4\hat{j} + \hat{k}\), \(\vec{A} - \vec{B} =
+                                        3\hat{i} - 6\hat{j} + 5\hat{k}\)</li>
+                                    <li>Horizontal component: 8.66 N, Vertical component: 5 N</li>
+                                    <li>\(\vec{A} \cdot \vec{B} = -2\)</li>
+                                    <li>\(\vec{A} \times \vec{B} = -2\hat{i} + \hat{j} - 3\hat{k}\)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Section 6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest"></script>
+    <script src="../../00_Assets/lib/progress.js"></script>
+    <script src="js/graphInteraction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
