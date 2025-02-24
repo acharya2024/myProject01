@@ -146,7 +146,7 @@
       "type": "Subjective",
       "questionText": "A monochromatic point source S radiating wavelength 6000 Å, with power 2 watt, an aperture A of diameter 0.1 m and a large screen SC are placed as shown in figure. A photoemissive detector D of surface area 0.5 cm² is placed at the centre of the screen. The efficiency of the detector for the photoelectron generation per incident photon is 0.9.\\nDIAGRAM[1,250]\\n(a) Calculate the photon flux at the centre of the screen and the photocurrent in the detector.\\n(b) If the concave lens L of focal length 0.6 m is inserted in the aperture as shown, find the new values of photon flux and photocurrent. Assume a uniform average transmission of 80% from the lens.\\n(c) If the work function of the photo emissive surface is 1 eV, calculate the values of the stopping potential in the two cases (without and with the lens in the aperture).",
       "solution": "(a) To determine the photon flux and photocurrent without the lens, we proceed as follows:\\n\\n*Energy per Photon:*\\n\\(E = \\dfrac{hc}{\\lambda} = \\dfrac{(6.6 \\times 10^{-34} \\text{ J s})(3 \\times 10^8 \\text{ m/s})}{6000 \\times 10^{-10} \\text{ m}} = 3.3 \\times 10^{-19} \\text{ J}\\)\\n\\n*Number of Photons Emitted per Second:*\\n\\(n_1 = \\dfrac{\\text{Power}}{\\text{Energy per Photon}} = \\dfrac{2 \\text{ J/s}}{3.3 \\times 10^{-19} \\text{ J}} = 6.06 \\times 10^{18} \\text{ photons/s}\\)\\nDIAGRAM[2,250]\\n*Photons Incident per Unit Area at 0.6 m:*\\n\\(n_2 = \\dfrac{n_1}{4\\pi r^2} = \\dfrac{6.06 \\times 10^{18} \\text{ photons/s}}{4\\pi (0.6 \\text{ m})^2} = 1.34 \\times 10^{18} \\text{ m}^{-2} \\text{s}^{-1}\\)\\n\\n*Aperture Area:*\\n\\(S_1 = \\pi (d/2)^2 = \\pi (0.1 \\text{ m}/2)^2 = 7.85 \\times 10^{-3} \\text{ m}^2\\)\\n\\n*Photons Incident on the Aperture:*\\n\\(n_3 = n_2 S_1 = (1.34 \\times 10^{18} \\text{ m}^{-2} \\text{s}^{-1})(7.85 \\times 10^{-3} \\text{ m}^2) = 1.052 \\times 10^{16} \\text{ photons/s}\\)\\n\\n*Photon Flux at the Detector (Without Lens):*\\nThe aperture acts as a new point source, distributing photons over a sphere of radius 5.4 m (6 m - 0.6 m):\\n\\(\\text{Photon Flux} = n_4 = \\dfrac{n_3}{4 \\pi (5.4 \\text{ m})^2} = \\dfrac{1.052 \\times 10^{16} \\text{ photons/s}}{4 \\pi (5.4 \\text{ m})^2} = 2.87 \\times 10^{13} \\text{ m}^{-2} \\text{s}^{-1}\\)\\n\\n*Photons Incident on Detector:*\\n\\(n_5 = \\text{Photon Flux} \\times \\text{Area of Detector} = (2.87 \\times 10^{13} \\text{ m}^{-2} \\text{s}^{-1}) (0.5 \\times 10^{-4} \\text{ m}^2) = 1.435 \\times 10^9 \\text{ photons/s}\\)\\n\\n*Photoelectrons Generated:*\\n\\(n_6 = 0.9 \\times n_5 = 0.9 (1.435 \\times 10^9 \\text{ photons/s}) = 1.2915 \\times 10^9 \\text{ electrons/s}\\)\\n\\n*Photocurrent:*\\n\\(i = n_6 e = (1.2915 \\times 10^9 \\text{ electrons/s})(1.6 \\times 10^{-19} \\text{ C}) = 2.07 \\times 10^{-10} \\text{ A}\\)\\n\\n(b) With the Concave Lens:\\n\\n*Image Location:*\\nDIAGRAM[3, 250]\\nUsing the lens formula,\\n \\(\\dfrac{1}{v} - \\dfrac{1}{u} = \\dfrac{1}{f}\\), where \\(u = -0.6 \\text{ m}\\) and \\(f = -0.6 \\text{ m}\\) (concave lens):\\n\\(\\dfrac{1}{v} - \\dfrac{1}{-0.6 \\text{ m}} = \\dfrac{1}{-0.6 \\text{ m}} \\implies v = -0.3 \\text{ m}\\)\\nThe lens creates a virtual image at 0.3 m from the lens. So, the virtual source at  distance of \\(d= 5.7 m\\).   \\n*Photon Transmission through Lens:*\\nOnly 80% of the photons are transmitted, so \\(n_3 = 1.052 \\times 10^{16} s^{-1}\\) is reduced to \\(0.8 * 1.052 * 10^{16} s^{-1}\\). \\n*Photon Flux with Lens:* At \\( 5.7 m\\), the transmission will be:\\n\\(\\text{Photon Flux with lens} = \\dfrac{0.8 n_3}{4 \\pi (5.7 \\text{ m})^2}  = 2.06*10^{13} \\text{ m}^{-2} s^{-1} \\)\\n*New Value of Photocurrent:*\\n\\( i = (2.06 \\times 10^{13})(0.5 \\times 10^{-4})(0.9)(1.6 \\times 10^{-19}) = 1.483 \\times 10^{-10} A \\)\\n(c) Determining Stopping Potential:\\n\\n*Energy of Incident Photons:*\\n\\(E = \\dfrac{12375}{\\lambda (\\text{ in } Å)}  = \\dfrac{12375}{6000} = 2.06 eV\\) \\n*Maximum KE and Stopping Potential:*\\n\\(K = E - \\phi_0 = 2.06 \\text{ eV} - 1 \\text{ eV} =  1.06 \\text{ eV}\\). Because of this \\( eV_s = E - \\phi_0 \\). This means \\( V_0 = \\dfrac{E - \\phi_0}{e} = 1.06 V\\). Therefore, the stopping potential will be \\(1.06 V \\) (same for both cases - with and without lens)",
-      "solutionRechecked": true,
+      "solutionRechecked": false,
       "solutionManualRechecked": false,
       "hint": "Calculate the number of photons emitted by the source. Use geometry to determine the fraction of photons incident on the aperture. Use the lens formula to find the effect of the concave lens. The stopping potential is related to the maximum kinetic energy of the photoelectrons.",
       "methodOfSolving": [
@@ -685,7 +685,7 @@
       "answer": "\\(\\tan^{-1}(0.8)\\) with the horizontal"
     },
     {
-      "id": "ME-0023",
+      "id": "MP-0023",
       "title": "Force on Reflecting Surface due to a Light Source",
       "statistics": {
         "numberOfDiagrams": 2,
@@ -714,7 +714,7 @@
       "answer": "\\(1.33 \\times 10^{-7} \\,\\text{N}\\)"
     },
     {
-      "id": "MP-0023",
+      "id": "MP-0024",
       "title": "Pair Production Near Nucleus",
       "statistics": {
         "numberOfDiagrams": 1,
