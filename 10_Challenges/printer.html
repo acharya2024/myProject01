@@ -63,7 +63,7 @@
 
 <body>
     <div class="container">
-        <h2 id="chapterTitle">OPTICS</h2>
+        <h2 id="chapterTitle">Modern Physics</h2>
 
         <h5>Questions</h5>
         <ul id="questionList"></ul>
@@ -152,8 +152,8 @@
                         if (question.answer || (!question.answer && question.type !== 'Subjective')) {
                             hasAnswerKeys = true;
                             const answerKeyItem = document.createElement("li");
-                            let answerKeyHTML = `<strong>${qSerial}</strong>`;
-                            answerKeyHTML += `<div>${wrapTextInParagraphs(formatText(question.answer || "To prove"))}</div>`;
+                            let answerKeytext = `<strong>${qSerial}. </strong>`+formatText(question.answer || "To prove");
+                            let answerKeyHTML = `<div>${wrapTextInParagraphs(answerKeytext)}</div>`;
                             answerKeyItem.innerHTML = answerKeyHTML;
                             answerKeyList.appendChild(answerKeyItem);
                         }
